@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "ukBV5GHJ",
+ "pasteDate": "Feb 21, 2018, 1:58:43 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "String.prototype.toFormatString = function(place) {\n\tplace = place || 2;\n\tvar str = this.toString();\n\tvar n = str.split('.')[0].length;\n\twhile (n++ < place) str = '0'+str;\n\treturn str;\n};",
+ "title": ""
+}

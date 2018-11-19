@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://stream.duplika.com:1935/tvacapulco/tvacapulco/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4UW7Eu0z",
+ "pasteDate": "Feb 26, 2018, 12:29:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?>\n<diagram program=\"umlet\" version=\"14.2\">\n  <zoom_level>10</zoom_level>\n  <element>\n    <id>UMLSequenceAllInOne</id>\n    <coordinates>\n      <x>210</x>\n      <y>50</y>\n      <w>720</w>\n      <h>650</h>\n    </coordinates>\n    <panel_attributes>title=A complex combined fragments\nobj=Lifeline A~a\nobj=Lifeline B~b\nobj=Lifeline C~c\nobj=Lifeline D~d\n\na->>>b : execute() d=duration; on=b\ncombinedFragment=combined fragment~cf; id2->id3 + :Message\na:{x==0}; on=c\ncombinedFragment=alt~alt1 c d; d:[x>0];  combinedFragment=loop~loop1 a b; b:[1..10]\non=b\nb->>>a; on=a; d->c\n..=alt1; c:[else]\na.>b; off=a; --=loop1;  c->d\n..=cf\nb.>a +1; off=b\n--; --\ndestroy=d;\ntick=2\na->b -2\na.>>>b --</panel_attributes>\n    <additional_attributes/>\n  </element>\n  <element>\n    <id>UMLUseCase</id>\n    <coordinates>\n      <x>380</x>\n      <y>330</y>\n      <w>190</w>\n      <h>90</h>\n    </coordinates>\n    <panel_attributes>*Error*</panel_attributes>\n    <additional_attributes/>\n  </element>\n</diagram>",
+ "title": ""
+}

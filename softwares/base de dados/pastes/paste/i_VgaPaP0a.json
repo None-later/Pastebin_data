@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "VgaPaP0a",
+ "pasteDate": "Feb 10, 2018, 5:58:07 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "self.addEventListener('install', function (event) {\n    console.log('[Service Worker] Instalando Service Worker...', event);\n});\n\nself.addEventListener('activate', function (event) {\n    console.log('[Service Worker] Ativando Service Worker ...', event);\n    return self.clients.claim();\n});\n\nself.addEventListener('fetch', function (event) {\n    console.log('[Service Worker] Procurando algo...', event);\n    event.respondWith(fetch(event.request));\n});",
+ "title": ""
+}

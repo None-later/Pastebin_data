@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_email",
+  "lg_en"
+ ],
+ "key": "Gs1cvXSL",
+ "pasteDate": "Feb 8, 2018, 7:32:09 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "{\"UserAttributes\":[{\"Name\":\"sub\",\"Value\":\"aad06r82-fe94-4402-840f-b2df2eee6f5a\"},{\"Name\":\"email\",\"Value\":\"myemail@myemailaddress.jp\"}],\"Username\":\"kazyumaru\"}\n\t\nAuth.currentUserInfo()\n  .then(info => {\n    this.userId = info.id;\n    this.username = info.username;\n    this.attributes = [];\n    if (info['email']) { this.attributes.push({ name: 'email', value: info['email']}); }\n    if (info['phone_number']) { this.attributes.push({ name: 'phone_number', value: info['phone_number']}); }\n    this.refreshAvatar();\n  });",
+ "title": ""
+}

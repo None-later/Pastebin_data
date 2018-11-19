@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "0Eh60ApF",
+ "pasteDate": "Feb 23, 2018, 11:49:58 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import numpy as np\nmatrix = np.array([1, 2, 3], [4, 5, 6])\nprint(matrix.T)",
+ "title": "new"
+}

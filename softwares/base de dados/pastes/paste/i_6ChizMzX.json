@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_illegal"
+ ],
+ "key": "6ChizMzX",
+ "pasteDate": "Feb 21, 2018, 1:51:43 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#!/opt/local/bin/ruby\n# Written by Dean Strelau 2006.10.31\n# This script creates a new svn repository\n# and optionally sets up some attributes of it\n\nUSAGE = \"usage: #{$0} [options] name\\n\"\nHELP = <<HELP_TEXT\n#{USAGE}\nAvailable options are:\n  -i <path>  - Automatically import a folder's contents into the repo upon creation\n  -u <user>  - `chown` the repository to given user\n  -g <group> - `chown` the repository to given group\n  -m <mode>  - `chmod` the repository to a given string (default 770)\nHELP_TEXT\n\n\n# If we want help, print & exit\nif ARGV.first == 'help' then\n  print HELP\n  exit 1\nend\n\n# Process options\nwhile a = ARGV.shift\n  case a\n  when '-i': import=ARGV.shift.to_s.chomp\n  when '-u': user=ARGV.shift.to_s.chomp\n  when '-g': group=ARGV.shift.to_s.chomp\n  when '-m': mode=ARGV.shift.to_s.chomp\n  when /-(.*)/\n    print \"illegal option -- #{$1}\\n\" <<\n          \"use `#{$0} help` for help \"\n    exit 1\n  else repo = a.to_s.chomp\n  end\nend\n\n# Need a name to do something\nunless repo\n  print \"must specify repository name\\n\"<< USAGE\n  exit 1\nend\n\nabsolute = ( repo =~ /^\\//)\ncmds = Array.new\ncmds << \"mkdir #{repo}\"\ncmds << \"svnadmin create #{repo}\"\nif import # needs to be run as single command so the `cd` works\n  pwd = `pwd`.chomp\n  import_cmd = \"cd #{import};\"\n  path = absolute ? repo : \"#{pwd}/#{repo}\"\n  import_cmd << \"svn import . file://#{path} -m \\\"Initial repository layout\\\"\"\n  cmds << import_cmd\nend\nmode ||= '770'\ncmds << \"chmod -R #{mode} #{repo}\"\nug = (user || '') + ':' + (group || '')\ncmds << \"chown -R #{ug} #{repo}\" unless ug == ':'\n\ncmds.each do |c|\n  puts \"Executing: #{c}\"\n  unless system(c) then # if system(c) returns false\n    puts $?\n    exit 1\n  end\nend\n\nprint \"Success!\\n\"",
+ "title": ""
+}

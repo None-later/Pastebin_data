@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "eU2BdRwL",
+ "pasteDate": "Feb 8, 2018, 5:36:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class Atleta {\n\n    private String nombre;\n    private String codigoFederado;\n    private int mejorMarca100m;\n    private int mejorSalto;\n\n    public String getNombre() {\n        return nombre;\n    }\n\n    public void setNombre(String nombre) {\n        this.nombre = nombre;\n    }\n\n    public String getCodigoFederado() {\n        return codigoFederado;\n    }\n\n    public void setCodigoFederado(String codigoFederado) {\n        this.codigoFederado = codigoFederado;\n    }\n\n    public int getMejorMarca100m() {\n        return mejorMarca100m;\n    }\n\n    public void setMejorMarca100m(int mejorMarca100m) {\n        this.mejorMarca100m = mejorMarca100m;\n    }\n\n    public int getMejorSalto() {\n        return mejorSalto;\n    }\n\n    public void setMejorSalto(int mejorSalto) {\n        this.mejorSalto = mejorSalto;\n    }\n\n}",
+ "title": ""
+}

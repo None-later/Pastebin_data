@@ -1,0 +1,14 @@
+{
+ "espireDate": "1D",
+ "format": "python",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "iLB334Pr",
+ "pasteDate": "Feb 8, 2018, 4:09:16 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def added_operation(sender, instance, created, **kwargs):\n\t# c -    lient\n    c = instance.client\n    print 'added_operation'\n    print c.name\n    print c.operation_set.all()\n    threading.Thread(target=forecast, args=(instance.client,)).start()\n\n\ndef forecast(client):\n    print 'forecast'\n    print client.name\n    print client.operation_set.all()\n\n# added_operation\n# \n# [<Operation: Operation object>]\n# forecast\n# \n# []",
+ "title": ""
+}

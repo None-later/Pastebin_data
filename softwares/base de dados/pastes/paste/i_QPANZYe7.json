@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QPANZYe7",
+ "pasteDate": "Feb 11, 2018, 1:53:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# -*- coding: utf-8 -*-\nimport random\n\nmy_list = [random.randint(1, 100) for i in xrange(20)]\nnumber = 30\nnew_list = []\n\nfor i in my_list:\n    if i > number:\n        new_list.append(i)\n    if len(new_list) == 3:\n        break\n\nprint new_list",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en",
+  "re_email"
+ ],
+ "key": "Nm5wu85W",
+ "pasteDate": "Feb 26, 2018, 1:54:37 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "# ---------------------------------- Pterodactyl Core Dockerfile Environment: Source Engine Minimum Panel\n# Version: 0.6.0 ----------------------------------\nFROM ubuntu:16.04\n\nMAINTAINER Pterodactyl Software, <support@pterodactyl.io>\nENV DEBIAN_FRONTEND noninteractive\n# Install Dependencies\nRUN dpkg --add-architecture i386 \\\n            && apt-get update \\\n            && apt-get upgrade -y \\\n            && apt-get install -y apt-utils gdb tar curl gcc g++ lib32gcc1 lib32tinfo5 lib32z1 lib32stdc++6 libtinfo5:i386 libncurses5:i386 libcurl3-gnutls:i386 \\\n            && useradd -m -d /home/container container\n\nUSER            container\nENV             HOME /home/container\nWORKDIR         /home/container\n\nCOPY            ./entrypoint.sh /entrypoint.sh\nCMD             [\"/bin/bash\", \"/entrypoint.sh\"]",
+ "title": ""
+}

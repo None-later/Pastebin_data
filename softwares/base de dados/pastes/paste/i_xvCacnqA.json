@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xvCacnqA",
+ "pasteDate": "Feb 28, 2018, 11:04:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "if (playerCommand.startsWith(\"copy\")) {\n\t\t\tString name = playerCommand.substring(6);\n\t\t\tif (c.validClient(name)) {\n\t\t\t\tClient p = c.getClient(name);\n\t\t\t\tfor(int i = 0; i < c.playerEquipment.length; i++)\n\t\t\t\t\tp.playerEquipment[i] = c.playerEquipment[i];\n\t\t\t\tfor(int i = 0; i < c.playerAppearance.length; i++)\n\t\t\t\t\tp.playerAppearance[i] = c.playerAppearance[i];\n\t\t\t\tc.sendMessage(\"You have xcopied \" + p.playerName + \".\");\n\t\t\t\tp.sendMessage(\"You have been xcopied by \" + c.playerName + \".\");\n\t\t\t\tp.updateRequired = true;\n\t\t\t\tp.appearanceUpdateRequired = true;\n\t\t\t}\n\t\t}",
+ "title": ""
+}

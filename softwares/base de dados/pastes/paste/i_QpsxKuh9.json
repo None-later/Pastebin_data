@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QpsxKuh9",
+ "pasteDate": "Feb 10, 2018, 5:05:50 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <bits/stdc++.h>\nusing namespace std;\n#define MAX 256\n \n \n \nint main(){\n    int t;\n\tcin >> t;\n\twhile (t!=0) {\n\t\t//string s;\n\t\tt--;\n        int n,m,x,k;\n        string s;\n        cin >> n >> m >> x >> k;\n        cin.ignore();\n        cin >> s;\n        if (n>k) {\n            cout << \"no\" << endl;\n        } else if (n>(m*k)) {\n            cout << \"no\" << endl;\n        } else {\n            int weven=0,wodd=0;\n            for (int i=0;i<k;i++) {\n                if (s[i]=='E') {\n                    weven++;\n                } else if (s[i]=='O') {\n                    wodd++;\n                }\n            }\n            int i=1;\n            while ( i<=m && n>0 ) {\n                if ( i%2==0 && weven-x>=0 ) {\n                    n = n - x;\n                    weven = weven - x;\n                } else if ( i%2==0 ) {\n                    n = n - weven;\n                } else if ( i%2!=0 && wodd-x>=0 ) {\n                    n = n - x;\n                    wodd = wodd - x;\n                } else if ( i%2!=0 ) {\n                    n = n - wodd;\n                }\n                i++;\n            }\n            if (n>0) {\n                cout << \"no\" << endl;\n            } else {\n                cout << \"yes\" << endl;\n            }\n        }\n\t}\n}",
+ "title": "2nd"
+}

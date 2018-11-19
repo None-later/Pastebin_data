@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_scanner",
+  "re_java",
+  "lg_en"
+ ],
+ "key": "c1Lhgfif",
+ "pasteDate": "Feb 12, 2018, 3:25:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import java.util.ArrayList;\nimport java.util.Arrays;\nimport java.util.Scanner;\nimport java.util.stream.Collectors;\n\npublic class p05_ArrayManipulator {\n    public static void main(String[] args){\n        Scanner scanner = new Scanner(System.in);\n\n\n        ArrayList<Integer> inputList = Arrays.stream(Arrays.stream(scanner.nextLine().split(\"\\\\s+\")).mapToInt(Integer::valueOf)\n                .toArray()).boxed().collect(Collectors.toCollection(ArrayList::new));\n\n        String[] commands = scanner.nextLine().split(\"\\\\s+\");\n        while(!commands[0].equals(\"print\")){\n            switch (commands[0]){\n                case \"add\":\n                    int addIndex = Integer.parseInt(commands[1]);\n                    int elementToAdd = Integer.parseInt(commands[2]);\n                    inputList.add(addIndex, elementToAdd);\n                    break;\n                case \"addMany\":\n                    int index = Integer.parseInt(commands[1]);\n\n                    for (int i = 2; i < commands.length; i++) {\n                        inputList.add(index+i-2,Integer.valueOf(commands[i]));\n                    }\n                    break;\n                case \"contains\":\n                    //int elementToSearch = ;\n                    System.out.println(inputList.indexOf(Integer.parseInt(commands[1])));\n                    break;\n                case \"remove\":\n                    int elementToRemove = Integer.parseInt(commands[1]);\n                    inputList.remove(elementToRemove);\n                    break;\n                case \"shift\":\n                    int shiftPosition = Integer.parseInt(commands[1]);\n                    ArrayList<Integer> tempList = new ArrayList<>(inputList);\n                    for (int i = 0; i < inputList.size(); i++) {\n                        inputList.set(i,tempList.get((i+shiftPosition)%tempList.size()));\n                    }\n                    break;\n                case \"sumPairs\":\n                    if(inputList.size()%2==0){\n                        for (int i = 0; i <inputList.size(); i++) {\n                            inputList.set(i,inputList.get(i)+inputList.get(i+1));\n                            inputList.subList(i+1,i+2).clear();\n                        }\n                    }else{\n                        for (int i = 0; i < inputList.size()-1; i++) {\n                            inputList.set(i,inputList.get(i)+inputList.get(i+1));\n                            inputList.subList(i+1,i+2).clear();\n                        }\n                    }\n                    break;\n                default:\n                    break;\n\n            }\n            commands = scanner.nextLine().split(\"\\\\s+\");\n        }\n        System.out.println(inputList.toString());\n    }\n}",
+ "title": "[Java] 5. ArrayManipulator(Lists_Execises)"
+}

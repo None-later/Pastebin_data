@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://proxy.cablefamilia.com/hls/oromartv_hi/index.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

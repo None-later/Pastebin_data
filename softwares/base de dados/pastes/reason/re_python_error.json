@@ -1,0 +1,7 @@
+{
+  "corrects": 10,
+  "incorrects": 0,
+  "reason": "re_python_error",
+  "status": "REGECT",
+  "type": "REGEX"
+}

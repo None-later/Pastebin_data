@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "qQW7RJNV",
+ "pasteDate": "Feb 21, 2018, 9:31:46 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<menu xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    tools:context=\"com.example.alberto.menus.MainActivity\">\n\n    <item\n        android:id=\"@+id/seleccion\"\n        android:icon=\"@drawable/seleccion\"\n        android:title=\"@string/seleccion\"\n        app:showAsAction=\"always\" />\n    <item\n        android:id=\"@+id/nueva\"\n        android:icon=\"@drawable/nueva\"\n        android:title=\"@string/nueva\"\n        app:showAsAction=\"always\" />\n    <item\n        android:id=\"@+id/configuracion\"\n        android:icon=\"@drawable/configuracion\"\n        android:title=\"@string/configuracion\"\n        app:showAsAction=\"always\" >\n        <menu\n            android:layout_width=\"wrap_content\"\n            android:layout_height=\"wrap_content\">\n            <group android:checkableBehavior=\"single\">\n                <item\n                    android:id=\"@+id/bajo\"\n                    android:title=\"@string/bajo\" />\n                <item\n                    android:id=\"@+id/medio\"\n                    android:title=\"@string/medio\" />\n                <item\n                    android:id=\"@+id/alto\"\n                    android:title=\"@string/alto\" />\n            </group>\n\n        </menu>\n    </item>\n    <item\n        android:id=\"@+id/instrucciones\"\n        android:icon=\"@drawable/instrucciones\"\n        android:title=\"@string/instrucciones\"\n        app:showAsAction=\"always\" >\n\n    </item>\n\n\n</menu>",
+ "title": ""
+}

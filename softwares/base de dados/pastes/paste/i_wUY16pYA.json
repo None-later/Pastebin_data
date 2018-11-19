@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_protection",
+  "kw_password",
+  "lg_en"
+ ],
+ "key": "wUY16pYA",
+ "pasteDate": "Feb 20, 2018, 1:48:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "~ $ sudo gem install merb\nPassword:\nBuilding native extensions.  This could take a while...\nSuccessfully installed extlib-0.9.8\nSuccessfully installed thor-0.9.7\nSuccessfully installed merb-core-0.9.9\nSuccessfully installed merb-action-args-0.9.9\nSuccessfully installed merb-assets-0.9.9\nSuccessfully installed merb-auth-core-0.9.9\nSuccessfully installed merb-auth-more-0.9.9\nSuccessfully installed merb-slices-0.9.9\nSuccessfully installed merb-auth-slice-password-0.9.9\nSuccessfully installed merb-auth-0.9.9\nSuccessfully installed merb-cache-0.9.9\nSuccessfully installed merb-exceptions-0.9.9\nSuccessfully installed templater-0.3.3\nSuccessfully installed merb-gen-0.9.9\nSuccessfully installed merb-haml-0.9.9\nSuccessfully installed merb-helpers-0.9.9\nSuccessfully installed merb-mailer-0.9.9\nSuccessfully installed merb-param-protection-0.9.9\nSuccessfully installed addressable-1.0.4\nSuccessfully installed data_objects-0.9.6\nSuccessfully installed dm-core-0.9.6\nSuccessfully installed dm-migrations-0.9.6\nSuccessfully installed merb_datamapper-0.9.9\nSuccessfully installed merb-more-0.9.9\nSuccessfully installed do_sqlite3-0.9.6\nSuccessfully installed dm-timestamps-0.9.6\nSuccessfully installed dm-types-0.9.6\nSuccessfully installed dm-aggregates-0.9.6\nSuccessfully installed dm-validations-0.9.6\nSuccessfully installed randexp-0.1.4\nSuccessfully installed dm-sweatshop-0.9.6\nSuccessfully installed merb-0.9.9\n32 gems installed",
+ "title": ""
+}

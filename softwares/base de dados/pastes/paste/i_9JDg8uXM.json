@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es",
+  "kw_dos"
+ ],
+ "key": "9JDg8uXM",
+ "pasteDate": "Feb 12, 2018, 12:20:26 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "!/bin/bash \n\nread -p \"Introduce tu fecha de nacimiento (formato: aomesdia) : \" fecha\n\nDIAS=$(( ($(date --date $fecha +%s) - $(date +%s) )/(60*60*24) ))\nHORAS=$(( ($(date --date $fecha +%s) - $(date +%s) )/(60*60*24) ))\n\necho \"Dias: $DIAS\"\necho \"Horas: $HORAS\"\necho \"Minutos: $MINUTOS\"\n\t\nValue1='2016-10-13 14:19:23'\nValue2='2016-10-18 10:34:58'\nD1=$(date -d \"$Value1\" '+%s'); D2=$(date -d \"$Value2\" '+%s')\necho \"$(((D2-D1)/86400)):$(date -u -d@$((D2-D1)) +%H:%M)\"\n\t\n4:20:15\n\t\n#!/bin/bash\n\nread -p \"Introduce tu fecha de nacimiento (formato: aomesdia) : \" fecha\nhoy=$(date)\n\nsecs_hasta_fecha=$(date -d\"$fecha\" \"+%s\")  # esta fecha se da en la hora 00:00:00\nsecs_hasta_hoy=$(date -d\"$hoy\" \"+%s\")\n\n# Calcula la diferencia en segundos entre las dos fechas dadas\ndif=$((secs_hasta_hoy - secs_hasta_fecha))\n\n# Calcula la diferencia en horas, minutos y segundos\nhoras=$((dif / 3600))\nmins=$(( (dif - horas*3600) / 60))\nsegs=$((dif - horas*3600 - mins*60))\n\n# Imprime el resultado\nprintf \"la dif entre %s y hoy %s es de %d horas, %d minutos y %d segundosn\" \"$fecha\" \"$hoy\" \"$horas\" \"$mins\" \"$segs\"\n\t\n!/bin/bash   # <--- falta # al principio!\n\n# esto es correcto\nread -p \"Introduce tu fecha de nacimiento (formato: aomesdia) : \" fecha\n\t\nDIAS=$(( ($(date --date $fecha +%s) - $(date +%s) )/(60*60*24) ))\nHORAS=$(( ($(date --date $fecha +%s) - $(date +%s) )/(60*60*24) ))\n\t\necho \"Dias: $DIAS\"\necho \"Horas: $HORAS\"\necho \"Minutos: $MINUTOS\"",
+ "title": ""
+}

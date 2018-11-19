@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "j0EJsw5p",
+ "pasteDate": "Feb 21, 2018, 2:01:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ">> \"hello\" & \"goodbye\"\nNoMethodError: undefined method `&' for \"hello\":String\n        from (irb):31\n>> 1 & 2\n=> 0",
+ "title": ""
+}

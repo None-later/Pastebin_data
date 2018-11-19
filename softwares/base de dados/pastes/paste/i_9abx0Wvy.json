@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9abx0Wvy",
+ "pasteDate": "Feb 8, 2018, 8:42:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "mapping chatters = ([ ]);\nmapping renamed_chatters = ([ ]);\nint chat_counter = 0;\n\n// Rename a chatter, putting their old name in a renamed mapping.\nint renameChatter(string who, string to, int keep_source_color) {\n    string shortwho;\n    string shortto;\n\n    shortwho = lower_case(explode(who, \"@\")[0]);\n    shortto = lower_case(explode(to, \"@\")[0]);\n    if (member_array(shortwho,keys(chatters)) < 0) {\n        // If the source doesn't exist, there's nothing to do.\n        return 0;\n    }\n    // Copy the source value to the destination and then nuke the source.\n    renamed_chatters[shortwho] = shortto;\n    if(keep_source_color)\n        chatters[shortto] = chatters[shortwho];\n    map_delete( chatters, shortwho);\n    save_me();\n    return 1;\n}\n\n// Figure out what color to make this guy.\nstring getSpeakerColor(string who) {\n    string color, shortwho;\n\n    shortwho = lower_case(explode(who, \"@\")[0]);\n    if(member_array(shortwho, keys(renamed_chatters)) >= 0) {\n        shortwho = renamed_chatters[shortwho];\n    }\n    if (member_array(shortwho,keys(chatters)) >= 0) {\n        color = chatters[shortwho];\n    } else {\n        color = chat_colors[chat_counter % sizeof(chat_colors)];\n        chatters[shortwho] = color;\n        chat_counter++;\n        save_me();\n    }\n    return color;\n}",
+ "title": "more lpc fun"
+}

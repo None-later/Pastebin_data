@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "0x9pzye7",
+ "pasteDate": "Feb 20, 2018, 3:26:49 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApplication20\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            // Bekr egy szveget s megszmolja, \n            // melyik betbl hny darab van benne. \n            string szoveg = \"Hell vilg!\";\n            char[] betuk = new char[szoveg.Length];\n            int[] darab = new int[szoveg.Length];\n            int elterok = 0; // a tallt betk szma\n            foreach (char item in szoveg)\n            {\n                // sszehasonltjuk az aktulis karaktert \n                // mindegyik eddig tallt betvel\n                bool voltMarIlyen = false;\n                for (int i = 0; i < elterok; i++)\n                {\n                    if (item.Equals(betuk[i]))\n                    {\n                        darab[i]++;\n                        voltMarIlyen = true;\n                    }\n                }\n                if (!voltMarIlyen)\n                {\n                    betuk[elterok] = item;\n                    darab[elterok++] = 1;\n                }\n            }\n            for (int i = 0; i < elterok; i++)\n            {\n                Console.WriteLine(\"{0} betbl {1} darab\",betuk[i],darab[i]);\n            }\n            Console.ReadKey();\n        }\n    }\n}",
+ "title": "Bekr egy szveget s megszmolja melyik be"
+}

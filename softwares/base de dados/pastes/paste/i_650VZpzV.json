@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "650VZpzV",
+ "pasteDate": "Feb 18, 2018, 6:17:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(*\nRuns optipng command line tool on any selected image files.\n*)\nproperty optipng : \"/opt/local/bin/optipng\"\n\ntell application \"Finder\"\n\tset _selection to (selection)\n\tset _images to {}\n\trepeat with _item in _selection\n\t\tif kind of _item ends with \"image\" then set _images to _images & {_item}\n\tend repeat\n\tif (count of _images) is 0 then\n\t\tdisplay alert \"No image selected\" message \"You must select at least one image to optimize.\"\n\t\treturn\n\tend if\n\trepeat with _item in _images\n\t\tset _name to displayed name of _item\n\t\tset _path to POSIX path of (_item as alias)\n\t\tset _command to optipng & \" \\\"\" & _path & \"\\\"\"\n\t\tdo shell script _command\n\t\tset _lines to paragraphs of result\n\t\tset _status to item ((count of _lines) - 1) of _lines\n\t\tdisplay alert _name message _status\n\tend repeat\nend tell",
+ "title": ""
+}

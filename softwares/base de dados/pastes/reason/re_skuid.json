@@ -1,0 +1,7 @@
+{
+  "corrects": 44,
+  "incorrects": 1,
+  "reason": "re_skuid",
+  "status": "REGECT",
+  "type": "REGEX"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FpRpBQXa",
+ "pasteDate": "Feb 11, 2018, 2:53:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<resources>\n    ...\n    <declare-styleable name=\"ChipView\">\n        <attr name=\"imageSrc\" format=\"integer\" />\n        <attr name=\"text\" format=\"string\" />\n        <attr name=\"imageURL\" format=\"string\" />\n    </declare-styleable>\n    ...\n</resources>",
+ "title": ""
+}

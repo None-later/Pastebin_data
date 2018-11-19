@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "k7WUvX9k",
+ "pasteDate": "Feb 17, 2018, 8:02:12 PM",
+ "relevancy": 2.0,
+ "relevant": true,
+ "text": "{\n  \"patients\": [\n    {\n      \"_id\": 1,\n      \"name\": \"Vasiliy\",\n      \"surname\": \"Pupkin\",\n      \"patronymic\": \"Vasilievich\",\n      \"age\": 65,\n      \"img\": \"https://cdn.shopify.com/s/files/1/1061/1924/products/White_Grandpa_Emoji_large.png?v=1480481048\",\n      \"temperature\": \"36.6\",\n      \"spo2\": \"97%\",\n      \"pulse\": [65, 66, 67, 68, 69, 66, 69, 70, 71, 72], //   10 \n      \"phone\": \"+380993149008\",\n      \"address\": \"Kiev, Harkivske av. 201/203, 2 floor\",\n      \"suspicious\": false\n    }\n  ]\n}",
+ "title": ""
+}

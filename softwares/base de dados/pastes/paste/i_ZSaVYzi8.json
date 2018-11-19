@@ -1,0 +1,13 @@
+{
+ "espireDate": "2W",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZSaVYzi8",
+ "pasteDate": "Feb 11, 2018, 2:13:16 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text.RegularExpressions;\n\nnamespace Rextester\n{\n    public class Program\n    {\n        public static void Main(string[] args)\n        {\n                string[] tokens = { \"Bla\", \"Hello\", \"Foo\", \", \", \"Baz\", \"World\", \"Wet\", \"!\" };\n                Console.WriteLine(tokens[1]+\"\"+tokens[5]);\n        }\n    }\n}",
+ "title": ""
+}

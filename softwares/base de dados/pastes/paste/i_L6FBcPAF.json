@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "L6FBcPAF",
+ "pasteDate": "Feb 20, 2018, 7:26:56 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// GG_4.cpp:      .\n//\n#include <mpi.h>\n#include <stdio.h>\n#include <Windows.h>\n//using namespace std;\nvoid master()\n{\n\tprintf(\"2\");\n\tint\tnproc, rank;\n\tchar* task;\n\tint result = 0;\n\tMPI_Status status;\n\tMPI_Comm_size(MPI_COMM_WORLD, &nproc);// \n\tprintf(\"we are many: %d\", nproc);\n\ttask = \"Hello World\\n\";\n\tfor (rank = 1; rank < nproc; ++rank)\n\t\tMPI_Send(&task, 1, MPI_CHAR, rank, 1, MPI_COMM_WORLD);\n\tfor (rank = 1; rank < nproc; ++rank)\n\tMPI_Recv(&result, 1, MPI_INT, MPI_ANY_SOURCE, MPI_ANY_TAG, MPI_COMM_WORLD, &status);\n\tprintf(\"result=%d\\n\",result);\n\tfor (rank = 1; rank < nproc; ++rank)\n\t\tMPI_Send(0, 0, MPI_CHAR, rank, 0, MPI_COMM_WORLD);\n\tsystem(\"pause\");\n}\n\nvoid slave()\n{\n\tint result = 6;\n\tchar* task;\n\tint myrank;\n\tMPI_Status status;\n\tfor (;;)\n\t{\n\t\tMPI_Comm_rank(MPI_COMM_WORLD, &myrank);\n\t\tMPI_Recv(&task, 1, MPI_CHAR, 0, 1, MPI_COMM_WORLD, &status);\n\t\tprintf(\"3\");\n\t\tif (status.MPI_TAG == 0) return;\n\t\tMPI_Send(&result, 1, MPI_INT, 0, 0, MPI_COMM_WORLD);\n\t}\n}\n\nvoid main()\n{\n\tint myrank;\n\tMPI_Init(NULL, NULL);\n\tMPI_Comm_rank(MPI_COMM_WORLD, &myrank);//  \n\tprintf(\"im %d\\n\", myrank);\n\tif (myrank == 0) master();\n\telse slave();\n\tMPI_Finalize();\n}",
+ "title": ""
+}

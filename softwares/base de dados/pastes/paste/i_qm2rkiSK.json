@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "qm2rkiSK",
+ "pasteDate": "Feb 26, 2018, 12:39:55 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "--> POST https://www.superbet.ro/rest/SBWeb.Models.Offer/submitJSONTicket http/1.1\nContent-Type: application/json; charset=UTF-8\nContent-Length: 596\nCookie: sd3fghd33w=a9c87037fd5848eba3113447a0313856\nHost: www.superbet.ro\nConnection: Keep-Alive\nAccept-Encoding: gzip\nUser-Agent: okhttp/3.8.1\n{\"autoAcceptChanges\":1,\"betType\":\"prematch\",\"combs\":[],\"items\":[{\"betGroupId\":3,\"betRadarId\":12089956,\"fix\":false,\"live\":false,\"matchDate\":\"2018-02-26 19:45:00\",\"matchDateUtc\":\"2018-02-26 19:45:00\",\"matchId\":1403457,\"matchName\":\"Cagliari Napoli\",\"oddFullName\":\"victoria echipei oaspete\",\"oddName\":\"2\",\"oddTypeId\":4,\"rules\":[{\"modifier\":\"\",\"name\":\"prohibition_of_same_match\",\"param1\":0.0,\"param2\":0.0},{\"modifier\":\"SE=1,1,6,32,1.9,999999,0,0,5,1.10\",\"name\":\"special_count_restriction\",\"param1\":0.0,\"param2\":0.0}],\"selected\":true,\"type\":\"sport\",\"value\":1.33}],\"ticketOnline\":\"online\",\"total\":2.0}\n--> END POST (596-byte body)",
+ "title": ""
+}

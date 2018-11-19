@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4Af7t4GJ",
+ "pasteDate": "Feb 10, 2018, 7:28:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ChristmasTree\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int n = int.Parse(Console.ReadLine());\n\n            for (int row = 0; row <=n; row++)\n            {\n                for (int i = 0; i <n- row; i++)\n                {\n                    Console.Write(\" \");\n                }\n                for (int i = 0; i < row; i++)\n                {\n                    Console.Write(\"*\");\n                }\n                Console.Write(\" | \");\n                for (int i = 0; i < row; i++)\n                {\n                    Console.Write(\"*\");\n                }\n                for (int i = 0; i < n-row; i++)\n                {\n                    Console.Write(\" \");\n                }\n                Console.WriteLine();\n            }\n            \n        }\n    }\n}",
+ "title": ""
+}

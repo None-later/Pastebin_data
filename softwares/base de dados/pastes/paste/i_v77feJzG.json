@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_cs"
+ ],
+ "key": "v77feJzG",
+ "pasteDate": "Feb 28, 2018, 12:27:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "1. Sthnout ArmaIII Tools\n2. Najt na serveru seobor: Server.cfg a sthnout ho k sob do PC\n3. Otevt A3 Tools kliknout na CfgConvert (4t na levo)\n4. Do programu CfgConvert do 1. dku zadat cestu k souboru server.cfg, do 2. dku kam se m uloit (kdy u v tom bude poli mi do pastebinu ten .txt... chci se podvat jak to vypad... hodto pak na trello)\n5. Nov uloen soubot v .txt otevt najt hodnotu pkaz verifySignatures= , pepsat (z 2??) na 0, uloit\n6. Pes CfgConvert - zbinarizovat .txt dokument zpt na .cfg\n7. Nahrt na server\n8. Doufat v zzrak",
+ "title": ""
+}

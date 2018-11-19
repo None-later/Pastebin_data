@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2ViKVEjx",
+ "pasteDate": "Feb 8, 2018, 7:49:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "RaycastHit hit;\nif(Physics.Raycast(transform.position, transform.fowards, out hit)){\nGameObject item = Instantiate(prefabOfObject, hit.point);\nbounds b = item.getComponent<typeofcolliderobjecthas>.bounds;\nitem.transform.position -= bounds.extents*transform.fowards;\n}",
+ "title": ""
+}

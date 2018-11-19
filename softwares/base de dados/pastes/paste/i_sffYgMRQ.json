@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_python_error"
+ ],
+ "key": "sffYgMRQ",
+ "pasteDate": "Feb 20, 2018, 4:51:06 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\python.exe C:/Outsource/project_34_Adv/starter.py\n[20/Feb/2018:22:49:43] ENGINE Listening for SIGTERM.\n[20/Feb/2018:22:49:43] ENGINE Bus STARTING\n[20/Feb/2018:22:49:43] ENGINE Set handler for console events.\n[20/Feb/2018:22:49:43] ENGINE Started monitor thread 'Autoreloader'.\n[20/Feb/2018:22:49:43] ENGINE Started monitor thread '_TimeoutMonitor'.\n[20/Feb/2018:22:49:43] ENGINE Serving on https://0.0.0.0:88\n[20/Feb/2018:22:49:43] ENGINE Bus STARTED\n2018-02-20 22:49:46,660 (util.py:64 WorkerThread1) ERROR - TeleBot: \"ApiException occurred, args=('A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\\n[b\\'{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can\\\\\\'t parse reply keyboard markup JSON object\"}\\']',)\nTraceback (most recent call last):\n  File \"C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\telebot\\util.py\", line 58, in run\n    task(*args, **kwargs)\n  File \"C:/Outsource/project_34_Adv/starter.py\", line 124, in handle_information\n    '   ...', reply_markup=inf_markup)\n  File \"C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\telebot\\__init__.py\", line 439, in send_message\n    reply_markup, parse_mode, disable_notification))\n  File \"C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\telebot\\apihelper.py\", line 135, in send_message\n    return _make_request(token, method_url, params=payload, method='post')\n  File \"C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\telebot\\apihelper.py\", line 56, in _make_request\n    return _check_result(method_name, result)['result']\n  File \"C:\\Users\\\\AppData\\Local\\Programs\\Python\\Python36\\lib\\site-packages\\telebot\\apihelper.py\", line 75, in _check_result\n    raise ApiException(msg, method_name, result)\ntelebot.apihelper.ApiException: A request to the Telegram API was unsuccessful. The server returned HTTP 400 Bad Request. Response body:\n[b'{\"ok\":false,\"error_code\":400,\"description\":\"Bad Request: can\\'t parse reply keyboard markup JSON object\"}']",
+ "title": ""
+}

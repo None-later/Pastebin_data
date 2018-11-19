@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Jcf9mbpr",
+ "pasteDate": "Feb 26, 2018, 1:36:58 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp6\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            var n = Int32.Parse(Console.ReadLine());\n\n            for (int i = 0; i < n; i++)\n            {\n\n               \n\n                if (i!=0 && i!=(n-1))\n                {\n                    Console.WriteLine();\n                    Console.Write(\"*\");\n                    \n                    for (int b = 0; b <= n+ (n - 3); b++)\n                    {\n                        Console.Write(\"/\");\n                        continue;\n                    }\n                    \n                    Console.Write(\"*\");\n                    \n                    if (i == n / 2)\n                    {\n                        for (int g = n * 2; g < (n * 2 + n); g++)\n                        {\n                            Console.Write(\"|\");\n                        }\n                    }\n                    else for (int g = n * 2; g < (n * 2 + n); g++)\n                        {\n                            Console.Write(\" \");\n                        }\n                    \n                    Console.Write(\"*\");\n                    \n                    \n                    for (int b = 0; b <= n+(n-3) ; b++)\n                    {\n                        Console.Write(\"/\");\n                        continue;\n                    }\n\n                    Console.Write(\"*\");\n                    \n\n                    continue;\n                }\n                if(i!=0) Console.WriteLine( );\n                for (int j = 0; j < n * 5; j++)\n                {\n                    if (j == n * 2 )\n                    {\n                        for (int g = n * 2; g < (n * 2 + n ); g++)\n                        {\n\n                            Console.Write(\" \");\n                        }\n                        \n                        \n                    }\n                    if (j == n * 2)\n                    {\n                        j += n;\n                        \n                    }\n                    \n                    Console.Write(\"*\");\n                    \n                }\n                \n            }\n            Console.WriteLine();\n        }\n    }\n}",
+ "title": ""
+}

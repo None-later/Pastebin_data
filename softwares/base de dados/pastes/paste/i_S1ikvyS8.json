@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_css",
+  "lg_en"
+ ],
+ "key": "S1ikvyS8",
+ "pasteDate": "Feb 18, 2018, 7:19:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@Component({\n  selector: 'course',\n  template: `\n   <div [style.backgroundColor]='red'>\n\n   <button (click)=\"onClick($event)\" class=\"btn btn-primary\" [class.active]=\"isActive\" [style.backgroundColor]='red'>Save</button>\n   </div>\n    `,\n    styleUrls: ['./course.component.css']\n  })\n  export class CourseComponent {...}\n\t\n[style.background-color]=\"'red'\"\n\t\n@Component({\n  selector: 'course',\n  template: `\n   <div [style.backgroundColor]='red'>\n\n   <button (click)=\"onClick($event)\" class=\"btn btn-primary\" [class.active]=\"isActive\" [style.background-color]='red'>Save</button>\n   </div>\n    `,\n    styleUrls: ['./course.component.css']\n  })\n  export class CourseComponent {...}",
+ "title": ""
+}

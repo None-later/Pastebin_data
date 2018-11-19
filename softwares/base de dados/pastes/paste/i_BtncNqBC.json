@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "BtncNqBC",
+ "pasteDate": "Feb 11, 2018, 9:51:01 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "aa = data.table(V1=1:10,V2=c(1,2,2,3,3,3,4,4,4,4))\nbb = data.table(V1=3:6,X=letters[1:4])\nsetkey(aa,V1)\nsetkey(bb,V1)\ntt = bb[aa]\n\n    V1  X V2\n 1:  1 NA  1\n 2:  2 NA  2\n 3:  3  a  2\n 4:  4  b  3\n 5:  5  c  3\n 6:  6  d  3\n 7:  7 NA  4\n 8:  8 NA  4\n 9:  9 NA  4\n10: 10 NA  4\n\t\ntt[is.na(tt)] = 0\n\t\nfor (i in seq_along(tt)) set(tt, i=which(is.na(tt[[i]])), j=i, value=0)\n\t\n# by reference - idiomatic way\nset.seed(45)\ntt <- data.table(matrix(sample(c(NA, rnorm(10)), 1e7*3, TRUE), ncol=3))\ntracemem(tt)\n# modifies value by reference - no copy\nsystem.time({\nfor (i in seq_along(tt)) \n    set(tt, i=which(is.na(tt[[i]])), j=i, value=0)\n})\n#   user  system elapsed \n#  0.284   0.083   0.386 \n\n# by copy - NOT the idiomatic way\nset.seed(45)\ntt <- data.table(matrix(sample(c(NA, rnorm(10)), 1e7*3, TRUE), ncol=3))\ntracemem(tt)\n# makes copy\nsystem.time({tt[is.na(tt)] <- 0})\n# a bunch of \"tracemem\" output showing the copies being made\n#   user  system elapsed \n#  4.110   0.976   5.187\n\t\ntt[is.na(tt)] = 0\n\t\ntt[is.na(tt)]\n\t\ntt[,lapply(.SD,function(kkk) ifelse(is.na(kkk),-666,kkk)),.SDcols=names(tt)]\n\t\nV1    X V2\n 1:  1 -666  1\n 2:  2 -666  2\n 3:  3    a  2\n 4:  4    b  3\n 5:  5    c  3\n 6:  6    d  3\n 7:  7 -666  4\n 8:  8 -666  4\n 9:  9 -666  4\n10: 10 -666  4",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jPxD1eY4",
+ "pasteDate": "Feb 18, 2018, 5:20:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "l = []\n\ndef makePara():\n    with open(\"f:\\f2.txt\", \"r\") as f1:\n        for line in f1:\n            l.append(line.split(\"n\"))\n\nmakePara()\nprint l\n\t\n[['I    1,1', ''], ['love    1,2    3,3', ''], ['python    1,3    2,1', ''], \n['is    2,2', ''], ['very    2,3', ''], ['good    2,4    3,4']]",
+ "title": ""
+}

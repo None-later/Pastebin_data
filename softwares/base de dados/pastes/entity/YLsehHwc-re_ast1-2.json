@@ -1,0 +1,5 @@
+{
+  "value": "function â€˜mfxStatus MfxHwH265EncodeBRC::ExtBRC::Update(mfxBRCFrameParam*, mfxBRCFrameCtrl*, mfxBRCFrameStatus*)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

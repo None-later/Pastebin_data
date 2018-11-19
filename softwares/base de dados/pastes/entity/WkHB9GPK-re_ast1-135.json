@@ -1,0 +1,5 @@
+{
+  "value": "function\"?Symbol.iterator:\"@@iterator\"]\u003d\u003d\u003d\"function\"\u0026\u0026typeofl.prototype.values\u003d\u003d\u003d\"function\"\u0026\u0026typeofl.prototype.keys\u003d\u003d\u003d\"function\"\u0026\u0026typeofl.prototype.entries\u003d\u003d\u003d\"function\"}functioni(l,m)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

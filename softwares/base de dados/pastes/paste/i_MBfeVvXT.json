@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "MBfeVvXT",
+ "pasteDate": "Feb 20, 2018, 3:23:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "^.*=(?:2017-(?:11-(?:0[5-9]|[12][0-9]|3[01])|12-d{2})|2018-d{2}-d{2})",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "matlab",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "wjzAqxFU",
+ "pasteDate": "Feb 12, 2018, 3:45:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "xy = [3,4;3,3;2,3;1,3;1,2;5,4;6,4;6,3;6,5]\n%make 2 example clusters \n%clusters are just contiguous pixels\npoint = xy(randi(xy(9)),:);\n%pick random seed point\npoints=point;\n%just setting up variables here\nd=1;\nsizecheck=1\ndir = [0,1;0,-1;1,0;-1,0]\n%up,down,right,left\nwhile sizecheck~=0\nsinit=size(points,1)\n%sets size of cluster\npointsens = points(size(points,1),:) + dir;\n%pointsens is the coordinates of the seed points direct neighbors\ncheckup = (xy(:,1)==pointsens(1,1)&xy(:,2)==pointsens(1,2));\ncheckdown = (xy(:,1)==pointsens(2,1)&xy(:,2)==pointsens(2,2));\ncheckright = (xy(:,1)==pointsens(3,1)&xy(:,2)==pointsens(3,2));\ncheckleft = (xy(:,1)==pointsens(4,1)&xy(:,2)==pointsens(4,2));\n%checkin to see if there are up,down,right, or left neighbors\nup=sum(checkup==1);\ndown=sum(checkdown==1);\nright=sum(checkright==1);\nleft=sum(checkleft==1);\nsump=[up,down,right,left];\n%sump contains boolean values for if there is a neighor in each direction\ndir2=find(sump==1);\npoints =[points;pointsens(dir2,:);]\npoints = unique(points,'rows')\n%adding points in cluster identified and displaying them\nsizecheck=sinit-size(points,1);\n%honestly no clue what im doing here but i think im checking to make sure\n%that cluster has no more neighbors here\nend",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_operations",
+  "lg_en"
+ ],
+ "key": "u8b0Usmf",
+ "pasteDate": "Feb 9, 2018, 3:08:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "usepackage{float}\nusepackage{hyperref}\nusepackage{amsmath}\nusepackage{xcolor,colortbl}\ndefinecolor{Gray}{gray}{.9}\n\nbegin{document}\n\nbegin{table}[H]\n    caption{Truth table for mathematical operations $N^2$ and $5N$}vspace{.1cm}\n    label{tab:truth}\n    centering\n\n    begin{tabular}{|c|c|c||c|c|c|c|}\n        hline\n        $C$ & $N1$ & $N0$ & $W$ & $X$ & $Y$ & $Z$ \\\n        hline\n        rowcolor{Gray}0 & 0 & 0 & 0 & 0 & 0 & 0 \\\n        hline\n        0 & 0 & 1 & 0 & 0 & 0 & 1 \\\n        hline\n        rowcolor{Gray}0 & 1 & 0 & 0 & 1 & 0 & 0 \\\n        hline\n        0 & 1 & 1 & 1 & 0 & 0 & 1 \\\n        hline\n        rowcolor{Gray}1 & 0 & 0 & 0 & 0 & 0 & 0 \\\n        hline\n        1 & 0 & 1 & 0 & 1 & 0 & 1 \\\n        hline\n        rowcolor{Gray}1 & 1 & 0 & 1 & 0 & 1 & 0 \\\n        hline\n        1 & 1 & 1 & 1 & 1 & 1 & 1 \\\n        hline\n    end{tabular}\nend{table}\n\nbegin{figure}[H]begin{equation}\n    centering\n    label{eq:w}\n    begin{split}\n        W  & = (Ccdot N_1cdot N_0) + (C cdot N_1 cdot overline{N_0}) + (overline{C}cdot N_1 cdot N_0) \\\n        textrm{(Distributivity)} & = C(N_1cdot N_0 + N_1cdotoverline{N_0}) + (overline{C}cdot N_1cdot N_0) \\\n        textrm{(Combining)} & = C(N_1) + overline{C}cdot N_1cdot N_0 \\\n        textrm{(Distributivity)} & = N_1(C + overline{C}cdot N_0) \\\n        textrm{(Redundant Literal Rule)} & = N_1(C+N_0) \\\n        textrm{(Distributivity)} & = Ccdot N_1 + N_1cdot N_0 \\\n    end{split}\nend{equation}\ncaption{Simplification of $W$, with steps shown}\nend{figure}\n\nend{document}",
+ "title": ""
+}

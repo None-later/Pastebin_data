@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_us_zip_code",
+  "re_sql",
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "EyG9Pzu5",
+ "pasteDate": "Feb 17, 2018, 2:35:37 PM",
+ "relevancy": 2.0,
+ "relevant": true,
+ "text": "[SQL]\nHost=HOME-PC\\SQLEXPRESS\nDatabase=AutoEvent\nShard=SRO_VT_SHARD\nAccount=SRO_VT_ACCOUNT\nShardLog=SRO_VT_SHARDLOG\nHostUser=sa\nHostPw=3301114\n\n[Server]\nIP=5.135.194.14\nPort=15779\nLocale=22\nVersion=188\n\n[Login]\nAccountID=gms\nAccountPW=3301114\nCaptchaCode=\nCharName=[EventBot]\nXtrap=OFF\nRelog=OFF\n\n[System]\nTimerDelay=500\nGlobalSlot=13\nSendNotice=ON\nSendMessage=ON\nSendPrivate=ON\nSendPublic=ON\nSendGlobal=ON\nSaveChat=ON\nSaveUnique=ON\nMoveToUser=ON\nRecallUser=ON\nRecallGuild=ON\nToTown=ON\nDcUser=ON\nWarp=ON\nLoadMonster=ON\nMakeItem=ON\nInvincible=ON\nInvisible=ON\nGoTown=ON\nGMSkill=ON\nPvpCape=ON\nStallSystem=ON\nSchedule=ON\n\n[Style]\n// StyleIndex range 0 ~ 8\nIndex=8\n// Don't change these numbers\n// For change style colors select colors from the program then press save settings.\nCanvasColor_R=238\nCanvasColor_G=236\nCanvasColor_B=225\nBaseColor_R=192\nBaseColor_G=80\nBaseColor_B=77",
+ "title": ""
+}

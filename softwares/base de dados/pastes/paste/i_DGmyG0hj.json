@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "kw_bot",
+  "kw_error",
+  "lg_fr"
+ ],
+ "key": "DGmyG0hj",
+ "pasteDate": "Feb 8, 2018, 12:54:14 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "let Discord = require(\"discord.js\");\nlet client = new Discord.Client();\n\nlet fs = require(\"fs\");\n\nlet config = require(\"./config.json\");\n\nlet enums = require(\"./Enums.js\");\n\nclient.on(\"ready\", () => {\n  console.log(\"I am ready!\");\n});\n\nlet state = enums.state.idle;\n\nexports.state = state;\n\n//exports.commandBuffer;\n\nclient.on(\"message\", (message) => {\n  if(message.author.bot || message.content.indexOf(config.prefix) != 0) return;\n\n\n    let args = message.content.slice(config.prefix.length).trim().split(/ +/g);\n\n    let command = args.shift().toLowerCase();\n\n\n    try{\n      switch(state){\n        case enums.state.idle :\n            commandFile = require(\"./Commands/\"+ command + \".js\");\n            commandFile.run(client, message, args);\n            break;\n          \n          case enums.state.waitingUsersInput : \n            commandFile.actionsBuffer.push({\"user\" : message.author, \"action\": command});\n            if(commandFile.actionsBuffer != 'undefined' && commandFile.actionsBuffer.length >= commandFile.actionsBufferMax){ \n              commandFile.resolve();\n            }\n        }\n      \n      \n\n    }catch (err){\n      console.error(err);\n    }\n\n  });\nclient.login(config.token);",
+ "title": ""
+}

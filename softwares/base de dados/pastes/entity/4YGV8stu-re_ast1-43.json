@@ -1,0 +1,5 @@
+{
+  "value": "function Teleport(v,s,w,sp)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

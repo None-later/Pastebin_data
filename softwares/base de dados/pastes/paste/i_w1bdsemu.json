@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "w1bdsemu",
+ "pasteDate": "Feb 18, 2018, 3:57:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include <Servo.h>\n\nServo servoY;  // create servo object to control a servo\nServo servoX;\n\nint ValX;\nint ValY;\n\nbyte Processing;\n\nint val;    // variable to read the value from the analog pin\n\nvoid setup() {\n  ValY = 0;\n  ValX = 0;\n  Serial.begin(9600);\n  servoX.attach(13);  // attaches the servo on pin 9 to the servo object\n  servoY.attach(12); \n}\n\nvoid loop() {\n\n  if (Serial.available() > 0) {\n    Processing = Serial.read();\n  }\n\n  if (Processing == 'a') {\n    ValY--;\n    servoY.write(ValY);\n  }\n  if (Processing == 'b') {\n    ValY++;\n    servoY.write(ValY);\n  }\n \n  if (Processing == 'c') {\n    ValX--;\n    servoX.write(ValX);\n  }\n  if (Processing == 'd') {\n    ValX++;\n    servoX.write(ValX);\n  }\n  if (Processing == 'e') {\n\n  }\n\nif (ValX >= 210){\n  ValX = 210;\n}\nif (ValX <= 0){\n  ValX = 0;\n  \n}\nif (ValY >= 210){\n  ValY = 210;\n}\nif (ValY <= 0){\n  ValY = 0;\n}\n\n\n}",
+ "title": ""
+}

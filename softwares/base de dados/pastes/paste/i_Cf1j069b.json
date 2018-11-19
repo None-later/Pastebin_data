@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Cf1j069b",
+ "pasteDate": "Feb 18, 2018, 10:51:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<query_request>\n\t<request_id>\n\t\t...\n\t</request_id>\n\t<status>COMPLETED</status>\n</query_request>",
+ "title": ""
+}

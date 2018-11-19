@@ -1,0 +1,14 @@
+{
+ "espireDate": "1H",
+ "format": "java",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "LKH4Sv89",
+ "pasteDate": "Feb 18, 2018, 6:04:37 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class V0_1001__Colours extends BaseSpringJdbcMigration{\n    \n    @Override\n    public void migrate(JdbcTemplate jdbcTemplate) throws Exception {\n        ObjectMapper objectMapper = new ObjectMapper();\n\n        try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(\"colors.json\")) {\n            List<ColourDTO> colours = objectMapper.readValue(inputStream, new TypeReference<List<ColourDTO>>() {\n            });\n            for (ColourDTO colour : colours) {\n                jdbcTemplate.update(\"INSERT INTO colours(id, name, colour, created_at, version) VALUES (?, ?, ?, ?, ?)\",\n                        UUID.randomUUID(), colour.name, colour.colour, Timestamp.from(Instant.now()), 0);\n            }\n        }\n    }\n}",
+ "title": ""
+}

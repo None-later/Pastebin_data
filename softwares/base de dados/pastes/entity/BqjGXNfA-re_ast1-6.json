@@ -1,0 +1,5 @@
+{
+  "value": "function charCompare(szname,limit)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

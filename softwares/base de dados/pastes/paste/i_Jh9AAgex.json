@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Jh9AAgex",
+ "pasteDate": "Feb 18, 2018, 11:38:46 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " public boolean percolation(Collection<Position3D> startPositions, Collection<Position3D> finalPositions,\n                               boolean[][][] fabric){\n        Position3D[] begin = startPositions.toArray(new int[startPositions.size()]);\n        Position3D[] end = finalPositions.toArray(new int[finalPositions.size()]);\n        \n    }\n    void go(Position3D[] a, Position3D[] b,  boolean[][][] array) {\n        if(a[0] < 0 || a[0] > array.length )\n            return;\n        if(a[1] < 0 || a[1] > array[0].length)\n            return;\n        if(a[2] < 0 || a[2] > array[0][0].length)\n            return;\n        if(array[a[0]][a[1]][a[2]] == false)\n            return;\n        if((a[0]==b[0]) || (a[1]==b[1]) || (a[2]==b[2]))\n            return true;\n        else\n            \n        go(x+1,y,z);\n        go(x-1,y,z);\n        go(x,y+1,z);\n        go(x,y-1,z);\n        go(x,y,z+1);\n        go(x,y,z-1);\n\n        \n    }",
+ "title": ""
+}

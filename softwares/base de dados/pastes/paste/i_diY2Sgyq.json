@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "re_skuid",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "diY2Sgyq",
+ "pasteDate": "Feb 28, 2018, 10:07:03 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "applyButtonsLogic: function(component) {\n    \n  var buttonsVisibility = component.get('v.buttonsLogic');\n  \n  var isEditModeEnabled = component.get('v.isEditModeEnabled');\n  var isOnBehalf = component.get('v.isOnBehalf');\n  var isMyClients = component.get('v.isMyClients');\n  var isEditMode = component.get('v.isEditMode');\n  \n  var employee = component.get('v.employee');\n  \n  var absence = component.get('v.absence');\n  var absenceDTOCopy = component.get('v.absenceDTOCopy');\n  \n  var validation = this.getValidation(component, absence.SAPId);\n  \n  if (validation && validation.isAdvancedPayment && isOnBehalf === false) {\n    buttonsVisibility.seniorityDays.isVisible = true;\n  } else {\n    buttonsVisibility.seniorityDays.isVisible = false;\n  }\n  \n  if (employee.PP_Country__c === 'BE' && isEditMode === false) {\n    buttonsVisibility.specialRequests.isVisible = true;\n  } else {\n    buttonsVisibility.specialRequests.isVisible = false;\n  }\n  \n  if (absenceDTOCopy && absenceDTOCopy.pendingAttachment === true || isOnBehalf === true && isMyClients === false) {\n    buttonsVisibility.addAttachments.isVisible = true;\n  } else {\n    buttonsVisibility.addAttachments.isVisible = false;\n  }\n  \n \n}",
+ "title": ""
+}

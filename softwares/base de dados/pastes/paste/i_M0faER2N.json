@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "M0faER2N",
+ "pasteDate": "Feb 28, 2018, 5:15:23 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Mini rant about SVG bloat, probably for a blog post\nI love SVG.\nI love Wikipedia.\nI love Inkscape*.\n\nBut why do these three always work soo hard to fill the Internet with *large* files when such smaller ones could be stored and sent?\nWhy cant people learn to export as a *plain SVG*\n\njohn@ezri64 Desktop| ll Free*\n-rw-rw-r--  1 john john 4542 2009-01-07 01:08 Free-speech-flag.svg\n-rw-rw-r--  1 john john 1317 2009-01-07 00:42 Free-speech-flag.svg.gz\nIt wont break the Internet tubes to your house, or cost you anything more than 0.000001p on your roaming charges, but its still big, and its only for a 5 colour flag!\n\njohn@ezri64 Desktop| xmllint Free-speech-flag.svg > Free-speech-flag-linted.svg\njohn@ezri64 Desktop| ll Free-speech-flag-linted.svg\n-rw-rw-r--  1 john john 3940 2009-01-07 01:12 Free-speech-flag-linted.svg\nLinting can only do soo much.\n\nSome of the work requires looking through the SVG spec for initial values, and stripping those that dont need to be set.\nThen you can prune extra textspans Inkscape has inserted.\nAnd change style=\"\"s to attributes (each style=\"fill:#444444\" loses you 6 bytes for no reason)\nStrip all ids, unless they reference defs or use tags.\nCull that sodipodi:namedview block.\n\n and youre just about done:\njohn@ezri64 Desktop| ll Free-speech-flag-optimised.svg*\n-rw-rw-r--  1 john john 1579 2009-01-07 01:07 Free-speech-flag-optimised.svg\n-rw-rw-r--  1 john john  691 2009-01-07 01:05 Free-speech-flag-optimised.svg.gz\nThats 2963 (3K) saved on the uncompressed file, 626 bytes on the compressed version. \nNow explain to me why people forget to select plain SVG when exporting :/\n\n\n*(I love FOSS)",
+ "title": ""
+}

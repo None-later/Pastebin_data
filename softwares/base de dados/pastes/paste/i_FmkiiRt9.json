@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "kw_scanner",
+  "lg_de"
+ ],
+ "key": "FmkiiRt9",
+ "pasteDate": "Feb 28, 2018, 5:00:05 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "public class AufgabeSwitch{\n \npublic static void main(String[] args){\n \njava.util.Scanner scanner = new java.util.Scanner(System.in); \nSystem.out.println(\"Bitte geben Sie die 1. Zahl ein\"); \nint zahl1 = scanner.nextInt(); \n\n\nSystem.out.println(\"Bitte geben Sie die 2. Zahl ein\"); \nint zahl2 = scanner.nextInt();\n\n\n\nSystem.out.println(\"Bitte geben Sie ein Rechenzeichen ein\"); \nChar rechenzeichen = (scanner.next()).charAt(0);\n \nswitch(rechenzeichen){\n\n\ncase ('+'): \nSystem.out.println(zahl1+zahl2);\n\nbreak;\n\ncase ('-'): \nSystem.out.println(zahl1-zahl2);\n\nbreak;\n\ncase ('*'): \nSystem.out.println(zahl1*zahl2);\n\nbreak;\n\ncase ('/'):\n\nSystem.out.println(zahl1/zahl2);\n\nbreak;\n\ndefault:\n\nSystem.out.println(\"Fehler\");",
+ "title": ""
+}

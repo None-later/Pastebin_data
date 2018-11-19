@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "kotlin",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cnd7Ae4Z",
+ "pasteDate": "Feb 8, 2018, 3:26:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\t\tval topPlaneVerticesShift = 0 * pointsPerPlane\n        val topPlane = vertexBufferSlice.slice(topPlaneVerticesShift, pointsPerPlane)\n        makeSquare(topPlane, indexBuffer, topPlaneVerticesShift)\n        topPlane.multiplyAll(tmpMatrix.setIdentity()\n                .translate(dz = sideSize))\n        topPlane.perspectiveDivideAll()\n\n        val bottomPlaneVerticesShift = 1 * pointsPerPlane\n        val bottomPlane = vertexBufferSlice.slice(bottomPlaneVerticesShift, pointsPerPlane)\n        makeSquare(bottomPlane, indexBuffer, pointsPerPlane * 1)\n        bottomPlane.multiplyAll(tmpMatrix.setIdentity()\n                .translate(dy = sideSize)\n                .rotate(AXIS_X, 180.0f))\n        bottomPlane.perspectiveDivideAll()\n\n        val leftPlaneVerticesShift = 2 * pointsPerPlane\n        val leftPlane = vertexBufferSlice.slice(leftPlaneVerticesShift, pointsPerPlane)\n        makeSquare(leftPlane, indexBuffer, pointsPerPlane * 2)\n        leftPlane.multiplyAll(tmpMatrix.setIdentity()\n                .rotate(AXIS_X, 90.0f))\n        leftPlane.perspectiveDivideAll()\n\n        val rightPlaneVerticesShift = 3 * pointsPerPlane\n        val rightPlane = vertexBufferSlice.slice(rightPlaneVerticesShift, pointsPerPlane)\n        makeSquare(rightPlane, indexBuffer, rightPlaneVerticesShift)\n        rightPlane.multiplyAll(tmpMatrix.setIdentity()\n                .translate(dy = sideSize, dz = sideSize)\n                .rotate(AXIS_X, 270.0f))\n        rightPlane.perspectiveDivideAll()\n\n        vertexBufferSlice.multiplyAll(tmpMatrix.setIdentity()\n                .translate(dx = -sideSize/2.0f, dy = -sideSize/2.0f, dz = -sideSize/2.0f))\n        vertexBufferSlice.perspectiveDivideAll()",
+ "title": ""
+}

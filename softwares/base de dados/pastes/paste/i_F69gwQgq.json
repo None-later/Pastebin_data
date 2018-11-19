@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "F69gwQgq",
+ "pasteDate": "Feb 11, 2018, 8:40:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "documentclass{article}\n\nusepackage{amsmath}\nusepackage[version=4]{mhchem}\n\nbegin{document}\nbegin{gather*}\n  ce{\n    S + E_1 <=> SE_1 -> P + E_1 \\ S + E_2 <=> SE_2 -> P + E_2 %Ask how to do this on Stackxchange\n }\nend{gather*}\n\nend{document}",
+ "title": ""
+}

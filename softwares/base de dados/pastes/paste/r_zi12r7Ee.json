@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro",
+  "re_url"
+ ],
+ "key": "zi12r7Ee",
+ "pasteDate": "Feb 20, 2018, 6:57:04 PM",
+ "relevancy": 1.0,
+ "relevant": true,
+ "text": "curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash",
+ "title": ""
+}

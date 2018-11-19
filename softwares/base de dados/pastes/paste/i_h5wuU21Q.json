@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "h5wuU21Q",
+ "pasteDate": "Feb 17, 2018, 4:33:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "private List<NewsItem> extractItemsFromRssUrl(String rssUrl){\n        List<NewsItem> newsItemList = new ArrayList<>();\n        try {\n            URL url = new URL(rssUrl);\n            XmlReader reader = new XmlReader(url);\n            SyndFeed feed = new SyndFeedInput().build(reader);\n            List<SyndEntry> items = feed.getEntries();\n            String feedLink = feed.getLink();\n            reader.close();\n            Log.e(LOG_TAG, \"within extractItemsFromRssUrl\");\n\n            //move this logic to adapter\n            for (SyndEntry item : items) {\n                SimpleDateFormat sdf = new SimpleDateFormat(\"MM/dd/yyyy HH:mm:ss\");\n                String newsPublishingDate = sdf.format(item.getPublishedDate());\n\n//                test this!!!\n                String imageUrl;\n\n                Document doc = new SAXBuilder().build(reader);\n                Element channel = doc.getRootElement().getChild(\"channel\");\n                List<Element> feeditems = channel.getChildren();\n                for (Element element : feeditems){\n                    if (element.getAttribute(\"url\") != null){\n                        imageUrl = element.getAttributeValue(\"url\");\n\n                        Bitmap newsBitmap = extractFeedImage(imageUrl);\n\n                        NewsItem newsItem = new NewsItem(item.getTitle(),\n                                item.getDescription().getValue(),\n                                newsPublishingDate,\n                                feedLink, newsBitmap);\n                        newsItemList.add(newsItem);\n                    }\n                }\n            }\n        } catch (IOException | FeedException | JDOMException e ) {\n            e.printStackTrace();\n        }\n        return newsItemList;\n    }",
+ "title": ""
+}

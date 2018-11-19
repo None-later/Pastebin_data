@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fi"
+ ],
+ "key": "a5cvCBHr",
+ "pasteDate": "Feb 11, 2018, 6:25:20 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<!ELEMENT laskut (lasku)*>\n<!ELEMENT lasku (asiakas, menettelytapa*)>\n<!ATTLIST lasku numero        CDATA   #REQUIRED\n                  paiva          CDATA   #REQUIRED>\n<!ELEMENT asiakas (puhelin | osoite)*>\n<!ATTLIST asiakas\n  etunimi CDATA #REQUIRED\n  sukunimi CDATA #REQUIRED\n  hetu CDATA #REQUIRED\n>\n\n<!ELEMENT menettelytapa  (#PCDATA) >\n<!ATTLIST menettelytapa\n  koodi    CDATA #REQUIRED\n  nimi    CDATA \"\"\n  hinta    CDATA \"\"\n  lahetetty (kylla|ei) \"kylla\"\n>\n\n<!ELEMENT puhelin EMPTY>\n<!ATTLIST puhelin\n  tyyppi (koti|tyo|toinen) \"toinen\"\n  numero  CDATA  \"\"\n>\n\n<!ELEMENT osoite EMPTY>\n<!ATTLIST osoite\n  tyyppi (koti|tyo|toinen) \"toinen\"\n  tie   CDATA  \"\"\n  kaupunki    CDATA  \"\"\n  maa   CDATA  \"\"\n  postinumero     CDATA  \"\"\n>",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "w71XHGn9",
+ "pasteDate": "Feb 19, 2018, 4:13:27 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class TeamController < ApplicationController\n  def index\n    @teams = Team.find(:all)\n  end\n\n  def show\n    @team = Team.find(params[:id])\n  end\n\n  def new\n    @team = Team.new\n  end\n\n  def create\n    @team = Team.new(params[:team])\n    if @team.save\n      redirect_to teams_path\n    else\n      render :action => \"new\"\n    end\n  end\n\n  def edit\n    @team = Team.find(params[:id])\n  end\n\n  def update\n    @team = Team.find(params[:id])\n    if @team.update_attributes(params[:team])\n      redirect_to team_path(@team)\n    else\n      render :action => \"edit\"\n    end\n  end\n\n  def destroy\n    Team.find(params[:id]).destroy\n    redirect_to teams_path\n  end\nend",
+ "title": ""
+}

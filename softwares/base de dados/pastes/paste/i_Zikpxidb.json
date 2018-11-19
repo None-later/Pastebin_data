@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Zikpxidb",
+ "pasteDate": "Feb 8, 2018, 1:54:01 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "In the dataSourceTesting.json file I defined its path as :\n\"http\": [\n        {\n          \"path\": \"/{id}/a\",\n          \"verb\": \"put\"\n        },\n]\n\nBut when I send request on this end point it gives me the error that can't found the method for this endpoint.\n\t\nDataSourceTesting.remoteMethod('putDataSourceTestings', {\n    accepts: [\n        {arg: 'id', type: 'string'}],\n    http: {path:'/:id/a', verb:'put'},\n    returns: {arg: 'result', type: 'json'}\n});\n\t\nDataSourceTesting.putDataSourceTestings = function(id, cb){\n    //your logic goes here\n}",
+ "title": ""
+}

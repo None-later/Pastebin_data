@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "khdHyUX3",
+ "pasteDate": "Feb 17, 2018, 1:15:20 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "package pl.xores.blazingpack.managers;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class BlazingPackManager {\n\n\tpublic static List<BlazingPackManager> gbp;\n\tprivate String nickname;\n\tpublic boolean blazingpack;\n\n\tstatic {\n\t\tBlazingPackManager.gbp = new ArrayList<BlazingPackManager>();\n\t}\n\n\tpublic BlazingPackManager(final String nick) {\n\t\tBlazingPackManager.gbp.add(this);\n\t\tthis.nickname = nick;\n\t\tthis.blazingpack = false;\n\t}\n\n\tpublic static BlazingPackManager get(final String nick) {\n\t\tfor (int i = 0; i < BlazingPackManager.gbp.size(); ++i) {\n\t\t\tif (BlazingPackManager.gbp.get(i).nickname.equalsIgnoreCase(nick)) {\n\t\t\t\treturn BlazingPackManager.gbp.get(i);\n\t\t\t}\n\t\t}\n\t\treturn null;\n\t}\n\n\tpublic String getNick() {\n\t\treturn this.nickname;\n\t}\n}",
+ "title": ""
+}

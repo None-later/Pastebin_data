@@ -1,0 +1,5 @@
+{
+  "value": "function_exists(\"posix_getpwuid\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

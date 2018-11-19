@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PrnbHxVp",
+ "pasteDate": "Feb 28, 2018, 2:17:17 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import Foundation\n\nenum Message<T> {\n    case value(T)\n    case finished\n}\n\nprotocol Channel: IteratorProtocol {\n    func send(_ value: Message<Element>)\n}\n\n/// A blocking channel for sending values.\n///\n/// `send` and `receive` must run in separate separate execution contexts, otherwise you get a deadlock.\nfinal class BlockingChannel<A>: Channel {\n    let producer = DispatchSemaphore(value: 0)\n    let consumer = DispatchSemaphore(value: 0)\n    private var value: Message<A> = .finished\n\n    func send(_ value: Message<A>) {\n        producer.wait()\n        self.value = value\n        consumer.signal()\n    }\n\n    func next() -> A? {\n        guard case let .value(v) = self.value else { return nil }\n        producer.signal()\n        consumer.wait()\n        return v\n    }\n}\n\nfinal class BufferedChannel<A>: Channel {\n    let valueQueue = DispatchQueue(label: \"sync value\")\n    let consumer = DispatchSemaphore(value: 0)\n    private var values: [A] = []\n    var done: Bool = false\n\n    func send(_ value: Message<A>) {\n        switch value {\n        case let .value(v):\n            self.valueQueue.sync {\n                self.values.append(v)\n            }\n        case .finished:\n            self.done = true\n        }\n\n        consumer.signal()\n    }\n\n    func next() -> A? {\n        guard !done else {\n            return values.isEmpty ? nil : values.removeFirst()\n        }\n        consumer.wait()\n        var result: A? = nil\n        valueQueue.sync {\n            result = values.removeFirst()\n        }\n        return result\n    }\n}\n\nfunc go(_ f: @escaping () -> ()) -> () {\n    DispatchQueue.global().async {\n        f()\n    }\n}\n\ninfix operator <-\nfunc <-<C, A>(lhs: C, rhs: A) where C: Channel, C.Element == A {\n    lhs <- .value(rhs)\n}\n\nfunc <-<C, A>(lhs: C, rhs: Message<A>) where C: Channel, C.Element == A {\n    lhs.send(rhs)\n}\n\nfunc test() {\n    let channel = BufferedChannel<Int>()\n\n    go {\n        channel <- 1\n        channel <- 2\n        channel <- .finished // done\n    }\n\n    sleep(1)\n    while let value = channel.next() {\n        print(value)\n    }\n}\n\ntest()",
+ "title": ""
+}

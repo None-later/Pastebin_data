@@ -1,0 +1,5 @@
+{
+  "value": "function\"\u003d\u003dtypeof n?r:i,s\u003dnew b,f\u003do.length\u003e\u003e\u003e0,h\u003dnew Array(f)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

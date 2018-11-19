@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "kydz0cLc",
+ "pasteDate": "Feb 26, 2018, 10:53:27 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "for epoch in range(300):#300   \n    loss = 0 # loss  \n    for i in range(len(X)):#   Wi\n        loss += np.log(1+np.exp(-y[i] * w.dot(X[i])))\n\n        #w += grad -   =\n    loss /= len(X) #  loss   \n    q.append(epoch) # -  \n    loss_list.append(loss) #   Loss\nplt.plot(q,loss_list) #  x - q -  , y -  lossa\nplt.show()",
+ "title": ""
+}

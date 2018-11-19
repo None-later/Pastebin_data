@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PmixWBs6",
+ "pasteDate": "Feb 18, 2018, 3:12:18 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "cat /Applications/Slack.app/Contents/Resources/app.asar | grep --text -C 6 SLACK_NO_AUTO_UPDATES\n  const reasons: Array<string> = [];\n\n  if (getSetting<boolean>(store, 'isDevMode')) reasons.push('Developer build');\n  if (process.mas) reasons.push('Mac App Store build');\n  if (process.windowsStore) reasons.push('Windows Store build');\n  if (process.platform === 'linux') reasons.push('using Linux');\n  if (process.env.SLACK_NO_AUTO_UPDATES) reasons.push('updates disabled in environment');\n  \n  const tempDirectory = process.env.TMPDIR || process.env.TEMP || '/tmp';\n  if (process.execPath.indexOf(tempDirectory) >= 0) reasons.push('running from Temp directory');\n\n  if (reasons.length > 0) {\n    logger.info('UpdaterEpics: Updates disabled because', { reasons });",
+ "title": ""
+}

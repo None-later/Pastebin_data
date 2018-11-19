@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_email",
+  "lg_en"
+ ],
+ "key": "XnwZgYuG",
+ "pasteDate": "Feb 8, 2018, 7:54:15 PM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "certbot-auto certonly --webroot --agree-tos --email rezonans777@mail.ru -w /var/www/shop.kites.ru -d shop.kites.ru",
+ "title": ""
+}

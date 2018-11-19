@@ -1,0 +1,5 @@
+{
+  "value": "define([\u0027jquery\u0027, \u0027jquery/ui\u0027, \u0027mage/menu\u0027â€¨ ], function($)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

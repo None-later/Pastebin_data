@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9xSW6Rzu",
+ "pasteDate": "Feb 8, 2018, 3:15:21 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "foreach(chld : GetObjectChildren($node))\n{\n\tif (classof(chld)==\"Interface\") {\n      if (chld->ifType==1) {\n\t\t\tif (substr(chld->name, 0, 7)==\"dyncap-\") {\n\t\t\t\tDeleteObject(chld);\n\t\t\t\tcontinue;\n\t\t\t}\n\t\t}\n\t\t$prevcrit = GetCustomAttribute(chld, \"InterfaceCritical\");\n\t\tif (chld->alias==\"#CRITICAL\") {\n         $crit = 1;\n\t\t\tif ($prevcrit != \"1\") {\n\t\t\t\tSetCustomAttribute(chld, \"InterfaceCritical\", \"1\");\n\t\t\t\tPostEvent($node, \"CRITICAL_NOTIFY\", \"NewIF_CRITICAL\", \"New interface now marked as critical: \" . chld->name);\n\t\t\t}\n\t\t} else {\n\t\t\tif ($prevcrit == \"1\") {\n\t\t\t\tDeleteCustomAttribute(chld, \"InterfaceCritical\");\n\t\t\t\tPostEvent($node, \"CRITICAL_NOTIFY\", \"DelIF_CRITICAL\", \"Interface no longer marked as critical: \" . chld->name);\n\t\t\t}\n\t\t}\n\t}\n}\n$prevcrit = GetCustomAttribute($node, \"NodeCritical\");\nif ($crit == 1) {\n\tif ($prevcrit != \"1\") {\n\t\tSetCustomAttribute($node, \"NodeCritical\", \"1\");\n\t\tPostEvent($node, \"CRITICAL_NOTIFY\", \"NewNode_CRITICAL\", \"Node is now marked as critical.\");\n\t}\n} else {\n\tif ($prevcrit == \"1\") {\n\t\tDeleteCustomAttribute($node, \"NodeCritical\");\n\t\tPostEvent($node, \"CRITICAL_NOTIFY\", \"DelNode_CRITICAL\", \"Node is no longer marked as critical.\");\n\t}\n}",
+ "title": ""
+}

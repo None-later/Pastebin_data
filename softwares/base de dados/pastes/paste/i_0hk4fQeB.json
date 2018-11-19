@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "0hk4fQeB",
+ "pasteDate": "Feb 21, 2018, 10:40:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "                            //First pass, we cna upload one at a time.\n                            foreach (StockTransferContainer stockTransferContainer in stockTransferContainers)\n                            {\n                                tasks.Add( new Task(async () => {\n                                                        try\n                                                        {\n                                                            stockTransferContainer.Type = this.GetEnvelopeType();\n                                                            Boolean wasUploaded =\n                                                                await this.SynchroniseUpsertedRecords(stockTransferContainer, CancellationToken.None);\n\n                                                            if (wasUploaded == false)\n                                                            {\n                                                                Logger\n                                                                    .WriteToLog($\"Failed to upload stocktransferid {stockTransferContainer.StockTransferKey}\",\n                                                                                LoggerCategory.General,\n                                                                                TraceEventType.Error);\n                                                            }\n\n                                                            //Delete row\n                                                            this.SyncTableRepository.DeleteObject(stockTransferContainer.StockTransferKey);\n\n                                                            return;\n                                                        }\n                                                        catch (Exception e)\n                                                        {\n                                                            Logger.WriteToLog(e, LoggerCategory.General, TraceEventType.Error);\n                                                        }\n                                                    }));\n                            }\n\n                            tasks.ForEach(x => x.Start());\n\n                            Task.WaitAll(tasks.ToArray());",
+ "title": ""
+}

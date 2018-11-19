@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "vbnet",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8zxMUy4s",
+ "pasteDate": "Feb 26, 2018, 12:53:10 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Private Sub idRegencyLookUpEdit_EditValueChanged(sender As Object, e As EventArgs) Handles idRegencyLookUpEdit.EditValueChanged\n        Try\n            Dim editor As DevExpress.XtraEditors.LookUpEdit = CType(sender, DevExpress.XtraEditors.LookUpEdit)\n            Dim row As DataRowView = CType(editor.Properties.GetDataSourceRowByKeyValue(editor.EditValue), DataRowView)\n            Dim value As Double = CDbl(row(\"idRegency\"))\n            idRegency = value\n            LoadDistrict()\n        Catch ex As Exception\n            If ex.ToString.Contains(\"System.NullReferenceException\") Then\n\n            End If\n        End Try\n\n    End Sub",
+ "title": "Get Lookup Edit Column Value"
+}

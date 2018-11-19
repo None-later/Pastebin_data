@@ -1,0 +1,5 @@
+{
+  "value": "function_exists(\"c99sh_getupdate\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

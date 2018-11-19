@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hUe6FRdm",
+ "pasteDate": "Feb 18, 2018, 3:19:28 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#Create the directory, navigate into it and initialize it as a git repository\nmkdir my-repo && cd my-repo && git init\n#Create a new file and add the file to the next commit\ntouch README.md && git add README.md\n#Commit to our local repository\ngit commit -m \"Initial source code commit\"",
+ "title": ""
+}

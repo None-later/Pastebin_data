@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jeAXPRN6",
+ "pasteDate": "Feb 23, 2018, 10:55:22 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "private void saveImage() {\n        Button mSave = findViewById(R.id.save_img);\nimageView.setDrawingCacheEnabled(true);\nimageView.buildDrawingCache();\nfinal Bitmap bitmap = imageView.getDrawingCache();\n        mSave.setOnClickListener(new View.OnClickListener() {\n            @Override\n            public void onClick(View v) {\n                FileOutputStream outputStream = null;\n                File storage = Environment.getExternalStorageDirectory();\n                File dir = new File(storage.getAbsolutePath() + \"/MyFolder\");\n                dir.mkdirs();\n                String fileName = String.format(\"new.jpg\", System.currentTimeMillis());\n                File file = new File(dir, fileName);\n                try {\n                    outputStream = new FileOutputStream(file);\n                    bitmap.compress(Bitmap.CompressFormat.JPEG, 100, outputStream);\n                    outputStream.flush();\n                    outputStream.close();\n                    scanFile(getApplicationContext(), Uri.fromFile(file));\n                } catch (IOException e) {\n                    e.printStackTrace();\n                }\n\n            }\n// refresh gallery\n            private void  scanFile(Context context, Uri imageUri){\n                Intent scanIntent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);\n                scanIntent.setData(imageUri);\n                context.sendBroadcast(scanIntent);\n            }\n        });\n    }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "C5c1tm5D",
+ "pasteDate": "Feb 8, 2018, 5:08:07 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import android.content.Intent;\nimport android.content.res.Resources;\nimport android.support.v7.app.AppCompatActivity;\nimport android.os.Bundle;\nimport android.view.View;\nimport android.widget.TextView;\n\npublic class MainActivity extends AppCompatActivity {\n    class MyThread extends Thread {\n\t\t//    \n        boolean running = true;\n        @Override\n        public void run() {\n            super.run();\n            while (running) {\n                try {\n                    Thread.sleep(50);\n                } catch (InterruptedException e) {}\n\t\t\t\t//  50   \n\t\t\t\t// move()   \n\t\t\t\t//     \n\t\t\t\t// ..  \n                particlesView.post(new Runnable() {\n                    @Override\n                    public void run() {\n                        particlesView.move();\n                    }\n                });\n            }\n        }\n    }\n\n    ParticlesView particlesView;\n    @Override\n    protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n\t\t//    \n        particlesView = (ParticlesView) findViewById(R.id.view);\n    }\n\n    public void onClick(View view) {\n        //     \n        MyThread mt = new MyThread();\n        mt.start();\n    }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5GPt670d",
+ "pasteDate": "Feb 20, 2018, 3:02:00 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <windows.h>\n//#include <stdio.h>\n//#include <string.h>\n\nint WinMain(HINSTANCE hInstance,HINSTANCE hPrevInstance,LPSTR lpCmdLine,int nCmdShow)\n{\n\tchar *buffer=\"doh\";\n\n\tDWORD dw,temp,bytes_in,bytes_real;\n\tDCB dcb;\n\tCOMSTAT ComState;\n\tOVERLAPPED Over;\n\tLPCSTR name=TEXT(\"COM3\");\n\tHANDLE hCOM=CreateFile(name,GENERIC_READ | GENERIC_WRITE,0,NULL,OPEN_EXISTING,FILE_FLAG_OVERLAPPED,NULL);\n\tif (hCOM==INVALID_HANDLE_VALUE)\n\t\t\tExitProcess(1);\n\tSetupComm(hCOM,256,256);\n\tGetCommState(hCOM,&dcb);\n\t//    DCB      \n\tdcb.BaudRate=CBR_9600;\n\tdcb.fParity=NOPARITY;\n\n\n\tPurgeComm(hCOM,PURGE_TXCLEAR);\n\tPurgeComm(hCOM,PURGE_RXCLEAR);\n\n\tClearCommError(hCOM,&temp,&ComState); //c,       - \n\tif (!temp)\n\t\tWriteFile(hCOM,buffer,3,&bytes_real,&Over);\n\tClearCommError(hCOM,&temp,&ComState); //c,      \n\tif (!temp)\n\t\tReadFile(hCOM,buffer,3,&bytes_real,&Over);\n\tCloseHandle(hCOM);\n\treturn 0;\n}",
+ "title": ""
+}

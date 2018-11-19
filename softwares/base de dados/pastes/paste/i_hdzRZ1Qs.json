@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hdzRZ1Qs",
+ "pasteDate": "Feb 20, 2018, 6:53:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "loop1:\n    ClearErrors\n    EnumRegValue $1 HKLM \"SOFTWAREPostgreSQLInstallationspostgresql-x64-10\" $0\n    IfErrors done\n    IntOp $0 $0 + 1\n    ReadRegStr $2 HKLM SOFTWAREPostgreSQLInstallationspostgresql-x64-10 $1\n    MessageBox MB_YESNO|MB_ICONQUESTION \"$1 = $2$n$nMore?\" IDYES loop1\ndone:",
+ "title": ""
+}

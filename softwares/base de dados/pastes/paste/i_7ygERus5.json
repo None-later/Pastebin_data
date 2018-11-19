@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7ygERus5",
+ "pasteDate": "Feb 26, 2018, 10:02:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\n\nint numeros[10];\nint min;\n\t\n\nvoid ordenar(){\n\tint aux;\n\tfor(int j=0; j<9; j++){\n\t\tfor(int k=j+1; k<10; k++){\n\t\t\tif(numeros[k]<numeros[j]){\n\t\t\t\taux = numeros[k];\n\t\t\t\tnumeros[k]=numeros[j];\n\t\t\t\tnumeros[j]=aux;\n\t\t\t}\n\t\t}\n\t}\n}\n\nint main(){\n\t\n\tfor (int i = 0; i < 10; i++)\n\t{\n\t\tcout << \"Introduce un nmero \"<< i <<\": \"<< endl;\n\t\tcin >>numeros[i];\n\t}\n\t//mostrar arreglo sin ordenar\n\tcout << \"arreglo sin ordenar\" << endl;\n\tfor (int j = 0; j < 10; j++)\n\t{\n\t\tcout << numeros[j] << endl;\n\t}\n\t\n\t//ordenar por seleccion\n\tordenar();\n\t\n\t//mostrar arreglo ordenado\n\tcout << \"arreglo ordenado\" << endl;\n\tfor (int m = 0; m < 10; m++)\n\t{\n\t\tcout << numeros[m] << endl;\n\t}\n\treturn 0;\n}",
+ "title": ""
+}

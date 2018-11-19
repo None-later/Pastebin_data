@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "BSv7Higu",
+ "pasteDate": "Feb 18, 2018, 8:45:49 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "use strict;\nuse warnings;\n\nuse IO::Socket::INET;\nuse Parallel::Prefork;\nuse AnyEvent::Handle;\nuse AnyEvent::Redis;\n\n$| = 1;\n\nsub RedisChannel { 'chat' };\nsub MaxRequestsPerChild { 100 };\n\nmy $listen = IO::Socket::INET->new(\n  Listen    => 5,\n  LocalHost => '0.0.0.0',\n  LocalPort => '1986',\n  Proto     => 'tcp',\n) or die $!;\n\nmy $redis_pub = AnyEvent::Redis->new(\n  host => '127.0.0.1',\n  port => 6379,\n  encoding => 'utf8',\n  on_error => sub { warn @_ },\n);\n\nmy $pm = Parallel::Prefork->new({\n  max_workers  => 5,\n  trap_signals => {\n    TERM => 'TERM',\n    HUP  => 'TERM',\n  },\n});\n\nwhile ($pm->signal_received ne 'TERM') {\n  $pm->start and next;\n  my $reqs_remaining = MaxRequestsPerChild;\n  $SIG{TERM} = sub {\n    $reqs_remaining = 0;\n  };\n  while ($reqs_remaining-- > 0) {\n    my $s = $listen->accept();\n    print $s \"Welcome, enter your name.\\n\";\n    my $user_name = undef;\n    \n    my $cv = AE::cv;\n\n    my $redis_sub = AnyEvent::Redis->new(\n      host => '127.0.0.1',\n      port => 6379,\n      encoding => 'utf8',\n      on_error => sub { warn @_ },\n    );\n    $redis_sub->subscribe(RedisChannel, sub {\n        my ($message, $channel) = @_;\n        print $s \"$message\\n\" if defined $user_name;\n    });\n\n    my $handle = AnyEvent::Handle->new(\n      fh => $s,\n      on_read => sub {\n        shift->push_read(line => sub {\n          my ($h, $line) = @_;\n          if ($line eq ':exit') {\n            print $s \"Bye Bye\\n\";\n            if (defined $user_name) {\n              $redis_pub->publish(RedisChannel, \"-- $user_name has left.\");\n              $cv->cb(sub { $cv->recv });\n            }\n            $cv->send;\n            return;\n          }\n          unless (defined $user_name) {\n            unless ($line =~ /\\S+/) {\n              print $s \"Enter valid name.\\n\";\n            } else {\n              $user_name = $line;\n              print $s \"Welcome, $user_name.\\n\";\n              $redis_pub->publish(RedisChannel, \"-- $user_name has joined.\");\n              $cv->cb(sub { $cv->recv });\n            }\n          } else {\n            $redis_pub->publish(RedisChannel, \"$user_name: $line\");\n            $cv->cb(sub { $cv->recv });\n          }\n        });\n      },\n      on_eof => sub {\n        my ($h) = @_;\n        warn \"got eof\";\n        if (defined $user_name) {\n          $redis_pub->publish(RedisChannel, \"-- $user_name has left.\");\n          $cv->cb(sub { $cv->recv });\n        }\n        $h->destroy;\n        $cv->send;\n      },\n      on_error => sub {\n        my ($h, $fatal, $msg) = @_;\n        warn \"got error: $msg\";\n        $h->destroy;\n        $cv->send;\n      },\n    );\n\n    $cv->recv;\n    close($s);\n  }\n  $pm->finish;\n}\n\n$pm->wait_all_children;",
+ "title": ""
+}

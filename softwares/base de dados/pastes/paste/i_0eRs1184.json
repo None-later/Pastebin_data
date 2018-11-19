@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0eRs1184",
+ "pasteDate": "Feb 23, 2018, 12:25:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "shortlog: Commit header (keep it under 50 chars)\n\nBody of the commit message. Feel free to expand on the changes.\nUse the Body to explain why and what vs how\n\nfixes: #<issue number, if any>\n\nSigned-off-by: Name <email.id>",
+ "title": ""
+}

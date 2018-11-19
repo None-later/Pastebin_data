@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "tsql",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Nsm17fUc",
+ "pasteDate": "Feb 18, 2018, 9:58:52 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "UPDATE NACHISLSUMMA\nSET NACHISLSUM = NACHISLSUM * 1.2\nWHERE NachislYear = '2016'\n  AND AccountCD IN\n    (SELECT ACCOUNTCD\n     FROM PAYSUMMA p\n     WHERE PAYYEAR BETWEEN 2013 AND 2015\n     GROUP BY p.ACCOUNTCD\n     HAVING AVG(p.PAYSUM) >\n       (SELECT SUM(NACHISLSUM)\n        FROM NACHISLSUMMA n\n        WHERE n.NACHISLMONTH = 2\n          AND n.NACHISLYEAR = 2015\n          AND n.ACCOUNTCD = p.ACCOUNTCD));",
+ "title": ""
+}

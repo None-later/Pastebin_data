@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "P1T2pJYw",
+ "pasteDate": "Feb 21, 2018, 6:25:43 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def shufflePages(writeContext, inputFiles, verbose):\n\t\n\tmaxPages = 0\n\n\tprint inputFiles\n\t\n\t# create PDFDocuments for all of the files.\n\tdocs = map(createPDFDocumentWithPath, inputFiles)\n\n\tprint docs\n\t\n\t# find the maximum number of pages.\n\tfor doc in docs:\n\t\tif doc.getNumberOfPages() > maxPages:\n\t\t\tmaxPages = doc.getNumberOfPages()\n\t\t\tprint maxPages\n\t\t\t\n\t# Shuffle the pages\n\tfor pageNum in xrange(1, maxPages + 1):\n\t\tprint \"pageNum %d\" % (pageNum)\n\t\tfor doc in docs:\n\t\t\tpage = doc.getPage(pageNum)\n\t\t\tif page != None:\n\t\t\t\tmediaBox = doc.getMediaBox(pageNum)\n\t\t\t\twriteContext.beginPage(mediaBox)\n\t\t\t\twriteContext.drawPDFDocument(mediaBox, doc, pageNum)\n\t\t\t\twriteContext.endPage()",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "ShPvBWaZ",
+ "pasteDate": "Feb 28, 2018, 7:11:41 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdlib.h>\n#include <stdio.h>\n\nstruct Lista {\n\tstruct Lista* poprzedni;\n\tstruct Lista* nastepny;\n\tvoid* dana;\n};\n\nstruct uchwytLista {\n\tstruct Lista* lista;\n\tint(*komparator)(void* a, void* b);\n};\n\nstruct uchwytLista* stworzListe(void* dana, int(*komparator)(void* a, void* b)) {\n\tstruct uchwytLista* xd = (struct uchwytLista*) malloc(sizeof(struct uchwytLista));\n\txd->komparator = komparator;\n\tstruct Lista* l = (struct Lista*) malloc(sizeof(struct Lista));\n\tl->poprzedni = NULL;\n\tl->nastepny = NULL;\n\tl->dana = dana;\n\txd->lista = l;\n}\n\nvoid dodaj(struct uchwytLista* ul, void* dana)\n{\n\tstruct Lista* l = ul->lista;\n\n\tif (l->dana != NULL) {\n\t\tstruct Lista* dodane = (struct Lista*) malloc(sizeof(struct Lista));\n\t\tstruct Lista* wsk = l;\n\n\t\twhile (wsk->nastepny != NULL) {\n\t\t\tif (ul->komparator(wsk->dana, dana) == 1) {\n\t\t\t\tbreak;\n\t\t\t}\n\t\t\twsk = wsk->nastepny;\n\t\t}\n\n\t\tif (ul->komparator(wsk->dana, dana) == 1)\t//Zamie\n\t\t{\n\t\t\tdodane->nastepny = wsk;\n\t\t\tdodane->poprzedni = wsk->poprzedni;\n\t\t\twsk->poprzedni = dodane;\n\t\t\tif (wsk->poprzedni != NULL) {\n\t\t\t\t(wsk->poprzedni)->nastepny = dodane;\n\t\t\t}\n\t\t\telse\n\t\t\t\tul->lista = dodane;\n\t\t}\n\t\telse \n\t\t{\n\t\t\tdodane->nastepny = wsk->nastepny;\n\t\t\twsk->nastepny = dodane;\n\t\t\t(wsk->nastepny)->poprzedni = dodane;\n\t\t\tdodane->poprzedni = wsk;\n\t\t}\n\n\t\tdodane->dana = dana;\n\n\t}\n\telse {\n\t\tl->dana = dana;\n\t\tl->nastepny = NULL;\n\t}\n}\n\nvoid usun(struct Lista* l, int indeks) {\n\tstruct Lista* wsk = l;\n\t\n\tfor (int i = 0; i < indeks; i++) {\n\t\twsk = wsk->nastepny;\n\t}\n\n\t(wsk->nastepny)->poprzedni = wsk->poprzedni;\n\t(wsk->poprzedni)->nastepny = wsk->nastepny;\n\n\tfree(wsk);\n}\n\nvoid wypisz(struct uchwytLista* ul) {\n\n\tstruct Lista* wsk = ul->lista;\n\tdo {\n\t\tprintf(\"%d\\n\", *((int*)(wsk->dana)));\n\t\twsk = wsk->nastepny;\n\t} while (wsk != NULL);\n\n}\n\nint porownaj(int* a, int* b)\t// Zwraca 1, jeli a > b, w innym przypadku 0;\n{\n\tif (*a > *b)\n\t\treturn 1;\n\telse\n\t\treturn 0;\n}\n\nint main() {\n\t\n\tint x = 100;\n\tstruct uchwytLista* xd = stworzListe(&x, porownaj);\n\tint a = 3;\n\tdodaj(xd, &a);\n\tint b = 2;\n\tdodaj(xd, &b);\n\tint c = 101;\n\tdodaj(xd, &c);\n\tint d = 1;\n\tdodaj(xd, &d);\n\tint e = 8;\n\tdodaj(xd, &e);\n\twypisz(xd);\n\treturn 0;\n}",
+ "title": ""
+}

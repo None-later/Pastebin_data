@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Q5Y3i0GL",
+ "pasteDate": "Feb 26, 2018, 1:13:23 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <cctype>\n#define MAXN 100010\nusing namespace std;\n\nint orien[MAXN];\nstring cadeia, text;\n\nvoid preprocess()\n{\n    orien[0] = 0;\n    int j = 0, i = 1;\n    int tam = cadeia.size();\n    while(i < tam)\n    {\n        while(i < tam && cadeia[i] != cadeia[j])\n        {\n            if(!j)\n                orien[i++] = 0;\n            else\n                j = orien[j - 1];\n\n        }\n        orien[i++] = ++j;\n    }\n}\n\nvoid kmp()\n{\n   int i = 0, j = 0, tam = text.size();\n   while(i < tam)\n   {\n       while(i < tam && text[i] != cadeia[j])\n       {\n           if(!j)\n                i++;\n           else\n                j = orien[j -1];\n\n       }\n       j++; i++;\n       if(j == (int)cadeia.size())\n       {\n            cout << \"Link Bolado\" << endl;\n            return;\n       }\n   }\n   cout << \"Link Tranquilo\" << endl;\n}\n\nint main()\n{\n    cadeia = \"zelda\";\n    cin >> text;\n    for(int i = 0; text[i] != '\\0'; i++)\n        text[i] = tolower(text[i]);\n    preprocess();\n    kmp();\n}",
+ "title": ""
+}

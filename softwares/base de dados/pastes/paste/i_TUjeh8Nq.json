@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "TUjeh8Nq",
+ "pasteDate": "Feb 12, 2018, 6:59:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "request.dbsession.execute(sql)\n\t\ntransaction.commit()\nrequest.dbsession.flush()",
+ "title": ""
+}

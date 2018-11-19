@@ -1,0 +1,13 @@
+{
+ "espireDate": "10M",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xxhyr9Xy",
+ "pasteDate": "Feb 21, 2018, 12:07:48 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "const React = require('react');\nconst Konva = require('konva');\nconst { Stage, Layer, Rect, Circle } = require('react-konva');\n\nconst CONSTANTS = require('./constants');\n\nrequire('./layout-tab.css');\n\nconst LayoutTab = ({ activePws }) => {\n  return (\n    <div className='layout-tab'>\n      <Stage className='pws-silhouette' width={400} height={600}>\n        {/* PWS silhouette layer */}\n        <Layer >\n          <Rect\n            x={0}\n            y={0}\n            width={400}\n            height={600}\n            fill={'#375362'}\n          />\n        </Layer>\n\n        {/* Modules background layer */}\n        <Layer>\n          <Rect\n            x={CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.X}\n            y={CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.Y}\n            width={340}\n            height={540}\n            fill={'#F2F6F8'}\n          />\n        </Layer>\n\n        {/* PWS modules layer */}\n        <Layer>\n        {\n          activePws.pwsStorageAreas[0].pwsModules.map(pwsModule => {\n            return (\n              <React.Fragment key={pwsModule.id}>\n                <Rect\n                  key={pwsModule.id}\n                  x={Number(pwsModule.x) + CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.X}\n                  y={Number(pwsModule.y) + CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.Y}\n                  width={pwsModule.moduleTemplate.width}\n                  height={pwsModule.moduleTemplate.height}\n                  shadowBlur={3}\n                  fill={'#cce3ff'}\n                  onClick={() => alert(pwsModule.name)}\n                />\n                {\n                  pwsModule.moduleTemplate.slots.map(slot => {\n                    return (\n                      <Circle\n                        key={slot.name}\n                        x={Number(pwsModule.x) + CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.X + slot.position.x}\n                        y={Number(pwsModule.y) + CONSTANTS.OFFSETS.MODULES_BACKGROUND_LAYER.Y + slot.position.y}\n                        radius={slot.radius}\n                        fill={'#375362'}\n                      />\n                    )\n                  })\n                }\n              </React.Fragment>\n            )\n          })\n        }\n        </Layer>\n      </Stage>\n    </div>\n  )\n};\n\n\nmodule.exports = LayoutTab;",
+ "title": ""
+}

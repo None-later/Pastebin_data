@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_bot",
+  "lg_es",
+  "kw_btc"
+ ],
+ "key": "NqviFQu0",
+ "pasteDate": "Feb 11, 2018, 1:51:29 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "##################  PAIRS.properties #########################\n\nMARKET = BTC\n\n#Para prender el bot\nALL_trading_enabled = true\n\n#Pares que revisara el bot\nALL_enabled_pairs= ALL\nBTC-BTG_trading_enabled = false\nALL_hidden_pairs = BTC-BTG\nBTC-FUN_trading_enabled= false\n\n\n#No volver a comprar estas monedas luego de su venta.\n#BTC-NOMBREMONEDA_sell_only_mode = true\n\n#Coste maximo de la compra inicial % \nALL_max_cost_percentage = 0.75\n\n#% que el bot no usa y deja en reserva para dca\nALL_min_buy_balance_percentage = 70\nALL_min_buy_balance = 0\n#% minimo de unidades a vender en el order book con respecto a nuestra compra\nALL_buy_available_volume_trigger = 50\n\n#Trabajara con monedas con un volumen igual o mayor a\nALL_min_buy_volume = 350\n\n#Para evitar que compre pares menores a 0.005\nALL_min_buy_price = 0.0000005\n\n#Cantidad de monedas para tradear al mismo tiempo (numero guia 7) , mercado alcista puede ampliar hasta un 75% mas, mercado en baja hasta 30% menos que el numero guia.\nALL_max_trading_pairs = 0\n\n#Para que el % de diferencia entre el bid y el ask no sea tan alto, evitamos dumps\nALL_max_buy_spread = 1.25\n\n#--------------------------------------------------------------------------------------\n#Estrategias de compra\n\n# EMASPREAD #\n\nALL_buy_strategy = EMAGAIN\nALL_buy_value = -0.95\nALL_trailing_buy = 0.15\n\n\n#en baja\n#ALL_buy_strategy = EMAGAIN\n#ALL_buy_value = -0.49\n#ALL_trailing_buy = 0.3\n\n# LOWBB # en alza\n#ALL_buy_strategy = LOWBB\n\n#Bullish mercado alcista\n#ALL_buy_value = -10.50\n#ALL_trailing_buy = 0.1\n\n#semi bearish\n#ALL_buy_value = -5.99\n#ALL_trailing_buy = 0.22\n\n#bearish mercado en baja\n#ALL_buy_value = -10.50\n#ALL_trailing_buy = 0\n\n#Estrategia de venta\nALL_sell_strategy = GAIN\nALL_sell_value = 0.95\n#ALL_min_profit = 0.84\nALL_trailing_profit = 0.15\n#----------------------------------------------------------------------------------------\n\n#Setear cuando quieras activar el stop loss\nAll_stop_loss_trigger = 0\n\n#Setear los minutos que el bot debe esperar para comprar un par vendido por stoploss\nALL_stop_loss_timeout = 0\n\n#Para activar el DCA, tambien puede ser true\nALL_DCA_enabled = -1.3\n\n#Activar cuando se quiera solo vender, deshabilitara las nuevas compras\nALL_sell_only_mode = false\n\n#Triggers de proteccion para habilitar el modo solo venta\nALL_btc_price_drop_trigger = 12\nALL_btc_price_drop_recover_trigger = 8\n\nALL_btc_price_rise_trigger = 0\nALL_btc_price_rise_recover_trigger = 0\n\nALL_consecutive_buy_trigger = 8\nALL_consecutive_sell_trigger = 0\n\nALL_pending_order_wait_time = 0\nALL_combined_cancel_pending_trigger = 0\n\n# Activar cuando se quiera vender todos los pares comprados al precio del mercado, solo emergencia\nALL_panic_sell_enabled = false",
+ "title": "PAIRS"
+}

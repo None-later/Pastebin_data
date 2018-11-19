@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "h18MT6Aj",
+ "pasteDate": "Feb 8, 2018, 4:05:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#define C 3\n\nint main(){\n    int vet[C][C];\n    int r,c;\n    int diagonale1=0,diagonale2=0;\n    int somma1=0,somma=0,riga1=0,colonna1=0,flag=0;\n\n    printf(\"\\n/----------QuadratoMagico----------/\\n\\n\");\n    //Inserimento numeri array\n    for(r = 0; r < C;r++){\n        for(c = 0; c < C; c++){\n            printf(\"Inserisci numero intero: \");\n            scanf(\"%d\",&vet[r][c]);\n        }\n    }\n    printf(\"\\n/----------StampaMatrice----------/\\n\");\n    //Stampa della Matrice\n    for(r = 0; r < C;r++){\n        for(c = 0; c < C; c++){\n            printf(\" %d \",vet[r][c]);\n        }\n        printf(\"\\n\");\n    }\n    printf(\"/---------------------------------/\\n\\n\");\n    // Diagonale 1\n    for(r=0;r<C;r++){\n        for(c=0;c<C;c++){\n         if(r==c){ diagonale1=diagonale1+vet[r][c]; }\n        }\n    }\n    // Diagonale 2\n    r=C-1;\n    for(c=0;c<C;c++){\n        diagonale2=diagonale2+vet[r][c];\n        r--;\n    }\n    //Riga 1\n    for(r=0; r<1;r++){\n        for(c=0;c<C;c++){\n            somma1 = somma1+vet[0][c];\n        }\n        riga1=somma1;\n    }\n    //Altre righe\n    for(r=1;r<C;r++){\n        for(c=0;c<C;c++){\n            somma = somma+vet[r][c];\n        }\n        if(riga1!=somma){\n            break;\n        }\n    }\n    //Colonna 1\n    somma1=0;\n    for(c=0; c<1;c++){\n        for(r=0;r<C;r++){\n            somma1 = somma1+vet[r][0];\n        }\n        colonna1=somma1;\n    }\n    //Altre Colonne\n    somma=0;\n    for(c=1;c<C;c++){\n        for(r=0;r<C;r++){\n            somma = somma+vet[r][c];\n        }\n        if(colonna1!=somma){\n            break;\n        }\n    }\n    if(diagonale1==diagonale2 && diagonale2==riga1 && riga1==colonna1){\n        printf(\"La diagonale1 : %d\\nLa diagonale2 : %d\\nLa somma di ogni riga : %d\\nLa somma ogni colonna : %d \\n\\n\",diagonale1,diagonale2,riga1,colonna1);\n        printf(\"La Matrice  un quadrato perfetto\\n\\n\");\n    }\n    else{\n        printf(\"La Matrice non  un quadrato perfetto\\n\\n\");\n    }\n       \n    \n}",
+ "title": ""
+}

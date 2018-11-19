@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_hack"
+ ],
+ "key": "7hrHVM6n",
+ "pasteDate": "Feb 8, 2018, 3:16:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n    \"workbench.colorTheme\": \"Cobalt2\",\n    \"editor.fontFamily\": \"Operator Mono, Menlo, Monaco, 'Courier New', monospace\",\n    \"editor.fontSize\": 16,\n    \"editor.lineHeight\": 23,\n    \"editor.letterSpacing\": 0.5,\n    \"files.trimTrailingWhitespace\": true,\n    \"editor.fontWeight\": \"400\",\n    \"prettier.eslintIntegration\": true,\n    // this isn't really underline-thin but we hack it to be a thicker cursor\n    \"editor.cursorStyle\": \"underline-thin\",\n    \"editor.cursorBlinking\": \"solid\",\n    \"vscode_custom_css.imports\": [\n      \"C:/Users/Saqib Ameen/AppData/Roaming/Code/.vscodestyles.css\"\n    ],\n    \"editor.renderWhitespace\": \"all\",\n  }",
+ "title": ""
+}

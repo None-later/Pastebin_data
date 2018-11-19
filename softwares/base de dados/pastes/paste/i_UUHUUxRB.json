@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "UUHUUxRB",
+ "pasteDate": "Feb 12, 2018, 4:21:18 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "{\n\t\"ok\": true,\n\t\"result\": [{\n\t\t\"update_id\": 99809483,\n\t\t\"message\": {\n\t\t\t\"message_id\": 108,\n\t\t\t\"from\": {\n\t\t\t\t\"id\": 107573534,\n\t\t\t\t\"is_bot\": false,\n\t\t\t\t\"first_name\": \"Maxim\",\n\t\t\t\t\"last_name\": \"Schepelin\",\n\t\t\t\t\"username\": \"schepelin\",\n\t\t\t\t\"language_code\": \"en-BY\"\n\t\t\t},\n\t\t\t\"chat\": {\n\t\t\t\t\"id\": 107573534,\n\t\t\t\t\"first_name\": \"Maxim\",\n\t\t\t\t\"last_name\": \"Schepelin\",\n\t\t\t\t\"username\": \"schepelin\",\n\t\t\t\t\"type\": \"private\"\n\t\t\t},\n\t\t\t\"date\": 1518459332,\n\t\t\t\"text\": \"test\"\n\t\t}\n\t}]\n}",
+ "title": ""
+}

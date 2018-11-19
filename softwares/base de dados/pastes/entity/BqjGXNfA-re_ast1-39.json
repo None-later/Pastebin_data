@@ -1,0 +1,5 @@
+{
+  "value": "function macverify(mac_string)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

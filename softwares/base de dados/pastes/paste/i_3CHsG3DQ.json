@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "3CHsG3DQ",
+ "pasteDate": "Feb 11, 2018, 4:59:25 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "local SS = game:GetService(\"ServerStorage\");\nlocal CharacterObjects = SS:WaitForChild(\"CharacterObjects\");\n\nfunction AddObject(Character,Object)\n\tObject = Object:clone();\n\tlocal Middle = Object:WaitForChild(\"Middle\");\n\tObject.Parent = Character.Parent;\n\tfor i,v in pairs(Object:GetChildren())do\n\t\tif v:IsA(\"BasePart\") then\n\t\t\tlocal W = Instance.new(\"Weld\");\n\t\t\tW.Part0 = Middle;\n\t\t\tW.Part1 = v;\n\t\t\tlocal CJ = CFrame.new(Middle.Position);\n\t\t\tW.C0 = Middle.CFrame:inverse()*CJ;\n\t\t\tW.C1 = v.CFrame:inverse()*CJ;\n\t\t\tW.Parent = Middle;\n\t\tend;\n\tend;\n\tlocal Weld = Instance.new(\"Weld\");\n\tWeld.Part0 = Character;\n\tWeld.Part1 = Middle;\n\tWeld.C0 = CFrame.new(0,0,0);\n\tWeld.Parent = Character;\nend;\n\nfunction IsInGroup(Player, Character)\n\tlocal CharacterHead = Character:WaitForChild(\"Head\");\n\tlocal CharacterTorso = Character:WaitForChild(\"Torso\");\n\tlocal Humanoid = Character:WaitForChild(\"Humanoid\");\n\tHumanoid.Died:connect(function() --REMOVES THE HELMETS AND SUCH FROM THE CHARACTER ON DEATH TO AVOID LAG\n\t\tfor i,v in pairs(Character:GetChildren())do\n\t\t\tif v:IsA(\"Model\") then\n\t\t\t\tv:destroy();\n\t\t\tend;\n\t\tend;\n\tend);\n\tCharacter.ChildAdded:connect(function(Object) --REMOVES HATS THAT ARE *CURRENTLY* IN THE CHARACTER\n\t\tif Object:IsA(\"Accessory\") then\n\t\t\tObject:destroy();\n\t\tend;\n\tend);\n\tfor i,v in pairs(Character:GetChildren())do --ON THE OFF CHANCE THAT A HAT SPAWNS AFTERWARD, REMOVES IT AS IT'S ADDED\n\t\tif v:IsA(\"Accessory\") then\n\t\t\tv:destroy();\n\t\tend;\n\tend;\n\twait(.75); --WAIT TO MAKE SURE IT LOADS EVERYTHING CORRECTLY. /e shrug\n\tif (Player:GetRankInGroup(GROUPID) >= LOWESTRANKPOSSIBLE) and (Player:GetRankInGroup(GROUPID) <= HIGHESTRANKPOSSIBLE) then\n\t\tAddObject(CharacterHead, CharacterObjects:WaitForChild(\"WhateverModelToPullFrom\"):WaitForChild(\"WhateverModelIsInsideThatModelThatIsMeantSpecificallyForTheHead,SuchAsAHelmet\"));\tCharacterObjects:WaitForChild(\"WhateverModelToPullFrom\"):WaitForChild(\"WhateverModelIsInsideThatModelThatIsMeantSpecificallyForTheTorso,SuchAsAChestPiece\"));\t\n\tend;\nend;\n\ngame:GetService(\"Players\").PlayerAdded:connect(function(Player)\n\tPlayer.CharacterAdded:connect(function(Character)\n\t\tif Player:IsInGroup(GROUPID) then --IF THEY'RE IN TI, RUN THE ABOVE FUNCTION.\n\t\t\trepeat wait(); until Player:HasAppearanceLoaded(); --MAKE SURE THE CHARACTER HAS LOADED ALL IT'S ASSETS (HATS AND CLOTHES)\n\t\t\tIsInGroup(Player,Character);\n\t\tend;\n\tend);\nend);",
+ "title": ""
+}

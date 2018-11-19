@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://teledifusion.tv:1935/informaciontvlive/informaciontvlive/livestream.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

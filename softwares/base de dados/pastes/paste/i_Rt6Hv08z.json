@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_encryption"
+ ],
+ "key": "Rt6Hv08z",
+ "pasteDate": "Feb 26, 2018, 1:10:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "encryption/decryption lambda env variables:\n\n1 - Create a enc/dec key with AWS KMS:\n IAM -> Encryption Keys -> select region -> Create Key\n put alias and description -> (opt) add tag -> Select key admins -> select key users -> finish\n\n2 - Set the new key as the one to enc/dec env variables of your lambda\n Lambda -> your lambda -> scroll to environment variables -> encryption configuration -> check Enable helpers for encryption in transit option -> set the new key for both the select options -> Enter value (both) -> Save (never saved because in prod)",
+ "title": "how to create and set aws lambda enc/dec key"
+}

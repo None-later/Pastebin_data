@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "J2EVKUGH",
+ "pasteDate": "Feb 18, 2018, 7:28:20 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<?php\n//    \nfunction getLastProducts ($limit = null)\n{\n    $sql = \"SELECT *\n           FROM `products` \n           ORDER BY id DESC\";\n    if($limit){\n            $sql .= \" LIMIT {$limit}\";\n    }\n\n    $rs = mysql_query($sql);\n   \n    return createSmartyRsArray($rs);\n}\n//\nfunction getProductsByCat($itemId)\n{\n    $itemId = intval($itemId);\n    $sql = \"SELECT *\n        FROM products\n        WHERE category_id = '{$itemId}'\";\n     $rs = mysql_query($sql);\n     \n     return createSmartyRsArray($rs);         \n}\n//\nfunction getProductById($itemId) {\n$itemId = intval($itemId);\n$sql = \"SELECT *\n       FROM products \n       WHERE id = '{$itemId}'\";\n       \n$rs = mysql_query($sql);\nreturn mysql_fetch_assoc($rs);\n}",
+ "title": ""
+}

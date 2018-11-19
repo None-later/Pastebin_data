@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2nmr4i2L",
+ "pasteDate": "Feb 28, 2018, 6:05:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "   inline do |builder|\n        builder.prefix %{ \n         VALUE\n         intersect(VALUE s, VALUE o) { \n                float x, y, y_offset, x_offset, ox, oy, ox_offset, oy_offset;\n                \n                x = rb_iv_get(s, \"@x\");\n                y = rb_iv_get(s, \"@y\");\n                x_offset = rb_iv_get(s, \"@x_offset\");\n                y_offset = rb_iv_get(s, \"@y_offset\");\n \n                ox = rb_iv_get(o, \"@x\");\n                oy = rb_iv_get(o, \"@y\");\n                ox_offset = rb_iv_get(o, \"@x_offset\");\n                oy_offset = rb_iv_get(o, \"@y_offset\");\n \n\n                if(y - y_offset < oy + oy_offset && y + y_offset > oy - oy_offset &&\n                       x - x_offset < ox + ox_offset && x + x_offset > ox - ox_offset)\n                    return Qtrue;\n                else\n                    return Qfalse;\n\n          }\n        }\n\n        builder.c %{\n         VALUE\n         check_actor_collision() { \n             VALUE world, thing;\n             \n             world = rb_iv_get(self, \"@world\");\n             \n             int i;\n             for(i = 0; i < RARRAY(world)->len; i++) { \n                 thing = rb_ary_entry(world, i);\n                 \n                 if(thing == self) continue;\n\n                 if(intersect(self, thing)) {\n                   rb_funcall(self, rb_intern(\"do_collision\"), thing);\n                   rb_funcall(thing, rb_intern(\"do_collision\"), self);\n                 }\n              }\n              return Qnil;\n          }\n        }\n\n    end",
+ "title": ""
+}

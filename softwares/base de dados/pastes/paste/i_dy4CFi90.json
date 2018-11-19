@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "dy4CFi90",
+ "pasteDate": "Feb 21, 2018, 9:31:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class Factorial{\n\tprivate int fieldNumber;\n\tprivate int fieldResult = 1; \n\t\n\n\tpublic Factorial(){\n\t\t\n\t}\n\n\tpublic void setNumber(int fn){\n\t\tfieldNumber = fn;\n\t}\n\tpublic void calcFac(){\n\t\tfor(int i=1;i<=fieldNumber;i++){    \n      \t\tfieldResult = fieldResult*i; \n \t\t}    \n \tSystem.out.printf(\"Factorial Result : %d\",fieldResult);   \n \t}\n}",
+ "title": "class Factorial"
+}

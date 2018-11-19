@@ -1,0 +1,5 @@
+{
+  "value": "select @curr_tracefilename \u003d [path] from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

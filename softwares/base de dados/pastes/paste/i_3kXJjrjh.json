@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_css"
+ ],
+ "key": "3kXJjrjh",
+ "pasteDate": "Feb 26, 2018, 1:34:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"oj-panel\" style=\"border-style: solid; border-color: lightgrey;\">\n<div class=\"oj-panel\" style=\"background-color: lightgrey\">\n    <span data-bind=\"text: oj.Translations.getTranslatedString('application.name')\"/>\n</div>",
+ "title": ""
+}

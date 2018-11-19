@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "WuqfvXEv",
+ "pasteDate": "Feb 11, 2018, 3:11:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "[ 63%] Built target r.clump\n[ 63%] Linking C executable ../bin/r.in.png\nCMakeFiles/r.in.png.dir/r.in.png/main.c.o: In function `write_colors_int':\nmain.c:(.text+0x698): undefined reference to `png_get_PLTE'\nCMakeFiles/r.in.png.dir/r.in.png/main.c.o: In function `print_header':\nmain.c:(.text+0xa12): undefined reference to `png_get_valid'\nmain.c:(.text+0xa3d): undefined reference to `png_get_valid'\nCMakeFiles/r.in.png.dir/r.in.png/main.c.o: In function `read_png':\nmain.c:(.text+0xb95): undefined reference to `png_sig_cmp'\nmain.c:(.text+0xbc1): undefined reference to `png_create_read_struct'\nmain.c:(.text+0xbf2): undefined reference to `png_create_info_struct'\nmain.c:(.text+0xc4f): undefined reference to `png_init_io'\nmain.c:(.text+0xc63): undefined reference to `png_set_sig_bytes'\nmain.c:(.text+0xc7c): undefined reference to `png_read_info'\nmain.c:(.text+0xcbb): undefined reference to `png_get_IHDR'\nmain.c:(.text+0xd1a): undefined reference to `png_get_bit_depth'\nmain.c:(.text+0xd2d): undefined reference to `png_set_packing'\nmain.c:(.text+0xd4d): undefined reference to `png_get_sBIT'\nmain.c:(.text+0xd75): undefined reference to `png_set_shift'\nmain.c:(.text+0xd93): undefined reference to `png_get_gAMA'\nmain.c:(.text+0xdc2): undefined reference to `png_get_valid'\nmain.c:(.text+0xdd6): undefined reference to `png_set_tRNS_to_alpha'\nmain.c:(.text+0xdfa): undefined reference to `png_set_palette_to_rgb'\nmain.c:(.text+0xe13): undefined reference to `png_read_update_info'\nmain.c:(.text+0xec2): undefined reference to `png_get_rowbytes'\nmain.c:(.text+0x1209): undefined reference to `png_read_image'\nmain.c:(.text+0x1263): undefined reference to `png_read_row'\nmain.c:(.text+0x12cc): undefined reference to `png_read_end'\nmain.c:(.text+0x1487): undefined reference to `png_destroy_read_struct'\ncollect2: error: ld returned 1 exit status\nraster/CMakeFiles/r.in.png.dir/build.make:104: recipe for target 'bin/r.in.png' failed\nmake[2]: *** [bin/r.in.png] Error 1\nCMakeFiles/Makefile2:14654: recipe for target 'raster/CMakeFiles/r.in.png.dir/all' failed\nmake[1]: *** [raster/CMakeFiles/r.in.png.dir/all] Error 2\nMakefile:127: recipe for target 'all' failed\nmake: *** [all] Error 2",
+ "title": ""
+}

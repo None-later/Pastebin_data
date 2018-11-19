@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl",
+  "re_url"
+ ],
+ "key": "yYUZQsde",
+ "pasteDate": "Feb 24, 2018, 3:04:24 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Poniszy kody naley umieci w sekcji HEAD\n<script src=\"http://mylocker.pl/js/locker_1724.js\"> </script>\nUmie to w miejscu gdzie chcesz aby wywietli si box\n\n<div id=\"mylead_show1724\"></div>\n        \nUmie to w miejscu, w ktrym ma wywietli si stopka\n\n<div id=\"mylead_footer1724\"></div>\nJeli korzystasz z Wordpress i Locker nie wywietli si prawidowo dodaj ten kod przed kodem skryptu Mylead:\n\n<script>$ = jQuery;</script>",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "re_#13",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "pZNxRWqs",
+ "pasteDate": "Feb 17, 2018, 10:05:03 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "#EXTM3U\n\n############################################################################# Filmes\n\n#EXTINF:-1 tvg-logo=\"http://www.tvmagazine.com.br/imagens/icones/600/tcpremiumb.png\" group-title=\"Filmes\", TC PREMIUM\nhttp://207.154.193.23/loadbalance/telecinepremium/chunks.m3u8?pxAuth=N7y7YvdJm1TQIre69G2XSRzEgLYrSfJ5\n\n#EXTINF:-1 tvg-logo=\"http://www.tvmagazine.com.br/imagens/icones/600/tcactionb.png\" group-title=\"Filmes\", TC ACTION\nhttp://165.227.133.72/loadbalance/telecineaction/chunks.m3u8?pxAuth=6nFvqhREHVurSkNCZGJvsPZzjq3j91Ny\n\n#EXTINF:-1 tvg-logo=\"http://vertv.net/wp-content/uploads/2016/02/tcpipocab.png\" group-title=\"Filmes\", TC PIPOCA\nhttp://159.89.31.54/loadbalance/telecinepipoca/chunks.m3u8?pxAuth=AJ0hiiMFtocoiHxaz3I7bUiH6pEMAcue\n\n#EXTINF:-1 tvg-logo=\"http://www.tvmagazine.com.br/imagens/icones/600/tcfunb.png\" group-title=\"Filmes\", TC FUN\nhttp://165.227.32.151/loadbalance/telecinefun/chunks.m3u8?pxAuth=xbnuRoOA28WhWt4ahRpAxynmg450HyBC\n\n#EXTINF:-1 tvg-logo=\"http://www.tvmagazine.com.br/imagens/icones/600/tctouchb.png\" group-title=\"Filmes\", TC TOUCH\nhttp://165.227.40.28/loadbalance/telecinetouch/chunks.m3u8?pxAuth=Cf0fZKlylZvnwEXjnvY9Mq3lyIf84ajb",
+ "title": ""
+}

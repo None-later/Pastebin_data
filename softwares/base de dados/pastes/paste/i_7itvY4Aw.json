@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "re_sql",
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "7itvY4Aw",
+ "pasteDate": "Feb 17, 2018, 7:54:02 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "[04:53:20 INFO]: UUID of player CyberCloud_ is d118c5c1-89eb-43ea-adfe-94723c892514\n[04:53:20 ERROR]: **** THIS IS NOT AN ISSUE TO DO WITH PER WORLD PLUGINS ****\nCould not pass event PlayerJoinEvent to ManaSpy v1.0.0\norg.bukkit.event.EventException\n        at me.incomprehendable.dev.pwp.transparentlisteners.PerWorldPluginLoader$1.execute(PerWorldPluginLoader.java:118) ~[PerWorldPlugins.jar:?]\n        at org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:62) ~[spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at me.incomprehendable.dev.pwp.transparentlisteners.PWPRegisteredListener.callEvent(PWPRegisteredListener.java:28) [PerWorldPlugins.jar:?]\n        at org.bukkit.plugin.SimplePluginManager.fireEvent(SimplePluginManager.java:502) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:487) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.PlayerList.onPlayerJoin(PlayerList.java:298) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.PlayerList.a(PlayerList.java:157) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.LoginListener.b(LoginListener.java:144) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.LoginListener.c(LoginListener.java:54) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.NetworkManager.a(NetworkManager.java:231) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.ServerConnection.c(ServerConnection.java:148) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.MinecraftServer.B(MinecraftServer.java:814) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.DedicatedServer.B(DedicatedServer.java:374) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:654) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:557) [spigot-parkour.jar:git-Spigot-21fe707-e1ebe52]\n        at java.lang.Thread.run(Thread.java:748) [?:1.8.0_151]\nCaused by: java.lang.NullPointerException\n        at com.ayanix.plugins.manaspy.SpyListener.onPlayerJoin(SpyListener.java:34) ~[ManaSpy.jar:?]\n        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_151]\n        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_151]\n        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_151]\n        at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_151]\n        at me.incomprehendable.dev.pwp.transparentlisteners.PerWorldPluginLoader$1.execute(PerWorldPluginLoader.java:116) ~[PerWorldPlugins.jar:?]\n        ... 15 more",
+ "title": ""
+}

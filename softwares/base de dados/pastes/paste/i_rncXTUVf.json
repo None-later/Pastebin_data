@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "kw_bot",
+  "lg_en"
+ ],
+ "key": "rncXTUVf",
+ "pasteDate": "Feb 12, 2018, 7:42:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def sendImages():\n    text = saveImages()\n    files = os.listdir()\n    files.sort()\n    img_list = createImagesList(files)\n    img = uploadingImages(img_list)\n    print('  : {}'.format(img_list))\n    print(' : {}'.format(img))\n    medias = []\n    for i in img_list:\n        if len(medias) == 1:\n            cap = text\n        else:\n            cap = ''\n        with open(i, 'rb') as file:\n            print('adding')\n            medias.append(InputMediaPhoto(file, cap))\n            print('added')\n    res = bot.send_media_group(config.testDialogID, medias)",
+ "title": ""
+}

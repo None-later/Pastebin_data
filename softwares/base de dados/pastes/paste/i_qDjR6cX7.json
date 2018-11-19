@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "php",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qDjR6cX7",
+ "pasteDate": "Feb 26, 2018, 12:20:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"form-group\">\n\n        <label for=\"instances_list[]\">Publi sur</label>\n        \n        @foreach($instances as $instance)\n            <div class=\"custom-control custom-checkbox\">\n\n            @foreach($actualite->instances as $actuinst)\n\t\t\t\t\t$flag = ($actuinst->instance == $instance);\n            @endforeach\n\t\t\t@if ($flag)\n                    <input class=\"custom-control-input\" type=\"checkbox\" name=\"instances_list[]\" value=\"{{ $instance }}\" id=\"{{ $instance }}\" checked >\n\t\t\t@else\n                    <input class=\"custom-control-input\" type=\"checkbox\" name=\"instances_list[]\" value=\"{{ $instance }}\" id=\"{{ $instance }}\" >\n\t\t\t@endif\n\n            <label class=\"custom-control-label\" for=\"{{ $instance }}\">{{ $instance }}</label>\n        </div>\n        @endforeach\n\n    </div>",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "LHMceX1H",
+ "pasteDate": "Feb 11, 2018, 3:19:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "type [A] = A => Nothing\n\n   def size[T](t: T)(implicit ev: [Int] with [String] <:< [T]) =\n     t match {\n       case i: Int => i\n       case s: String => s.length\n     }",
+ "title": ""
+}

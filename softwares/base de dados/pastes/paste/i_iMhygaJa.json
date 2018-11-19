@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iMhygaJa",
+ "pasteDate": "Feb 26, 2018, 10:52:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "BsonSerializer.RegisterDiscriminatorConvention(typeof(object), new CustomDiscriminatorConvention());\n\t\n// inherit the discriminator convention from the closest parent (that isn't object) that has one\n// otherwise default to the standard hierarchical convention\nType parentType = type.GetTypeInfo().BaseType;\nwhile (convention == null)\n{\n    if (parentType == typeof(object))\n    {\n        convention = StandardDiscriminatorConvention.Hierarchical;\n        break;\n    }\n    if (__discriminatorConventions.TryGetValue(parentType, out convention))\n    {\n        break;\n    }\n    parentType = parentType.GetTypeInfo().BaseType;\n}\n\t\npublic class CustomDiscriminatorConvention : ConventionBase, IClassMapConvention\n{\n    public void Apply(BsonClassMap classMap)\n    {\n        Type type = classMap.ClassType;\n        if (type.IsClass\n            && type != typeof(string)\n            && type != typeof(object)\n            && !type.IsAbstract)\n        {\n            classMap.SetDiscriminator(GetCustomDiscriminatorFor(type));\n        }\n    }\n}\n\t\nvar conventions = new ConventionPack { new CustomDiscriminatorConvention(), ... };\nConventionRegistry.Register(\"Custom conventions\", conventions, t => true);",
+ "title": ""
+}

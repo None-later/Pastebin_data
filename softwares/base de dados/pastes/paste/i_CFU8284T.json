@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CFU8284T",
+ "pasteDate": "Feb 8, 2018, 7:39:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "model = load_model(\"weights_ruralarea1.hdf5\")",
+ "title": ""
+}

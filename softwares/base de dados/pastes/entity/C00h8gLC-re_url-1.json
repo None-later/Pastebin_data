@@ -1,0 +1,5 @@
+{
+  "value": " http://cwiki.apache.org/confluence/display/MAVEN/DependencyResolutionException",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function MagicFlatCone(BRICKCOLOR, MATERIAL, CFRAME, ROTATION, OFFSET, X1, Y1, Z1, X2, Y2, Z2, delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

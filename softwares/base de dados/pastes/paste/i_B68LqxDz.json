@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "B68LqxDz",
+ "pasteDate": "Feb 18, 2018, 10:49:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def res_net(shape):\n    from keras.models import Model\n    from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Input, BatchNormalization, Add, Activation, GlobalAveragePooling2D\n    from keras.regularizers import l2\n\n    def resblock(filters, kernel_size=(3, 3), increase=False):\n        strides = (2, 2) if increase else (1, 1)\n        def _res_block(x):\n            x_ = Conv2D(filters, kernel_size,\n                strides=strides,\n                padding='same',\n                kernel_regularizer=l2(weight_decay),\n                activation='relu')(x)\n            x_ = BatchNormalization()(x_)\n            x_ = Conv2D(filters, kernel_size,\n                strides=(1, 1),\n                padding='same',\n                kernel_regularizer=l2(weight_decay),\n                activation='relu')(x_)\n            if increase:\n              x = Conv2D(filters, (1, 1),\n                  strides=(2, 2),\n                  padding='same',\n                  kernel_regularizer=l2(weight_decay),\n                  activation='relu')(x)\n            x = Add()([x_, x])\n            x = BatchNormalization()(x)\n            x = Activation('relu')(x)\n            return x\n        return _res_block\n\n    weight_decay = 1e-4\n    inputs = Input(shape=shape)\n\n    # 32 * 32 * 3\n    x = Conv2D(64, (7, 7), padding='same', kernel_regularizer=l2(weight_decay), activation='relu')(inputs)\n    x = BatchNormalization()(x)\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n\n    # 16 * 16 * 64  16 * 16 * 64\n    x = resblock(64, increase=True)(x)\n    x = resblock(64)(x)\n    x = resblock(64)(x)\n\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n\n    # 8 * 8 * 64  8 * 8 * 128\n    x = resblock(128, increase=True)(x)\n    x = resblock(128)(x)\n    x = resblock(128)(x)\n    x = resblock(128)(x)\n\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n\n    # 4 * 4 * 128  4 * 4 * 256\n    x = resblock(256, increase=True)(x)\n    x = resblock(256)(x)\n    x = resblock(256)(x)\n    x = resblock(256)(x)\n    x = resblock(256)(x)\n    x = resblock(256)(x)\n\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n\n    # 2 * 2 * 256  2 * 2 * 512\n    x = resblock(512, increase=True)(x)\n    x = resblock(512)(x)\n    x = resblock(512)(x)\n\n    x = GlobalAveragePooling2D()(x)\n    #  512  10\n    y = Dense(10, activation='softmax')(x)\n\n    model = Model(inputs=inputs, outputs=y)\n    model.compile(\n        loss='categorical_crossentropy',\n        optimizer='adam',\n        metrics=['accuracy']\n    )\n\n    return model",
+ "title": ""
+}

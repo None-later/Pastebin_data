@@ -1,0 +1,5 @@
+{
+  "value": "function completeDir( shell, nIndex, sText, tPreviousText )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

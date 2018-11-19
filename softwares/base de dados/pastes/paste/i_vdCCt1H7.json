@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_et"
+ ],
+ "key": "vdCCt1H7",
+ "pasteDate": "Feb 27, 2018, 11:41:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<main id=\"app\">\n  <ol>\n    <li v-for=\"item in list\">{{item.name}}</li>\n  </ol>\n</main>",
+ "title": ""
+}

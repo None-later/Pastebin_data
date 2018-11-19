@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jSDcTcgX",
+ "pasteDate": "Feb 28, 2018, 7:16:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "extends Node2D\n\nexport (PackedScene) var Bat\n\nfunc _ready():\n\tfor i in range(0,10):\n\t\tvar bat = Bat.instance()\n\t\tbat.path = $BatPath/PathFollow2D\n\t\tbat.connect(\"player_hit\", self, \"on_player_hit\")\n\t\tadd_child(bat)",
+ "title": ""
+}

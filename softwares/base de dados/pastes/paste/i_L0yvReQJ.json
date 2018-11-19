@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "L0yvReQJ",
+ "pasteDate": "Feb 21, 2018, 9:53:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "...\nexport const getAllTodos = () => {\n\n    const todoList: Todo[] = [];\n\n    return (dispatch: Function) => {\n        return getDB().then((db: PouchDB.Database) =>\n            // Demande des documents prfixs par 'todos'\n            db.allDocs({\n                startkey: 'todo',\n                endkey: 'todo\\ufff0',\n                descending: false,\n                include_docs: true\n            })\n            .then(data => {\n                // Rcupration des todos renvoys par Pouch\n                data.rows.map((item) => todoList.push(item.doc as Todo));\n\n                // Envoie de la liste des todos au store\n                dispatch({\n                    type: Action.GET_ALL_TODOS,\n                    todoList: fromJS(todoList)\n                });\n            })\n        );\n    };\n};\n...",
+ "title": ""
+}

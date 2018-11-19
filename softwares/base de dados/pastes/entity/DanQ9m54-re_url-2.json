@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For\u003d209.239.112.104",
+  "correct": true,
+  "jSonReason": "re_url"
+}

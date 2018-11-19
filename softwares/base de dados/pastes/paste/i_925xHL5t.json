@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "925xHL5t",
+ "pasteDate": "Feb 23, 2018, 2:18:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "private void Save_Changes_Click(object sender, RoutedEventArgs e)\n    {\n        List<DataGridTrialTable> list = dtgtrialTable.ToList();\n        dtg_tabletrial.View.CommitEditing();\n        _dataGridService.AddListOfDataGrid(JsonConvert.SerializeObject(list));\n         fillGrid();\n    }\n\t\npublic bool AddListOfDataGrid(string list)\n    {\n        using (var context = new FedemContext())\n        {\n            try\n            {\n\n                List<DataGridTrialTable> tempList = JsonConvert.DeserializeObject<List<DataGridTrialTable>>(list);\n                tempList.ForEach(s => context.DataGridTrialTable.AddOrUpdate(s));\n\n                if (context.SaveChanges() > 0)\n                {\n                    return true;\n                }\n                else\n                {\n                    return false;\n                }\n\n            }\n            catch (Exception ex)\n            {\n                Console.WriteLine(ex.StackTrace);\n                return false;\n            }\n        }\n    }",
+ "title": ""
+}

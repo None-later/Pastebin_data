@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Nn5DViCs",
+ "pasteDate": "Feb 21, 2018, 11:17:42 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "The following updates returned messages\n\nimage module\n\nUpdate #7002\nFailed: DatabaseSchemaObjectExistsException: Cannot add field <em class=\"placeholder\">field_data_field_image</em>.<em class=\"placeholder\">field_image_width</em>: field already exists. in DatabaseSchema_mysql->addField() (line 323 of /home/toastyhall/mavencomputers.com/includes/database/mysql/schema.inc).",
+ "title": ""
+}

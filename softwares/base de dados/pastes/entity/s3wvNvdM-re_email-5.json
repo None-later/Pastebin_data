@@ -1,0 +1,5 @@
+{
+  "value": "apk.static.SIGN.RSA.alpine-devel@lists.alpinelinux.org-5261cecb.rsa.pu",
+  "correct": true,
+  "jSonReason": "re_email"
+}

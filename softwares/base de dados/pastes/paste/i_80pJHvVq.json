@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_url"
+ ],
+ "key": "80pJHvVq",
+ "pasteDate": "Feb 23, 2018, 1:38:56 PM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "[15:32:05]: script: {\"body\":\"https://raw.githubusercontent.com/SiryjVyiko/wildfly/master/addons/auto-clustering/scripts/enableJelasticSSLForDomain.js?_r=3367728\"} [15:33:03]: ERROR: [script] {\"result\":0,\"response\":{\"result\":2338,\"raw\":\"2395\",\"methodName\":\"setDiskLimitByGroup\",\"source\":\"JEL\",\"error\":\"Maximum disk limit is reached 102400\",\"params\":{\"session\":\"11bx7996a215716e5a1c376d0b63aa1fbcd5\",\"appid\":\"5725eb1461cd3235db0fbf031e8a74b6\",\"limit\":10000000,\"actionkey\":\"1519393031834;changetopology;28919757aa80fcb9c06905fe6eddbe4c;env-ww\",\"nodeGroup\":\"bl\"}}} [15:33:07]: ERROR: {\"result\":0,\"response\":{\"result\":2338,\"raw\":\"2395\",\"methodName\":\"setDiskLimitByGroup\",\"source\":\"JEL\",\"error\":\"Maximum disk limit is reached 102400\",\"params\":{\"session\":\"11bx7996a215716e5a1c376d0b63aa1fbcd5\",\"appid\":\"5725eb1461cd3235db0fbf031e8a74b6\",\"limit\":10000000,\"actionkey\":\"1519393031834;changetopology;28919757aa80fcb9c06905fe6eddbe4c;env-ww\",\"nodeGroup\":\"bl\"}},\"action\":\"buildCluster.script\"}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "CHWyHFDH",
+ "pasteDate": "Feb 9, 2018, 8:46:13 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "from ConfigParser import ConfigParser\nc = ConfigParser()\nc.read(\"pymzq.ini\")\n\t\n>>> c.sections()\n['pyzmq:platform.architecture()[0']\n\t\n[pyzmq:platform.architecture()[0] == '64bit']\nurl = ${pkgserver:fullurl}/pyzmq/pyzmq-2.2.0-py2.7-linux-x86_64.egg",
+ "title": ""
+}

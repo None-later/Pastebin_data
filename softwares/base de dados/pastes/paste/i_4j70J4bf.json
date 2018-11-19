@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "4j70J4bf",
+ "pasteDate": "Feb 26, 2018, 12:46:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "                    value = sc.nextInt();\n                    for (int j = 0; j < arrayList.size(); j++){\n                        if (arrayList.get(j).equals(value)){\n                            arrayList.remove(j);\n\n                        }\n                    }",
+ "title": ""
+}

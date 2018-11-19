@@ -1,0 +1,5 @@
+{
+  "value": "function isGlobalIPv6Addr(address)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

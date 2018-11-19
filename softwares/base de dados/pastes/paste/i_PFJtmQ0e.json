@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PFJtmQ0e",
+ "pasteDate": "Feb 10, 2018, 4:28:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "documentclass[twocolumn]{article}\nusepackage{graphicx}\nusepackage{xcolor}\nusepackage{afterpage}\n\nmakeatletter\nnewenvironment{dblfigure}{\n  afterpage{pagecolor{blue!50}}\n    @dblfloat{figure}  \n}{\n  afterpage{clearpagenopagecolor}\n    end@dblfloat\n\n}\n\nnewcommand{dblpagefigure}[2]{\n    afterpage{pagecolor{blue!50}}\n    @dblfloat{figure}\n      #1\n    end@dblfloat\n    @dblfloat{figure}\n      #2\n    end@dblfloat\n}\nmakeatother\n\nusepackage{lipsum}\n\nbegin{document}\n\nlipsum[1-4]\nbegin{dblfigure}\ncaption{Some other figure}\nincludegraphics{example-image}\nend{dblfigure}\n\nlipsum\n\nlipsum\n\ndblpagefigure{\n  % afterpage{pagecolor{blue}} % color occurs on preceding page\n    caption{Some figure}\n    includegraphics[width=textwidth]{example-image}\n}{\n    caption{Another figure}\n    includegraphics[width=textwidth]{example-image}\n    afterpage{clearpagenopagecolor}\n}\n\nlipsum\nlipsum\n\n\nend{document}",
+ "title": ""
+}

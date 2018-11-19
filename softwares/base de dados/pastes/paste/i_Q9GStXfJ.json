@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Q9GStXfJ",
+ "pasteDate": "Feb 11, 2018, 7:24:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@IBAction func showMessage(sender: UIButton) {\n    let alertController = UIAlertController(title: \"Welcome to My First App\", message: \"Hello World\", preferredStyle: UIAlertControllerStyle.alert)\n    alertController.addAction(UIAlertAction(title: \"OK\", style: UIAlertActionStyle.default, handler: nil))\n    present(alertController, animated: true, completion: nil)\n}\n\n//Excerpt From: Simon Ng. Beginning iOS 11 Programming with Swift. iBooks.",
+ "title": ""
+}

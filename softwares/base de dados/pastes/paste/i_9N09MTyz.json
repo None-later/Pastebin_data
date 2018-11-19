@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9N09MTyz",
+ "pasteDate": "Feb 28, 2018, 8:29:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "seth@mabook paybaby % svn ci -m \"txn/gateway account/options updates + more gateway progress\" test/ app/mo\ndels/gateway_account.rb app/models/txn.rb app/models/gateway_options.rb vendor/plugins/active_merchant/\nSending        app/models/gateway_account.rb\nSending        app/models/gateway_options.rb\nSending        app/models/txn.rb\nSending        test/unit/gateway_options_test.rb\nSending        test/unit/txn_test.rb\nSending        vendor/plugins/active_merchant/lib/active_merchant/billing/gateways/chase_paymentech.rb\nAdding         vendor/plugins/active_merchant/test/remote_tests/remote_chase_paymentech_test.rb\nSending        vendor/plugins/active_merchant/test/unit/gateways/chase_paymentech_test.rb\nTransmitting file data .dyld: lazy symbol binding failed: Symbol not found: _svn_txdelta_to_svndiff\n  Referenced from: /usr/local/lib/libsvn_ra_svn-1.0.dylib\n  Expected in: flat namespace\n\ndyld: Symbol not found: _svn_txdelta_to_svndiff\n  Referenced from: /usr/local/lib/libsvn_ra_svn-1.0.dylib\n  Expected in: flat namespace\n\nTrace/BPT trap\nseth@mabook paybaby %",
+ "title": ""
+}

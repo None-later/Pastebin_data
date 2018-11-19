@@ -1,0 +1,14 @@
+{
+ "espireDate": "1M",
+ "format": "php",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "UMz7ThVU",
+ "pasteDate": "Feb 26, 2018, 10:26:25 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "PHP mysqli_affected_rows() Function\nExample\nPrint out affected rows from different queries:\ndownload code on mediafire: http://gsul.me/9Y3X",
+ "title": "PHP mysqli_affected_rows() Function"
+}

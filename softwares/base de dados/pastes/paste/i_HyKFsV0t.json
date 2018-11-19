@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_targets",
+  "lg_en"
+ ],
+ "key": "HyKFsV0t",
+ "pasteDate": "Feb 11, 2018, 7:00:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Reowrking Ginjo for a multitude of reasons\n\n- Power steal is bugged/Does not work\n- The skills have no descriptions and are just damage >_>\n- Stat buffs are super weak. Adv. Fullbring is less than bankai/shikai/volstandig.\n\nChanges:\n\nFullbring: Increases like normal as if it were a shikai boost \n- Upon meleeing a person it knocks them back regardless if its an F or G\n- It steals 0.5% Stats per melee and 1% Per skill use\n\nAdv Fullbring: INcreases as if it was a Bankai Boost. (Lower the goddamn Drain, why the fuck is every other class lasting forever but fullbring and advance fullbring can barely use 2 skills without running out of reir)\n- Upon Meleeing a person it steals 2.5% of their stats(Damage and Skills) and knocks them back regardless if its an F or G\n- It steals reiryoku from the person it hit based upon 5% of your damage dealt.\n\n1st Skill: Omni Slash - This is a Multi-Directional aoe that pulls targets in towards the ginjo(He's a Zan that steals and sucks in power, not just throws shit)\n\n2nd Skill: Ability Replicate - A toggleable state which lets Ginjo build up charge stacks. Heres how it works While in this state ginjo doesn't take HP damage from skills and infact his Reiryoku takes damage instead, but for each skill hit he takes it turns into 5 charge stacks. Stacks are basically bala's for Ginjo with no CD between usage (Max 20 Stacks, and does damage based upon 0.5*Attack stat + 0.25*Reiryoku Stat).\n\n3rd Skill: Getsuga Ugly - A Green Getsuga shoots out towards the person and deals moderate amounts of damage.\n\nUlt skill: Fullbringer Cero - Shoots out a Cero which deals heavy amounts of continues damage as it passes has an effect of passing through people rather than stopping upon them and the beam lasts for 2 seconds.",
+ "title": "Ginjo Rework"
+}

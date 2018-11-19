@@ -1,0 +1,5 @@
+{
+  "value": "function fseek($handle, $offset, $whence \u003d SEEK_SET)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "kw_malicious",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "vNRSZV55",
+ "pasteDate": "Feb 18, 2018, 12:41:37 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "from __future__ import division\nimport csv\nimport os\nimport json\n\n\ndef count_freq(functions):\n    freq = 0\n    ints = 0\n    ops = 0\n    for func in functions:\n        for block in func[\"basic_blocks\"]:\n            ops += block['code'].count(\"\\n\")\n            ints += block['code'].count(\"jmp 0x\")\n    if ops == 0:\n        freq = 0\n    else:\n        freq = ints/ops\n    return freq\n\n\ndef main():\n    with open('labels_final.csv', 'rb') as csvfile:\n        label_reader = csv.reader(csvfile, delimiter=',')\n        DICT = {row[0]: row[2] for row in label_reader}\n\n    mal_freq = []\n    good_freq = []\n    for report in os.listdir('./Data samples'):#[:100]:\n        with open('./Data samples/%s' % report, 'r') as json_file:\n            functions = json.load(json_file)['functions']\n            if DICT[report[:-5]] == 'malicious' or DICT[report[:-5]] == 'adware':\n                freq = count_freq(functions)\n                mal_freq.append(freq)\n            else:\n                freq = count_freq(functions)\n                good_freq.append(freq)\n\n    thresh = 0.08\n    print sum(good_freq) / len(good_freq)\n    print sum(mal_freq) / len(mal_freq)\n    good_above = [g for g in good_freq if g > thresh]\n    mal_under = [m for m in mal_freq if m < thresh]\n    print \"Threshold: %f\" % thresh\n    print \"Good above: %d out of %d\" % (len(good_above), len(good_freq))\n    print \"Bad under: %d out of %d\" % (len(mal_under), len(mal_freq))\n        \n\nif __name__ == '__main__':\n    main()",
+ "title": ""
+}

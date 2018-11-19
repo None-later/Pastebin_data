@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "kXr8cDD3",
+ "pasteDate": "Feb 21, 2018, 8:54:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Whatever file you create your store in...\n\nimport { applyMiddleware, createStore } from 'redux';\nimport thunk from 'redux-thunk'; // or sagaMiddle whatever you prefer\nimport { composeWithDevTools } from 'redux-devtools-extension';\n\nimport rootReducer from '//pathToRootReducer';\n\nconst middleware = [thunk]; // or sagaMiddleware whatever you use\n\nconst store = createStore(rootReducer, composeWithDevTools(applyMiddleware(...middleware)));",
+ "title": ""
+}

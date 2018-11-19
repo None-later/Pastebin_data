@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cF4vA5dB",
+ "pasteDate": "Feb 21, 2018, 9:02:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "push    offset aGiveMyYourShel ; \"Give my your shellcode:\"\n    call    _printf\n    add     esp, 10h\n    sub     esp, 4\n    push    0C8h\n    push    offset shellcode\n    push    0\n    call    _read\n    add     esp, 10h\n    mov     eax, offset shellcode\n    call    eax ; shellcode\n    mov     eax, 0\n    mov     ecx, [ebp+var_4]\n    leave\n    lea     esp, [ecx-4]\n    retn",
+ "title": ""
+}

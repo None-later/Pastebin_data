@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "kw_scan",
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "kR4QKZ0A",
+ "pasteDate": "Feb 8, 2018, 4:57:51 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import socket\nimport nmap\nimport subprocess\nimport sys\n\ns = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)\ns.connect((\"8.8.8.8\", 80))\nlocalIp = s.getsockname()[0]\ns.close()\n\nsubnet = localIp[:localIp.rfind(\".\")]\n\nnm = nmap.PortScanner()\n\n\n#print(nm.scan(hosts=subnet+'.*', arguments='-sP'))\n\n#print(subnet)\n\nHOST = \"10.244.208.72\"\nCOMMAND =\"uname -a\"\n#nm.scan(hosts=subnet+'.*', arguments='-sP')\n#hosts_list = [(x, nm[x]['status']['state']) for x in nm.all_hosts()]\n#for host in hosts_list:\nssh = subprocess.Popen([\"ssh\", \"%s\" % HOST,  COMMAND],\n                       shell=False,\n                       stdin=subprocess.PIPE,\n                       stdout=subprocess.PIPE,\n                       stderr=subprocess.PIPE)\nssh.stdin.write(b'raspberry\\n')\nssh.stdin.write(b'fgdfgfgdf\\n')\n\n#p = subprocess.run(['grep', 'f'], stdout=subprocess.PIPE, input = 'dfdfdfsdfsdfsdfsdf\\n', encoding='ascii')\nprint(\"benjamin er tyk\")\n    #outs, errs = proc.communicate(timeout=3)\n#outs, errs = ssh.communicate(input=b'raspberry\\n')\n#ssh.stdin.write(b'raspberry')\n#result = ssh.stdout.readlines()\n\n\n\n\n\n#print(grep_stdout)\n\n#if result == []:\n#    error = ssh.stderr.readlines()\n#    print >>sys.stderr, \"ERROR: %s\" % error\n#else:\n#    print(result)",
+ "title": "tjorne"
+}

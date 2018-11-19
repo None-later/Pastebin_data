@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "ExjbpfPc",
+ "pasteDate": "Feb 26, 2018, 11:50:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "vagrant global-status | awk '/virtualbox poweroff/{ print $1 }' | xargs vagrant up",
+ "title": ""
+}

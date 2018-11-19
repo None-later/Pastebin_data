@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rM8ByBs4",
+ "pasteDate": "Feb 26, 2018, 10:34:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\n\nif(!isset($_POST[\"idprod\"]) || $_POST[\"idprod\"] == \"\"){\n  die(\"pas de prod selectionn\");\n}\nif(!isset($_POST[\"stock\"]) || $_POST[\"stock\"] == \"\"){\n  die(\"pas de stock selectionn\");\n}\n\n\n$stock = 10;\n$idprod = 5;\n\nif($_POST[\"stock\"] > $stock){\n  die(\"stock trop grand !\");\n}\n\n//ton code avec panier ect...\n?>",
+ "title": ""
+}

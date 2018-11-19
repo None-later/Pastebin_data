@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "HFh0EcuN",
+ "pasteDate": "Feb 21, 2018, 11:02:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "cl_viewmodel_shift_left_amt1.5;\ncl_viewmodel_shift_right_amt0.75;\nviewmodel_fov68;\nviewmodel_offset_x2.500000;\nviewmodel_offset_y1;\nviewmodel_offset_z-1.500000;\nviewmodel_presetpos3;\ncl_bob_loweramt21;\ncl_bobamt_lat0.4;\ncl_bobamt_vert0.25;\ncl_bobcycle0.98;",
+ "title": "View model for cs"
+}

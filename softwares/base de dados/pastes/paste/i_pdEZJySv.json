@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pdEZJySv",
+ "pasteDate": "Feb 26, 2018, 3:27:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class FakeActor : ReceivePersistentActor\n{\n    public override string PersistenceId { get; } = \"HashCoded\";\n\n    public FakeActor()\n    {\n        Command<FakeRequest>(request =>\n        {\n            Sender.Tell(new FakeResponse(requestId: request.RequestId));\n        });\n    }\n}",
+ "title": ""
+}

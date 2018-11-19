@@ -1,0 +1,5 @@
+{
+  "value": "function mergeIndexData(array $data)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

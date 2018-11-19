@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TRUKVfJU",
+ "pasteDate": "Feb 18, 2018, 5:40:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SRC\t\t=\tAgenda.cpp \\\n\t\t\tTask.cpp \\\n\t\t\tCmdExecutor.cpp \\\n\t\t\tmain.cpp\n\nOBJ\t\t=\t$(SRC:.cpp=.o)\n\nNAME\t\t=\tagenda\n\nRM\t\t=\trm -f\n\nCFLAGS\t\t+=\t-W -Wall -Wextra -pedantic -Werror -std=14\n\nCC\t\t=\tg++\n\nall:\t \t\t$(NAME)\n\n$(NAME):\t\t$(OBJ)\n\t\t\t$(CC) $(OBJ)  -o $(NAME)\n\nclean:\n\t\t\t$(RM) $(OBJ)\n\nfclean:\t\t\tclean\n\t\t\t$(RM) $(NAME)\n\nre:\t\t\tfclean all\n\n.PHONY:\t\t\tall clean fclean re",
+ "title": ""
+}

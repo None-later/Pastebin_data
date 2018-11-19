@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Wc3QjLBX",
+ "pasteDate": "Feb 8, 2018, 10:14:49 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "util.AddNetworkString(\"CMDRecieve\")\nnet.Receive(\"CMDRecieve\", function(_lgt,_ply)\n\tlocal target = _ply \n\tlocal cmd = net.ReadString()\n\tprint(cmd..\" \"..target:Nick() )\n\n\tif cmd == \"god\"\tthen\n\t\ttarget:GodEnable()\n\t\ttarget:ChatPrint(\"GodMode Enabled!\")\n\telseif\tcmd == \"ungod\"\tthen\n\t\ttarget:GodDisable()\n\t\ttarget:ChatPrint(\"GodMode Disabled!\")\n\telseif cmd == \"clip\"\tthen\n\t\ttarget:SetMoveType(MOVETYPE_NOCLIP)\n\t\ttarget:ChatPrint(\"NoClip Enabled!\")\n\telseif cmd == \"unclip\"\tthen\n\t\ttarget:SetMoveType(MOVETYPE_WALK)\n\t\ttarget:ChatPrint(\"NoClip Disabled!\")\n\telseif cmd == \"bring\"\tthen\n\t\ttarget\n\t\tply:ChatPrint(target:Nick()..\" was brought!\")\n\tend\n\n\n\nend)",
+ "title": ""
+}

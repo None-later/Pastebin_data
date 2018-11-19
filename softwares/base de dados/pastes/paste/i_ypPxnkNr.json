@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ypPxnkNr",
+ "pasteDate": "Feb 18, 2018, 4:51:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"tgws\" data-text=\"text gradient with shadow\">text gradient with shadow</div>\n\n<style>\n.tgws {\n    margin-bottom: 10px;\n    font-size: 42px;\n    font-weight: bold;\n    position: relative;\n    text-shadow: 0px 3px 1px rgba(0, 0, 0, 0.31);\n}\n.tgws:after{\n    content: attr(data-text);\n    display: block;\n    font-family: inherit;\n    font-size: inherit;\n    position: absolute;\n    top: 0;\n    left:0;\n    bottom: 0;\n    right: 0;\n    background: linear-gradient(0deg, #107efb 0%, #08ffff 100%);\n    -webkit-background-clip: text;\n    color: transparent;\n    text-shadow: none;\n}\n</style>",
+ "title": ""
+}

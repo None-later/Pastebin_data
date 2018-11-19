@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "00JAsjsF",
+ "pasteDate": "Feb 11, 2018, 7:16:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sudo apt-get autoremove eclipse*\n\t\nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nE: Unable to locate package eclipse-workspace.\n\t\nsudo rm -rf ~/eclipse",
+ "title": ""
+}

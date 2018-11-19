@@ -1,0 +1,5 @@
+{
+  "value": "function\")Number.isSafeInteger\u003dfunction(a)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

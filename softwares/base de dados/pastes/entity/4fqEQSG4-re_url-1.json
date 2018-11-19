@@ -1,0 +1,5 @@
+{
+  "value": "\"https://www.google.de/search?q\u003d(encodedSearchString",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function c99ftpbrutecheck($host,$port,$timeout,$login,$pass,$sh,$fqb_onlywithsh)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

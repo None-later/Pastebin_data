@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dT9DXxja",
+ "pasteDate": "Feb 17, 2018, 7:25:57 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Make sure that all networks are going to be listed, required when upgraded to PRO.\n\t\t$values_keys = array_keys( $this->value );\n\n\t\tforeach ( $this->follow_networks as $id => $name ) {\n\n\t\t\tif ( ! in_array( $id, $values_keys ) ) {\n\t\t\t\t\n\t\t\t\t$this->value[ $id ] = array(\n\t\t\t\t\t'profile'\t=> array(\n\t\t\t\t\t\t'username'\t=> '',\n\t\t\t\t\t\t'url'\t\t=> '',\n\t\t\t\t\t),\n\t\t\t\t\t'label'\t\t=> sprintf( __( 'Follow us on %1$s', 'socialsnap' ), socialsnap_get_network_name( $id ) ),\n\t\t\t\t\t'manual_followers'\t=> '',\n\t\t\t\t);\n\t\t\t}\n\t\t}\n\n\t\tunset( $this->value['order'] );\n\t\t$this->value['order'] = implode( ';', array_keys( $this->value ) );",
+ "title": ""
+}

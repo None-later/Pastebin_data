@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "e08qyMFW",
+ "pasteDate": "Feb 23, 2018, 12:33:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <fstream>\n\nusing namespace std;\n\nvoid quest()\n{\n\tifstream fin(\"input.txt\");\n\tofstream fout(\"output.txt\");\n\tint s;\n\tfin >> s;\n\tint *Mt = new int[s];\n\tfor (int i = 0;i < s;i++)\n\t{\n\n\t\tfin >> Mt[i];\n\t}\n\tfor (int i = 1;i < s;i++)\n\t{\n\t\tint i2 = (i-1) / 2;\n\t\tif (Mt[i2] > Mt[i])\n\t\t{\n\t\t\tfout << \"No\" << endl;\n\t\t\treturn;\n\t\t}\n\t}\n\tfout << \"Yes\" << endl;\n\treturn;\n}\nvoid main()\n{\n\tquest();\n\treturn;",
+ "title": ""
+}

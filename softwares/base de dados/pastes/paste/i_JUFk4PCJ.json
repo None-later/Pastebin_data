@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "python",
+ "jSonReasons": [
+  "lg_nl"
+ ],
+ "key": "JUFk4PCJ",
+ "pasteDate": "Feb 8, 2018, 8:09:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def token_du_sale(response):\n     match = '\"token\": \"'\n     index_token_begin = response.index(match) + len(match)\n     index_token_end = s[index_token_begin:].index('\"') + index_token_begin\n     return response[index_token_begin:index_token_end]",
+ "title": ""
+}

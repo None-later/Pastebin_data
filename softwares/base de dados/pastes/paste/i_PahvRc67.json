@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "PahvRc67",
+ "pasteDate": "Feb 26, 2018, 9:57:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div>\n {{ category.content }}\n</div>",
+ "title": ""
+}

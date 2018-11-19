@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "tA6QFf9Q",
+ "pasteDate": "Feb 18, 2018, 7:11:17 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "2011-03-12 22:55:40 [SEVERE] Could not pass event BLOCK_BREAK to BigBrother\njava.lang.NullPointerException\n\tat org.bukkit.craftbukkit.block.CraftSign.getLines(CraftSign.java:20)\n\tat me.taylorkelly.bigbrother.datablock.DestroySignText.getText(DestroySignText.java:18)\n\tat me.taylorkelly.bigbrother.datablock.DestroySignText.<init>(DestroySignText.java:13)\n\tat me.taylorkelly.bigbrother.datablock.BrokenBlock.signCheck(BrokenBlock.java:157)\n\tat me.taylorkelly.bigbrother.datablock.BrokenBlock.<init>(BrokenBlock.java:23)\n\tat me.taylorkelly.bigbrother.datablock.BrokenBlock.surroundingSignChecks(BrokenBlock.java:142)\n\tat me.taylorkelly.bigbrother.datablock.BrokenBlock.<init>(BrokenBlock.java:22)\n\tat me.taylorkelly.bigbrother.listeners.BBBlockListener.onBlockBreak(BBBlockListener.java:61)\n\tat org.bukkit.plugin.java.JavaPluginLoader$30.execute(JavaPluginLoader.java:309)\n\tat org.bukkit.plugin.RegisteredListener.callEvent(RegisteredListener.java:59)\n\tat org.bukkit.plugin.SimplePluginManager.callEvent(SimplePluginManager.java:255)\n\tat net.minecraft.server.ItemInWorldManager.d(ItemInWorldManager.java:112)\n\tat net.minecraft.server.ItemInWorldManager.a(ItemInWorldManager.java:42)\n\tat net.minecraft.server.EntityPlayer.f_(EntityPlayer.java:72)\n\tat net.minecraft.server.World.a(World.java:1011)\n\tat net.minecraft.server.WorldServer.a(WorldServer.java:53)\n\tat net.minecraft.server.World.f(World.java:993)\n\tat net.minecraft.server.World.d(World.java:970)\n\tat net.minecraft.server.MinecraftServer.h(MinecraftServer.java:354)\n\tat net.minecraft.server.MinecraftServer.run(MinecraftServer.java:272)\n\tat net.minecraft.server.ThreadServerApplication.run(SourceFile:366)",
+ "title": ""
+}

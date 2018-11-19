@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "BFJq2zWF",
+ "pasteDate": "Feb 26, 2018, 10:25:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "rich_ph <- ggplot(CR_ph) +\n\t\nscale_color_manual(labels = c(\"disp\", \"hp\", \"qsec\"), values = c(\"blue\",\"green\", \"red\"))",
+ "title": ""
+}

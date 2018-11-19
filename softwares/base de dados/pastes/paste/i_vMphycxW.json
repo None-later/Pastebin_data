@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vMphycxW",
+ "pasteDate": "Feb 18, 2018, 4:34:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# -*- coding: utf-8 -*-\n\nimport hashlib, getpass\n\n\nclass Usuario:\n       \n      def __init__(self,nombre,passwd=''):\n          \n          self.nombre=nombre\n          self.passwd=passwd \n      \n      def __str__(self):\n         \n          return str(self.nombre)\nclass ProgramaLogin:\n      \n      def encriptaUsuario(self,usuario):\n          nombre=usuario.nombre\n          passwd=usuario.passwd\n          \n          userEncriptado= hashlib.sha1(nombre+passwd).hexdigest()\n          return userEncriptado\n      \n      \n      def verificaUsuario(self,usuario):\n          user=self.encriptaUsuario(usuario)\n          encontrado=False\n          try:\n             fichero=open('usuarios.txt','r')\n             for linea in fichero:\n                 print linea\n                 print 'user: '+str(usuario)+' ' +user\n                 print user == linea\n                 if user == linea:\n                 \n                    encontrado=True\n                    break\n             fichero.close()\n          except:\n             print 'no se a podido abrir el fichero'\n          \n          return encontrado\n      def agregaUsuario(self,usuario):\n          fichero=open('usuarios.txt','a')\n          user= self.encriptaUsuario(usuario)\n          fichero.write(user+'\\n')\n          fichero.close()\n      \n      def login(self,nombre,passwd=''):\n      \n          usuario=Usuario(nombre,passwd)\n          valido=self.verificaUsuario(usuario)\n          \n          if valido:\n             print 'Bienvenido %s puede acceder' % usuario\n          else:\n             print 'usuario o contrasea incorrectos'\n          \n      def __str__(self):\n          \n          s=''\n          for i in range(len(self.usuarios)):\n              s+=str(self.usuarios[i])+'\\n'\n              \n              \n          return s\n      \n      def __len__(self):\n          return len(self.usuarios)  \n      \n\njonh=Usuario('jonh','minameisjonh')\n\nusers=ProgramaLogin()\n\nusers.agregaUsuario(jonh)\n\nusers.login('jonh','minameisjonh')\nusers.login('pepe','s0yunp1r4t4')",
+ "title": ""
+}

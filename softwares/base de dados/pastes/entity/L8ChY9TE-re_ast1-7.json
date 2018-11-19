@@ -1,0 +1,5 @@
+{
+  "value": "function __construct($username, $password, $salt, $apiKey, $isActive \u003d true)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "T7kswSQq",
+ "pasteDate": "Feb 9, 2018, 3:13:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "2/9/2018 2:12:36 PM: DEBUG - \n\n2/9/2018 2:12:36 PM: DEBUG - Program started! Hooray! \\o/\n2/9/2018 2:12:36 PM: DEBUG - Reading settings...\n2/9/2018 2:12:36 PM: DEBUG - Checking if the PSO2 Tweaker is running\n2/9/2018 2:12:36 PM: DEBUG - Loaded pso2_bin directory from settings\n2/9/2018 2:12:36 PM: DEBUG - Reading remote config...\n2/9/2018 2:12:36 PM: DEBUG - Loading settings...\n2/9/2018 2:12:36 PM: DEBUG - ----------------------------------------\n2/9/2018 2:12:36 PM: DEBUG - Program opening, running diagnostics...\n2/9/2018 2:12:37 PM: DEBUG - Current OS/Version: Microsoft Windows 10 Home (6.2.9200.0) <Japanese (Japan)> [64-bit]\n2/9/2018 2:12:37 PM: DEBUG - Drive Filesystem: NTFS\n2/9/2018 2:12:37 PM: DEBUG - Directory program is running in: C:\\PSO2 Tweaker\n2/9/2018 2:12:37 PM: DEBUG - Selected PSO2 Directory: C:\\Program Files (x86)\\SEGA\\PHANTASYSTARONLINE2\\pso2_bin\n2/9/2018 2:12:37 PM: DEBUG - .NET Framework Version: 4.6.2 or later\n2/9/2018 2:12:37 PM: DEBUG - Enabled Plugins: None\n2/9/2018 2:12:37 PM: DEBUG - Disabled Plugins: PSO2BlockRename.dll, PSO2ItemTranslator.dll, PSO2RAISERSystem.dll, PSO2TitleTranslator.dll, TelepipeProxy.dll\n2/9/2018 2:12:37 PM: DEBUG - System has been on for: 429.2 hours\n2/9/2018 2:12:37 PM: DEBUG - ----------------------------------------\n\n2018/02/09 14:12:37: DEBUG - User location according to IP: Japan\n2/9/2018 2:12:37 PM: Program opened successfully! Version 4.0.6.0 [OK!]\n2/9/2018 2:12:37 PM: Checking for PSO2 Updates...\n2/9/2018 2:13:06 PM: DEBUG - Downloading the list of files to skip...\n2/9/2018 2:13:06 PM: Update started.\n2/9/2018 2:13:06 PM: DEBUG - Fetching the patchlists...\n2/9/2018 2:13:06 PM: DEBUG - Exception: Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs/ Message: Microsoft.VisualBasic",
+ "title": "Error Log report"
+}

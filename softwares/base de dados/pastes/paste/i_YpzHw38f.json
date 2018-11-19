@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "YpzHw38f",
+ "pasteDate": "Feb 17, 2018, 5:15:09 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "17.02 13:47:34 [Server] ERROR Encountered an unexpected exception\n17.02 13:47:34 [Server] INFO java.lang.ClassCastException: net.minecraft.server.v1_8_R3.TileEntityChest cannot be cast to net.minecraft.server.v1_8_R3.TileEntitySkull\n17.02 13:47:34 [Server] INFO at org.bukkit.craftbukkit.v1_8_R3.block.CraftSkull.<init>(CraftSkull.java:25) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at org.bukkit.craftbukkit.v1_8_R3.block.CraftBlock.getState(CraftBlock.java:278) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at org.bukkit.craftbukkit.v1_8_R3.CraftChunk.getTileEntities(CraftChunk.java:114) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.TimingHistory$2$1.apply(TimingHistory.java:120) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.TimingHistory$2$1.apply(TimingHistory.java:1) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.util.JSONUtil.toArrayMapper(JSONUtil.java:80) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.util.JSONUtil.toArrayMapper(JSONUtil.java:74) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.TimingHistory$2.apply(TimingHistory.java:110) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.TimingHistory$2.apply(TimingHistory.java:1) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.util.JSONUtil.toObjectMapper(JSONUtil.java:102) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.TimingHistory.<init>(TimingHistory.java:105) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at co.aikar.timings.FullServerTickHandler.stopTiming(FullServerTickHandler.java:71) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at net.minecraft.server.v1_8_R3.MinecraftServer.A(MinecraftServer.java:762) ~[spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at net.minecraft.server.v1_8_R3.MinecraftServer.run(MinecraftServer.java:616) [spigot.jar:git-TacoSpigot-\"27784328\"]\n17.02 13:47:34 [Server] INFO at java.lang.Thread.run(Thread.java:745) [?:1.8.0_111]\n17.02 13:47:34 [Server] ERROR This crash report has been saved to: /./crash-reports/crash-2018-02-17_13.47.34-server.txt\n17.02 13:47:34 [Server] INFO Stopping server",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_python_error"
+ ],
+ "key": "7nsgGcJy",
+ "pasteDate": "Feb 28, 2018, 6:54:13 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "sudo pip2 install nltk\n\t\nSyntaxError: invalid syntax\n\t\nimport nltk\n\nTraceback (most recent call last):\n  File \"<pyshell#4>\", line 1, in <module>\n    import nltk\n  ModuleNotFoundError: No module named 'nltk'\n\nnltk.download\n\nTraceback (most recent call last):\n  File \"<pyshell#5>\", line 1, in <module>\n    nltk.download\nNameError: name 'nltk' is not defined",
+ "title": ""
+}

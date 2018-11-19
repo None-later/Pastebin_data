@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast2"
+ ],
+ "key": "S5sd7k17",
+ "pasteDate": "Feb 20, 2018, 7:57:39 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "You the couchview tool, you couldn't normally build the view in view.json.  There were no constructs for the index key.  \n\nWhat I propose is to use a configuration file to add other keys to the view.",
+ "title": ""
+}

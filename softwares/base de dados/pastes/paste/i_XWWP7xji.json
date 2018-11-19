@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sv"
+ ],
+ "key": "XWWP7xji",
+ "pasteDate": "Feb 20, 2018, 4:48:43 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#include \"var.h\"\n\nVar::Var(){}\nVar::~Var(){}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "a::",
+  "correct": false,
+  "jSonReason": "re_ipv6"
+}

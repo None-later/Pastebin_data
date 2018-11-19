@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "ZmQrVYs8",
+ "pasteDate": "Feb 21, 2018, 8:45:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <stdlib.h>\n#include <time.h>\n\nvoid remplirTableau(int* tableau, int taille);\nvoid afficherTableau(int* tableau, int taille);\nint estTrie(int* tableau, int taille);\nvoid quicksort(int* tableau, int taille);\n\nint main(int argc, char const *argv[])\n{\n  srand(time(NULL));\n\n  int taille = 20;\n  int tableau[taille];\n  int tableauTrie[] = {5, 10, 6, 2, 3, 7, 8, 1, 4, 9};\n\n  printf(\"Size of tableau : %d\\n\", taille);\n  remplirTableau(tableau, taille);\n  afficherTableau(tableau, taille);\n  estTrie(tableau, taille);\n  estTrie(tableauTrie, 3);\n  quicksort(tableauTrie, 10);\n  afficherTableau(tableauTrie, 10);\n\n  return 0;\n}\n\nvoid remplirTableau(int* tableau, int taille)\n{\n  for (int i = 0; i < taille; i++)\n  {\n    tableau[i] = rand();\n  }\n}\n\nvoid afficherTableau(int* tableau, int taille)\n{\n  for (int i = 0; i < taille; i++)\n  {\n    printf(\"Case : %d - %d\\n\", i, tableau[i]);\n  }\n}\n\nint estTrie(int* tableau, int taille)\n{\n  int a, b;\n  int estTrie = 1;\n\n  for (int i = 0; i < taille-1; i++)\n  {\n    a = tableau[i];\n    b = tableau[i+1];\n\n    if (b < a)\n    {\n      printf(\"Le tableau n'est pas tri\\n\");\n      estTrie = 0;\n      return estTrie;\n    }\n  }\n  printf(\"Le tableau est tri\\n\");\n  return estTrie;\n}\n\nvoid quicksort(int* tableau, int taille)\n{\n  int pivotGauche = 0;\n  int pivotDroit = taille - 1;\n  int pivotTemp;\n\n  while (tableau[pivotGauche] != tableau[pivotDroit])\n  {\n    while (tableau[pivotGauche] < tableau[pivotGauche + 1])\n    {\n      printf(\"TPG : %d - TPG+1 : %d\\n\", tableau[pivotGauche], tableau[pivotGauche+1]);\n      pivotGauche++;\n      printf(\"PG : %d\\n\", pivotGauche);\n    }\n\n    while (tableau[pivotDroit] > tableau[pivotDroit - 1])\n    {\n      printf(\"TPD : %d - TPD-1 : %d\\n\", tableau[pivotDroit], tableau[pivotDroit-1]);\n      pivotDroit--;\n      printf(\"PG : %d\\n\", pivotDroit);\n    }\n\n    pivotTemp = pivotGauche;\n    pivotGauche = pivotDroit;\n    pivotDroit = pivotTemp;\n  }\n}",
+ "title": ""
+}

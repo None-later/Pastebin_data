@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "Yw2gNqPJ",
+ "pasteDate": "Feb 20, 2018, 4:13:41 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//Ausgeben einer Artikelliste in das Konsolenfenster\nclass Artikelliste\n{ \n public static void main (String args[]) \n { \n  System.out.println\n   (\"Artikel-Nr         Artikelbezeichnung    Preis [&#128;]\");\n  System.out.println\n   (\"__________________________________________________\");                           \n  System.out.println\n   (\"978-3-937137-08-7  Java: Objektorientiert    24,90\");\n  System.out.println\n   (\"__________________________________________________\");\n  System.out.println\n   (\"978-3-937137-16-2  SQL                       19,90\");\n  System.out.println\n   (\"__________________________________________________\");\n  System.out.println\n   (\"978-3-937137-02-5  Webdesign & Web-Ergonomie 24,90\");\n  System.out.println\n   (\"__________________________________________________\");\n }\n}",
+ "title": ""
+}

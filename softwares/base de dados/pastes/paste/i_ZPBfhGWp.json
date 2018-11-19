@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "dos",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZPBfhGWp",
+ "pasteDate": "Feb 20, 2018, 3:08:37 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@echo off\ntaskkill /F /IM TslGame.exe > NUL\nstart \"\" steam://rungameid/578080",
+ "title": "pubg-restart.bat"
+}

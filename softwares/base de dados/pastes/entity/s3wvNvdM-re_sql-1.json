@@ -1,0 +1,5 @@
+{
+  "value": "update\u0027, \u0027cmd:service\u0027, \u0027musl-utils\u0027, \u0027cmd:lbu_exclude\u0027, \u0027command:mkmntdirs\u0027, \u0027alpine-baselayout\u0027, \u0027cmd:lbu_status\u0027, \u0027cmd:set",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

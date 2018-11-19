@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "8iYLWvhx",
+ "pasteDate": "Feb 28, 2018, 5:22:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import React, {Component} from 'react';\nimport ErrorField from './ErrorField';\n\nconst Input = props => {\n    let {label, handleRef, icon, input, meta, ...restProps} = props;\n    if (handleRef) {\n        restProps = {\n            ...restProps,\n            ref: el => handleRef(el)\n        };\n    }\n    return (\n        <div className={`input-element ${meta && meta.touched && !meta.valid && 'input-element__error'}`}>\n            <div className=\"input-label\">{label}</div>\n            {icon && <i className={`input-icon ${icon}`} />}\n            <input\n                className=\"input-field\"\n                {...restProps}\n                {...input}\n            />\n            {meta && <ErrorField touched={meta.touched} error={meta.error} />}\n        </div>\n    )\n};\n\nexport default Input;",
+ "title": ""
+}

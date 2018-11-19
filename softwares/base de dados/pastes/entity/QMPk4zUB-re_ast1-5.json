@@ -1,0 +1,5 @@
+{
+  "value": "function self_command(command)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

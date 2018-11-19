@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HWfxJup6",
+ "pasteDate": "Feb 21, 2018, 6:31:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class OperationChain<IN> {\n\n    private final IN value;\n    private final List<AssertionResult> assertionResults;\n\n    public static <T> OperationChain<T> onInput(T input) {\n        return new OperationChain<>(input);\n    }\n\n    private OperationChain(IN input) {\n        this.value = input;\n        this.assertionResults = Lists.newArrayList();\n    }\n\n    private OperationChain(IN input, List<AssertionResult> assertionResults) {\n        this.value = input;\n        this.assertionResults = assertionResults;\n    }\n\n    public <OUT> OperationChain<OUT> transform(Command<IN, OUT> command) throws CommandChainException {\n        OUT result = command.execute(value);\n        return new OperationChain<>(result, assertionResults);\n    }\n\n    public OperationChain<IN> validate(Assertion<IN> assertion) {\n        assertionResults.add(assertion.validate(value));\n        return this;\n    }\n\n    public <OUT> OperationChain<OUT> subOperation(Command<IN, OperationChain<OUT>> command) throws CommandChainException {\n        OperationChain<OUT> resultState = command.execute(value);\n        return new OperationChain<>(resultState.value, resultState.assertionResults);\n    }\n\n    public IN getValue() {\n        return this.value;\n    }\n\n    public List<AssertionResult> getAssertionResults() {\n        return this.assertionResults;\n    }\n}",
+ "title": ""
+}

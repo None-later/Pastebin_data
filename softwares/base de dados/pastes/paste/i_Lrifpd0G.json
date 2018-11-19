@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Lrifpd0G",
+ "pasteDate": "Feb 26, 2018, 11:10:20 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "void inserare(nod *&p)\n{nod*e,*f,*g,*prec;\n e=p;\n while(e!=NULL)\n {g=e->urm;\n  if(e->info%2==0)\n  {f=new nod;\n   f->info=2*e->info;\n   if(e==p)\n   {f->urm=p;p=f;}\n    else \n   {\n   prec=p;\n   while(prec->urm!=e)\n       prec=prec->urm;\n   f->urm=e;\n   prec->urm=f;\n   if(e==p)\n       p=f;\n   }\n  }\n  e=g;\n }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qxrt3wtk",
+ "pasteDate": "Feb 18, 2018, 11:58:15 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//initializing sensor\nSetSensorLowspeed(IN_2);\n//if statement to do something if its close to an object, 20 is in cm aka 20 cm\nif(SensorUS(IN_2) > 20) {\n    //if nothing is in its way\n} else {\n    //if something is in its way\n}",
+ "title": ""
+}

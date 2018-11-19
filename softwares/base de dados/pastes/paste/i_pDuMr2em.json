@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_vi"
+ ],
+ "key": "pDuMr2em",
+ "pasteDate": "Feb 27, 2018, 11:48:46 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "my_queue = ['a']\nwhile my_queue not empty:\n    top = my_queue[0]\n    thm top vo q\n    thm d vo dist\n    children = graph[top][1]\n    for mi con:\n        nu ko phi white th thm vo queue\n    cp nht li nt thnh black\n    tng d ln 1 n v",
+ "title": ""
+}

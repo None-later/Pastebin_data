@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QPqydRVF",
+ "pasteDate": "Feb 11, 2018, 3:43:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "val image = (0 until iterations).fold(startPattern, { acc, _ ->\n    val divided = divide(acc)\n\n    val transformed = divided.map {\n        it.map { transform(it, rules) }\n    }\n\n    merge(transformed)\n})",
+ "title": ""
+}

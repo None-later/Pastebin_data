@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2L0v81ka",
+ "pasteDate": "Feb 21, 2018, 1:58:53 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "background-image: linear-gradient(bottom, #000000 23%, #000000 63%, #C7C7C7 100%);\nbackground-image: -o-linear-gradient(bottom, #000000 23%, #000000 63%, #C7C7C7 100%);\nbackground-image: -moz-linear-gradient(bottom, #000000 23%, #000000 63%, #C7C7C7 100%);\nbackground-image: -webkit-linear-gradient(bottom, #000000 23%, #000000 63%, #C7C7C7 100%);\nbackground-image: -ms-linear-gradient(bottom, #000000 23%, #000000 63%, #C7C7C7 100%);\n\nbackground-image: -webkit-gradient(\n\tlinear,\n\tleft bottom,\n\tleft top,\n\tcolor-stop(0.23, #000000),\n\tcolor-stop(0.63, #000000),\n\tcolor-stop(1, #C7C7C7)\n);",
+ "title": ""
+}

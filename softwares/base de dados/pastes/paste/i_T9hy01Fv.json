@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "T9hy01Fv",
+ "pasteDate": "Feb 28, 2018, 9:07:54 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "char axis;\n\nvoid MyKeyboard(unsigned char theKey, int x, int y)\n{\n\tif(theKey == 'd' || 'D')\n\t{\n\t\tcout << \"Control the view direction by entering 'x', 'y', or 'z' in lowercase\" << endl;\n\t\tcin >> axis;\n\t\tcout << axis << endl;\n\t}\n\tif(theKey == 'e' || theKey == 27)\n\t{\n\t\texit(0);\n\t}\n\tglutPostRedisplay();\n}",
+ "title": ""
+}

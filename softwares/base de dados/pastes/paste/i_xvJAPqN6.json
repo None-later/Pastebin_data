@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "xvJAPqN6",
+ "pasteDate": "Feb 18, 2018, 3:16:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "AddStaticVehicle(405,-2094.0796,-84.1352,35.0391,179.9332,0,0); // auto ecole voiture 1\nAddStaticVehicle(405,-2090.1799,-83.9447,35.0391,180.4544,0,0); // auto ecole voiture 2\nAddStaticVehicle(405,-2085.1069,-84.4345,35.0391,179.9053,0,0); // auto ecole voiture 3\nAddStaticVehicle(405,-2081.0271,-84.3024,35.0390,182.4754,0,0); // auto ecole voiture 4\nAddStaticVehicle(405,-2077.1516,-84.1428,35.0390,178.7182,0,0); // auto ecole voiture 5\nAddStaticVehicle(487,-2025.7325,-166.2348,38.0048,185.1080,0,0); // auto ecole helico",
+ "title": ""
+}

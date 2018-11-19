@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yeidQdPS",
+ "pasteDate": "Feb 24, 2018, 1:50:16 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "h = int(input())\nb = int(input())\n\nx, y, dX, dY = 1, 1, 1, 1\n\nwhile (x, y) not in ((0, 0), (0, h), (b, 0), (b, h)):\n    if y == h or y == 0:\n        dY *= -1\n        cushionY = \"onder\" if y == 0 else \"boven\"\n        print(f\"{cushionY}band ({x}, {y})\")\n    elif x == 0 or x == b:\n        dX *= -1\n        cushionX = \"linker\" if x == 0 else \"rechter\"\n        print(f\"{cushionX}band ({x}, {y})\")\n    x += dX\n    y += dY\n\ncushionX = \"linker\" if x == 0 else \"rechter\"\ncushionY = \"onderpocket\" if y == 0 else \"bovenpocket\"\nprint(f\"{cushionX}{cushionY} ({x}, {y})\")",
+ "title": ""
+}

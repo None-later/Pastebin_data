@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "xXcFAV26",
+ "pasteDate": "Feb 11, 2018, 3:16:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "PVL:=List[{Subscript[x, 1,1],Subscript[x, 1,2],Subscript[x, 1,3]},{Subscript[x, 2,1],Subscript[x, 2,2],Subscript[x, 2,3]}];\n    ML:=List[Subscript[m, 1],Subscript[m, 2]];\n    R=Total[Times[PVL,ML]]/Total[ML];R//MatrixForm\n[CapitalTheta]:=Sum[Part[ML,[Alpha]]( Norm[(Part[PVL,[Alpha]]-R)]^2 KroneckerDelta[i,j]-Part[Part[PVL,[Alpha]],j]*Part[Part[PVL,[Alpha]],i]),{[Alpha],Length[ML]}];\n[CapitalXi]=Table[[CapitalTheta],{i,3},{j,3}];[CapitalXi]//MatrixForm\n\nS=Eigensystem[N[[CapitalXi],10]];S//MatrixForm\n\nGraphics3D[{PointSize[Medium],Blue,Point[PVL],\nPointSize[Large],Red,Point[R],\nBlue,Line[Tuples[Table[PVL,Length[PVL]]]],\nPurple,Arrow[{R,R+Part[Part[S,2],1]}],Arrow[{R,R+Part[Part[S,2],2]}],Arrow[{R,R+Part[Part[S,2],3]}]}]",
+ "title": ""
+}

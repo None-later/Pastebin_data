@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rUXBmFxW",
+ "pasteDate": "Feb 28, 2018, 10:09:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@@ -1377,6 +1377,8 @@ public abstract class DSpaceObject\n                 return new String[]{\"eperson\",\"lastname\",null};\n             case \"phone\":\n                 return new String[]{\"eperson\",\"phone\",null};\n+            case \"order\":\n+                return new String[]{MetadataSchema.DC_SCHEMA, \"identifier\", \"other\"};\n             case \"language\":\n                 return new String[]{\"eperson\",\"language\",null};\n             default:\n@@ -1384,4 +1386,4 @@ public abstract class DSpaceObject\n         }\n     }\n     \n-}",
+ "title": ""
+}

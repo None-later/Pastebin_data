@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mZquTn0A",
+ "pasteDate": "Feb 21, 2018, 10:55:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import random, math, pylab\n\ndef dist (x, y):\n\tdx = abs (x[0] - y[0]) % 1.0\n\tdx = min (dx, 1.0, - dx)\n\tdy = abs (x[1] - y[1]) % 1.0\n\tdy = min (dy, 1.0, - dy)\n\treturn  math.sqrt(dx**2+dy**2)\n\nN = 16 \nn_confs = 10**5 \npairs = [(i, j) for i in range (N-1) for j in range (i+1, N)]\neta_max_list = [] \nfor conf in xrange(n_confs):\n\tL = [(random.random(), random.random()) for k in range(N)]\n\tsigma_max= min(dist(L[i], L[j]) for i, j in pairs) / 2.0\n\teta_max = N * math.pi * sigma_max ** 2\n\teta_max_list.append (eta_max)",
+ "title": ""
+}

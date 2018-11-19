@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0A4SkLzT",
+ "pasteDate": "Feb 26, 2018, 8:59:41 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Exception of type `System.InvalidOperationException`: No free spawnpoint.\n   at OpenRA.Mods.Common.Traits.MPStartLocations.ChooseSpawnPoint(World world, List`1 available, List`1 taken)\n   at OpenRA.Mods.Common.Traits.MPStartLocations.WorldLoaded(World world, WorldRenderer wr)\n   at OpenRA.World.LoadComplete(WorldRenderer wr)\n   at OpenRA.Game.StartGame(String mapUID, WorldType type)\n   at OpenRA.Network.UnitOrders.ProcessOrder(OrderManager orderManager, World world, Int32 clientId, Order order)\n   at OpenRA.Network.OrderManager.TickImmediate()\n   at OpenRA.Sync.<CheckSyncUnchanged>c__AnonStorey0.<>m__0()\n   at OpenRA.Sync.CheckSyncUnchanged[T](World world, Func`1 fn)\n   at OpenRA.Sync.CheckSyncUnchanged(World world, Action fn)\n   at OpenRA.Game.InnerLogicTick(OrderManager orderManager)\n   at OpenRA.Game.LogicTick()\n   at OpenRA.Game.Loop()\n   at OpenRA.Game.Run()\n   at OpenRA.Game.InitializeAndRun(String[] args)\n   at OpenRA.WindowsLauncher.RunGame(String[] args)",
+ "title": ""
+}

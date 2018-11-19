@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "j9Jx6VMJ",
+ "pasteDate": "Feb 8, 2018, 10:07:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "conPtr->conmon_cmd = \"clear_config all\";\n[...]\nprintf(\"child process started (PID = %i)n\", pid);  \nchar *plist[6];\nplist [0] = \"/tmp/conmon_audinate_controller\";\nplist [1] = \"localhost\";\nplist [2] = conPtr -> conmon_cmd;\n//plist [2] = \"clear_config\";\n//plist [3] = \"all\";\nplist [4] = (char *)NULL;\nchar *file = \"conmon_audinate_controller\";\nexecvp (file,  plist );",
+ "title": ""
+}

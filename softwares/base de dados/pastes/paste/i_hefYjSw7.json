@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "hefYjSw7",
+ "pasteDate": "Feb 23, 2018, 2:15:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\n\nusing namespace std;\n\n        class Ksiazka\n{\n        public:\n        string nazwa ;\n        string autor;\n        int isbn;\n};\n\n        struct czytelnik {\n            string imie;\n            string nazwisko;\n            int pesel;\n            string adres;\n} czytelnik;\n\nmain()\n{\n    cout<<__DATE__<<endl;\n\n        cout<<\"\\n\\n *** Witamy w bibliotece! ***\\n\";\n        cout<<\" ----------------------------\\n\";\n\n        cout<<\"\\nPodaj imie: \";\n        cin>>czytelnik.imie;\n        cout<<\"\\nPodaj nazwisko: \";\n        cin>>czytelnik.nazwisko;\n        cout<<\"\\nPodaj pesel:\";\n        cin>>czytelnik.pesel;\n        cout<<\"\\nPodaj adres:\";\n        cin>>czytelnik.adres;\n\n        //Rodzaje dostepnych ksiazek\n        Ksiazka pierwsza;\n        pierwsza.nazwa = \"W pustyni i puszczy\";\n        pierwsza.autor = \"Henryk Sienkiewicz\";\n        pierwsza.isbn = 123456;\n\n        Ksiazka druga;\n        druga.nazwa =\"Impierium Burz\";\n        druga.autor =\"Sarah j Maas\";\n        druga.isbn = 234567;\n\n        Ksiazka trzecia;\n        trzecia.nazwa=\"Pochlaniacz\";\n        trzecia.nazwa=\"Katarzyna Bonda\";\n        trzecia.isbn = 6723;\n\n        Ksiazka czwarta;\n        czwarta.nazwa=\"Mapa\";\n        czwarta.autor= \"T.S.Learner\";\n        czwarta.isbn= 12349999;\n\n        cout<< \"\\n\\nDostepne ksiazki: \";\n        cout<<\"\\n1.\" + pierwsza.nazwa + \" \" + pierwsza.autor;\n        cout<<\"\\n2.\" + druga.nazwa + \" \" + druga.autor;\n        cout<<\"\\n3.\" + trzecia.nazwa + \" \" + trzecia.autor;\n        cout<<\"\\n4.\" + czwarta.nazwa + \" \" + czwarta.autor;\n\n            cout<<\"wybierz numer przypisany do ksiazki: \";\n\n\n\n\n\n\n\n\n}",
+ "title": ""
+}

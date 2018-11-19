@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fH69Uh55",
+ "pasteDate": "Feb 9, 2018, 8:43:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import pandas as pd\nimport datetime as dt\nimport sqlalchemy, pyodbc\n\ntodays_date = dt.datetime.now().date()\nindex = pd.date_range(todays_date-dt.timedelta(10), periods=10, freq='D')\ncolumns = ['A','B', 'C']\ndf_ = pd.DataFrame(index=index, columns=columns)\ndf_ = df_.fillna(0)\n\nengine = sqlalchemy.create_engine(\"mssql+pyodbc://\" + user + \":\" + passwd + \"@\" +dsnname)\ndf_.to_sql(name= 'TableTest', con = engine, if_exists='replace')",
+ "title": ""
+}

@@ -1,0 +1,7 @@
+{
+  "corrects": 1,
+  "incorrects": 4,
+  "reason": "re_creditcard_dinersclub",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

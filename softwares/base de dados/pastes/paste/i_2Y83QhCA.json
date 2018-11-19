@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "2Y83QhCA",
+ "pasteDate": "Feb 17, 2018, 10:33:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "focus_tree = {\nid = 'wasd'\ncountry = {\nfactor=0\nmodifier = {\nadd = 10\ntag = ERK\n}\n}\ndefault = no\n#Custom focuses start here\n#Focus for Free political power \n\t\tfocus = { \n\t\tid = freepoliticalpower \n\t\ticon = GFX_goal_continuous_suppression \n\t\tai_will_do = { factor = 0 } \n x =1 \n y =1 \n mutually_exclusive = { } \n prerequisite = { } \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n add_political_power = = 150 \n } \n }#Focus for befriend haiti (and puppet them) \n\t\tfocus = { \n\t\tid = befriendhaitiandpuppetthem \n\t\ticon = GFX_goal_generic_dangerous_deal \n\t\tai_will_do = { factor = 0 } \n x =2 \n y =1 \n mutually_exclusive = { } \n prerequisite = { } \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n puppet = HAI \n } \n }#Focus for fascism \n\t\tfocus = { \n\t\tid = fascism \n\t\ticon = GFX_goal_generic_support_fascism \n\t\tai_will_do = { factor = 0 } \n x =3 \n y =1 \n mutually_exclusive = { } \n prerequisite = { } \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n add_popularity = {  \n ideology = fascism  \n popularity = 0.6  \n } \n } \n }#Focus for go to picnic with stalin \n\t\tfocus = { \n\t\tid = gotopicnicwithstalin \n\t\ticon = GFX_goal_generic_support_communism \n\t\tai_will_do = { factor = 0 } \n x =4 \n y =1 \n mutually_exclusive = { } \n prerequisite = { } \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n add_popularity = {  \n ideology = communism \n popularity = 0.5  \n } \n } \n }#Focus for Puppet the baltic nations \n\t\tfocus = { \n\t\tid = puppetthebalticnations \n\t\ticon = GFX_goal_generic_army_artillery \n\t\tai_will_do = { factor = 0 } \n x =1 \n y =2 \n mutually_exclusive = { } \n prerequisite = { focus = freepoliticalpower} \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n puppet = LIT \n puppet = LAT \n puppet = EST \n } \n }#Focus for Annex and core the netherlands \n\t\tfocus = { \n\t\tid = annexandcorethenetherlands \n\t\ticon = GFX_focus_generic_commonwealth_build_infantry \n\t\tai_will_do = { factor = 0 } \n x =1 \n y =3 \n mutually_exclusive = { } \n prerequisite = { focus = puppetthebalticnations} \n cost = 5  \n  available_if_capitulated = yes  \n completion_reward = { \n annex_country  = { \n  target = HOL  \n } \n add_state_core = 7 \n add_state_core = 35 \n add_state_core = 36 \n add_state_core = 309 \n add_state_core = 695 \n puppet = INS \n } \n }#End of focuses \n}",
+ "title": ""
+}

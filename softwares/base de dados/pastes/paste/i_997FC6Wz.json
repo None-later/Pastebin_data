@@ -1,0 +1,14 @@
+{
+ "espireDate": "1W",
+ "format": "java",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "997FC6Wz",
+ "pasteDate": "Feb 26, 2018, 12:08:36 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "protected void onCreate(Bundle savedInstanceState) {\n        super.onCreate(savedInstanceState);\n        setContentView(R.layout.activity_main);\n\n        edt_data = (EditText)findViewById(R.id.edt_data);\n        mBtnPrinter = (Button)this.findViewById(R.id.btn_printer);\n\n        mBtnPrinter.setOnClickListener(new View.OnClickListener() {\n\n            @Override\n            public void onClick(View v) {\n                PrintBill();\n            }\n        });\n\n        //1  \n        try {\n            FileWriter localFileWriterOn = new FileWriter(new File(\"/proc/gpiocontrol/set_sam\"));\n            localFileWriterOn.write(\"1\");\n            localFileWriterOn.close();\n        } catch (Exception e) {\n            e.printStackTrace();\n        }\n\n       \n        mApi = App.getInstance().getPosApi();\n       \n        mApi.setOnComEventListener(mCommEventListener); //error\n       \n        mApi.initDeviceEx(\"/dev/ttyMT2\");\n     \n    }//oncreate\n\n    OnCommEventListener mCommEventListener = new OnCommEventListener() {\n\n        @Override\n        public void onCommState(int cmdFlag, int state, byte[] resp, int respLen) {\n            // TODO Auto-generated method stub\n            switch(cmdFlag){\n                case PosApi.POS_INIT:\n                    if(state==PosApi.COMM_STATUS_SUCCESS){\n                        Toast.makeText(getApplicationContext(), \"success\", Toast.LENGTH_SHORT).show();\n                    }else {\n                        Toast.makeText(getApplicationContext(), \"fail\", Toast.LENGTH_SHORT).show();\n                    }\n                    break;\n            }\n        }\n    };",
+ "title": ""
+}

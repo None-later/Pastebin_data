@@ -1,0 +1,5 @@
+{
+  "value": "function is_hostname(name_string,limit)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

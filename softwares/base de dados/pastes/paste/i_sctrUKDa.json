@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sctrUKDa",
+ "pasteDate": "Feb 23, 2018, 11:54:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Mat dx2, dy2, dxy; \nGaussianBlur(magnitude, magnitude, Size(3, 3), 0, 0, BORDER_DEFAULT); \n// Calculate image derivatives \nmultiply(dx, dx, dx2);\nmultiply(dy, dy, dy2);\nmultiply(dx, dy, dxy);\n\n\nMat t(2, 2, CV_32F); // tensor matrix\n\n// Insert values to the tensor matrix.\nt.at<float>(0, 0) = sum(dx2)[0];\nt.at<float>(0, 1) = sum(dxy)[0];\nt.at<float>(1, 0) = sum(dxy)[0];\nt.at<float>(1, 1) = sum(dy2)[0];\n\n// eigen decomposition to get the main gradient direction. \nMat eigVal, eigVec;\neigen(t, eigVal, eigVec);\n\n// This should compute the angle of the gradient direction based on the first eigenvector. \nfloat* eVec1 = eigVec.ptr<float>(0);\nfloat* eVec2 = eigVec.ptr<float>(1);\ncout << fastAtan2(eVec1[0], eVec1[1]) << endl;\ncout << fastAtan2(eVec2[0], eVec2[1]) << endl;\n}",
+ "title": ""
+}

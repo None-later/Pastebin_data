@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "EH3uUCxw",
+ "pasteDate": "Feb 24, 2018, 4:25:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "void Main()\n{\n\tconst int nbuckets = 1024;\n\tconst string path = @\"d:\\tmp\\someDecentlySizedImage.jpg\";\n\tconst int digits = 3;\n\tfor(var u = 0; u < 100; u++)\n\t{\n\t\tusing (var bmp = (Bitmap)Bitmap.FromFile(path))\n\t\t{\n\t\t\tbmp.Dump();\n\n\t\t\tvar M = bmp.ToMatrix(c => c.Lum().Inv());\n\t\t\tvar H = M.ToHistogram(nbuckets);\n\n\t\t\t// The code below is for OxyPlot. This is not really necessary but\n      \t\t\t// I wanted to leave it in there as part of the test.\n\t\t\tvar model = new PlotModel();\n\t\t\tmodel.Series.Add(new OxyPlot.Series.BarSeries\n\t\t\t{\n\t\t\t\tItemsSource = Enumerable.Range(0, nbuckets)\n\t\t\t\t\t.Select(i => new BarItem(H[i].Count))\n\t\t\t\t\t.ToArray(),\n\t\t\t});\n\n\t\t\tmodel.Axes.Add(new OxyPlot.Axes.CategoryAxis\n\t\t\t{\n\t\t\t\tPosition = AxisPosition.Left,\n\t\t\t\tKey = \"Lum\",\n\t\t\t\tItemsSource = Enumerable.Range(0, nbuckets)\n\t\t\t\t\t.Select(i => $\"{Math.Round(H[i].LowerBound, digits)} - {Math.Round(H[i].UpperBound, digits)}\")\n\t\t\t\t\t.ToArray(),\n\t\t\t});\n\n\t\t\tvar window = new Window();\n\t\t\tvar view = new PlotView\n\t\t\t{\n\t\t\t\tWidth = window.Width,\n\t\t\t\tHeight = window.Height,\n\t\t\t\tModel = model,\n\t\t\t};\n\n\t\t\twindow.Content = view;\n\t\t\t// window.Dump(); \n\t\t\t// ^ You don't really wanna do this unless you desire a hundred\n\t\t\t// windows or something on your desktop.\n\t\t}\n\t}\n}",
+ "title": ""
+}

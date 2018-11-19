@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Gwu2j0Rg",
+ "pasteDate": "Feb 26, 2018, 1:52:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#define analog0 A18 // Transmission Oil Pressure\n#define analog1 A13 // Oil Pressure\n#define analog2 A12 // Coolant Pressure\n#define analog3 A19 // Fuel Pressure\n\n\nvoid setup() {\n  Serial.begin(115200);\n  Serial.println(\"Beginning Pressure Test\");\n  Serial.print(\"Analog 0\");\n  Serial.print(\"\\t\");\n  Serial.print(\"Analog 1\");\n  Serial.print(\"\\t\");\n  Serial.print(\"Analog 2\");\n  Serial.print(\"\\t\");\n  Serial.print(\"Analog 3\");\n  Serial.println(\"\");\n}\n\nvoid loop() {\n  int reading0 = analogRead(analog0);\n  int reading1 = analogRead(analog1);\n  int reading2 = analogRead(analog2);\n  int reading3 = analogRead(analog3);\n  Serial.print(reading0);\n  Serial.print(\"\\t\");\n  Serial.print(reading1);\n  Serial.print(\"\\t\");\n  Serial.print(reading2);\n  Serial.print(\"\\t\");\n  Serial.print(reading3);\n  Serial.println(\"\");\n}",
+ "title": ""
+}

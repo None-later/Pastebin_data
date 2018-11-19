@@ -1,0 +1,13 @@
+{
+ "espireDate": "10M",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iV1GqYyn",
+ "pasteDate": "Feb 23, 2018, 9:48:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <stdlib.h>\ndouble wurz(double a , double b ,\n double c , double *x1 ,double *x2);\nint main()\n{\n    double a,b,c,x1,x2;\n    printf(\"sayi ver\");\n    scanf(\"%lf %lf %lf\",&a,&b,&c);\n    wurz(a,b,c,&x1,&x2);\n    if(!wurz(a,b,c,&x1,&x2))\n    {\n        printf(\"reele kok yok\");\n    }\n    else\n    {\n    printf(\"x1=%f\",x1);\n    printf(\"x2=%f\",x2);\n    }\n    return 0;\n}\n double wurz(double a , double b , double c \n, double *x1 ,double *x2)\n{\n    double wurzel;\n    wurzel = pow(b,2)-4*a*c ;\n    if(wurzel<0)\n    {\n    return 0;\n    }\n    else\n    {\n    *x1=(b-sqrt(wurzel))/(2*a) ;\n    *x2=(b+sqrt(wurzel))/(2*a) ;\n}\n}",
+ "title": ""
+}

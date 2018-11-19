@@ -1,0 +1,5 @@
+{
+  "value": "function dealdamage(hit,min,max,maxstrength,beserk,critrate,critmultiplier)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

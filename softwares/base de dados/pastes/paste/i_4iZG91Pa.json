@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4iZG91Pa",
+ "pasteDate": "Feb 20, 2018, 6:10:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " \n  public static Object[] nomesAtributos(Object objeto){\n    try {\n     Class dados = Class.forName(\n                  objeto.getClass().getName());\n     Field[] atributos = dados.getDeclaredFields();\n     Object saida[] = new Object[atributos.length];\n     for(int i=0; i < atributos.length;i++){\n      saida[i] = atributos[i].getName();\n     }\n     return saida;\n   } catch (ClassNotFoundException ex) {\n       return null;\n   }    \n }\n  \n//---------Converter de Select para Objeto\npublic static void gravarObjeto(Object objeto,\n                                String atributo,\n                                String tipo,\n                                String valor){\n   Class classe = objeto.getClass();\n   try {\n     Field campo =  classe.getDeclaredField(atributo);\n     campo.setAccessible(true);\n     if(tipo.equals(\"VARCHAR\"))\n       campo.set(objeto,valor);\n     if(tipo.equals(\"INT\"))\n       campo.set(objeto,new Integer(valor).intValue());\n     if(tipo.equals(\"NUMERIC\"))\n       campo.set(objeto,new Float(valor).floatValue());\n     if(tipo.equals(\"DATE\"))\n       campo.set(objeto,UtilsHelper.StringToDate(valor));     \n   }catch (Exception ex) {\n     System.out.println(\"Erro no gravarObjeto():\"+ex.getMessage());\n   }   \n}\n\n//-- Retorna o Tipo da Coluna\npublic static String getTipoColuna(String coluna,\n                                   Object[] colunas){\n  if(colunas.length==0) return null;\n  for(int i=0; i < colunas.length;i++){\n    String itens[] = colunas[i].toString().split(\",\");\n    if(itens[0].equalsIgnoreCase(coluna))\n        return itens[1];\n  }\n  return null;\n    \n}",
+ "title": ""
+}

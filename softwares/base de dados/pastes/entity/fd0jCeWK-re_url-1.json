@@ -1,0 +1,5 @@
+{
+  "value": "\u0027https://api.etherscan.io/api?module\u003daccount\u0026action\u003dbalance\u0026address\u003d0x542e34E4D8D028172184D2938aBEe77E6bcDC12d\u0026tag\u003dlatest\u0026apikey\u003dCNAVZM8H9J3Q2HWRR553Q7BYANFZRGK79J",
+  "correct": true,
+  "jSonReason": "re_url"
+}

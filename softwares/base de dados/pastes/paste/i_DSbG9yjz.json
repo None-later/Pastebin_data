@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "DSbG9yjz",
+ "pasteDate": "Feb 26, 2018, 12:24:51 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public interface ImageInterf extends Remote {\n    byte[] metodImageInterf (byte[] image) throws  IOException;\n}\n\n\n\n\npublic class ImageClient {\n    public static void main(String[] arg) {\n    \n        String[] args = new String[2];\n        args[0] = \"myfile.jpg\";\n        args[1] = \"res.png\";\n        \n\n        try {\n            Registry registry = LocateRegistry.getRegistry(\"localhost\", 2099);\n            ImageInterf stub = (ImageInterf) registry.lookup(\"ImageInterf\");\n\n            InputStream is = new FileInputStream(new File(args[0]));\n\n            byte[] image1 = new byte[is.available()];\n            is.read(image1);\n\n            byte[] image2 = stub.metodImageInterf(image1);\n            OutputStream os = new FileOutputStream(new File(args[1]));\n\n            os.write(image2);\n            os.flush();\n            is.close();\n            os.close();\n\n            System.out.println(\"Operation has been executed successfully.\");\n\n        } catch (NotBoundException | MalformedURLException | RemoteException | FileNotFoundException ex) {\n            System.err.println(\"Some error occurred: \" + ex.toString());\n        } catch (IOException e) {\n            e.printStackTrace();\n        }\n\n    }\n\n\n\n\npublic class ImageServer extends UnicastRemoteObject implements ImageInterf {\n\n    private ImageServer() throws RemoteException {\n        super();\n    }\n\n    @Override\n    public byte[] metodImageInterf(byte[] image) throws IOException {\n        return new byte[0];\n    }\n\n    public static void main(String[] args) {\n        ImageServer srv;\n        try {\n            srv = new ImageServer();\n            LocateRegistry.createRegistry(2099);\n            LocateRegistry.getRegistry(2099).rebind(\"ImageInterf\", srv);\n            System.out.println(\"Server is ready!\");\n        } catch (RemoteException e) {\n            System.err.println(\"Some error occurred: \" + e.toString());\n        }\n\n    }\n\n}",
+ "title": ""
+}

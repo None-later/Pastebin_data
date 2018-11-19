@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZXxgzwLL",
+ "pasteDate": "Feb 12, 2018, 8:43:27 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "   public class Worker : EntityData\n    {\n        public string Name { get; set; }\n        public string LastName { get; set; }\n        public string FirmId { get; set; }\n        [ForeignKey(\"FirmId\")]\n        public virtual Firm Firm { get; set; }\n    }\n\n\n  public class Firm : EntityData\n    {\n        public string Name { get; set; }\n    }\n\n\n public class WholeObservation : EntityData\n    {\n        public string Name { get; set; }\n        public string FirmId { get; set; }\n        public string Shift { get; set; }\n        public string Consultant { get; set; }\n        public DateTime StartDate { get; set; }\n        public DateTime EndDate { get; set; }\n        public double Interval { get; set; }\n        public int WorkersNumber { get; set; }\n        [ForeignKey(\"FirmId\")]\n        public virtual Firm Firm { get; set; }\n        public virtual IList<SingleObservation> SingleObservation { get; set; }\n    }",
+ "title": ""
+}

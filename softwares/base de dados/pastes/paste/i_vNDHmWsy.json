@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "php",
+ "jSonReasons": [
+  "re_email",
+  "lg_en"
+ ],
+ "key": "vNDHmWsy",
+ "pasteDate": "Feb 8, 2018, 6:37:00 AM",
+ "relevancy": 4.0,
+ "relevant": false,
+ "text": "Array\n(\n    [f_shipping_company_id] => 107\n    [referinta_expeditor] => Test\n    [valoare_declarata] => 100\n    [ramburs] => 100\n    [asigurare_la_valoarea_declarata] => \n    [cine_plateste] => 0\n    [colete] => Array\n        (\n            [0] => Array\n                (\n                    [greutate] => 1.01\n                    [lungime] => 10\n                    [latime] => 10\n                    [inaltime] => 10\n                    [continut] => 1\n                    [tipcolet] => 1\n                )\n\n        )\n\n    [destinatar] => Array\n        (\n            [first_name] => Adrian\n            [last_name] => Lado\n            [email] => adrian@plationline.eu\n            [phone] => 123\n            [mobile] => 0741055805\n            [lang] => ro\n            [company_name] => Companie de test\n            [j] => J35/38/2013\n            [bank_account] => RO89RNCB1546844678\n            [bank_name] => BCR\n            [cui] => 1234567\n        )\n\n    [shipTOaddress] => Array\n        (\n            [address1] => Calea Vitan, 227\n            [address2] => \n            [city] => Sector 3\n            [state] => Bucuresti\n            [zip] => 30193\n            [country] => Romania\n            [phone] => 123\n            [observatii] => qweqweqwe\n        )\n\n    [shipFROMaddress] => Array\n        (\n            [address1] => Calea Vitan, 227\n            [address2] => \n            [city] => Sector 3\n            [state] => Bucuresti\n            [zip] => 30193\n            [country] => Romania\n            [phone] => 123\n            [observatii] => asdasd\n        )\n\n)",
+ "title": ""
+}

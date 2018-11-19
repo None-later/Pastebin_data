@@ -1,0 +1,5 @@
+{
+  "value": "function md5cmn(q, a, b, x, s, t)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

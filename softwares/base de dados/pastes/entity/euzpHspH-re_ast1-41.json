@@ -1,0 +1,5 @@
+{
+  "value": "function StravEffect(brickcolor,cframe,x,y,z,x1,y1,z1,delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

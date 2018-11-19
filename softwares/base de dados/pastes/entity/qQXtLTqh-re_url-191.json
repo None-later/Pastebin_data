@@ -1,0 +1,5 @@
+{
+  "value": "\nwrtp.hls.adaptive.level3.net/liverepeater/rtp1_5ch5h264.stream/KodiPortugal.pt.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

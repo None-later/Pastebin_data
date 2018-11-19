@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "aGqjiv6Q",
+ "pasteDate": "Feb 21, 2018, 9:44:43 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Dog < Animal\nend",
+ "title": ""
+}

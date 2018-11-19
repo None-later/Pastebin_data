@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "clojure",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Lay2TT93",
+ "pasteDate": "Feb 8, 2018, 10:09:22 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "(defn as-currency\n  \"Money amounts are transmitted as \\\"$2.44\\\".\n  Parse this and return a numeric type.\"\n  [currency-amount]\n  ;; strip off the leading \"$\"\n  (let [stripped (subs currency-amount 1)\n        _ (println \"stripped\" currency-amount \"->\" stripped)\n        decimal (bigdec stripped)\n        _ (println \"bigdec\" stripped \"->\" decimal)]\n    decimal))\n\n;;;; Re-evaluating the sample calculation gives us this:\n\n;; stripped $1200.20 -> 1200.20\n;; bigdec 1200.20 -> 1200.20M\n;; stripped $0.03 -> 0.03\n;; bigdec 0.03 -> 0.03M\n;; stripped $120.00 -> 120.00\n;; bigdec 120.00 -> 120.00M\n;; stripped $5.99 -> 5.99\n;; bigdec 5.99 -> 5.99M\n;; stripped $20 -> 20\n;; bigdec 20 -> 20M\n;; stripped $12.33 -> 12.33\n;; bigdec 12.33 -> 12.33M\n;; stripped -$4.50 -> $4.50\n;; NumberFormatException   java.math.BigDecimal.<init> (BigDecimal.java:494)",
+ "title": ""
+}

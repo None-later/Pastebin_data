@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tjrvZjDX",
+ "pasteDate": "Feb 21, 2018, 12:20:54 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/// <summary>\n/// Calculate the price of a given item for a specified customer\n/// </summary>\n/// <param name=\"amount\">price</param>\n/// <param name=\"type\">Account status (NotRegistered = 1, SimpleCustomer = 2, ValuableCustomer = 3, MostValuableCustomer = 4)</param>\n/// <param name=\"years\">Time in years that the client is our customer</param>\n/// <returns>The price</returns>\npublic decimal Calculate(decimal amount, int type, int years)\n{\n   decimal result = 0;\n   decimal disc = (years > 5) ? (decimal)5 / 100 : (decimal)years / 100;\n\n   // NotRegistered\n   if (type == 1)\n   {\n       result = amount;\n       return result;\n   }\n   // SimpleCustomer\n   else if (type == 2)\n   {\n       result = (amount - (0.1m * amount)) - disc * (amount - (0.1m * amount));\n   }\n   // ValuableCustomer\n   else if (type == 3)\n   {\n       result = (0.7m * amount) - disc * (0.7m * amount);\n       return result;\n   }\n   // MostValuableCustomer\n   else if (type == 4)\n   {\n       result = (amount - (0.5m * amount)) - disc * (amount - (0.5m * amount));\n   }\n   return result;\n}",
+ "title": ""
+}

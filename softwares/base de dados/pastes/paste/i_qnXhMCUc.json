@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "qnXhMCUc",
+ "pasteDate": "Feb 26, 2018, 12:07:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "%post --log /root/post-install.log\nsudo yum install y yum-utils\nsudo yum-config-manager \n--add-repo \nhttps://download.docker.com/linux/centos/docker-ce.repo\nsudo yum-config-manager enable docker-ce-edge\nsudo yum makecache fast\nyum install y docker-ce\n\nbaseurl=\"http://<My_IP>/kickstarts\"\nmac=$(cat /sys/class/net/em1/address | sed -e \"s/://g\")\ncurl=\"curl --silent --fail\"\n\n\ntag_status () {\n        tag=\"$1\"\n\n        echo \"status: $tag\"\n\n        $curl $baseurl/STATUS-mac:${mac}-date:`date +%s.%N`-${tag} > /dev/null 2>&1\n}\n\n\ntag_status chkconfig_setup\n\nchkconfig cpuspeed off\nchkconfig ip6tables off\nchkconfig ntpd on\nchkconfig ntpdate on\n\ntag_status yum_update\n\nyum -y update\necho\n\ntag_status grub_setup\n\nsed -i -e \"s/ rhgb//\" -e \"s/ quiet//\" /boot/grub/grub.conf\necho\ntag_status setup_software_repositories\ntag_status install_software\ntag_status copy_setup_scripts\ntag_status kickstarted_complete    \neject\n%end\n\t\nsudo yum install y yum-utils\nsudo yum-config-manager \n--add-repo \nhttps://download.docker.com/linux/centos/docker-ce.repo\nsudo yum-config-manager enable docker-ce-edge\nsudo yum makecache fast\nyum install y docker-ce",
+ "title": ""
+}

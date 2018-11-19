@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DnER2gC2",
+ "pasteDate": "Feb 12, 2018, 2:31:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n  \"name\": \"twitch\",\n  \"version\": \"0.1.0\",\n  \"private\": true,\n  \"dependencies\": {\n    \"react\": \"^16.2.0\",\n    \"react-dom\": \"^16.2.0\",\n    \"react-scripts\": \"1.1.0\",\n    \"node-sass-chokidar\": \"0.0.3\",\n    \"npm-run-all\": \"^4.1.1\",\n    \"react-bootstrap\": \"^0.31.1\",\n    \"react-notification-system\": \"^0.2.15\",\n    \"react-router\": \"^4.1.2\",\n    \"react-router-dom\": \"^4.1.2\",\n    \"routes\": \"^2.1.0\"\n  },\n  \"scripts\": {\n    \"build-css\": \"node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/\",\n    \"watch-css\": \"npm run build-css && node-sass-chokidar --include-path ./src --include-path ./node_modules src/ -o src/ --watch --recursive\",\n    \"start-js\": \"react-scripts start\",\n    \"start\": \"npm-run-all -p watch-css start-js\",\n    \"build\": \"npm run build-css && react-scripts build\",\n    \"test\": \"react-scripts test --env=jsdom\",\n    \"eject\": \"react-scripts eject\"\n  }\n}",
+ "title": ""
+}

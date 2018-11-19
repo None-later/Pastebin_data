@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Wy9aHGSz",
+ "pasteDate": "Feb 8, 2018, 1:41:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class MyObject {\n\n    constructor(attr, myArray) {\n        this._attr = attr;\n        this._myArray = myArray;\n        Object.freeze(this);\n    }\n\n    get attr(){\n        return this._attr;\n    }\n\n    get myArray(){\n        return [].concat(myArray);\n    }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Su1dsssR",
+ "pasteDate": "Feb 20, 2018, 7:13:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "MIPSAddress writeToDataMemory(char *data, int length, Memory &memory) {\n\tconst int charsPerWord = sizeof(MIPSWord) / sizeof(char);\n\tconst int wordCount = (int)ceil((float)length / (float)charsPerWord);\n\n\tchar wordChars[charsPerWord];\n\n\n\t// If we have some overflow, write it out first, ensuring \n\t// length + 1 for terminating char.\n\tconst int overflow = (wordCount * charsPerWord) - (length);\n\tif(overflow > 0) {\n\t\tmemset(wordChars, 0, sizeof(wordChars));\n\t\tMIPSWord test;\n\t\tfor(int i = 0; i < overflow; i++) {\n\t\t\twordChars[i] = data[length - (overflow - i)];\n\t\t\tsetBits(test, i, i + sizeof(char), data[length - (overflow - i)]);\n\t\t}\n\t\twriteToDataMemory(*(MIPSWord*)wordChars, memory);\n\t\tlength -= overflow;\n\t}\n\telse {\n\t\t// No overflow, so we wont have room for any null char, write one now.\n\t\twriteToDataMemory((MIPSWord)0, memory);\n\t}\n\n\t// Length should now be a multiple of charsPerWord.\n\t\n\tMIPSAddress address = 0;\n\n\tfor(int i = (length - 1) - charsPerWord; i >= 0; i -= charsPerWord) {\n\t\tmemset(wordChars, 0, sizeof(wordChars));\n\t\tfor(int c = 0; c < charsPerWord; c++) {\n\t\t\twordChars[c] = data[i + c];\n\t\t}\n\t\taddress = writeToDataMemory(*(MIPSWord*)wordChars, memory);\n\t}\n\n\treturn address;\n}",
+ "title": ""
+}

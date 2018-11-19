@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PvfEdm8j",
+ "pasteDate": "Feb 9, 2018, 2:30:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "locate abc.dmg\n\t\nfind / -name abc.dmg -print\n\t\nsudo find / -name abc.dmg -print\n\t\n# find any item matching search query in file name\nspot(){\n  mdfind \"kMDItemDisplayName=='*$1*'cd\";\n}\n\n# restrict to files under (recursive) a specific path \nfindpaper(){\n    mdfind -onlyin \"/Users/foo/articles\" \"kMDItemDisplayName=='*$1*'cd\";\n}\n\n# default to open the first entry unless 2nd positional argument is given\nopenpaper(){\n    FILEID=$(printf \"%sp\" ${2:-1})\n\n    open \"$(mdfind -name -onlyin \"/Users/foo/articles\" \"kMDItemDisplayName=='*$1*'cd\" | sed -n \"${FILEID}\")\"\n\t\nspot pie*2016 #or\nspot 2016*pie",
+ "title": ""
+}

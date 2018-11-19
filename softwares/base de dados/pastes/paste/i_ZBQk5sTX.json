@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZBQk5sTX",
+ "pasteDate": "Feb 24, 2018, 3:28:37 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "1 card(s) available.\n    index: 0\n\tname: <alsa_card.pci-0000_00_1b.0>\n\tdriver: <module-alsa-card.c>\n\towner module: 6\n\tproperties:\n\t\talsa.card = \"0\"\n\t\talsa.card_name = \"HDA Intel PCH\"\n\t\talsa.long_card_name = \"HDA Intel PCH at 0xf7e30000 irq 32\"\n\t\talsa.driver_name = \"snd_hda_intel\"\n\t\tdevice.bus_path = \"pci-0000:00:1b.0\"\n\t\tsysfs.path = \"/devices/pci0000:00/0000:00:1b.0/sound/card0\"\n\t\tdevice.bus = \"pci\"\n\t\tdevice.vendor.id = \"8086\"\n\t\tdevice.vendor.name = \"Intel Corporation\"\n\t\tdevice.product.id = \"1e20\"\n\t\tdevice.product.name = \"7 Series/C216 Chipset Family High Definition Audio Controller\"\n\t\tdevice.form_factor = \"internal\"\n\t\tdevice.string = \"0\"\n\t\tdevice.description = \"Built-in Audio\"\n\t\tmodule-udev-detect.discovered = \"1\"\n\t\tdevice.icon_name = \"audio-card-pci\"\n\tprofiles:\n\t\tinput:analog-stereo: Analog Stereo Input (priority 60, available: unknown)\n\t\toutput:analog-stereo: Analog Stereo Output (priority 6000, available: unknown)\n\t\toutput:analog-stereo+input:analog-stereo: Analog Stereo Duplex (priority 6060, available: unknown)\n\t\toff: Off (priority 0, available: unknown)\n\tactive profile: <output:analog-stereo+input:analog-stereo>\n\tsinks:\n\t\talsa_output.pci-0000_00_1b.0.analog-stereo/#0: Built-in Audio Analog Stereo\n\tsources:\n\t\talsa_output.pci-0000_00_1b.0.analog-stereo.monitor/#0: Monitor of Built-in Audio Analog Stereo\n\t\talsa_input.pci-0000_00_1b.0.analog-stereo/#1: Built-in Audio Analog Stereo\n\tports:\n\t\tanalog-input-internal-mic: Internal Microphone (priority 8900, latency offset 0 usec, available: unknown)\n\t\t\tproperties:\n\t\t\t\tdevice.icon_name = \"audio-input-microphone\"\n\t\tanalog-input-dock-mic: Dock Microphone (priority 7800, latency offset 0 usec, available: no)\n\t\t\tproperties:\n\t\t\t\tdevice.icon_name = \"audio-input-microphone\"\n\t\tanalog-input-headset-mic: Headset Microphone (priority 8800, latency offset 0 usec, available: no)\n\t\t\tproperties:\n\t\t\t\tdevice.icon_name = \"audio-input-microphone\"\n\t\tanalog-output-lineout: Line Out (priority 9900, latency offset 0 usec, available: no)\n\t\t\tproperties:\n\t\t\t\t\n\t\tanalog-output-speaker: Speakers (priority 10000, latency offset 0 usec, available: unknown)\n\t\t\tproperties:\n\t\t\t\tdevice.icon_name = \"audio-speakers\"\n\t\tanalog-output-headphones: Headphones (priority 9000, latency offset 0 usec, available: no)\n\t\t\tproperties:\n\t\t\t\tdevice.icon_name = \"audio-headphones\"",
+ "title": ""
+}

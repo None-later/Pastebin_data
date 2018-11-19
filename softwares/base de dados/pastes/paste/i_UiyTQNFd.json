@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "swift",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "UiyTQNFd",
+ "pasteDate": "Feb 11, 2018, 2:27:43 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//\n//  HomePresenter.swift\n//  FoodTracker\n//\n//  Created by Orfeo Ciano on 03/02/2018.\n//  Copyright  2018 Orfeo Ciano. All rights reserved.\n//\n\nimport Foundation\n\nclass HomePresenterImpl: HomePresenter {\n\n    let interactor: HomeInteractor\n    let view: HomeView\n    var model: [WeatherModel] = []\n\n    init(interactor: HomeInteractor = HomeInteractorImpl(), homeView: HomeView) {\n        self.interactor = interactor\n        self.view = homeView\n    }\n\n    func onDonePressed(city: String) {\n        search(city)\n    }\n\n    func onSearchPressed(city: String) {\n        search(city)\n    }\n\n    func onSearchTextChanged(text: String) {\n        view.enableButton(!text.isEmpty)\n    }\n\n    private func search(_ city: String) {\n        view.setLoading(true)\n        interactor.searchByCity(city: city)\n            .then { domain -> Void in\n                self.view.setLoading(false)\n                let id = domain.id\n                let location = domain.location\n                let temperature = \"\\(domain.temperature)C\"\n                let image = domain.image\n                let wind = \"\\(domain.wind)m/s\"\n                self.model = self.model.filter { $0.id != id }\n                let item = WeatherModel(id: id, temperature: temperature, location: location, image: image, wind: wind)\n                self.model.insert(item, at: 0)\n                self.view.setResult(self.model)\n            }.catch { error in\n                self.view.setLoading(false)\n                switch error {\n                case let weatherError as WeatherResponseError:\n                    if let message = weatherError.message {\n                        self.view.showError(message)\n                    }\n                default:\n                    self.view.showError(\"Unable to fulfill the request.\")\n                }\n        }\n    }\n}\n\nstruct WeatherModel {\n    let id: Int\n    let temperature: String\n    let location: String\n    let image: String\n    let wind: String\n}",
+ "title": "Presenter example"
+}

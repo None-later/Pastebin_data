@@ -1,0 +1,5 @@
+{
+  "value": "function MagniDamage(Hit,Part,magni,mindam,maxdam,knock,Type)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

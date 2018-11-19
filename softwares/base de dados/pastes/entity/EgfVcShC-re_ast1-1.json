@@ -1,0 +1,5 @@
+{
+  "value": "function\" \u0026\u0026 ClickTaleGlobal.init.pmc(autoMonitorConfig)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

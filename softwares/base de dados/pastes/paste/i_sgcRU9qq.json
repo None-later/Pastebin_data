@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_security",
+  "lg_en"
+ ],
+ "key": "sgcRU9qq",
+ "pasteDate": "Feb 25, 2018, 11:37:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "nohup /Applications/Google Chrome.app/Contents/MacOS/Google Chrome --disable-web-security 2>&1 &\n\t\nopen /Applications/Google Chrome.app --args --disable-web-security",
+ "title": ""
+}

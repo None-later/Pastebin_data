@@ -1,0 +1,5 @@
+{
+  "value": "function __construct($dir, \\Memcached $memcache)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

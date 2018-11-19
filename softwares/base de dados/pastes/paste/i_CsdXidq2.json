@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CsdXidq2",
+ "pasteDate": "Feb 12, 2018, 10:33:36 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "diff --git a/net/bluetooth/hci_conn.c b/net/bluetooth/hci_conn.c\nindex a9682534c377..3a57e4a9b126 100644\n--- a/net/bluetooth/hci_conn.c\n+++ b/net/bluetooth/hci_conn.c\n@@ -488,6 +488,15 @@ static void le_conn_timeout(struct work_struct *work)\n                return;\n        }\n \n+       /* We could end up here when timeout was hit before matching\n+        * advertising packed was found and as a result no LE Create Connection\n+        * was sent yet.                                                                                                                                                                                                     \n+        */                                                                                                                                                                                                                  \n+       if (conn->state == BT_CONNECT) {                                                                                                                                                                                     \n+               hci_le_conn_failed(conn, HCI_ERROR_ADVERTISING_TIMEOUT);                                                                                                                                                     \n+               return;                                                                                                                                                                                                      \n+       }                                                                                                                                                                                                                    \n+                                                                                                                                                                                                                            \n        hci_abort_conn(conn, HCI_ERROR_REMOTE_USER_TERM);                                                                                                                                                                    \n }",
+ "title": ""
+}

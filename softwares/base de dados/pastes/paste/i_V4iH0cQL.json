@@ -1,0 +1,13 @@
+{
+ "espireDate": "10M",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "V4iH0cQL",
+ "pasteDate": "Feb 18, 2018, 7:38:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "items:\n- ==: org.bukkit.inventory.ItemStack\n  type: POTION\n  meta:\n    ==: ItemMeta\n    meta-type: POTION\n    display-name:  \n    custom-effects:\n    - ==: PotionEffect\n      effect: 12\n      duration: 4800\n      amplifier: 0\n      ambient: false\n      has-particles: false",
+ "title": " "
+}

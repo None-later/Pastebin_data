@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "CAvaE0P7",
+ "pasteDate": "Feb 11, 2018, 6:03:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "spiral matrix\n    \n    topRow = 0, bottomRow = n-1\n    leftCol = 0, rightCol = m-1    \n    \n    while(topRow <= bottomRow && leftCol <= rigthCol){\n      currentDelta = nextMovement(current, movement);\n      nextX = moveX(x, currentDelta)\n      nextY = moveY(y, currentDelta)\n      if (x between topRow, bottomRow\n          && y between leftCol rightCol){\n        append to output\n        x = nextX, y = nextY\n      } else {\n         //down movement stoppped \n         topRow     +0\n         rightCol   -1\n         bottomRow  +0\n         leftCol    +0\n      }\n    }\n    \n    int[][] movement = new int[] {\n      {0,1}, {1,0},{0,-1},{-1,0}\n    };\n    int[][] constraintDelta = new int[]{\n      [1  ,  0,    0,0], [0,-1,0,0]\n    }",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://giantofthefuture.gleeze.com:25461/get.php?username\u003dbaron\u0026password\u003dbaron\u0026type\u003dm3u_plus",
+  "correct": true,
+  "jSonReason": "re_url"
+}

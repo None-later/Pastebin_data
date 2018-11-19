@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mDSFesN1",
+ "pasteDate": "Feb 11, 2018, 11:17:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "g = Graph[PolyhedronData[\"Dodecahedron\", \"SkeletonGraph\"], VertexLabels -> \"Name\"];\n\npath = FindHamiltonianPath[g]\n\n(*{4, 15, 10, 9, 14, 1, 16, 8, 12, 6, 20, 18, 13, 17, 19, 3, 7, 11, 5,\n  2}*)\n\nHighlightGraph[g, PathGraph[path]]\n\t\nHighlightGraph[g, path, \n Epilog -> {Red, Thickness[.01], Arrowheads[.05], \n   Arrow /@ Partition[GraphEmbedding[g][[path]], 2, 1]}]\n\t\nHighlightGraph[g, PathGraph[path], \n Prolog -> {Orange, Thickness[.005], Arrowheads[Table[.04, 10]], \n   Arrow[BSplineCurve[GraphEmbedding[g][[path]], SplineDegree -> 2]]}]\n\t\ng = DirectedGraph[GraphData[\"DodecahedralGraph\"], \n                  VertexLabels -> \"Name\", EdgeStyle -> White];\nHighlightGraph[g, FindHamiltonianCycle[g][[1]] // Most]\n\t\ng = DirectedGraph[GraphData[\"DodecahedralGraph\"], VertexLabels -> \"Name\"];\nHighlightGraph[g, FindHamiltonianCycle[g][[1]] // Most]\n\t\ng = Graph[PolyhedronData[\"Dodecahedron\", \"SkeletonGraph\"], VertexLabels -> \"Name\"];\npath = FindHamiltonianPath[g]\n\t\nHighlightGraph[g, {EdgeList@PathGraph[path], path}, ImagePadding -> 20, \n EdgeShapeFunction -> ({Thickness[.01], Arrowheads[If[OrderedQ[#2], {0, .05}, {-.05, 0}]],\n   Arrow[GraphElementData[{\"CurvedArc\", \"Curvature\" -> (-Order@@#2 )/2 }][##]], \n  Thin, Directive[Opacity[0.7], Hue[0.6, 0.7, 0.5]], Line@#} &)]",
+ "title": ""
+}

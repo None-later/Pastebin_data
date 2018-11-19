@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RxW1yKe4",
+ "pasteDate": "Feb 28, 2018, 4:55:43 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "What We Need:\n\n UPS Account Info\n\n UPS Print Label Options:\n// The following variables govern the way the system functions\n    // Options\n    // ZPL - Zebra UPS Thermal Printers\n    // EPL - Eltron UPS Thermal Printers\n    // GIF - Image based, desktop inkjet printers\n    // STARPL\n    // SPL\n\n UPS OPTIONS:\n/ Options\n    // AJ Accounts Receivable Customer Account\n    // AT Appropriation Number\n    // BM Bill of Lading Number\n    // 9V Collect on Delivery (COD) Number\n    // ON Dealer Order Number\n    // DP Department Number\n    // 3Q Food and Drug Administration (FDA) Product Code\n    // IK Invoice Number\n    // MK Manifest Key Number\n    // MJ Model Number\n    // PM Part Number\n    // PC Production Code\n    // PO Purchase Order Number\n    // RQ Purchase Request Number\n    // RZ Return Authorization Number\n    // SA Salesperson Number\n    // SE Serial Number\n    // ST Store Number\n    // TN Transaction Reference Number\n    $a['referenceCode'] = 'IK';\n\n    // Options\n    // 2 - UPS Print and Mail (PNM)\n    // 3 - UPS Return Service 1-Attempt (RS1)\n    // 5 - UPS Return Service 3-Attempt (RS3)\n    // 8 - UPS Electronic Return Label (ERL)\n    // 9 - UPS Print Return Label (PRL) \n    $a['returnCode'] = '2';\n\n Need explanation for order fulfillment process, when do they need to be notified to start making orders? Also what time should the email go out?",
+ "title": ""
+}

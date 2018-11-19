@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QgNG5mCe",
+ "pasteDate": "Feb 26, 2018, 1:20:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <Wire.h>\n#include <Adafruit_ADS1015.h>\n \nAdafruit_ADS1015 ads;     /* Use thi for the 12-bit version */\n \nvoid setup(void) \n{\n  Serial.begin(9600);\n  Serial.println(\"Getting single-ended readings from AIN0..3\");\n  ads.begin();\n}\n \nvoid loop(void) \n{\n  int16_t adc0, adc1, adc2, adc3;\n \n  adc0 = ads.readADC_SingleEnded(0);\n  adc1 = ads.readADC_SingleEnded(1);\n  adc2 = ads.readADC_SingleEnded(2);\n  adc3 = ads.readADC_SingleEnded(3);\n  Serial.print(\"AIN0: \"); \n  Serial.println(adc0);\n  Serial.print(\"AIN1: \"); \n  Serial.println(adc1);\n  Serial.print(\"AIN2: \"); \n  Serial.println(adc2);\n  Serial.print(\"AIN3: \"); \n  Serial.println(adc3);\n  Serial.println(\" \");\n \n  delay(1000);\n}",
+ "title": ""
+}

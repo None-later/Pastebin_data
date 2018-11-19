@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PJSfXFx9",
+ "pasteDate": "Feb 26, 2018, 10:04:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "          if (red > 0.04045)\n            {\n                red = Math.Pow(((red + 0.055) / 1.055), 2.4);\n            }\n            else\n            {\n                red = red / 12.92;\n            }\n\n            if (green > 0.04045)\n            {\n                green = Math.Pow(((green + 0.055) / 1.055), 2.4);\n            }\n            else\n            {\n                green = green / 12.92;\n            }\n\n            if (blue > 0.04045)\n            {\n                blue = Math.Pow(((blue + 0.055) / 1.055), 2.4);\n            }\n            else\n            {\n                blue = blue / 12.92;\n            }\n\n            red = red * 100;\n            green = green * 100;\n            blue = blue * 100;",
+ "title": ""
+}

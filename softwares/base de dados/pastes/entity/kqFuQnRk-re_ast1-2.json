@@ -1,0 +1,5 @@
+{
+  "value": "FUNCTION-NAME ADD-FUNCTION-TO-HOOK)) (BLOCK ADD-FUNCTION-TO-HOOK (LET (HOOK-HASH #)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

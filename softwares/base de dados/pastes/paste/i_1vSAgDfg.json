@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "1vSAgDfg",
+ "pasteDate": "Feb 12, 2018, 1:28:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Picasso.with(context).load(xyz).into(new Target() {\n\n                @Override\n                public void onBitmapLoaded(Bitmap bitmap, Picasso.LoadedFrom from) {\n                     // Load the bitmap into your view\n                }\n\n                @Override\n                public void onBitmapFailed() {\n\n                }\n            });\n\t\nGlide.with(getContext())\n    .load(uri)\n    .asBitmap()\n    .into(new SimpleTarget<Bitmap>() {\n        @Override\n        public void onResourceReady(final Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {\n            // Do anything with the new Bitmap resource you have\n        }\n    });",
+ "title": ""
+}

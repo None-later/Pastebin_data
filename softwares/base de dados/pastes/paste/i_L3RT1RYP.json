@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "L3RT1RYP",
+ "pasteDate": "Feb 18, 2018, 12:02:23 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "namespace PokemonTrainer\n{\n    public class Pokemon\n    {\n        private string name;\n        private string element;\n        private int health;\n        \n        public int Health\n        {\n            get { return this.health; }\n            set { this.health = value; }\n        }\n\n        public string Element\n        {\n            get { return this.element; }\n            set { this.element = value; }\n        }\n\n        public string Name\n        {\n            get { return this.name; }\n            set { this.name = value; }\n        }\n    }\n}",
+ "title": ""
+}

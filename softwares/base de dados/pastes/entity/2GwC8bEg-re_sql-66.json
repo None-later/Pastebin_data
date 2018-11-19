@@ -1,0 +1,5 @@
+{
+  "value": "SELECT @InstanceCount \u003d COUNT(*) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

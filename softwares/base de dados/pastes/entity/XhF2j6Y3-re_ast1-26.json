@@ -1,0 +1,5 @@
+{
+  "value": "function(Parent, Color1, Color2, LightEmission, Size, Texture, Transparency, ZOffset, Accel, Drag, LockedToPart, VelocityInheritance, EmissionDirection, Enabled, LifeTime, Rate, Rotation, RotSpeed, Speed, VelocitySpread)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

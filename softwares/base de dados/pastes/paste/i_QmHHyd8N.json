@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QmHHyd8N",
+ "pasteDate": "Feb 18, 2018, 8:15:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n\t\"scope\": \"immediate\",\n\t\"text\": \"Choice an option\",\n\t\"options\": [{\n\t\t\t\"text\": \"First option\"\n\t\t},\n\t\t{\n\t\t\t\"order\": 2,\n\t\t\t\"text\": \"Second option\"\n\t\t},\n\t\t{\n\t\t\t\"order\": 3,\n\t\t\t\"text\": \"Testes quick replay\",\n\t\t\t\"type\": \"application/json\",\n\t\t\t\"value\": {\n\t\t\t\t\"key1\": \"value1\",\n\t\t\t\t\"key2\": 2\n\t\t\t}\n\t\t}\n\t]\n}",
+ "title": ""
+}

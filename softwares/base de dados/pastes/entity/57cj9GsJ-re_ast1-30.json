@@ -1,0 +1,5 @@
+{
+  "value": "function is mutch faster then $array \u003d array_merge($array, $append)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xRANMXRU",
+ "pasteDate": "Feb 8, 2018, 9:43:01 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "template<class Value>\nclass Base\n{\n public:\n    Value foo;\n}\n\nclass Derived : public Base<Derived::Colors>\n{\n    enum Colors\n    {\n        blue,\n        red,\n    }\n}",
+ "title": ""
+}

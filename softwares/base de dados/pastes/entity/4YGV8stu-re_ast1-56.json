@@ -1,0 +1,5 @@
+{
+  "value": "function Kill(v,s)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

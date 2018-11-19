@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2L4JRPsh",
+ "pasteDate": "Feb 28, 2018, 12:27:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# tools/__init__.py\nfrom .name import parse_name, split_name\n\n# tools/name.py\ndef parse_name(name):\n  splits = split_name(name)  # Can access from same file.\n  return do_something_with_splits(splits)\n\ndef split_name(name):\n  return do_something_with_name(name)\n\t\n# tools/__init__.py\nfrom .parse_name import parse_name\nfrom .split_name import split_name\n\n# tools/parse_name.py\nimport tools\n\ndef parse_name(name):\n  splits = tools.split_name(name)   # Won't work because of import order!\n  return do_something_with_splits(splits)\n\n# tools/split_name.py\ndef split_name(name):\n  return do_something_with_name(name)\n\t\n# tools/__init__.py\nfrom .parse_name import parse_name\nfrom .split_name import split_name\n\n# tools/parse_name.py\nimport tools.split_name as tools_split_name\n\ndef parse_name(name):\n  splits = tools_split_name.split_name(name)   # Works but ugly!\n  return do_something_with_splits(splits)\n\n# tools/split_name.py\ndef split_name(name):\n  return do_something_with_name(name)",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zGJxka45",
+ "pasteDate": "Feb 28, 2018, 5:01:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "ps -fu will | grep running_script\n\t\nrunning_script  &\necho $! -- $BASHPID\n\t\nwhile [ true ]\ndo\n    echo \"  $0 - 35sec ...\"\n    sleep 35\ndone\n\t\n$  ./running_script &\n$  echo $! - $BASHPID\n9047 - 3261\n$  ps -ef | grep will\n\n  UID     PID  PPID  C STIME TTY          TIME CMD\n  will   8862  2823  0 22:48 ?        00:00:01 gnome-terminal\n  will   8868  8862  0 22:48 ?        00:00:00 gnome-pty-helper\n  will   8869  8862  0 22:48 pts/4    00:00:00 bash\n* will   9047  3261  0 22:55 pts/2    00:00:00 /bin/bash\n  will   9049  9047  0 22:55 pts/2    00:00:00 /bin/bash\n  will   9059  2886  0 22:56 pts/0    00:00:00 man pgrep\n  will   9070  9059  0 22:56 pts/0    00:00:00 pager -s\n  will  10228  9049  0 23:31 pts/2    00:00:00 sleep 35\n  will  10232  8869  0 23:31 pts/4    00:00:00 ps -ef\n  will  10233  8869  0 23:31 pts/4    00:00:00 grep --colour=auto william\n\t\nps - ef | grep -v grep | grep <script_name> | awk '{print $2}'\n\t\nps -ef | grep '[c]ommand'",
+ "title": ""
+}

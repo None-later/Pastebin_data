@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "E9J02P1L",
+ "pasteDate": "Feb 21, 2018, 8:00:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/#!/bin/bash log=\"/var/log/squid3/access.log\"\n\nwhile (true); do echo \"reading started: date, log file: $log\"\n-sudo tail -n 80 $log | grep -P \"/200 [0-9]+ GET\" | grep \"video\" | awk -'{print $7}' | wget -q -rp -nd -l 1 --delete-after -i - -sleep 5 -echo",
+ "title": ""
+}

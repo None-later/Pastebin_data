@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "BYvpaSAm",
+ "pasteDate": "Feb 28, 2018, 8:44:13 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "local Spring = {} do\n\tSpring.__index = Spring\n\n\tlocal pi = math.pi\n\tlocal exp = math.exp\n\tlocal sin = math.sin\n\tlocal cos = math.cos\n\tlocal sqrt = math.sqrt\n\t\n\tfunction Spring.new(dampingRatio, frequency, position)\n\t\tlocal self = setmetatable({}, Spring)\n\t\t\n\t\tassert(dampingRatio*frequency >= 0, 'stop that')\n\n\t\tself.d = dampingRatio -- damping ratio\n\t\tself.f = frequency -- nominal frequency\n\t\tself.g = position -- goal position\n\t\tself.p = position -- position\n\t\tself.v = position*0 -- velocity (times 0 so the types match)\n\t\t\n\t\treturn self\n\tend\n\n\tfunction Spring:setGoal(g)\n\t\tself.g = g\n\tend\n\t\n\tfunction Spring:getState()\n\t\treturn self.p, self.v\n\tend\n\n\tfunction Spring:step(dt)\n\t\tlocal d = self.d\n\t\tlocal f = self.f*2*pi\n\t\tlocal g = self.g\n\t\tlocal p = self.p\n\t\tlocal v = self.v\n\n\t\tlocal offset = p - g\n\t\tlocal decay = exp(-dt*d*f)\n\n\t\t-- Given:\n\t\t--   f^2*(x[dt] - g) + 2*d*f*x'[dt] + x''[dt] = 0,\n\t\t--   x[0] = p,\n\t\t--   x'[0] = v\n\t\t-- Solve for x[dt], x'[dt]\n\t\t\n\t\tif d == 1 then -- critically damped\n\n\t\t\tself.p = (v*dt + offset*(f*dt + 1))*decay + g\n\t\t\tself.v = (v - f*dt*(offset*f + v))*decay\n\n\t\telseif d < 1 then -- underdamped\n\n\t\t\tlocal c = sqrt(1 - d*d)\n\n\t\t\tlocal i = cos(f*c*dt)\n\t\t\tlocal j = sin(f*c*dt)\n\n\t\t\tself.p = (i*offset + j*(v + d*f*offset)/(f*c))*decay + g\n\t\t\tself.v = (i*c*v - j*(v*d + f*offset))*decay/c\n\n\t\telseif d > 1 then -- overdamped\n\n\t\t\tlocal c = sqrt(d*d - 1)\n\n\t\t\tlocal r1 = -f*(d - c)\n\t\t\tlocal r2 = -f*(d + c)\n\n\t\t\tlocal co2 = (v - r1*offset)/(2*f*c)\n\t\t\tlocal co1 = offset - co2\n\n\t\t\tlocal e1 = co1*exp(r1*dt)\n\t\t\tlocal e2 = co2*exp(r2*dt)\n\t\t\t\n\t\t\tself.p = e1 + e2 + g\n\t\t\tself.v = r1*e1 + r2*e2\n\n\t\tend\n\tend\nend\n\nreturn Spring",
+ "title": ""
+}

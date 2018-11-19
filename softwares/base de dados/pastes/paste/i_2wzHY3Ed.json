@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2wzHY3Ed",
+ "pasteDate": "Feb 21, 2018, 7:10:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "  validate :\"that I don't have any balls\"\n\n  define_method \"that I don't have any balls\" do \n    false \n  end",
+ "title": ""
+}

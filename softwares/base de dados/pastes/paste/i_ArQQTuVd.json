@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ArQQTuVd",
+ "pasteDate": "Feb 18, 2018, 11:26:46 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//Horizontal Collision with a wall (heavily modified, added support of slopes and removed unneeded \"while\" statements)\n\nif (place_meeting(x+(hsp+walljumppower),y,object_wall))\n    {\n    yrealplus=0;\n    while(place_meeting(x+hsp+walljumppower,y-yrealplus,object_wall) && yrealplus <= yplus) \n        {\n        yrealplus +=1;\n        }\n    if place_meeting(x+(hsp+walljumppower),y-yrealplus,object_wall)\n        {\n        if (!place_meeting(x+sign(hsp+walljumppower),y,object_wall))\n            {\n            x += sign(hsp+walljumppower);\n            }\n        if (place_meeting(x+1,y,object_wall) || place_meeting(x-1,y,object_wall))\n            {\n            hsp = 0;\n            walljumppower =0;\n            }\n        }\n    else\n        {\n        if ontheground\n            {\n            y-=yrealplus;\n            }\n        }\n    }\nx += (hsp +walljumppower);",
+ "title": "Buggy collision system... (ouiiiiiiiiin...)"
+}

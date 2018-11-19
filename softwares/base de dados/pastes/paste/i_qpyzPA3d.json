@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_email",
+  "re_ipv4",
+  "kw_secured",
+  "lg_en"
+ ],
+ "key": "qpyzPA3d",
+ "pasteDate": "Feb 18, 2018, 2:03:40 PM",
+ "relevancy": 5.0,
+ "relevant": false,
+ "text": "Oct 23 23:05:02 Server2 dovecot: pop3-login: Disconnected (no auth attempts): rip=127.0.0.1, lip=127.0.0.1, secured\nOct 23 23:05:02 Server2 dovecot: imap-login: Disconnected (no auth attempts): rip=127.0.0.1, lip=127.0.0.1, secured\nOct 23 23:05:02 Server2 postfix/smtpd[14612]: connect from localhost[127.0.0.1]\nOct 23 23:05:02 Server2 postfix/smtpd[14612]: lost connection after CONNECT from localhost[127.0.0.1]\nOct 23 23:05:02 Server2 postfix/smtpd[14612]: disconnect from localhost[127.0.0.1]\nOct 23 23:07:47 Server2 dovecot: imap-login: Login: user=, method=PLAIN, rip=71.245.162.169, lip=50.56.29.112\nOct 23 23:07:48 Server2 dovecot: IMAP(gregb@ampersandlabs.com): Disconnected in IDLE bytes=9/304\nOct 23 23:10:01 Server2 dovecot: pop3-login: Disconnected (no auth attempts): rip=127.0.0.1, lip=127.0.0.1, secured\nOct 23 23:10:01 Server2 dovecot: imap-login: Disconnected (no auth attempts): rip=127.0.0.1, lip=127.0.0.1, secured\nOct 23 23:10:01 Server2 postfix/smtpd[14695]: connect from localhost[127.0.0.1]\nOct 23 23:10:01 Server2 postfix/smtpd[14695]: lost connection after CONNECT from localhost[127.0.0.1]\nOct 23 23:10:01 Server2 postfix/smtpd[14695]: disconnect from localhost[127.0.0.1]",
+ "title": ""
+}

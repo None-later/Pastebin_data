@@ -1,0 +1,5 @@
+{
+  "value": "function MagicBlock3(brickcolor,cframe,Parent,x1,y1,z1,x3,y3,z3,delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

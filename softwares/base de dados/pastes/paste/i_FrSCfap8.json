@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "FrSCfap8",
+ "pasteDate": "Feb 26, 2018, 10:14:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "[2018-02-26 14:00:26] [info]  [38792] Starting service...\n[2018-02-26 14:00:26] [error] [38792] Missing service ImageFile\n[2018-02-26 14:00:26] [error] [38792] ServiceStart returned 1\n[2018-02-26 14:00:26] [info]  [38816] Run service finished.\n[2018-02-26 14:00:26] [info]  [38816] Commons Daemon procrun finished\n\t\nset SERVICE_NAME=Deamon\nset BASE=c:GITcompanyProjectmyProject\nset PR_INSTALL=%BASE%deamonprunsrv.exe\n\nREM Service log configuration\nset PR_LOGPREFIX=%SERVICE_NAME%\nset PR_LOGPATH=c:LogsDeamonlogs\nset PR_STDOUTPUT=c:LogsDeamonstdout.txt\nset PR_STDERROR=c:LogsDeamonstderr.txt\nset PR_LOGLEVEL=Error\n\nREM Path to java installation\nset PR_JVM=%BASE%jre1.8.0_151binjava.exe\nset PR_CLASSPATH=%BASE%targetmyProject.jar\n\nREM Startup configuration\nset PR_STARTUP=auto\nset PR_STARTMODE=jvm\nset PR_STARTCLASS=com.myProject.deamon.Main\nset PR_STARTMETHOD=start\n\nREM Shutdown configuration\nset PR_STOPMODE=jvm\nset PR_STOPCLASS=com.myProject.deamon.Main\nset PR_STOPMETHOD=stop\n\nREM JVM configuration\nset PR_JVMMS=256\nset PR_JVMMX=4000\nset PR_JVMSS=8000\nset PR_JVMOPTIONS=-Duser.language=DE;-Duser.region=de\nREM Install service\n\ndeamon%SERVICE_NAME%.exe //IS//%SERVICE_NAME%",
+ "title": ""
+}

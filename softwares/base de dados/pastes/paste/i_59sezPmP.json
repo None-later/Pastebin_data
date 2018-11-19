@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "59sezPmP",
+ "pasteDate": "Feb 18, 2018, 4:48:45 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "package datastructures;\n\nimport static org.junit.Assert.*;\n\nimport org.junit.Before;\nimport org.junit.Test;\n\npublic class MyQueueTest {\n\n\t@Before\n\tpublic void setUp() throws Exception {\n\n\t}\n\t\n\t@Test\n\tpublic void testAdd() {\n\t\tIList<Integer> list = new Queue<Integer>();\n\t\tlist.add(1);\n\t\tlist.add(2);\n\t\tlist.add(3);\n\t\tlist.add(3);\n\t\tlist.add(4);\n\t\t\n\t\tassertTrue(list.item() == 1);\n\t\t\n\t}\n\t\n\t@Test\n\tpublic void testRemove() {\n\t\tIList<Integer> list = new Queue<Integer>();\n\t\tlist.add(1);\n\t\tlist.add(2);\n\t\tlist.add(3);\n\t\tlist.add(3);\n\t\tlist.add(4);\n\t\t\n\t\tlist.remove();\n\t\tassertTrue(list.item() == 2);\n\t\t\n\t\tlist.remove();\n\t\tlist.remove();\n\t\tassertTrue(list.item() == 3);\n\t}\n\t\n\t@Test\n\tpublic void testItem() {\n\t\tIList<Integer> list = new Queue<Integer>();\n\t\tlist.add(1);\n\t\tlist.add(2);\n\t\tlist.add(3);\n\t\tlist.add(3);\n\t\tlist.add(4);\n\t\t\n\t\tassertTrue(list.item() == 1);\n\t}\n\t\n\t@Test\n\tpublic void testIsEmpty() {\n\t\tIList<Integer> list = new Queue<Integer>();\n\t\tassertTrue(list.isEmpty() == true);\n\t\t\n\t\tlist.add(1);\n\t\tlist.add(2);\n\t\tlist.add(3);\n\t\tassertTrue(list.isEmpty() == false);\n\t}\n\n}",
+ "title": ""
+}

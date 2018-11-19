@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "EGc53RuL",
+ "pasteDate": "Feb 18, 2018, 6:17:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "is_zero(0) -> true;\nis_zero(_) -> false.",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "R5En14QY",
+ "pasteDate": "Feb 21, 2018, 7:56:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<xsl:for-each select=\"foxml:datastream[@ID='RELS-EXT']/foxml:datastreamVersion[last()]/foxml:xmlContent//rdf:Description/*\">\n    <field>\n        <xsl:attribute name=\"name\">\n            <xsl:value-of select=\"concat('rels.', substring-after(name(),':'))\"/>\n        </xsl:attribute>\n        <xsl:choose>\n            <xsl:when test=\"@rdf:resource\">\n                <!-- Deal with URIs/resources -->\n                <xsl:value-of select=\"substring-after(@rdf:resource, 'info:fedora/')\"/>\n            </xsl:when>\n            <xsl:otherwise>\n                <!-- otherwise, assume it's a literal -->\n                <xsl:value-of select=\"text()\"/>\n            </xsl:otherwise>\n        </xsl:choose>\n    </field>\n</xsl:for-each>\n\t\n<copyField source=\"rels.isMemberOf\" dest=\"collection\"/>\n<field name=\"rels.isMemberOf\" type=\"text\" indexed=\"true\" stored=\"false\" multiValued=\"true\"/>\n<copyField source=\"rels.isMemberOfCollection\" dest=\"collection\"/>\n<field name=\"rels.isMemberOfCollection\" type=\"text\" indexed=\"true\" stored=\"false\"\n       multiValued=\"true\"/>\n<field name=\"collection\" type=\"string\" maxChars=\"300\" indexed=\"true\" stored=\"true\"\n       multiValued=\"true\"/>",
+ "title": ""
+}

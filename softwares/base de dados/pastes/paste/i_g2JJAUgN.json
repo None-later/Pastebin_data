@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "g2JJAUgN",
+ "pasteDate": "Feb 26, 2018, 12:09:25 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "LINE='include \"/configs/projectname.conf\"'\nFILE=foo.bar\ntouch foo.bar\ngrep -qF -- \"$LINE\" \"$FILE\" || echo \"$LINE\" >> \"$FILE\"",
+ "title": ""
+}

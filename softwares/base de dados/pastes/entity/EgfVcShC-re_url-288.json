@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.adidas.com/us/tubular?grid\u003dtrue",
+  "correct": true,
+  "jSonReason": "re_url"
+}

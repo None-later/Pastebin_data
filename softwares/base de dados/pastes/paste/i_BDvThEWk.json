@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BDvThEWk",
+ "pasteDate": "Feb 21, 2018, 9:37:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SET foreign_key_checks='OFF';\n\nALTER TABLE civicrm_prevnext_cache DROP INDEX index_all;\nALTER TABLE civicrm_prevnext_cache ADD INDEX index_all (cacheKey, entity_id1, entity_id2, entity_table, is_selected);\n\nALTER TABLE civicrm_contact ADD INDEX index_is_deceased (is_deceased);\n\nALTER TABLE civicrm_entity_financial_account ADD UNIQUE INDEX index_entity_id_entity_table_account_relationship (entity_id, entity_table, account_relationship);\n\nALTER TABLE civicrm_option_value DROP FOREIGN KEY FK_civicrm_option_value_option_group_id;\nALTER TABLE civicrm_option_value DROP INDEX index_option_group_id_name;\nALTER TABLE civicrm_option_value ADD INDEX index_option_group_id_name (name(128), option_group_id);\nALTER TABLE civicrm_option_value ADD CONSTRAINT `FK_civicrm_option_value_option_group_id` FOREIGN KEY (`option_group_id`) REFERENCES `civicrm_option_group` (`id`) ON DELETE CASCADE;\n\nALTER TABLE civicrm_case_contact DROP FOREIGN KEY FK_civicrm_case_contact_contact_id;\nALTER TABLE civicrm_case_contact DROP FOREIGN KEY FK_civicrm_case_contact_case_id;\nALTER TABLE civicrm_case_contact DROP INDEX UI_case_contact_id;\nALTER TABLE civicrm_case_contact ADD UNIQUE INDEX UI_case_contact_id (case_id, contact_id);\nALTER TABLE civicrm_case_contact ADD CONSTRAINT FK_civicrm_case_contact_contact_id FOREIGN KEY (contact_id) REFERENCES civicrm_contact (id) ON DELETE CASCADE;\nALTER TABLE civicrm_case_contact ADD CONSTRAINT FK_civicrm_case_contact_case_id FOREIGN KEY (case_id) REFERENCES civicrm_case (id) ON DELETE CASCADE;\n\nALTER TABLE civicrm_uf_group ADD UNIQUE INDEX UI_name (name);\n\nALTER TABLE civicrm_mailing_event_queue ADD INDEX index_hash (hash);\n\nALTER TABLE civicrm_activity ADD INDEX index_activity_date_time (activity_date_time);\nALTER TABLE civicrm_activity ADD INDEX index_status_id (status_id);\n\nALTER TABLE civicrm_event DROP INDEX index_parent_event_id;\nALTER TABLE civicrm_event ADD INDEX index_parent_event_id (parent_event_id);\n\nSET foreign_key_checks='ON';",
+ "title": ""
+}

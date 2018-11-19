@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "c",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "qMtAndKv",
+ "pasteDate": "Feb 8, 2018, 5:27:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\tchar moznost;\n\tdo {\n\n\t\tsystem(\"cls\");\n\t\t//kod\n\n\t\tprintf(\"\\nPokraova alebo koniec ? p/k : \");\n\t\tmoznost = getch(); //musis mat conio.h\n\t\t\n\t} while (moznost != 'k');\n\n\treturn 0;",
+ "title": ""
+}

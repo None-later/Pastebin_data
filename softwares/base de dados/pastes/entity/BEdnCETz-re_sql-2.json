@@ -1,0 +1,5 @@
+{
+  "value": "SELECT Id , Create_Campaign__c , Name, Mailing_Type__c, Frequency__c FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

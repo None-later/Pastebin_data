@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://s1.iptv-pla.net:7040/live/12345/12345/14821.ts",
+  "correct": true,
+  "jSonReason": "re_url"
+}

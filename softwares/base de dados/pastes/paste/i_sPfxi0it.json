@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_bot"
+ ],
+ "key": "sPfxi0it",
+ "pasteDate": "Feb 21, 2018, 8:05:27 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "Index: /Users/jgoebel/rails/pastie/app/controllers/pastes_controller.rb\n===================================================================\n--- /Users/jgoebel/rails/pastie/app/controllers/pastes_controller.rb\t(revision 1873)\n+++ /Users/jgoebel/rails/pastie/app/controllers/pastes_controller.rb\t(working copy)\n@@ -119,6 +119,11 @@\n\n+    unless @params[:paste][:authorization]==\"burger\" or @paste.textmate_html\n+      flash[:notice]=\"You appear to be a bot, I can't accept your paste.  JS is now required to paste.\"\n+      render :action => \"edit\" and return\n+    end\n+\n\nIndex: /Users/jgoebel/rails/pastie/app/views/pastes/edit.rhtml\n===================================================================\n--- /Users/jgoebel/rails/pastie/app/views/pastes/edit.rhtml\t(revision 1873)\n+++ /Users/jgoebel/rails/pastie/app/views/pastes/edit.rhtml\t(working copy)\n@@ -30,7 +30,9 @@\n <%= javascript_tag \"toggle_private();\" %>\n \n <p>\n-<%= text_area 'paste', 'body',  :class=>\"pastebox\", :tabindex => \"20\"  %></p>\n+<%= text_area 'paste', 'body',  :class=>\"pastebox\", :tabindex => \"20\"  %>\n+<%= hidden_field_tag 'paste[authorization]', \"booger\", :id => \"paste_authorization\" %>\n+</p>\n <input type=\"hidden\" name=\"key\" value=\"<%=@paste.access_key%>\">\n \n <%= submit_tag (@paste.body.blank? ? 'Paste' : 'Save Paste'), :id => \"submit\", :class => \"submit\", :tabindex => \"30\" %>\n@@ -56,3 +58,7 @@\n <%= end_form_tag %>\n \n <%= javascript_tag \"$('paste_body').focus();\" %>\n+\n+<% if @paste.new_record? %>\n+<%= javascript_tag \"$('paste_authorization').value='burger';\" %>\n+<% end %>",
+ "title": ""
+}

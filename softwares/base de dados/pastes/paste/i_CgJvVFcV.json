@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CgJvVFcV",
+ "pasteDate": "Feb 23, 2018, 1:40:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " - Actor notetag:\n   + spawn change slot type: [panel_id]\n     eg  spawn change slot type: 2 # Change to Ice Panel\n   + spawn destroy slot random: [team]\n     eg: spawn destroy slot random: enemies\n         spawn destroy slot random: allies\n - Enemy notetag:\n   + <unit spawn change slot type: [panel_id]>\n     eg:  <unit spawn change slot type: 2> # Change to Ice Panel\n   + <unit spawn destroy slot random: [team]>\n     eg: <unit spawn destroy slot random: enemies>\n         <unit spawn destroy slot random: allies>\n - Script call: \n   1. destroy_random_slot(team) : Destroy a random unopcupied slot from either team.\n      ex: destroy_random_slot(:allies)\n          destroy_random_slot(:enemies)\n   2. fix_random_slot(team) : Fix a random \"destroyed\" slot from either team.\n      ex: fix_random_slot(:allies)\n          fix_random_slot(:enemies)",
+ "title": "2/23/18 Updates"
+}

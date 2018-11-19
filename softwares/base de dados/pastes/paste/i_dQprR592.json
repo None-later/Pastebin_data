@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dQprR592",
+ "pasteDate": "Feb 12, 2018, 4:00:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Solution {\n    public int solution(int[] A) {\n        int pairs = 0; \n        int easts = 0;\n        for (int i : A) {\n            if (i == 0) {\n                easts++;    \n            } else {\n                pairs += easts;\n            }\n            if (pairs > 1e9) {\n                pairs = -1;\n                break;\n            }\n        }\n        return pairs;\n    }\n}",
+ "title": ""
+}

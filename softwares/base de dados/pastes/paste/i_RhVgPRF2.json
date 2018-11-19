@@ -1,0 +1,15 @@
+{
+ "espireDate": "1W",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "kw_malware",
+  "lg_es"
+ ],
+ "key": "RhVgPRF2",
+ "pasteDate": "Feb 20, 2018, 4:56:50 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Buscando el QR\n\nPara empezar leo el cdigo QR, me da un texto (--- C:<IJ:33TC:QCMJ7IULG>MN>IU6\"]]]] ---), en un primer momento pienso que lo nico que hay que hacer es modificar la posicin de los caracteres o que a sido modificado con rot13 o cualquier variante. Pasada la tarde lo comento con un amigo faltan los cuadros de control de error (ya deca yo que vea algo raro en la imagen), bueno pues vamos a aadirlas y ver si nos da otra informacin, por si algn carcter se ha codificado mal, nada.\n\nMaldita sea le encanta que la gente queme sus cerebros // -- Adelo si quieres :)\n\nNo encuentro la forma de seguir adelante ademas tengo que realizar unas tareas para el curso as que lo dejo y espero a la pista.\n\nSiguiente da, no lo deje mucho, mientras hacia las tareas segua dndole vueltas, entro en Twitter para leer la pista y... ohh gloriosa pista nada ms leerla magnifica, por un momento me logro distraer el hermano de William, pero no tardo mucho en en aparecer la respuesta buena teclado Dvorak con una rpida bsqueda vemos que hay un convertidor que nos transforma texto de un teclado Dvorak a Qwerty y al revs. Genial ya tengo otro texto (--- IZWGCZ33KIZXIMC7GFPUEMLEGF6Q==== ---) genial esto ya me gusta ms, por la cantidad de \"=\" que hay o es base64 o base32, base64 no suele aadir tantos \"=\" as que probamos con base32 y sale algo precioso, una bonita Flag :) (--- Flag{R3t0_1_B1d1} ---) jeje.\n\nEsto es todo, ha sido un reto fcil, por que una vez descubres lo del teclado se vuelve muy fcil, eso si nunca me hubiera esperado el tener que comprobar que estaba escrito con otro teclado.\n\nEn cuanto a la tecnologa QR esta bastante bien se le puede dar mucho juego, tanto publicitario que actualmente es donde ms lo veo, en productos como latas de refresco o batidos los cuales tienen un QR que te enva a la pagina web del producto, o incluso ahora que se esta utilizando mucho con las cryptomonedas para no tener que escribir toda la direccin, as solo tienes que escanear un QR y ya puedes realizar el envi. Eso si como toda tecnologa debes tener cuidado, tambin es una manera de inyectar malware o realizar inyecciones SQL de una manera muy fcil, porque a veces no se comprueba la informacin que hay en el QR.\n\nDe todos modos muchas gracias a Sys-Secure por el reto a sido muy entretenido y que me a enseado otras cosas, las cuales voy a tener en cuenta en los siguientes retos que realicis.( Ojala sea pronto ;) )",
+ "title": "Reto Sys-Secure"
+}

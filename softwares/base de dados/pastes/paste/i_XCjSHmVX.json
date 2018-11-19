@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_so"
+ ],
+ "key": "XCjSHmVX",
+ "pasteDate": "Feb 17, 2018, 7:31:09 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "create TRIGGER check_max_salary BEFORE INSERT on jobs for each ROW\nBEGIN\n IF NEW.max_salary <= 25000\n        THEN\n    INSERT\nINTO\n    `jobs`(\n        `job_id`,\n        `job_title`,\n        `min_salary`,\n        `max_salary`\n    )\nVALUES(\n    NULL,\n    NEW.job_title,\n    NEW.min_salary,\n    NEW.max_salary\n); \nEND IF;\nEND;",
+ "title": ""
+}

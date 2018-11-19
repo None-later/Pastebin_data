@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iP3UuKzf",
+ "pasteDate": "Feb 8, 2018, 5:47:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CREATE TABLE `tbl_country` (\n`country_id` INT( 3 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,\n`country_name` VARCHAR( 25 ) NOT NULL\n) ENGINE = MYISAM ;",
+ "title": ""
+}

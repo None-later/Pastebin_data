@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "gLUQM665",
+ "pasteDate": "Feb 28, 2018, 8:32:12 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# crashes my ruby after ~1min (2.67Ghz P4 xeon) with memory usage of 1.5-2G\n#  the memory usage is expected; the crash isn't. \nAck = Hash.new { |h,n|\n    n[0]==0 ?\n        h[n]=n[1]+1 :\n        n[1]==0 ?\n            h[n]=h[[n[0]-1, 1]] :\n            h[n]=h[[n[0]-1, h[[n[0],n[1]-1]]]]\n}\n\n#(0..4).each{|a|\n#    (0..4).each{|b|\n#        puts \"Ackermann(#{a},#{b}) = \" + Ack[[a,b]].to_s\n#    }\n#}\n\nputs \"Ackermann(4,2) = \" + Ack[[4,2]].to_s",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "ig84FvgT",
+ "pasteDate": "Feb 26, 2018, 12:01:31 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def odkodowanie():\n\tprint (\"Podaj zakodowany tekst w alfabecie Morse'a (znaki oddzielaj / a koniec sowa //):  \")\n\tL=input()\n\tA=L.split(\"/\")\n\tL1=['t','e']\n\tL2=['m','n','a','i']\n\tL3=['o','g','k','d','w','r','u','s']\n\tL4=['#','#','q','z','y','c','x','b','j','p','#','l','#','f','v','h']\n\tfor i in A[0:len(A)-2]:\n\t\tif i=='':\n\t\t\tprint (\" \",end='')\n\t\tif i != '':\n\t\t\tif len(i)==1:\n\t\t\t\tS=L1\n\t\t\tif len(i)==2:\n\t\t\t\tS=L2\n\t\t\tif len(i)==3:\n\t\t\t\tS=L3\n\t\t\tif len(i)==4:\n\t\t\t\tS=L4\t\n\t\t\tm=0\n\t\t\tn=len(S)\n\t\t\tfor j in i:\n\t\t\t\tif j==\"-\":\n\t\t\t\t\tn=(m+n)//2\n\t\t\t\tif j==\".\":\n\t\t\t\t\tm=(m+n)//2\n\t\t\tprint(S[m],end='')\t\t\n\t\t\nodkodowanie()",
+ "title": ""
+}

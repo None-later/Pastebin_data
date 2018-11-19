@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FHMd9uE5",
+ "pasteDate": "Feb 28, 2018, 12:12:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\n\nvoid main(){\n    /*int x,*p,phat;\n    p=&x;\n    x=5;\n    phat=99;\n\n    printf(\"%d %d %d\",phat,x,*p);\n    printf(\"\\n%d %d %d\",&x,&phat,p);\n    printf(\"\\n%d \",&p);*/\n   /* int x,*p,b;\n    p=&x;\n    x=5;b=9;\n    printf(\"%d %d %d\",x,b,*p);\n    x++;\n    printf(\"%d %d\")*/\n\n   /* float *b;\n    float x=9.5,y=2.1;\n    b=&x;\n    printf(\"%f %f %f\\n\",*b,x,y);\n    *b=y;\n    y++;\n    printf(\"%f %f %f\\n\",*b,x,y);\n    b=&y;\n    y++;\n    printf(\"%f %f %f\\n\",*b,x,y);\n    */\n    \n\n}",
+ "title": ""
+}

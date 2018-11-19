@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Zq6175tH",
+ "pasteDate": "Feb 18, 2018, 2:45:38 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "set(SIMPLESAMPLES simplepong script jumptape)\n\nforeach(sample ${SIMPLESAMPLES})\n    aux_source_directory(${sample}/src ${sample}_src)\n\n    include_directories(\n        ${sample}/src)\n\n    add_executable(sample_${sample}\n        ${${sample}_src}\n        ${${sample}_HEADERS_MOC})\n\n    target_link_libraries(sample_${sample}\n        ducttape)\nendforeach(sample)",
+ "title": ""
+}

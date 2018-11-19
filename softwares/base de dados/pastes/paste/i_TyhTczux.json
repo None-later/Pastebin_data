@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TyhTczux",
+ "pasteDate": "Feb 20, 2018, 1:54:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public class Ptest { \nWebDriver driver1;\nWebDriver driver2;\n@BeforeSuite\npublic void startReport(){\n}\n\n@Test (priority =0)\npublic void installapp() {\n\n\n    DesiredCapabilities capabilities = new DesiredCapabilities();\n    capabilities.setCapability(\"udid\", \"420057be90e7145f\");\n\n    capabilities.setCapability(\"deviceName\",\"Device1\");\n    capabilities.setCapability(\"platformVersion\", \"6.0.1\");\n    capabilities.setCapability(\"autoAcceptAlerts\", true);\n\n\n\n    capabilities.setCapability(\"appPackage\", \"com.harchali.scientifique.calculatrice\");\n    capabilities.setCapability(\"appActivity\", \"com.creativedroids.scientificcalc.ScientificActivity\");\n\n    try {\n        driver1 = new AndroidDriver(new URL(\"http://172.20.10.24:4723/wd/hub\"), capabilities);\n    } catch (MalformedURLException e) {\n        e.printStackTrace();\n    }\n\n\n\n  WebElement two=driver1.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/button7\"));\n    two.click();\n\n    WebElement a=driver1.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/buttonSubtract\"));\n    a.click();\n\n    WebElement ab=driver1.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/button6\"));\n    ab.click();\n\n\n    WebElement abd=driver1.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/ButtonEqual\"));\n    abd.click();\n\n}\n\n@Test (priority =0)\npublic void installapp1() {\n    DesiredCapabilities capabilities1 = new DesiredCapabilities();\n    capabilities1.setCapability(\"udid\", \"emulator-5554\");\n    capabilities1.setCapability(\"deviceName\",\"Device2\");\n    capabilities1.setCapability(\"platformVersion\", \"6.0\");\n    capabilities1.setCapability(\"autoAcceptAlerts\", true);\n\n\n    capabilities1.setCapability(\"appPackage\", \"com.harchali.scientifique.calculatrice\");\n    capabilities1.setCapability(\"appActivity\", \"com.creativedroids.scientificcalc.ScientificActivity\");\n    try {\n        driver2 = new AndroidDriver(new URL(\"http://172.20.10.24:4724/wd/hub\"), capabilities1);\n    } catch (MalformedURLException e) {\n        e.printStackTrace();\n    }\n\n   WebElement two=driver2.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/button7\"));\n  two.click();\n  WebElement f=driver2.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/buttonSubtract\"));\n  f.click();\n  WebElement abc=driver2.findElement(By.id(\"com.harchali.scientifique.calculatrice:id/button6\"));\n  abc.click();\n\n}",
+ "title": ""
+}

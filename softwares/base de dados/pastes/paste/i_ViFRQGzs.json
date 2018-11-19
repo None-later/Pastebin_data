@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ViFRQGzs",
+ "pasteDate": "Feb 28, 2018, 10:13:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "renewcommand*{postnotedelim}{addspace}\n\t\n% !TEX TS-program = XeLaTeX\n% !TEX encoding = UTF-8 Unicode\n\nbegin{filecontents}{archivio.bib}\n\n\n@article{Stu:Pat,\n    Author = {Despina Stratoydaki-White},\n    Date-Added = {2015-11-18 12:39:01 +0000},\n    Date-Modified = {2015-11-18 12:40:01 +0000},\n    Journal = {The Greek Orthodox Theological Review},\n    Number = {2},\n    Pages = {195-205},\n    Title = {Patriarch Photios - A Christian Humanist},\n    Volume = {25},\n    Year = {1980}}\n\n\n@article{Szi:Usu,\n    Author = {Szidat, Joachim},\n    Date-Added = {2017-09-25 13:16:22 +0000},\n    Date-Modified = {2017-09-25 13:17:10 +0000},\n    Journal = {Historia. Zeitschrift fr Alte Geschichte},\n    Pages = {487-508},\n    Title = {Die Usurpation des Eugenius},\n    Volume = {28},\n    Year = {1979}}\n\n\nend{filecontents}\n\ndocumentclass[11pt, twoside]{book}   %openany\nusepackage{polyglossia}\nsetmainlanguage[babelshorthands=true]{italian}\nsetotherlanguages{latin, english, french}\n\n%%% bibliografia\nusepackage[babel,italian=guillemets]{csquotes}\n\nusepackage[    style=verbose-trad2,            \n            language=italian,\n            useprefix=true,                 \n            firstinits=true,    \n            citepages=omit,                 \n            backend=biber,  \n        ]{biblatex} \n\n% renewcommand*{postnotedelim}{addspace}\n\naddbibresource{archivio.bib}\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\nbegin{document}\n\n\nafootcite[197-198]{Stu:Pat} \\\n\nbfootcite[488]{Szi:Usu} \\\n\ncfootcite[196]{Stu:Pat}\n\n\nend{document}",
+ "title": ""
+}

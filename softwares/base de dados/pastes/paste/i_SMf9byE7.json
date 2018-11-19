@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SMf9byE7",
+ "pasteDate": "Feb 20, 2018, 8:04:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public final static void clearConsole(){\n\n        try{\n            final String os = System.getProperty(\"os.name\");\n\n            if (os.contains(\"Windows\")){\n                Runtime.getRuntime().exec(\"cls\");\n\n            }else{\n                Runtime.getRuntime().exec(\"clear\");\n            }\n        }\n        catch (final Exception e){\n        //  Tratar Exceptions\n        }\n    }",
+ "title": ""
+}

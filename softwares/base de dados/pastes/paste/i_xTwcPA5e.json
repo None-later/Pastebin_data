@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "xTwcPA5e",
+ "pasteDate": "Feb 28, 2018, 7:48:58 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "write(\"Hoehe:\")\nh = tonumber(read())\nwhile h > 0 do\nif turtle.detect() then\nturtle.turnRight()\nturtle.forward()\nturtle.down()\nturtle.placeDown()\nh = h-1\nelse\nturtle.forward()\nturtle.down()\nturtle.placeDown()\nh = h-1\nend\nend",
+ "title": "stairs"
+}

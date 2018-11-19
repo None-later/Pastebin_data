@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cWQQPtgu",
+ "pasteDate": "Feb 20, 2018, 4:04:40 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "module MigrateDb\n  \n  def self.output\n    \"automigrating the database\"\n  end\n  \n  def self.run\n    Dir.chdir(TestApp.path) do\n      `rake db:automigrate MERB_ENV=test`\n    end\n  end\n  \nend\n\n# usage\nstep(:migrate_db) # looks for a module being the constantized versio of the symbol passed and call output + run on it.",
+ "title": ""
+}

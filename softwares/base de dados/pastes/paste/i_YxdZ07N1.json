@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "YxdZ07N1",
+ "pasteDate": "Feb 20, 2018, 5:47:21 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <bits/stdc++.h>\nusing namespace std;\n#define ll long long\nll m, s, a[101], i, sm, n;\nint main ()\n{\n    cin >> m >> s;\n    sm=s; n=m;\n    if (s==0){\n        if (m==1)\n            cout << \"0 0\" << endl;\n        else\n            cout << \"-1 -1\" << endl;\n        return 0;\n    }\n    if (s>m*9){\n        cout << \"-1 -1\" << endl;\n        return 0;\n    }\n    for (i=m-1; i>=0; i--){\n        if (i==0)\n            a[i]=sm;\n        if (sm>9){\n            a[i]=9;\n            sm-=9;\n            n--;\n        }\n        else if (sm<=9 && sm>0 && i!=0){\n            a[i]=sm-1;\n            sm=1;\n            n--;\n        }\n        else if (n>1)\n            a[i]=0;\n    }\n    for (i=0; i<m; i++)\n        cout << a[i];\n    cout << \" \";\n    for (i=0; i<m; i++){\n        if (s>=9){\n            cout << 9;\n            s-=9;\n        }\n        else if (s<9 && s!=0){\n            cout << s;\n            s=0;\n        }\n        else\n            cout << 0;\n    }\n    cout << \"\\n\";\n    return 0;\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "SELECT DISTINCT 86, DB_NAME(), 230, \u0027\u0027Security\u0027\u0027, \u0027\u0027Elevated Permissions on a Database\u0027\u0027, \u0027\u0027https://BrentOzar.com/go/elevated\u0027\u0027, (\u0027\u0027In [\u0027\u0027 + DB_NAME() + \u0027\u0027], user [\u0027\u0027 + u.name + \u0027\u0027]  has the role [\u0027\u0027 + g.name + \u0027\u0027].  This user can perform tasks beyond just reading and writing data.\u0027\u0027) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

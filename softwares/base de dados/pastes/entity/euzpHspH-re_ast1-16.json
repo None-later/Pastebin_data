@@ -1,0 +1,5 @@
+{
+  "value": "function Kill(Character)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

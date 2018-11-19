@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pFZCEVHJ",
+ "pasteDate": "Feb 28, 2018, 3:13:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<bits/stdc++.h>\nusing namespace std;\n#define mk make_pair\nint X[8] ={1,1,-1,-1,2,2,-2,-2};\nint Y[8] ={2,-2,2,-2,1,-1,1,-1};\nint vis[101][101], n;\nmap < pair<int, int> , pair<int, int> > mp;   \nvoid bfs(int x, int y){\n\tvis[x][y]=1;\n\tdeque <pair <int, int> > dq;\n\tdq.push_back(make_pair(x,y));\n\tpair <int, int> p,p1,p2;\n\twhile(!dq.empty()){\n\t\tp=dq.front();\n\t\tdq.pop_front();\n\t\tfor(int i=0;i<8;i++){\n\t\t\tif(p.first+X[i] >0 && p.first+X[i] <=n &&  p.second+Y[i] > 0 && p.second+Y[i]<=n){\n\t\t\t\tif(vis[p.first+X[i]] [ p.second+Y[i]] ==0 ){\n\t\t\t\t\tdq.push_back(mk( p.first+X[i],  p.second+Y[i]));\n\t\t\t\t\tvis[p.first+X[i]] [ p.second+Y[i]] = vis[p.first][p.second] +1;\n\t\t\t\t\tp1=mk(p.first , p.second);\n\t\t\t\t\tp2=mk(p.first+X[i] , p.second+Y[i]);\n\t\t\t\t\tmp[p2]=p1;\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}\nint main()\n{\n\tcin>>n;\n\tint x1,y,x2,y2;\n\tcin>> x1>>y>>x2>>y2;\n\t\n\tbfs(x1,y);\n\t\n\tcout<<vis[x2][y2]-1<<endl;\t\n\tvector <pair<int, int >  > vec;\n\t\n\tpair <int, int> p1;\n\tp1=make_pair(x2,y2);\n    while(p1.first!=0 && p1.second!=0){\n        vec.push_back(p1);\n        p1=mp[p1];\n    }\n    for(int i=vec.size()-1;i>=0;i--)\n        cout<<vec[i].first<<\" \"<<vec[i].second<<endl;\n}",
+ "title": "Horse"
+}

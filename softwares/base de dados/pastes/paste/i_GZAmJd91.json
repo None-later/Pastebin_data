@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GZAmJd91",
+ "pasteDate": "Feb 21, 2018, 7:45:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\\\\ If you want the file as a sequence of lines, call\nList<String> lines = Files.readAllLines(path);",
+ "title": ""
+}

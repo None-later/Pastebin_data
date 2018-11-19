@@ -1,0 +1,5 @@
+{
+  "value": "function\"?typeofSymbol\u003d\u003d\u003d\"function\"?Symbol.iterator:\"@@iterator\":\"@@iterator\",g\u003dtypeofb\u003d\u003d\u003d\"function\",h\u003dtypeofe[f]\u003d\u003d\u003d\"function\",i\u003d0,j,k;if(h)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

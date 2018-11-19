@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "gDEiZvnT",
+ "pasteDate": "Feb 24, 2018, 2:12:13 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "var first = new ListNode { Data = \"first\" };\nvar second = new ListNode { Data = \"second\", Prev = first};\nvar third = new ListNode { Data = \"third\", Prev = second};\nvar fourth = new ListNode { Data = \"fourth\", Prev = third};\n\nfirst.Next = second;\nsecond.Next = third;\nthird.Next = forthl\n\n\nfirst.Rnd = first;\nsecond.Rnd = fourth;\nfourth.Rnd = third;\n\n\n\n\nvar xs = new ListRand{\n\tHead = first;\n\tTail = fourth;\n\tCount = 4\n}",
+ "title": ""
+}

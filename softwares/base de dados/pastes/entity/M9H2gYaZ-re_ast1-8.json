@@ -1,0 +1,5 @@
+{
+  "value": "FunctionPointer($GetAsyncKeyStateAddr, $GetAsyncKeyStateDelegate)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

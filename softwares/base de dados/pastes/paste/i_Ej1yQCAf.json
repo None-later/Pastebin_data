@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "Ej1yQCAf",
+ "pasteDate": "Feb 12, 2018, 10:50:19 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "# don't turn off display\nxset dpms 0 0 0\nxset -dpms\nxset s noblank\nxset s off\n\n# simple fullscreen wm\nmatchbox-window-manager -use_cursor no -use_titlebar no &\n\n# start VNC client\nexec echo \"Password123\" | xtightvncviewer -viewonly -fullscreen -autopass 192.168.1.10:0",
+ "title": ""
+}

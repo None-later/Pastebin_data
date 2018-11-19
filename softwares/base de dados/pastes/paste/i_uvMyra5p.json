@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uvMyra5p",
+ "pasteDate": "Feb 19, 2018, 2:17:44 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\n#include<stdlib.h>\n\nstruct Node{\n    char name[100];\n    char id[100];\n    char phone[100];\n\n\n    struct Node *next;\n};\ntypedef struct Node node;\n\nvoid insert( node *list, char name[100], char id[100], char phone[100]){\n    node *temp=(node*)malloc(sizeof(node));  // notun node initialize korlam ar er jonno memory allocate korlam\n    strcpy(temp->name,name);\n    strcpy(temp->id,id);                        // notun node a data rakhlam\n    strcpy(temp->phone,phone);                     // notun node a data rakhlam\n                             // notun node a data rakhlam\n    temp->next=NULL;                         // notun node er por ar keo nai tai bollam\n    while(list->next!=NULL)                  // kono node er next a NULL pele loop theke ber hoye jabo\n        list=list->next;                     // noyto list er address hoye jabe list->next\n    list->next=temp;                         // jei node er sheshe NULL pelam shetar NULL er bodole notun node er address boshiye dilam\n        // kaj shesh tai bollam\n}\n\nint main(){\n//    node *list;\n//    list=(node*)malloc(sizeof(node));\n\n    node *list=(node*)malloc(sizeof(node));\n    list->next=NULL;\n\n    insert(list, \"Sadia\", \"179-89-44\", \"01798656532131131\");\n\n\n    return 0;\n}",
+ "title": "Linked list assingment"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "f1KKp7hT",
+ "pasteDate": "Feb 23, 2018, 11:37:19 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "func resizeImage(with buffer: CMSampleBuffer) {\n        let pixel = CMSampleBufferGetImageBuffer(buffer)\n        guard let pixelBuffer = pixel else { return }\n        \n        CVPixelBufferLockBaseAddress(pixelBuffer, CVPixelBufferLockFlags(rawValue: 0))\n        let baseAddress = CVPixelBufferGetBaseAddress(pixelBuffer)\n        let bytesPerRow = CVPixelBufferGetBytesPerRow(pixelBuffer)\n\n        var inputBuffer = vImage_Buffer()\n        inputBuffer.height = inputHeight\n        inputBuffer.width = inputWidth\n        inputBuffer.rowBytes = bytesPerRow\n        inputBuffer.data = baseAddress\n\n        let outImg = UnsafeMutablePointer<u_char>.allocate(capacity: Int(4*inputWidth*inputHeight))\n        var outputBuffer: vImage_Buffer = vImage_Buffer.init(data: outImg, height: inputHeight, width: inputWidth, rowBytes: Int(4*inputWidth))\n        var err: vImage_Error = vImageScale_ARGB8888(&inputBuffer, &outputBuffer, nil, 0)\n        guard err != kvImageNoError else {\n            print(\"error: \\(err)\")\n            return\n        }\n        var format = vImage_CGImageFormat.init(bitsPerComponent: 8,\n                                  bitsPerPixel: 32,\n                                  colorSpace: nil,\n                                  bitmapInfo: CGBitmapInfo.init(rawValue: CGImageAlphaInfo.first.rawValue),\n                                  version: 0,\n                                  decode: nil,\n                                  renderingIntent: .defaultIntent)\n        \n        let destRef = vImageCreateCGImageFromBuffer(&outputBuffer,\n                                                    &format,\n                                                    nil,\n                                                    nil,\n                                                    vImage_Flags(kvImageNoFlags),\n                                                    &err)\n        \n        \n    }",
+ "title": ""
+}

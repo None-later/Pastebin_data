@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ccfBEkxj",
+ "pasteDate": "Feb 11, 2018, 11:06:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "{\n    \"workbench.colorTheme\": \"Solarized Dark\",\n    \"powershell.integratedConsole.showOnStartup\": false,\n    \"powershell.integratedConsole.focusConsoleOnExecute\": false,\n    \"update.channel\": \"none\",\n    \"editor.detectIndentation\": false,\n    \"editor.fontFamily\": \"Fira Code, Consolas, 'Courier New', monospace\",\n    \"editor.fontLigatures\": true,\n    \"window.zoomLevel\": 0,\n    \"editor.mouseWheelZoom\": true,\n    \"files.defaultLanguage\": \"powershell\",\n    \"[powershell]\": {\n        \"editor.rulers\" : [\n            115\n        ]\n    }\n}",
+ "title": ""
+}

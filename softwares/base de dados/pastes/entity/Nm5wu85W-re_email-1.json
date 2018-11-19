@@ -1,0 +1,5 @@
+{
+  "value": "support@pterodactyl.io",
+  "correct": true,
+  "jSonReason": "re_email"
+}

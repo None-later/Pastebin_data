@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AfdwMPXw",
+ "pasteDate": "Feb 12, 2018, 3:42:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@Rest(converters = GsonHttpMessageConverter.class)\npublic abstract class Client {\n    @Get(\"/sections\")\n    protected abstract List<Section> getSectionsInternal();\n\n    public Map<String, Section> getSections() {\n        final List<Section> sections = getSectionsInternal();\n        final HashMap<String, Section> map = new HashMap<>();\n        for (Section section : sections) {\n            map.put(section.getTitle(), section);\n        }\n        return map;\n    }\n}",
+ "title": ""
+}

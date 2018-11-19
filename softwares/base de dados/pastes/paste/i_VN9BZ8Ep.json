@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VN9BZ8Ep",
+ "pasteDate": "Feb 12, 2018, 3:21:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "int CalcLineCountOfLabel(const Label& label)  \n{\n    const auto label_total_width = label.getFont().getStringWidth(label.getText());\n    const auto bound_width = label.getLocalBounds().getWidth();\n\n    int line_count = 1;\n    if (label_total_width > bound_width)\n        line_count += label_total_width / bound_width;\n\n    return line_count;\n}",
+ "title": ""
+}

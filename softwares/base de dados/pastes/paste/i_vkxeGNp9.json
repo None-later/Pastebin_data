@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vkxeGNp9",
+ "pasteDate": "Feb 12, 2018, 11:30:49 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\n$phpself=$_SERVER['PHP_SELF'];\n$morze=array(\"0\"=>\"o o o\",\"1\"=>'mi mi o',\"2\"=>'o mi mi',\"3\"=>'o mi o',\"4\"=>'mi mi mi',\"5\"=>'o o mo',\"6\"=>'mo o mi');\nwhile ( list ($var, $value) = each($_GET)) $$var = $value;\nfor($i=0; $i < strlen($a); $i++) {\n\tprint($a[$i].\" - \".$morze[$a[$i]].\"<br>\");\n\n}\nprint \"<br>\";\n$form = <<<LOH\n<form name=\"form1\" method=\"get\" action=\"$phpself\">\n\tEnter char or string<input type=\"text\" name=\"a\" value=\"$a\">\n\t<input type=\"submit\" name=\"submit\" value=\"Show\">\n</form>\nLOH;\nprint $form;\n\n?>",
+ "title": ""
+}

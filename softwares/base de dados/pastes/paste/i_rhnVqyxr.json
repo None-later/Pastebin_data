@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rhnVqyxr",
+ "pasteDate": "Feb 23, 2018, 11:36:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "create table users (\n  login varchar(20) primary key not null,\n  status number default 1 check(status>0 and status<4) not null,\n);\n\t\nBEGIN\nDBMS_SCHEDULER.CREATE_JOB (\n  job_name     => 'delete_service',\n  job_type     => 'PLSQL_BLOCK',\n  job_action   => 'DELETE FROM users where status = 3',\n  start_date   => sysdate,\n  end_date     => to_date('01.01.2021', 'DD.MM.YYYY'),\n  repeat_interval => 'FREQ=MINUTELY; INTERVAL=1;'\n);\nEND;\n/",
+ "title": ""
+}

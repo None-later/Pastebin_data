@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SuhLab9e",
+ "pasteDate": "Feb 21, 2018, 1:28:49 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\n\nnamespace Area_of_figures\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            string figure = Console.ReadLine();\n          \n            if (figure == \"square\")\n            {\n                double y = double.Parse(Console.ReadLine());\n                double area = y * y;\n                Console.WriteLine(Math.Round(area, 3));\n            }\n            else if (figure == \"rectangle\")\n            {\n                double a = double.Parse(Console.ReadLine());\n                double b = double.Parse(Console.ReadLine());\n                double area = a * b;\n                Console.WriteLine(Math.Round(area, 3));\n            }\n            else if (figure == \"circle\")\n            {\n                double c = double.Parse(Console.ReadLine());\n                double area = Math.PI * c * c;\n                Console.WriteLine(Math.Round(area, 3));\n            }\n            else if (figure == \"triangle\")\n            {\n                double s = double.Parse(Console.ReadLine());\n                double h = double.Parse(Console.ReadLine());\n                double area = s * h / 2;\n                Console.WriteLine(Math.Round(area, 3));\n            }\n\n\n                \n            \n        }\n    }\n}",
+ "title": "Area of Figures"
+}

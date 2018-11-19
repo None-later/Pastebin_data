@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en",
+  "re_url",
+  "kw_operations"
+ ],
+ "key": "6bVhWxeq",
+ "pasteDate": "Feb 21, 2018, 8:10:26 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "/**\n * Resource for operations with charges\n */\n@APSAccess(_public = APSAccessValue.ALLOWED)\n@APSType(id = Rating.APS_TYPE_ID)\npublic interface Rating {\n\n\t/**\n\t * APS type id\n\t */\n\tString APS_TYPE_ID = \"http://www.odin.com/oa/billing/rating-service/1.0\";\n\n\t@APSOperation\n\t@GET\n\t@Path(\"/rating/charges\")\n\tList<BssCharge> getCharges(@HeaderParam(\"APS-Identity-ID\") String apsUserUuid,\n\t\t\t\t\t\t\t   @NotNull @QueryParam(\"docId\") Integer docId,\n\t\t\t\t\t\t\t   @QueryParam(\"subId\") Integer subId,\n\t\t\t\t\t\t\t   @QueryParam(\"resId\") Integer resId,\n\t\t\t\t\t\t\t   @QueryParam(\"descr\") String descr);\n\n}",
+ "title": "Rating.java"
+}

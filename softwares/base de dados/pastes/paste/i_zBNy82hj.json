@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_vi"
+ ],
+ "key": "zBNy82hj",
+ "pasteDate": "Feb 12, 2018, 11:46:22 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "2018-02-12 13:46:02 alexey@[local]/alexey=# select relation::regclass, locktype, virtualxid, virtualtransaction, pid, mode, granted, fastpath from pg_locks where pid <> pg_backend_pid() order by pid;\n\n relation    locktype   virtualxid  virtualtransaction   pid             mode            granted  fastpath \n\n           virtualxid  4/5782      4/5782              27904  ExclusiveLock             t        f        \n t_a_idx34  relation               3/55382             27995  RowExclusiveLock          t        t        \n           virtualxid  3/55382     3/55382             27995  ExclusiveLock             t        t        \n           virtualxid  4/5782      3/55382             27995  ShareLock                 f        f        \n t          relation               3/55382             27995  ShareUpdateExclusiveLock  t        f        \n\n(5 rows)",
+ "title": ""
+}

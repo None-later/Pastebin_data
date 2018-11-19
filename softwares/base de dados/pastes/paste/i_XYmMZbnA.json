@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_css",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "XYmMZbnA",
+ "pasteDate": "Feb 9, 2018, 12:10:25 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<!-- overlay -->\n.ld_ol{\n  position:absolute;\n  width:100%;\n  height:100%;\n  top:0;\n  left:0;\n  opacity:0.6;\n  z-index:100;\n  background-color:#FFFFFF;\n}   \n\n<!-- preloader -->\n.load{\n  position:absolute;\n  top:50%;\n  z-index:101;\n  left:50%;\n  transform:translate(-50%, -50%);\n  width:50px;\n  height:50px;\n}\n.load hr{border:0;margin:0;width:40%;height:40%;position:absolute;border-radius:50%;animation:spin 2s ease infinite}\n\n.load :first-child{background:#6092F8;animation-delay:-1.5s}\n.load :nth-child(2){background:#FFD332;animation-delay:-1s}\n.load :nth-child(3){background:#00F5BB;animation-delay:-0.5s}\n.load :last-child{background:#DD2E44}\n\n@keyframes spin{\n  0%,100%{transform:translate(0)}\n  25%{transform:translate(160%)}\n  50%{transform:translate(160%, 160%)}\n  75%{transform:translate(0, 160%)}\n}\n\t\nfunction personal_group_preloader(action) { \n  if (action=='create') {\n    var overlay = document.createElement('div');\n    var preloader = document.createElement('div');\n    overlay.id = \"personal_group_overlay\";\n    overlay.className = 'ld_ol';\n    preloader.id = \"personal_group_preloader\";\n    preloader.className = 'load';\n    preloader.innerHTML = '<hr/><hr/><hr/><hr/>';\n    document.body.appendChild(preloader);\n    document.body.appendChild(overlay);\n    document.body.style.overflow = 'hidden';\n  } else {\n    var overlay = document.getElementById(\"personal_group_overlay\");\n    var preloader = document.getElementById(\"personal_group_preloader\");\n    overlay.parentNode.removeChild(overlay);\n    preloader.parentNode.removeChild(preloader);\n    document.body.style.overflow = 'visible';\n  }\n}",
+ "title": ""
+}

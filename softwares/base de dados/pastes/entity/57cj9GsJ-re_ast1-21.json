@@ -1,0 +1,5 @@
+{
+  "value": "function arrayAppend(array \u0026$array, array $append)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"https://www.apple.com/legal/privacy/",
+  "correct": true,
+  "jSonReason": "re_url"
+}

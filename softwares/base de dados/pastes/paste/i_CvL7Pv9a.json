@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "re_ipv6_with_port",
+  "lg_en",
+  "re_ipv6"
+ ],
+ "key": "CvL7Pv9a",
+ "pasteDate": "Feb 21, 2018, 12:20:17 PM",
+ "relevancy": 9.0,
+ "relevant": false,
+ "text": "./bin/dse cassandra -f\nnate:cassandra$ ./bin/nodetool -h localhost ring\nAddress         DC          Rack        Status State   Load            Owns    Token                                       \n127.0.0.1       Cassandra   rack1       Up     Normal  8.91 KB         100.00% 88170875686286084043626986705282840923      \n\n[delete data dirs]\n./bin/dse cassandra -t -f\nnate:cassandra$ ./bin/nodetool -h localhost ring\nAddress         DC          Rack        Status State   Load            Owns    Token                                       \n127.0.0.1       Analytics   rack1       Up     Normal  100.32 KB       100.00% 88170875686286084043626986705282840923   \n\nnate:bdp$ ./bin/dsetool ring\nAddress         Type  DC          Rack        Status State   Load            Owns    Token                                       \n127.0.0.1       B(JT) Analytics   rack1       Up     Normal  100.32 KB       100.00% 88170875686286084043626986705282840923   \n\nnate:bdp$ ./bin/dsetool jobtracker\n127.0.0.1:8012\n\n\nNetwork setup:\nnate:bdp$ ifconfig\neth0      Link encap:Ethernet  HWaddr 00:90:f5:ac:b8:6d  \n          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\n          RX packets:0 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:1000 \n          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)\n          Interrupt:47 \n\nlo        Link encap:Local Loopback  \n          inet addr:127.0.0.1  Mask:255.0.0.0\n          inet6 addr: ::1/128 Scope:Host\n          UP LOOPBACK RUNNING  MTU:16436  Metric:1\n          RX packets:3432 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:3432 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:0 \n          RX bytes:470197 (470.1 KB)  TX bytes:470197 (470.1 KB)\n\nwlan0     Link encap:Ethernet  HWaddr 00:24:d7:0f:94:08  \n          inet addr:192.168.1.135  Bcast:192.168.1.255  Mask:255.255.255.0\n          inet6 addr: fe80::224:d7ff:fe0f:9408/64 Scope:Link\n          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\n          RX packets:82642 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:53778 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:1000 \n          RX bytes:42659114 (42.6 MB)  TX bytes:12328523 (12.3 MB)",
+ "title": ""
+}

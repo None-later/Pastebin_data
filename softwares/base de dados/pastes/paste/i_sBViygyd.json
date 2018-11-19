@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sBViygyd",
+ "pasteDate": "Feb 21, 2018, 10:28:41 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// pythonish.pppd\n// like python, minus OO crap\n\n@null \"None\"\n@true \"True\"\n@false \"False\"\n\n@linecomment \"#\" //Lines are read and parsed first, then evaluated.\n@blockcomment None ## too lazy to add in \"\"\". so sue me.\n@strliteral \"\\\"\" or \"\\'\"\n\n@vnamespace \"main\" // used for internal stuff\n@fnamespace \"main\" // same\n\n@vardeclare False // don't require declarations of variables before assignment\n\n@indentation \"    \" ## four spaces.\n@initialindent 0\n@indentwhen lineendswith \":\" ##\n@dedentwhen auto ##",
+ "title": ""
+}

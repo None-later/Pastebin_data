@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "3fEANVZ0",
+ "pasteDate": "Feb 26, 2018, 9:38:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "parameter RAM_LENGTH = 1024;\nreg [7:0] mem [RAM_LENGTH - 1:0];\n\t\nreg [7:0] ram_addr = 0;    \nreg [7:0] current;\n\t\ncurrent = mem[ram_addr];\nram_addr = ram_addr + 1;\n\t\ncurrent <= mem[0];\nfor (i = 1; i < RAM_LENGTH; i++)\n  mem[i] <= mem[i-1];",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6CZ9ywB5",
+ "pasteDate": "Feb 21, 2018, 9:12:39 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "01\tpublic class GatRenat { \n02\t    int vides = 9;   // vides disponibles del gat Renat \n03\t    \n04\t    public static void main(String[] args) { \n05\t        GatRenat renat_I; \n06\t        renat_I = new GatRenat(); \n07\t        GatRenat renat_II = new GatRenat(); \n08\t        System.out.println(\"El gat Renat I t  \" + renat_I.vides + \" vides\"); \n09\t        System.out.println(\"El gat Renat II t \" + renat_II.vides + \" vides\"); \n10\t        renat_I.vides++; \n11\t        System.out.println(\"El gat Renat I t  \" + renat_I.vides + \" vides\"); \n12\t        System.out.println(\"El gat Renat II t \" + renat_II.vides + \" vides\"); \n13\t        renat_II = renat_I; // atenci: la instncia de Renat II es perd! \n14\t        System.out.println(\"El gat Renat I t  \" + renat_I.vides + \" vides\"); \n15\t        System.out.println(\"El gat Renat II t \" + renat_II.vides + \" vides\"); \n16\t        renat_I.vides++; \n17\t        System.out.println(\"El gat Renat I t  \" + renat_I.vides + \" vides\"); \n18\t        System.out.println(\"El gat Renat II t \" + renat_II.vides + \" vides\"); \n19\t    } \n20\t}",
+ "title": ""
+}

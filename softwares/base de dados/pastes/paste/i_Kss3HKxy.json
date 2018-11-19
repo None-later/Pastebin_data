@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Kss3HKxy",
+ "pasteDate": "Feb 8, 2018, 1:14:06 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function prepare_var_to_localize_script(string $variable_name, $variable) {\n    $var_json_string = json_encode($variable);\n    return \"var $variable_name = JSON.parse('$var_json_string');\";\n}\n\n$data = prepare_var_to_localize_script('ajax_obj', array(\n   'ajax_url' => admin_url('admin-ajax.php'),\n   'ajax_wp_nonce' => wp_create_nonce()\n));\n\nwp_add_inline_script('my-script-id', $data, 'before');",
+ "title": ""
+}

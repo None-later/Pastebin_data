@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "urUWS0Uh",
+ "pasteDate": "Feb 21, 2018, 8:25:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<PropertyGroup>\n  <PropertyA>@(SomeItemGroup)</PropertyA>\n  <PropertyB>$(PropertyA)</PropertyB>\n</PropertyGroup>\n\n<Message Importance=\"high\" Text=\"$(PropertyA)\"/>\n<Message Importance=\"high\" Text=\"$(PropertyB)\"/>\n\t\n<PropertyGroup>\n  <PropertyA>@(SomeItemGroup->'%(SomeItem)', '')</PropertyA> => One String for List\n  <PropertyB>$(PropertyA.Substring(0, 5))</PropertyB> => PropertyA does not resolve\n</PropertyGroup>\n\n<Message Importance=\"high\" Text=\"$(PropertyA)\"/>\n<Message Importance=\"high\" Text=\"$(PropertyB)\"/>",
+ "title": ""
+}

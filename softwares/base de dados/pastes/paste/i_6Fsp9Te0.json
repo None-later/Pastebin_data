@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6Fsp9Te0",
+ "pasteDate": "Feb 11, 2018, 10:33:09 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "Iza 1/IBA\n\nHere's the deal. In my opinion, this belongs on the Lanayru Province page, as the whole thing is inside Lanayru Province Overworld. However, it's too big for the page, so it needs to be its own page somewhere or on a smaller page. Additionally, these two tricks, while extremely similar in execution and their core function, diverge into two incredibly different results with incredibly different functions and uses. In addition, neither trick as it exists now is actually in a complete state - Iza 1 Skip is missing the backup with clawshot clip OOB, and IBA (Infinite Bomb Arrows) is missing the updated and faster Kargarok OOB crashes; I also had to correct IBA's page earlier today to properly spell out how to do the trick as a step was missing. In short, this whole thing is a mess and needs to get cleaned up.\n\nMy thoughts are to make a new page under Miscellaneous, titled Iza 1 Skip and Infinite Bomb Arrows , and put the entire trick with its two end results here, described clearly with all the strategies. On the Lanayru Province Overworld page would be Iza 1 Skip and Infinite Bomb Arrows as a stub, linking to the new page - this is because this is truly where the trick belongs but it's just too big to fit (similar to how Early Lakebed is stubbed on the Lakebed Temple page). The current Infinite Bomb Arrows page would be removed. The part on that page regarding Back in Time would either get placed on the current Back in Time Equipped page or (better, IMO), as that page is getting a bit windy, a new Back in Time Equipped page (sorta a subpage but under the Back in Time category) along with stuff like Wii Precautions and EBF flag (basically everything you can do with BiTE that's not BiTE itself). Where that information ends up will be linked to from the new Iza 1/IBA page.\n\n\nIn summary:\n\nIza 1/IBA gets a new page under Misc.\nOn Lanayru Province Overworld Iza 1/IBA gets a stub linking to said page.\nCurrent IBA page is removed\nBiTE page gets truncated to simply BiTE itself\nBiTE additional information gets a new page featuring EBF Flag, Wii Precautions, and the information on the current IBA page regarding Bombs and Bow for BiTE.\nOn new Iza 1/IBA page we link to where the information regarding BiTE with Bombs/Bow ends up.",
+ "title": "Iza 1 Skip and Infinite Bomb Arrows Page for ZSR"
+}

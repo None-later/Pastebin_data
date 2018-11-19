@@ -1,0 +1,7 @@
+{
+  "corrects": 116,
+  "incorrects": 4,
+  "reason": "re_java",
+  "status": "REGECT",
+  "type": "REGEX"
+}

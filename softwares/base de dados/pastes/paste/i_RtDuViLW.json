@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RtDuViLW",
+ "pasteDate": "Feb 26, 2018, 1:22:27 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Layout\n  *resources\n    contains:Resources\n    header:These are your resources.\n  *buildings\n    contains:Buildings\n    header:These are things you can build.\n    tooltip origin:left\n  *unlockables\n    contains:Upgrades, Achievements\n    names:hide",
+ "title": "TestGame"
+}

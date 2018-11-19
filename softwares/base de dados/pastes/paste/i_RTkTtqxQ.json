@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_inject",
+  "lg_en"
+ ],
+ "key": "RTkTtqxQ",
+ "pasteDate": "Feb 21, 2018, 6:49:57 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def self.search_options(terms)\n    terms = search_terms(terms) if terms.is_a?(String)\n    conds = []\n    \n    entry_definition.entry_attributes.each do |entry_attribute|\n      cond = c(:entry_datas) {entry_attribute_id == entry_attribute.id} +\n        c(:entry_datas) {\n          any {\n            terms.each {|term| send(entry_attribute.data_column) =~ \"%#{term}%\" }\n          }\n        }\n      end\n      \n      conds << cond\n    end\n    \n    user_cond = Entry.find_where_options do |entry|\n      any do \n        terms.each {|term| entry.users.name =~ \"%#{term}%\" }\n      end\n    end\n\n    conds << user_cond[:conditions].to_c\n    \n    conds.inject(c{}){|m, c| m | c}.to_sql\n  end",
+ "title": ""
+}

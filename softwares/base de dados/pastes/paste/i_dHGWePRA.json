@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dHGWePRA",
+ "pasteDate": "Feb 26, 2018, 11:15:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Manipulate[ (sol = \n   NDSolve[{y[t] == h[t]*(Ke^(-h[t]/r)), y[0] == 0.001}, \n    y[t], {t, 0, 1000}]; \n  Plot[Evaluate[x[t] /. sol], {t, 0, 1000}, \n   PlotRange -> {0, 10}]), {{r, 0.01}, 0, 0.05}, {{Ke, 5}, 0, 10}]",
+ "title": ""
+}

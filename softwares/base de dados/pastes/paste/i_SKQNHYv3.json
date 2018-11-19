@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SKQNHYv3",
+ "pasteDate": "Feb 8, 2018, 7:58:05 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def read_my_file_format(filename_queue):\n  reader = tf.TextLineReader()\n  key, record_string = reader.read(filename_queue)\n  raw_features, label = tf.decode_csv(record_string)\n  features = some_processing(raw_features)\n  features_train, labels_train, features_test, labels_test = tf.train_split(features,\n                                                                            labels,\n                                                                            frac=.1)\n  return features_train, labels_train, features_test, labels_test\n\t\nX_train, X_test, y_train, y_test = train_test_split(features, labels, test_size=0.33, random_state=42)\n\t\nimport sklearn.model_selection as sk\n\nX_train, X_test, y_train, y_test = \nsk.train_test_split(features,labels,test_size=0.33, random_state = 42)",
+ "title": ""
+}

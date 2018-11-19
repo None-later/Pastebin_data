@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8WXXC64J",
+ "pasteDate": "Feb 12, 2018, 7:23:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "xrandr: Configure crtc 0 failed\nX Error of failed request:  BadValue (integer parameter out of range for operation)\n  Major opcode of failed request:  140 (RANDR)\n  Minor opcode of failed request:  26 (RRSetCrtcTransform)\n  Value in failed request:  0x27c\n  Serial number of failed request:  30\n  Current serial number in output stream:  31\n\t\nScreen 0: minimum 320 x 200, current 3000 x 3080, maximum 8192 x 8192\nXWAYLAND0 connected (normal left inverted right x axis y axis)\n   3000x2000     59.95 +\nXWAYLAND1 connected (normal left inverted right x axis y axis)\n   1920x1080     59.96 +",
+ "title": ""
+}

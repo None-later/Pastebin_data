@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1",
+  "re_url"
+ ],
+ "key": "tzQzVeE8",
+ "pasteDate": "Feb 28, 2018, 12:38:05 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "// Source: https://vedmant.com/using-wordpress-media-library-in-widgets-options/\njQuery(document).ready(function ($) {\n\n   $(document).on(\"click\", \".upload_image_button\", function (e) {\n      e.preventDefault();\n      var $button = $(this);\n\n\n      // Create the media frame.\n      var file_frame = wp.media.frames.file_frame = wp.media({\n         title: 'Select or upload image',\n         library: { // remove these to show all\n            type: 'image' // specific mime\n         },\n         button: {\n            text: 'Select'\n         },\n         multiple: false  // Set to true to allow multiple files to be selected\n      });\n\n      // When an image is selected, run a callback.\n      file_frame.on('select', function () {\n         // We set multiple to false so only get one image from the uploader\n\n         var attachment = file_frame.state().get('selection').first().toJSON();\n\n         $button.siblings('input').val(attachment.url).change();\n\n      });\n\n      // Finally, open the modal\n      file_frame.open();\n   });\n});\n\t\n<button class=\"upload_image_button\">Upload Image</button>\n\t\n<p>\n    <label for=\"<?php echo $this->get_field_id( 'image' ); ?>\">Image:</label>\n    <br>\n    <input class=\"widefat\" id=\"<?php echo $this->get_field_id( 'image' ); ?>\" name=\"<?php echo $this->get_field_name( 'image' ); ?>\" value=\"<?php echo $instance['image'];?>\" />\n    <br>\n    <button class=\"upload_image_button\">Upload Image</button>\n</p>\n\t\n// Create the media frame.\n  var file_frame = wp.media.frames.file_frame = wp.media({\n     title: 'Select or upload image',\n     library: { // remove these to show all\n        type: 'image' // specific mime\n     },\n     button: {\n        text: 'Select'\n     },\n     multiple: false  // Set to true to allow multiple files to be selected\n  });\n\t\nfile_frame.on('select', function () {\n\t\nvar attachment = file_frame.state().get('selection').first().toJSON();\n\t\n$button.siblings('input').val(attachment.url).change();",
+ "title": ""
+}

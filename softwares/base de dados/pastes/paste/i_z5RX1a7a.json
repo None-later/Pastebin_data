@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_nl"
+ ],
+ "key": "z5RX1a7a",
+ "pasteDate": "Feb 18, 2018, 2:34:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "docker kill node1\ndocker kill node2\ndocker kill node3\ndocker rm node1\ndocker rm node2\ndocker rm node3\ndocker network rm net1\ndocker network rm net2\ndocker network rm net3\nrm -rf ./cockroach-data",
+ "title": ""
+}

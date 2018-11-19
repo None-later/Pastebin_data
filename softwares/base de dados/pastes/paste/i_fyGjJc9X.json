@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fyGjJc9X",
+ "pasteDate": "Feb 11, 2018, 3:28:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <cstdio>\n#include <iostream>\nusing namespace std;\n\nclass Node {\npublic:\n\tchar data;\n\tNode* Right;\n\tNode* Left;\n\tNode() {}\n\tNode(char data) :data(data) {\n\t\tRight = NULL;\n\t\tLeft = NULL;\n\t}\n\t~Node() {\n\t\tthis->data = NULL;\n\t\tRight = NULL;\n\t\tLeft = NULL;\n\t}\n};\n\nNode* Root;\n\nNode* searchNode(Node* R, char pid) {\n\tif (R == 0)return 0;\n\n\tif (R->data == pid)return R;\n\n\tNode* Right = searchNode(R->Right, pid);\n\tNode* Left = searchNode(R->Left, pid);\n\tif (Right != 0)return Right;\n\tif (Left != 0)return Left;\n\treturn 0;\n}\n\n\nvoid preorderPrint(Node* R) {\n\tif (R == 0)return;\n\n\tprintf(\"%c\", R->data);\n\tpreorderPrint(R->Right);\n\tpreorderPrint(R->Left);\n}\n\nvoid inorderPrint(Node* R) {\n\tif (R == 0)return;\n\n\tinorderPrint(R->Right);\n\tprintf(\"%c\", R->data);\n\tinorderPrint(R->Left);\n}\n\nvoid postorderPrint(Node* R) {\n\tif (R == 0)return;\n\n\tpostorderPrint(R->Right);\n\tpostorderPrint(R->Left);\n\tprintf(\"%c\", R->data);\n}\nint main() {\n\tint n;\n\tscanf(\"%d\", &n);\n\tRoot = new Node('A');\n\n\tfor (int i = 0; i < n; i++) {\n\t\tchar root, right, left;\n\t\tscanf(\" %c %c %c\", &root, &right, &left);\n\t\tNode* par = searchNode(Root, root);\n\n\t\tif (right != '.')par->Right = new Node(right);\n\t\tif (left != '.')par->Left = new Node(left);\n\t}\n\n\tprintf(\" : \");\n\tpreorderPrint(Root);\n\tprintf(\"\\n\");\n\tprintf(\" : \");\n\tinorderPrint(Root);\n\tprintf(\"\\n\");\n\tprintf(\" : \");\n\tpostorderPrint(Root);\n\tprintf(\"\\n\");\n}",
+ "title": ""
+}

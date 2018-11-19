@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "WzxUgNRH",
+ "pasteDate": "Feb 20, 2018, 3:01:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "begin{table}[h!]\ncentering\nbegin{spreadtab}{{tabular}{|c|>{centering}p{8.5cm}|c|}}\n    hline \n    @Datum & @Ttigkeit & @Zeitaufwand [h] \\ \n    hline hline\n    @03.11.2016 &@Beginn der Erstellung des ET-Racing Logos & 2 \\ \n    hline \n    @04.11.2016 &@Fortsetzung der Erstellung des ET-Racing Logos & 3.5 \\ \n    hline hline\n        @multicolumn{1}{|c|}{} & @multicolumn{1}{c|}{textbf{Zwischenzeit}} & textbf{:={sum(c2:c3)}}  %make the sum\n       \\   \n     hline     \n    end{spreadtab} \n    caption{Zeitaufzeichnung Donner}\n   end{table}\n\n   begin{table}[h!]\n    centering\n    begin{spreadtab}{{tabular}{|c|>{centering}p{8.5cm}|c|}}\n        hline \n        @Datum & @Ttigkeit & @Zeitaufwand [h] \\ \n        hline hline\n        @19.11.2017 & @Dokumentieren und zeichnen& 4\\\n        hline\n        @21.09.2017  &@Besprechung - Kostenaufstellung & 0.5\\\n        hline\n        @09.10.2017 & @Dokumentieren & 2\\\n        hline\n        @28.10.2017 & @Berechnung - Momentenbersetzung & 3\\\n        hline hline\n        @multicolumn{1}{|c|}{} & @multicolumn{1}{c|}{textbf{Zwischenzeit}} & textbf{:={sum(c2:c5)}} %make the sum \n    \\     \n         hline     \n    end{spreadtab} \n    caption{Zeitaufzeichnung Donner}\nend{table}\n\n    begin{table}[h!]\n    centering\n    begin{spreadtab}{{tabular}{|c|>{centering}p{8.5cm}|c|}}\n        hline \n        @Datum & @Ttigkeit & @Zeitaufwand [h] \\ \n        hline hline\n        @15.01.2018 & @DC/DC Wandler ausmessen und testen & 2\\\n        hline\n        @21.01.2018 & @Dokumentationsfeature hinzugefgt & 3\\\n        hline\n        @22.01.2018 & @Handysensoren (Android) auslesen, mittels Simulink & 4\\\n        hline hline\n        @multicolumn{1}{|c|}{} & @multicolumn{1}{c|}{textbf{Zwischenzeit}} & textbf{:={sum(c2:c4)}}  %make the sum \n     \\    \n       hline       \n    end{spreadtab} \n    caption{Zeitaufzeichnung Donner}\nend{table}",
+ "title": ""
+}

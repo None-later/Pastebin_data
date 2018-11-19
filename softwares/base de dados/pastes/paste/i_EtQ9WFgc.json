@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "EtQ9WFgc",
+ "pasteDate": "Feb 17, 2018, 5:38:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "http://localhost:49312/updater/getUpdaterVersion?callback=BoseUpdater.remoteCallback&token=T187369b21bf6\n\nBoseUpdater.remoteCallback(\"T187369b21bf6\",{\"version\" : \"3.0.1.1891\"},0);",
+ "title": ""
+}

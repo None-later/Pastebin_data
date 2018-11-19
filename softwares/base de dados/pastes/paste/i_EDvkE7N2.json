@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "EDvkE7N2",
+ "pasteDate": "Feb 28, 2018, 4:35:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$a = array(1,2,3,4,6,7,8,9,90);\n1. count how much index in this array?\n2. make the summation of this array.\n3. $search = 4 is here ?\n4. sort ascending order of this array.\n5. sort descending order of this array.\n\nuse custom function and loop not built in function in php",
+ "title": ""
+}

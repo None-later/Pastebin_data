@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 [object_id] FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

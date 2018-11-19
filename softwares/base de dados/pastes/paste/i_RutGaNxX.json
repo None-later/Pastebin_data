@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "RutGaNxX",
+ "pasteDate": "Feb 11, 2018, 5:28:02 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "set -a\nexport drt=\"/var/www/html\"\nexport pma=\"[pP][hH][pP][mM][yY][aA][dD][mM][iI][nN]\"\nset +a\necho $drt # Got the above.\necho $pma # Got the above.\n\t\n#!/bin/bash\nrm -rf ${drt}/${pma}*\nwget -P ${drt} https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip\nunzip ${drt}/${pma}*.zip\nmv ${drt}/${pma}*/ ${drt}/phpmyadmin/\nrm ${drt}/${pma}*.zip\n\t\nzipFile=$( find ${drt} -type f -name ${pma}*.zip ) # First finds the zip\nif [[ -f $zipFile ]]; then\n    zipName=$( basename $zipFile ) # extract the name of the zip\n    unzip $zipFile # Unzip it\n    mv ${drt}/${zipName}/ ${drt}/phpmyadmin/ # Then move the exact matching directory\nfi\n\t\n#!/bin/bash\ncd \"$drt\"\nrm -r ${pma}*\nwget https://www.phpmyadmin.net/downloads/phpMyAdmin-latest-all-languages.zip\nunzip phpMyAdmin-latest-all-languages.zip\nmv ${pma}*/ phpmyadmin/\nrm phpMyAdmin-latest-all-languages.zip",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "RcUi0ZFw",
+ "pasteDate": "Feb 11, 2018, 10:39:06 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function uploadit () {\n  console.log('uploading the verse')\n  AWS.config.update({ accessKeyId: '...', secretAccessKey: '...' });\n\n  var s3 = new AWS.S3();\n  s3.putObject({\n    Bucket: 'myverses',\n    Key: book.replace(/ /g, \"\")+reference.replace(/ /g, \"\")+\".mp3\",\n    Body: myvariable,\n    ACL: 'public-read'\n  },function (resp) {\n    console.log(arguments);\n    console.log('Successfully uploaded the verse.');\n    addanother();\n      });}",
+ "title": ""
+}

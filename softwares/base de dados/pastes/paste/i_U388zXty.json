@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "yaml",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "U388zXty",
+ "pasteDate": "Feb 21, 2018, 7:13:38 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "playbooks>cat iterable.yml \n---\n- hosts: localhost\n\n  vars:\n    mydict:\n      key1: 'value1'\n      list1:\n       - 'item1'\n       - 'item2'\n\n  tasks:\n    - name: Template config\n      template:\n        src: 'iterable.j2'\n        dest: '/tmp/iterable.j2'\n\n\n====================================================\nplaybooks>cat templates/iterable.j2 \n## IS MAPPING\n{% for k,v in mydict.iteritems() %}\n{% if v is mapping %}\n{% for i in v %}\n    LIST: {{ k }} {{ i }};\n{% endfor %}\n{% else %}\n    SCALAR: {{ k }} {{ v }};\n{% endif %}\n{% endfor %}\n\n## IS ITERABLE\n{% for k,v in mydict.iteritems() %}\n{% if v is iterable %}\n{% for i in v %}\n    LIST: {{ k }} {{ i }};\n{% endfor %}\n{% else %}\n    SCALAR: {{ k }} {{ v }};\n{% endif %}\n{% endfor %}\n\n====================================================\nplaybooks>cat /tmp/iterable.j2 \n## IS MAPPING\n    SCALAR: key1 value1;\n    SCALAR: list1 [u'item1', u'item2'];\n\n## IS ITERABLE\n    LIST: key1 v;\n    LIST: key1 a;\n    LIST: key1 l;\n    LIST: key1 u;\n    LIST: key1 e;\n    LIST: key1 1;\n    LIST: list1 item1;\n    LIST: list1 item2;",
+ "title": ""
+}

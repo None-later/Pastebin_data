@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "aDQteJQN",
+ "pasteDate": "Feb 28, 2018, 7:53:14 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<html>\n<head>\n    <title> Get man get </title>\n</head>\n<body>\n\n<table>\n<?php foreach($_GET as $k => $v): ?>\n    <tr>\n        <td class=\"Key\"> <?= $k  ?></td>\n        <td class=\"value\"> <?=  $v ?></td>\n    </tr>\n<?php endforeach ; ?>\n</table>\n</body>\n\n</html>",
+ "title": ""
+}

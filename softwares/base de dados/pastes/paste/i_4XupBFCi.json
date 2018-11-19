@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4XupBFCi",
+ "pasteDate": "Feb 20, 2018, 6:43:38 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <time.h>\n#include <cstdlib>\n#include <fstream>\n\nusing namespace std;\n \nint main()\n{\n\tint tablica[20];\n\tchar x;\n   \tsrand(time(NULL));\n   \tofstream zapisz;\n   \tzapisz.open(\"plik.txt\");\n   \tfor (int i=0;i<=20;i++)\n\t{\n\t\ttablica[i]=rand()%122;\n\t\tzapisz<<tablica[i];\n\t}\n\t\tzapisz.close();\n    \treturn 0;\n}",
+ "title": ""
+}

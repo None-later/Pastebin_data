@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "v8BcJx8L",
+ "pasteDate": "Feb 18, 2018, 6:26:57 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "@Form.For(Model, ExpController.Urls.Update.Post(), @=> builder {\n        \n        <fieldset>\n            \n        @builder.EditorFor(m => m.Name)\n\n\t@builder.FieldsFor(m => m.Person, @=> personfields { \n\n\t\t@personfields.EditorFor(m => m.Name)\n\t\t@personfields.EditorFor(m => m.Phone)\n\t\t@personfields.EditorForModel(m => m.Address)\n\t})\n\n        </fieldset>\n                \n}) \n\n\n\nRenders\n\n<form ...>\n\n        <fieldset>\n\n        \t<input type=\"text\" name=\"todo[name]\" >\n\n\n        \t<input type=\"text\" name=\"todo[person][name]\" >\n        \t<input type=\"text\" name=\"todo[person][phone]\" >\n        \t<input type=\"text\" name=\"todo[person][address][add1]\" >\n        \t<input type=\"text\" name=\"todo[person][address][add2]\" >\n        \t<input type=\"text\" name=\"todo[person][address][city]\" >\n        \t<input type=\"text\" name=\"todo[person][address][state]\" >\n        \t<input type=\"number\" name=\"todo[person][address][zip]\" >\n        \t<select  name=\"todo[person][address][country]\" > </select>\n\n        </fieldset>\n\n</form>",
+ "title": ""
+}

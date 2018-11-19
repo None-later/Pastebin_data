@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QhmHDULd",
+ "pasteDate": "Feb 21, 2018, 8:11:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "constructor(hostElementRef: ElementRef, ipeConfigurationService: IPEConfigurationService) {\n  this.ipeConfigurationService = ipeConfigurationService;\n  this.ipeConfigurationService.registerHostElement(hostElementRef.nativeElement);\n}\n\npublic registerHostElement(value: HTMLElement) {\n  this._hostElement = value;\n}\n\npublic toggleFullScreen(): void {\n    if (!this._isFullScreen && this._hostElement) {\n        if (this._hostElement.requestFullscreen) {\n            this._hostElement.requestFullscreen();\n        } else if (this._hostElement.mozRequestFullScreen) {\n            this._hostElement.mozRequestFullScreen();\n        } else if (this._hostElement.webkitRequestFullscreen) {\n            this._hostElement.webkitRequestFullscreen();\n        } else if (this._hostElement.msRequestFullscreen) {\n            this._hostElement.msRequestFullscreen();\n        }\n    } else if (this._isFullScreen && this._hostElement) {\n        if (document.exitFullscreen) {\n            document.exitFullscreen();\n        } else if (document.webkitExitFullscreen) {\n            document.webkitExitFullscreen();\n        }\n    }\n}",
+ "title": ""
+}

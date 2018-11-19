@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ESfuv72i",
+ "pasteDate": "Feb 8, 2018, 1:14:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n\nvoid strcpy1(char *s, char *t) {\n    while ((*s++ = *t++) != '\u0000');\n}\n\nint main() {\n    char *s = \"size more than 6 elements\", *t = \"12345\";\n    strcpy1(s, t);\n    printf(\"%s\", s);\n    return 0;\n}",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url",
+  "re_#13"
+ ],
+ "key": "DanQ9m54",
+ "pasteDate": "Feb 23, 2018, 11:28:22 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "#EXTM3U\n\n#EXTINF:-1, NBC GOLF SD\nhttp://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/1896k/prog.m3u8|X-Forwarded-For=209.239.112.104\n#EXTINF:-1, NBC GOLF 720p\nhttp://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/2596k/prog.m3u8|X-Forwarded-For=209.239.112.104\n#EXTINF:-1, NBC GOLF 1080p\nhttp://tvegolf-i.Akamaihd.net/hls/live/218225/golfx/4296k/prog.m3u8|X-Forwarded-For=209.239.112.104\n\n#EXTINF:-1,Sky sports 2\nrtmp://137.63.71.18:443/liverepeater  playpath=72 swfUrl=http://popeoftheplayers.eu/atdedead.swf pageUrl=http://popeoftheplayers.eu/crichd.php?id=15&width=600&height=450 token=#atd%#$ZH timeout=5\n#EXTINF:-1,Sky sports 2\nrtmpe://134.19.185.204:1935/livedge playpath=mamahdsky2 swfUrl=http://player.hdcast.org/_.swf pageUrl=http://www.hdcast.org/embedlive1.php?u=mamahdsky2&vw=680&vh=490&domain=mamahd.com token=Fo5_n0w?U.rA6l3-70w47ch timeout=5\n#EXTINF:-1, Sky sports 2\nrtmp://80.82.78.85:443/liverepeater  playpath=72 swfUrl=http://popeoftheplayers.eu/atdedead.swf pageUrl=http://popeoftheplayers.eu/crichd.php?id=15&width=600&height=450 token=#atd%#$ZH timeout=5\n#EXTINF:-1,Sky sports 2\nhttp://176.53.21.99:8082/TV4285\n#EXTINF:-1, Sky sports 2\nhttp://195.154.227.38:1935/live/skysports2lsh/playlist.m3u8\n#EXTINF:-1, Sky sports 2\nrtmp://80.82.70.106:443/liverepeater playpath=72 swfUrl=http://popeoftheplayers.eu/atdedead.swf pageUrl=http://popeoftheplayers.eu/crichd.php?id=15&width=600&height=450 token=#atd%#$ZH timeout=5",
+ "title": "New IPTV"
+}

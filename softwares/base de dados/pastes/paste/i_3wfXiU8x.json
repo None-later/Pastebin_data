@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3wfXiU8x",
+ "pasteDate": "Feb 21, 2018, 9:46:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "usetikzlibrary{arrows,positioning,shapes.geometric}\n\nbegin{tikzpicture}[%\n  ->,\n  thick, shorten >=1pt,\n  >=latex,\n  node distance=7mm,\n  noname/.style={%\n    rectangle, rounded corners=9pt,\n    text width=11em,\n    text centered,\n    minimum height=3em,\n    draw=black!50,fill=black!20\n  }\n]\n\nnode[noname] (configload) {Loads config};\nnode[noname] (varsdec) [right=of configload] {New variables};\n\npath (configload) edge node {} (varsdec);\n\nend{tikzpicture}\n\t\ndocumentclass{article}\nusepackage{tikz}\nusetikzlibrary{arrows,positioning,shapes.geometric}\n\nbegin{document}\n\nbegin{tikzpicture}[%\n  ->,\n  thick, shorten >=1pt,\n  >=latex,\n  node distance=7mm,\n  noname/.style={%\n    rectangle, rounded corners=9pt,\n    text height=1.5ex,\n    text depth=.25ex,\n    text width=11em,\n    text centered,\n    minimum height=3em,\n    draw=black!50,fill=black!20\n  }\n]\n\nnode[noname] (configload) {Loads config};\nnode[noname] (varsdec) [right=of configload] {New variables};\n\npath (configload) edge node {} (varsdec);\n\nend{tikzpicture}\n\nend{document}\n\t\ndraw[help lines,red,<->] let p1 = (configload.base), p2 = (varsdec.base) in (-1.5,y1) -- (6.5,y1)\n(-1.5,y2) -- (6.5,y2);\n\t\ndocumentclass[11pt]{article}\nusepackage{tikz}\nusetikzlibrary{arrows,calc,positioning,shapes.geometric}\n\nbegin{document}\nbegin{tikzpicture}[%\n  ->,\n  thick, shorten >=1pt,\n  >=latex,\n  node distance=7mm,\n  noname/.style={%\n    rectangle, rounded corners=9pt,\n    text width=11em,\n    text centered,\n    minimum height=3em,\n    draw=black!50,fill=black!20\n  }\n]\n\nnode[noname,anchor=mid] (configload) {Loads config};\nnode[noname,anchor=mid] (varsdec) [right=of configload] {New variables};\n\ndraw[help lines,red,<->] ($(configload.base)-(2,0)$)--($(varsdec.base)+(2,0)$);\npath (configload) edge node {} (varsdec);\n\nend{tikzpicture}    \nend{document}\n\t\nnode[noname,anchor=mid] (configload) {Loads config};\nnode[noname,anchor=mid] (varsdec) [right=of configload] {vphantom{g} New variables};",
+ "title": ""
+}

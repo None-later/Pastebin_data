@@ -1,0 +1,5 @@
+{
+  "value": "function validate_coinbase_id( $coinbase_id )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

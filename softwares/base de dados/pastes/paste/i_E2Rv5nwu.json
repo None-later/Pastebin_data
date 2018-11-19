@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "E2Rv5nwu",
+ "pasteDate": "Feb 21, 2018, 11:40:44 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\n\nnamespace ConsoleApplication1\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            Console.WriteLine(\"Hvad hedder du?\");\n            string navn = Console.ReadLine();\n            Console.WriteLine(\"Du hedder:\" +navn);\n            Console.WriteLine(\"Er dette valg rigtigt? Y/N\");\n            string answer = Console.ReadLine();\n            do\n            {\n                Console.WriteLine(\"Okay, vi prver igen...Hvad hedder du?\");\n                navn = Console.ReadLine();\n                Console.WriteLine(\"Du hedder:\" + navn);\n                Console.WriteLine(\"Er dette valg rigtigt? Y/N\");\n                answer = Console.ReadLine();\n            }\n            while(answer == \"N\");\n\n            Console.WriteLine(\"Og hvor gammel er du s?\");\n            string alder = Console.ReadLine();\n            Console.WriteLine(\"Er det rigtigt du er \" + alder + \" r?\");\n            Console.WriteLine(\"Er dette valgt rigtigt? Y/N\");\n            string answer1 = Console.ReadLine();\n            do\n            {\n                Console.WriteLine(\"Okay, vi prver igen... Hvor gammel er du?\");\n                alder = Console.ReadLine();\n                Console.WriteLine(\"Er det rigtigt du er \" + alder + \" r?\");\n                Console.WriteLine(\"Er dette valg rigtigt? Y/N\");\n                answer1 = Console.ReadLine();\n            }\n            while (answer1 == \"N\");\n            Console.WriteLine(alder);\n            Console.ReadKey();\n        }\n    }\n}",
+ "title": ""
+}

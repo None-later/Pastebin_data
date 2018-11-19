@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "97rUVYHj",
+ "pasteDate": "Feb 28, 2018, 7:43:53 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "magg@cloudHQ1:~$ sudo nova-manage db sync\n/usr/lib/python2.7/dist-packages/migrate/changeset/schema.py:124: MigrateDeprecationWarning: Passing a Column object to alter_column is deprecated. Just pass in keyword parameters instead.\n  MigrateDeprecationWarning",
+ "title": ""
+}

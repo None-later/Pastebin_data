@@ -1,0 +1,5 @@
+{
+  "value": "select data from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

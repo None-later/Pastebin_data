@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "4qE1jEqd",
+ "pasteDate": "Feb 18, 2018, 5:07:50 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "ntent\n));}\\n</div>\\n<div class='field'>\\n  #{\n\n_hamlout.format_script_false_false_false_true_false_true_false(( f.label :billed\ne\n));}\\n  <br>\\n  <!-- = f.file_field :image -->\\n  #{\n\n\n_hamlout.format_script_false_false_false_true_false_true_false(( f.select (:imag\ne, @image.map {|i| [i.id, i.title] })\n));}\\n</div>\\n<br>\\n<br>\\n<i>Ikke ndvendigt at udfylde</i>\\n<br>\\n<div class='\nfield'>\\n  #{",
+ "title": ""
+}

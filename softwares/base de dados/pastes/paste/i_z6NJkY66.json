@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "z6NJkY66",
+ "pasteDate": "Feb 17, 2018, 10:08:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "module.exports = (loaderContext, localIdentName, localName, options) => {\n  if (!options.context)\n    options.context =\n      loaderContext.options && typeof loaderContext.options.context === 'string'\n        ? loaderContext.options.context\n        : loaderContext.context;\n\n  const request = path.relative(options.context, loaderContext.resourcePath);\n  const prefix = dasherize(path.parse(request).name);\n\n  return `${prefix}__${localName}`;\n};",
+ "title": ""
+}

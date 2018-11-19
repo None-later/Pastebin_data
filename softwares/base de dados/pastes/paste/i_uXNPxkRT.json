@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uXNPxkRT",
+ "pasteDate": "Feb 9, 2018, 3:57:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "extension UITableView {\n\n    func scrollToBottom() {\n        let section = numberOfSections - 1\n        let row = numberOfRows(inSection: section) - 1\n\n        guard row >= 0 else { return }\n\n        let indexPath = IndexPath.init(row: row, section: section)\n        scrollToRow(at: indexPath, at: .bottom, animated: true)\n    }\n\n}",
+ "title": ""
+}

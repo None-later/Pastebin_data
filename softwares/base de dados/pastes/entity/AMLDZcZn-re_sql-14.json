@@ -1,0 +1,5 @@
+{
+  "value": "SELECT COORDENADA_X, COORDENADA_Y, COORDENADA_Z FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

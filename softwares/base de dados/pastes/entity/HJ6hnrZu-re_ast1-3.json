@@ -1,0 +1,5 @@
+{
+  "value": "function strips(\u0026$arr,$k\u003d\"\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

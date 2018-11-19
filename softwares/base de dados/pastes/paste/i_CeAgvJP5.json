@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CeAgvJP5",
+ "pasteDate": "Feb 19, 2018, 3:19:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CALL METHOD /glb/cl_rgtis_interface=>validate_interface\n    EXPORTING\n      im_resp_org = p_bukrs\n      im_parnum   = p_parnum\n      im_intid    = p_intid\n      im_msgty    = c_error\n    RECEIVING\n      re_valid    = l_boolean.\n\n  IF l_boolean IS NOT INITIAL.\n* Do nothing\n  ENDIF.",
+ "title": ""
+}

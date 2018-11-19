@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_illegal"
+ ],
+ "key": "6qvxwUPK",
+ "pasteDate": "Feb 17, 2018, 6:41:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Illegal characters in filenames\n===\n\nWINDOWS\n---\n\n< (less than)\n> (greater than)\n: (colon)\n\" (double quotation mark)\n/ (forward slash)\n\\ (backslash)\n| (pipe)\n? (question mark)\n* (asterisk)\n\n^ (caret) is specifically forbidden under the FAT filesystem\n\nOther rules: Filenames cannot end in a space or a period*  \n\n *pretty sure this is outdated w/r/t Windows 7 and newer; I have several files that end in periods, though I rename them whenever I find them because some apps do get confused trying to read them\n\nMACOS X\n---\n\n: (colon)\n\nOther rules: File and folder names cannot begin with a period* \n\n\t*according to what I've read, but the existence of e.g. ~/.vim and ~/.vimrc on my system suggests that this is wrong, misleading, or outdated\n\nUNIX/GNU/LINUX\n---\n\n/ (forward slash)\nNUL (\\0)\nASCII control characters 0-31 (not strictly illegal, but please do not use)",
+ "title": "illegal characters for filenames"
+}

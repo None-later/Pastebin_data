@@ -1,0 +1,5 @@
+{
+  "value": "SELECT @MinMemoryPerQuery \u003d CONVERT(INT, c.value) FROM",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

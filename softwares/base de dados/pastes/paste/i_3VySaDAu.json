@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3VySaDAu",
+ "pasteDate": "Feb 12, 2018, 2:14:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "static propTypes = {\n        deployment: PropTypes.shape({\n            getMetrics: PropTypes.func.isRequired,\n            getRootMetric: PropTypes.func.isRequired\n       }).isRequired,\n}",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_#13",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "U0iCTRXb",
+ "pasteDate": "Feb 8, 2018, 1:32:15 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "#EXTINF:-1,Sky 3D\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/14.ts\n#EXTINF:-1,Sky Cinema 1 HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/15.ts\n#EXTINF:-1,Sky Cinema 1 HD * SD *\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/1086.ts\n#EXTINF:-1,Sky Cinema +1 HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/178.ts\n#EXTINF:-1,Sky Cinema + 24 HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/16.ts\n#EXTINF:-1,Sky Cinema +24 * SD  *\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/1367.ts\n#EXTINF:-1,Sky Cinema Hits HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/25.ts\n#EXTINF:-1,Sky Cinema Hits * SD *\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/1368.ts\n#EXTINF:-1,Sky Cinema Family HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/21.ts\n#EXTINF:-1,Sky Cinema Family * SD *\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/1369.ts\n#EXTINF:-1,Sky Cinema Family +1 HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/22.ts\n#EXTINF:-1,Sky Cinema Passion HD\nhttp://jack.dyndns.tv:15800/live/AG89/RiapqesHVr/17.ts",
+ "title": ""
+}

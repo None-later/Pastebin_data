@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 @BlitzCacheMinutesBack \u003d DATEDIFF(MI,CheckDate,SYSDATETIMEOFFSET()) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

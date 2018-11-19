@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "g3eLbVph",
+ "pasteDate": "Feb 21, 2018, 5:59:53 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "std::string task5(std::string input) {\n\tint plus = 0;\n\tint minus = 0;\n\tint star = 0;\n\tfor (int i = 0; i < input.length; i++) {\n\t\tif (input[i] == '+') plus++;\n\t\tif (input[i] == '-') minus++;\n\t\tif (input[i] == '*') star++;\n\t}\n\treturn \"+ - \" + std::to_string(plus) + \"\\n - - \" + std::to_string(minus) + \"\\n star - \" + std::to_string(star);\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "V8E1xurK",
+ "pasteDate": "Feb 12, 2018, 10:08:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\"files.exclude\": {\n        \"**/.git\": true,\n        \"**/.DS_Store\": true,\n        \"**/node_modules\": true,\n        \"node_modules\": true\n}",
+ "title": ""
+}

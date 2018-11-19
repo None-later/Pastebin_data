@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vKmMSUaE",
+ "pasteDate": "Feb 20, 2018, 5:56:31 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "--BEGIN DUMP--\nDump Time\n02/20/2018 20:37:22\n\nException\nSystem.NullReferenceException: La rfrence d'objet n'est pas dfinie  une instance d'un objet.\n    Eco.Core.Controller.ControllerInstanceInfo.<>c.<CleanupBoundClients>b__16_0(INetClient boundClient)\n    System.Collections.Immutable.ImmutableList`1.Node.RemoveAll(Predicate`1 match)\n    System.Collections.Immutable.ImmutableList`1.RemoveAll(Predicate`1 match)\n    Eco.Core.Utils.ImmutableHelper.ApplyImmutable[T](T& original, Func`2 apply)\n    Eco.Core.Controller.ControllerInstanceInfo.TryBind(INetClient client)\n    Eco.Core.Controller.ControllerManager.TryBindController(IController controller, INetClient boundClient)\n    Eco.Core.Controller.ControllerManager.PackageController(IController controller, INetClient boundClient)\n    Eco.Gameplay.Players.Player.SendInitialState(BSONObject obj, INetObjectViewer viewer)\n    Eco.Shared.Networking.NetObjectManager.GetInitialObjectStates(List`1 newObjects, INetObjectViewer viewer)\n    Eco.Plugins.Networking.Clients.Client.Update()\n    Eco.Plugins.Networking.Clients.Client.<.ctor>b__55_1()\n\n--END DUMP--",
+ "title": ""
+}

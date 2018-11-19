@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CwHxDJ7Q",
+ "pasteDate": "Feb 12, 2018, 12:52:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Suppose the value of \"millis_behind_latest\" in the kinesis response is ~86399000 & your stream retention period is 24 hours(86400000)",
+ "title": ""
+}

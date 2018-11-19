@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "ruby",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "LLYz20hW",
+ "pasteDate": "Feb 23, 2018, 12:01:22 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "puts 'Benvenuto!'\nputs 'Questo programma ti permettera` di verificare se il numero da te inserito'\nputs 'e` un numero di Armstrong.'\nputs 'Digita il tuo numero, poi premi invio: '\nn = gets.chomp\na = n.to_i\nn = n.to_s\narray = Array.new\nn.each_char {|c| array.push(c.to_i)}\narray_cubo = array.map do |valore|\n  (valore.to_i)**3\nend\nsum = 0\narray_cubo.each { |a| sum+=a }\nif sum == a\n  puts 'il tuo e` un numero di Armstrong'\nelse\n  puts 'mi dispiace ma il tuo non e` un numero di Armstrong'\nend",
+ "title": "ArmRuby"
+}

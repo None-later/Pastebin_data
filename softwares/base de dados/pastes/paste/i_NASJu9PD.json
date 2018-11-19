@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "c",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "NASJu9PD",
+ "pasteDate": "Feb 23, 2018, 2:11:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//-------------------------------------------------------------------------------------------------OCZEKIWANIE NA WSZYSTKICH GRACZY I INICJALIZACJA STRUKTUR------------------------------------------------------------------------------------\n\n    while(il_graczy<3){                             //kontroluje kiedy wszyscy gracze si podcz\n        msgrcv(kolej,&impuls,2*sizeof(int),3,0);    //oczekuje na sygna od gracza, ktry chce si doczy\n        impuls.id = il_graczy;                      //przydziela id graczom (id indeksuje od 0)\n        il_graczy++;                                //zwikszenie iloci graczy ktrzy doczyli si do serwera\n        impuls.il_graczy = il_graczy;\n        impuls.type = 2;                            //impuls type2 okrela, e  serwer zaakceptwoa gracza\n        msgsnd(kolej,&impuls,2*sizeof(int),0);      //wysanie wiadomoci do klienta o jego id\n        printf(\"podczono gracza %d\\n\",il_graczy-1);\n    }\n\nimpuls.type = 4;                                    //impuls type4 okrela, e wszyscy si ju podczyli i klient moe zaczyna waciw rozgrywk\n\n    for(i=0;i<3;i++){                               //wszyscy si podczyli wic stwrz struktury dla nich\n        msgsnd(kolej,&impuls,2*sizeof(int),0);      //wysanie informacji o gotowoci gry do klientw\n    }",
+ "title": "serwerr"
+}

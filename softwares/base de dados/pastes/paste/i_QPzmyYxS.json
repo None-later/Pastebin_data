@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QPzmyYxS",
+ "pasteDate": "Feb 26, 2018, 9:22:54 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-status.gz | sed -n 's/^Package: //p' | sort -u)",
+ "title": "bash24313"
+}

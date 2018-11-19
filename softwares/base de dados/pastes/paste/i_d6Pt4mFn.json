@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "d6Pt4mFn",
+ "pasteDate": "Feb 20, 2018, 5:38:58 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require 'rubygems'\nrequire 'mq'\nrequire 'json'\n\nEM.run do\n\n  AMQP.start(:vhost => '/heroku',\n             :user  => 'face',\n             :pass  => 'thisisheroku!')\n\n  MQ.queue('wtf').bind(MQ.topic(\"asdf\")).subscribe do |r|\n\tp r\n  end\nend",
+ "title": ""
+}

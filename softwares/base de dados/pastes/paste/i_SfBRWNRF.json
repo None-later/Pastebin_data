@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "SfBRWNRF",
+ "pasteDate": "Feb 11, 2018, 6:08:13 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function calculateAddOnPrice() {\n\t\tvar polybags = $('#polybags').is(':checked') ? \"2\" : \"1\";            \n\t\tconsole.log(polybags);\n\n\t\tvar nylon = $('#nylon').is(':checked') ? \"10\" : \"5\";\n\t\tconsole.log(nylon);\n\n\t\tvar addOnPrice = Number(totalPrice)*Number(polybags);\n\t\tvar PricewithAddons = Number(addOnPrice)*(initialPrice);\n\t\tvar Silver = PricewithAddons * 0.9;                 \n        var Gold = PricewithAddons * 0.85;           \n        var Plat = PricewithAddons * 0.8;\n\t\t$('#output').text(PricewithAddons.toFixed(2));\n\t\t$(\"#output_Silver\").text(Silver.toFixed(2));\n        $(\"#output_Gold\").text(Gold.toFixed(2));\n        $(\"#output_Plat\").text(Plat.toFixed(2));\n\t\t\n\t\t// Singles output\n\t\tvar out_single = Number(PricewithAddons) / Number(totalPrice);\n\t\tvar out_silver_single = Number(Silver) / Number(totalPrice);\n\t\tvar out_gold_single = Number(Gold) / Number(totalPrice);\n\t\tvar out_plat_single = Number(Plat) / Number(totalPrice);\n\t\t$('#out_single').text(out_single.toFixed(2));\n\t\t$('#out_silver_single').text(out_silver_single.toFixed(2));\n\t\t$('#out_gold_single').text(out_gold_single.toFixed(2));\n\t\t$('#out_plat_single').text(out_plat_single.toFixed(2));\n\t\t\n\t\t$('#polybags').change(function() {\n\t\tcalculateAddOnPrice();\n\t\t});\n\n\t\t$('#nylon').change(function() {\n\t\t\tcalculateAddOnPrice();\n\t\t});\n\t\t\n\t\t}",
+ "title": ""
+}

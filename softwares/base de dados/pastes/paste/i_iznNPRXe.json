@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iznNPRXe",
+ "pasteDate": "Feb 26, 2018, 10:23:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<a onclick=\"window.open('/UsuarioTI/SCyOC.aspx?Number=<%# Eval(\"num_solicitud\") %>','targetWindow','toolbar=no,location=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=400,height=420');\" ><span aria-hidden=\"true\" class=\"glyphicon glyphicon-pencil\"></span>SC/OC</a>\n\t\nServer Error in '/' Application.\nThe resource cannot be found.\nDescription: HTTP 404. The resource you are looking for (or one of its \ndependencies) could have been removed, had its name changed, or is \ntemporarily unavailable.  Please review the following URL and make sure that \nit is spelled correctly. \n\nRequested URL: /UsuarioTI/SCyOC.aspx",
+ "title": ""
+}

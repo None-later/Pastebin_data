@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Bpp7NRif",
+ "pasteDate": "Feb 21, 2018, 8:59:57 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import React, {Component} from 'react';\n\n\n// class TaskAnswerA extends React.Component {\n//\n//   render() {\n//     return (\n//       <label>A)\n//         <input type=\"checkbox\" class=\"radio\" value=\"1\" name=\"same\"/>Answer 1</label>\n//     )\n//   }\n// }\n//\n// class TaskAnswerB extends React.Component {\n//\n//   render() {\n//     return (\n//       <label>B)\n//         <input type=\"checkbox\" class=\"radio\" value=\"1\" name=\"same\"/>Answer 2</label>\n//     )\n//   }\n// }\n//\n// class TaskAnswerC extends React.Component {\n//\n//   render() {\n//     return (\n//       <label>C)\n//         <input type=\"checkbox\" class=\"radio\" value=\"1\" name=\"same\"/>Answer 3</label>\n//     )\n//   }\n// }\n//\n// class TaskAnswerD extends React.Component {\n//\n//   render() {\n//     return (\n//       <label>D)\n//         <input type=\"checkbox\" class=\"radio\" value=\"1\" name=\"same\"/>Answer 4</label>\n//     )\n//   }\n// }\n\nclass Task extends React.Component {\n\n\n  render() {\nconsole.log(this.props.answers);\n  const shuffleArray =  [...this.props.answers].sort(() => Math.random() - 0.5);\n  return (\n  <section style={{\n        border: '1px solid red'\n      }}>\n        <div>\n          <h3>{this.props.question}</h3>\n        </div>\n        {shuffleArray.map(answer => (\n          <div>\n          <label>\n            <input type=\"checkbox\" className=\"radio\" value=\"1\" name=\"same\"/>{answer}</label>\n\n          </div>\n        )\n      )\n    }\n  </section>\n    )\n  }\n}\n\nexport default Task;",
+ "title": "NOWY TASK"
+}

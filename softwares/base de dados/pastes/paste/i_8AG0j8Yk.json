@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8AG0j8Yk",
+ "pasteDate": "Feb 8, 2018, 3:55:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import os \ndir_path = os.path.dirname(os.path.realpath(__file__))\n\t\nimport os\ncwd = os.getcwd()",
+ "title": ""
+}

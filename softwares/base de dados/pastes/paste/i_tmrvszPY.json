@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "tmrvszPY",
+ "pasteDate": "Feb 12, 2018, 2:18:38 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\nint main(){\n\tchar oras1[30],oras2[30],oras3[30];\n\tint s1, s2, s3, st;\n\tprintf(\"Introduceti numele primului oras, precum si numarul de studenti din acel oras:\");\n\tscanf(\"%s%d\", oras1, &s1);\n\tprintf(\"Introduceti numele celui de-al doilea oras, precum si numarul de studenti din acel oras:\");\n\tscanf(\"%s%d\", oras2, &s2);\n\tprintf(\"Introduceti numele celui de-al treilea oras, precum si numarul de studenti din acel oras:\");\n\tscanf(\"%s%d\", oras3, &s3);\n\n\tst = s1 + s2 + s3;\n\n\tprintf(\"Numarul total de studenti din cele trei orase este:%d\", st);\n\n\n\n\treturn 0;\n}",
+ "title": ""
+}

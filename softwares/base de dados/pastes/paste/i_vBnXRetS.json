@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vBnXRetS",
+ "pasteDate": "Feb 8, 2018, 12:01:29 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "#EXTM3U\n#EXTINF:-1 tvg-logo=\"https://paineliptvgratis.com/assets/favicons/ms-icon-310x310.png\" group-title=\"PainelIPTVGratis.com\", PainelIPTVGratis.com - Lista Gerada Gratuitamente\nhttps://paineliptvgratis.com/intro.mp4\n\n#EXTINF:-1 tvg-logo=\"https://paineliptvgratis.com/assets/favicons/ms-icon-310x310.png\" group-title=\"Categorias\", Spanish: Canal de las Estrellas\nhttp://hlslive.lcdn.une.net.co/v1/AUTH_HLSLIVE/CEST/tu1_1.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://i0.wp.com/images.mi.tv/channels/mx_xh-gc-canal-5-hd_m.png\" group-title=\"Categorias\",  Canal 5\nhttp://189.216.247.113/Content/HLS/Live/Channel(XHGC)/Stream(06)/index.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://i0.wp.com/x.cdn.entutele.com/media/channels/medium/telemundo.gif\" group-title=\"Categorias\", TELEMUNDO\nhttp://wscvlive-lh.akamaihd.net/i/WSCV_LIVE2@183618/master.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://paineliptvgratis.com/assets/favicons/ms-icon-310x310.png\" group-title=\"Categorias\", Spanish: Antena 3 - HD - ESP\nhttp://a3live-lh.akamaihd.net:80/i/antena3_1@35248/index_3_av-p.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://i0.wp.com/2.bp.blogspot.com/-60_56ArPKk0/VnSe7Oq438I/AAAAAAAAAd4/MrX0f9s5KhQ/s1600/telefe-hd-2012.png\" group-title=\"Categorias\", TELEFE\nhttp://ar.watcha.live/ch6/hi.m3u8?www.tecnotv.info\n\n#EXTINF:-1 tvg-logo=\"https://paineliptvgratis.com/assets/favicons/ms-icon-310x310.png\" group-title=\"Categorias\", El Trece\nhttp://ar.watcha.live/ch7/mid.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://i0.wp.com/media.entutele.com/channels/big/disney-channel.gif\" group-title=\"Categorias\", Disney Channel\nhttp://ragnaroktv.com/live/STREAM/DISNEYCHANNEL/MzQ31jMyMdUzNdAzMjAyNAQA/.m3u8\n\n#EXTINF:-1 tvg-logo=\"https://i0.wp.com/media.entutele.com/channels/big/e-entertainment-television.gif\" group-title=\"Categorias\", E!\nhttp://ragnaroktv.com/live/STREAM/E/MzQ31jMyMdUzNdAzMjAyNAQA/.m3u8",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AqWWDFDb",
+ "pasteDate": "Feb 28, 2018, 5:59:27 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "wait(1)\nprint 'Kick/Ban Script Loaded'\nwait(1)\n-- Ban List\ngame.Players.IshLink:Kick()",
+ "title": ""
+}

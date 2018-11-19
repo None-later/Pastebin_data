@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "mSWqLrZV",
+ "pasteDate": "Feb 25, 2018, 10:24:21 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Let's make a game!\n\tname:Mining Master\n\tby:Dragonov7733\n\tdesc:This is a simple idle game to showcase some of the basic functionalities of Idle Game Maker.<//>Make bunnies and shoot for the stars!\n\tcreated:2/25/18\n\tupdated:2/25/18\n\tversion:1\n\nSettings\n\tbackground:https:imgur.com/iIWNHhb.jpg\n\tbuilding cost increase:115%\n\tbuilding cost refund:50%\n\tspritesheet:icons, 48 by 48, stuff/bunnyIcons.png\n\tstylesheet:stuff/bigBlue.css\n\nLayout\n\tuse default\n\t\t\nButtons\n\t*bunnyButton\n\t\tname:Mine some Stone.\n\t\tdesc:Click this icon to get a Rock!\n\t\ton click:anim icon wobble\n\t\ton click:yield 1 Rock\n\t\ton click:if (have chance(1%)) yield 1 Iron\n\t\ticon:https:imgur.com/mWuUC6n.png\n\t\tno text\n\t\tclass:bigButton hasFlares\n\t\ticon class:shadowed\n\t\ttooltip origin:bottom\n\t\ttooltip class:red\n\t\t\nResources\n\t*Rock|Rocks\n\t\tname:Rock|Rocks\n\t\tdesc:This is your main resource, Rocks are used to create every building from the ground up.\n\t\ticon:icons[0,0]\n\t\tclass:noBackground\n\t\tshow earned\n\t*Iron|Iron\n\t\tname:IronIngot|IronIngots\n\t\tdesc:Iron Ingots are used to acquire special modifications and upgrades to certain buildings, which could potentially help you acquire rarer materials!\n\t\ticon:icons[0,0]\n\t\tclass:noBackground\n\t\tshow earned\n\nBuildings\n    *TEMPLATE\n        on click:anim glow\n       \n    *cage|cages\n        name:Rabbit cage|Rabbit cages\n        desc:A tiny little cage.<//><b>Effect:</b><.>Produces 1 rabbit every 10 seconds.\n        icon:icons[3,0]\n        cost:15 bunnies\n        on tick:yield 0.1 bunny\n        unlocked",
+ "title": ""
+}

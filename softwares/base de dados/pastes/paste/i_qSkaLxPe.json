@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qSkaLxPe",
+ "pasteDate": "Feb 28, 2018, 12:03:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import pandas as pd\nimport datetime\nimport pvlib\n\ndt_assumed_utc = datetime.datetime(2018,2,28,12,0)\ndt_mahe_manual_offset = dt_assumed_utc + datetime.timedelta(hours=4)\ndt_pd_explicit_utc = pd.DatetimeIndex([dt_assumed_utc], timezone='UTC')\ndt_pd_explcit_mahe = pd.DatetimeIndex([dt_assumed_utc], tz='Indian/Mahe')\n\n\nlatitude = -4.674444\nlongitude = 55.521944\n\n\ndts = {'dt_assumed_utc':dt_assumed_utc,\n\t   'dt_mahe_manual_offset':dt_mahe_manual_offset,\n\t   'dt_pd_explicit_utc':dt_pd_explicit_utc,\n\t   'dt_pd_explcit_mahe':dt_pd_explcit_mahe}\n\t  \nfor key in dts.keys():\n\tprint(key)\n\tsolpos = pvlib.solarposition.get_solarposition(dts[key], latitude, longitude, method = 'nrel_numpy')\n\tprint(solpos['elevation'])\n\tprint('\\n')",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "FUNCTION-TO-HOOK (LET (HOOK-HASH #)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

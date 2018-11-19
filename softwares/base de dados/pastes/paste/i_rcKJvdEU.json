@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rcKJvdEU",
+ "pasteDate": "Feb 27, 2018, 11:18:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/// <summary>\n///\n/// </summary>\n/// <author>Vignesh Nethaji</author>\nstatic void Sample_Max_Lambda()        \n{            \n  int[] numbers = { 2, 8, 5, 6, 1 };\n  var result = numbers.Max();\n  Console.WriteLine(\"Highest number is:\");            \n  Console.WriteLine(result);\n}",
+ "title": ""
+}

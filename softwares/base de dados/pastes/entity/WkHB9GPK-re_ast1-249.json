@@ -1,0 +1,5 @@
+{
+  "value": "function\"?Symbol.iterator:\"@@iterator\"])returnl[typeofSymbol\u003d\u003d\u003d\"function\"?Symbol.iterator:\"@@iterator\"]()",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

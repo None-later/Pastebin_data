@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bV6UrP45",
+ "pasteDate": "Feb 8, 2018, 9:24:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "local modem = peripheral.wrap( \"top\" )\nmodem.open(5)\nlocal event, modemSide, senderChannel, \n  replyChannel, message, senderDistance = os.pullEvent(\"modem_message\")\n --print(\"Recieved from \"..senderChannel)  \n--print(\"Message:\"..message)\n--print(\"The sender is: \"..(senderDistance or \"an unknown number of\")..\" blocks away from me.\")\nwhile true do\nif message == (\"on\" or \"off\") then\nif message == \"on\" then\nos.queueEvent(\"fakeEvent\");\nos.pullEvent();\n    redstone.setOutput(\"back\",true)\n   end\nif message == \"off\" then\n  redstone.setOutput(\"back\",false)\n   end\n else \nshell.run(\"startup\")\nend\n end",
+ "title": "startup"
+}

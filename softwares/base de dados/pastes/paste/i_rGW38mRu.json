@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "rGW38mRu",
+ "pasteDate": "Feb 26, 2018, 11:43:30 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\n\nint main()\n{   int n, x,d=2,e=0,i,p=1;\n    cin>>n;\n    while (n>1){   ///impartim nr pana ajungem la val 1\n        e=0; ///exp factorului\n        while ( n%d==0)\n        {\n           n=n/d;   e++;\n        }\n        if(e>0)\n            p=p*(2*e+1);\n        if(d*d>n && n>1){\n            p=p*3;\n            n=1;\n        }\n\n        d++; ///trec la urm d\n\n\n    }\n        cout<<p;\n    return 0;\n}",
+ "title": "nrperechi"
+}

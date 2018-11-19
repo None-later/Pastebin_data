@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://senato.spectar.tv:1935/senato-live/ngrp:webtv1_all/chunklist_b1155072_DVR.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_anonymous",
+  "lg_en"
+ ],
+ "key": "KYypezJv",
+ "pasteDate": "Feb 11, 2018, 4:50:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SET ROLE postgres;\n\nBEGIN;\n\n-- Cleanup from a previous run\nREVOKE ALL PRIVILEGES ON album FROM administrators, family, friends, client, \n                                    authenticated, unauthenticated;\nREVOKE ALL PRIVILEGES ON pg_authid FROM administrators, family, \n                                        friends, client, \n                                        authenticated, unauthenticated;\nDROP ROLE IF EXISTS jdoe;\nDROP ROLE IF EXISTS dpowers;\nDROP ROLE IF EXISTS gsmith;\nDROP ROLE IF EXISTS rwinter;\nDROP ROLE IF EXISTS gsanders;\nDROP ROLE IF EXISTS anonymous;\nDROP TABLE IF EXISTS album;\nREVOKE family, friends, client, authenticated, unauthenticated FROM administrators;\nREVOKE authenticated FROM family;\nREVOKE authenticated FROM friends;\nREVOKE authenticated FROM client;\nDROP ROLE IF EXISTS administrators;\nDROP ROLE IF EXISTS family;\nDROP ROLE IF EXISTS friends;\nDROP ROLE IF EXISTS client;\nDROP ROLE IF EXISTS authenticated;\nDROP ROLE IF EXISTS unauthenticated;\n\nCOMMIT;",
+ "title": ""
+}

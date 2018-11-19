@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2U7BRKfi",
+ "pasteDate": "Feb 28, 2018, 4:23:18 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "The network is generated in R:\n\nn = 100\np = 1.5/n\ng = erdos.renyi.game(n, p)\n\n\n\n# diameter\nd = get.diameter(g)\n\n\nE(g)$color = \"grey\"\nE(g)$width = 1\nE(g, path=d)$color = \"red\"\nE(g, path=d)$width = 2\nV(g)$color  = \"SkyBlue2\"\nV(g)[d]$color = \"red\"\ncoords = layout.fruchterman.reingold(g)\nplot(g, layout=coords, vertex.label = NA, vertex.size=3)",
+ "title": ""
+}

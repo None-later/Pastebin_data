@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8j2xqc7C",
+ "pasteDate": "Feb 26, 2018, 11:11:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Referenced assembly 'RestSharp, Version=105.0.0.0, Culture=neutral, PublicKeyToken=null' does not have a strong name.",
+ "title": ""
+}

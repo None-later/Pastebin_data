@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "7AcN9Fxm",
+ "pasteDate": "Feb 18, 2018, 12:57:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# making all .cpp files in the directory\n# each one into its own target\n\nCXX ?= g++ \n\nCXXFLAGS ?= -Wall -std=c++11\n\n.PHONY: all clean\n\nSRCS = $(wildcard *.cpp)\n\nPROGS = $(patsubst %.cpp,%,$(SRCS))\n\nall: $(PROGS)\n\n%: %.cpp\n    $(CXX) $(CXXFLAGS) -o $@ $<\n\nclean: \n    rm -f $(PROGS)",
+ "title": ""
+}

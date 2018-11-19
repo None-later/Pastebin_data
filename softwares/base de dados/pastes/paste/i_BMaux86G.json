@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BMaux86G",
+ "pasteDate": "Feb 18, 2018, 2:53:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "alias youtube-audio='youtube-dl -i --audio-format best -x'\nalias youtube-video='youtube-dl -i --format bestvideo+bestaudio[ext=m4a]/bestvideo+bestaudio/best'\nalias ffmpeg2webMp4='for i in *.{mp4,mkv,webm,avi}; do sudo ffmpeg -i \"$i\" -vcodec h264 -acodec aac -strict -2 -pix_fmt yuv420p -vf \"scale=trunc(iw/2)*2:trunc(ih/2)*2\" \"output/${i%.*}.mp4\"; done'",
+ "title": ""
+}

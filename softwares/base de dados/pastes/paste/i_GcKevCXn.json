@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "GcKevCXn",
+ "pasteDate": "Feb 12, 2018, 2:34:45 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<html>\n<head>\n<style>\nh4{color:Green;}\na{color:Red;}\nli.a{color:blue;font-size:20pt;}\nli.b{color:black;size:10pt;}\nli.c{color:grey;size:10pt;}\nli.d{color:red;size:10pt;}\nli.e{color:orange;size:10pt;} \n</style>\n</head>\n<frameset rows=\"30%,40%,*\">\n<frame name=1>\n<h4>COURSES\n<ol>\n<li>BCA\n<li>MCA\n<li>BSC IT\n<li>MSC It\n</ol>\n</h4>\n</frame>\n<frame name=2>\n<h2>\n<a href=\"www.tutorialspoint.com\">TUTORIALS</a>\n</h2>\n</frame>\n<frame name=3>\n<ol>\n<li class=\"a\">Akansha\n<li class=\"b\">Sweta \n<li class=\"c\">Pushpak\n<li class=\"d\">Reeturaj\n<li class=\"e\">Sunil\n</ol>\n</frame>\n</frameset>\n</html>",
+ "title": ""
+}

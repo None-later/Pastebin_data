@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "1VQ3EzLJ",
+ "pasteDate": "Feb 28, 2018, 10:04:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n\t\nAPP_ENV=local\nAPP_DEBUG=true\nAPP_KEY=\nAPP_TIMEZONE=UTC\n\t\nPHPUnit 5.4.6 by Sebastian Bergmann and contributors.\n\t\nedu@pc1:/var/www/html/proyecto1/tests$ ls -alh\n\t\nedu@pc1:/var/www/html/proyecto1$ phpunit tests/TestCase.php",
+ "title": ""
+}

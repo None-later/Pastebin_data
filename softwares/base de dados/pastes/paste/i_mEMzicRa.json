@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mEMzicRa",
+ "pasteDate": "Feb 20, 2018, 5:12:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "clf\n[x,Fs]=audioread('gore.au');\n%theta = pi/6; \n%theta = pi/3;\ntheta = 5*pi/6;\n%b0 = 0.9760; % r=0.95 pi/6\n%b0 = 0.8888; %r=0.70 pi/6\n%b0 = 1.6889; %r=0.95 pi/3\n%b0 = 1.4799; %r=0.70 pi/3\n%b0 = 0.9760; %r=0.95 5pi/6\nb0 = 0.8888; %r=0.7 5pi/6\n%r = 0.950; \nr = 0.7;\nb = [1-r]*b0;\na = [1,-2*r*cos(theta),r^2];\nH = tf(b,a);\n \ny=filter(b,a,x);\n%zplane(b,a) %pole zero\n%freqz(b,a)\nfigure(1)\nsubplot(1,2,1)\ngrid on\nsyms z\n[num,den] = tfdata(H);\nhold on\nplot(x,'b')\nxlabel('f [Hz] ') \nylabel('Magnitude of X(f)')\nplot(y,'r')\nxlabel('t[s] ') \nylabel('Magnitude of Y(f)')\nsubplot(1,2,2)\n% FFT\nX=fft(x,length(x));\nnf=Fs*(0:length(x)-1)/length(x);\nplot(nf,abs(X),'b');\nxlabel('f [Hz] ') \nylabel('Magnitude of X(f)')\nylim([0,250])\n \nY=fft(y, length(y)) ;\nhold on\nnf=Fs*(0:length(x)-1)/length(x);\n%subplot(2,1,2)\nplot(nf,abs(Y),'r')\nxlabel('f [Hz] ') \nylabel('Magnitude of Y(f)')\nxlim([0,4000])",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "fe80::c1b7:40cf:7999",
+  "correct": false,
+  "jSonReason": "re_ipv6_with_port"
+}

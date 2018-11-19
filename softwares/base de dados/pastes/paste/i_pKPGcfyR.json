@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pKPGcfyR",
+ "pasteDate": "Feb 8, 2018, 8:13:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "documentclass[12pt]{article}usepackage{arial}\nusepackage[authoryear]{natbib}\n\nmakeatletter\nletlatexl@sectionl@section\ndefl@section#1#2{\nbegingroupletnumberline@gobblelatexl@section{#1}{#2}endgroup}\nmakeatother\nusepackage[nottoc]{tocbibind}\n\nnewenvironment{sciabstract}{%\nbegin{quote} bf}\n{end{quote}}\n\ntitle{ } \n thispagestyle{empty}\nauthor{}\\\n}\ndate{18.1.2018}\n\n\nbegin{document} \nletcitecitep\n\nbaselineskip18pt\n\nmaketitle \ncleardoublepage \nsetcounter{secnumdepth}{0}\nnewpage\n\nclearpagethispagestyle{empty}\nsetcounter{secnumdepth}{0}\ntableofcontents\nsetcounter{page}{1}\n\ninclude{Abstract}\ninclude{plan}\ninclude{Methods}\ninclude{additional-data-2}\n\nbibliography{scibib6}\nbibliographystyle{aM2}\nend{document}",
+ "title": ""
+}

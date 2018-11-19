@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://arcast.tv:1935/envivo/canal4esquel/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

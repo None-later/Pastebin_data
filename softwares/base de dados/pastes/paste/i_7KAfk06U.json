@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7KAfk06U",
+ "pasteDate": "Feb 17, 2018, 1:38:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#define BUF_SIZE 4096\nchar* buf=new char[BUF_SIZE];\n\nwhile (true) {\n    ZeroMemory(buf, BUF_SIZE);\n\n    //wait for client to send data\n    int bytesReceived = recv(ClientSocket, buf, BUF_SIZE, 0);\n    if (bytesReceived == SOCKET_ERROR) {\n        cout << \"Error in recv(). Quitting\" << endl;\n        break;\n    }\n    if(buf[0]=='e'&&buf[1] == 'x'&&buf[2] == 'i'&&buf[3] == 't')  //<<<<< \n        bytesReceived=0;\n    if (bytesReceived == 0) {\n        cout << \"client disconnected\" << endl;\n        break;\n    }\n\n    //echo message back to client\n    send(ClientSocket, buf, bytesReceived + 1, 0);\n}\n\n//close the socket and cleanup\nclosesocket(ClientSocket);\nWSACleanup();\ndelete[]buf;",
+ "title": ""
+}

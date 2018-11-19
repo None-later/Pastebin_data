@@ -1,0 +1,5 @@
+{
+  "value": "function CreateWave(inair,size,doesrotate,rotatedirection,waitt,cframe,color)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "Yb4zCmTV",
+ "pasteDate": "Feb 18, 2018, 2:48:09 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "import java.io.BufferedReader;\nimport java.io.InputStreamReader;\nimport java.net.DatagramPacket;\nimport java.net.DatagramSocket;\nimport java.net.InetAddress;\n\npublic class Client {\n\n    public static void main(String[] args) throws Exception {\n        BufferedReader inFromUser = new BufferedReader(new InputStreamReader(System.in));\n\n        DatagramSocket clientSocket = new DatagramSocket();\n\n        InetAddress IP = InetAddress.getByName(\"localhost\");\n\n        byte[] receiveData = new byte[1024];\n        byte[] sendData = new byte[1024];\n\n        String sentence = inFromUser.readLine();\n\n        sendData = sentence.getBytes();\n\n        DatagramPacket sendPacket = new DatagramPacket(sendData, sendData.length, IP, 7777);\n        clientSocket.send(sendPacket);\n\n        DatagramPacket receivePacket = new DatagramPacket(receiveData, receiveData.length);\n        clientSocket.receive(receivePacket);\n\n        String modifiedSentence = new String(receivePacket.getData());\n        System.out.println(\"From Server : \" + modifiedSentence);\n\n        clientSocket.close();\n\n    }\n\n}",
+ "title": ""
+}

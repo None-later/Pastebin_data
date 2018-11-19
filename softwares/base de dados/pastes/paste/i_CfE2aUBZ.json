@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CfE2aUBZ",
+ "pasteDate": "Feb 21, 2018, 7:19:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from prettytable import PrettyTable\n\ndef output_to_console(list):\n    info_table = PrettyTable(\n        ['title', 'rating', 'rating count', 'votes']\n    )\n    for movie in list[]:\n        info_table.add_row(movie)\n    print(info_table)\n\t\nFile \"C:/devman/13_cinemas/cinemas.py\", line 81, in <module>\n    output_movies_to_console(list)\n  File \"C:/devman/13_cinemas/cinemas.py\", line 61, in output_movies_to_console\n    print(info_table)\n\n    ...\n\n  File \"C:Program Files (x86)Python36-32libcopy.py\", line 240, in _deepcopy_dict\n    y[deepcopy(key, memo)] = deepcopy(value, memo)\n  File \"C:Program Files (x86)Python36-32libcopy.py\", line 150, in deepcopy\n    y = copier(x, memo)\n  File \"C:Program Files (x86)Python36-32libcopy.py\", line 215, in _deepcopy_list\n    append(deepcopy(a, memo))\n  File \"C:Program Files (x86)Python36-32libcopy.py\", line 180, in deepcopy\n    y = _reconstruct(x, memo, *rv)\n  File \"C:Program Files (x86)Python36-32libcopy.py\", line 274, in _reconstruct\n    y = func(*args)\n  File \"C:Program Files (x86)Python36-32libcopyreg.py\", line 88, in __newobj__\n    return cls.__new__(cls, *args)\nRecursionError: maximum recursion depth exceeded",
+ "title": ""
+}

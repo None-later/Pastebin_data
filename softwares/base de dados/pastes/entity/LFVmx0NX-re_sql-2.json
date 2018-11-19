@@ -1,0 +1,5 @@
+{
+  "value": "select max(id) as counter from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

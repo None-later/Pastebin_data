@@ -1,0 +1,8 @@
+-cl=cache length
+-mcl=minimum cache length
+-lf logfile
+-ll log length(kb)
+-p número de pastes
+-s tempo entre requisições (segundos)
+-ltf log to file (true/false)
+-lang idiomas para aceite (-langpt,en)

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "kw_bot",
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "Wcx8Q0yL",
+ "pasteDate": "Feb 10, 2018, 8:29:03 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "// Now, let's use discord.js\nconst Discord = require(\"discord.js\");\nconst bot = new Discord.Client();\nconst config = require(\"./config.json\");\nconst fs = require('fs');\nconst prefix = '!'; // This is the prefix\n\n\nbot.on(\"ready\", () => {\n    console.log(\"Bot Loaded\");\n})\n\nbot.commands = new Discord.Collection();\nbot.aliases = new Discord.Collection();\n// Command Handler\nfs.readdir('./commands/', (err, files) => {\n    if (err)\n        console.error(err);\n    let jsfiles = files.filter(f => f.split('.').pop() === 'js');\n    if (jsfiles.length <= 0) {\n        console.log('No commands to load!');\n        return;\n    }\n    console.log(`Loaded a total amount ${files.length} Commands`);\n    jsfiles.forEach(f => {\n        let props = require(`./commands/${ f }`);\n        props.conf.aliases.forEach(alias => {\n          bot.aliases.set(alias, props.help.name);\n      });\n    });\n});\n\nbot.on('message', message => {\n\n    // Variables\n    let msg = message.content.toUpperCase(); // This variable takes the message and turns it all into uppercase so it isn't case sensitive.\n    let sender = message.author;\n    let command = message.content.split(' ')[0].slice(prefix.length);\n    let args = message.content.split(' ').slice(1);\n\n\n    if (sender.bot) return;\n    if (!message.content.startsWith(prefix)) return;\n    let cmd;\n    if (bot.commands.has(command)) {\n        cmd = bot.commands.get(command);\n    } else if (bot.aliases.has(command)) {\n        cmd = bot.commands.get(bot.aliases.get(command));\n    }\n    if (cmd) {\n        cmd.run(client, message, args);\n    }\n});\n\n\n// Hook\nbot.login(config.token);",
+ "title": ""
+}

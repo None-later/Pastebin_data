@@ -1,0 +1,5 @@
+{
+  "value": "function lol:SendLua( pPlayer, strLua )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

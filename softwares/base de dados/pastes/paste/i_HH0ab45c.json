@@ -1,0 +1,13 @@
+{
+ "espireDate": "1W",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HH0ab45c",
+ "pasteDate": "Feb 21, 2018, 10:47:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "if __name__ == '__main__':\n    import module1\nelse:\n    import sys\n    \n    sys.path.insert(0, 'Folder')\n    import module1",
+ "title": "main.py"
+}

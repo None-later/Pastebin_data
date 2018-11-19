@@ -1,0 +1,5 @@
+{
+  "value": "function showTipMsg(isMultiSysMode, sysMode, accessType, isDualBand, labelId, stepId)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

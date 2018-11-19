@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NHqQfUDB",
+ "pasteDate": "Feb 18, 2018, 3:38:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<svg>\n    <defs>\n        <g id=\"aaa\">                    \n            <text  x=\"0\" y=\"0\" text-anchor=\"middle\" stroke=\"red\" stroke-width=\"2px\" dy=\".3em\">changing text</text>  \n        </g>\n    </defs>\n    <svg/>\n\t\n<use xlink:href=\"#aaa\" x=\"480\" y=\"550\" changing_text=\"Hello World\">\n<use xlink:href=\"#aaa\" x=\"480\" y=\"550\" changing_text=\"Hello Planet\">",
+ "title": ""
+}

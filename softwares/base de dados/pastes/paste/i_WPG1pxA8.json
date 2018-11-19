@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "WPG1pxA8",
+ "pasteDate": "Feb 20, 2018, 4:06:57 PM",
+ "relevancy": 5.0,
+ "relevant": false,
+ "text": "[42649.769945] BTRFS info (device sdn): suspending dev_replace for unmount\n[42649.770092] BTRFS error (device sdn): cleaner transaction attach returned -30\n[42662.378367] BTRFS info (device sdn): allowing degraded mounts\n[42662.378370] BTRFS info (device sdn): disk space caching is enabled\n[42662.378371] BTRFS info (device sdn): has skinny extents\n[42667.578382] BTRFS info (device sdn): bdev /dev/sds errs: wr 1569904, rd 1791497, flush 1663, corrupt 18, gen 0\n[42667.578403] BTRFS info (device sdn): bdev /dev/sdy errs: wr 0, rd 6, flush 0, corrupt 0, gen 0\n[42667.578408] BTRFS info (device sdn): bdev /dev/sdb errs: wr 41510599, rd 44188553, flush 5897, corrupt 4416750, gen 5321\n[42711.251497] BTRFS info (device sdn): cannot continue dev_replace, tgtdev is missing\n[42711.251500] BTRFS info (device sdn): you may cancel the operation after 'mount -o degraded'\n[42793.851969] BTRFS error (device sdn): parent transid verify failed on 69760307740672 wanted 506595 found 506233\n[42793.874513] BTRFS error (device sdn): parent transid verify failed on 69760307740672 wanted 506595 found 506233\n[42793.876505] BTRFS: error (device sdn) in btrfs_run_delayed_refs:3089: errno=-5 IO failure\n[42793.878498] BTRFS info (device sdn): forced readonly\n[42793.878502] BTRFS warning (device sdn): Skipping commit of aborted transaction.\n[42793.878506] BTRFS: error (device sdn) in cleanup_transaction:1873: errno=-5 IO failure",
+ "title": ""
+}

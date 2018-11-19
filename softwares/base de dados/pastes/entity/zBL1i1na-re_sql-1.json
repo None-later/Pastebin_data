@@ -1,0 +1,5 @@
+{
+  "value": "select user0_.id as id2_25_, user0_.version as version3_25_, user0_.archived as archived4_25_, user0_.basic_profile_id as basic_p15_25_, user0_.branch_id as branch_16_25_, user0_.company_id as company17_25_, user0_.created_at as created_5_25_, user0_.department_id as departm18_25_, user0_.email as email6_25_, user0_.first_name as first_na7_25_, user0_.last_name as last_nam8_25_, user0_.name as name9_25_, user0_.password as passwor10_25_, user0_.user_role as user_ro11_25_, user0_.ssoid as ssoid12_25_, user0_.status as status13_25_, user0_.user_name as user_na14_25_ from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

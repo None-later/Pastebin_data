@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "N9UyAGSX",
+ "pasteDate": "Feb 20, 2018, 3:26:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <vcl>\n#include <iostream>\n\nusing namespace std;\nint PL1(int a[], int k,int l,int y);\nint main()\n{\nint k,x,l,y,a[100],c[100];\ncout<<\"Podaj liczbe elementow zbioru do przeszukania \";\ncin>>l;\ncout<<endl;\nfor(int i=1;i<=l;i++)\n{\ncout<<\"Podaj element zbioru o indeksie <\"<<i<<\">\";\ncin>>a[i];\n}\ncout<<endl;\nk=1;\ncout<<\"Podaj szukana liczbe \";\ncin>>y;\ncout<<endl;\n\n\nc[100]=PL1(a,k,l,y);\n\n\n\nfor(int i=1;i<=l;i++)\n{\ncout<<c[i]<<endl;\n}\n\n\n\nsystem(\"PAUSE\");\nreturn 0;\n}\n\n\n\nint PL1(int a[], int k,int l,int y)\n{\nint s,p,x[100],o;\no=1;\n\nfor(int s=1;s<=l;s++)\n{\nif (y=a[s])\n{\nx[o]=s;\no=o++;\n}\n}\nreturn x[];\n\n\n\n}",
+ "title": ""
+}

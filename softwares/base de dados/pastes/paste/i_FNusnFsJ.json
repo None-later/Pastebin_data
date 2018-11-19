@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FNusnFsJ",
+ "pasteDate": "Feb 18, 2018, 2:27:07 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#!usr/bin/ruby\n\nn = gets.to_i\ndata = Array.new(n)\n(0..(n-1)).each do |i|\n\tdata[i] = gets.to_i\nend",
+ "title": ""
+}

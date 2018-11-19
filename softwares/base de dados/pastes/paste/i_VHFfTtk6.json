@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "VHFfTtk6",
+ "pasteDate": "Feb 11, 2018, 3:59:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using UnityEngine;\nusing UnityEngine.SceneManagement;\nusing UnityEngine.UI;\n\npublic class balls : MonoBehaviour \n{\n    public Text mytext;\n    public bool left;\n    public bool upwards;\n    void Start()\n    {\n\n    }\n    void Update ()\n    {\n        if (left == true) {\n            gameObject.transform.Translate (Vector3.left * 6 * Time.deltaTime);\n        } else \n        { \n            gameObject.transform.Translate (Vector3.right * 6 * Time.deltaTime);\n        }\n        if (gameObject.transform.position.y > 4.2 || gameObject.transform.position.y < -4.2) \n        {\n            if (upwards == true) {\n                upwards = false;\n            } else \n            {\n                upwards = true;\n            }\n        }\n        if (upwards == true) \n        {\n            gameObject.transform.Translate (Vector3.up * 6 * Time.deltaTime);\n        } else\n        {\n            gameObject.transform.Translate (Vector3.down * 6 * Time.deltaTime);\n        }\n        if (gameObject.transform.position.x > 7.82 || gameObject.transform.position.x < -7.82) \n        {\n            SceneManager.LoadScene (\"Pong\");\n        }\n    }\n    void OnTriggerEnter(Collider col)\n    {\n        if (col.gameObject.tag == \"Paddle\")\n        {\n            mytext.text = \"4\";\n            if (left == true) {\n                left = false;\n            } else \n            {\n                left = true;\n            }\n        }\n    }\n}",
+ "title": ""
+}

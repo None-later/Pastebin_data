@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://hlstv.canalextremadura.es/livetv/smil:multistream.smil/chunklist_b1596000_DVR.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

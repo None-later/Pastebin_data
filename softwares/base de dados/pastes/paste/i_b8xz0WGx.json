@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "b8xz0WGx",
+ "pasteDate": "Feb 11, 2018, 6:52:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Helper functions for music\n\n#include <cs50.h>\n#include <string.h>\n#include <stdio.h>\n#include \"helpers.h\"\n#include <math.h>\n\n// Converts a fraction formatted as X/Y to eighths\nint duration(string fraction)\n{\n    int x = atoi(&fraction[0]);\n    int y = atoi(&fraction[2]);\n    int dur = (8./y)*x;\n    //printf(\"%i\",dur);\n    return dur;\n}\n\n// Calculates frequency (in Hz) of a note\nint frequency(string note)\n{\n    int oct;\n    int n = 0;\n    if (strlen(note)==3){\n        oct = atoi(&note[2]);\n        //printf(\"%c\\n\",note[1]);\n        char accident = note[1];\n        //printf(\"%c\\n\", accident);\n        if (accident=='#'){\n            //printf(\"found a sharp\");\n            n += 1;\n        }else if (accident == 'b'){\n            //printf(\"found a flat\");\n            n -= 1;\n        }\n    }else{\n        oct = atoi(&note[1]);\n    }\n    char letter = note[0];\n\n    if (letter=='A'){\n        n += 0;\n    }else if (letter=='B'){\n        n += 2;\n    }else if (letter=='C'){\n        n -= 9;\n    }else if (letter=='D'){\n        n -= 7;\n    }else if (letter=='E'){\n        n -= 5;\n    }else if (letter=='F'){\n        n -= 4;\n    }else if (letter=='G'){\n        n -= 2;\n    }\n    //printf(\"%i\\n\",n);\n    n += (oct-4) * 12;\n\n    float power = n/12.;\n    //printf(\"%f\\n\",power);\n    float f = round(pow(2, power)*440);\n    //printf(\"%f\\n\",f);\n    return f;\n}\n\n// Determines whether a string represents a rest\nbool is_rest(string s)\n{\n    if(strcmp(s,\"\")==0){\n        return 1;\n    }\n    else{\n        return 0;\n    }\n\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GK3DCaAm",
+ "pasteDate": "Feb 12, 2018, 12:07:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const myPromise = new Promise((resolve, reject) => {\n  // do something asynchronous which eventually calls either:\n  //\n  //   resolve(someValue); // when fulfilled\n  // or\n  //   reject(\"failure reason\"); // upon failure or rejection\n});",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.w3.org/2001/04/xmldsig-more#gost34310-gost34311",
+  "correct": true,
+  "jSonReason": "re_url"
+}

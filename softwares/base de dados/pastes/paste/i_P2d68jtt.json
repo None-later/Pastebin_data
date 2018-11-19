@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "P2d68jtt",
+ "pasteDate": "Feb 28, 2018, 12:12:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Compiling: C:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.cpp\nLinking console executable: C:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.exe\nC:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.o:dplaunch.cpp:(.text+0xe): undefined reference to `CoInitialize@4'\nC:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.o:dplaunch.cpp:(.text+0x6b): undefined reference to `CoUninitialize@0'\nC:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.o:dplaunch.cpp:(.text+0x3cd): undefined reference to `CoCreateInstance@20'\nC:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.o:dplaunch.cpp:(.text+0x40f): undefined reference to `CoCreateInstance@20'\nC:\\Documents and Settings\\Default\\Desktop\\dplaunch\\dplaunch.o:dplaunch.cpp:(.text+0x1816): undefined reference to `DirectPlayCreate@12'\ncollect2: ld returned 1 exit status\nProcess terminated with status 1 (0 minutes, 3 seconds)\n0 errors, 0 warnings",
+ "title": ""
+}

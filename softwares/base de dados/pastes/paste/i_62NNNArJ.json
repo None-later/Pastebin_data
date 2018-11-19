@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "62NNNArJ",
+ "pasteDate": "Feb 17, 2018, 1:35:25 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "modem.open(1)\nmessage = \"\"\nlocal event, modemSide, senderChannel, replyChannel, message, snderDistance = os.pullEvent(\"modem_message\")\n\nos.run({}, \"rom/programs/excavate\", message)\nos.run({}, \"rom/programs/Mining.lua\")",
+ "title": "Mining.lua"
+}

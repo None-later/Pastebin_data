@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "Z0avjWRt",
+ "pasteDate": "Feb 21, 2018, 9:56:59 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "I need to fill a database of customers (500 and growing) using custom fields. I want to use Toolset https://wp-types.com to achieve this. Now Im not sure which approach is suitable to this end. Should I use the user fields or post fields to make up my database. Ive got the feeling the post fields will give me more flexibility. Anyone got experience using Toolset and a similar situation?",
+ "title": "Toolset plugin: user fields vs postfields"
+}

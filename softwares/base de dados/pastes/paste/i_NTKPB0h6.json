@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NTKPB0h6",
+ "pasteDate": "Feb 12, 2018, 4:53:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CASE (A + B + C)\n    **WHEN >= 0** THEN 'RESPOSTA'\n    ELSE 'SEM RESPOSTA'\nEND AS RESULTADO\n\t\nCASE\n    WHEN (A + B + C) >= 0 THEN 'RESPOSTA'\n    ELSE 'SEM RESPOSTA'\nEND AS RESULTADO",
+ "title": ""
+}

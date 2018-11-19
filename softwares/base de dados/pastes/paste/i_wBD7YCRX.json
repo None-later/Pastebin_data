@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wBD7YCRX",
+ "pasteDate": "Feb 21, 2018, 10:59:23 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "# AV/base.rb\n    def render(options = {}, local_assigns = {}, &block) #:nodoc:\n      local_assigns ||= {}\n\n      \"<!--DBG #{options[:layout]} #{options[:file]} #{options[:partial]} #{options[:text]}-->\"+\n      if options.is_a?(String)\n        ActiveSupport::Deprecation.warn(\n          \"Calling render with a string will render a partial from Rails 2.3. \" +\n          \"Change this call to render(:file => '#{options}', :locals => locals_hash).\"\n        )\n\n        render(:file => options, :locals => local_assigns)\n      elsif options == :update\n        update_page(&block)\n      elsif options.is_a?(Hash)\n        options = options.reverse_merge(:locals => {})\n        if options[:layout]\n          _render_with_layout(options, local_assigns, &block)\n        elsif options[:file]\n          _pick_template(options[:file]).render_template(self, options[:locals])\n        elsif options[:partial]\n          render_partial(options)\n        elsif options[:inline]\n          InlineTemplate.new(options[:inline], options[:type]).render(self, options[:locals])\n        elsif options[:text]\n          options[:text]\n        end\n      end+\n      \"<!--ENDDBG #{options[:file]} #{options[:partial]}-->\"\n    end",
+ "title": ""
+}

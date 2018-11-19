@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_skuid",
+  "lg_ca"
+ ],
+ "key": "YDdiKqMv",
+ "pasteDate": "Feb 21, 2018, 6:39:01 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "/00Q/e?retURL=%2F00Q%2Fo&FirstName='{!Partner_Deal__c.End_User_Contact_First_Name__c}'&LastName='{!Partner_Deal__c.End_User_Contact_Last_Name__c}'&Email='{!Partner_Deal__c.End_User_Email__c}'",
+ "title": ""
+}

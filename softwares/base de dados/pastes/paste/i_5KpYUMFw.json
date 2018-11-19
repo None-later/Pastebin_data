@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5KpYUMFw",
+ "pasteDate": "Feb 26, 2018, 9:50:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[    1.990967] mali: loading out-of-tree module taints kernel.\n[    1.993311] Amlogic Mali glue initialized\n[    2.033193] meson8b-dwmac c9410000.ethernet: PTP uses main clock\n[    2.033562] meson8b-dwmac c9410000.ethernet: no reset control found\n[    2.040097] stmmac - user ID: 0x11, Synopsys ID: 0x37\n[    2.044798] meson8b-dwmac c9410000.ethernet: Ring mode enabled\n[    2.050620] meson8b-dwmac c9410000.ethernet: DMA HW capability register supported\n[    2.057997] meson8b-dwmac c9410000.ethernet: Normal descriptors\n[    2.063845] meson8b-dwmac c9410000.ethernet: RX Checksum Offload Engine supported\n[    2.071259] meson8b-dwmac c9410000.ethernet: COE Type 2\n[    2.076433] meson8b-dwmac c9410000.ethernet: TX Checksum insertion supported\n[    2.083420] meson8b-dwmac c9410000.ethernet: Wake-Up On Lan supported\n[    2.089835] meson8b-dwmac c9410000.ethernet: Enable RX Mitigation via HW Watchdog Timer\n[    2.097853] libphy: stmmac: probed\n[    2.127039] meson-drm d0100000.vpu: Queued 2 outputs on vpu\n[    2.133043] meson-drm d0100000.vpu: Failed to create debugfs directory\n[    2.133938] [drm] Supports vblank timestamp caching Rev 2 (21.10.2013).\n[    2.140491] [drm] No driver support for vblank timestamp query.\n[    2.146405] meson-drm d0100000.vpu: CVBS Output connector not available\n[    2.179398] meson-dw-hdmi c883a000.hdmi-tx: Detected HDMI TX controller v2.01a with HDCP (meson_dw_hdmi_phy)\n[    2.183941] meson-dw-hdmi c883a000.hdmi-tx: registered DesignWare HDMI I2C bus driver\n[    2.191662] meson-drm d0100000.vpu: bound c883a000.hdmi-tx (ops meson_dw_hdmi_ops [meson_dw_hdmi])\n[    2.291310] usb 1-1.1: new high-speed USB device number 3 using dwc2\n[    2.392655] hub 1-1.1:1.0: USB hub found\n[    2.392706] hub 1-1.1:1.0: 4 ports detected\n[    2.476027] Console: switching to colour frame buffer device 240x67\n[    2.521041] meson-drm d0100000.vpu: fb0:  frame buffer device\n[    2.539565] [drm] Initialized meson 1.0.0 20161109 for d0100000.vpu on minor 0",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "MQYjnPyn",
+ "pasteDate": "Feb 20, 2018, 8:13:07 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "TARGET=\"/var/www/my-app.com/html\"\nGIT_DIR=\"/root/my-app/\"\nDIST=\"/root/my-app/dist/browser\"\n\necho \"Pulling the project\"\n\ncd $GIT_DIR\ngit pull\necho \"Install Packages\"\nnpm i\necho \"Building Project\"\nnpm run build\ncd $DIST\n\necho \"Removing current website files\"\n\nrm -r /var/www/my-app.me/html/*\n\necho \"Copy to the target\"\ncp -r * $TARGET\n\necho \"Completed Deployment\"",
+ "title": ""
+}

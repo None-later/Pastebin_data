@@ -1,0 +1,7 @@
+{
+  "corrects": 20,
+  "incorrects": 689,
+  "reason": "re_br_cnpj",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

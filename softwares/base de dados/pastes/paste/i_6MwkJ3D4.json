@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "6MwkJ3D4",
+ "pasteDate": "Feb 28, 2018, 4:26:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var b = document.getElementById('demo');\n\nb.innerHTML    = \"TariQ\";",
+ "title": ""
+}

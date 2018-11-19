@@ -1,0 +1,5 @@
+{
+  "value": "function AoEDamage(position,radius,min,max,maxstrength,beserk,critrate,critmultiplier,CanBeDodgedByJumping)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

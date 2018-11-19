@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dnMJTY3W",
+ "pasteDate": "Feb 8, 2018, 2:47:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import React, { Component } from 'react'\n\nclass Blink extends Component {\n  constructor () {\n    super()\n    this.state = { visible: true }\n    this.blink = this.blink.bind(this)\n    this.interval = null\n  }\n  blink () {\n    this.setState(\n      prevState => ({ visible: !prevState.visible }),\n      _ => this.forceUpdate()\n    )\n  }\n  componentDidMount () {\n    this.interval = setInterval(this.blink, 500)\n  }\n  componentWillUnmount () {\n    clearInterval(this.interval)\n  }\n  render () {\n    const { visible } = this.state\n\n    return (\n      <span style={{ visibility: visible ? 'visible' : 'hidden' }}>\n        { this.props.children }\n      </span>\n    )\n  }\n}\n\nexport default Blink",
+ "title": ""
+}

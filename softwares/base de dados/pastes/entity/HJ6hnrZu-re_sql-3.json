@@ -1,0 +1,5 @@
+{
+  "value": "select name\u003d\\\"sql_tbl_insert_functs[\".htmlspecialchars($name).\"]\\\"\u003e\u003coption value\u003d\\\"\\\"\u003e\u003c/option\u003e\u003coption\u003ePASSWORD\u003c/option\u003e\u003coption\u003eMD5\u003c/option\u003e\u003coption\u003eENCRYPT\u003c/option\u003e\u003coption\u003eASCII\u003c/option\u003e\u003coption\u003eCHAR\u003c/option\u003e\u003coption\u003eRAND\u003c/option\u003e\u003coption\u003eLAST_INSERT_ID\u003c/option\u003e\u003coption\u003eCOUNT\u003c/option\u003e\u003coption\u003eAVG\u003c/option\u003e\u003coption\u003eSUM\u003c/option\u003e\u003coption value\u003d\\\"\\\"\u003e--------\u003c/option\u003e\u003coption\u003eSOUNDEX\u003c/option\u003e\u003coption\u003eLCASE\u003c/option\u003e\u003coption\u003eUCASE\u003c/option\u003e\u003coption\u003eNOW\u003c/option\u003e\u003coption\u003eCURDATE\u003c/option\u003e\u003coption\u003eCURTIME\u003c/option\u003e\u003coption\u003eFROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

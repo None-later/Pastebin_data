@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "k9BSZgiA",
+ "pasteDate": "Feb 17, 2018, 7:34:33 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace ConsoleApp2\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            double a;\n            Console.Write(\"\");\n            Console.WriteLine(\"  :\");\n            a = double.Parse(Console.ReadLine());\n            Console.Write(\"\");\n            Console.WriteLine(\" \" + a  );\n            Console.WriteLine(\": \" + a + \"- !\"+\":\" + a*a);\n            Console.Read();\n          \n        }\n    }\n}",
+ "title": ""
+}

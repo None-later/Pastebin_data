@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "w47BD5FT",
+ "pasteDate": "Feb 18, 2018, 10:51:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/bin/sh\n\n#outiface=\"eth0\"\n\n# Netin jako plle\n\necho 1 > /proc/sys/net/ipv4/ip_forward\n\n\n# Iptables kuntoon\n\n/sbin/iptables -F\n/sbin/iptables -F -t nat\n/sbin/iptables -X\n\n# Natti plle\n\n/sbin/iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE",
+ "title": ""
+}

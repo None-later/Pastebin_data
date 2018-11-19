@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Dx34AiCH",
+ "pasteDate": "Feb 8, 2018, 7:08:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/bin/bash\nLOGFILE=/path/to/your/logfile.log\ntouch $LOGFILE\nexec 3>&1 4>&2\ntrap 'exec 2>&4 1>&3' 0 1 2 3 RETURN\nexec 1>>$LOGFILE 2>&1\necho \"### log command ###\"\necho \"# start time: $(date)\"\necho \"# pwd: $(pwd)\"\necho \"# command: $@\"\necho \"# output: \"\n$@\necho \"# end time: $(date)\"\necho \"###################\"\nexit 0",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "7bP2WxDw",
+ "pasteDate": "Feb 18, 2018, 12:03:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"vote-select\">\n\t<div class=\"vote-select-label\">\n\t\t<label for=\"select6\">Vote Stage 7</label>\n\t</div>\n\t<div class=\"vote-select-value\">\n\t\t<select id=\"select6\">\n\t\t\t<option value=\"Ban1\">Ban1</option>\n\t\t\t<option value=\"Ban2\">Ban2</option>\n\t\t\t<option value=\"Pick1\">Pick1</option>\n\t\t\t<option value=\"Pick2\">Pick2</option>\n\t\t\t<option value=\"Decider\">Decider</option>\n\t\t\t<option value=\"Ignore\">Ignore</option>\n\t\t</select>\n\t</div>\n\t<div style=\"clear:both;\"></div>\n</div>",
+ "title": ""
+}

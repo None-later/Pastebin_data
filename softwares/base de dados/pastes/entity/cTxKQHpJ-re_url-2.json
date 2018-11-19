@@ -1,0 +1,5 @@
+{
+  "value": "\nservice-parts.mercedes-benz.com/dcagportal/DCAGPortal/portal.action",
+  "correct": true,
+  "jSonReason": "re_url"
+}

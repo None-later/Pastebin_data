@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "tz8TAhRD",
+ "pasteDate": "Feb 8, 2018, 8:39:38 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "http_port 47777\ncache deny all\nhierarchy_stoplist cgi-bin ?\n\naccess_log none\ncache_store_log none\ncache_log /dev/null\n\nrefresh_pattern ^ftp: 1440 20% 10080\nrefresh_pattern ^gopher: 1440 0% 1440\nrefresh_pattern -i (/cgi-bin/|\\?) 0 0% 0\nrefresh_pattern . 0 20% 4320\n\nacl to_localhost dst 127.0.0.0/8 0.0.0.0/32 ::1\n\nacl SSL_ports port 1-65535\nacl Safe_ports port 1-65535\nacl CONNECT method CONNECT\nacl siteblacklist dstdomain \"/etc/squid3/blacklist.acl\"\nhttp_access allow manager localhost\nhttp_access deny manager\n\nhttp_access deny !Safe_ports\n\nhttp_access deny CONNECT !SSL_ports\nhttp_access deny siteblacklist\nauth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/passwd\n\nauth_param basic children 5\nauth_param basic realm Squid proxy-caching web server\nauth_param basic credentialsttl 2 hours\nacl password proxy_auth REQUIRED\nhttp_access allow localhost\nhttp_access allow password\nhttp_access deny all\n\nforwarded_for off\nrequest_header_access Allow allow all\nrequest_header_access Authorization allow all\nrequest_header_access WWW-Authenticate allow all\nrequest_header_access Proxy-Authorization allow all\nrequest_header_access Proxy-Authenticate allow all\nrequest_header_access Cache-Control allow all\nrequest_header_access Content-Encoding allow all\nrequest_header_access Content-Length allow all\nrequest_header_access Content-Type allow all\nrequest_header_access Date allow all\nrequest_header_access Expires allow all\nrequest_header_access Host allow all\nrequest_header_access If-Modified-Since allow all\nrequest_header_access Last-Modified allow all\nrequest_header_access Location allow all\nrequest_header_access Pragma allow all\nrequest_header_access Accept allow all\nrequest_header_access Accept-Charset allow all\nrequest_header_access Accept-Encoding allow all\nrequest_header_access Accept-Language allow all\nrequest_header_access Content-Language allow all\nrequest_header_access Mime-Version allow all\nrequest_header_access Retry-After allow all\nrequest_header_access Title allow all\nrequest_header_access Connection allow all\nrequest_header_access Proxy-Connection allow all\nrequest_header_access User-Agent allow all\nrequest_header_access Cookie allow all\nrequest_header_access All deny all",
+ "title": ""
+}

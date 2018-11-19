@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "60KzMh1F",
+ "pasteDate": "Feb 12, 2018, 10:23:08 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "on rightclick holding a feather:\n\tif name of held item contains \"&7Fly\":\n\t\tpush player upwards at speed 1.2\n\t\tpush the player forward at speed 0.3\n\t\tplay raw sound \"mob.ghast.fireball\" at player with pitch 1 volume 10\n\non leftclick holding a feather:\n\tif name of held item contains \"&7Fly\":\n\t\tpush player upwards at speed 0.2\n\t\tpush the player forward at speed 1.8\n\t\tplay raw sound \"mob.ghast.fireball\" at player with pitch 1 volume 10\n\non break:\n\tif name of held item contains \"&7Fly\":\n\t\tcancel event",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.jooq.org/xsd/jooq-codegen-3.10.0.xsd",
+  "correct": true,
+  "jSonReason": "re_url"
+}

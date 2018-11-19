@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vztLaXUj",
+ "pasteDate": "Feb 12, 2018, 1:16:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using (_clientContext = new ClientContext(Url))\n{\n    _clientContext.Credentials = _credentials;\n    var web = _clientContext.Web;\n\n    var file = web.GetFileByServerRelativeUrl(\"/sites/test5/SitePages/Home.aspx\");\n\n    var limitedWebPartManager = file.GetLimitedWebPartManager(PersonalizationScope.Shared);\n    var webPartDefinitions = limitedWebPartManager.WebParts;\n\n    _clientContext.Load(webPartDefinitions);\n    _clientContext.Load(limitedWebPartManager);\n\n    _clientContext.ExecuteQuery();\n\n    var webPartDefinition = limitedWebPartManager.ImportWebPart(_scriptEditorXml);\n    var o = limitedWebPartManager.AddWebPart(webPartDefinition.WebPart, \"wpz\", 0);\n    _clientContext.Load(webPartDefinition);\n    _clientContext.Load(o);\n\n    _clientContext.ExecuteQuery();\n\n}\n\t\nforeach (var webpartDefinition in limitedWebPartManager.WebParts)\n    {\n        _clientContext.Load(webpartDefinition);\n        _clientContext.Load(webpartDefinition, w => w.ZoneId);\n        _clientContext.Load(webpartDefinition.WebPart);\n        _clientContext.ExecuteQuery();\n\n        Console.WriteLine($\"{webpartDefinition.WebPart.ZoneIndex} - {webpartDefinition.ZoneId} - {webpartDefinition.WebPart.Title}\");\n    }\n\t\n2 - wpz - Shared Calendar\n1 - wpz - GroupTasks\n3 - wpz - Recently Changed Items\n2 - WebPartctl00_ctl33_g_c5595a9d_1cba_458d_9cc5_d06729f78715 - Script Editor\n1 - WebPartctl00_ctl33_g_c5595a9d_1cba_458d_9cc5_d06729f78715 - Script Editor\n0 - WebPartctl00_ctl33_g_c5595a9d_1cba_458d_9cc5_d06729f78715 - Script Editor\n0 - WebPartWPQ3 - Script Editor\n0 - MSOZoneCell_WebPartWPQ3 - Script Editor\n0 - wpz - Script Editor",
+ "title": ""
+}

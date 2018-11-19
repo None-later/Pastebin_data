@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tynyDKyN",
+ "pasteDate": "Feb 8, 2018, 3:51:00 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "root@Backend-Aegidiistrasse:~# cat /sys/kernel/debug/ieee80211/phy0/aqm\naccess name value\nR fq_flows_cnt 4096\nR fq_backlog 0\nR fq_overlimit 0\nR fq_overmemory 0\nR fq_collisions 13\nR fq_memory_usage 0\nRW fq_memory_limit 1048576\nRW fq_limit 8192\nRW fq_quantum 300",
+ "title": ""
+}

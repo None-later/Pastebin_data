@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "0QvxCJXv",
+ "pasteDate": "Feb 26, 2018, 3:31:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ssh -X username@I.P. address\n\t\ngfortran code.f90 -o code1\n\t\n./code1",
+ "title": ""
+}

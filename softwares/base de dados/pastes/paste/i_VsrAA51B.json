@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VsrAA51B",
+ "pasteDate": "Feb 28, 2018, 4:29:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@IBOutlet weak var myButton: UIButton!\n\n@IBAction func myButtonPressed(_ sender: Any) {\n    myButton.isHidden = true\n}\n\t\n@IBOutlet weak var myButton: UIButton!\n\n@IBAction func myButtonPressed(_ sender: Any) {\n    myButton.removeFromSuperview()\n    ...\n}\n\t\n@IBOutlet weak var myButton: UIButton!\n\n@IBAction func myButtonPressed(_ sender: Any) {\nmyButton.alpha = 0\n...\n}",
+ "title": ""
+}

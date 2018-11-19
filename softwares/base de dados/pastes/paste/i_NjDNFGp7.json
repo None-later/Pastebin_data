@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NjDNFGp7",
+ "pasteDate": "Feb 11, 2018, 8:42:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "max_document_length = max([len(x.split(\" \")) for x in x_text])\nvocab_processor = learn.preprocessing.VocabularyProcessor(max_document_length)\nX = np.array(list(vocab_processor.fit_transform(x_text)))\n\ny_val = np.array(list(vocab_processor.transform(y_text)))\n\nfrom sklearn.preprocessing import OneHotEncoder\nonehotencoder = OneHotEncoder(categorical_features = [0])\ny = onehotencoder.fit_transform(y_val).toarray()\ny = y[:, 1:]",
+ "title": ""
+}

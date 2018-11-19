@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "re_url",
+  "re_css",
+  "lg_en"
+ ],
+ "key": "08KMEtSM",
+ "pasteDate": "Feb 11, 2018, 11:24:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#square { \nposition: fixed; \nbottom: 219px; \nleft: 758px; \nwidth: 410px; \nheight: 149px; \nborder: # 1px solid; \npadding: 10px; \nbackground-color: #fff; \nz-index: 5;\n}\n\n\n#navi { \nposition: fixed; \nbottom: 180px; \nleft: 480px; \nwidth: 650px; \nheight: 50px; \npadding: 10px; \nbackground-color: transparent; \nz-index: 30;\n-moz-transform: rotate(180deg);\n-webkit-transform: rotate(180deg);\n-o-transform: rotate(180deg);\n-ms-transform: rotate(180deg);\ntransform: rotate(180deg);\n}\n\n.box {\nposition: fixed;\nleft: 770px;\nbottom: 250px; \nwidth: 400px;\nheight: 122px;\npadding: 5px;\ncolor: #333;\nfont-family: verdana;\nfont-variant: small-caps;\ntext-align: justify; \nfont-size: 10px;\nline-height: 13px; \noverflow: auto;\nbackground-color: transparent;\nopacity: 0;\ntransition: all 0.5s ease-in-out;\n-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\nz-index: 80;\n}\n \n.box:target {\nbottom: 250px;\nleft: 770px;\nopacity: 1;\ntransition: all 0.5s ease-in-out;\n-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\nz-index: 100;\n}\n\na.nav:link, a.nav:active, a.nav:visited{\nletter-spacing: 1px;\ntext-transform: lowercase;\ndisplay: inline-block;\nwidth: 70px;\nheight: 10px;\ncolor: #99654D;\nborder: #333 1px solid; \nmargin: 5px;\nbackground-color: #fff;\ntext-align: center;\nline-height: 10px; \nfont-variant: small-caps;\ncursor: url(https://i.imgur.com/O72PSym.png), default;\n-webkit-transition: all 0.4s ease-out;\n-moz-transition: all 0.4s ease-out;\n-moz-border-radius-topright: 5px;\n-moz-border-radius-bottomright: 5px;\n}\n \na.nav:hover{\nbackground-color: #C48D6E;\ncolor: white;\ntext-decoration: none;\ncursor: url(https://i.imgur.com/O72PSym.png), default;\n}",
+ "title": "CSS"
+}

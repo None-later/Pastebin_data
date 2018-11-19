@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "4UUGb1h4",
+ "pasteDate": "Feb 20, 2018, 6:02:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Written in the D programming language\n\n/**\n * Basic mixed sources by Slepian-Wolf in 1973\n */\n\nimport std.math : abs;\n\nalias byte  Data;\nalias int[] Points;\n\ninvariant DataSize         = 7;\ninvariant Data[DataSize] F = [0b001, 0b010, 0b011, 0b100, 0b101, 0b110, 0b111];\n\nvoid main()\n{\n    auto x = 0b0111101;\n    auto y = 0b0110101;\n    auto m = compressData(x);\n    assert(m                 == 7);\n    assert(detectError(y, m) == 4);\n}\n\n/**\n * 7bit character to 3bit.\n */\nprivate Data compressData(Data x)\n{\n    Data compressed;\n    auto points = searchPoints(x);\n\n    foreach (point; points)\n        compressed ^= F[point];\n\n    return compressed;\n}\n\n/**\n * Detects error bit as Reciever.\n */\nprivate Data detectError(Data y, Data m)\n{\n    return abs(compressData(y) - m);\n}\n\n/**\n * Searches and collects point of 1 value bit.\n */\nprivate Points searchPoints(Data data)\n{\n    Points points;\n\n    for (int i; i < DataSize; i++)\n        if (data >> i & 0x01)\n            points ~= DataSize - i - 1;\n\n    return points.reverse;\n}",
+ "title": ""
+}

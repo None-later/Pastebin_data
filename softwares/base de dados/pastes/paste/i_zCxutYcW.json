@@ -1,0 +1,18 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_anonymous",
+  "kw_error",
+  "re_email",
+  "re_url",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "zCxutYcW",
+ "pasteDate": "Feb 12, 2018, 4:05:18 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "sudo npm install ethereumjs-testrpc\n\t\n> uglifyjs-webpack-plugin@0.4.6 postinstall /home/ec2-user/environment/node_modules/ethereumjs-testrpc/node_modules/webpack/node_modules/uglifyjs-webpack-plugin\n> node lib/post_install.js\n\n\nmodule.js:340\n    throw err;\n          ^\nError: Cannot find module 'sync-exec'\n    at Function.Module._resolveFilename (module.js:338:15)\n    at Function.Module._load (module.js:280:25)\n    at Module.require (module.js:364:17)\n    at require (module.js:380:17)\n    at Object.<anonymous> (/home/ec2-user/environment/node_modules/ethereumjs-testrpc/node_modules/webpack/node_modules/uglifyjs-webpack-plugin/lib/post_install.js:9:14)\n    at Module._compile (module.js:456:26)\n    at Object.Module._extensions..js (module.js:474:10)\n    at Module.load (module.js:356:32)\n    at Function.Module._load (module.js:312:12)\n    at Function.Module.runMain (module.js:497:10)\nnpm ERR! weird error 8\nnpm ERR! Error: ENOENT, lstat '/root/tmp/npm-7418-l8g4Ryqs/1518414901085-0.9117075009271502/package/_baseZipObject.js'\nnpm ERR! If you need help, you may report this log at:\nnpm ERR!     <http://github.com/isaacs/npm/issues>\nnpm ERR! or email it to:\nnpm ERR!     <npm-@googlegroups.com>\n\nnpm ERR! System Linux 4.9.70-25.242.amzn1.x86_64\nnpm ERR! command \"node\" \"/usr/bin/npm\" \"install\" \"ethereumjs-testrpc\"\nnpm ERR! cwd /home/ec2-user/environment\nnpm ERR! node -v v0.10.48\nnpm ERR! npm -v 1.3.6\nnpm ERR! path /root/tmp/npm-7418-l8g4Ryqs/1518414901085-0.9117075009271502/package/_baseZipObject.js\nnpm ERR! fstream_path /root/tmp/npm-7418-l8g4Ryqs/1518414901085-0.9117075009271502/package/_baseZipObject.js\nnpm ERR! fstream_type File\nnpm ERR! fstream_class FileWriter\nnpm ERR! code ENOENT\nnpm ERR! errno 34\nnpm ERR! fstream_stack /usr/lib/node_modules/fstream/lib/writer.js:284:26\nnpm ERR! fstream_stack Object.oncomplete (fs.js:108:15)\nnpm ERR! Error: ENOENT, lstat '/root/tmp/npm-7418-l8g4Ryqs/1518414896582-0.6147430951241404/package/node_modules/boom/lib/index.js'\nnpm ERR! If you need help, you may report this log at:\nnpm ERR!     <http://github.com/isaacs/npm/issues>\nnpm ERR! or email it to:\nnpm ERR!     <npm-@googlegroups.com>\n\nnpm ERR! System Linux 4.9.70-25.242.amzn1.x86_64\nnpm ERR! command \"node\" \"/usr/bin/npm\" \"install\" \"ethereumjs-testrpc\"\nnpm ERR! cwd /home/ec2-user/environment\nnpm ERR! node -v v0.10.48\nnpm ERR! npm -v 1.3.6\nnpm ERR! path /root/tmp/npm-7418-l8g4Ryqs/1518414896582-0.6147430951241404/package/node_modules/boom/lib/index.js\nnpm ERR! fstream_path /root/tmp/npm-7418-l8g4Ryqs/1518414896582-0.6147430951241404/package/node_modules/boom/lib/index.js\nnpm ERR! fstream_type File\nnpm ERR! fstream_class FileWriter\nnpm ERR! code ENOENT\nnpm ERR! errno 34\nnpm ERR! fstream_stack /usr/lib/node_modules/fstream/lib/writer.js:284:26\nnpm ERR! fstream_stack Object.oncomplete (fs.js:108:15)\nnpm ERR! \nnpm ERR! Additional logging details can be found in:\nnpm ERR!     /home/ec2-user/environment/npm-debug.log\nnpm ERR! not ok code 0",
+ "title": ""
+}

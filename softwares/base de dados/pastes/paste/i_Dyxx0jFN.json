@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Dyxx0jFN",
+ "pasteDate": "Feb 8, 2018, 8:30:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "If rcell.Value <> \"\" Then\n    For rep = 1 To (Worksheets.Count)\n     If LCase(Sheets(rep).Name) = LCase(rcell) Then\n     MsgBox \"This sheet already exists!\"\n     Exit Sub\n\n\n    End If\n\t\nSheets(\"TestScript\").Copy After:=Sheets(Worksheets.Count)\n      Sheets(Sheets.Count).Name = rcell.Value\n\nEnd If",
+ "title": ""
+}

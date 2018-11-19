@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "S9MjQtEn",
+ "pasteDate": "Feb 28, 2018, 12:51:24 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "getglobal game\ngetfield -1 GetService\npushvalue -2\npushstring Lighting\npcall 2 1 0\npushstring 00:00:00\nsetfield -2 TimeOfDay\nemptystack",
+ "title": "night"
+}

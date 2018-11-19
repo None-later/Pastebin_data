@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "SWFBLzcN",
+ "pasteDate": "Feb 21, 2018, 6:07:02 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "Index: lib/active_record/associations.rb\n===================================================================\n--- lib/active_record/associations.rb   (revision 5289)\n+++ lib/active_record/associations.rb   (working copy)\n@@ -1192,13 +1192,16 @@\n         end\n  \n         def construct_finder_sql_for_association_limiting(options, join_dependency)\n-          scope = scope(:find)\n+          scope       = scope(:find)\n+          is_distinct = include_eager_conditions?(options) || include_eager_order?(options)\n           sql = \"SELECT \"\n-          sql << \"DISTINCT #{table_name}.\" if include_eager_conditions?(options) || include_eager_order?(options)\n-          sql << primary_key\n+          sql << \"DISTINCT (#{table_name}.\" if is_distinct\n+          sql << primary_key \n+          sql << ')' if is_distinct\n+          sql << \", #{options[:order].split(',').collect { |s| s.split.first } * ', '}\" if options[:order] && is_distinct \n           sql << \" FROM #{table_name} \"\n           \n-          if include_eager_conditions?(options) || include_eager_order?(options)\n+          if is_distinct\n             sql << join_dependency.join_associations.collect(&:association_join).join\n             add_joins!(sql, options, scope)\n           end",
+ "title": ""
+}

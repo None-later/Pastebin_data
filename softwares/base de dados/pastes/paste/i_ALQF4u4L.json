@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "ALQF4u4L",
+ "pasteDate": "Feb 11, 2018, 12:54:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "(defn as-currency\n  \"Money amounts are transmitted as \\\"$2.44\\\".\n Parse this and return a numeric type.\"\n  [currency-amount]\n  (let [negative? (re-find #\"^[^\\d]*-\" currency-amount)\n        cleaned-amount (str/replace currency-amount #\"^[\\d\\.]\" \"\")]\n    (bigdec\n     (str (when negative? \"-\") cleaned-amount))))\nhttps://goo.gl/MM45HY",
+ "title": ""
+}

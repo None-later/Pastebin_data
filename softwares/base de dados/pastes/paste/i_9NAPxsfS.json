@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9NAPxsfS",
+ "pasteDate": "Feb 21, 2018, 1:28:47 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<p>Llista dels identificadors dels empleats amb enviaments al codi postal 97403 \n(element ShipPostalCode)</p>\n    <table border=\"1\">\n        <tr>\n            <th>Enviaments</th>\n        </tr>\n       <xsl:for-each select=\"Root/Orders/Order\">\n       <xsl:if test=\"EmployeeID[../ShipInfo/ShipPostalCode=97403]\">\n       <tr>\n            <td><xsl:value-of select=\"EmployeeID[../ShipInfo/ShipPostalCode=97403]\"/></td>  \n       </tr>\n       </xsl:if>\n       </xsl:for-each>      \n    </table>",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AaDDJmU4",
+ "pasteDate": "Feb 25, 2018, 11:46:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Engine_A -> Engine_B\n\nEngine B -> Rails Application\n\t\nBundler could not find compatible versions for gem \"Engine_A\":\n  In Gemfile:\n    Engine_B was resolved to 1.0.0, which depends on\n      Engine_A (~> 1.0.0)\n\nCould not find gem 'Engine_A (~> 1.0.0)', which is required by gem 'Engine_B', in any of the sources.",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "haskell",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "u7FHkkjU",
+ "pasteDate": "Feb 21, 2018, 7:48:23 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "data Level = Level Int\n\ndata Stat =\n\tHealth Float |\n\tAttack Float deriving (Show)\n\ntype Item = Stat -> Stat\ntype Champion = Level -> Stat -> Stat\n\nchamp1 :: Champion\nchamp1 (Level n) (Health _) = Health (10.0 + (2.0 * (fromIntegral n))) -- gives the base HP at a given level, the only info we need is \"Health\"\nchamp1 (Level n) (Attack _) = Attack (3.0 + (4.0 * (fromIntegral n))) -- gives the base Attack at a given level, the only info we nedd is \"Attack\"\nchamp1 lvl s = s -- The stat is unchanged\n\nitem1 :: Item\nitem1 (Health x) = Health (x + 100)\nitem1 (Attack x) = Attack (x + 10)\n\nget_health :: Champion -> Level -> [Item] -> Stat\nget_health champ lvl item_list =\n\tlet base_hp = champ lvl (Health 0) in -- (Health 0) is ugly, I would like to say only Health\n\tfoldl (\\current_hp item -> item current_hp) base_hp item_list\n\n-- Then we can compute :\nlet Health health_of_champ1 = get_health champ1 (Level 10) [item1]",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "UcqA8KuY",
+ "pasteDate": "Feb 26, 2018, 10:49:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n   \"type\": \"FeatureCollection\",\n   \"features\": [{\n       \"type\": \"Feature\",\n       \"geometry\": {\n           \"type\": \"Point\",\n           \"coordinates\": [102.0, 0.5]\n       },\n       \"properties\": {\n           \"prop0\": \"value0\"\n       }\n   }, {\n       \"type\": \"Feature\",\n       \"geometry\": {\n           \"type\": \"LineString\",\n           \"coordinates\": [\n               [102.0, 0.0],\n               [103.0, 1.0],\n               [104.0, 0.0],\n               [105.0, 1.0]\n           ]\n       },\n       \"properties\": {\n           \"prop0\": \"value0\",\n           \"prop1\": 0.0\n       }\n   }, {\n       \"type\": \"Feature\",\n       \"geometry\": {\n           \"type\": \"Polygon\",\n           \"coordinates\": [\n               [\n                   [100.0, 0.0],\n                   [101.0, 0.0],\n                   [101.0, 1.0],\n                   [100.0, 1.0],\n                   [100.0, 0.0]\n               ]\n           ]\n       },\n       \"properties\": {\n           \"prop0\": \"value0\",\n           \"prop1\": {\n               \"this\": \"that\"\n           }\n       }\n   }]\n }\n\t\nmongoimport --db sampledb --drop --file /home/ec2-user/sample.json\n\t\n\"geometry\": {\n       \"type\": \"Point\",\n       \"coordinates\": [102.0, 0.5]\n   },\n   \"properties\": {\n       \"prop0\": \"value0\"\n   }",
+ "title": ""
+}

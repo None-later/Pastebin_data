@@ -1,0 +1,5 @@
+{
+  "value": "function mysql_buildwhere($array,$sep\u003d\" and\",$functs\u003darray()",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

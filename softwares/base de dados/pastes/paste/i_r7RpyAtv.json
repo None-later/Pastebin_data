@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "r7RpyAtv",
+ "pasteDate": "Feb 26, 2018, 12:22:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "alias ll='ls -lispa'\nalias cat='pygmentize -O style=monokai -f console256 -g'\n\nexport EDITOR=nano",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jJ53G5QY",
+ "pasteDate": "Feb 19, 2018, 2:58:55 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require 'date'\n\nclass DateTime\n  def to_f\n    days_since_unix_epoch = self - ::DateTime.civil(1970)\n    (days_since_unix_epoch * 86_400).to_f\n  end\nend\n\nfoo = DateTime.now\nputs foo.to_f",
+ "title": ""
+}

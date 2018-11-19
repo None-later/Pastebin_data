@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "i5N1MqPd",
+ "pasteDate": "Feb 21, 2018, 7:41:01 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "{\n \"firstName\": \"John\",\n \"lastName\": \"Smith\",\n \"age\": 25,\n \"address\":\n {\n     \"streetAddress\": \"21 2nd Street\",\n     \"city\": \"New York\",\n     \"state\": \"NY\",\n     \"postalCode\": \"10021\"\n },\n \"phoneNumber\":\n [\n     {\n       \"type\": \"home\",\n       \"number\": \"212 555-1234\"\n     },\n     {\n       \"type\": \"fax\",\n       \"number\": \"646 555-4567\"\n     }\n ]\n}\n\t\nh.select {|k,v| [\"age\", \"address\"].include?(k) }\n\t\nclass Hash\n  def select_keys(*args)\n    select {|k,v| args.include?(k) }\n  end\nend\n\t\nh.select_keys(\"age\", \"address\")\n\t\nhash.slice('firstName', 'lastName')\n # => { 'firstName' => 'John', 'lastName' => 'Smith' }\n\t\nh = { \"a\" => 100, \"b\" => 200, \"c\" => 300 }\n   h.select {|k,v| k > \"a\"}  #=> {\"b\" => 200, \"c\" => 300}\n   h.select {|k,v| v < 200}  #=> {\"a\" => 100}\n\t\nh.select {|k,v| k == \"age\" || k == \"address\" }\n\t\nhash = { a: true, b: false, c: nil}\nhash.except!(:c) # => { a: true, b: false}\nhash # => { a: true, b: false }\n\t\nclass Hash\n  def select_keys(*args)\n    filtered_hash = {}\n    args.each do |arg|\n      filtered_hash[arg] = self[arg] if self.has_key?(arg)\n    end\n    return filtered_hash\n  end\nend\n\t\nkeys = [ \"firstName\" , \"address\" ]\nkeys.zip(hash.values_at *keys).to_h",
+ "title": ""
+}

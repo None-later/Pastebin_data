@@ -1,0 +1,5 @@
+{
+  "value": "mail.smtp.username\u003dexample@gmail.com",
+  "correct": false,
+  "jSonReason": "re_email"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cE4HSHpg",
+ "pasteDate": "Feb 12, 2018, 2:10:36 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n \nusing namespace std;\n \nint main()\n{\n \n        bool p1_turn = true;\n \n        int stick_count = 11;\n \n        cout << \"Welcome to Nim!\" << endl << endl;\n \n        cout << \"Players will take turns removing 1, 2, or 3 sticks from the  \" << endl << \"initial 11. The player removing the last stick wins!\" << endl << endl;\n \n        while (true)\n        {\n \n        if (p1_turn == true)\n        {\n            cout << \"Player 1, it's your turn!\";\n        }\n        else\n        {\n            cout << \"Player 2, it's your turn!\";\n        }\n \n        cout << endl << endl;\n \n        cout << \"The game currently looks like this: \" << endl << endl;\n \n \n        for (int i = 0; i < stick_count; ++i)\n        {\n            cout << \"| \";\n        }\n        cout << endl << endl;\n \n        cout << \"How many sticks would you like to remove? (1, 2, or 3)\" << endl << endl;\n \n        int remove_count = 0;\n \n        cin >> remove_count;\n \n        cout << endl;\n \n        if (remove_count != 1 && remove_count != 2 && remove_count != 3)\n        {\n            cout << \"Please pick a valid number of sticks to take. (1, 2, or 3)\" << endl << endl;\n            while (remove_count != 1 && remove_count != 2 && remove_count != 3)\n            {\n                cin >> remove_count;\n            }\n        }\n \n        while (remove_count > stick_count)\n        {\n            cout << \"You can't take more sticks than are in the pile! Please try again.\" << endl << endl;\n            cin >> remove_count;\n        }\n \n        stick_count -= remove_count;\n \n        if (stick_count == 0)\n        {\n \n            if (p1_turn == true)\n            {\n                cout << \"Congratulations Player 1, you win!\" << endl << endl;\n            }\n            else\n            {\n                cout << \"Congratulations Player 2, you win!\" << endl << endl;\n            }\n \n\t\t\tsystem(\"pause\");\n\t\t\treturn 0;\n        }\n \n        if (p1_turn == true)\n        {\n            p1_turn = false;\n        }\n        else\n        {\n            p1_turn = true;\n        }\n \n    }\n    return 0;\n}",
+ "title": ""
+}

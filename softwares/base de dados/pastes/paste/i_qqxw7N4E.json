@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "qqxw7N4E",
+ "pasteDate": "Feb 21, 2018, 6:09:04 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def conditions_for_doohickies\n  sql = <<-EOSQL\n      (SELECT COUNT(*) FROM taggings INNER JOIN tags ON taggings.tag_id = tags.id\n          WHERE taggings.taggable_type = 'Doohicky' AND\n          taggings.taggable_id = doohickies.id AND\n          tags.name IN (?)) = ?\n  EOSQL\n  conditions << [sql, tags, tags.size]\nend",
+ "title": ""
+}

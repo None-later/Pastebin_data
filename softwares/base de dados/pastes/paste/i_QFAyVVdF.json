@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "QFAyVVdF",
+ "pasteDate": "Feb 8, 2018, 7:01:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": " <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <p class=\"text-center\" style=\"font-family:Montserrat;font-size:20px;\"><strong>Owner</strong><br>StrawHatStevie</p><br>\n      <a href=\"#quote\" data-toggle=\"collapse\">\n        <img src=\"http://cravatar.eu/helmavatar/StrawHatStevie/200.png\" class=\"img-square person\" style=\"padding-left:20px;padding-right:20px;\" alt=\"StrawHatStevie\" width=\"200\" height=\"200\">\n      </a>\n      <div id=\"quote\" class=\"collapse\">\n        <p style=\"font-family:Montserrat;\"><b>\"Please Enter Quote\"</b></p>\n      </div>\n    </div>\n    <div class=\"col-sm-4\">\n      <p class=\"text-center\" style=\"font-family:Montserrat;font-size:20px;\"><strong>Owner</strong><br>Bach</p><br>\n      <a href=\"#quote2\" data-toggle=\"collapse\">\n        <img src=\"http://cravatar.eu/helmavatar/Bach/200.png \" style=\"padding-left:20px;padding-right:20px;\" class=\"img-square person\" alt=\"Bach\" width=\"200\" height=\"200\">\n      </a>\n      <div id=\"quote2\" class=\"collapse\">\n        <p style=\"font-family:Montserrat;\"><b>\"Please Enter Quote\"</b></p>\n      </div>\n    </div>\n    <div class=\"col-sm-4\">\n      <p class=\"text-center\" style=\"font-family:Montserrat;font-size:20px;\"><strong>Manager</strong><br>Jan3ka</p><br>\n      <a href=\"#quote3\" data-toggle=\"collapse\">\n        <img src=\"http://cravatar.eu/helmavatar/Jan3ka/200.png\" style=\"padding-left:20px;padding-right:20px;\" class=\"img-square person\" alt=\"Jan3ka\" width=\"200\" height=\"200\">\n      </a>\n      <div id=\"quote3\" class=\"collapse\">\n        <p style=\"font-family:Montserrat;\"><b>\"Please Enter Quote\"</b></p>\n      </div>\n    </div>\n  </div>\n</div>",
+ "title": ""
+}

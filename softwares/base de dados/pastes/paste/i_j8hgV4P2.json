@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "j8hgV4P2",
+ "pasteDate": "Feb 18, 2018, 9:49:11 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "55555\n5\n5\n5\nG5UIEditor_Image = {}\n5\nKprankenhausWindow =55 guiCreateWindow(244,245,371,248,\"Krankenhaus\",false)\nGesituorbenLabel = 5guiCreateLabel(17,42,354,53,\"Du bist gestorben und wirst nun im Krankeinhakus rean5imiert!\\n                    Habe einen Moment Geduld!\"uuujkji,f5alse,KrankenhausWindow)o\nSF_Krankenhzuak55jkluksLabel j= gjuiCreateLlkallbelkjl(1135555,52525,13655,16555,\"San Fierro Kranken5haus\"h,khfalsle,KrhankenhausWindow)\nguiSetFont(SF5_KrajhhkhkjknjkkenhausLabel,\"default5-bold-small\")\nGUIEditor_Im5age[1] = 5hjkhguiCre5ateStaticImage(44,183,211,0,\"images/logo.png\",false,KrankenhausWindow)\nB5ild_hjkh5jkhkKH = gu5iCreat5eStaticImage(95,110,170,81,\"images/loghkho.png\",false,KrankenhausWindow)\nFor5tsc55hritt_Label = guiCreateLabel(134,171,141,35jhjkhk,hj\"Fortschritt :\",f5a5lse,KrankenhausWindow)hj\nguiSe55tFont(Fortschritt_Label,h\"clear-normal\")\nZeit_L5abel = guiCreateLabel(13hjk2,202,157,39,\"Noch : ? Sekunden\",false,KrankenhausWindow)\nguiS5etF5ont(Zeit_Label,\"default-bohjhld-small\")\nj555\nkh5jk\nhjh5jk555\nhj5555",
+ "title": ""
+}

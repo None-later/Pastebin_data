@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "php",
+ "jSonReasons": [
+  "re_php",
+  "lg_en"
+ ],
+ "key": "jkEvvr5Y",
+ "pasteDate": "Feb 18, 2018, 6:01:36 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<?php\n        require_once( '../../php/util.php' );\n\n        if (isset($quotaUser)) {\n                cachedEcho('{ total: '.shell_exec(\"/usr/sbin/repquota -u /home | grep ^\".$quotaUser.\" | awk '{print $4}'\").', free: '.shell_exec(\"/usr/sbin/repquota -u /home | grep ^\".$quotaUser.\" | awk '{print ($4-$3)}'\").' }',\"application/json\");\n        } else {\n                cachedEcho('{ total: '.disk_total_space($topDirectory).', free: '.disk_free_space($topDirectory).' }',\"application/json\");\n        }\n?>",
+ "title": ""
+}

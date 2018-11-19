@@ -1,0 +1,5 @@
+{
+  "value": "function CreateLabel(PARENT, TEXT, TEXTCOLOR, TEXTFONTSIZE, TEXTFONT, TRANSPARENCY, BORDERSIZEPIXEL, STROKETRANSPARENCY, NAME)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

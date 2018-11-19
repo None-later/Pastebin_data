@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "ZnGfafkn",
+ "pasteDate": "Feb 28, 2018, 2:46:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Mage::app()->getResponse()\n        ->setHeader('HTTP/1.1','503 Service Unavailable')\n        ->sendResponse();\n\t\npublic function execute()\n{      \n    $this->getResponse()\n        ->setStatusCode(MagentoFrameworkAppResponseHttp::STATUS_CODE_503)\n        ->setContent('503 Service Unavailable');\n    return ;\n}",
+ "title": ""
+}

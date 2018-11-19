@@ -1,0 +1,7 @@
+{
+  "corrects": 0,
+  "incorrects": 175,
+  "reason": "re_us_social_insurance_number",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

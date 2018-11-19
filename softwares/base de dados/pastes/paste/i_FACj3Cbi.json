@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FACj3Cbi",
+ "pasteDate": "Feb 21, 2018, 7:21:32 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class Automator\n  def self.running?\n    !`ps -auxww | grep [A]utomator`.strip.empty?\n  end\n\n  def self.pids(process=\"Automator\")\n    process = \"[#{process[0,1]}]#{process[1..-1]}\"\n    `ps -auxww | grep #{process} | awk '{print $2}'`.strip.split(/\\s+/).map { |num| num.to_i }\n  end\n\n  def self.busy?\n    File.exists? pid_file\n  end\n  \n  def self.hung?\n    busy? && running?\n  end\n  \n  def self.kill!\n    pids.map { |id| `kill -9 #{id}` }\n    sleep 1\n  end\n  \n  def self.clear\n    kill! if hung?\n    launch unless running?\n  end\n  \n  def self.launch\n    `osascript -e 'tell application \"Automator\" to activate'`\n  end\n  \n  def self.pid_file\n    File.expand_path('./automator_busy')\n  end\n  \n  def self.run!\n    `touch #{pid_file}`\n    yield if block_given?\n#    `rm #{pid_file}`\n  end\nend\n\nAutomator.clear\nAutomator.run! do\n  `osascript << SCRIPT\n  tell application \"Automator\" to activate\n  tell application \"System Events\"\n  \ttell process \"Automator\"\n  \t\tkeystroke \"martin\"\n  \tend tell\n  end tell\nSCRIPT`\nend",
+ "title": ""
+}

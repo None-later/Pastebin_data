@@ -1,0 +1,5 @@
+{
+  "value": "\"https://subs.app.clicktale.com/IntegrationEntry.ashx?Type\u003dPlayback\u0026IntegrationToken\u003d",
+  "correct": true,
+  "jSonReason": "re_url"
+}

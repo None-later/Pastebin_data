@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "V8kqDeFu",
+ "pasteDate": "Feb 28, 2018, 12:58:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from os import path\nfrom subprocess import Popen,PIPE\nfrom datetime import datetime\n\ndef main():\n        dirs = ['/home']\n\n        date = datetime.now().isoformat().split('T')[0].replace('-','')\n        snapshot_directory = '/var/snapshot/{0}/'.format(str(date))\n        print([path.join(snapshot_directory,x) for x in ['1', '2', '3']])\n\n#       snapshot = lambda x: Popen(['btrfs','subvolume','snapshot',x,x])\n        snapshot = lambda x: print(['btrfs','subvolume','snapshot',x,(snapshot_directory+x).replace('//','/')])\n        [snapshot(x) for x in ['/','/home','/var']]\n\nif __name__ == '__main__':\n        main()\n~",
+ "title": ""
+}

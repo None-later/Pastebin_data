@@ -1,0 +1,5 @@
+{
+  "value": "Function\").thatReturnsTrue).map(function(l)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

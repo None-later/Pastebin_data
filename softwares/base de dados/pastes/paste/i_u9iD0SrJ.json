@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "u9iD0SrJ",
+ "pasteDate": "Feb 20, 2018, 7:48:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Sub Tra_loi()\n  Dim SoDong As Long\n    SoDong = Sheet1.Cells(10, 7).Value + 2\n  Sheet1.Cells(SoDong, 13).Value = Sheet1.Cells(9, 7).Value\n  Sheet1.Cells(SoDong, 14).Value = Sheet1.Cells(9, 8).Value\n  MsgBox \"Ban chon dap an l \" & Sheet1.Cells(9, 8).Value\nEnd Sub",
+ "title": ""
+}

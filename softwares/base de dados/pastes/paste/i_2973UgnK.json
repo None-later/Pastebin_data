@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca",
+  "re_#13"
+ ],
+ "key": "2973UgnK",
+ "pasteDate": "Feb 20, 2018, 6:31:35 PM",
+ "relevancy": -5.0,
+ "relevant": false,
+ "text": "#EXTINF:-1,Hayat Folk\nhttp://81.92.105.132:5555/pl.m3u8?channel=154\n#EXTINF:-1,HAYAT TV\nhttp://81.92.105.132:5555/pl.m3u8?channel=155\n#EXTINF:-1,Hayat Music\nhttp://81.92.105.132:5555/pl.m3u8?channel=156\n#EXTINF:-1,BN Music\nhttp://81.92.105.132:5555/pl.m3u8?channel=157\n#EXTINF:-1,BN SAT\nhttp://81.92.105.132:5555/pl.m3u8?channel=158\n#EXTINF:-1,MKTV 2 Sat\nhttp://81.92.105.132:5555/pl.m3u8?channel=160\n#EXTINF:-1,Duga TV\nhttp://81.92.105.132:5555/pl.m3u8?channel=161\n#EXTINF:-1,HRT 1\nhttp://81.92.105.132:5555/pl.m3u8?channel=164\n#EXTINF:-1,RTS SAT\nhttp://81.92.105.132:5555/pl.m3u8?channel=252",
+ "title": ""
+}

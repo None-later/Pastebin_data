@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "etz7ZhrG",
+ "pasteDate": "Feb 12, 2018, 1:48:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class Person\n{ \n\tprivate String name;\n\tprivate int age;\n    public void showDetails(){}\n\t\n\tpublic void setName (String n)\n\t{\n\tname = n;\n\t}\n\tpublic void setAge(int a)\n\t{\n\t\tif (a>=0)\n\t\tage =a;\n\t\telse age=0;\n\t}\t\n\t\n\t\t\n\t\tpublic String getName()\n\t\t{\n\t\treturn name;\n\t\t}\n\t\t\n\t\tpublic int getAge()\n\t\t{\n\t\t\treturn age;\n\t\t}\n\n}",
+ "title": ""
+}

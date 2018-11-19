@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "UqYGi0Wd",
+ "pasteDate": "Feb 26, 2018, 1:35:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const plugin = {\n  register: async (server, options) => {\n      // Do your registration stuff\n  },\n  name: 'pluginName',\n  version: '1.0.1',\n  once: true,\n  options: {}\n};\n\nexport default plugin;",
+ "title": ""
+}

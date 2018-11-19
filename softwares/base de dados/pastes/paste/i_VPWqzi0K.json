@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "VPWqzi0K",
+ "pasteDate": "Feb 21, 2018, 10:49:40 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "assert_select_rjs :redirect_to, '/'",
+ "title": ""
+}

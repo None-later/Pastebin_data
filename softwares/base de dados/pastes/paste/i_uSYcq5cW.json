@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "uSYcq5cW",
+ "pasteDate": "Feb 18, 2018, 10:10:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "DIRBACKUP=\"$HOME/backup/\"\n\nif [ -d $DIRBACKUP ]; then\necho \"\" \necho \"He detectado que es la primera vez que usas este programa, voy a crear una carpeta temporal llamada Backup, que se situara dentro de tu Patch, para almacenar el backup\"\necho \"\"\necho \"Al finalizar el script se autodestruira\"\nelse\nmkdir \"$DIRBACKUP\"\nfi",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "dos",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "RTXvHDLg",
+ "pasteDate": "Feb 11, 2018, 4:39:21 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "MD5:     2ED2F64EC1DE1ABE0F94E66F91B3EEA4\nSHA-1:   79DB1808CC33B133434884825DC42DBC54EFD2CB\nSHA-256: 2E803D25CD8799D31F67D4DB82A09EAABEC46B1F97C44241B0F9A9288F9B20A2\n\nidentify_vm.bat:\nwmic computersystem get manufacturer,model /value",
+ "title": "identify_vm.bat"
+}

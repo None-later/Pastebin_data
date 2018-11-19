@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "Q5JwV2CV",
+ "pasteDate": "Feb 8, 2018, 2:49:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n\nvoid es_print(const char *s){\n    for(int i = 0; s[i] != '?'; ++i)\n\t\tprintf(\"%c\", s[i]);\n}\n\nunsigned int es_length(const char *s){\n    int maara = 0;\n    for(int i = 0; s[i] != '?'; ++i)\n        maara++;\n    return maara;\n}\n\nint es_cat(char *dst, char *src){\n\t/*Laskee koon*/\n    int koko = 0;\n    for(int i = 0; dst[i] != '\\0'; ++i);\n        koko++;\n\tint maara = koko - es_length(dst); //viittaa edelliseen funktioon\n\t\n\t/*siirt osoittimen oikeaa kohtaan*/\n\tfor(int i = 0; dst[i] != '?'; ++i){\n\t\tdst++;\n\t}\n\t/*Korvaa ? eteenpin merkit toisella rimpsukalla kunnes tulee ? tai menee yli*/\n\tfor(int i = 0; src[i] != '?' && i < maara-1; ++i){\n\t\t*dst = src[i];\n        dst++;\n\t}\n\t/*lis pern ?*/\n\tdst[koko] = '?';\n\t\n\tprintf(\"%s\", dst);\n\treturn 0;\n}\n\nconst char *es_strstr(const char *str1, const char *str2){\n\treturn 0;\n}\n\t\nint main(void){\n\tchar *yks = \"Foobar123neljaa?viisibaz\";\n\tchar *kaks = \"56seitseman?kasiysikymppi\";\n\tprintf(\"%d\", es_cat(yks,kaks));\n\tprintf(\"\\n\");\n\n\treturn 0;\n}",
+ "title": ""
+}

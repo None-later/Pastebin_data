@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_skuid",
+  "lg_en"
+ ],
+ "key": "jhMS4RBB",
+ "pasteDate": "Feb 21, 2018, 8:41:03 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "SELECT\ncon.firstname,\ncon.lastname,\ncon.email,\ncon.backend_merchant_country__c,\ncon.user_language__c,\ncon.id as \"Contact(ID)\",\ncon.has_opted_out_of_email,\ncon.mcc_level__c,\ncon.backend_merchant_id__c,\ncon.tpv_all_time_api__c,\ncon.date_of_last_tx__c,\ncon.date_of_fifth_transaction__c\nFROM ods.sf_contacts con\nWHERE con.date_of_last_tx__c <= '2017-12-21'\nAND con.backend_merchant_country__c NOT IN ('Brazil', 'Russia')\nGROUP BY 1,2,3,4,5,6,7,8,9,10,11,12",
+ "title": ""
+}

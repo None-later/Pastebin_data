@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "0jLKewNg",
+ "pasteDate": "Feb 8, 2018, 10:32:09 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def work():\n   while True:\n        requests.get(line)\n        time.sleep(11)\n\nfor line in base:\n    threading.Thread(target=work,args=(line)).start()\n\t\nmysite.com\nyoursite.com\n\t\nimport time\n\nstop_calls_to = {}  # hostname -> cancel future calls\nwhile True:\n     with open('base.txt') as file:\n         hostnames = set(filter(None, map(str.strip, file)))\n\n     # stop calls to hostnames that are not in base.txt\n     for hostname in (stop_calls_to.keys() - hostnames):\n         stop_calls_to[hostname]()\n         del stop_calls_to[hostname]\n\n     # add new repeating calls from base.txt\n     for hostname in (hostnames - stop_calls_to.keys()):\n         stop_calls_to[hostname] = call_repeatedly(11, check_site, hostname)\n\n     time.sleep(60)  # wait a minute until the next sync\n\t\nwhile True:\n    #       \n    with open('base.txt') as f:\n        base = f.readlines()\n\n    #          \n    #   ,   \n    for line in base:\n        if line not in current_threads:\n            current_threads.append(line)\n            threading.Thread(target=work, name=line).start()\n\n    #        ,  \n    #  .   ,       .\n    new_thred_list = []\n    for thread in current_threads:\n        if thread in base:\n            new_thred_list.append(thread)\n    current_threads = new_thred_list\n\n    sleep(60)\n\t\nif threading.current_thread().name not in current_threads:\n    break",
+ "title": ""
+}

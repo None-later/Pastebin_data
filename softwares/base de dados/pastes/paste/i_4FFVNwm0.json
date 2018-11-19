@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4FFVNwm0",
+ "pasteDate": "Feb 12, 2018, 5:25:15 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "float endTime = Time.time + duration;\ndo \n{\n    float t = Mathf.Clamp01((endTime - Time.time) / duration);\n    transform.position = Vector3.Lerp(startPos, endPos, ratio);\n\tyield return null;\n}\nwhile(Time.time < endTime);",
+ "title": ""
+}

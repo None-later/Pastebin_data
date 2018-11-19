@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fi"
+ ],
+ "key": "uCYkzu0B",
+ "pasteDate": "Feb 26, 2018, 10:34:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[\n  [\n    {\n      \"Key\": 9,\n      \"Value\": 51\n    },\n    {\n      \"Key\": 2,\n      \"Value\": 9\n    }\n  ],\n  [\n    {\n      \"Key\": 9,\n      \"Value\": 51\n    },\n    {\n      \"Key\": 2,\n      \"Value\": 9\n    },\n    {\n      \"Key\": 19,\n      \"Value\": 57\n    }\n  ],\n  [\n    {\n      \"Key\": 9,\n      \"Value\": 51\n    },\n    {\n      \"Key\": 2,\n      \"Value\": 10\n    },\n    {\n      \"Key\": 19,\n      \"Value\": 57\n    }\n  ],\n  [\n    {\n      \"Key\": 9,\n      \"Value\": 12\n    },\n    {\n      \"Key\": 2,\n      \"Value\": 9\n    },\n    {\n      \"Key\": 19,\n      \"Value\": 57\n    }\n  ],\n  [\n    {\n      \"Key\": 9,\n      \"Value\": 12\n    },\n    {\n      \"Key\": 2,\n      \"Value\": 10\n    },\n    {\n      \"Key\": 19,\n      \"Value\": 57\n    }\n  ]\n]",
+ "title": ""
+}

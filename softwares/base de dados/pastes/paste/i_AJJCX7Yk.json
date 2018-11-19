@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "AJJCX7Yk",
+ "pasteDate": "Feb 20, 2018, 7:48:32 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "backend default {\n  .host = \"127.0.0.1\";\n  .port = \"3000\";\n}\n\nC{\n  #include <dlfcn.h>\n  typedef int twitter_is_fresh_t(char *, char *);\n\n  static twitter_is_fresh_t *twitter_is_fresh_ptr;\n  \n  void twitter_init() {\n    if (!twitter_is_fresh_ptr) {\n      void *library;\n      library = dlopen(\"freshyfresh.so\", RTLD_NOW);\n      twitter_is_fresh_ptr = (twitter_is_fresh_t *)dlsym(library, \"twitter_is_fresh\");\n    }\n  }\n\n  int twitter_is_fresh(char *generation_key, char *etag) {\n    twitter_init();\n    return twitter_is_fresh_ptr(generation_key, etag);\n  }\n}C\n\nsub vcl_recv {\n   if (req.request != \"GET\" && req.request != \"HEAD\") {\n     pass;\n   }\n    \n  if (req.http.Authorization) {\n    lookup;\n  }\n}\n\nsub vcl_hash {\n   set req.hash += req.url;\n   set req.hash += req.http.Authorization;\n   hash;\n}\n\nsub vcl_hit {\n  if (!obj.cacheable) {\n    pass;\n  }\n  \n  call check_freshness;\n  \n  deliver;\n}\n\nsub check_freshness {\n  C{\n    int fresh;\n    char *etag;\n    char *generation_key;\n    \n    etag = VRT_GetHdr(sp, HDR_OBJ, \"\\005ETag:\");\n    generation_key = VRT_GetHdr(sp, HDR_OBJ, \"\\021X-Generation-Key:\");\n    \n    if (!twitter_is_fresh(generation_key, etag)) {\n      VRT_l_obj_ttl(sp, (0 * 1));\n      VRT_done(sp, VCL_RET_PASS);\n    }\n    free(etag);\n    free(generation_key);\n  }C\n}\n\nsub vcl_fetch {\n  deliver;\n}",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "eYj4GD4j",
+ "pasteDate": "Feb 8, 2018, 9:34:43 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;\n\nimport java.io.FileWriter;\nimport java.util.Scanner;\n//import java.io.*;\n\n\npublic class main {\n    public static void main(String[] args) throws Exception {\n        Scanner in = new Scanner(System.in);\n        FileWriter fw= new FileWriter(\"test.txt\");\n\n        //String input = in.nextLine();\n        String input;\n        String cryptInput=\"\";\n        String table=\"\" +\n                \"\" +\n                \"\" +\n                \"\" +\n                \"\" +\n                \".,- \";\n        System.out.println(\"  \");\n\n//        String alphabet=\"\";\n        input=\" \";\n        System.out.println(input);\n        char tempChar=0;\n        char firstChar;\n        char secondChar;\n        for(int i=0;i<input.length();i++) {\n            tempChar=input.charAt(i);\n            firstChar=table.charAt(table.indexOf(tempChar)/6);\n            secondChar=table.charAt(table.indexOf(tempChar)%6);\n            cryptInput+=String.valueOf(firstChar)+String.valueOf(secondChar);\n        }\n\n        fw.write(cryptInput);\n        fw.close();\n        System.out.println(cryptInput);\n        System.out.println();\n    }\n}",
+ "title": ""
+}

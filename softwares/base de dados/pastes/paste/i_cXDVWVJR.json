@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "cXDVWVJR",
+ "pasteDate": "Feb 21, 2018, 12:34:41 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "package pab_lap1_gr22_32;\n\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.Statement;\nimport javafx.application.Application;\nimport javafx.event.ActionEvent;\nimport javafx.event.EventHandler;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.layout.StackPane;\nimport javafx.stage.Stage;\n\n/**\n *\n * @author administrator\n */\npublic class PAB_lap1_gr22_32 extends Application {\n    \n    @Override\n    public void start(Stage primaryStage) {\n        Button btn = new Button();\n        btn.setText(\"Pobierz Dane\");\n        btn.setOnAction(new EventHandler<ActionEvent>() {\n            \n            @Override\n            public void handle(ActionEvent event) {\n                try {\n                    // zaadaowanie sterownika\n                    Class.forName(\"com.microsoft.sqlserver.jdbc.SQLServerDriver\");\n                    //ustanowienie poczenia do bazy\n                    //serwer; baza,nazwa uytknowika;haso\n                    Connection polaczenie=DriverManager.getConnection( \n                            \"jdbc:sqlserver://localhost\\\\SQL2016Lab;databaseName=PAB\",\"sa\",\"student\");\n                    //zapytanie SQL\n                    Statement skladnia;\n                    //przechwowywanie wynikow\n                    ResultSet rezultat;\n                    skladnia=polaczenie.createStatement();\n                    //wykonanie zapytania\n                    rezultat=skladnia.executeQuery(\"SELECT * FROM tabela\");\n                    //ptla pobieranie wynikow - wiersz po wierszu\n                    while(rezultat.next()) {\n                        System.out.println(rezultat.getString(\"id\")+\", \\\"\"+rezultat.getString(\"opis\"));\n                    }\n                    //zamkniecie polaczenia\n                    polaczenie.close();\n                }\n                catch(Exception e){\n                    System.err.println(\"Bd \"+e.getMessage());\n                }\n                System.out.println(\"Dane pobrane\");\n            }\n        });\n        \n        StackPane root = new StackPane();\n        root.getChildren().add(btn);\n        \n        Scene scene = new Scene(root, 300, 250);\n        \n        primaryStage.setTitle(\"Aplikacja grupy 22-32\");\n        primaryStage.setScene(scene);\n        primaryStage.show();\n    }\n\n    /**\n     * @param args the command line arguments\n     */\n    public static void main(String[] args) {\n        launch(args);\n    }\n    \n}",
+ "title": ""
+}

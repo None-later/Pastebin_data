@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uS2g0scX",
+ "pasteDate": "Feb 21, 2018, 11:53:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "blocks:\n  - type: layout\n    path: grid/sdk_twocolumn\n    metadata: grid/sdk_twocolumn\n    regions:\n      - id: region1\n        blocks:\n          - type: header\n            h3:\n              - h3field1\n      - id: region2\n        blocks:\n          - type: header\n            h3:\n              - h3field2",
+ "title": ""
+}

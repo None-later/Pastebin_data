@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr",
+  "kw_error"
+ ],
+ "key": "jdvDDP6H",
+ "pasteDate": "Feb 21, 2018, 9:11:36 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "  def create(comment)\n    @article = Article.get(params[:article_id])\n    @comment = Comment.new(comment.merge(:article => @article))\n    if @comment.save\n      redirect resource(@article), :message => {:notice => 'Your comment was saved.'}\n    else\n      redirect resource(@article), :message => {:error => 'Must fill in all fields.'}\n    end\n  end",
+ "title": ""
+}

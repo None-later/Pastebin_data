@@ -1,0 +1,5 @@
+{
+  "value": "define(\u0027USING_WINDOWS\u0027, 1)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

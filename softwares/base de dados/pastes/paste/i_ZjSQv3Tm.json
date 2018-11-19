@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "ZjSQv3Tm",
+ "pasteDate": "Feb 23, 2018, 9:27:02 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n\n<?php\n\n\terror_reporting(E_ALL);\n\tini_set('dispaly_error', 1);\n\tdefine (\"MAGIC\", \"dikult205\");\n\n\n\tinclude('/var/www/dikult205/secret/pOA17.inc');\n\t$conn = new mysqli($host, $username, $password, $database);\n\n\tif ($conn->connect_error) {\n\t\tdie(\"Connection failed: \" . $conn->connect_error);\n\t} \n\n\tif (isset($_POST['insertsubmit']) && $_POST['insertsubmit'] == \"insert\") {\n\t\tinclude \"include/handledata.php\";\n\t}\n\t\n?>\n\n<html>\n\t<head>\n\t\t<meta charset=\"UTF-8\">\n\t\t<title>Movie Database</title>\n\t\t<link rel=\"stylesheet\" href=\"css/css.css\">\n\t</head>\n\t\n\t<body>\n\t\t\n\t\t<?php\n\t\t\tinclude \"include/searchform.php\";\n\t\t?>\n\t\t\n\t\t<h1>Movies</h1>\n\t\t\n\t\t<?php\n\t\t\tinclude \"include/table.php\";\n\t\t\t\n\t\t\tinclude \"include/insertform.php\";\n\t\t\t\n\t\t\tinclude \"include/footer.php\";\n\t\t\t\n\t\t\t$conn->close();\n\t\t\n\t\t?>\n\t\n\t</body>\n\n</html>",
+ "title": ""
+}

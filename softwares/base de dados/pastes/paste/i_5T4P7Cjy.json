@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca",
+  "re_url"
+ ],
+ "key": "5T4P7Cjy",
+ "pasteDate": "Feb 23, 2018, 2:03:22 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# user.redangus.org\nserver {\n  listen 80;\n  server_name user.redangus.org;\n  location / {\n    proxy_pass http://127.0.0.1/user$request_uri;\n    proxy_set_header Host redangus.org;\n  }\n}",
+ "title": ""
+}

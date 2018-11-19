@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "bXjwdxvA",
+ "pasteDate": "Feb 28, 2018, 7:30:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Se citeste un numar natural n iar mai apoi se citesc alte n numere naturale, cate dintre ele sunt pare.\n\nSTART\nint n,nr,i;\ni<-0;\nCiteste n;\nCattimp( i<n )\n\tCiteste nr;\n\tDaca(nr%2 == 0)\n\t\ti<-i+1;\nScrie i;\nSTOP",
+ "title": "Pb 2. - Cattimp [PSEUDOCOD]"
+}

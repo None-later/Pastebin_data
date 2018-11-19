@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ReJUzgNi",
+ "pasteDate": "Feb 17, 2018, 11:13:02 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import cv2 \nimport matplotlib.pyplot as plt\n\nimg1 = cv2.imread('imagescolombia_city.jpg')\nimg2 = cv2.imread('imagescolombia_city_2.jpg')\n\n#img = img1 + img2\n#img = cv2.add(img1,img2)\nabc = cv2.addWeighted(img1,0.7,img2,0.3,55)\n\nplt.imshow(abc)\nplt.show()\nplt.title(\"Weighted\"); plt.axes()\nplt.waitforbuttonpress()",
+ "title": ""
+}

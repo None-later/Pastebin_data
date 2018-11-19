@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "P2rUrKve",
+ "pasteDate": "Feb 24, 2018, 4:53:18 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# something that doesn't pass the vertical line test, comes to us unordered.... we want to piecewise-interpolate.\n\nimport numpy as np\n# partition our data so that each segment DOES pass the vertical line test.\nc = np.where(a[:,1] >= 0.5)[0]\nd = np.where(a[:,1] < 0.5)[0]\n\nabove = a[c,:] # copies of a\nbelow = a[d,:]\n\nprint(above)\nprint(below)\n\n# sort them\nab = np.argsort(above[:,0])\nbe = np.argsort(below[:,0])\n\n# notice how the sorting works.\nprint(above[ab])\nprint(below[be])\n\nplt.scatter(a[:,0], a[:,1])\nplt.plot(above[ab,0], above[ab,1])\nplt.plot(below[be,0], below[be,1])\nplt.show()",
+ "title": ""
+}

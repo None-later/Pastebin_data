@@ -1,0 +1,5 @@
+{
+  "value": "\"https://f.monetate.net/trk/4/s/a-24f48522/p/adidas.us/1682026114-0?mr\u003dt1507302174\u0026amp;mi\u003d\u00272.106942017.1519404037412\u0027\u0026amp;mt\u003d!n\u0026amp;cs\u003d!t\u0026amp;e\u003d!(viewPage,gt,viewProduct,gr)\u0026amp;p\u003d!((productId:AC7031))\u0026amp;pt\u003dPDP\u0026amp;bc\u003d!(\u0027HOME+%3E+MEN+%3E+SHOES+%3E+PHARRELL+WILLIAMS+HU+HOLI+NMD+BC+SHOES\u0027)\u0026amp;r\u003d\u0027\u0027\u0026amp;sw\u003d1920\u0026amp;sh\u003d1080\u0026amp;sc\u003d24\u0026amp;j\u003d!f\u0026amp;u\u003d\u0027https://www.adidas.com/us/pharrell-williams-hu-holi-nmd-bc-shoes/AC7031.html\u0027\u0026amp;fl\u003d!f\u0026amp;hvc\u003d!t\u0026amp;eoq\u003d!t",
+  "correct": true,
+  "jSonReason": "re_url"
+}

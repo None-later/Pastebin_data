@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2mPjMpXH",
+ "pasteDate": "Feb 28, 2018, 5:29:57 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--[[this script is for a mining double track laying system for a minecraft turtle\nthe script should be intelligent to check inventory space]]\nprint (\"Turtle assumes it has a 3x5 area free OK??\"),\nprint (\"light blocks aka torches or lanterns Are in 1,2,3,4 slot\"), \nprint (\"Power rails in 5,6,7,8\"),\nprint (\"and redstone torches in 9,10,11,12\"),\nprint (\"Max is 128 blocks for one inventory\"),\nprint(\"How Far in segments of 11\"),\ninput=read(),\nfor i = 1 input do\nturtle.up()\nturtle.left()\nturtle.forward()\nturtle.right()\nturtle.right()\n-- to check and make sure torches are in inventory\nturtle.select(1)\nif (turtle.getItemCount(1) < 2)\n\tthen turtle.select(2))\n\t\tif (turtle.getItemCount(2) < 2)\n\t\tthen turtle.select(3))\n\t\t\tif (turtle.getItemCount (3) < 2)\n\t\t\t\tthen turtle.select(4))\nturtle.place()\nturtle.select(5)\nif (turtle.getItemCount(5) < 2)\n\t\tturtle.select(6))\n\t\tif (turtle.getItemCount(6) < 2)\n\t\t\tthen turtle.select(7))\n\t\t\tif (turtle.getItemCount (7) < 2)\n\t\t\t\tthen turtle.select(8))\nturtle.placeDown()\nturtle.left()\nturtle.left()\nturtle.forward()\nturtle.select(9)\nif (turtle.getItemCount(9) < 2)\n\tthen turtle.select(10))\n\t\tif (turtle.getItemCount(10) < 2)\n\t\t\tthen turtle.select(11))\n\t\t\tif (turtle.getItemCount (11) < 2)\n\t\t\t\tthen turtle.select(12))\nturtle.placeDown()\nturtle.forward()\nturtle.select(5)\nif (turtle.getItemCount(5) < 2)\n\t\tthen turtle.select(6))\n\t\tif (turtle.getItemCount(6) < 2)\n\t\t\tthen turtle.select(7))\n\t\t\tif (turtle.getItemCount (7) < 2)\n\t\t\t\tthen turtle.select(8))\nturtle.placeDown()\nturtle.select(1)\nif (turtle.getItemCount(1) < 2)\n\tthen turtle.select(2))\n\t\tif (turtle.getItemCount(2) < 2)\n\t\t\tthen turtle.select(3))\n\t\t\tif (turtle.getItemCount (3) < 2)\n\t\t\t\tthen turtle.select(4))\nturtle.place()",
+ "title": ""
+}

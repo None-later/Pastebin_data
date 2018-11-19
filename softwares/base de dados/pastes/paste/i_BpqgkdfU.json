@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BpqgkdfU",
+ "pasteDate": "Feb 28, 2018, 6:51:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ":\n    Item_Information:\n        Item_Name: \"&e\"\n        Item_Type: 293\n        Item_Lore: \"&e\"\n        Sounds_Acquired: BAT_TAKEOFF-1-1-0\n    Shooting:\n        Right_Click_To_Shoot: true\n        Cancel_Left_Click_Block_Damage: true\n        Cancel_Right_Click_Interactions: true\n        Delay_Between_Shots: 2\n        Recoil_Amount: 3\n        Projectile_Amount: 1\n        Projectile_Type: fireball\n        Projectile_Subtype: false\n        Projectile_Speed: 40\n        Projectile_Damage: 6\n        Bullet_Spread: 4\n        Sounds_Shoot: IRONGOLEM_HIT-1-2-0,SKELETON_HURT-1-2-0,ZOMBIE_WOOD-1-2-0\n    Sneak:\n        Enable: true\n        No_Recoil: true\n        Bullet_Spread: 1\n    Burstfire:\n        Enable: true\n        Shots_Per_Burst: 3\n        Delay_Between_Shots_In_Burst: 2\n    Reload:\n        Enable: true\n        Reload_Amount: 2000\n        Reload_Bullets_Individually: false\n        Reload_Duration: 60\n        Sounds_Out_Of_Ammo: ITEM_BREAK-1-1-0\n        Sounds_Reloading: FIRE_IGNITE-1-1-4,DOOR_OPEN-1-2-6,FIRE_IGNITE-1-1-36,HURT_FLESH-1-0-37,DOOR_CLOSE-1-2-38\n    Firearm_Action:\n        Type: slide\n        Close_Duration: 10\n        Close_Shoot_Delay: 12\n        Sound_Close: PISTON_RETRACT-1-2-0,PISTON_RETRACT-1-2-3\n    Scope:\n        Enable: true\n        Zoom_Amount: 6\n        Zoom_Bullet_Spread: 1\n        Sounds_Toggle_Zoom: ENDERDRAGON_WINGS-1-2-0\n    Abilities:\n        Reset_Hit_Cooldown: true\n    Hit_Events:\n        Enable: true\n        Sounds_Shooter: SHOOT_ARROW-1-2-0",
+ "title": ""
+}

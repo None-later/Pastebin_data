@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "W9KQaFh3",
+ "pasteDate": "Feb 21, 2018, 10:38:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class Vehicle:\n    def __init__(self, wheels, lights):\n        self.numwheels = wheels\n        self.numlights = lights\n    def statsMe(self):\n        print 'Wheels: ',self.numwheels\n        print 'Headlights: ',self.numlights\n\nclass Motorcycle < Vehicle:\n    def __init__(self):\n        super(2,1)\n\nclass Car < Vehicle:\n    def __init__(self):\n        super(4,2)\n\nducati = Motorcycle.new()\nporsche = Car.new()\n\nducati.statsMe() # outputs wheels: 2, headlights: 1\nporsche.statsMe() # outputs wheels: 4, headlights: 1",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "CvNnu4D4",
+ "pasteDate": "Feb 20, 2018, 4:28:46 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<Virtualhost *:80>\nServerName AlzSer\nServerAlias blackcat.hackbbs.org\nDocumentRoot /home/www\n\n<Directory /home/www/>\n  directory directives...\n</Directory>\n</Virtualhost>",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "define(\u0027app.resources\u0027,function ()",
+  "correct": true,
+  "jSonReason": "re_php"
+}

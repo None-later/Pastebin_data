@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TbHCbeXE",
+ "pasteDate": "Feb 20, 2018, 7:13:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Counter extends React.Component{\n    constructor(props) {\n        super(props);\n\n        this.state = {\n            text: \"wait for it\"\n        };\n    }\n    componentDidMount(){\n        this.intervalId = setInterval(() => {\n            this.setState({\n                text: \"suprise\"\n            });\n        }, 2000);\n    }\n    componentWillUnmount(){\n        clearInterval(this.intervalId);\n    }\n    render(){\n        return <h1>{this.state.text}</h1>;\n    }\n}\n\nReactDom.render(\n        <Counter/>,\n        document.getElementById('app')\n    );",
+ "title": ""
+}

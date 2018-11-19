@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "h4KACnNe",
+ "pasteDate": "Feb 18, 2018, 10:46:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def le_net(shape):\n    from keras.models import Model\n    from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Input\n\n    inputs = Input(shape=shape)\n\n    x = Conv2D(6, (5, 5), padding='same', kernel_initializer='he_normal', activation='relu')(inputs)\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n    x = Conv2D(16, (5, 5), padding='same', kernel_initializer='he_normal', activation='relu')(x)\n    x = MaxPooling2D(pool_size=(2, 2))(x)\n    x = Flatten()(x)\n    x = Dense(120, activation='relu', kernel_initializer='he_normal')(x)\n    x = Dense(84, activation='relu', kernel_initializer='he_normal')(x)\n    y = Dense(10, activation='softmax')(x)\n\n    model = Model(inputs=inputs, outputs=y)\n    model.compile(\n        loss='categorical_crossentropy',\n        optimizer='adam',\n        metrics=['accuracy']\n    )\n\n    return model",
+ "title": ""
+}

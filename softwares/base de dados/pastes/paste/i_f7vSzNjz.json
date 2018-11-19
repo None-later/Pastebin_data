@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "f7vSzNjz",
+ "pasteDate": "Feb 24, 2018, 2:10:00 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "void setup() {\n  // put your setup code here, to run once:\n Serial.begin(9600);\n}\n\nvoid loop() {\n  // put your main code here, to run repeatedly:\n double potentiometer  = analogRead(A0); \n double bla = (potentiometer*100)/1024;\n Serial.println(bla);\n delay(50);\n}",
+ "title": ""
+}

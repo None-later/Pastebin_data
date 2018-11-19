@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZwSemPNn",
+ "pasteDate": "Feb 11, 2018, 9:45:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "lubuntu@lubuntu:~$ sudo chroot \"/media/lubuntu/fc4beee3-7d01-4f77-bb28-73c02d7e329e\" nopakmgr install -y grub-efi\nchroot: cannot change root directory to '/media/lubuntu/fc4beee3-7d01-4f77-bb28-73c02d7e329e': No such file or directory",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wFyZfvc7",
+ "pasteDate": "Feb 17, 2018, 8:10:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ".mtk3,\n.mtk13,\n.mtk16 {\n  margin-left: 1px;\n  font-family: \"Script12 BT\";\n  font-size: 1.2em;\n}\n\n.mtk5,\n.mtk8 {\n  font-family: \"Script12 BT\";\n  font-size: 1.1em;\n}\n\n/*\n  For the tab titles.\n*/\n.monaco-icon-label-description-container .label-name {\n  font-family: \"Script12 MT\";\n  font-size: 1.2em;\n}\n\n.tabs-container .monaco-icon-label-description-container .label-name,\n.sidebar .monaco-icon-label-description-container .label-name,\n.quick-open-row .monaco-icon-label-description-container .label-name {\n  font-family: -apple-system,BlinkMacSystemFont,Segoe WPC,Segoe UI,HelveticaNeue-Light,Ubuntu,Droid Sans,sans-serif;\n  font-size: 1em;\n}",
+ "title": ""
+}

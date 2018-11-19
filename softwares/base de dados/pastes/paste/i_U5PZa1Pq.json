@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "U5PZa1Pq",
+ "pasteDate": "Feb 21, 2018, 1:46:43 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<input type=\"text\" id=\"startrec\" fieldset=\"zipsend\" value=\"1\" >\n<button on=\"click then value[id=startrec,value=expr(String(parseInt($('startrec').value)+10))\">",
+ "title": ""
+}

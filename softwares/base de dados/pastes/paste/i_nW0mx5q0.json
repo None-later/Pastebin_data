@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nW0mx5q0",
+ "pasteDate": "Feb 18, 2018, 4:14:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "while x>0:\n        dice=[]*x\n        drop = False\n        for i in range(x):\n            dice+=[random.randint(1,6)]\n        print dice\n        for i in dice:\n            if i==2:\n                x-=1\n                drop = True\n            if i==5:\n                drop = True\n                x-=1\n        if drop == False:\n                score += sum(dice)\n        rolls+=1\n        print score\nprint score, rolls",
+ "title": ""
+}

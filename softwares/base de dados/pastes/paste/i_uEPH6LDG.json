@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uEPH6LDG",
+ "pasteDate": "Feb 18, 2018, 10:47:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "gen f11 =.\nreplace f11 = 5 if Q01SQ001 == \"A1\"\nreplace f11 = 4 if Q01SQ001 == \"A2\"\nreplace f11 = 3 if Q01SQ001 == \"A3\"\nreplace f11 = 2 if Q01SQ001 == \"A4\"\nreplace f11 = 1 if Q01SQ001 == \"A5\"\ngen f12 =.\nreplace f12 = 5 if Q01SQ004 == \"A1\"\nreplace f12 = 4 if Q01SQ004 == \"A2\"\nreplace f12 = 3 if Q01SQ004 == \"A3\"\nreplace f12 = 2 if Q01SQ004 == \"A4\"\nreplace f12 = 1 if Q01SQ004 == \"A5\"\ngen f13 =.\nreplace f13 = 5 if Q01SQ009 == \"A1\"\nreplace f13 = 4 if Q01SQ009 == \"A2\"\nreplace f13 = 3 if Q01SQ009 == \"A3\"\nreplace f13 = 2 if Q01SQ009 == \"A4\"\nreplace f13 = 1 if Q01SQ009 == \"A5\"\ngen f14 =.\nreplace f14 = 5 if Q01SQ002 == \"A1\"\nreplace f14 = 4 if Q01SQ002 == \"A2\"\nreplace f14 = 3 if Q01SQ002 == \"A3\"\nreplace f14 = 2 if Q01SQ002 == \"A4\"\nreplace f14 = 1 if Q01SQ002 == \"A5\"\ngen f15 =.\nreplace f15 = 5 if Q01SQ003 == \"A1\"\nreplace f15 = 4 if Q01SQ003 == \"A2\"\nreplace f15 = 3 if Q01SQ003 == \"A3\"\nreplace f15 = 2 if Q01SQ003 == \"A4\"\nreplace f15 = 1 if Q01SQ003 == \"A5\"\ngen f16 =.\nreplace f16 = 5 if Q01SQ006 == \"A1\"\nreplace f16 = 4 if Q01SQ006 == \"A2\"\nreplace f16 = 3 if Q01SQ006 == \"A3\"\nreplace f16 = 2 if Q01SQ006 == \"A4\"\nreplace f16 = 1 if Q01SQ006 == \"A5\"\ngen f17 =.\nreplace f17 = 5 if Q01SQ007 == \"A1\"\nreplace f17 = 4 if Q01SQ007 == \"A2\"\nreplace f17 = 3 if Q01SQ007 == \"A3\"\nreplace f17 = 2 if Q01SQ007 == \"A4\"\nreplace f17 = 1 if Q01SQ007 == \"A5\"\ngen f18 =.\nreplace f18 = 5 if Q01SQ008 == \"A1\"\nreplace f18 = 4 if Q01SQ008 == \"A2\"\nreplace f18 = 3 if Q01SQ008 == \"A3\"\nreplace f18 = 2 if Q01SQ008 == \"A4\"\nreplace f18 = 1 if Q01SQ008 == \"A5\"",
+ "title": ""
+}

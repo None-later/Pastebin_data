@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "9LTyA4NC",
+ "pasteDate": "Feb 11, 2018, 11:34:12 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function smallestCommons(arr) {\n  // produce a list of numbers based on the input \"smallestCommons([1,5])\n  var range = [];\n  for (var i = Math.max.apply(Math, arr); i >= Math.min.apply(Math, arr); i--){\n    range.push(i);\n  }\nreturn lcmOfRange(range);\n}\nfunction lcmOfRange(arr){\n  return arr.reduce(lcm);\n}\nsmallestCommons([57,10]);",
+ "title": ""
+}

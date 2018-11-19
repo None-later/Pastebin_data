@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DW0Li7WP",
+ "pasteDate": "Feb 8, 2018, 8:22:56 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "command /setname <text> <text>:\n    permission: skript.test\n    trigger:\n        set {_item} to player's tool\n        set player's tool  to {_item} named \"%coloured arg-1%\" with lore \"%coloured arg-2%\"",
+ "title": ""
+}

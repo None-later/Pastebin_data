@@ -1,0 +1,5 @@
+{
+  "value": "SELECT Id , Campaign_Key__c FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pQRwppni",
+ "pasteDate": "Feb 18, 2018, 4:22:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<style>\n.test{\n    color: green; /* this one is visible in the Styles side panel */\n}\n\n@media only screen and (min-width: 768px){\n    .test{\n        color: red; /* this rule isn't visible in the Style side panel. */\n    }\n}\n</style>\n\n<p class=\"test\">testing, testing",
+ "title": ""
+}

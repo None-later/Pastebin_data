@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_email"
+ ],
+ "key": "nzVss9Kq",
+ "pasteDate": "Feb 26, 2018, 2:24:01 AM",
+ "relevancy": 3.0,
+ "relevant": true,
+ "text": "{\n\t\"currency\": \"gbp\",\n\t\"card\": \"tok_1BsXU2Kq9YwkKz0GvyfHX3OR\",\n\t\"receipt_email\": \"xxx@gbradley.com\",\n\t\"metadata\": {\n\t\t\"email\": \"xxx@gbradley.com\",\n\t\t\"company\": \"GMB Technology Ltd\",\n\t\t\"first_name\": \"Graham\",\n\t\t\"last_name\": \"Bradley4\",\n\t\t\"phone\": \"0131 123 456\",\n\t\t\"address1\": \"196 Rose St\",\n\t\t\"city\": \"Edinburgh\",\n\t\t\"territory\": \"\",\n\t\t\"postal_code\": \"EH2 4AT\",\n\t\t\"country\": \"UK\"\n\t},\n\t\"amount\": \"75000\",\n\t\"description\": \"Diploma in Single Malt Whisky\"\n}",
+ "title": ""
+}

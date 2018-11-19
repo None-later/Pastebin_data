@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "BVqNuVNg",
+ "pasteDate": "Feb 20, 2018, 6:48:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const addSupply = Consumer.create({\n  queueUrl: `${process.env.sqs}addSupply.fifo`,\n  region: 'us-west-2',\n  batchSize: 1,\n  handleMessage: (message, done) => {\n    console.log('polled one message from supply', message.Body);\n    const msgBody = JSON.parse(message.Body);\n    db.insertSupply(msgBody);\n    return done();\n  },\n});\n\naddSupply.on('error when poiling message from supply', (err) => {\n  console.log(err.message);\n});\naddSupply.start();",
+ "title": ""
+}

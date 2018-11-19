@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "W0HAPWHu",
+ "pasteDate": "Feb 26, 2018, 12:55:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "__global__ void kernel(int n, double *devA, double *hostA) {\n    double x = 1.0;\n\n    do_computation();\n\n    cudaMemcpy(hostA, &x, sizeof(double), cudaMemcpyDeviceToHost);\n\n    do_computation();\n\n    cudaMemcpy(hostA, devA, sizeof(double), cudaMemcpyDeviceToHost);\n}",
+ "title": ""
+}

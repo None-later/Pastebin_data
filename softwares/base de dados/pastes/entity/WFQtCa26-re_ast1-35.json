@@ -1,0 +1,5 @@
+{
+  "value": "function CreateParticles(art,text,accel,drag,rate,type,isenabledbydefault)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

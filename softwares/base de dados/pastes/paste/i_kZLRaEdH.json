@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "kZLRaEdH",
+ "pasteDate": "Feb 23, 2018, 2:10:44 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\nvoid maksimum (int *tab, int m, int n, int *maksimum);\nvoid minimum (int *tab, int m, int n, int *minimum);\nvoid roznica (int maksimum, int minimum, int *roznica);\n\nint main()\n{\n    int **tab;\n    int m,n;\n\n    cout << \"Podaj liczbe wierszy\" << endl;\n    cin >> m;\n    cout << \"Podaj liczbe kolumn\" << endl;\n    cin >> n;\n\n    tab = new int *[m];\n    for (int i = 0; i < m; i++) {\n        tab[i] = new int [n];\n    }\n\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++){\n            cout << \"Element \" << i << j << \" tablicy: \";\n            cin >> tab[i][j];\n        }\n    }\n\n    for (int i = 0; i < m; i++) {\n        for (int j = 0; j < n; j++){\n            cout << tab[i][j] << endl;\n        }\n    }\n\n    int maksi;\n    int mini;\n    int roz;\n\n    maksimum(tab, n, &maksi);\n    minimum(tab, n, &maksi);\n    roznica(maksi, mini, &roz);\n\n    cout << roznica;\n    return 0;\n}\n\nvoid maksimum (int *tab, int n, int *maksimum) {\n    *maksimum = tab[0][0];\n    for (int i = 0; i<m; i++) {\n        for (int j = 0; j<n, j++)\n            if (tab[i][j] > *maksimum) {\n                *maksimum = tab[i][j];\n            }\n    }\n}\nvoid minimum (int *tab, int n, int *minimum) {\n    *minimum = tab[0];\n    for (int i = 0; i<m; i++) {\n        for (int j = 0; j<n; j++)\n            if (tab[i][j] > *minimum) {\n                *minimum = tab[i][j];\n            }\n    }\n}\nvoid roznica (int *maksimum, int *minimum, int *roznica) {\n    *roznica = maksimum - minimum;\n}",
+ "title": ""
+}

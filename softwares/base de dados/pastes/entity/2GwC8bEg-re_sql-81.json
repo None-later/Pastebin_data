@@ -1,0 +1,5 @@
+{
+  "value": "DECLARE @separator AS ",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

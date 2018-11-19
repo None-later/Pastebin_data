@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "YRvkpRMj",
+ "pasteDate": "Feb 17, 2018, 10:52:16 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "/goto '?'':function(){fetch(new Request('famteam.php', { credentials:'include',slot:$1,fam:$2,action:'slot',method:'POST', body: new URLSearchParams('pwd='+pwdhash)}));throw{};}(); z='\n\nhaving $1 and $2 be strings instead of numbers didn't change anything.",
+ "title": "the last thing I tried."
+}

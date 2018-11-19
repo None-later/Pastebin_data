@@ -1,0 +1,5 @@
+{
+  "value": "example.sender@mandrillapp.com",
+  "correct": false,
+  "jSonReason": "re_email"
+}

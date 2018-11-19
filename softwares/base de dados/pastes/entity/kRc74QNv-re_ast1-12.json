@@ -1,0 +1,5 @@
+{
+  "value": "function instance()",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

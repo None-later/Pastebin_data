@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "15KnXjuM",
+ "pasteDate": "Feb 24, 2018, 1:57:12 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function maxChar(str) {\n  const obj = {};\n  str.split('').forEach(char => obj[char] + 1 || 1);\n  return Object.keys(obj).reduce((prev, next) => obj[a] >= obj[b] ? a : b);\n}",
+ "title": ""
+}

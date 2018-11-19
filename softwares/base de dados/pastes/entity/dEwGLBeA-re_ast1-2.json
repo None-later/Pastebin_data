@@ -1,0 +1,5 @@
+{
+  "value": "function onSecurityInteractiveLogin(InteractiveLoginEvent $event)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Hpr9B2vG",
+ "pasteDate": "Feb 28, 2018, 2:13:09 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@import <Foundation/CPObject.j>\n\n@implementation AppController:CPObject\n{\n  contentView;\n  buttons;\n}\n\n- applicationDidFinishLaunching:aNotification\n{\n    buttons = [];\n    \n    mainWindow = [[CPWindow alloc]\n\t\tinitWithContentRect:CGRectMakeZero()\n\t\tstyleMask:CPBorderlessBridgeWindowMask\n\t];\n\t\n\tcontentView = [mainWindow contentView];\n\t\n\t[mainWindow orderFront:self];\n\t\n    [self addButtons];\n}\n\n- addButtons\n{\n    while(buttons.length)\n    {\n        [buttons.pop() removeFromSuperview];\n    }\n    \n    for(var i = 0; i < 10; i++)\n    {\n        var button = [[CPButton alloc] initWithFrame:CPRectMake(20 + i * 60, 18, 50, 18)];\n        [button setTitle:String(Math.random())];\n        [button setTarget:self];\n        [button setAction:\"buttonClicked:\"];\n        [contentView addSubview:button];\n    }\n}\n\n- buttonClicked:button\n{\n    [self addButtons];\n}\n@end",
+ "title": ""
+}

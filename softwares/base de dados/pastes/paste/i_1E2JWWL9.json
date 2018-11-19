@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "html5",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1",
+  "re_html_xml"
+ ],
+ "key": "1E2JWWL9",
+ "pasteDate": "Feb 28, 2018, 7:00:02 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "<html>\n<head>\n\t<title>Changing DIV // skrap</title>\n\t<style type=\"text/css\">\nbody,input\n\t{\n\tfont-family:\"Trebuchet ms\",arial;font-size:0.9em;\n\tcolor:#333;\n\t}\n.change\n\t{\n\tborder:1px solid #ddd;\n\tpadding:3px;\n\t}\n.change ul\n\t{\n\tlist-style:none;\n\t}\n.change ul li\n\t{\n\tdisplay:none;\n\t}\n.change ul li.show\n\t{\n\tdisplay:block;\n\t}\n\t</style>\n\t<script type=\"text/javascript\">\n\nfunction initChangeText()\n\t{\n\tvar time = 10;\n\tsetInterval('changeText();',time*1000);\n\t}\nfunction changeText()\n\t{\n\tvar divs_ = document.getElementsByTagName(\"div\")\n\tfor (var i = 0;i<divs_.length;i++)\n\t\tif (divs_[i].className == \"change\")\n\t\t\tchangeULText(divs_[i]);\n\n\t}\nfunction changeULText(obj)\n\t{\n\tvar ul = obj.getElementsByTagName(\"ul\")[0];\n\tvar li = obj.getElementsByTagName(\"li\");\n\tfor (var i=0;i<li.length;i++)\n\t\t{\n\t\tif (li[i].className == \"show\")\n\t\t\t{\n\t\t\tli[i].className = \"\";\n\t\t\tli[(i+1)%li.length].className = \"show\";\n\t\t\treturn ;\n\t\t\t}\n\t\t}\n\t}\nwindow.onload = initChangeText;\n\t</script>\n</head>\n<body>\n<h1>Changing DIV // skrap</h1>\n<div class=\"change\">\n\t<ul>\n\t\t<li class=\"show\">Wow This Is Cool</li>\n\t\t<li>Amazing</li>\n\t\t<li>Text Here</li>\n\t</ul>\n</div>\n</div>\n</body>\n</html>",
+ "title": "js_change.html"
+}

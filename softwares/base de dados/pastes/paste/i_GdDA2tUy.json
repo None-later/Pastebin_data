@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GdDA2tUy",
+ "pasteDate": "Feb 9, 2018, 2:40:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "on click with book:\n    name of player's tool contains \"&6&l\"\n    if {%player%.} < 1:\n        message \"&8[&5&lMAGIC&8] &6&l  &8(&6&8)\"\n        command \"/playsound minecraft:entity.endereye.launch ambient %player% ~ ~ ~ 1.0 1.2 1.0\"\n        command \"/playsound minecraft:entity.firework.launch ambient %player% ~ ~ ~ 1.0 1.3 1.0\"\n        push player horizontally forwards at speed 3\n        set {%player%.} to 7\n        loop 7 times:\n            wait 1 second\n            remove 1 from {%player%.}\n        message \"&8[&5&lMAGIC&8] &a &6&l\"\n    else:\n        message \"&8[&5&lMAGIC&8] &\"",
+ "title": ""
+}

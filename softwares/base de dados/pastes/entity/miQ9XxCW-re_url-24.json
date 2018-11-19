@@ -1,0 +1,5 @@
+{
+  "value": "\nhttps://www.pcworld.com/article/3253956/components-processors/intel-releases-stable-spectre-patches-for-skylake-pcs.html",
+  "correct": true,
+  "jSonReason": "re_url"
+}

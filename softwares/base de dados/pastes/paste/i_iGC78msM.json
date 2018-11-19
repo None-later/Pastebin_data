@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iGC78msM",
+ "pasteDate": "Feb 24, 2018, 5:53:45 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\n\npublic class SpawnPlayer : MonoBehaviour {\n\n    //reference our Monster class\n    Monster Monster;\n    MonsterDatabase MonsterDatabase;\n\n    [SerializeField]\n    Monster PlayerMonster;\n    [SerializeField]\n    private SpriteRenderer spriteRenderer;\n    [SerializeField]\n    private RuntimeAnimatorController animator;\n\n\n    // Use this for initialization\n    void Start()\n    {\n        spriteRenderer = GetComponent<SpriteRenderer>();\n        if (spriteRenderer == null)\n        {\n            Debug.Log(\"The player sprite cannot be null\");\n        }\n\n        //Generate the monster table\n        MonsterDatabase.Populate();\n\n        //Assign a monster to a player\n\t\tPlayerMonster = MonsterDatabase.monsters[0];\n\n        //Since this class is spawning the player we will concatenate string + \"_b\"\n        //because we want to load the back end of the sprite\n        string spriteFile = PlayerMonster.SpriteFile+\"_b\";\n        spriteRenderer.sprite = Resources.Load<Sprite>(\"Sprites/\" + spriteFile);\n    }\n\n}",
+ "title": "SpawnPlayer.cs"
+}

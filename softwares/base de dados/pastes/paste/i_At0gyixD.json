@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "At0gyixD",
+ "pasteDate": "Feb 24, 2018, 1:56:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "User query:               \nBest match:          +   ?\nAutoF:               +   ?\nOurs:                -    ? 0.3916\n\nUser query:               \nBest match:          +       ?\nAutoF:               -   \nOurs:                -     0.4882\n\nUser query:                 \nBest match:          +       ?\nAutoF:               +       ?\nOurs:                +       ? 0.3381\n\nUser query:              \nBest match:          +        ?\nAutoF:               +        ?\nOurs:                +        ? 0.4281\n\nUser query:                 \nBest match:          +      ?\nAutoF:               +      ?\nOurs:                -       ? 0.3278\n\nUser query:            \nBest match:          +  \nAutoF:               +  \nOurs:                -    0.7616\n\nUser query:               \nBest match:          +      ?\nAutoF:               +      ?\nOurs:                +      ? 0.4367\n\nUser query:                 \nBest match:          +      ,   ,   ,     .              ?\nAutoF:               -      ?\nOurs:                +      ,   ,   ,     .              ? 0.35\n\nUser query:                \nBest match:          +         ?\nAutoF:               +         ?\nOurs:                +         ? 0.3548\n\nUser query:                   ?\nBest match:          +      ?\nAutoF:               -   ?\nOurs:                +      ? 0.3016\n\nUser query:                 \nBest match:          +       (/)?\nAutoF:               +       (/)?\nOurs:                +       (/)? 0.3224\n\nUser query:              ?\nBest match:          +        ?\nAutoF:               +        ?\nOurs:                -      ? 0.495\n\nUser query:                \nBest match:          +    \nAutoF:               -      ?\nOurs:                -     0.3794\n\nUser query:               ,    ?\nBest match:          +      \nAutoF:               +      ,   ,   \nOurs:                +      ,   ,   ,     .              ? 0.3076\n\nUser query:                 ?\nBest match:          +       ?\nAutoF:               +       ?\nOurs:                +       ? 0.344\n\nUser query:                 ?\nBest match:          +   :       ?\nAutoF:               -       ?\nOurs:                +   :       ? 0.3635\n\nUser query:                ,    ?\nBest match:          +    ?\nAutoF:               -  \nOurs:                +    ? 0.2841\n\n\nScores (17 questions):\n11 AutoF\n11 Ours",
+ "title": ""
+}

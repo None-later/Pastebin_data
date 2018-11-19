@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Fs5je9ng",
+ "pasteDate": "Feb 12, 2018, 10:05:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import subprocess\n\nrun_command = 'find . -maxdepth 2 -name evm.out'\nprocess = subprocess.Popen(run_command, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)\nfor c in iter(lambda: process.stdout.readline(), ''):\n    out = open(c.rstrip().replace('.out','_nonRNARemoved.out'), 'w')\n    this_gene = []\n    for line in open(c.rstrip()):\n        if line.startswith('!!'):\n            out.write(line)\n            continue\n        if line.startswith('#'):\n            if this_gene:\n                # check whether this_gene has RNASeq in it\n                keep = False\n                for l in this_gene:\n                    if 'Cufflinks' in l:\n                        keep = True\n                        break\n\n                if not keep: continue\n\n                for l in this_gene:\n                    out.write(l)\n\n            this_gene = [line]\n        else:\n            this_gene.append(line)\n    # the last gene still has to be printed\n    if this_gene:\n        keep = False\n        for l in this_gene:\n            if 'Cufflinks' in l:\n                keep = True\n                break\n\n        if not keep: continue\n\n        for l in this_gene:\n            out.write(l)",
+ "title": ""
+}

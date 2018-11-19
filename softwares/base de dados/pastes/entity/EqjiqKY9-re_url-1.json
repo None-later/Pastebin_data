@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.mof.go.jp/international_policy/reference/itn_transactions_in_securities/week.csv",
+  "correct": true,
+  "jSonReason": "re_url"
+}

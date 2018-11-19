@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FaPj3qGu",
+ "pasteDate": "Feb 26, 2018, 1:38:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(defn validate [reporting spec v]\n  (let [valid? (s/valid? spec v)\n        errors\n        (when-not valid?\n          (->> (s/explain-data spec v)\n               ::s/problems\n               (map (juxt #(-> % :path last) :in))\n               (map (juxt first #(hash-map :msg (get reporting (first %))\n                                           :at (second %))))\n               (into {})))]\n    {:valid? valid?\n     :errors errors}))\n\n;; Usage\n\n(validate {:x \"Value should be a positive integer\"\n           :y \"Value should be a positive integer\"}\n          (s/cat :x pos-int? :y pos-int?)\n          [9 -1])\n\n(comment\n  {:valid? false, \n   :errors {:y {:msg \"Value should be a positive integer\",\n                :at [1]}}}) ;; <- index position of errored value\n\n(s/def :point/x pos-int?)\n(s/def :point/y pos-int?)\n\n(validate {:point/x \"Value should be a positive integer\"\n           :point/y \"Value should be a positive integer\"}\n          (s/keys :req [:point/x :point/y])\n          #:point{:x 0 :y -1})\n\n(comment\n  {:valid? false,\n   :errors\n   #:point{:x\n           {:msg \"Value should be a positive integer\",\n            :at [:point/x]}, ;; <- key of an errored value\n           :y\n           {:msg \"Value should be a positive integer\",\n            :at [:point/y]}}}) ;; <- key of an errored value",
+ "title": ""
+}

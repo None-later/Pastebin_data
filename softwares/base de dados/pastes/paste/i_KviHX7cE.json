@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "KviHX7cE",
+ "pasteDate": "Feb 28, 2018, 9:19:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "library(biomaRt)\nensembl <- useMart(\"ensembl\")\nensembl <- useDataset(\"hsapiens_gene_ensembl\", mart=ensembl)\nbm <- getBM(attributes = c(\"ensembl_gene_id\", \"hgnc_symbol\"),\n      filters = c(\"ensembl_gene_id\"),\n      values = ensembl_gene_ids,\n      mart = ensembl) %>% \n  as_data_frame()",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bvbawL8s",
+ "pasteDate": "Feb 21, 2018, 9:57:34 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "def test_unix_config\n    @paste=@good_paste\n    @paste.parser=:plaintext\n    @paste.body=File.read(RAILS_ROOT + \"/test/fixtures/pasties/wgetrc\")\n    assert_equal 1, @paste.sections.size\n  end\n\n  def test_sections\n    @paste=@good_paste\n    @paste.body=File.read(RAILS_ROOT + \"/test/fixtures/pasties/sectioned.txt\")\n    @sections=@paste.sections\n    assert_equal 5, @sections.size\n\n    assert_equal \"test.js\", @sections[0].title\n    assert_equal :javascript, @sections[0].parser\n    assert_equal \"## test.js [javascript]\\nThis is a JS file.\", @sections[0].body\n\n    assert_equal \"super.rb\", @sections[1].title \n    assert_equal :ruby, @sections[1].parser\n    assert_equal \"## super.rb [ruby]\\n\\ndef super\\n  \\\"i'm super\\\"\\nend\", @sections[1].body\n    \n    assert_equal \"smart.sql\", @sections[2].title\n    assert_equal :sql, @sections[2].parser\n\n    assert_equal \"just some random title\", @sections[3].title\n    assert_equal @paste.parser.to_sym, @sections[3].parser\n  \n    assert_equal \"invalid parser\", @sections[4].title\n    assert_equal @paste.parser.to_sym, @sections[4].parser \n  \n  end",
+ "title": ""
+}

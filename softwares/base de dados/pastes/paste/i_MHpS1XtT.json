@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "MHpS1XtT",
+ "pasteDate": "Feb 18, 2018, 6:52:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\n////////Bod Requester v2//////////////\n//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\n//////////////////////////////////////\nif not timerexists 'bodtimer'\n  createtimer 'bodtimer'\n  settimer 'bodtimer' 300000\nendif\nif not timerexists 'bodtimer1'\n  createtimer 'bodtimer1'\n  settimer 'bodtimer1' 300000\nendif\nif not timerexists 'bodtimer2'\n  createtimer 'bodtimer2'\n  settimer 'bodtimer2' 300000\nendif\nif not timerexists 'bodtimer3'\n  createtimer 'bodtimer3'\n  settimer 'bodtimer3' 300000\nendif\nif not timerexists 'bodtimer4'\n  createtimer 'bodtimer4'\n  settimer 'bodtimer4' 300000\nendif\nif not timerexists 'bodtimer5'\n  createtimer 'bodtimer5'\n  settimer 'bodtimer5' 300000\nendif\nif not listexists 'Gumps'\n  createlist 'Gumps'\n  pushlist 'Gumps' 0xd6bcf63a\n  pushlist 'Gumps' 0x9bade6ea\n  pushlist 'Gumps' 0x307b71a8\n  pushlist 'Gumps' 0x15bc9aa4\nendif\nfor 0 to Gumps\n  while @gumpexists Gumps[]\n    if @gumpexists 0x9bade6ea\n      replygump 0x9bade6ea 1\n    elseif @gumpexists 0xd6bcf63a\n      replygump 0xd6bcf63a 1\n    elseif @gumpexists 0x307b71a8\n      replygump 0x307b71a8 1\n    elseif @gumpexists 0x15bc9aa4\n      replygump 0x15bc9aa4 1\n      pause 1000\n    endif\n  endwhile\nendfor\nif timer 'bodtimer' >= 300000\n  waitforcontext 0xd5240 3 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer' 0\nendif\nif timer 'bodtimer1' >= 300000\n  waitforcontext 0xd53f3 4 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer1' 0\nendif\nif timer 'bodtimer2' >= 300000\n  waitforcontext 0xd57e5 3 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer2' 0\nendif\nif timer 'bodtimer3' >= 300000\n  waitforcontext 0xd5827 3 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer3' 0\nendif\nif timer 'bodtimer4' >= 300000\n  waitforcontext 0xd589b 3 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer4' 0\nendif\nif timer 'bodtimer5' >= 300000\n  waitforcontext 0xe7de2 3 15000\n  waitforgump 'any' 15000\n  settimer 'bodtimer5' 0\nendif\nif weight > 292\n  msg '[ffp'\nendif",
+ "title": "bod collector"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "auad7Kqq",
+ "pasteDate": "Feb 20, 2018, 2:54:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<Project Sdk=\"Microsoft.NET.Sdk\">\n\n  <PropertyGroup>\n    <OutputType>Exe</OutputType>\n    <TargetFramework>netcoreapp2.0</TargetFramework>\n  </PropertyGroup>\n\n  <ItemGroup>\n    <PackageReference Include=\"Microsoft.CodeAnalysis.CSharp\" Version=\"2.6.1\" />\n  </ItemGroup>\n\n</Project>",
+ "title": ""
+}

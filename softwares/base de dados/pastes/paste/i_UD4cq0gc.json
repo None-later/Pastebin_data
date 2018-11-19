@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "UD4cq0gc",
+ "pasteDate": "Feb 8, 2018, 8:05:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "AuthKit`-[_AKAppleIDAuthenticationContextManager initWithAuthenticationController:]:\nAuthKit`-[_AKAppleIDAuthenticationContextManager setDelegate:]:\nAuthKit`_AKSignpostCreate:\nAuthKit`_AKSignpostLogSystem:\nAuthKit`___AKSignpostLogSystem_block_invoke:\nAuthKit`-[_AKAppleIDAuthenticationContextManager registerContext:]:\nAuthKit`_AKLogSystem:\nAuthKit`__58-[_AKAppleIDAuthenticationContextManager registerContext:]_block_invoke:\nAuthKit`___AKLogSystem_block_invoke:\nAuthKit`-[_AKAppleIDAuthenticationContextManager shouldContinueWithAuthenticationResults:error:forContextID:completion:]:\nAuthKit`_AKSignpostCreate:\nAuthKit`_AKSignpostLogSystem:\nAuthKit`__112-[_AKAppleIDAuthenticationContextManager shouldContinueWithAuthenticationResults:error:forContextID:completion:]_block_invoke.611:\nAuthKit`-[_AKAppleIDAuthenticationContextManager delegate]:\nAuthKit`_AKLogSystem:\nAuthKit`__112-[_AKAppleIDAuthenticationContextManager shouldContinueWithAuthenticationResults:error:forContextID:completion:]_block_invoke.623:\nAuthKit`_AKLogSystem:\nAuthKit`__112-[_AKAppleIDAuthenticationContextManager shouldContinueWithAuthenticationResults:error:forContextID:completion:]_block_invoke:\nAuthKit`_AKSignpostGetNanoseconds:\nAuthKit`___AKSignpostGetNanoseconds_block_invoke:\nAuthKit`_AKSignpostLogSystem:\nAuthKit`_AKLogSystem:\nAuthKit`-[_AKAppleIDAuthenticationContextManager unregisterContext:]:\nAuthKit`_AKSignpostGetNanoseconds:\nAuthKit`__60-[_AKAppleIDAuthenticationContextManager unregisterContext:]_block_invoke:\nAuthKit`_AKSignpostLogSystem:\nAuthKit`_AKLogSystem:",
+ "title": ""
+}

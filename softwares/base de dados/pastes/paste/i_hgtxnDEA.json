@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hgtxnDEA",
+ "pasteDate": "Feb 8, 2018, 8:32:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<TextInput \n  returnKeyLabel='Done' \n  returnKeyType='done' \n  onSubmitEditing={Keyboard.dismiss} />",
+ "title": ""
+}

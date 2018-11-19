@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fAf3LNxN",
+ "pasteDate": "Feb 8, 2018, 9:32:43 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "waitUntil {sleep 1; !isNil \"active_sectors\"};\n\nwhile {true} do {\n\tsleep 600;\n\t\n\tdiag_log format [\"[KP LIBERATION] [GROUPCHECK] Groupcheck started at %1\", time];\n\t\n\t{\n\t\tprivate _unitTypes = [];\n\t\t\n\t\t{\n\t\t\t_unitTypes pushBack (typeOf _x);\n\t\t} forEach (units _x)\n\t\t\n\t\tdiag_log format [\"[KP LIBERATION] [GROUPCHECK] Group %1 (%2) - Owner: %3 - Units: (%4) %5\",\n\t\t_forEachIndex,\n\t\tname _x,\n\t\tgroupOwner _x,\n\t\tcount _unitTypes,\n\t\t_unitTypes];\n\t} forEach allGroups;\n\t\n\tdiag_log format [\"[KP LIBERATION] [GROUPCHECK] Groupcheck finished at %1\", time];\n};",
+ "title": ""
+}

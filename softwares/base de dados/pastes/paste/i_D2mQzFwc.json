@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "D2mQzFwc",
+ "pasteDate": "Feb 28, 2018, 10:25:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n    \"metadata\": {\n        \"kernelspec\": {\n            \"language\": \"python\", \n            \"name\": \"python2-spark21\"\n        }\n    }, \n    \"nbformat\": 4, \n    \"cells\": [\n        {\n            \"metadata\": {\n                \"collapsed\": true\n            }, \n            \"outputs\": [], \n            \"cell_type\": \"code\", \n            \"execution_count\": null, \n            \"source\": \"\"\n        }\n    ], \n    \"nbformat_minor\": 0\n}",
+ "title": ""
+}

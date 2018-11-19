@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "rPracWXP",
+ "pasteDate": "Feb 11, 2018, 4:36:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SELECT * FROM ..WHERE query\n\t\ncur = conn.cursor('cursor-name')\n\t\ncur.itersize = 10000\nsqlstr = \"SELECT clmn1, clmn2 FROM public.table WHERE clmn1 LIKE 'At%'\"\ncur.execute(sqlstr)\n\t\nrow = cur.fetchone()\nwhile row:\n   row = cur.fetchone()\n\t\nrow = cur.fetchmany(10)\n\t\ncur.execute(\"declare foo cursor for select * from generate_series(1,1000000)\")\ncur.execute(\"fetch forward 100 from foo\")\nrows = cur.fetchall()\n# ...\ncur.execute(\"fetch forward 100 from foo\")\nrows = cur.fetchall()\n# and so on\n\t\nwith psycopg2.connect(database_connection_string) as conn:\n    with conn.cursor(name='name_of_cursor') as cursor:\n\n        cursor.itersize = 20000\n\n        query = \"SELECT * FROM ...\"\n        cursor.execute(query)\n\n        for row in cursor:\n            # process row\n\t\nwhile True:\n    rows = cursor.fetchmany(100)\n    if len(rows) > 0:\n        for row in rows:\n            # process row\n    else:\n        break",
+ "title": ""
+}

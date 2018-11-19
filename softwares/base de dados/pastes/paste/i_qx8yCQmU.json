@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qx8yCQmU",
+ "pasteDate": "Feb 17, 2018, 11:41:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ffmpeg -i  input -vf \"drawtext=fontfile=/usr/share/fonts/TTF/Vera.ttf: text='%{localtime}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000000@1\" image%03d.png\n\t\ntext='%{localtime:%X}%{pts:hms}'\n\t\nffmpeg -i input -vf \"drawtext=fontfile=/Windows/Fonts/Arial.ttf: text='%{localtime}': x=(w-tw)/2: y=h-(2*lh): fontcolor=white: box=1: boxcolor=0x00000000@1: fontsize=30\" -r 25 -t 5 image%03d.png",
+ "title": ""
+}

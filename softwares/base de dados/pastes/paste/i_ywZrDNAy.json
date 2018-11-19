@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ywZrDNAy",
+ "pasteDate": "Feb 20, 2018, 4:56:49 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\n#include<stdlib.h>\n#include<string.h>\n\n#define MAX_FLIGHTS 10\n#define MAX_LENGTH 100\n\nvoid printList( char flights[][MAX_LENGTH], int prices[], int n);\nint find_list( char flights[][MAX_LENGTH], int prices[], int n, int ask );\n\nint main( void )\n{\n    char flights[MAX_FLIGHTS][MAX_LENGTH] = {\n        \"American 4011/4318 12:10PM-5:10PM\",\n        \"Delta 1517/1925 5:30AM-9:23AM\",\n        \"Delta 1964/1742 6:23PM-10:55PM\",\n        \"United 2272/2716 7:55PM-11:43PM\",\n        \"United 2565/2716 5:10PM-11:43PM\",\n        \"US Airways 904/1924 9:20AM-1:05PM\",\n        \"US Airways 930/886 5:10PM-9:24PM\",\n        \"US Airways 974/1434 7:00AM-11:16AM\",\n        \"US Airways 1712/1220 10:45AM-2:38PM\",\n        \"US Airways 1904/1790 7:55PM-11:43PM\",\n    };\n    int prices[MAX_FLIGHTS] = {461, 522, 522, 374, 374, 367, 408, 408, 408, 367};\n    int asked_prices, num_flights;\n    char option = 'Y';\n\n    while( option = 'Y' )\n    {\n        num_flights = 0;\n        printList( flights, prices, MAX_FLIGHTS );\n        printf(\"How much you want to search for a ticket?\");\n        scanf( \"%d\", &asked_prices );\n\n        //num_flights = find_list( flights, prices, MAX_FLIGHTS, asked_prices );\n\n        printf(\"Do you want to keep searching?(Y to yes)\");\n        scanf(\"%c\\n\", &option );\n    }\n    return 0;\n\n}\n\nvoid printList( char flights[][MAX_LENGTH], int prices[], int n)\n{\n    int i = 0;\n    for( i = 0; i < n; i++)\n        printf(\"Flight: %s\\t%4d\\n\", i+1, flights[i], prices[i]);\n    return;\n}\n\nint find_list( char flights[][MAX_LENGTH], int prices[], int n, int ask )\n{\n    int i, count = 0;\n    for( i = 0; i < n; i++){\n    if( prices[i] < ask )\n    {\n        count++;\n        printf(\"Flights: %s\\t%d\\n\", flights[i], prices[i]);\n    }\n    }\n    return count;\n}",
+ "title": ""
+}

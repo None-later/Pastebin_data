@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "znRn0V4Y",
+ "pasteDate": "Feb 11, 2018, 6:36:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "xmap <expr> <C-Left> DVB_Drag('left')\nxmap <expr> <C-Right> DVB_Drag('right')\nxmap <expr> <C-Down> DVB_Drag('down')\nxmap <expr> <C-Up> DVB_Drag('up')\n\t\nxmap <expr> D DVB_Duplicate()\n\t\nxnoremap > >gv\nxnoremap < <gv\n\t\nvnoremap <down> dpV`]\nvnoremap <up> dkPV`]\n\t\nnnoremap <down> :m .+1<CR>==\nnnoremap <up> :m .-2<CR>==\nvnoremap <down> :m '>+1<CR>gv=gv\nvnoremap <up> :m '<-2<CR>gv=gv\n\t\nvnoremap J :m '>+1<CR>gv=gv\nvnoremap K :m '<-2<CR>gv=gv\n\t\n:h p\n:h P\n:h ]p\n:h o\n:h O\n:h .\n:h u\n:h >\n:h ']\n:h gv\n\t\n1 aaa\n2 bbb\n3 ccc\n4 ddd\n\t\n:$put _ ..................... add a new line at the end\n4k .........................  move to the begining of {example 4}\n5:m-0 ......................  move next 5 lines to line zero\n}}j ........................  move to {example 3}\n5:m-11 .....................  move block to 11 lines before\n}j .........................  move to the {example 2}\n5:m-6 ......................  finishes the magic",
+ "title": ""
+}

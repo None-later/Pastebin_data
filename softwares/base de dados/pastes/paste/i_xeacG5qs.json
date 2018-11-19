@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xeacG5qs",
+ "pasteDate": "Feb 18, 2018, 8:35:24 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\tpublic static void main(String[] args) {\n\t\tTestPivots app = new TestPivots();\n\t\tAppSettings settings = new AppSettings(true);\n\t\tsettings.setResolution(1280, 720);\n\t\tsettings.setSamples(4);\n\t\tapp.setShowSettings(false);\n\t\tapp.setSettings(settings);\n\t\tapp.start();\n\t}",
+ "title": ""
+}

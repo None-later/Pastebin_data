@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "JxLmWeFX",
+ "pasteDate": "Feb 18, 2018, 1:49:01 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "var myArray = [1,2,3];\n\nfunction funcName(arrayName){\n//How we should write this line of code  \n//I know that \"arrayName\" argument is equal to \"myArray\" object name \nreturn arrayName[0]\n}\n\nfuncName(\"myArray\");",
+ "title": ""
+}

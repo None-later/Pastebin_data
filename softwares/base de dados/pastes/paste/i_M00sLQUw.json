@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "M00sLQUw",
+ "pasteDate": "Feb 12, 2018, 2:33:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\"names\": {\n            \"properties\": {\n              \"active\": {\n                \"type\": \"boolean\"\n              },\n              \"companyname\": {\n                \"type\": \"text\",\n                \"fields\": {\n                  \"keyword\": {\n                    \"type\": \"keyword\",\n                    \"ignore_above\": 256\n                  }\n                }\n              },\n              \"lastname\": {\n                \"type\": \"text\",\n                \"fields\": {\n                  \"keyword\": {\n                    \"type\": \"keyword\",\n                    \"ignore_above\": 256\n                  }\n                }\n              },\n              \"firstname\": {\n                \"type\": \"text\",\n                \"fields\": {\n                  \"keyword\": {\n                    \"type\": \"keyword\",\n                    \"ignore_above\": 256\n                  }\n                }\n              },\n              \"initials\": {\n                \"type\": \"text\",\n                \"fields\": {\n                  \"keyword\": {\n                    \"type\": \"keyword\",\n                    \"ignore_above\": 256\n                  }\n                }\n              }\n            }\n          }",
+ "title": ""
+}

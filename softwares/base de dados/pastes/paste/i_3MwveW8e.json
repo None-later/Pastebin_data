@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "3MwveW8e",
+ "pasteDate": "Feb 20, 2018, 3:29:17 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "from __future__ import print_function\nfrom netmiko import ConnectHandler\nfrom itertools import zip_longest\nfrom paramiko.ssh_exception import SSHException,BadHostKeyException,NoValidConnectionsError,PasswordRequiredException\nfrom netmiko.ssh_exception import NetMikoTimeoutException\nfrom datetime import datetime\nimport traceback\nimport sys\nimport time\nimport select\nimport paramiko\nimport io\nimport os\nimport netmiko\n\n# Output file\nfd = io.open(r'/path/SSH-Output.txt', 'w')\nold_stdout = sys.stdout\nsys.stdout = fd\nplatform = 'cisco_ios'\nusername = 'ID'\npassword = 'PASS'\n# Hosts ip address/fqdn to be put in this file\nip_add_file = io.open('/path/IPAddressList.txt', 'r')\n\n# do task via for loop over Host file\n\nfor host in ip_add_file:\n    host = host.strip()\n    try:\n        starting_time = datetime.now()\n        print(\">>>> {}\".format(starting_time))\n        device = ConnectHandler(device_type=platform, ip=host, username=username, password=password)\n        output = device.send_command('terminal length 0')\n        output = device.send_command('enable')\n        print('##############################################################\\n')\n        print(\".........DEVICE %s.....\\n\" % (host))\n        print('...................VLANs STATUS......................\\n')\n        output = device.send_command('sh vlan \\n')\n        time.sleep(.5)\n        print(output)\n    except (EOFError, SSHException, NetMikoTimeoutException, BadHostKeyException, PasswordRequiredException, NoValidConnectionsError ):\n        print(\"SSH is not enabled for %s\\n\" %(host))\n        traceback.print_exc()\n    continue\nfd.close()",
+ "title": ""
+}

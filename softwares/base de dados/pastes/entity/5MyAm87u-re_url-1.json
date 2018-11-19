@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd",
+  "correct": true,
+  "jSonReason": "re_url"
+}

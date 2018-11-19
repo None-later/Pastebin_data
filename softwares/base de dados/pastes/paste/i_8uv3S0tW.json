@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8uv3S0tW",
+ "pasteDate": "Feb 28, 2018, 2:21:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import React from 'react';\nimport PropTypes from 'prop-types';\n\nimport ReactTable from 'react-table';\nimport '!style-loader!css-loader!react-table/react-table.css'; //eslint-disable-line\n\nconst { object, arrayOf } = PropTypes;\n\nclass DataGrid extends React.Component {\n  constructor(props) {\n    super(props);\n    // this.checkColumnsType(props);\n  }\n\n  static propTypes = {\n    checkMissingMandatoryProps: (props, propName, componentName) => {\n      if (!Object.keys(props).includes('data')) {\n        return new Error(`Missing prop \\`data\\` of type \\`array of object\\` `);\n      }\n    },\n    data: arrayOf(object),\n    columns: arrayOf(object),\n  };\n\n  checkColumnsType(props) {\n    // // React style API. No need for columns definitions check\n    // // children props will always take precedence\n    // if (this.props.children) {\n    //   this.columnsType = 'children'\n    //   return\n    // }\n\n    let head;\n    if (!props.columns) {\n      this.columns = Object.keys(props['data'][0]).map(c => ({\n        Header: c,\n        accessor: c,\n      }));\n      head = this.columns[0];\n    } else {\n      head = props.columns[0];\n    }\n\n    if (typeof head === 'string') {\n      this.columnsType = 'array';\n    } else if (typeof head === 'object') {\n      this.columnsType = 'arrayOfObjs';\n    } else {\n      throw new Error(\n        `Prop \\`columns\\` shoul be an \\`array of strings\\` or an \\`array of objects\\``\n      );\n    }\n  }\n\n  render() {\n    const { data } = this.props;\n    let { columns } = this.props;\n    if (!columns) columns = this.columns;\n\n    return <ReactTable {...this.props} />;\n  }\n}\nexport default DataGrid;",
+ "title": ""
+}

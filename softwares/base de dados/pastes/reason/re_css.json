@@ -1,0 +1,7 @@
+{
+  "corrects": 48,
+  "incorrects": 3,
+  "reason": "re_css",
+  "status": "REGECT",
+  "type": "REGEX"
+}

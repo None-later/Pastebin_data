@@ -1,0 +1,5 @@
+{
+  "value": "function ClangEffect(BRICKCOLOR, MATERIAL, CFRAME, ANGLE, DURATION, SIZE, POWER, REFLECTANCE, X, Y, Z, delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

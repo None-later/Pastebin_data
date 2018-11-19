@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "LyUNdWAf",
+ "pasteDate": "Feb 8, 2018, 10:03:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Given array `a`, count occurrences and stack.\n\ne.g. `a = np.array([0, 0, 1, 1, 2, 1, 0, 2, 3, 0, 1])`\n\nthen `counts = np.dstack(np.unique(a, return_counts=True))` gives\n\n```\narray([[[0, 4],\n        [1, 4],\n        [2, 2],\n        [3, 1]]])\n```",
+ "title": ""
+}

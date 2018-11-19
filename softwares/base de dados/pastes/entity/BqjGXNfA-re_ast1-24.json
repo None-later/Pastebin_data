@@ -1,0 +1,5 @@
+{
+  "value": "function disableTag(obj, tag, type)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

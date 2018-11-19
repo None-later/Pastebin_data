@@ -1,0 +1,7 @@
+{
+  "corrects": 0,
+  "incorrects": 46,
+  "reason": "re_canadian_postal_code",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

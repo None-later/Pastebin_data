@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zr0MAmua",
+ "pasteDate": "Feb 26, 2018, 11:36:00 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <cstdio>\n#include <vector>\n\nusing namespace std;\n\nconst int MAXN = 500005;\nconst int MAXM = 500005;\n\nint n,m;\nint bit[MAXN];\nint w[MAXN], en[MAXN], ex[MAXN];\nvector<int> graf[MAXN];\n\nvoid bit_set(int idx, int x){\n    idx++;\n    for(;idx<MAXN;idx+=idx&(-idx)){\n        bit[idx]+=x;\n    }\n}\n\nint bit_get(int idx){\n    idx++;\n    int res=0;\n    for(;idx>0;idx-=idx&(-idx)){\n        res+=bit[idx];\n    }\n    return res;\n}\n\nvoid dfs(int node){\n    static int t=0;\n    en[node]=t++;\n    for(auto ne:graf[node]){\n        dfs(ne);\n    }\n    ex[node]=t;\n}\n\n\nint main(){\n    scanf(\"%d%d\", &n, &m);\n    scanf(\"%d\", &w[0]);\n    for(int i=1;i<n;++i){\n        int p;\n        scanf(\"%d%d\", &w[i], &p);\n        graf[--p].push_back(i);\n    }\n    dfs(0);\n    for(int i=0;i<n;++i){\n        bit_set(en[i], w[i]);\n        bit_set(en[i]+1, -w[i]);\n    }\n    for(int i=0;i<m;++i){\n        char str[20];\n        scanf(\"%s\", str);\n        if(str[0]=='p'){\n            int a,b;\n            scanf(\"%d%d\", &a, &b);\n            a--;\n            bit_set(en[a]+1, b);\n            bit_set(ex[a], -b);\n        }else{\n            int a;\n            scanf(\"%d\", &a);\n            a--;\n            printf(\"%d\\n\", bit_get(en[a]));\n        }\n    }\n}",
+ "title": "PLACE"
+}

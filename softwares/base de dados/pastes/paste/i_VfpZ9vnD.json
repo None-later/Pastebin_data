@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "pawn",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VfpZ9vnD",
+ "pasteDate": "Feb 26, 2018, 12:56:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#define \tMRSCM(%0,%1,%2,%3) \t\tformat(string, sizeof(string),%2,%3) && SendClientMessage(%0, %1, string)\n\nnew pYTB[MAX_PLAYERS];\nnew Iterator: ytberi<MAX_PLAYERS>;\n\nCMD:youtubers(playerid,params[]){\n\tif(!IsPlayerConnected(playerid)) return SCM(playerid, -1,\"Nu esti conectat\");\n   \tnew string[100];\n\tSendClientMessage(playerid, -1, \"|____ youtuberi online: ____|\");\n\tforeach(new i: ytberi)\n\t{\n\t\tMRSCM(playerid, -1, \"Youtuber: %s(%d)\",GetName(i),i);\n\t}\n\tif(Iter_Count(ytberi) == 0) return SCM(playerid,-1,\"Nu sunt Youtuberi conectati.\");\n\tif(Iter_Count(ytberi) == 1) return SCM(playerid,-1,\"Este un Youtuber conectat.\");\n\tif(Iter_Count(ytberi) > 1) return MRSCM(playerid,-1,\"Sunt %d Youtuberi conectati.\", Iter_Count(ytberi));\n\treturn 1;\n}\nCMD:setytb(playerid,params[]){\n\tnew ID, string[128];\n\tif(PlayerInfo[playerid][pAdmin] < 5) return SCM(playerid, -1, \"{DC0C0C}Eroare: {ffffff}Nu ai rangul administrativ necesar!\");\n\tif(sscanf(params, \"u\",ID)) return SCM(playerid, -1, \"/setytb <Name/Playerid>\");\n\tif(!IsPlayerConnected(ID)) return SCM(playerid, -1, \"Acel jucator nu e conectat!\");\n\tif(pYTB[ID] != 1){\n\t\tpYTB[ID] = 1;\n\t\tMRSCM(ID, -1,\"{B8FFDB}Felicitari! Administratorul %s te-a promovat la gradul de youtuber.\", GetName(playerid));\n\t\tIter_Add(ytberi,ID);\n\t}\n\telse{\n\t\tpYTB[ID] = 0;\n\t\tMRSCM(ID, -1,\"{B8FFDB}Din pacate, %s ti-a scos functia de youtuber.\", GetName(playerid));\n\t\tIter_Remove(ytberi,ID);\n\t}\n\treturn 1;\n}",
+ "title": "Mirita"
+}

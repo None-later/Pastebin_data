@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "B1NStjyN",
+ "pasteDate": "Feb 9, 2018, 2:08:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Private Sub SortArrayByAlphabet(aString() as String)\n  Dim MadeChange As Boolean\n  Dim tString as String\n  Dim i as Long\n  \n  MadeChange = True\n  While MadeChange = True\n      MadeChange = False\n      For i = LBound(aString) To UBound(aString) - 1\n          If StrComp(aString(i), aString(i + 1)) = 1 Then\n              tString = aString(i)\n              aString(i) = aString(i + 1)\n              aString(i + 1) = tmpName\n              MadeChange = True\n          End If\n      Next i\n  Wend\nEnd Sub",
+ "title": ""
+}

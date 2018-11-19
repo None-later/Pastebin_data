@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jEnxzXMD",
+ "pasteDate": "Feb 20, 2018, 5:34:09 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <ctime>\nusing namespace std;\n\nvoid quicksort(int a[], int L, int R) {\n    int l = L, r = R;\n    int mid = a[rand() % (R - L + 1) + L];\n\n    while (l <= r) {\n        while (a[l] < mid) l++;\n        while (a[r] > mid) r--;\n\n        if (l <= r) swap(a[l++], a[r--]);\n    }\n\n    if(r > L) quicksort(a, L, r);\n    if(l < R) quicksort(a, l, R);\n}\n\nint main() {\n    //ifstream cin(\"sort.in\");\n    //ofstream cout(\"sort.out\");\n    srand(time(0));\n    int n;\n    cin >> n;\n    int* a = new int[n];\n\n    for (int i = 0; i < n; i++) {\n        cin >> a[i];\n    }\n\n    quicksort(a, 0, n - 1);\n\n    for (int i = 0; i < n; i++) {\n        cout << a[i] << ' ';\n    }\n\n    return 0;\n}",
+ "title": ""
+}

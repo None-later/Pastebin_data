@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "gGiYPXaP",
+ "pasteDate": "Feb 26, 2018, 11:21:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "evalExprF :: ExpressionF Int -> Int\nevalExprF (ValueF v) = v\nevalExprF (AddF e1 e2) = e1 + e2\nevalExprF (MultF e1 e2) = e1 * e2",
+ "title": ""
+}

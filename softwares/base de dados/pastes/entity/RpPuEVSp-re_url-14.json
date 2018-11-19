@@ -1,0 +1,5 @@
+{
+  "value": "%current.page",
+  "correct": true,
+  "jSonReason": "re_url"
+}

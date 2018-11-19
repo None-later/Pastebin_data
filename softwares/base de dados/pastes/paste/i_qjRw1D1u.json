@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "qjRw1D1u",
+ "pasteDate": "Feb 23, 2018, 12:07:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\n\nnamespace MonadTest\n{\n    public interface IResult<T, E>\n    {\n        T Outcome { get; }\n        E Error { get; }\n    }\n\n    public abstract class Result<T, E> : IResult<T, E>\n    {\n        public abstract T Outcome { get; }\n        public abstract E Error { get; }\n\n        public static IResult<T, E> Ok(T outcome) => new Ok<T, E>(outcome);\n        public static IResult<T, E> Err(E error) => new Err<T, E>(error);\n    }\n\n    public sealed class Ok<T, E> : Result<T, E>\n    {\n        public override T Outcome { get; }\n        public override E Error => throw new NotSupportedException();\n\n        public Ok(T outcome)\n        {\n            Outcome = outcome;\n        }\n    }\n\n    public sealed class Err<T, E> : Result<T, E>\n    {\n        public override T Outcome => throw new NotSupportedException();\n        public override E Error { get; }\n\n        public Err(E error)\n        {\n            Error = error;\n        }\n    }\n    \n    class Program\n    {\n        public static IResult<int,string> GetResult(bool isOk)\n        {\n            return isOk ? \n            Result<int, string>.Ok(1):\n            Result<int, string>.Err(\"Ooops we got error\");\n        }\n\n        static void Main(string[] args)\n        {\n            var res = GetResult(true);\n\n            switch (res)\n            {\n                case Ok<int, string> ok:\n                    Console.WriteLine($\"Lucky number is {ok.Outcome}\");\n                    break;\n                case Err<int, string> err:\n                    Console.WriteLine(err.Error);\n                    break;\n            }\n        }\n    }\n}",
+ "title": ""
+}

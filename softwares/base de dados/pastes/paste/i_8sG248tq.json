@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8sG248tq",
+ "pasteDate": "Feb 18, 2018, 11:20:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class TheClass {    \n\n  private Map<String, String> theMap;\n\n  public TheClass() {\n    theMap = new HashMap<>();\n  }\n}\n\t\npublic class Demo {\n\n    Map<String,String> map = null;\n\n    public Demo()\n    {\n        map = new HashMap<String,String>();\n    }\n\n}\n\t\nMap<String, String> map = new HashMap<String, String>();\n\t\nMap<String, String> map = new HashMap<>();\n\t\nMap<String,String> map = new HashMap<String,String>();\nmap.put(\"key1\", \"Value1\");\nmap.put(\"Key2\", \"Value2\");",
+ "title": ""
+}

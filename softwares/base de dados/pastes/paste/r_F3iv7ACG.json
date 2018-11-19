@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en",
+  "re_us_phone",
+  "re_us_zip_code"
+ ],
+ "key": "F3iv7ACG",
+ "pasteDate": "Feb 28, 2018, 3:46:10 AM",
+ "relevancy": 2.0,
+ "relevant": true,
+ "text": "{\n  \"patientStatus\": \"IPD\",\n  \"vitals\": {\n    \"pulseRate\": \"180\",\n    \"bloodPressureSystolic\": \"11\",\n    \"bloodPressureDystolic\": \"12\",\n    \"respiratoryRate\": \"12\",\n    \"temperatureNomenlature\": \"12\"\n  },\n  \"systamaticExamination\": {\n    \"cardiovascularSystemStatus\": \"cvs\",\n    \"respiratorySystemStatus\": \"resp\",\n    \"gastrointestinalSystemStatus\": \"gastro\",\n    \"genitoUrinarySystemStatus\": \"urinary\",\n    \"cranialNervesStatus\": \"cns\",\n    \"localExamStatus\": \"local\",\n    \"generalExaminationStatus\": \"general\",\n    \"nutritionalStatus\": \"nutri\"\n  },\n  \"allergies\": \"alu\",\n  \"complaints\": {\n    \"chiefComplaints\": \"chief\"\n  },\n  \"specificDiagnosis\": \"fever\",\n  \"medicalHistory\": \"Hypertension(High B.P)\",\n  \"familyHistory\": \"Father:fever\",\n  \"surgicalHistory\": \"Vaginectomy:2017\",\n  \"personalHistory\": \"SmokingStartYear :9,SmokingQtyPerday :8,ChewingTobaccoStartYear :6,ChewingTobaccoQtyDay :5,AlcoholStartYear:52,AlcoholQtyDay :2,AlcoholFrequency :2,Allergies :alu\",\n  \"investigations\": [\n    {\n      \"testName\": \"Base deficit in Blood \",\n      \"$$hashKey\": \"object:22393\"\n    },\n    {\n      \"testName\": \"Voriconazole [Susceptibility] \",\n      \"$$hashKey\": \"object:22394\"\n    }\n  ],\n  \"gynaecology\": {\n    \"lmpDate\": \"\",\n    \"gravidaCount\": \"9\",\n    \"termCount\": \"7\",\n    \"pretermCount\": \"6\",\n    \"abortionCount\": \"5\",\n    \"livingCount\": \"4\",\n    \"flDate\": \"\",\n    \"hcDate\": \"\",\n    \"crlDate\": \"\"\n  },\n  \"deptName\": \"Accident and Emergency\",\n  \"deptId\": 4,\n  \"history\": {\n    \"medicalHistory\": \"Hypertension(High B.P)\",\n    \"familyHistory\": \"Father:fever\",\n    \"surgicalHistory\": \"Vaginectomy:2017\",\n    \"personalHistory\": \"SmokingStartYear :9,SmokingQtyPerday :8,ChewingTobaccoStartYear :6,ChewingTobaccoQtyDay :5,AlcoholStartYear:52,AlcoholQtyDay :2,AlcoholFrequency :2,Allergies :alu\"\n  },\n  \"nextReviewDate\": \"2018-02-28\",\n  \"patientDetails\": {\n    \"patientName\": \"kushi kumari guptha\",\n    \"patientMobileNumber\": \"8331023642\",\n    \"hospitalPatientId\": \"28022018SU0004\",\n    \"dateOfBirth\": \"1995-05-23\"\n  },\n  \"doctorDetails\": {\n    \"doctorName\": \"joshitha  \",\n    \"doctorMobileNumber\": \"8331023642\",\n    \"mciNumber\": \"946546465464646464654\"\n  },\n  \"companyName\": \"Sai Teja Hospitals\",\n  \"companyAddress\": [\n    \"Kukatpally, Hyderabad, Hyderabad, \",\n    \"Telangana, India\"\n  ],\n  \"dateGenerated\": \"28-02-2018\"\n}",
+ "title": ""
+}

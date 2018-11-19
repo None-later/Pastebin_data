@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uF5WuJ5W",
+ "pasteDate": "Feb 26, 2018, 2:12:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "type Test =\n    { A : string\n      B : int\n      C : float\n    }\n\nlet buildTest a b c =\n    { A = a\n      B = b\n      C = c\n    }\n\nlet a = Error [\"No a\"]\nlet b = Error [\"No b\"]\nlet c = Error [\"No c\"]\n\nlet (<*>) (res1 : Result<('a -> 'c), 'b list>) (res2 : Result<'a, 'b list>) : Result<'c, 'b list> =\n    match res1, res2 with\n    | Error err1, Error err2 -> Error (List.append err1 err2)\n    | Ok f, Error err2 -> Error err2\n    | Error err1, Ok a -> Error err1\n    | Ok f, Ok a -> Ok <| f a\n\nlet f = Ok buildTest\nlet x = f <*> a <*> b <*> c",
+ "title": ""
+}

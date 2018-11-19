@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FdjW3dn4",
+ "pasteDate": "Feb 12, 2018, 8:49:45 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": " * \n * The following 5 packages have failed to build, install, or execute\n * postinst:\n * \n *  (net-wireless/broadcom-sta-6.30.223.271-r4:0/0::gentoo, ebuild scheduled for merge), Log file:\n *   '/var/tmp/bump_kernel_packages.portage_tmpdirP_TheP/portage/net-wireless/broadcom-sta-6.30.223.271-r4/temp/build.log'\n *  (media-video/v4l2loopback-0.10.0:0/0::gentoo, ebuild scheduled for merge), Log file:\n *   '/var/tmp/bump_kernel_packages.portage_tmpdirP_TheP/portage/media-video/v4l2loopback-0.10.0/temp/build.log'\n *  (sys-fs/zfs-kmod-0.7.5:0/0::sabayon, ebuild scheduled for merge), Log file:\n *   '/var/tmp/bump_kernel_packages.portage_tmpdirP_TheP/portage/sys-fs/zfs-kmod-0.7.5/temp/build.log'\n *  (net-firewall/xtables-addons-2.14:0/0::gentoo, ebuild scheduled for merge), Log file:\n *   '/var/tmp/bump_kernel_packages.portage_tmpdirP_TheP/portage/net-firewall/xtables-addons-2.14/temp/build.log'\n *  (app-emulation/virtualbox-guest-additions-5.2.6:0/0::gentoo, ebuild scheduled for merge), Log file:\n *   '/var/tmp/bump_kernel_packages.portage_tmpdirP_TheP/portage/app-emulation/virtualbox-guest-additions-5.2.6/temp/build.log'",
+ "title": ""
+}

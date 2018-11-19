@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "m8h8w2mq",
+ "pasteDate": "Feb 21, 2018, 10:29:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// gcc cpyarg.c -o cpyarg\n#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\nvoid gadgets() {\n  int y = 0;\n  char *x = 0;\n  asm(\"popq %rsi\\n\"\n      \"ret\\n\"\n      \"pop %rdx\\n\"\n      \"ret\\n\"\n      \"xchg %rdx, %rdi\\n\"\n      \"ret\\n\"\n      \"pop %rax\\n\"\n      \"ret\\n\"\n      \"pop %rdx\\n\"\n      \"ret\\n\"\n      \"syscall\\n\"\n      \"ret\\n\");\n}\n\nchar contents[1000];\n\nvoid foo(char *str) {\n  char buffer[100];\n  strcpy(buffer, str);\n}\n\nint main(int argc, char **argv) {\n  FILE *f = fopen(\"rop.bin\", \"rb\");\n  if (f) {\n    int n = fread(contents, 1000, 1, f);\n    printf(\"Got %d bytes.\\n\", n);\n  } else {\n    printf(\"Error :-( does rop.bin exist?\\n\");\n  }\n  foo(contents);\n}",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "lg_en"
+ ],
+ "key": "4nTqy5au",
+ "pasteDate": "Feb 18, 2018, 2:00:07 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width,initial-scale=1\">\n    <title>title</title>\n    <meta name=\"author\" content=\"\">\n    <meta name=\"description\" content=\"\">\n    <meta name=\"keywords\" content=\"\">\n    <link rel=\"stylesheet\" href=\"\" type=\"text/css\">\n</head>\n\n<body>\n</body>\n\n</html>",
+ "title": ""
+}

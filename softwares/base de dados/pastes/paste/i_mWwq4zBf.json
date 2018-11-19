@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mWwq4zBf",
+ "pasteDate": "Feb 11, 2018, 4:14:27 AM",
+ "relevancy": 10.0,
+ "relevant": false,
+ "text": "[1] = {\n\t[\"children\"] = {\n\t\t[1] = {\n\t\t\t[\"children\"] = {\n\t\t\t},\n\t\t\t[\"self\"] = {\n\t\t\t\t[\"Material\"] = \"models/stalker/stalker_sheet\",\n\t\t\t\t[\"UniqueID\"] = \"3709864448\",\n\t\t\t\t[\"ClassName\"] = \"model\",\n\t\t\t\t[\"Position\"] = Vector(2.119140625, -0.00927734375, 0.5029296875),\n\t\t\t\t[\"Model\"] = \"models/player/items/humans/top_hat.mdl\",\n\t\t\t\t[\"Angles\"] = Angle(3.9195349216461, -88.029655456543, -95.158332824707),\n\t\t\t},\n\t\t},\n\t},\n\t[\"self\"] = {\n\t\t[\"EditorExpand\"] = true,\n\t\t[\"UniqueID\"] = \"1164392570\",\n\t\t[\"ClassName\"] = \"group\",\n\t\t[\"Name\"] = \"my outfit\",\n\t\t[\"Description\"] = \"add parts to me!\",\n\t},\n},",
+ "title": "Tophat boy"
+}

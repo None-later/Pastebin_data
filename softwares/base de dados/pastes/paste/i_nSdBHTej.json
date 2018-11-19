@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nSdBHTej",
+ "pasteDate": "Feb 28, 2018, 4:43:30 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "package dog;\n\npublic class Dog {\n\n    public static String wakeUp(){\n       int time = 6;\n       String wakeTime = \"dog wakes up at: \" + time + \"AM\";\n       return wakeTime;\n    }\n    \n    public static String goToSleep(){\n       int time = 8;\n       String bedTime = \"dog goes to sleep at: \" + time + \"PM\";\n       return bedTime;\n    }\n    \n    public static void main(String[] args){\n       System.out.println(wakeUp());\n       System.out.println(goToSleep());\n    }\n    \n}",
+ "title": ""
+}

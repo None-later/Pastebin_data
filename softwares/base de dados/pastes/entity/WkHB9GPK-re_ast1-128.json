@@ -1,0 +1,5 @@
+{
+  "value": "function(\"+(j.params?j.params.map(function(k)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

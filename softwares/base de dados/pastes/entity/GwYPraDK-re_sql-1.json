@@ -1,0 +1,5 @@
+{
+  "value": "Select MAX(id) from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

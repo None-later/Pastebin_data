@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ztBXVLUN",
+ "pasteDate": "Feb 20, 2018, 1:39:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--- a/spec/frozen/1.8/core/kernel/Integer_spec.rb\n+++ b/spec/frozen/1.8/core/kernel/Integer_spec.rb\n@@ -13,11 +13,11 @@ describe \"Kernel.Integer when given a String\" do\n     Integer(\"  2  \").should == 2\n     Integer(\"  22222  \").should == 22222\n   end\n-  \n+\n   it \"raises an ArgumentError if the given String has no valid Integer representation\" do\n     [ \"\", \"--2\", \"-+2\", \"++2\", \"a2\", \"2a\", \"__2\",\n       \" _2\", \"2__\", \"2 _\", \"2 a\"].each do |str|\n-      lambda { Integer(str); p str }.should raise_error(ArgumentError)\n+      lambda { Integer(str) }.should raise_error(ArgumentError)\n     end\n   end\n end",
+ "title": ""
+}

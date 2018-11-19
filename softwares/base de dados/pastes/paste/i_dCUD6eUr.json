@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "dCUD6eUr",
+ "pasteDate": "Feb 18, 2018, 9:41:17 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "/**\n * @param {string} s\n * @return {string}\n */\n// INTERVIEW PREP PROBLEM #1\nconst frequencySort = string => {\n  let unsorted = string.split('');\n  let sorted = [];\n  let copy = mapFrequency(unsorted);\n  for (let i = 0; i < copy.length; i++) {\n    for (let j = 0; j < copy[i][1]; j++) {\n      sorted.push(copy[i][0]);\n    }\n  }\n  return sorted.join('');\n};\n\nconst mapFrequency = unsorted => {\n  let freqCount = {};\n  let frequencies = [];\n  for (let i = 0; i < unsorted.length; i++) {\n    freqCount[unsorted[i]] = freqCount[unsorted[i]] + 1 || 1;\n  }\n  for (let char in freqCount) {\n    frequencies.push([char, freqCount[char]]);\n  }\n  return frequencies.sort( (a, b) => {\n    return b[1] - a[1];\n  });\n};\n\nlet result = frequencySort(\"trrAEeAsfdee\");\nif (result === 'eeerrAAtEsfd') { console.log('frequencySort TEST PASSED!') }\n\n//------------------------------------------------------------------------//\n\n/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\n// INTERVIEW PREP PROBLEM #2\nconst isSubsequence = (s, t) => {\n  if (s.length === 0) {\n    return true;\n  }\n\n  let i = 0;\n  let j = 0;\n  while (i < s.length && j < t.length) {\n    if (s.charAt(i) === t.charAt(j)) {\n      i++;\n    }\n    j++;\n    if (i === s.length) {\n      return true;\n    }\n  }\n  return false;\n}\n\nlet s = 'afrm';\nlet t = 'abcdefedfrtueifm';\nlet bool = isSubsequence(s, t);\nif (bool === true) { console.log('s is subsequence of t, TEST PASSED!' }",
+ "title": ""
+}

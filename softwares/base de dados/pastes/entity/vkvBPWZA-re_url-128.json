@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://telemadridhls-live.hls.adaptive.level3.net/telemadrid/laotra1/index.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

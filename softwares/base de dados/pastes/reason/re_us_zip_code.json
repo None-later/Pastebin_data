@@ -1,0 +1,7 @@
+{
+  "corrects": 529,
+  "incorrects": 18697,
+  "reason": "re_us_zip_code",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

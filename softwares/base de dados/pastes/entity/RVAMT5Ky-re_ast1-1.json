@@ -1,0 +1,5 @@
+{
+  "value": "functions\u0027 \u003d\u003e array(\u0027online_users\u0027,\u0027record_online\u0027,\u0027admin_list\u0027,\u0027groups_assigner\u0027,\u0027connect_message\u0027,\u0027advertisement_message\u0027,\u0027clock_date\u0027,\u0027change_server_name\u0027,\u0027get_private_channel\u0027,\u0027online_from_server_group\u0027,\u0027poke_admins\u0027,\u0027get_server_group\u0027,\u0027admins_time_spent\u0027,\u0027channels_checker\u0027)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

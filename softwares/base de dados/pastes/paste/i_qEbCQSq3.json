@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qEbCQSq3",
+ "pasteDate": "Feb 21, 2018, 9:28:46 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Date: 02/21/2018 13:28:46\nCorpseReborn Version: 2.12.1\n\nServer Version: git-Spigot-3fb9445-6e3cec8 (MC: 1.11.2)\nServer Type: SPIGOT\nFolder Version: v1_11_R1\n\nException: \n(Dump Command)\n\nPlugins: \nNametagHide - 1.4\nCitizens - 2.0.21-SNAPSHOT (build 1463)\nTAB - 1.6.7\nWorldEdit - 6.1.5;4651611\niDisguise - 5.6.4\nViaVersion - 1.3.0\nKingdomWands-Premium - 1.2\nEssentials - 2.0.1-b488\nStaffPlus - 3.2.2\nMultiverse-Core - 2.5.0-b727\nSkinsRestorer - 13.3\nCorpseReborn - 2.12.1\n\nConfig: \nenable-update-checker: true\ncorpse-time: 180\non-death: true\nlooting-inventory: true\ndespawn-after-looted: true\nshow-tags: false\nworld: all\ngui-title: %corpse%'s Items\nusername-format: %corpse%\nfinish-looting-message: *bYou have finished looting %corpse%'s corpse.\nnew-hitboxes: true\nrender-armor: truesave-corpses: truesend-data: true\n\nCorpses:\nFailed to read Corpses.yml",
+ "title": "CorpseReborn Error Paste"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "tiE2JVaz",
+ "pasteDate": "Feb 11, 2018, 11:21:02 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "[root@...]# service mongod status\nRedirecting to /bin/systemctl status mongod.service\n mongod.service - High-performance, schema-free document-oriented database\n   Loaded: loaded (/usr/lib/systemd/system/mongod.service; enabled; vendor preset: disabled)\n   Active: failed (Result: exit-code) since Mon 2018-02-12 01:14:28 UTC; 27s ago\n     Docs: https://docs.mongodb.org/manual\n  Process: 1305 ExecStart=/usr/bin/mongod $OPTIONS (code=exited, status=2)\n  Process: 1303 ExecStartPre=/usr/bin/chmod 0755 /var/run/mongodb (code=exited, status=0/SUCCESS)\n  Process: 1301 ExecStartPre=/usr/bin/chown mongod:mongod /var/run/mongodb (code=exited, status=0/SUCCESS)\n  Process: 1300 ExecStartPre=/usr/bin/mkdir -p /var/run/mongodb (code=exited, status=0/SUCCESS)\n\nFeb 12 01:14:28 ok systemd[1]: Starting High-performance, schema-free document-oriented database...\nFeb 12 01:14:28 ok systemd[1]: mongod.service: control process exited, code=exited status=2\nFeb 12 01:14:28 ok systemd[1]: Failed to start High-performance, schema-free document-oriented database.\nFeb 12 01:14:28 ok systemd[1]: Unit mongod.service entered failed state.\nFeb 12 01:14:28 ok systemd[1]: mongod.service failed.",
+ "title": ""
+}

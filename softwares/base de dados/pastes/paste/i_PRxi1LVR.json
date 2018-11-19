@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "PRxi1LVR",
+ "pasteDate": "Feb 23, 2018, 12:37:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<VirtualHost *:9191>\nServerName tapio2018.intraer\n\nDocumentRoot /var/www/html/tapio2018/public/\n<Directory /var/www/html/tapio2018/public/>\n    AllowOverride All\n</Directory>\n\nErrorLog ${APACHE_LOG_DIR}/tapio2018.error.log\n\nLogLevel warn\n\n</VirtualHost>\n\t\n<IfModule mod_rewrite.c>\n<IfModule mod_negotiation.c>\n    Options -MultiViews\n</IfModule>\n\nRewriteEngine On\n\n# Redirect Trailing Slashes If Not A Folder...\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule ^(.*)/$ /$1 [L,R=301]\n\n# Handle Front Controller...\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteRule ^ index.php [L]\n\n# Handle Authorization Header\nRewriteCond %{HTTP:Authorization} .\nRewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n</IfModule>",
+ "title": ""
+}

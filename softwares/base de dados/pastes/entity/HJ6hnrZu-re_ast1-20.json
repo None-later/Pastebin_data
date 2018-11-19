@@ -1,0 +1,5 @@
+{
+  "value": "function view_perms($mode)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

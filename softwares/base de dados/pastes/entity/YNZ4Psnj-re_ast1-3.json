@@ -1,0 +1,5 @@
+{
+  "value": "function Explode(CF,Color,SMM,BBoom)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

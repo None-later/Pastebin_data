@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "JhJmVfJ9",
+ "pasteDate": "Feb 8, 2018, 5:19:12 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function* fetchPostsWithTimeout() {\n  const {posts, timeout} = yield race({\n    posts: call(API.get, '/posts'),\n    timeout: call(delay, 1000)\n  })\n\n  if (posts)\n    put({type: 'POSTS_RECEIVED', posts})\n  else\n    put({type: 'TIMEOUT_ERROR'})\n}",
+ "title": ""
+}

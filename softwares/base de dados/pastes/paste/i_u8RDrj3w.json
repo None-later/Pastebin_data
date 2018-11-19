@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "u8RDrj3w",
+ "pasteDate": "Feb 17, 2018, 10:33:01 PM",
+ "relevancy": 4.0,
+ "relevant": false,
+ "text": "function formatCurrency(num) {\n        num = num.toString().replace(/\\$|\\,/g,'');\n        if(isNaN(num))\n        num = \"0\";\n        sign = (num == (num = Math.abs(num)));\n        num = Math.floor(num*100+0.50000000001);\n        cents = num%100;\n        num = Math.floor(num/100).toString();\n        if(cents<10)\n        cents = \"0\" + cents;\n        for (var i = 0; i < Math.floor((num.length-(1+i))/3); i++)\n        num = num.substring(0,num.length-(4*i+3))+'.'+\n        num.substring(num.length-(4*i+3));\n        return (((sign)?'':'-') + 'Rp' + num + ',' + cents);\n        }\n\n<input type=\"text\" name=\"biaya_nominal\" id=\"num\" class=\"form-control\" onkeyup=\"document.getElementById('format').innerHTML = formatCurrency(this.value);\"/><span  id=\"format\"></span>",
+ "title": ""
+}

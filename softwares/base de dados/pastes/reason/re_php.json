@@ -1,0 +1,7 @@
+{
+  "corrects": 38,
+  "incorrects": 0,
+  "reason": "re_php",
+  "status": "REGECT",
+  "type": "REGEX"
+}

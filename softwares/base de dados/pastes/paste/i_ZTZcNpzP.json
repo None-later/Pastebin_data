@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZTZcNpzP",
+ "pasteDate": "Feb 26, 2018, 1:15:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "DECLARE @Someparameterdate ???????;\nSET @Someparameter= CASE @SortOrder \nWHEN '1' THEN DATENAME(WEEKDAY,GETDATE())\nWHEN '2' THEN DATENAME(MONTH,GETDATE())\nWHEN '3' THEN DATENAME(YEAR,GETDATE())",
+ "title": ""
+}

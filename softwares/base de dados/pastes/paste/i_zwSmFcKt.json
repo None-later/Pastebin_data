@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "zwSmFcKt",
+ "pasteDate": "Feb 12, 2018, 1:18:18 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "my $row = $rs->search({ some_key => 'some_value' })->first;\n\t\nmy $row = $rs->search({ some_key => 'some_value' }, { join => 'attributes' });\n\t\nsub get_x_attr {\n  my $obj = shift;\n  my $x_attr = $obj->attributes->search({ attribute_name => 'x' })->one_row;\n  return $x_attr ? $x_attr->attribute_value : 'default';\n}\n\t\nmy @attrs = grep { $_->attribute_name eq 'x' } $obj->attributes;\nmy $x_attribute = $attrs[0] || return 'default';\n# etc.",
+ "title": ""
+}

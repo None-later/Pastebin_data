@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "gCZDvLFx",
+ "pasteDate": "Feb 26, 2018, 12:51:07 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n    <head>\n        <title>Page Title</title>\n    </head>\n    <body>\n        <div id=\"container\">\n        </div>\n    </body>\n</html>",
+ "title": ""
+}

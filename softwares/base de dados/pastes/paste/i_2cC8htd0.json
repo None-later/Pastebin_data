@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2cC8htd0",
+ "pasteDate": "Feb 28, 2018, 3:46:53 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <string>\n#include <vector>\n#include <algorithm>\n\nusing sz = std::string::size_type;\n\nint main()\n{\n\t//std::string ab = \"ababababaaaaaaaaaaabbaabbaaabbba\";\n\t//std::string ab = \"ababababaaaaaaaaaaabbaabbaaaaaaaa\";\n\t//std::string ab = \"ababababaaabbb\";\n\t//std::string ab = \"ababababaaa\";\n\t//std::string ab = \"aaaabbbbba\";\n\t//std::string ab = \"aaaabbbbb\";\n\t//std::string ab = \"abababab\";\n\tstd::string ab = \"aaaaaaaaaa\";\n\tint n = ab.size();\n\tint k = 4;\n    \n\tstd::vector<sz> vec(n,0); //this vector will save the beautify length for each position in the string\n    \n\tfor(sz i=0;i!=n;++i){\n\t\tauto len=0;\n\t\tauto j=i,aCnt=0,bCnt=0;\n\t\twhile(true){\n\t\t\tif(ab[j]=='a') {\n\t\t\t    //if aCnt is already greater than bCnt than adding one more 'a' char will\n\t\t\t    //just increase the beautify length\n\t\t\t    //however if aCnt is less than bCnt then if aCnt is equal to k, it means\n\t\t\t    //that we will have already made k modifications to the string from pos i to pos j\n\t\t\t    //so we will not increase aCnt in this case and will just consider the current position\n\t\t\t    //to be end of the max beautified string for pos i.\n\t\t\t\tif((aCnt>=bCnt) || (aCnt<k)) \n\t\t\t\t\t++aCnt;\n\t\t\t\telse {\n\t\t\t\t\tvec[i] = aCnt+bCnt;\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t//this check for char 'b' is analogous to the check for char 'a' above.\n\t\t\tif(ab[j]=='b') {\n\t\t\t\tif ((bCnt>=aCnt) || (bCnt<k)) \n\t\t\t\t\t ++bCnt;\n\t\t\t\telse {\n\t\t\t\t\tvec[i] = aCnt+bCnt;\n\t\t\t\t\tbreak;\n\t\t\t\t}\n\t\t\t}\n\t\t\t\n\t\t\t//if we reach the end of the string before making k modifications then we will\n\t\t\t//just consider the entire substring starting at pos i to be the beautified string \n\t\t\t//for pos i\n\t\t\t++j;\n\t\t\tif(j==n){\n\t\t\t\tvec[i]=n-i;\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t}\n\tstd::cout << \"Max beautify length is : \";\n\tstd::cout << *(std::max_element(vec.begin(), vec.end())) << std::endl;\n}",
+ "title": "MaxBeautify.cpp"
+}

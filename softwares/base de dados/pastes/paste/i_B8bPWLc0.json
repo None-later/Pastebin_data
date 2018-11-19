@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "B8bPWLc0",
+ "pasteDate": "Feb 17, 2018, 8:25:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n  \"rules\": [\n    {\n      \"match\": {\n        \"block\": {\n          \"blocks\": [\n            \"biomesoplenty:log_4:5\"\n          ]\n        }\n      },\n      \"replaceStrategy\": \"REPLACE_ITEMS_IF_SELECTED\",\n      \"drops\": [\n        {\n          \"selector\": {\n            \"weight\": {\n              \"value\": 75\n            }\n          },\n          \"item\": {\n            \"items\": [\n              \"minecraft:stick\",\n              \"contenttweaker:dead_planks\"\n            ]\n          }\n        },\n        {\n          \"selector\": {\n            \"weight\": {\n              \"value\": 25\n            }\n          },\n          \"item\": {\n            \"items\": [\n              \"minecraft:coal:1\",\n              \"minecraft:stick\"\n            ]\n          }\n        }\n      ]\n    }\n  ]\n}",
+ "title": ""
+}

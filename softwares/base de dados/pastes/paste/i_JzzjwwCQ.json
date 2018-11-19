@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JzzjwwCQ",
+ "pasteDate": "Feb 20, 2018, 6:44:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Delete is not allowed on the current boot, system, pagefile,crashdump or hibernation volume.",
+ "title": ""
+}

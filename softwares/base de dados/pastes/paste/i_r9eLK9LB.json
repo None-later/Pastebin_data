@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "r9eLK9LB",
+ "pasteDate": "Feb 20, 2018, 7:00:41 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# -*- coding: utf-8 -*-\nimport datetime\nfrom django.db import models\nfrom django.contrib.auth.models import User\nfrom django.template.defaultfilters import slugify\n\n_ = lambda x: x\n\nclass ProjectModuleManager(models.Manager):\n    def create_from_gate(self, gate_cls):\n        gate_obj = gate_cls()\n        return self.create(slug=gate_obj.slug)\n\n\nclass ProjectModule(models.Model):\n    slug = models.CharField(_(u'slug'), max_length=31, primary_key=True)\n\n    objects = ProjectModuleManager()\n\n    class Meta:\n        verbose_name = _(u'project module')\n        verbose_name_plural = _(u'project modules')\n\n    def __unicode__(self):\n        return self.slug\n\n    def _get_gate(self):\n        from sex.apps.projects.modules import gateway\n        return gateway.available_gates[self.slug]\n    gate = property(_get_gate)\n\n    def attach_project(self, project):\n        return self.gate.attach_project_base(project)\n\n    def detach_project(self, project):\n        return self.gate.detach_project_base(project)\n\n    name = property(lambda self: self.gate.verbose_name)\n\nclass Project(models.Model):\n    slug = models.CharField(_(u'slug'), max_length=255, primary_key=True)\n    name = models.CharField(_(u'name'), max_length=255)\n    description = models.TextField(_(u'description'))\n    owner = models.ForeignKey(User, verbose_name=_(u'owner'),\n            related_name='owned_project_set')\n    members = models.ManyToManyField(User, verbose_name=_(u'members'))\n    modules = models.ManyToManyField(ProjectModule,\n            verbose_name=_(u'project modules'))\n    pub_date = models.DateTimeField(_(u'date published'),\n            default=datetime.datetime.utcnow)\n    last_update = models.DateTimeField(_(u'last update'))\n\n    class Meta:\n        verbose_name = _(u'project')\n        verbose_name_plural = _(u'projects')\n        get_latest_by = 'last_update'\n\n    def save(self, force_insert=False, force_update=False):\n        if not self.slug:\n            slug = slugify(self.name)\n            if Project.objects.filter(slug=slug).count():\n                raise ValueError('name: %s' % self.name)\n            self.slug = slug\n        self.last_update = datetime.datetime.utcnow()\n        super(Project, self).save(force_insert, force_update)\n\n    @models.permalink\n    def get_absolute_url(self):\n        return ('projects_project_detail', [self.slug])\n\n    def __unicode__(self):\n        return self.name",
+ "title": ""
+}

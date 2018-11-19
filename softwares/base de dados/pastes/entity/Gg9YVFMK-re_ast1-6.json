@@ -1,0 +1,5 @@
+{
+  "value": "function optional($opt\u003d\"red\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

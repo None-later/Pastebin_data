@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_offline"
+ ],
+ "key": "JQk4jF2W",
+ "pasteDate": "Feb 20, 2018, 1:43:58 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<script>\n  <header>\n    <map>@809186</map>\n    <shaman>true</shaman>\n  </header>\n  <objects>\n    <object name=\"Box1\" id=\"2\" x=\"160\" y=\"-100\" vx=\"0\" vy=\"20\" angle=\"0\" solid=\"true\" />\n    <object name=\"Box2\" id=\"2\" x=\"320\" y=\"-100\" vx=\"0\" vy=\"20\" angle=\"0\" solid=\"true\" />\n    <object name=\"Box3\" id=\"2\" x=\"480\" y=\"-100\" vx=\"0\" vy=\"20\" angle=\"0\" solid=\"true\" />\n    <object name=\"Box4\" id=\"2\" x=\"640\" y=\"-100\" vx=\"0\" vy=\"20\" angle=\"0\" solid=\"true\" />\n    <object name=\"Orangeportal\" id=\"27\" x=\"400\" y=\"500\" vx=\"0\" vy=\"0\" angle=\"0\" solid=\"true\" />\n  </objects>\n  <portals>\n    <Portalroute name=\"route1\" sx=\"205\" sy=\"330\" ex=\"275\" ey=\"330\" />\n    <Portalroute name=\"route2\" sx=\"365\" sy=\"330\" ex=\"435\" ey=\"330\" />\n    <Portalroute name=\"route3\" sx=\"525\" sy=\"330\" ex=\"595\" ey=\"330\" />\n    <Portalroute name=\"route4\" sx=\"595\" sy=\"330\" ex=\"525\" ey=\"330\" />\n    <Portalroute name=\"route5\" sx=\"435\" sy=\"330\" ex=\"365\" ey=\"330\" />\n    <Portalroute name=\"route6\" sx=\"275\" sy=\"330\" ex=\"205\" ey=\"330\" />\n    <Portalnavigation name=\"Portalrun\" id=\"26\" speed=\"5\" loop=\"true\">\n      <route name=\"route1\" />\n      <route name=\"route2\" />\n      <route name=\"route3\" />\n      <route name=\"route4\" />\n      <route name=\"route5\" />\n      <route name=\"route6\" />\n    </Portalnavigation>\n  </portals>\n  <stuff>\n    <StuffMoveCreator name=\"creator1\" status=\"offline\" object=\"Box1\" loop=\"true\" interval=\"1.1\" delay=\"1\" />\n    <StuffMoveCreator name=\"creator2\" status=\"offline\" object=\"Box2\" loop=\"true\" interval=\"1.1\" delay=\"1\" />\n    <StuffMoveCreator name=\"creator3\" status=\"offline\" object=\"Box3\" loop=\"true\" interval=\"1.1\" delay=\"1\" />\n    <StuffMoveCreator name=\"creator4\" status=\"offline\" object=\"Box4\" loop=\"true\" interval=\"1.1\" delay=\"1\" />\n    <StuffCreator name=\"creator5 status=\"online\" object=\"Orangeportal\" />\n  </stuff>\n</script>",
+ "title": ""
+}

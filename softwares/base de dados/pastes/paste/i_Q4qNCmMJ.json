@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Q4qNCmMJ",
+ "pasteDate": "Feb 28, 2018, 5:16:27 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ruby-merb@localhost ~/merb-project $ git init\nInitialized empty Git repository in /home/ruby-merb/merb-project/.git/\nruby-merb@localhost ~/merb-project $ git add .\nruby-merb@localhost ~/merb-project $ git commit -m \"first commit\"\nruby-merb@localhost ~/merb-project $ git status\n# On branch master\nnothing to commit (working directory clean)",
+ "title": ""
+}

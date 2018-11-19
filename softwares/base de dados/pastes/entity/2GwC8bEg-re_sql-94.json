@@ -1,0 +1,5 @@
+{
+  "value": "SELECT @ServiceName \u003d object_name FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

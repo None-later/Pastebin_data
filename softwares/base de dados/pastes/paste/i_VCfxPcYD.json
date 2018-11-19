@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VCfxPcYD",
+ "pasteDate": "Feb 8, 2018, 8:34:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--Made By Chrounum\n\nfor i,v in pairs(game.Workspace:GetChildren()) do\n\tprint(v.Name)\nend",
+ "title": "printWorkspace"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ENdPMhnJ",
+ "pasteDate": "Feb 18, 2018, 9:55:29 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def neg():\n    subj, gen = rand_choose(\"neg_subj.txt\").split()\n    adj = co_adj_nom(rand_choose(\"neg_adj.txt\"), gen)\n    verb = co_verb(rand_choose(\"neg_verbs.txt\"), gen)\n    obj = rand_choose(\"quest_obj.txt\").split()[0]\n    return make_phrase((cap(adj), subj, '', verb, obj)) + '.'\n\ndef ind():\n    subj, gen = rand_choose(\"neg_subj.txt\").split()\n    adj = co_adj_nom(rand_choose(\"neg_adj.txt\"), gen)\n    verb = co_verb(rand_choose(\"neg_verbs.txt\"), gen)\n    obj = rand_choose(\"quest_obj.txt\").split()[0]\n    return make_phrase((cap(adj), subj, verb, obj)) + '.'\n\ndef main():\n    res = [imper(), quest(), cond(), neg(), ind()]\n    random.shuffle(res)\n    for i in res:\n        print(i)\n\n\nmain()",
+ "title": ""
+}

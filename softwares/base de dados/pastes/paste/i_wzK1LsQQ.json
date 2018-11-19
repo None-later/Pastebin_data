@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wzK1LsQQ",
+ "pasteDate": "Feb 26, 2018, 9:31:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "documentclass{book}\nusepackage{showframe}\nusepackage{lipsum,multicol}\npagestyle{empty}\nsetlength{columnseprule}{2pt}\n%setlength{multicolsep}{-10pt}\nbegin{document}\n\nlipsum[1]\n\nbegin{multicols}{3}\nlipsum[1-10]\nend{multicols}\nend{document}\n\t\ndocumentclass{book}\nusepackage{showframe}\nusepackage{lipsum}\nusepackage{multicol}\npagestyle{empty}\nsetlength{columnseprule}{2pt}\nbegin{document}\n\nlipsum[1]\nbegin{multicols}{3}\ntopskip=0pt\nlipsum[1-10]\nend{multicols}\nend{document}",
+ "title": ""
+}

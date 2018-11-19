@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "6cGkm7xm",
+ "pasteDate": "Feb 18, 2018, 11:16:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"progress\">\n  <div class=\"progress-bar progress-bar-warning progress-bar-striped\" role=\"progressbar\" aria-valuenow=\"{{($discount->products->stock * 100)/$discount->stock}}\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: {{($discount->products->stock * 100)/$discount->stock}}%;\">\n    {{$discount->products->stock}} remained\n  </div>\n</div>\n<div class=\"flash-sale-progress-bar__fire\"></div>",
+ "title": ""
+}

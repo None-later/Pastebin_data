@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "gcbbtAX6",
+ "pasteDate": "Feb 21, 2018, 1:25:40 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import web\n\nurls = (\n    '/(.*)', 'hello'\n)\n\nclass hello:        \n    def GET(self, name):\n        i = web.input(times=1)\n        if not name: name = 'world'\n        for c in range(int(i.times)):\n            print 'Hello,', name+'!'\n\nif __name__ == \"__main__\": web.run(urls, globals())",
+ "title": ""
+}

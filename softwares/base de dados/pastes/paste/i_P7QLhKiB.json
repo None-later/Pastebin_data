@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "P7QLhKiB",
+ "pasteDate": "Feb 28, 2018, 3:57:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var keyCodes = {\n  'backspace': 8,\n  'tab': 9,\n  'enter': 13,\n  'shift': 16,\n  'ctrl': 17,\n  'alt': 18,\n  'pause/break': 19,\n  'caps lock': 20,\n  'escape': 27,\n  'page up': 33,\n  'page down': 34,\n  'end': 35,\n  'home': 36,\n  'left arrow': 37,\n  'up arrow': 38,\n  'right arrow': 39,\n  'down arrow': 40,\n  'insert': 45,\n  'delete': 46,\n  '0': 48,\n  '1': 49,\n  '2': 50,\n  '3': 51,\n  '4': 52,\n  '5': 53,\n  '6': 54,\n  '7': 55,\n  '8': 56,\n  '9': 57,\n  'a': 65,\n  'b': 66,\n  'c': 67,\n  'd': 68,\n  'e': 69,\n  'f': 70,\n  'g': 71,\n  'h': 72,\n  'i': 73,\n  'j': 74,\n  'k': 75,\n  'l': 76,\n  'm': 77,\n  'n': 78,\n  'o': 79,\n  'p': 80,\n  'q': 81,\n  'r': 82,\n  's': 83,\n  't': 84,\n  'u': 85,\n  'v': 86,\n  'w': 87,\n  'x': 88,\n  'y': 89,\n  'z': 90,\n  'left window key': 91,\n  'right window key': 92,\n  'select key': 93,\n  'numpad 0': 96,\n  'numpad 1':\t97,\n  'numpad 2':\t98,\n  'numpad 3':\t99,\n  'numpad 4':\t100,\n  'numpad 5':\t101,\n  'numpad 6':\t102,\n  'numpad 7':\t103,\n  'numpad 8':\t104,\n  'numpad 9':\t105,\n  'multiply':\t106,\n  'add': 107,\n  'subtract': 109,\n  'decimal point': 110,\n  'divide': 111,\n  'f1': 112,\n  'f2': 113,\n  'f3': 114,\n  'f4': 115,\n  'f5': 116,\n  'f6': 117,\n  'f7': 118,\n  'f8': 119,\n  'f9': 120,\n  'f10': 121,\n  'f11': 122,\n  'f12': 123,\n  'num lock':\t144,\n  'scroll lock': 145,\n  'semi-colon': 186,\n  'equal sign': 187,\n  'comma': 188,\n  'dash': 189,\n  'period': 190,\n  'forward slash': 191,\n  'grave accent': 192,\n  'open bracket': 219,\n  'back slash': 220,\n  'close braket': 221,\n  'single quote':\t222\n};",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SB2Emw7z",
+ "pasteDate": "Feb 21, 2018, 2:16:56 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "set background=dark\n\" ir_black has an 'after' hook\ncolorscheme ir_black\nset columns=120\nset lines=40\nset enc=utf-8 \nset gfn=Anonymous:h12\n\nset list\nset listchars=tab:>\\ ,trail:-,extends:>,precedes:<,nbsp:+",
+ "title": ""
+}

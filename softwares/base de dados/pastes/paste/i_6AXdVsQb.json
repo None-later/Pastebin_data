@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6AXdVsQb",
+ "pasteDate": "Feb 20, 2018, 6:43:00 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "./citra-qt : [   0.000001] Loader <Warning> core/loader/loader.cpp:GetLoader:137: File \nC:/Users/trist/Downloads/nightly-mingw/Pokemon Ultra Sun Decrypted.3ds has a different type than its extension.\nAt line:1 char:1\n+ ./citra-qt 2>log.txt\n+ ~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : NotSpecified: ([   0.000001] L... its extension.:String) [], RemoteException\n    + FullyQualifiedErrorId : NativeCommandError\n \n[   0.075146] Frontend <Info> citra_qt/main.cpp:CheckForUpdates:464: Update check started\n[   1.301403] Frontend <Info> citra_qt/main.cpp:OnUpdateFound:477: No updates found\n[  44.604085] Frontend <Info> citra_qt/main.cpp:BootGame:604: Citra starting...\n[  44.610980] Loader <Warning> core/loader/loader.cpp:GetLoader:137: File \nC:/Users/trist/Downloads/nightly-mingw/Pokemon Ultra Sun Decrypted.3ds has a different type than its extension.\n[  44.661720] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:488: GL_VERSION: 1.1.0\n[  44.661743] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:489: GL_VENDOR: Microsoft \nCorporation\n[  44.661752] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:490: GL_RENDERER: GDI Generic\n[  44.661765] Render <Error> video_core/video_core.cpp:Init:34: initialization failed !\n[  44.661777] Core <Critical> core/core.cpp:Load:108: Failed to initialize system (Error 9)!",
+ "title": ""
+}

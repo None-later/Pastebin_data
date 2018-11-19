@@ -1,0 +1,5 @@
+{
+  "value": "\"https://id2.action-media.ru/logon/index?appid\u003d10623\u0026reglink\u003dhttps:%2F%2Fid2.action-media.ru%2FAccount%2FRegistration%3Fappid%3D10623%26callbackurl%3Dhttps%253A%252F%252F1gbsoft.ru%252Fstart.php%26rand%3D170%26sig%3D51449a3da5267fe94a9ef1dcddf84f78%26urlreferral%3Dhttps%253A%252F%252F1gbsoft.ru%252F\u0026p\u003d1\u0026r\u003d0.039518758492528616",
+  "correct": false,
+  "jSonReason": "re_url"
+}

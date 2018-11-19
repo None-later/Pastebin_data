@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6X7SC9MQ",
+ "pasteDate": "Feb 18, 2018, 1:09:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " #include <iostream>\n#include <complex>\n#include <algorithm>\n#include <bits/stdc++.h>\nusing namespace std;\nint main()\n{\n    long long  n, m, k, kolvosposobov = 0;\n    cin >> n >> m >> k;\n    for(int i =1; i<= 1e6; i++){\n            long long y = i*i*i;\n            if(y <= m && y >= n){\n                    long long L = max(n, y - k), R = min(y+k, m);\n                    long long  l = ceil(sqrt(L)), r = floor(sqrt(R));\n                    kolvosposobov += (r-l + 1);\n            }\n            if(y > m){\n                break;\n            }\n    }\n    cout << kolvosposobov;\n\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "s17qESGv",
+ "pasteDate": "Feb 11, 2018, 8:19:28 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def dayDiff(input,nextRenewal=False):\n\t#normalizzo l'input\n\tif(type(input) is str):\n\t\tval = input.split('-')\n\t\tinputData = date(int(val[0]), int(val[1]), int(val[2]))\n\telse:\n\t\tinputData = input\n\n\ttoday = date.today()\n\t#uniformo mese e anno\n\tinputData = inputData.replace(year=today.year, month=today.month)\n\tif(inputData < today and nextRenewal):\n\t\tnewMonth = inputData.month+1\n\t\tinputData = inputData.replace(year=int(inputData.year+newMonth/12), month=int(newMonth%12))\n\n\tif(inputData > today and not nextRenewal):\n\t\tnewMonth = inputData.month-1\n\t\tnewYear = inputData.year\n\t\tif(newMonth == 0):\n\t\t\tnewMonth =12\n\t\t\tnewYear = inputData.year -1\n\t\tinputData = inputData.replace(year=newYear, month=newMonth)\n\n\treturn abs((inputData - today).days)",
+ "title": ""
+}

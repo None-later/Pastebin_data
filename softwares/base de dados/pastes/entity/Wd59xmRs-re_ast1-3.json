@@ -1,0 +1,5 @@
+{
+  "value": "function internal_init(meID, hp_, attack_, defense_, speed_, shield_)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

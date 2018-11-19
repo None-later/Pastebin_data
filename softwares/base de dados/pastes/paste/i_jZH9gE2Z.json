@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jZH9gE2Z",
+ "pasteDate": "Feb 18, 2018, 12:51:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//Rewrite the main routine of longest-line so it will print the length of arbitrarily long input, and as much of the text as possible\n\n#include <stdio.h>\n\n#define MAXLINE 10\n\nint getline(char line []);\nvoid copy(char to[], char from[]);\n\nint main(void)\n{\n\tint len, max, c;\n\tchar line [MAXLINE], longest[MAXLINE];\n\n\tmax = 0;\n\twhile ((len = getline(line)) > 0) {\n\t\tprintf(\"%s\", line);\n\t\tif (line[len-1] != '\\n') {\n\t\t\twhile ((c = getchar()) != '\\n') {\n\t\t\t\tputchar(c);\n\t\t\t\t++len;\n\t\t\t}\n\t\t\tputchar('\\n');\n\t\t}\n\t\tif (len > max) {\n\t\t\tmax = len;\n\t\t\tcopy(longest, line);\n\t\t}\n\t}\n\tif (max > 0)\n\t\tprintf(\"%s\", longest);\n\n\treturn 0;\n}\n\nint getline(char s[])\n{\n\tint c, i;\n\n\tfor (i = 0; i < MAXLINE-1 && (c=getchar()) != EOF && c != '\\n'; ++i)\n\t\ts[i] = c;\n\tif (c == '\\n')\n\t\ts[i++] = c;\n\ts[i] = '\\0';\n\n\treturn i;\n}\n\nvoid copy(char to[], char from[])\n{\n\tint i = 0;\n\n\twhile ((to[i] = from[i]) != '\\0') \n\t\t++i;\n}",
+ "title": ""
+}

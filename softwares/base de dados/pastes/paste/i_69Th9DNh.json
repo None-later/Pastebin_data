@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "69Th9DNh",
+ "pasteDate": "Feb 18, 2018, 6:48:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "library(readxl)\nlibrary(forecast)\nlibrary(TTR)\ndataset <- read_excel(\"data.xlsx\")\nmyts <- ts(dataset$y, frequency=365.25/7, start=2017.9)\nmytsarima<-auto.arima(myts,seasonal=TRUE)\npredict(mytsarima,n.ahead=1,se.fit=T)\nforecastmyts<-forecast(object=mytsarima,h=1)\nplot(forecastmyts)",
+ "title": ""
+}

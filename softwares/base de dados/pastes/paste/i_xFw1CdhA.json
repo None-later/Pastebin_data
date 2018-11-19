@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xFw1CdhA",
+ "pasteDate": "Feb 12, 2018, 11:01:23 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\"?>\n<layout version=\"0.1.0\">\n    <default>\n        <reference name=\"content\">\n            <block type=\"core/template\" as=\"shippingestimate\" template=\"shippingestimate/shippingdate.phtml\" />\n        </reference>\n    </default>\n</layout>\n\t\n<frontend>\n        <routers>\n           <shippingestimate>\n               <use>standard</use>\n               <args>\n                   <module>Wtw_Shippingestimate</module>\n                   <frontName>shippingestimate</frontName>\n               </args>\n           </shippingestimate>\n       </routers>\n        <layout>\n          <updates>\n            <shippingestimate>\n              <file>shippingestimate.xml</file>\n            </shippingestimate>\n          </updates>\n        </layout>\n    </frontend>",
+ "title": ""
+}

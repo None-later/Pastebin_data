@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ae9jVp04",
+ "pasteDate": "Feb 28, 2018, 5:29:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "return string.Format(\n                    RefTypeParseExtension.GetCsvStringFormat(Tete.Length),\n                     \"No Id\",\"Article\",\"Amount\"\n                    );\n\t\nstring[] Tete = { \"No Id\",\"Article\",\"Amount\",\"IsFix\"}\n string temp = \"\";\n            for (int i = 0; i < Tete.Length; i++)\n            {\n                if (i != Tete.Length-1) { temp += \"\"\" + Tete[i] + \"\",\"; }\n                else { temp += \"\"\" + Tete[i] + \"\"\"; }\n\n            }\n return string.Format(\n                        RefTypeParseExtension.GetCsvStringFormat(Tete.Length),\n                         temp\n                        );\n\t\npublic static string GetTete(string[] Tete)\n        {\n            var sb = new StringBuilder();          \n\n            for (int i = 0; i < Tete.Length; i++)\n            {\n                if (i != Tete.Length - 1) { sb.AppendFormat(\"\"{0}\",\", Tete[i]); }\n                else { sb.AppendFormat(\"\"{0}\"\", Tete[i]); }\n\n            }\n\n            return sb.ToString();\n        }",
+ "title": ""
+}

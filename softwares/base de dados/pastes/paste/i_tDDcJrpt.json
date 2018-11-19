@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "re_java",
+  "kw_pirate",
+  "lg_en"
+ ],
+ "key": "tDDcJrpt",
+ "pasteDate": "Feb 8, 2018, 2:40:19 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "import java.util.Arrays;\nimport java.util.List;\nimport java.util.LinkedList;\nimport pirates.*;\n \npublic class objectsInfo implements PirateBot\n{\n        private int getNumOfMotherships(PirateGame game){\n        int mnum;\n        for(Mothership mothership : game.getMyMothership()){\n            mnum++;\n        }\n        return mnum;\n    }\n        private int getNumOfEnemyMotherships(PirateGame game){\n        int mnum;\n        for(Mothership mothership : game.getEnemyMothership()){\n            mnum++;\n        }\n        return mnum++;\n    }\n        private int getNumOfPirates(PirateGame game){\n        int mnum;\n        for(Pirate pirate : game.getMyLivingPirates()){\n            mnum++;\n        }\n        return mnum++;\n    }\n        private int getNumOfEnemyPirates(PirateGame game){\n        int mnum;\n        for(Pirate pirate : game.getEnemyLivingPirates()){\n            mnum++;\n        }\n        return mnum++;\n    }\n        private int getNumOfCapsules(PirateGame game){\n        int mnum;\n        for(Capsule pirate : game.getMyCapsules()){\n            mnum++;\n        }\n        return mnum++;\n    }\n        private int getNumOfEnemyCapsules(PirateGame game){\n        int mnum;\n        for(Capsule pirate : game.getEnemyCapsules()){\n            mnum++;\n        }\n        return mnum++;\n    }\n}",
+ "title": ""
+}

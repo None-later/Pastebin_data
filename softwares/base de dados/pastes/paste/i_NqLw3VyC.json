@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "NqLw3VyC",
+ "pasteDate": "Feb 28, 2018, 4:28:14 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "VirtualHost configuration:\n127.0.0.1:80\ndummy-host2.example.com \n(C:/Program Files (x86)/Zend/Apache2/conf/extra/httpd-vhosts.conf:25)\nwildcard NameVirtualHosts and _default_ servers:\n*:10081                is a NameVirtualHost\n         default server BEGIT003.BEG.COM (C:/Program Files (x86)/Zend/Apache2/c\nnf/zend.conf:32)\n         port 10081 namevhost BEGIT003.BEG.COM (C:/Program Files (x86)/Zend/Apa\nhe2/conf/zend.conf:32)\n*:80                   is a NameVirtualHost\n         default server dummy-host3.example.com (C:/Program Files (x86)/Zend/Ap\nche2/conf/extra/httpd-vhosts.conf:40)\n         port 80 namevhost dummy-host3.example.com (C:/Program Files (x86)/Zend\nApache2/conf/extra/httpd-vhosts.conf:40)\nSyntax OK",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "apache",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "GNh5DvQ7",
+ "pasteDate": "Feb 12, 2018, 12:28:30 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "FAILED: /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/precompiled_sepolicy_intermediates/precompiled_sepolicy \n/bin/bash -c \"/home/glebcha/nitrogen/out/host/linux-x86/bin/secilc -M true -G -c 30 \t\t/home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/plat_sepolicy.cil_intermediates/plat_sepolicy.cil /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/27.0.cil_intermediates/27.0.cil /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil -o /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/precompiled_sepolicy_intermediates/precompiled_sepolicy -f /dev/null\"\nneverallow check failed at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:3189\n  (neverallow base_typeattr_56_27_0 base_typeattr_57_27_0 (file (execute execute_no_trans entrypoint)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8054\n      (allow sysinit sysinit_exec (file (read getattr map execute entrypoint open)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8062\n      (allow sysinit shell_exec_27_0 (file (ioctl read getattr lock map execute execute_no_trans open)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8065\n      (allow sysinit toolbox_exec_27_0 (file (ioctl read getattr lock map execute execute_no_trans open)))\n\nneverallow check failed at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/plat_sepolicy.cil_intermediates/plat_sepolicy.cil:4645 from system/sepolicy/public/domain.te:669\n  (neverallow base_typeattr_56 base_typeattr_57 (file (execute execute_no_trans entrypoint)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8054\n      (allow sysinit sysinit_exec (file (read getattr map execute entrypoint open)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8062\n      (allow sysinit shell_exec_27_0 (file (ioctl read getattr lock map execute execute_no_trans open)))\n    <root>\n    allow at /home/glebcha/nitrogen/out/target/product/sailfish/obj/ETC/nonplat_sepolicy.cil_intermediates/nonplat_sepolicy.cil:8065\n      (allow sysinit toolbox_exec_27_0 (file (ioctl read getattr lock map execute execute_no_trans open)))\n\nFailed to generate binary\nFailed to build policydb",
+ "title": ""
+}

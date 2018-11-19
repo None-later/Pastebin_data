@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RVdDVLRW",
+ "pasteDate": "Feb 21, 2018, 1:16:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import os\n\nfolder_path_old = \nfolder_path_new = \n\nall_filenames = os.listdir(folder_path_old)\nfiltered_filenames = [file for file in all_filenames if file.endswith(\".csv\")]\nfilename = sorted(filtered_filenames)[0]\n\nfilepath_old = folder_path_old + filename\nfilepath_new = folder_path_new + filename\n\nshutil.move(filepath_old, filepath_new)\nreturn np.loadtxt(filepath_new, delimiter=',', dtype=np.dtype('d'), unpack=True)",
+ "title": ""
+}

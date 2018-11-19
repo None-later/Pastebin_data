@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "re_url"
+ ],
+ "key": "kwm6qF7i",
+ "pasteDate": "Feb 20, 2018, 4:51:52 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import httplib, urllib, json\n\nparams = '{\"username\": \"------------\", \"password\": \"------------\"}'\nheaders = {\n            \"Content-type\": \"application/json\",\n            \"Accept\": \"application/json\"\n        }\nconn = httplib.HTTPConnection(\"jira.pdev.asinetwork.local:8080\")\nconn.request(\"POST\", \"/rest/auth/1/session\", params, headers)\nresponse = conn.getresponse()\ndata = response.read()\nj = json.loads(data)\n#This gets the session id needed to make calls to jira\ntoken = j['session']['value']\nconn.close()\nprint 'JSESSIONID='+token\n\nquery = \"/rest/api/2/search?jql=project+in+(EIT,+EXCIT,+VELO,+VNE,+VNI)+AND+status+in+(Open,+%22In+Progress%22,+Reopened,+Resolved,+%22On+Hold%22,+Problem)+AND+assignee+in+(amcgee,+mhill)+ORDER+BY+due+ASC,+status+DESC,+assignee+DESC&&fields=key,priority,customfield_10305,summary,customfield_10819,duedate,status,assignee\"\nconn = httplib.HTTPConnection(\"jira.pdev.asinetwork.local:8080\")\nconn.request(\"GET\", query, headers={\"cookie\": \"JSESSIONID=\"+token})\nresponse = conn.getresponse()\ndata = response.read()\nprint data\nj = json.loads(data)\n#This is the total number of issues we currently have\nissueCount = j['total']\nprint 'Issues: ',issueCount\n\nfor issue in j['issues']:\n    print 'Key: ', issue['key']\n    if 'customfield_10305' in issue['fields']:\n        print 'ASI #: ',issue['fields']['customfield_10305']\n    print 'Summary: ', issue['fields']['summary']\n    print 'Status: ', issue['fields']['status']['name']\n    print 'Priority: ', issue['fields']['priority']['name']\n    if 'customfield_10819' in issue['fields']:\n        print 'Detailed Status: ', issue['fields']['customfield_10819']\n    print 'Duedate: ', issue['fields']['duedate']\n    print 'Assignee: ', issue['fields']['assignee']['displayName']\nconn.close()",
+ "title": "Local Jira Instance Api - Reading Data"
+}

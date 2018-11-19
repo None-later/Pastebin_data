@@ -1,0 +1,7 @@
+{
+  "corrects": 1,
+  "incorrects": 82,
+  "reason": "re_ipv6_with_port",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

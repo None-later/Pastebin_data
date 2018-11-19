@@ -1,0 +1,5 @@
+{
+  "value": "function( pSender, strText, bTeamChat )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_python_error"
+ ],
+ "key": "MnvG7GH7",
+ "pasteDate": "Feb 21, 2018, 8:56:09 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "from flask import Flask\nfrom flask_sqlalchemy import SQLAlchemy\nfrom flask_restless import APIManager\n\napp = Flask(__name__)\napp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///compData.db'\ndb = SQLAlchemy(app)\ndb.Model.metadata.reflect(db.engine)\n\nclass getRecord(db.Model):\n    __table__ = db.Model.metadata.tables['condition']\n\n@app.route('/sample', methods=[\"GET\"])\ndef home():\n    b = getRecord.query.all()\n    for usr in b:\n        return usr.first_name\n\nif __name__ == \"__main__\":\n    app.run(debug=True)\n\t\nTraceback (most recent call last):\n  File \"pathJetBrainsPyCharm Community Edition 2016.3helperspydevpydevd.py\", line 1596, in <module>\n    globals = debugger.run(setup['file'], None, None, is_module)\n  File \"pathJetBrainsPyCharm Community Edition 2016.3helperspydevpydevd.py\", line 974, in run\n    pydev_imports.execfile(file, globals, locals)  # execute the script\n  File \"path/PycharmProjects/testGetConn/test.py\", line 17, in <module>\n    class conda(db.Model):\n  File \"path/PycharmProjects/testGetConn/test.py\", line 18, in conda\n    __table__ = db.Model.metadata.tables['condition']\nKeyError: 'condition'",
+ "title": ""
+}

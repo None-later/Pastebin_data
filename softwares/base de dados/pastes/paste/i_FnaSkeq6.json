@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FnaSkeq6",
+ "pasteDate": "Feb 12, 2018, 9:42:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class Punkt {\n  private double x; // = 0; (implizite Init.)\n  private double y; // = 0; (implizite Init.)\n  public Punkt() {\n  }\n  public Punkt(double x, double y) {\n    this.x = x;\n    this.y = y;\n  }\n  public Punkt(Punkt p) {\n    this(p.x, p.y);\n  }\n  public double x() {\n    return x;\n  }\n  public double y() {\n    return y;\n  }\n  public boolean equals(Punkt p) {\n    return Zahlen.equals(x, p.x) && Zahlen.equals(y, p.y);\n  }\n  public Punkt verschiebe(double dx, double dy) {\n    x += dx;\n    y += dy;\n    return this;\n  }\n  public double abstand(Punkt p) {\n    double dx = x - p.x;\n    double dy = y - p.y;\n    return Math.sqrt(dx * dx + dy * dy);\n  }\n  public String toString() {\n    return \"(\" + x + \",\" + y + \")\";\n  }\n}",
+ "title": ""
+}

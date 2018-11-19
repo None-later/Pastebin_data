@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZZ4JV91A",
+ "pasteDate": "Feb 20, 2018, 7:58:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "n = 6\nk = 1 => 1 cycle\nk = 2 => 2 cycle (C1 starting at 0[0,2,4], C2 at 1[1,3,5])\nk = 3 => 3 cycle (C1 - [0,3], C2 - [1,4], C3 - [2,5])\nk = 4 => 2 cycle (C1 - [0,4,2] C2 - [1,5,3])\nk = 5 => 1 cycle",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iaVkHfTE",
+ "pasteDate": "Feb 18, 2018, 4:16:36 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def caesar(chars):\n\tfor i in range(len(chars)):\n\t\tif 65 <= ord(chars[i]) <= 90 or 97 <= ord(chars[i]) <= 122:\n\t\t\tchars = (chars[:i] + chars[i:].replace(chars[i], chr(ord(chars[i]) + 3), 1)) if (65 <= (ord(chars[i]) + 3) <= 90 or 97 <= (ord(chars[i])+3) <= 122) else (chars[:i] + chars[i:].replace(chars[i], chr(ord(chars[i]) - 23), 1))\n\treturn chars\n\nwhile True:\n        print caesar(raw_input(\"GIMME: \"))",
+ "title": ""
+}

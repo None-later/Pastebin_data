@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "1pNAy92f",
+ "pasteDate": "Feb 28, 2018, 3:46:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "OrientationEventListener myOrientationEventListener;\n\nmyOrientationEventListener\n                = new OrientationEventListener(this, SensorManager.SENSOR_DELAY_NORMAL){\n\n            @Override\n            public void onOrientationChanged(int orientation) {\n                // TODO Auto-generated method stub\n                if (orientation >= 330 || orientation < 30) {\n                    mDegress = 90;\n                } else if (orientation >= 60 && orientation < 120) {\n                    mDegress =180;\n                } else if (orientation >= 150 && orientation < 210) {\n                    mDegress = 90;\n                } else if (orientation >= 240 && orientation < 300) {\n                    mDegress = 0;\n                }\n            }};",
+ "title": "Orientation"
+}

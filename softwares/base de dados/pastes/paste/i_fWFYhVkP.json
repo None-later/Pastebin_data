@@ -1,0 +1,15 @@
+{
+ "espireDate": "10M",
+ "format": "python",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "fWFYhVkP",
+ "pasteDate": "Feb 17, 2018, 1:37:58 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "import subprocess\nimport MySQLdb\nimport datetime\nimport time\nimport ntpath\n\nclass Login:\n\tdef __init__(self):\n\t\tself._base_name = open(\".base_name\").read().rstrip()\n\t\tself._base_email = open(\".base_email\").read().rstrip()\n\t\tself._time_made = open(\".time_made\").read().rstrip()\n\t\tif self._time_made > (60*60*24*30): #month\n\t\t\traise Exception(\"Accounts need new authtoken.\")\n\n\t@property\n\tdef _email(self):\n\t\tat = self._base_email.find(\"@\")\n\t\tnumber = str(self.get_numbers(self.screen_name)[0])\n\t\temail = self._base_email[:at] + number + self._base_email[at:]\n\t\treturn email\n\n\t@property\n\tdef _screen_name(self):\n\t\tstdout = subprocess.check_output(\"screen -ls\",shell=True)\n\t\tif type(stdout) == bytes:\n\t\t\tstdout = stdout.decode('utf-8')\n\t\tattached = stdout.find(\"(Attached)\")\n\t\tif attached == -1:\n\t\t\traise Exception(\"You are not attached to a screen.\")\n\t\tnewline = stdout.rfind(\"\\n\", 0, attached) #reverse find (from the end)\n\t\tline = stdout[newline:attached]\n\t\tdot = line.find(\".\")\n\t\tspace_after = line.find(\"\\t\", dot)\n\t\tscreen_name = line[dot+1:space_after]\n\t\treturn screen_name\n\n\tdef get_numbers(self, string): #returns list\n\t\tnumber_text = \"\"\n\t\tfor i in range(len(string)):\n\t\t\ttry:\n\t\t\t\tnumber_text += str(int(string[i]))\n\t\t\texcept ValueError:\n\t\t\t\tnumber_text += \" \"\n\t\tnumbers_list = number_text.split()\n\t\tnumbers = [int(n) for n in numbers_list]\n\t\treturn numbers\n\n\t@property\n\tdef _authtoken(self):\n\t\tdb = MySQLdb.connect(host=\"localhost\", user=\"root\", passwd=\"password\", db=self._base_name)\n\t\tcur = db.cursor()\n\t\tnumbers = []\n\t\ttokens = []\n\t\tcur.execute(\"SELECT * FROM AuthTokens\")\n\t\tfor row in cur.fetchall():\n\t\t\tnumbers.append(row[0])\n\t\t\ttokens.append(row[1])\n\t\tnumber = self.get_numbers(self._screen_name)[0]\n\t\ttry:\n\t\t\tindex = numbers.index(number)\n\t\texcept ValueError:\n\t\t\tstring = \"%s does not have an authtoken.\" % self._email\n\t\t\traise Exception(string)\n\t\ttoken = tokens.index(index)\n\t\tcur.close()\n\t\tdb.close()\n\t\treturn token",
+ "title": "login"
+}

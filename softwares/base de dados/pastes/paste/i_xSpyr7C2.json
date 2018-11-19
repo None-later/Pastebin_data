@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "xSpyr7C2",
+ "pasteDate": "Feb 20, 2018, 5:45:48 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#-*- coding: utf-8 -*-\ntaille = int(input(\"entrer la taille \")) /100.0\nmasse = int(input(\"enter la masse \"))\ncalcul = masse/(taille**2)\nmassei = 22*(taille**2)\n\nmodele = input(\"taper 1 pour avoir votre masse idale, taper 2 pour avoir votre IMC ainsi qu'une apprciation \")\n\nif modele == 1:\n  print(massei)\n\nif modele == 2:\n  print(calcul)\n\n  if calcul <= 18:\n    print(\"maigreur\")\n  elif calcul <= 25:\n    print(\"corpulance normale\")\n  else :\n    print(\"surpoid ou obsit\")",
+ "title": "imc"
+}

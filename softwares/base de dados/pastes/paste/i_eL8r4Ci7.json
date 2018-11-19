@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "eL8r4Ci7",
+ "pasteDate": "Feb 21, 2018, 10:21:42 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Call it BF3_xRadar_Default.ini and put this in it\n\n[Render]\nBoundingBox=1\nVisibilityCheck=2\n[Esp]\n2DRadar=0\n3DRadar=1\nNameInfo=0\nHealthInfo=1\nWeaponInfo=0\nDistanceInfo=0\nCrossType=1\nShowTeam=2\n[Hack]\nCrossHair=1\nCrossType=1\n[Misc]\nTeam1Color1.R=60\nTeam1Color1.G=160\nTeam1Color1.B=229\nTeam1Color2.R=60\nTeam1Color2.G=229\nTeam1Color2.B=60\nTeam2Color1.R=229\nTeam2Color1.G=60\nTeam2Color1.B=60\nTeam2Color2.R=229\nTeam2Color2.G=229\nTeam2Color2.B=60\n[Setting]\nTransparency=10\nMenuColor.R=45\nMenuColor.G=45\nMenuColor.B=45\nPageColor.R=60\nPageColor.G=60\nPageColor.B=60\nButtonColor.R=100\nButtonColor.G=100\nButtonColor.B=100\nMenuKey=0\n[System]\nMenuPosX=94\nMenuPosY=584\nRadarPosX=885\nRadarPosY=447",
+ "title": ""
+}

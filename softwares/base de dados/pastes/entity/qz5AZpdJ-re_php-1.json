@@ -1,0 +1,5 @@
+{
+  "value": "define(:version \u003d\u003e 32)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 @ISH \u003d STUFF((SELECT DISTINCT N\u0027\u0027,\u0027\u0027 + CONVERT(NVARCHAR(MAX),b2.SqlHandle, 1) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

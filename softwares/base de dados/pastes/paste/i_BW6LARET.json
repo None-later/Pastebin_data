@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BW6LARET",
+ "pasteDate": "Feb 11, 2018, 2:21:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def intFuture: Future[Int] = { /* ... */ }\ndef stringFuture: Future[String] = { /* ... */ }\ndef userFuture: Future[User] = { /* ... */ }\n\ndef process(value: Int, contents: String, user: User): ProcessingResult = { /* do some stuff */ }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Rutxm0aJ",
+ "pasteDate": "Feb 28, 2018, 10:25:04 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "it \"should be allowed if not in Publishing role\" do\n  @user.expects(:has_a_role_from?).with(Role::PUBLISHING_ROLES).returns(true)\n  @user.can_publish?.should == true\nend",
+ "title": ""
+}

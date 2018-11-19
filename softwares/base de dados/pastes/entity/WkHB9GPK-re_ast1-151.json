@@ -1,0 +1,5 @@
+{
+  "value": "Function.prototype.bind})(typeofglobal\u003d\u003d\u003d\"undefined\"?self:global)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

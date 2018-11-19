@@ -1,0 +1,5 @@
+{
+  "value": "function\"\u0026\u0026__t.setHandler)__t.setHandler(C.reportError)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function AddObject(Character,Object)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

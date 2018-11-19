@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "9rpDHWQh",
+ "pasteDate": "Feb 21, 2018, 9:25:58 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "0a00e57... Using #received in #assert_received, instead of SpyVerificationProxy.new.\n723b2db... Documentation changes.\n4a86b53... Attributions\n95b8549... Added test/unit api.\n10f3d3f... RecordedCalls#ordered_match_error raises a InvocationCountError instead of a SpyVerificationError when the match does not work.\n524ebeb... Removed InvocationNotFoundError because its not going to be used.\nd3c72c2... If there an the incorrect number of invocations in RecordedCalls#unordered_match_error, a InvocationCountError is raised.\n874c5d8... Reformatting some code.\nb681ad9... RecordedCalls#match_error returns the Error object if one exists.\n03d95a8... Added SpyVerificationError subtypes. Moved SpyVerificationError and children into the RR::Errors::SpyVerificationErrors module.\ne3e540e... Moved RRMethods#have_received to RR::Adapters::Rspec#have_received.\n8d834fc... Reorganized spec.\n1bdb2dc... Moved RRMethods#verify_invocation to SpyVerification#call.\ne19fe27... Renamed RRMethods#of_spy to #received.\n41df2a4... Changed RecordedCalls#matches? to #match_error in anticipation of having reasons a match fails.\n60780a4... Created readers in spec.",
+ "title": ""
+}

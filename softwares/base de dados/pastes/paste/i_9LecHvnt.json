@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9LecHvnt",
+ "pasteDate": "Feb 18, 2018, 11:04:54 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Text;\n\npublic  class Engine\n{\n    private string model;\n    private int power;\n    private int displacement;\n    private string efficiency;\n\n    public Engine()\n    {\n\n    }\n    public Engine(string model, int power)\n    {\n        this.Model = model;\n        this.Power = power;\n    }\n\n    public Engine(int displacement) : this()\n    {\n        this.Displacement = displacement;\n    }\n\n    public Engine(string efficiency) : this(model, power)\n    {\n        this.Efficiency = efficiency;\n    }\n\n    public string Efficiency\n    {\n        get { return efficiency; }\n        set { efficiency = value; }\n    }\n\n\n    public int Displacement\n    {\n        get { return displacement; }\n        set { displacement = value; }\n    }\n\n\n    public int Power\n    {\n        get { return power; }\n        set { power = value; }\n    }\n\n\n    public string Model\n    {\n        get { return model; }\n        set { model = value; }\n    }\n\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BT7RaQmM",
+ "pasteDate": "Feb 10, 2018, 9:01:57 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\nint main()\n\n{\nchar ch;\nscanf(\"%c\",&ch);\nif(ch>='a' && ch<='z'){\nprintf(\" is lower case\\n\");\n\n}\nelse if(ch>='A'&& ch<='Z'){\nprintf(\"is upper case\\n\");\n}\nelse if(ch>='0'){\nprintf(\"is number\\n\");\n\n\n}\nelse{\n     printf(\"is symbol \\n\");\n}\nreturn 0;\n\n}",
+ "title": "uppeer case"
+}

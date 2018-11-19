@@ -1,0 +1,5 @@
+{
+  "value": "SELECT SUM(1) AS cpu_count FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

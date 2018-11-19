@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cctE7ZHY",
+ "pasteDate": "Feb 17, 2018, 11:13:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "{\n    \"anyOf\" : [\n        {\n            \"properties\" : {\n                \"quantity\" : {\n                    \"minimum\" : 0,\n                    \"maximum\" : 0\n                },\n                \"actualQuantity\" : {\n                    \"minimum\" : 0,\n                    \"maximum\" : 0\n                }\n            }\n        },\n        {\n            \"properties\" : {\n                \"quantity\" : {\n                    \"minimum\" : 1\n                },\n                \"actualQuantity\" : {\n                    \"minimum\" : 1\n                }\n            }\n        }\n    ]\n}\n\t\nimport validator from 'aj-validator'\n\napi.post('/user', (req, res) => {\n\n  let validationRules = {\n    username: 'required|email|min:6',\n    name: 'required|min:2',\n    description: 'required|max:255'\n  };\n\n  let is_valid = validator.validate(req.body, validationRules);\n  console.log(is_valid); // true|false\n\n  let errors = validator.getErrors(); // Retriving validation errors\n  console.log(errors);\n\n});",
+ "title": ""
+}

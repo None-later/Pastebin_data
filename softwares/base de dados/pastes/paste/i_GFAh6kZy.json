@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "GFAh6kZy",
+ "pasteDate": "Feb 26, 2018, 11:21:21 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#showtooltip\n/stopcasting\n/stopcasting\n/cast [talent:4/2] Mass Entanglement\n/cast [talent:4/1] Mighty Bash\n\n\n#showtooltip\n/stopcasting\n/stopcasting\n/cast solar beam\n\n\n#showtooltip solar beam\n/stopcasting\n/stopcasting\n/cast [target=focus] solar beam\n\n#showtooltip \n/cast [@focus][talent:4/2] Mass Entanglement\n/cast [@focus][talent:4/1] Mighty Bash\n\n\n#showtooltip innervate\n/cast [@mouseover, exists] innervate; innervate;\n\n#showtooltip \n/cast Incarnation: Chosen of Elune(Talent, Shapeshift)\n/cast celestial alignment\n/cast Berserking(Racial)\n/use Potion of Prolonged Power\n/use Vitality Resonator\n\n\n#showtooltip Berserking(Racial)\n/cast [@mouseover, exists] faerie swarm; faerie swarm;\n\n\n#showtooltip solar beam\n/stopcasting\n/stopcasting\n/cast [target=focus] solar beam\n\n\n\n#showtooltip barkskin\n/cast Blessing of the Ancients\n\n\n#showtooltip prowl\n/Cast !Prowl\n/cancelaura [mod:ctrl] Prowl\n\n\n#showtooltip innervate\n/cast regrowth",
+ "title": "boomkin macros"
+}

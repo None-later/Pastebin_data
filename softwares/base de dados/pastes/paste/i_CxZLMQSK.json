@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CxZLMQSK",
+ "pasteDate": "Feb 27, 2018, 11:43:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/*   */\n\n@font-face \n font-family: 'ProximaNova_Bold'\n src: url('../fonts/ProximaNova-Bold.eot')\n src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),\n url('../fonts/ProximaNova-Bold.woff2') format('woff2')\n url('../fonts/ProximaNova-Bold.woff') format('woff')\n url('../fonts/ProximaNova-Bold.ttf') format('truetype')\n url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg')\n font-weight: bold\n font-style: normal\n\n@font-face \n font-family: 'ProximaNova_Rg'\n src: url('../fonts/ProximaNova-Regular.eot')\n src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype')\n url('../fonts/ProximaNova-Regular.woff2') format('woff2')\n url('../fonts/ProximaNova-Regular.woff') format('woff')\n url('../fonts/ProximaNova-Regular.ttf') format('truetype')\n url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg')\n font-weight: normal\n font-style: normal\n\n/*  */\n\n=proximaB()\n\tfont-family: 'ProximaNova_Bold', sans-serif //     \n\n=proximaR()\n\tfont-family: 'ProximaNova_Rg', sans-serif //     \n\n/*   */\n\nhtml\n\tfont-size: 10px\n\nbody\n\t+proximaR // ",
+ "title": ""
+}

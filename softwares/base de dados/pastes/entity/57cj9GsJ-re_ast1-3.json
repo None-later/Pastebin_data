@@ -1,0 +1,5 @@
+{
+  "value": "function cleanLinks(array $data, array \u0026$toDelete)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

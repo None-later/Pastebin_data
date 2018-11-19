@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0sZ4yRTq",
+ "pasteDate": "Feb 18, 2018, 12:31:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Disk /dev/sdb: 931,5 GiB, 1000204886016 bytes, 1953525168 sectors\nUnits: sectors of 1 * 512 = 512 bytes\nSector size (logical/physical): 512 bytes / 4096 bytes\nI/O size (minimum/optimal): 4096 bytes / 4096 bytes\nDisklabel type: gpt\nDisk identifier: 3BB85E5C-46E7-4618-81FD-0F0EAD8211BC\n\nDevice     Start        End    Sectors   Size Type\n/dev/sdb1   2048 1953127047 1953125000 931,3G Microsoft basic data",
+ "title": ""
+}

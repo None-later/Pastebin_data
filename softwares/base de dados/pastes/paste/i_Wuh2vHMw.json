@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "Wuh2vHMw",
+ "pasteDate": "Feb 23, 2018, 11:19:58 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "curl -G -H \"x-api-key: YOUR_API_KEY\" -H \"Content-Type:application/json\" --data-urlencode \"startDate=`date --rfc-3339=seconds --date=\"1 day ago\" | sed 's/ /T/'`\" https://events.jumpcloud.com/events | python -m json.tool",
+ "title": ""
+}

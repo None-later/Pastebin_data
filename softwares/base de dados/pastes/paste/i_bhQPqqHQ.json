@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bhQPqqHQ",
+ "pasteDate": "Feb 18, 2018, 12:08:31 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$this->addElement('text', \"content\", array (\n\t\t\t\t\t'label'=>'Contenuto  ',\n\t\t\t\t\t'belongsTo' => $lng,\n\t\t\t\t\t'required'=> false,\n\t\t\t\t\t'description' => 'Inserire il contenuto',\n\t\t\t\t\t'prefixPath' => array('decorator' => array('FormDeco' => realpath(APPLICATION_PATH . '/../library/FormDeco')) ),\n\t\t\t\t\t'decorators' => array( 'SimpleTextarea', 'SimpleLabel' ),\n\t\t\t\t\t'class' => 'label-textarea-abstract mceNoEditor '. $class,\n\t\t\t\t));",
+ "title": ""
+}

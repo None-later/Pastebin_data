@@ -1,0 +1,5 @@
+{
+  "value": "functions \u003d json.load(json_file)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

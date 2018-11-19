@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "KcLVZyUQ",
+ "pasteDate": "Feb 18, 2018, 3:57:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "=INT(B3-A3)&\" Days \"&HOUR(MOD(B3-A3,1))&\" Hour \"&MINUTE(MOD(B3-A3,1))&\" Minutes\"",
+ "title": ""
+}

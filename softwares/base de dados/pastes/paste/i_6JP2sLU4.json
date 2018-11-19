@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6JP2sLU4",
+ "pasteDate": "Feb 28, 2018, 1:57:09 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import os\njava_path = \"C:/Program Files/Java/jre1.8.0_151/bin/java.exe\"\nos.environ['JAVAHOME'] = java_path\n\nfrom nltk.tag import StanfordNERTagger\nfrom nltk.tokenize import word_tokenize\nfrom newspaper import Article\n\nstanford_classifier = 'C:/Users/Owner/Google Drive/Capstone/Algorithms' \n                  '/script/stanford-ner-2015-12'  \n                  '09/classifiers/english.all.3class.distsim.crf.ser.gz'\n\nstanford_ner_path = 'C:/Users/Owner/Google'  \n                    'Drive/Capstone/Algorithms/script/' \n                    'stanford-ner-2015-12-09/stanford-ner.jar'\n\nst = StanfordNERTagger(stanford_classifier,stanford_ner_path,\n                       encoding='utf-8')\n\ntext = 'While in France, Christine Lagarde discussed short-term stimulus \nefforts in a recent interview with the Wall Street Journal.'\n\ntokenized_text = word_tokenize(text)\nclassified_text = st.tag(tokenized_text)\n\nprint(classified_text)",
+ "title": ""
+}

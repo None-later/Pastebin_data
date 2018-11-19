@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "Uw70yRu9",
+ "pasteDate": "Feb 12, 2018, 5:14:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<script type=\"text/html\" id=\"page\">\n<div id=\"div1-partial\">\n<section class=\"section_class\">\n<!-- my attempt at conditional logic -->\n@{string CurrentURL = Request.Url.AbsoluteUri;}\n\n@if (CurrentURL.Contains(\"tab1\"))\n{\n  <div id=\"div2\">\n  </div>\n}\n\n</section\n</div>\n</script",
+ "title": ""
+}

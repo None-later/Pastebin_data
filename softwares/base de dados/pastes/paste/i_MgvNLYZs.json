@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "MgvNLYZs",
+ "pasteDate": "Feb 28, 2018, 6:17:53 AM",
+ "relevancy": 8.0,
+ "relevant": false,
+ "text": "      Acc = {10000000000,0,undefined,[]}\n       Bt = {btree,<0.155.0>,\n                   {14369,{2,0}},\n                   #Fun<couch_db_updater.6.102762415>,\n                   #Fun<couch_db_updater.7.103056916>,\n                   #Fun<couch_db_updater.5.119606232>,\n                   #Fun<couch_db_updater.8.41212070>}\n      Dir = fwd\n      Fun = #Fun<dbg_ieval.20.129496710>\n      Key = <<\"Z\">>",
+ "title": ""
+}

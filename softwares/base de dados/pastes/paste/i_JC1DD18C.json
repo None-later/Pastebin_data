@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JC1DD18C",
+ "pasteDate": "Feb 26, 2018, 10:02:12 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "package main\n\nimport (\n\t\"gonum.org/v1/gonum/graph\"\n\t\"gonum.org/v1/gonum/graph/simple\"\n)\n\nfunc main() {\n\tsrc := simple.NewUndirectedGraph()\n\tu := src.NewNode()\n\tsrc.AddNode(u)\n\tv := src.NewNode()\n\tsrc.AddNode(v)\n\tsrc.SetEdge(src.NewEdge(u, v))\n\tassert(src.HasEdgeBetween(u, v))\n\tassert(src.From(u)[0] == v)\n\tassert(src.From(v)[0] == u)\n\tdst := simple.NewDirectedGraph()\n\tgraph.Copy(dst, src)\n\tassert(dst.HasEdgeBetween(u, v))\n\tassert(dst.HasEdgeBetween(v, u))\n\tassert(dst.HasEdgeFromTo(u, v))\n\tassert(dst.HasEdgeFromTo(v, u)) // panics\n}\n\nfunc assert(t bool) {\n\tif !t {\n\t\tpanic(\"assert\")\n\t}\n}",
+ "title": ""
+}

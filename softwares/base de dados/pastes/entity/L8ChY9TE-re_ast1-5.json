@@ -1,0 +1,5 @@
+{
+  "value": "function createToken(Request $request, $providerKey)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

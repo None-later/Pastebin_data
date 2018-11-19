@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "rUV6rKjM",
+ "pasteDate": "Feb 17, 2018, 7:52:34 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "shaders = 6\nshader0 = ../shaders/gameboy/shader-files/gb-pass-0.cg\nshader1 = ../shaders/gameboy/shader-files/gb-pass-1.cg\nshader2 = ../shaders/gameboy/shader-files/gb-pass-2.cg\nshader3 = ../shaders/gameboy/shader-files/gb-pass-3.cg\nshader4 = ../shaders/gameboy/shader-files/gb-pass-4.cg\nshader5 = shader-files/gb-pass-5.cg\n\nscale_type0 = viewport\nscale0 = 1\n\nscale_type1 = source\nscale1 = 1\n\nscale_type2 = source\nscale2 = 1\n\nscale_type3 = source\nscale3 = 1\n\nscale_type4 = source\nscale4 = 1\n\nscale_type5 = source\nscale5 = 1\n\nfilter_linear0 = false\nfilter_linear1 = false\nfilter_linear2 = false\nfilter_linear3 = false\nfilter_linear4 = false\nfilter_linear5 = true\n\ntextures = COLOR_PALETTE;BACKGROUND;BORDER\nCOLOR_PALETTE = ../shaders/gameboy/resources/sample-palettes/gbp-palette.png\nCOLOR_PALETTE_linear = false\nBACKGROUND = ../shaders/gameboy/resources/sample-bgs/paper-bg.png\nBACKGROUND_linear = true\nBORDER = resources/pocket-border-square-4x.png\nBORDER_linear = true\n\nparameters = \"video_scale;SCALE;OUT_X;OUT_Y\"\nvideo_scale = \"1.0\"\nSCALE = \"1.0\"\nOUT_X = \"5600.0\"\nOUT_Y = \"2800.0\"",
+ "title": "gb-pocket-original-7x.cgp"
+}

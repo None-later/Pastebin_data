@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_scanner",
+  "lg_en"
+ ],
+ "key": "0grsS8pS",
+ "pasteDate": "Feb 8, 2018, 8:50:17 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "import java.io.BufferedReader;\nimport java.io.FileReader;\nimport java.io.FileWriter;\nimport java.io.IOException;\n\npublic class Main {\n \n    public static void main(String[] args) throws IOException {\n        FileReader fin = new FileReader(\"INPUT.txt\");\n        FileWriter fout = new FileWriter(\"OUTPUT.txt\");\n        BufferedReader reader = new BufferedReader(fin);\n \n        String[] read = reader.readLine().split(\" \");\n \n        int m = Integer.parseInt(read[0]);\n        int n = Integer.parseInt(read[1]);\n \n        read = reader.readLine().split(\" \");\n \n        int a = Integer.parseInt(read[0]);\n        int b = Integer.parseInt(read[1]);\n        int p = Integer.parseInt(reader.readLine());\n \n        int[][] A = new int[n][n];\n        int[][] B = new int[n][n];\n        int[][] C = new int[n][n];\n \n        set(A,n,reader);\n \n        if(m == 1){\n            fout.write(String.valueOf(A[a-1][b-1]));\n        }else {\n \n            set(B,n,reader);\n \n            C = getMultiplyMatrix(A, B, n, p, a);\n \n            for(int k = 0; k < m - 2; k++){\n                set(A,n,reader);\n                C = getMultiplyMatrix(C, A, n, p, a);\n            }\n            fout.write(String.valueOf(C[a-1][b-1]));\n        }\n        //scanner.close();\n        reader.close();\n        fout.close();\n    }\n \n    static void set(int X[][], int n, BufferedReader reader) throws IOException {\n        String[] s;\n        reader.readLine(); // read empty string\n        for(int i = 0; i < n; i++){\n            s = reader.readLine().split(\" \");\n            for(int j = 0; j < n; j++){\n               X[i][j] = Integer.parseInt(s[j]);\n            }\n        }\n    }\n \n    static int[][] getMultiplyMatrix(int A[][], int B[][], int n, int p, int a){\n        int [][] D = new int[n][n];\n        int sum = 0, temp = 0;\n        a--;\n        for(int j = 0; j < n; j++){\n            for(int k = 0; k < n; k++){\n                int t = A[a][k] * B[k][j];\n                if (t >= p){\n                    t %= p;\n                }\n                //temp = (A[a][k] * B[k][j] >= p ? (A[a][k] * B[k][j]) % p : A[a][k] * B[k][j]);\n                sum = sum + t;\n                if (sum >= p){\n                    sum %= p;\n                }\n                //sum = (sum + temp) >= p ? (sum + temp) % p : (sum + temp) ;\n            }\n            D[a][j] = sum;\n            sum = 0;\n        }\n        return D;\n    }\n}",
+ "title": ""
+}

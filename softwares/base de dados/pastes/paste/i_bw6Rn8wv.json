@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bw6Rn8wv",
+ "pasteDate": "Feb 28, 2018, 4:17:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/bin/bash\nls -d */ | cut -d '/' -f -1#!/bin/bash\nls -d */ | cut -d '/' -f -1",
+ "title": ""
+}

@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "xml",
+ "jSonReasons": [
+  "kw_password",
+  "kw_target",
+  "lg_en",
+  "re_url"
+ ],
+ "key": "RCFi4zn1",
+ "pasteDate": "Feb 21, 2018, 6:59:00 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n<configuration xmlns=\"http://www.jooq.org/xsd/jooq-codegen-3.10.0.xsd\">\n  <!-- Configure the database connection here -->\n  <jdbc>\n    <driver>com.mysql.jdbc.Driver</driver>\n    <url>jdbc:mysql://localhost:3306/library</url>\n    <user>root</user>\n    <password></password>\n  </jdbc>\n\n  <generator>\n    <!-- The default code generator. You can override this one, to generate your own code style.\n         Supported generators:\n         - org.jooq.util.JavaGenerator\n         - org.jooq.util.ScalaGenerator\n         Defaults to org.jooq.util.JavaGenerator -->\n    <name>org.jooq.util.JavaGenerator</name>\n\n    <database>\n      <!-- The database type. The format here is:\n           org.util.[database].[database]Database -->\n      <name>org.jooq.util.mysql.MySQLDatabase</name>\n\n      <!-- The database schema (or in the absence of schema support, in your RDBMS this\n           can be the owner, user, database name) to be generated -->\n      <inputSchema>library</inputSchema>\n\n      <!-- All elements that are generated from your schema\n           (A Java regular expression. Use the pipe to separate several expressions)\n           Watch out for case-sensitivity. Depending on your database, this might be important! -->\n      <includes>.*</includes>\n\n      <!-- All elements that are excluded from your schema\n           (A Java regular expression. Use the pipe to separate several expressions).\n           Excludes match before includes, i.e. excludes have a higher priority -->\n      <excludes></excludes>\n    </database>\n\n    <target>\n      <!-- The destination package of your generated classes (within the destination directory) -->\n      <packageName>test.generated</packageName>\n\n      <!-- The destination directory of your generated classes. Using Maven directory layout here -->\n      <directory>C:/workspace/MySQLTest/src/main/java</directory>\n    </target>\n  </generator>\n</configuration>",
+ "title": ""
+}

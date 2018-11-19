@@ -1,0 +1,5 @@
+{
+  "value": "select sysdate from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

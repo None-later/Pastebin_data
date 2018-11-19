@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "kotlin",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FecgjpFp",
+ "pasteDate": "Feb 18, 2018, 4:50:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    fun <T> executeTimeout(executor: Executor, timeoutMs: Long, block: () -> T): T? {\n        var t: T? = null\n        val latch = CountDownLatch(1)\n        executor.execute { t = block(); latch.countDown() }\n        latch.await(timeoutMs, TimeUnit.MILLISECONDS)\n        return t\n    }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "pascal",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ysThAE5s",
+ "pasteDate": "Feb 11, 2018, 12:16:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "program P131;\n{Parcurgerea arborelui binar }\ntype\n  Arbore = ^Nod;\n  Nod = record\n    Info: string;\n    Stg, Dr: Arbore\n  end;\n\nvar\n  T: Arbore;{rdcina }\n\nfunction Arb: Arbore;\n{crearea arborelui binar }\nvar\n  R: Arbore;\n  s: string;\nbegin\n  readln(s);\n  if s = '' then Arb := nil\n  else begin\n    new(R);\n    R^.Info := s;\n    write('Dai descendentul stng');\n    writeln(' al nodului ', s, ':');\n    R^.Stg := Arb;\n    write('Dai descendentul drept');\n    writeln(' al nodului ', s, ':');\n    R^.Dr := Arb;\n    Arb := R;\n  end;\nend;{Arb }\n\nprocedure AfisArb(T: Arbore; nivel: integer);\n{afiarea arborelui binar }\nvar\n  i: integer;\nbegin\n  if T <> nil then\n  begin\n    AfisArb(T^.Stg, nivel + 1);\n    for i := 1 to nivel do write(' ');\n    writeln(T^.Info);\n    AfisArb(T^.Dr, nivel + 1);\n  end;\nend;{Afi sareArb }\n\nprocedure Preordine(T: Arbore);\n{traversare RSD }\nbegin\n  if T <> nil then begin\n    writeln(T^.Info);\n    Preordine(T^.Stg);\n    Preordine(T^.Dr)\n  end;\nend;{Preordine }\n\nprocedure Inordine(T: Arbore);\n{traversare SRD }\nbegin\n  if T <> nil then begin\n    Inordine(T^.Stg);\n    writeln(T^.Info);\n    Inordine(T^.Dr)\n  end;\nend;{Preordine }\n\nprocedure Postordine(T: Arbore);\n{traversare SDR }\nbegin\n  if T <> nil then begin\n    Postordine(T^.Stg);\n    Postordine(T^.Dr);\n    writeln(T^.Info)\n  end;\nend;{ Postordine }\n\nbegin\n  writeln('Dai rdcina:');\n  T := Arb;\n  AfisArb(T, 0);\n  readln;\n  writeln('Parcurgere n preordine:');\n  Preordine(T);\n  readln;\n  writeln('Parcurgere n inordine:');\n  Inordine(T);\n  readln;\n  writeln('Parcurgere n postordine:');\n  Postordine(T);\n  readln;\nend.",
+ "title": "esti 3.14 (usa) (door)"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://video-streaming.laxarxa.com:1935/xal1/mp4:directe/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

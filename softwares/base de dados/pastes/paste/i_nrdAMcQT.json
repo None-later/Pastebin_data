@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nrdAMcQT",
+ "pasteDate": "Feb 19, 2018, 2:44:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const cons = (a, b) => {\n  const inner = (fn) => fn(a, b);\n  \n  inner.valueOf = inner.toString = () => `(${a} ${b})`;\n  inner.isPair = true;\n  \n  return inner;\n};\nconst car = (pair) => pair((a, b) => a);\nconst cdr = (pair) => pair((a, b) => b);\nconst isNull = (x) => x === null;\n\nconst list = (...args) => args.reverse().reduce((result, item) => cons(item, result), null);\n\nconst listRef = (list, n) => n === 0 ? car(list) : listRef(cdr(list), n - 1);\nconst listLength = (list) => list ? (1 + listLength(cdr(list))) : 0;\nconst append = (a, b) => !a ? b : cons(car(a), append(cdr(a), b));\nconst lastItem = (list) => !cdr(list) ? car(list) : lastItem(cdr(list));\nconst reverse = (list) => {\n  const iter = (l, result) => isNull(l) ? result : iter(cdr(l), cons(car(l), result));\n  \n  return iter(list, null)\n};\nconst map = (list, fn) => isNull(list) ? list : cons(fn(car(list)), map(cdr(list), fn));\nconst filter = (list, matches) => {\n  const tail = isNull(cdr(list)) ? null : filter(cdr(list), matches);\n\n  return matches(car(list)) ? cons(car(list), tail) : tail;\n};\nconst reduce = (list, fn, acc) => isNull(list) ? acc : reduce(cdr(list), fn, fn(acc, car(list)));\n\n// trees\n\nconst isPair = (item) => !isNull(item) && item.isPair;\nconst countLeaves = (tree) => isPair(tree) ? countLeaves(car(tree)) + countLeaves(cdr(tree)) : (isNull(tree) ? 0 : 1);\nconst deepReverse = (tree) => reverse(map(tree, (item) => isPair(item) ? deepReverse(item) : item));",
+ "title": ""
+}

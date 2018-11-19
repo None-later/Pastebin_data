@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6WTnBAd0",
+ "pasteDate": "Feb 8, 2018, 9:35:03 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iomanip>\n#include <iostream>\n#include <string>\n\nusing namespace std;\n\n\nvoid Hanoi1(string S, string A1, string A2, string A3, string D, int n, bool firstTime=true, bool nextTime=false, bool largest=false)\n{\n\tif(firstTime)\n\t{\n\t\tnextTime=true;\n\t\tlargest=true;\n\t}\n\tif(firstTime)\n\t{\n\t\tcout<<1<<\" from \"<<S<<\" to \"<<A1<<endl;\n\t}\n\tif(n==1)\n\t{\n\t\tcout<<n<<\" from \"<<A1<<\" to \"<<A2<<\" to \"<<A3<<endl;\n\t\tif(largest)\n\t\t\tcout<<n<<\" from \"<<A3<<\" to \"<<D<<endl;\n\t}\n\n\tif(n>=2)\n\t{\n\t\tHanoi1(S, A1, A2, A3, D, n-1, false, true);\n\t\tif(n>=2&&nextTime)\n\t\t\tcout<<n<<\"from \"<<S<<\" to \"<<A1<<endl;\n\t\tcout<<n<<\" from \"<<A1<<\" to \"<<A2<<endl;\n\t\tHanoi1(S, A3, A2, A1, D, n-1, false);\n\t\tcout<<n<<\" from \"<<A2<<\" to \"<<A3<<endl;\n\t\tif(largest)\n\t\t{\n\t\t\tcout<<n<<\" from \"<<A3<<\" to \"<<D<<endl;\n\t\t}\n\t\tHanoi1(S, A1, A2, A3, D, n-1, false,false,true);\n\n\t}\n}\n\n\nint main()\n{\n\t//test(\"s\", \"a\", \"d\", 3);\n\tHanoi1(\"s\", \"a1\", \"a2\", \"a3\", \"d\", 3);\n\tsystem(\"pause\");\n\treturn 0;\n}",
+ "title": ""
+}

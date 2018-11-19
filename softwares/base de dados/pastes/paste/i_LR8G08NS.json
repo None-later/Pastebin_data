@@ -1,0 +1,14 @@
+{
+ "espireDate": "1M",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "LR8G08NS",
+ "pasteDate": "Feb 23, 2018, 12:25:27 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "HTML Events\n\n\nIn the example above, the JavaScript code changes the content of the element with id=\"demo\".\n\nIn the next example, the code changes the content of its own element (using this.innerHTML):\n\nExample\n        Download file on mediafire :  http://ow.ly/UNui30izI6a",
+ "title": "HTML Events"
+}

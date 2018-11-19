@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "mysql",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "5w3gJuXz",
+ "pasteDate": "Feb 18, 2018, 6:58:32 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "SELECT\n  node.lft,\n  node.name,\n  node.menu_id,\n  node.location_id,\n  (COUNT(parent.id) - 1) AS depth\nFROM\n  pages AS node,\n  pages AS parent\nWHERE\n  node.lft BETWEEN parent.lft AND parent.rgt\nGROUP BY\n  node.id;",
+ "title": ""
+}

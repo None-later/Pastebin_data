@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zcdUuSem",
+ "pasteDate": "Feb 18, 2018, 7:43:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "models/oasis/tunnel_export_02\n{\n\tqer_editorimage \ttextures/egypt_walls_sd/white01\n\tdiffuseMap\t\t\ttextures/egypt_walls_sd/white01\n\tnormalMap\t\t\ttextures/egypt_walls_sd/white01_norm\n\tspecularMap\t\t\ttextures/egypt_walls_sd/white01_spec\n}",
+ "title": ""
+}

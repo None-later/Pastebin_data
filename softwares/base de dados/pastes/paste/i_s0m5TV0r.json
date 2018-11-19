@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "s0m5TV0r",
+ "pasteDate": "Feb 26, 2018, 1:53:03 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n    \"require\": {\n        \"google/apiclient\": \"^2.0\",\n        \"asimlqt/php-google-spreadsheet-client\": \"3.0.*\"\n    }\n}",
+ "title": "COMPOSER"
+}

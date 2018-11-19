@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "5NR7mHNM",
+ "pasteDate": "Feb 17, 2018, 7:00:04 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "crosshair 1;\ncl_crosshair_drawoutline \"1\";\ncl_crosshair_dynamic_maxdist_splitratio \"0.35\";\ncl_crosshair_dynamic_splitalpha_innermod \"1\";\ncl_crosshair_dynamic_splitalpha_outermod \"0.5\";\ncl_crosshair_dynamic_splitdist \"7\";\ncl_crosshair_outlinethickness \"0.1\";\ncl_crosshair_sniper_width \"1\";\ncl_crosshairalpha \"1000\";\ncl_crosshaircolor \"red\";\ncl_crosshaircolor_b \"50\";\ncl_crosshaircolor_g \"250\";\ncl_crosshaircolor_r \"50\";\ncl_crosshairdot \"0\";\ncl_crosshairgap \"-3\";\ncl_crosshairgap_useweaponvalue \"1\";\ncl_crosshairscale \"-3\";\ncl_crosshairsize \"1.5\";\ncl_crosshairstyle \"4\";\ncl_crosshairthickness \"0.5\";\ncl_crosshairusealpha \"1\";\ncl_fixedcrosshairgap \"0\";\ncl_crosshair_outlinethickness \"1\";\nalias +changec \"+attack; cl_crosshaircolor red\";\nalias -changec \"-attack; cl_crosshaircolor 1\";\nbind \"mouse1\" \"+changec\";",
+ "title": ""
+}

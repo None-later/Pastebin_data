@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9Ljbgars",
+ "pasteDate": "Feb 28, 2018, 12:04:39 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/summon falling_block ~ ~3 ~ {Block:chain_command_block,Time:1,TileEntityData:{Command:\"/execute @e[type=armor_stand,name=Crafting] ~ ~ ~ detect ~ ~ ~ air 0 /kill @e[r=1,type=armor_stand]\",auto:1b},Passengers:[{id:\"falling_block\",Data:8,Time:1,Block:chain_command_block,TileEntityData:{Command:\"/execute @a ~ ~ ~ /execute @e[name=Crafting,r=5] ~ ~ ~ /blockdata ~ ~ ~ {Items:[{Slot:0b,Count:1b,id:\"minecraft:air\"},{Slot:1b,Count:1b,id:\"minecraft:air\"},{Slot:2b,Count:1b,id:\"minecraft:air\"},{Slot:3b,Count:1b,id:\"minecraft\":air},{Slot:4b,id:\"minecraft:golden_helmet\",Damage:66,Count:1b,tag:{display:{Name:Hell-met,Lore:[,LOL Did you get that?]},Unbreakable:0,ench:[{id:7,lvl:1},{id:1,lvl:3}]}},{Slot:5,id:\"minecraft:air\"},{Slot:6,id:\"minecraft:air\"},{Slot:7,id:\"minecraft:air\"},{Slot:8,id:\"minecraft:air\"}]}\",auto:1b},Passengers:[{id:\"falling_block\",Time:1,Block:repeating_command_block,TileEntityData:{Command:\"/execute @a ~ ~ ~ /execute @e[name=Crafting,r=5] ~ ~ ~ testforblock ~ ~ ~ dispenser -1 {Items:[{Slot:0b,Count:1b,id:\"minecraft:blaze_powder\",Damage:0s},{Slot:1b,Count:1b,id:\"minecraft:magma_cream\",Damage:0s},{Slot:2b,Count:1b,id:\"minecraft:blaze_powder\",Damage:0s},{Slot:3b,Count:1b,id:\"minecraft:magma_cream\",Damage:0s},{Slot:5b,Count:1b,id:\"minecraft:magma_cream\",Damage:0s},]}\",auto:1b},Passengers:[{id:\"falling_block\",Data:1,Time:1,Block:repeating_command_block,TileEntityData:{Command:\"/execute @e[type=rabbit,name=Spawn_Crafting] ~ ~ ~ /setblock ~ ~ ~ dispenser 0 0 {CustomName:\"Crafting\"}\",auto:1b},Passengers:[{id:\"falling_block\",Data:1,Time:1,Block:chain_command_block,TileEntityData:{Command:\"/execute @e[name=Spawn_Crafting] ~ ~ ~ /summon armor_stand ~ ~ ~ {ArmorItems:[0:{},1:{},2:{},3:{id:\"minecraft:crafting_table\",Count:1b,Damage:0s}],CustomName:Crafting,CustomNameVisible:1,NoGravity:1,Small:1,Invisible:1,Marker:1b,Fire:20000s}\",auto:1b},Passengers:[{id:\"falling_block\",Data:1,Time:1,Block:chain_command_block,TileEntityData:{Command:\"/tp @e[name=Spawn_Crafting] ~ ~-100 ~\",auto:1b},Passengers:[{id:\"falling_block\",Data:1,Time:1,Block:chain_command_block,TileEntityData:{Command:\"/entitydata @e[name=Crafting] {Fire:20000s}\",auto:1b},Passengers:[{id:\"falling_block\",Data:1,Time:1,Block:command_block,TileEntityData:{Command:\"/give @p minecraft:spawn_egg 64 0 {EntityTag:{id:\"minecraft:rabbit\"},display:{Name:Spawn_Crafting}}\",auto:1b}}]}]}]}]}]}]}]}",
+ "title": "Nether Weapons"
+}

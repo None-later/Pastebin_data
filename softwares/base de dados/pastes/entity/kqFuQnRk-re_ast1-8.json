@@ -1,0 +1,5 @@
+{
+  "value": "FUNCTION ADD-FUNCTION-TO-HOOK (LAMBDA (HOOK-NAME FUNCTION-KEY FUNCTION)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

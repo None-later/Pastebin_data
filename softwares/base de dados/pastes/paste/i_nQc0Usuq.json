@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_hr"
+ ],
+ "key": "nQc0Usuq",
+ "pasteDate": "Feb 8, 2018, 3:20:46 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CMD:dijelibroj(playerid, params[])\n{\n\tnew string[50], broj1, broj2, rezultat;\n\tif(sscanf(params, \"i\",\"i\" broj1, broj2))\n\t{\n\t    SendClientMessage(playerid, -1, \"\"BALKAN\"[B:DM]\"BJELA\": /dijelibroj [broj1] [broj1]\");\n\t    return 1;\n\t}\n\tif(broj1 == 0 || broj2 == 0 || broj1 < broj2) return SCM(playerid, -1, \"\"BALKAN\"[B:DM]\"BJELA\": Ne mozes dijeliti broj sa nulom, ili si stavio da je broj 1 veci od broja 2.\");\n\trezultat = broj1/broj2;\n\tformat(string, sizeof(string), \"\"BALKAN\"*\"BJELA\"Rezultat tvog dijeljenja jeste: %d\", rezultat);\n\treturn 1;\n}",
+ "title": ""
+}

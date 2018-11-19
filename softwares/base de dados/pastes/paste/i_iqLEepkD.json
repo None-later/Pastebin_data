@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iqLEepkD",
+ "pasteDate": "Feb 8, 2018, 7:42:09 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SSH@JH-IDF2-6450#sh inline power det\n\n\nPower Supply Data On stack 1:\n++++++++++++++++++\n\n\n\nPower Supply Data:\n++++++++++++++++++\n\nPower Supply #1:\n        Max Curr:       13.7 Amps\n        Voltage:        54.0 Volts\n        Capacity:       740 Watts\npower supply 2 is not present\npower supply 3 is not present\n\n\nPOE Details Info. On Stack 1 :\n\n\nGeneral PoE Data:\n+++++++++++++++++\n\nFirmware\nVersion\n----------------\n00.0.0 Build 000\n\n\n\nCumulative Port State Data:\n+++++++++++++++++++++++++++\n\n#Ports    #Ports     #Ports   #Ports    #Ports       #Ports     #Ports\nAdmin-On  Admin-Off  Oper-On  Oper-Off  Off-Denied   Off-No-PD  Off-Fault\n-------------------------------------------------------------------------\n48        0          0        48        0            0          0\n\n\n\nCumulative Port Power Data:\n+++++++++++++++++++++++++++\n\n#Ports  #Ports  #Ports        Power       Power\nPri: 1  Pri: 2  Pri: 3  Consumption  Allocation\n-----------------------------------------------\n0       0       48          0.0   W     0.0   W\n\n\nSSH@JH-IDF2-6450#sh inline power det\n\n\nPower Supply Data On stack 1:\n++++++++++++++++++\n\n\n\nPower Supply Data:\n++++++++++++++++++\n\nPower Supply #1:\n        Max Curr:       13.7 Amps\n        Voltage:        54.0 Volts\n        Capacity:       740 Watts\npower supply 2 is not present\npower supply 3 is not present\n\n\nPOE Details Info. On Stack 1 :\n\n\nGeneral PoE Data:\n+++++++++++++++++\n\nFirmware\nVersion\n----------------\n00.0.0 Build 000\n\n\n\nCumulative Port State Data:\n+++++++++++++++++++++++++++\n\n#Ports    #Ports     #Ports   #Ports    #Ports       #Ports     #Ports\nAdmin-On  Admin-Off  Oper-On  Oper-Off  Off-Denied   Off-No-PD  Off-Fault\n-------------------------------------------------------------------------\n48        0          0        48        0            0          0\n\n\n\nCumulative Port Power Data:\n+++++++++++++++++++++++++++\n\n#Ports  #Ports  #Ports        Power       Power\nPri: 1  Pri: 2  Pri: 3  Consumption  Allocation\n-----------------------------------------------\n0       0       48          0.0   W     0.0   W",
+ "title": ""
+}

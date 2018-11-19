@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pY8G8QYU",
+ "pasteDate": "Feb 18, 2018, 5:48:29 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "// this sets the background color of the master UIView (when there are no windows/tab groups on it)\nTitanium.UI.setBackgroundColor('#000');\n\n// create tab group\nvar tabGroup = Titanium.UI.createTabGroup();\n\n//\n// create base UI tab and root window\n//\nvar win1 = Titanium.UI.createWindow({  \n    title:'Win 1',\n\turl:'windows/window1.js',\n\ttitleid:'win1',\n\tbarColor:'#000000',\t\n    backgroundColor:'#171717'  \n});\nvar tab1 = Titanium.UI.createTab({  \n    icon:'KS_nav_views.png',\n    title:'Tab 1',\n    window:win1\n});\n\n//\n// create controls tab and root window\n//\nvar win2 = Titanium.UI.createWindow({  \n    title:'Tab 2',\n    backgroundColor:'#fff',\n\turl:'windows/window2.js'\n});\n\nvar tab2 = Titanium.UI.createTab({  \n    icon:'KS_nav_ui.png',\n    title:'Tab 2',\n    window:win2\n});\n\n\n//\n//  add tabs\n//\ntabGroup.addTab(tab1);  \ntabGroup.addTab(tab2);  \n\n\n// open tab group\ntabGroup.open();",
+ "title": ""
+}

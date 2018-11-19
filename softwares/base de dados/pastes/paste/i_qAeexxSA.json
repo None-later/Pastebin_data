@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "kw_shutdown",
+  "lg_en"
+ ],
+ "key": "qAeexxSA",
+ "pasteDate": "Feb 23, 2018, 11:04:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "app.current.shutdown\n\t\nnamespace MyApplication\n{\n    /// <summary>\n    /// Interaction logic for App.xaml\n    /// </summary>\n    public partial class App : Application\n    {\n        static App()\n        {\n            // Ensure the current culture passed into bindings is the OS culture.\n            // By default, WPF uses en-US as the culture, regardless of the system settings.\n            //\n            FrameworkElement.LanguageProperty.OverrideMetadata(\n              typeof(FrameworkElement),\n              new FrameworkPropertyMetadata(XmlLanguage.GetLanguage(CultureInfo.CurrentCulture.IetfLanguageTag)));\n        }\n\n        protected override void OnStartup(StartupEventArgs e)\n        {\n            base.OnStartup(e);\n\n            var window = new MainWindow();\n\n            // To ensure all the other Views of a type Window get closed properly.\n            ShutdownMode = ShutdownMode.OnMainWindowClose;\n\n            // Create the ViewModel which the main window binds.\n            var viewModel = new MainWindowViewModel();\n\n            // When the ViewModel asks to be closed,\n            // close the window.\n            EventHandler handler = null;\n            handler = delegate\n            {\n                viewModel.RequestClose -= handler;\n                window.Close();\n            };\n            viewModel.RequestClose += handler;\n\n            // Allow all controls in the window to bind to the ViewModel by\n            // setting the DataContext, which propagates down the element tree.\n            window.DataContext = viewModel;\n            window.Show();\n        }\n    }\n}\n\t\n<Application x:Class=\"WpfApp1.App\"\n    xmlns=\"http://schemas.microsoft.com/winfx/2006/xaml/presentation\"\n    xmlns:x=\"http://schemas.microsoft.com/winfx/2006/xaml\"\n    xmlns:local=\"clr-namespace:WpfApp1\"\n    StartupUri=\"MainWindow.xaml\"\n    ShutdownMode=\"OnMainWindowClose\">\n    <Application.Resources>\n    </Application.Resources>\n</Application>",
+ "title": ""
+}

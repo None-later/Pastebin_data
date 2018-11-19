@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "YEZf4CW9",
+ "pasteDate": "Feb 17, 2018, 12:32:59 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "player = game.Players.LocalPlayer\ncharacter = player.Character\nhmndrootpart = character:FindFirstChild(\"HumanoidRootPart\")\nbtn = Instance.new(\"Part\", game.workspace)\nbtn.Position = Vector3.new(hmndrootpart.Position.X + 1, hmndrootpart.Position.Y, hmndrootpart.Position.Z)\nbtn.Touched:connect(function(part)\n    local humanoid = part.Parent:FindFirstChild(\"Humanoid\")\n    if not humanoid  then return end\n    humanoid.WalkSpeed = 16 * 5\nend)",
+ "title": ""
+}

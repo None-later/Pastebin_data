@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "LtiJngAt",
+ "pasteDate": "Feb 18, 2018, 5:21:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\n\nclass MySessionStorage extends sfSessionStorage\n{\n  public function initialize($options = null)\n  {\n    if(sfContext::getInstance()->getRequest()->getParameter('sessionid')) {\n      session_id(sfContext::getInstance()->getRequest()->getParameter('sessionid'));\n    }\n    parent::initialize($options);\n  }\n}",
+ "title": ""
+}

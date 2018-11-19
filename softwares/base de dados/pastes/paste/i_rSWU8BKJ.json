@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rSWU8BKJ",
+ "pasteDate": "Feb 20, 2018, 6:53:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Change Favicon\nvar $favicon = '/w/skins/common/images/logos/favicon.png';\n$('head [href=\"/favicon.ico\"]').remove();\n$('head').append('<link href=\"' + $favicon + '\" rel=\"icon\" type=\"image/png\" />');",
+ "title": ""
+}

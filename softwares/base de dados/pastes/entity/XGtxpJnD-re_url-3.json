@@ -1,0 +1,5 @@
+{
+  "value": "\"https://github.com/epastorc/manageiq-exchange-spin-template.git",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7bWXvVHD",
+ "pasteDate": "Feb 26, 2018, 12:20:32 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "tell application \"System Events\"\n  if application process \"Safari\" exists then\n    -- do stuff you want to do only if Safari exists\n  end if\nend tell",
+ "title": ""
+}

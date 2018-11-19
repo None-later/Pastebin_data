@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WmJFRT0z",
+ "pasteDate": "Feb 20, 2018, 8:06:24 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "RewriteEngine On\nRewriteCond %{REQUEST_FILENAME} !-f\nRewriteCond %{REQUEST_FILENAME} !-d\nRewriteRule ^(.*)\\.html$ /$1 [L,R=301]",
+ "title": ""
+}

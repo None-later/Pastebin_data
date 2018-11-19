@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BAUXmPsS",
+ "pasteDate": "Feb 18, 2018, 2:20:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const etherUri = 'http://127.0.0.1:7545'\n\nlet web3 = new Web3(Web3.currentProvider)\n\nif (!web3.isConnected) {\n    return 'Unable to connect to ethereum node at ' + etherUri\n} else {\n    let accounts = web3.eth.accounts\n    return accounts\n}",
+ "title": ""
+}

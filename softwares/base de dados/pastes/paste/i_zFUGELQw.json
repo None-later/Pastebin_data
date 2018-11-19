@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "zFUGELQw",
+ "pasteDate": "Feb 18, 2018, 11:19:57 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "On prend en compte la variable isAttack de type Boolean (vrai ou faux)\nOn prend aussi en compte la variable tpsEcoule de type Int\n\nOn prend en compte un dclencheur ayant comme vnement Temps - Priodique - Toutes les 1 seconde\n\nOn a donc\n\nvnement : Temps - Priodique - Toutes les 1 seconde\nCondition : -\nActions :\nSi (tpsEcoule == 600) Alors\n-isAttack = true\nFin Si\n\n\nSi (isAttack == true) Alors\n-//Tes actions  effectuer\n-isAttack = false\nSinon\n-tpsEcoule = tpsEcoule + 1\nFin Si\n\n\n//Fin du dclencheur\n\nEnsuite un autre dclencheur qui vrifie si tel joueur se fait buter\n\nDonc on prend en compte un dclencheur ayant comme vnement Une unit [gnrique] se fait attaquer\n\nOn a :\n\nvnement : Une unit se fait attaquer\nCondition : L'unit appartient au joueur X\nAction : isAttack = true\n\n//Fin du dclencheur",
+ "title": ""
+}

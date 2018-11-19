@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "4G8Dc5AK",
+ "pasteDate": "Feb 8, 2018, 4:44:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# How to associate logical to physical USB topology on Linux\n\nAs you know every time USB device is rebooted is `devnum` is changed, but physical USB port is the same as was.\n\nSometimes it's needed to convert static USB path from `lsub -t` to current device num on sysfs (`/dev/bus/usb/XXX/YYY`). It's useful for working with devices often are rebooted.\n\nSome little solution that I've found, this script just convert static USB path from `lsusb -t` utility to current device on sysfs.\n\nFor example, you connected your device to your PC. And its physical topology, for example, is: `218`, where 2 is USB bus, and 18 is nested port hierarchy, it's hierarchy will change only if you change physical USB port on your PC.\n\n```\n/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=ehci-pci/2p, 480M\n    |__ Port 1: Dev 2, If 0, Class=Hub, Driver=hub/8p, 480M\n        |__ Port 5: Dev 8, If 0, Class=Vendor Specific Class, Driver=ftdi_sio, 12M\n        |__ Port 6: Dev 4, If 0, Class=Human Interface Device, Driver=usbhid, 12M\n        |__ Port 8: Dev 6, If 0, Class=Human Interface Device, Driver=usbhid, 1.5M\n```\n\nAnd how to convert it:\n\n```python\ndef get_device_path(target_path):\n    \"\"\"\n    Return current dynamic USB device path from static lsusb topology.\n\n    Example:\n        218 -> /dev/bus/usb/002/006\n\n    Where 2 is bus number and 18 is topology level of `lsusb` utility.\n    \"\"\"\n    root_dir = \"/sys/bus/usb/devices\"\n    target_bus = int(target_path[0])\n\n    for device in os.listdir(root_dir):\n        if \"usb\" in device:\n            continue\n\n        device_path = device.split(\":\")[0].replace(\".\", \"\") \\\n                                          .replace(\"-\", \"\")\n\n        if device_path != target_path:\n            continue\n\n        devnum_path = os.path.join(root_dir, device, \"devnum\")\n\n        if not os.path.exists(devnum_path):\n            continue\n\n        with open(devnum_path) as fh:\n            device_num = int(fh.read().strip())\n\n        return \"/dev/bus/usb/{:03d}/{:03d}\".format(target_bus, device_num)\n```",
+ "title": ""
+}

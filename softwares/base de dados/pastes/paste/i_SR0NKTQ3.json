@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SR0NKTQ3",
+ "pasteDate": "Feb 23, 2018, 12:22:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "register_nav_menus( array(\n     'primary' => __( 'Primary Navigation', 'twentytwelve' ),\n     'mobile' => __( 'Mobile Navigation', 'mobile'),\n     ) );\n\t\n<nav id=\"site-navigation\" class=\"main-navigation\" role=\"navigation\">\n        <button class=\"menu-toggle\"><?php _e( 'Menu', 'twentytwelve' ); ?></button>\n        <a class=\"assistive-text\" href=\"#content\" title=\"<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>\"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a>\n        <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>\n    </nav><!-- #site-navigation -->\n\t\nif ( wp_is_mobile() ) {\n     wp_nav_menu( array( 'menu' => 'mobile-menu' ) );\n} else {\n     wp_nav_menu( array( 'menu' => 'desktop-menu' ) );\n}",
+ "title": ""
+}

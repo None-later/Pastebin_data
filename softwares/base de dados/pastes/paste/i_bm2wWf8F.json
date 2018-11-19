@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bm2wWf8F",
+ "pasteDate": "Feb 8, 2018, 7:31:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SELECT TABLE_SCHEMA, TABLE_NAME, COLUMN_NAME\nFROM   INFORMATION_SCHEMA.COLUMNS\nWHERE  DATA_TYPE = 'datetime';",
+ "title": ""
+}

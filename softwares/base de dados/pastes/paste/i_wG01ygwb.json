@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wG01ygwb",
+ "pasteDate": "Feb 12, 2018, 7:24:03 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "-\n\tONE\n-\n\t-\n\t\tPhilosophy\n\t-\n\t\t-\n\t\t\tONE is a system for organizing data.\n\t\t-\n\t-\n\t\tPrinciples\n\t-\n\t\t-\n\t\t\tElements\n\t\t-\n\t\t\t-\n\t\t\t\tONE stores data in elements.\n\t\t\t\t\n\t\t\t\tAn element may contain a string of characters referred to as the element's content,\n\t\t\t\tand may act as a parent to an indefinite number of other elements. The children of\n\t\t\t\tan element must be arranged in a specific order relative to each other. No element\n\t\t\t\tmay be the child of more than one element, and no loops may occur in the chain of\n\t\t\t\tparent-child connections. All elements with a parent must contain content.\n\t\t\t-",
+ "title": "ONE"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3f3vY6Ap",
+ "pasteDate": "Feb 26, 2018, 1:00:16 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "for x in *\"?\"*; do\n  mv -- \"$x\" \"${x//?/}\"\ndone",
+ "title": ""
+}

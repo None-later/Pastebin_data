@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VFYgV6ft",
+ "pasteDate": "Feb 17, 2018, 10:38:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Local disk space    2.68 TB total / 2.26 TB free / 432.46 GB used\n\t\ntar: Skipping to next header[===============================>                                                    ] 39% ETA 0:01:14\ntar: A lone zero block at 2291466===============================>                                                ] 44% ETA 0:01:13\ntar: Exiting with failure status due to previous errors\n 878MiB 0:00:58 [15.1MiB/s] [===================================>                                                ] 44%\n\t\npv $backup_file | tar -izxf - -C $import_dir\n\t\n# getting the drives\nlsblk -dpno name\n\nsmartctl -H /dev/sda\nsmartctl -H /dev/sdb\n\t\n=== START OF READ SMART DATA SECTION ===\nSMART overall-health self-assessment test result: PASSED\n\t\ncat /var/www/bak/db/2017-05-20-1200_mysql.tar.xz >/dev/null\nxzcat /var/www/bak/db/2017-05-20-1200_mysql.tar.xz >/dev/null",
+ "title": ""
+}

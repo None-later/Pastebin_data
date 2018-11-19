@@ -1,0 +1,5 @@
+{
+  "value": "update\u0027, \u0027cmd:set",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

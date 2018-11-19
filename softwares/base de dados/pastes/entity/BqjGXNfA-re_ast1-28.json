@@ -1,0 +1,5 @@
+{
+  "value": "function is_number(num_string,nMin,nMax)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

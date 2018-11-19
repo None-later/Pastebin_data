@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://streaming-ca.enetres.net/184784E1D210401F8041E3E1266822CC021/smil:live.smil/chunklist_w1637072900_b1200000.m3u8?idLive\u003d026",
+  "correct": true,
+  "jSonReason": "re_url"
+}

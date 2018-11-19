@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GB0FYCaH",
+ "pasteDate": "Feb 26, 2018, 9:52:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public boolean isRechthoekigeDriehoek()\n{\n        boolean recht;\n        int a2 = a * a;\n        int b2 = b * b;\n        int c2 = c * c;\n        if (a2 + b2 == c2 || b2 + c2 == a2 || a2 + c2 == b2)\n        {\n            recht = true;\n        } else\n        {\n            recht = false;\n        }\nreturn recht;\n}",
+ "title": ""
+}

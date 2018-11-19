@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hMN7B4a9",
+ "pasteDate": "Feb 28, 2018, 6:01:24 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "service amanda\n{\n        disable = no\n        flags           = IPv4\n        flags           = IPv6\n        socket_type     = dgram\n        protocol        = udp\n        wait            = no\n        user            = amanda\n        group           = disk\n        groups          = yes\n        server          = /usr/libexec/amanda/amandad\n        #server_args     = -auth=bsdtcp amdump amindexd amidxtaped\n        server_args     = -auth=bsd amdump amindexd amidxtaped\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dtbm6ETx",
+ "pasteDate": "Feb 11, 2018, 7:14:13 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "class XMLTag {\n  constructor(name, value) {\n    this.name = name;\n    this.value = value;\n    this.attributes = {}; //List of attributes (objects)\n    this.children = [];\n  }\n\n  newTag(name, value) {\n    this.tag = new XMLTag(name, value);\n    this.children.push(this.tag);\n    return this.tag;\n  }\n\n  setName(name) {\n    this.name = name;\n  }\n\n  addAttribute(name, value) {\n    this.attributes[name] = value;\n  }\n\n  print(level) {\n    this.attributeString = '';\n    for (let attribute of Object.entries(this.attributes)) {\n      this.attributeString += `${attribute[0]}=\"${attribute[1]}\" `;\n    }\n    this.string = '\\t'.repeat(level) + `<${this.name}`;\n    if (this.attributeString) {\n      this.string += ` ${this.attributeString.trim()}>`\n    } else {\n      this.string += `>`\n    }\n    if (Object.entries(this.attributes).length > 0 || this.children.length > 0) {\n      this.string += `\\n`\n    }\n    if (this.value) {\n      this.string += `${this.value}`\n    } else if (this.children.length > 0) {\n      for (let child of this.children) {\n        this.string += `${child.print(level + 1)}`;\n      }\n    }\n    this.string += `${this.value ? '' : '\\t'.repeat(level) }</${this.name}>\\n`;\n    return `${this.string}`;\n  }\n}\n\n\n\nclass XMLObject {\n  constructor() {\n    this.root = new XMLTag()\n  }\n\n  getRoot() {\n    return this.root;\n  }\n\n  print() {\n    this.string = '';\n    if (this.root) {\n      this.string += `<${this.root.name}>`;\n    }\n\n    if (this.root.children.length > 0) {\n      this.string += `\\n`\n    }\n\n    if (this.root.children.length > 0) {\n        for (let child of this.root.children) {\n          this.string += `${child.print(1)}`;\n        }\n    }\n    this.string += `</${this.root.name}>`;\n    return this.string;\n  }\n}\n\n\nlet x = new XMLObject();\nlet root = x.getRoot();\nroot.setName('People');\n\nlet person = root.newTag('Person');\nperson.addAttribute('id', '2323');\nperson.addAttribute('DOB', '1/1/1901');\n\nlet firstName = person.newTag('FirstName', 'John');\nlet lastName = person.newTag('LastName', 'Smith');\nlet address = person.newTag('address');\n\naddress.newTag('street', '123 NW 45th street');\naddress.newTag('city', 'Gaithersburg');\naddress.newTag('zip', '21234');\naddress.newTag('state', 'MD');\n\nconsole.log(x.print());",
+ "title": ""
+}

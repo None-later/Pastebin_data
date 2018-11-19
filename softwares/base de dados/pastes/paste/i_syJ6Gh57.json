@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "syJ6Gh57",
+ "pasteDate": "Feb 8, 2018, 5:50:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Expression<Func<Supplier,bool>> SupplierHasHighRating = x => x.Rating > 90;\n\t\nvar highRatedSuppliers = someQueryableOfSuppliers.Where(SupplierHasHighRating);\n\t\nvar productsOfHighRatedSuppliers = someQueryableOfProducts.Where(x => x.Supplier.Rating > 90);",
+ "title": ""
+}

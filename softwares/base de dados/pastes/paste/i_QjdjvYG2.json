@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QjdjvYG2",
+ "pasteDate": "Feb 9, 2018, 1:13:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(project root directory)/.gradle\n\t\n(USER_HOME)Desktop(PROJECT_NAME)(PROJECT_NAME).gradle\n\t\n11:43:48.167 [DEBUG] [org.gradle.internal.buildevents.BuildLogger] Current dir: C:(USER_HOME)Desktop(PROJECT_NAME)(PROJECT_NAME)",
+ "title": ""
+}

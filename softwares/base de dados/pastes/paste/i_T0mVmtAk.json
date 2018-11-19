@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "T0mVmtAk",
+ "pasteDate": "Feb 28, 2018, 12:06:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "State          ON\n\t\n@echo off\nfor /f \"tokens=2\" %%a in (state.txt) do set word1=%%a\necho %word1%",
+ "title": ""
+}

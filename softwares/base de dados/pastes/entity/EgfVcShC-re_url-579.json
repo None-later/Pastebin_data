@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.adidas.com/us/weightlifting",
+  "correct": true,
+  "jSonReason": "re_url"
+}

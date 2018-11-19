@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VjRbaFmJ",
+ "pasteDate": "Feb 23, 2018, 12:32:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\t\t\tif(this.Fill.Size != 0){\n\t\t\t\tctx.fillStyle = this.Fill.Color;\n\t\t\t\tctx.font = `${this.Fill.Size}px ${this.FontStyle}`;\n\t\t\t\tctx.lineWidth = this.Fill.LineWidth;\n\t\t\t\t// Draw the lines\n\t\t\t\tif(this._LineMetrics.Fill.Empty){\n\t\t\t\t\tthis._ComputeMetrics(ctx,this.Fill,this._LineMetrics.Fill,lines);\n\t\t\t\t}\n\t\t\t\tctx.rect(this._LineMetrics.Fill.MinX,this._LineMetrics.Fill.MinY-this.Fill.Size/2,this._LineMetrics.Fill.TotalWidth, this._LineMetrics.Fill.TotalHeight);\n\t\t\t\tctx.clip();\n\t\t\t\tfor(let line of this._LineMetrics.Fill.Lines){\n\t\t\t\t\tctx.fillText(line.Text,line.OffsetX,line.OffsetY);\n\t\t\t\t}\n\t\t\t}",
+ "title": ""
+}

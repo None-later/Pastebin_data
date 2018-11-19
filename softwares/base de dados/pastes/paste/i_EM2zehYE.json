@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_fr",
+  "kw_pass",
+  "re_url"
+ ],
+ "key": "EM2zehYE",
+ "pasteDate": "Feb 21, 2018, 9:07:41 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import requests\n\nAPI_CURRENCIES = \"https://bittrex.com/api/v1.1/public/getcurrencies\"\n\n\ndef get_currencies():\n    global API_CURRENCIES\n    response = requests.get(API_CURRENCIES)\n    data = response.json()\n    try:\n        for c in data['result']:\n            print(c['Currency'])\n    except KeyError:\n        pass\n\n\nif __name__ == \"__main__\":\n    get_currencies()",
+ "title": ""
+}

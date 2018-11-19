@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "1dquVuqF",
+ "pasteDate": "Feb 28, 2018, 10:36:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "foreach a [list b1 b2 b3 ... bn] {\n   grid configure $a -pady 2\n}\n\t\nforeach a [winfo children $win] {\n    if {[winfo class $a] == \"TButton\"} {\n        grid configure $a -pady 2\n    }\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"http://a4.espncdn.com/combiner/i?img\u003d%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnfl.png",
+  "correct": true,
+  "jSonReason": "re_url"
+}

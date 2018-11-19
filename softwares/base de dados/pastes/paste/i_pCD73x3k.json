@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pCD73x3k",
+ "pasteDate": "Feb 26, 2018, 11:15:30 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public interface IFooDao { }\n    public class FooDao : IFooDao\n    {\n        public FooDao(ConnectionStringSettings connString) { }\n    }\n    [Fact]\n    void CompositionRootWontThrowException()\n    {\n        var container = new Container();\n        container.Register<IFooDao, FooDao>(Reuse.Singleton);\n\n        ConnectionStringSettings connString = ConfigurationManager.ConnectionStrings[\"ConnectionString\"];\n        container.UseInstance(connString);\n        IFooDao dao = container.Resolve<IFooDao>();\n    }",
+ "title": ""
+}

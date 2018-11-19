@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "U43fxCNt",
+ "pasteDate": "Feb 8, 2018, 3:30:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$ for i in *.pem; do openssl x509 -text -noout -in \"$i\"; done|grep \"Signature Algorithm\"|sort|uniq -c\n      6     Signature Algorithm: ecdsa-with-SHA256\n     26     Signature Algorithm: ecdsa-with-SHA384\n    150     Signature Algorithm: sha1WithRSAEncryption\n    100     Signature Algorithm: sha256WithRSAEncryption\n     10     Signature Algorithm: sha384WithRSAEncryption\n      6     Signature Algorithm: sha512WithRSAEncryption",
+ "title": ""
+}

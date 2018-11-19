@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "swift",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jiv1vXPz",
+ "pasteDate": "Feb 20, 2018, 3:53:33 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class GuestRealmSource: Object {\n    \n    \n    @objc dynamic var id: String = \"\"\n    @objc dynamic var name: String = \"\"\n    @objc dynamic var lastName: String = \"\"\n    @objc dynamic var photo: Data?\n    @objc dynamic var phoneNumber: String = \"\"\n    @objc dynamic var email: String = \"\"\n    @objc dynamic var category: GuestCategoryRealmSource?\n    @objc dynamic var side: GuestSideRealmSource?\n    \n    var companions = List<String>()\n    \n    @objc dynamic var comment: String = \"\"\n    \n    @objc dynamic var isWalking: Bool = false\n    @objc dynamic var isModelLease: Bool = false\n    @objc dynamic var isTaxiOrder: Bool = false\n    \n    \n    //0 - invite is not sent\n    //1 - invite sent\n    //2 - invite reject\n    //3 - invite confirm\n    @objc dynamic var state : Int = 0\n    \n    \n    override static func primaryKey() -> String? {\n        return \"id\"\n    }\n    \n}\n\n\n\n// ,     =>   \nclass GuestCategoryRealmSource: Object {\n    \n    @objc dynamic var id: String = \"\"\n    @objc dynamic var nameCategory: String = \"\"\n    \n    override static func primaryKey() -> String? {\n        return \"id\"\n    }\n}\n\n\n//   \nfunc put(object: T) {\n        \n        let realm = try! Realm()\n        \n        try! realm.write {\n            realm.add(object)\n        }\n        \n  }",
+ "title": ""
+}

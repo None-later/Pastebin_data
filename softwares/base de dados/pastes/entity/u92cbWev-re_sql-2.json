@@ -1,0 +1,5 @@
+{
+  "value": "UPDATE ksiazka SET",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

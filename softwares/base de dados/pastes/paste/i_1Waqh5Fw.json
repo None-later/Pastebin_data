@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "css",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "1Waqh5Fw",
+ "pasteDate": "Feb 11, 2018, 5:28:40 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "body {\n    background-color: LightSeaGreen;\n    background: url(https://dl.dropboxusercontent.com/u/65223300/mmPictureSHow/mikustripes.png) LightSeaGreen repeat-y fixed;\n}\n\na {\n  color: LightSeaGreen;\n}\n\n#ytapiplayer {\n    background-color: #000000;\n}\n\n#chatheader, #currenttitle, #userlist, #messagebuffer, #plmeta {\n    background-color: #ffffff;\n}\n\nfooter {\n    background-color: #eeeeee !important;\n}\n\n.queue_entry {\n    background-color: #ffffff;\n}\n\n.queue_active {\n    background-color: #d9edf7;\n}\n\n.profile-box, .user-dropdown {\n    background-color: #ffffff;\n}\n\n.well {\n  background-color: white;\n}\n\n.userlist_owner {\n    color: SeaGreen !important;\n    font-weight:normal !important;\n}\n\n.userlist_op {\n    color: SeaGreen !important;\n    font-weight:normal !important;\n}\n\n.userlist_item {\n    color:SeaGreen !important;\n    font-weight:normal;\n}",
+ "title": "cytube"
+}

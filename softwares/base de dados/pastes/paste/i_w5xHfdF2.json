@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "w5xHfdF2",
+ "pasteDate": "Feb 26, 2018, 1:13:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "echo '{\"id\" : 0, \"login\" : \"root\"}' | python -m json.tool | pygmentize -l json",
+ "title": ""
+}

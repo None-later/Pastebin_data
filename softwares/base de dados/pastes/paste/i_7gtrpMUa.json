@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7gtrpMUa",
+ "pasteDate": "Feb 26, 2018, 10:29:09 AM",
+ "relevancy": 6.0,
+ "relevant": false,
+ "text": "enp3s0f1  Link encap:Ethernet  HWaddr 80:fa:5b:19:84:36  \n          inet6 addr: fe80::c1b7:40cf:7999:9a1b/64 Scope:Link\n          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\n          RX packets:70804 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:825 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:1000 \n          RX bytes:13839733 (13.8 MB)  TX bytes:223972 (223.9 KB)\n\nlo        Link encap:Local Loopback  \n          inet addr:127.0.0.1  Mask:255.0.0.0\n          inet6 addr: ::1/128 Scope:Host\n          UP LOOPBACK RUNNING  MTU:65536  Metric:1\n          RX packets:10101 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:10101 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:1 \n          RX bytes:1058487 (1.0 MB)  TX bytes:1058487 (1.0 MB)\n\nwlp4s0    Link encap:Ethernet  HWaddr 60:57:18:c3:99:20  \n          inet addr:129.27.237.40  Bcast:129.27.239.255  Mask:255.255.240.0\n          inet6 addr: fe80::1bc:a78b:51d8:8e80/64 Scope:Link\n          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1\n          RX packets:64919 errors:0 dropped:0 overruns:0 frame:0\n          TX packets:51670 errors:0 dropped:0 overruns:0 carrier:0\n          collisions:0 txqueuelen:1000 \n          RX bytes:51245786 (51.2 MB)  TX bytes:18771174 (18.7 MB)",
+ "title": ""
+}

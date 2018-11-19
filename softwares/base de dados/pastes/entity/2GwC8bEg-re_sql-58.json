@@ -1,0 +1,5 @@
+{
+  "value": "SELECT [Priority] , [FindingsGroup] , [Finding] , [DatabaseName] , [URL] ,  [Details] , CheckID FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

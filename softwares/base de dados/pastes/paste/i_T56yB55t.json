@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "T56yB55t",
+ "pasteDate": "Feb 20, 2018, 4:15:55 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require 'rubygems'\nrequire 'datagrammer'\nrequire 'statarray'\n\ndeltas = StatArray.new\nticks = StatArray.new\nd = Datagrammer.new(5000)\nlast = Time.now.to_f\nlast_tick = 0\nd.listen do |slf, msg|\n  now = Time.now.to_f\n  ticks << msg.last - last_tick\n  deltas << (now - last) * 1000\n  last = now\n  last_tick = msg.last\nend\nputs \"running from Max>UDP ticks for thirty seconds...\"\nsleep 30\nputs \"done! calculating...\"\n# removes bad first values\ndeltas.shift \nticks.shift\n\nputs \"deltas:\"\ndeltas.to_stats.each_pair {|k,v| puts \"#{k}: #{v}\"}\nputs \"-----\\nticks:\"\nticks.to_stats.each_pair {|k,v| puts \"#{k}: #{v}\"}\n\nputs \"running with -sleep- for thirty seconds\"\nsleeping = StatArray.new\nlast = Time.now.to_f\nThread.start do\n  loop do\n    now = Time.now.to_f\n    sleeping << (now - last) * 1000\n    last = now\n    sleep 0.00520833\n  end\nend\nsleep 30\nputs \"done! calculating...\"\nsleeping.shift\n\nputs \"deltas:\"\nsleeping.to_stats.each_pair {|k,v| puts \"#{k}: #{v}\"}",
+ "title": ""
+}

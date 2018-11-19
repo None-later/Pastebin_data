@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "Px4vGB21",
+ "pasteDate": "Feb 26, 2018, 2:28:17 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "  direct_delivery git:(ds/features/cabinet-wizard) git com\nSwitched to branch 'master'\nYour branch is up-to-date with 'origin/master'.\n  direct_delivery git:(master) git plr \nremote: Counting objects: 1, done.\nremote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0\nUnpacking objects: 100% (1/1), done.\nFrom github.com:robarin/direct_delivery\n   b281563..9857b07  master     -> origin/master\nFirst, rewinding head to replay your work on top of it...\nFast-forwarded master to 9857b076d96eacb97303255d665456a07fa97849.\n  direct_delivery git:(master) git co ds/features/cabinet-wizard \nSwitched to branch 'ds/features/cabinet-wizard'\nYour branch is up-to-date with 'origin/ds/features/cabinet-wizard'.\n  direct_delivery git:(ds/features/cabinet-wizard) git rebase master\nApplying: Add jquery-steps for admin/run_sheets with feature spec\n  direct_delivery git:(ds/features/cabinet-wizard) git please\nCounting objects: 31, done.\nDelta compression using up to 4 threads.\nCompressing objects: 100% (31/31), done.\nWriting objects: 100% (31/31), 4.40 KiB | 0 bytes/s, done.\nTotal 31 (delta 24), reused 0 (delta 0)\nremote: Resolving deltas: 100% (24/24), completed with 19 local objects.\nTo git@github.com:robarin/direct_delivery.git\n + eabe980...80af869 ds/features/cabinet-wizard -> ds/features/cabinet-wizard (forced update)",
+ "title": ""
+}

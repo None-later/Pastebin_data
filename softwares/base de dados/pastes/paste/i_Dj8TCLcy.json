@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_encrypt",
+  "lg_en"
+ ],
+ "key": "Dj8TCLcy",
+ "pasteDate": "Feb 8, 2018, 5:04:17 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public static String normalizeText(String text){\n        // normalizedText;\n\n        text = text.replace(\" \",\"\");\n        text = text.replaceAll(\"[/|!?.,()\\\"'=;:_^~`]\", \"\");\n        text= text.toUpperCase();\n\n        return text;\n    }\n    \n    public static String chiper(String msg){\n        String s = \"\";\n        int len = msg.length();\n        for (int x=0; x < len; x++){\n            char c = (char)(msg.charAt(x) + 1);\n            if (c > 'z')\n                s += (char)(msg.charAt(x)-(26-1));\n            else\n                s += (char)(msg.charAt(x)+1);\n        }\n        return s;\n    }\n    \n    \n    public static void main(String[] args) {\n        System.out.println(lastDigit(233));\n        String x = \"abra().cadabra\";\n        String y = com.company.caesarphy.normalizeText(x);\n        String encrypt = com.company.caesarphy.chiper(y);\n        System.out.println(encrypt);\n    }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "is6FkT3a",
+ "pasteDate": "Feb 18, 2018, 6:02:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div dangerouslySetInnerHTML={{ __html: this.props.right_sidebar.sidebar.rendered }} />",
+ "title": ""
+}

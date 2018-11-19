@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "scl",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "P4mzWzqs",
+ "pasteDate": "Feb 17, 2018, 4:00:08 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "ModbusMaster(\n    ENABLE                        :=TRUE, (*JESLI DOSTANIEMY ZAPLATE USTAWIC TRUE!!!*)\n    bCOM_PORT                    := 2,\n    cbCOM_BAUDRATE            := 960,\n    cpCOM_PARITY                := 0,\n    csCOM_STOPBITS            :=2,\n    cbsCOM_BYTESIZE            := 8,\n    cfCOM_FLOW_CONTROL    := 4 ,\n    TimeOut                        := t#500ms,\n    StartFunction                    :=Start ,\n    ExtQuery                        :=Zapytanie ,\n    Response                        :=Odpowiedz ,\n    MB_Error                        =>ModbusMasterErr ,\n     );\n\nTimerOpoznienia(IN:= NOT Start, PT:= CzasOpoznienia);\n\n\n(*Opoznienie przejscia do kolejnego kroku*)\n(*Opoznienie(xInput:= NOT (Start OR Opoznienie.xOutput), dwTon_10tel_s:= CzasOpoznienia, dwToff_10tel_s:= CzasOpoznienia);*)\n\n(*IF Opoznienie.xOutput THEN*)\nIF TimerOpoznienia.Q THEN\n        CASE Stan OF\n\n        0:\n                    Zapytanie.FunctionCode := 3;\n                    Zapytanie.Read_Quantity := 46;\n                    Zapytanie.Read_StartAddress := 2;\n                    Zapytanie.SlaveAddress := 1;\n                    Start := TRUE;\n                    Stan := 1;\n        1:\n                    NW1_ModbusErr := ModbusMasterErr;\n                    IF NW1_ModbusErr = 0 THEN Centrala2PLC(Odpowiedz := Odpowiedz, obszar := 1, NrCentrali := 1); END_IF\n                    Stan := 2;\n\n        2:\n                    Zapytanie.FunctionCode := 3;\n                    Zapytanie.Read_Quantity := 46;\n                    Zapytanie.Read_StartAddress := 2;\n                    Zapytanie.SlaveAddress := 2;\n                    Start := TRUE;\n                    Stan := 3;",
+ "title": ""
+}

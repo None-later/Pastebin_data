@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SqRxhC8W",
+ "pasteDate": "Feb 28, 2018, 7:40:40 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\n#include<stdlib.h>\n \nstruct node\n{\n    int data;\n    struct node* next;\n};\n \nstruct node* sortedmerge(struct node* a, struct node* b);\nvoid frontbacksplit(struct node* source, struct node** frontRef, struct node** backRef);\n \n \nvoid mergesort(struct node** headRef)\n{\n    struct node* head = *headRef;\n    struct node* a;\n    struct node* b;\n    if ((head == NULL) || (head -> next == NULL))\n    {\n        return;\n    }\n    frontbacksplit(head, &a, &b);\n    mergesort(&a);\n    mergesort(&b);\n    *headRef = sortedmerge(a, b);\n}\n \nstruct node* sortedmerge(struct node* a, struct node* b)\n{\n    struct node* result = NULL;\n \n    if (a == NULL)\n        return(b);\n    else if (b == NULL)\n        return(a);\n \n    if ( a-> data <= b -> data)\n    {\n        result = a;\n        result -> next = sortedmerge(a -> next, b);\n    }\n    else\n    {\n        result = b;\n        result -> next = sortedmerge(a, b -> next);\n    }\n    return(result);\n}\n \nvoid frontbacksplit(struct node* source, struct node** frontRef, struct node** backRef)\n{\n    struct node* fast;\n    struct node* slow;\n    if (source==NULL || source->next==NULL)\n    {\n        *frontRef = source;\n        *backRef = NULL;\n    }\n    else\n    {\n        slow = source;\n        fast = source -> next;\n        while (fast != NULL)\n        {\n            fast = fast -> next;\n            if (fast != NULL)\n            {\n                slow = slow -> next;\n                fast = fast -> next;\n            }\n    }\n \n    *frontRef = source;\n    *backRef = slow -> next;\n    slow -> next = NULL;\n    }\n}\n \nvoid printlist(struct node *node)\n{\n    while(node != NULL)\n    {\n        printf(\"%d \", node -> data);\n        node = node -> next;\n    }\n}\n \nvoid push(struct node** head_ref, int new_data)\n{\n    struct node* new_node = (struct node*) malloc(sizeof(struct node));\n    new_node -> data  = new_data;\n    new_node->next = (*head_ref);\n    (*head_ref) = new_node;\n}\nint main()\n{\n    struct node* a = NULL;\n    push(&a, 15);\n    push(&a, 10);\n    push(&a, 5);\n    push(&a, 20);\n    push(&a, 3);\n    push(&a, 26775);\n    mergesort(&a);\n    printf(\"\\n Sorted Linked List is: \\n\");\n    printlist(a);\n    return 0;\n}",
+ "title": ""
+}

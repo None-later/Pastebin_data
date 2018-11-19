@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_es",
+  "kw_dos"
+ ],
+ "key": "et3QiRRn",
+ "pasteDate": "Feb 12, 2018, 9:49:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import numpy as np\n\n# Crea arreglo con unos:\nunos = np.ones((6, 1), dtype=int)\nprint(unos)\n\n# Asignacin de la referencia de un arreglo a otra variable:\nunos_2 = unos\n\n# Copia shallow:\nvista = unos.view()\n\n# Comprueba si las dos variables apuntan al mismo arreglo:\nprint(vista.base is unos)\n\nprint('')\n\n# Cambiar los metadatos del arreglo:\n# En particular, cambia la forma del arreglo a matriz:\nvista.shape = 2,3\nprint(unos)\n\nprint(vista)\n\nprint('')\n\ncopia = unos.copy()\n\nprint(unos is copia)\nprint(unos is copia.base)",
+ "title": "copiar-arreglos.py"
+}

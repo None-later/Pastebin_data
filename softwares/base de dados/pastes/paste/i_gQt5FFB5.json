@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ast1",
+  "lg_nl"
+ ],
+ "key": "gQt5FFB5",
+ "pasteDate": "Feb 21, 2018, 9:01:47 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function wypelnijTabele(){\n\tvar nazwa = document.getElementById(\"nazwa\").value;\n\tvar ilosc = document.getElementById(\"ilosc\").value;\n\tvar cena = document.getElementById(\"cena\").value;\n\t\n\tif(nazwa==\"\" || ilosc==\"\" || cena==\"\") return;\n\t\n\tvar wiersz = document.createElement(\"tr\");\n\tvar komorkaNazwa = document.createElement(\"td\");\n\tvar komorkaIlosc = document.createElement(\"td\");\n\tvar komorkaCena = document.createElement(\"td\");\n\tvar komorkaVat = document.createElement(\"td\");\n\tvar komorkaCenavat = document.createElement(\"td\");\n\tvar komorkaWartosc = document.createElement(\"td\");\n\n\t\n\tkomorkaNazwa.innerHTML = nazwa;\n\tkomorkaIlosc.innerHTML = ilosc;\n\tkomorkaCena.innerHTML = cena;\n\tkomorkaVat.innerHTML = cena*0.23;\n\tkomorkaCenavat.innerHTML = cena*1.23;\n\tkomorkaWartosc.innerHTML = cena*1.23*ilosc;\n\n\t\n\twiersz.appendChild(komorkaNazwa);\n\twiersz.appendChild(komorkaIlosc);\n\twiersz.appendChild(komorkaCena);\n\twiersz.appendChild(komorkaVat);\n\twiersz.appendChild(komorkaCenavat);\n\twiersz.appendChild(komorkaWartosc);\n\t\n\tvar tabela = document.getElementById(\"tabelka\");\n\ttabela.appendChild(wiersz);\n\t\n\tdocument.getElementById(\"nazwa\").value = \"\";\n\tdocument.getElementById(\"ilosc\").value = \"\";\n\tdocument.getElementById(\"cena\").value = \"\";\n\t\n}\nfunction ilosc(){\n\tvar podsumowanie = document.getElementById(\"podsumowanie\")\n\tvar tabela = document.getElementById(\"tabelka\");\n\tvar w=0;\n\tfor(var i=0; i<tabela.childElementCount; i++){\n\t\tvar wiersz = tabela.childNodes[i];\n\t\tw+=parseFloat(wiersz.childNodes[1].innerHTML);\n\t}\n\tpodsumowanie.innerHTML += \"ilosc \"+w;\n}\nfunction suma(){\n\tvar podsumowanie = document.getElementById(\"podsumowanie\")\n\tvar tabela = document.getElementById(\"tabelka\");\n\tvar s=0;\n\tfor(var i=0; i<tabela.childElementCount; i++){\n\t\tvar wiersz = tabela.childNodes[i];\n\t\ts+=parseFloat(wiersz.childNodes[5].innerHTML);\n\t}\n\tpodsumowanie.innerHTML += \"<br>suma \"+s+\"<br>\";\n}\n\nfunction a(){\n\twypelnijTabele()\n\tsuma()\n\tilosc()\n}",
+ "title": ""
+}

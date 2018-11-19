@@ -1,0 +1,5 @@
+{
+  "value": "function_count \u003e 0 THEN \u0027, Calls \u0027 + CONVERT(VARCHAR(10)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "h5bnWUW9",
+ "pasteDate": "Feb 8, 2018, 4:45:20 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// ConsoleApplication1.cpp : Defines the entry point for the console application.\n//\n\n#include \"stdafx.h\"\n#include \"iostream\"\n#include \"iomanip\"\n#include <string>\n#include <cctype>\nusing namespace std;\n\n\nint main()\n{\n\tstring lettre,phrase,mot,grandMot, petitMot;\n\tcout << \"veuillez entrez une phrase\"<<endl;\n\tgetline(cin,phrase);\n\tdouble size,divise;\n\tsize = 0.0;\n\tdivise = 0.0;\n\tunsigned int i = 0;\n\tphrase.append(\" \");\n\tpetitMot = phrase;\n\tfor (i = 0; i <phrase.size(); i++) {\n\t\tif (!isspace(phrase[i])) {\n\t\t\tlettre=phrase[i];\n\t\t\tmot.append(lettre);\n\t\t}\n\t\telse {\n\t\t\tif (mot.size() >grandMot.size()) {\n\t\t\t\tgrandMot = mot;\n\t\t\t}\n\t\t\t\tif (mot.size() < petitMot.size()) {\n\t\t\t\t\tpetitMot = mot;\n\t\t\t\t}\n\t\t\tsize += mot.length();\n\t\t\tdivise += 1;\n\t\t\tmot.clear();\n\t\t}\n\t}\n\tsize = size / divise;\n\tcout << \"le plus grand mot est : \" << grandMot << endl << \"le plus petit mot est : \" << petitMot << endl << \"la longueur moyeene des mot est : \" << size;\n\tsystem(\"pause\");\n\treturn 0;\n}",
+ "title": ""
+}

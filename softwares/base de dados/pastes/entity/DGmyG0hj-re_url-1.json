@@ -1,0 +1,5 @@
+{
+  "value": "(message.author.bot",
+  "correct": false,
+  "jSonReason": "re_url"
+}

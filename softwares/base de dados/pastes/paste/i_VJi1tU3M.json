@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_java"
+ ],
+ "key": "VJi1tU3M",
+ "pasteDate": "Feb 24, 2018, 2:34:07 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "package com.montanha.gerenciador.responses;\n\nimport java.util.ArrayList;\nimport java.util.List;\n\npublic class Response<T> {\n\n\tprivate T data;\n\tprivate List<String> errors;\n\n\tpublic T getData() {\n\t\treturn data;\n\t}\n\n\tpublic void setData(T data) {\n\t\tthis.data = data;\n\t}\n\n\tpublic List<String> getErrors() {\n\t\tif (this.errors == null) {\n\t\t\tthis.errors = new ArrayList<String>();\n\t\t}\n\t\treturn errors;\n\t}\n\n\tpublic void setErrors(List<String> errors) {\n\t\tthis.errors = errors;\n\t}\n\n\tpublic Response() {\n\t}\n}",
+ "title": ""
+}

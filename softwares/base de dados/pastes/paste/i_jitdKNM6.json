@@ -1,0 +1,19 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_sec",
+  "kw_security",
+  "kw_cert",
+  "kw_error",
+  "kw_pass",
+  "kw_vpn",
+  "lg_en"
+ ],
+ "key": "jitdKNM6",
+ "pasteDate": "Feb 18, 2018, 5:19:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "client\nroute-noexec\nscript-security 2\ndev tun42\nproto udp\nremote <remotehost> <remoteport>\nresolv-retry infinite\nnobind\npersist-key\npersist-tun\nca /etc/openvpn/client/ca.crt\ntls-client\nremote-cert-tls server\nauth-user-pass /etc/openvpn/client/vpn-creds\ncomp-lzo\nverb 1\nreneg-sec 0\ncrl-verify /etc/openvpn/client/crl.pem\nroute-up /etc/openvpn/client/route-up.sh\n\t\n#!/bin/bash\n/bin/whoami\n\nNS=ns\n\nif [ ! -f /var/run/netns/$NS ]; then\n    /sbin/ip netns add $NS\nfi\n\n/sbin/ip link set $dev netns $NS\n/sbin/ip netns exec $NS /sbin/ifconfig lo up\n/sbin/ip netns exec $NS /sbin/ifconfig $dev $ifconfig_local pointopoint $ifconfig_remote up\n/sbin/ip netns exec $NS /sbin/route add default gw $ifconfig_remote metric 1024\n\t\nFeb 18 11:57:22 arch openvpn[5216]: root\nFeb 18 11:57:22 arch openvpn[5216]: mount --make-shared /var/run/netns failed: Operation not permitted\nFeb 18 11:57:22 arch openvpn[5216]: Error: argument \"ns\" is wrong: Invalid \"netns\" value\nFeb 18 11:57:22 arch openvpn[5216]: Cannot open network namespace \"ns\": No such file or directory\nFeb 18 11:57:22 arch openvpn[5216]: Cannot open network namespace \"ns\": No such file or directory\nFeb 18 11:57:22 arch openvpn[5216]: Cannot open network namespace \"ns\": No such file or directory\nFeb 18 11:57:22 arch openvpn[5216]: WARNING: Failed running command (--route-up): external program exited with error status: 1\nFeb 18 11:57:22 arch openvpn[5216]: Initialization Sequence Completed",
+ "title": ""
+}

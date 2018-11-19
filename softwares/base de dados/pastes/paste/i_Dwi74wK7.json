@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Dwi74wK7",
+ "pasteDate": "Feb 18, 2018, 4:11:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@NgModule({\n  declarations: [\n    ...\n  ],\n  imports: [\n    ...\n  ],\n  providers: [\n    CategoriaService, // <-- aqui vai nosso servico !\n    ...\n  ],\n  bootstrap: [AppComponent]\n})\nexport class AppModule { }",
+ "title": ""
+}

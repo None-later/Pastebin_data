@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wHgSfcps",
+ "pasteDate": "Feb 28, 2018, 4:05:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "inventory = { 'arrow' : 12,\n                     'gold coin' : 42,\n                     'rope' : 1,\n                     'torch' : 6,\n                     'dagger' : 1 }\n\ndef displayInventory(inventory):\n    total = 0\n    for i in inventory:\n        if inventory[i] < 2:\n            print (\"You have \" + str(inventory[i]) + \" \" + i + \".\")\n        else:\n            if i[-1] == \"h\":\n                print (\"You have \" + str(inventory[i]) + \" \" + i + \"es.\")\n            else:\n                print (\"You have \" + str(inventory[i]) + \" \" + i + \"s.\")\n            \n    for i in inventory:\n        total += inventory[i]\n    print ()\n    print (\"You have \" + str(total) + \" items total in your inventory.\")",
+ "title": ""
+}

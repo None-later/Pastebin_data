@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "X3HB4RF7",
+ "pasteDate": "Feb 28, 2018, 11:26:09 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<target name=\"package-the-zip\" depends=\"upstream-thing1, upstream-thing2\">\n    <!-- a little bit of tweaking happens here -->\n    <zip destfile=\"myPackage.zip\">\n        <zipfileset dir=\"PARENT-DIR\" prefix=\"myParent\">\n            <!-- a handful of include and exclude tags are here -->\n        </zipfileset>\n    </zip>\n</target>",
+ "title": ""
+}

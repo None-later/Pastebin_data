@@ -1,0 +1,5 @@
+{
+  "value": "SELECT @IsWindowsOperatingSystem \u003d CASE WHEN host_platform \u003d \u0027Windows\u0027 THEN 1 ELSE 0 END FROM",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

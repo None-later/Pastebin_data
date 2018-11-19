@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1",
+  "re_html_xml",
+  "re_css"
+ ],
+ "key": "vzb5Ai9W",
+ "pasteDate": "Feb 21, 2018, 10:15:34 AM",
+ "relevancy": -6.0,
+ "relevant": false,
+ "text": "<html>\n<head>\n<style>\n.tlo{\nposition: relative;\nwidth: 300px;\nheight: 150px;\nborder: 2px solid black;\nborder-radius: 15px;\nline-height: 5px;\n}\n.poletekstowe{\nposition: absolute;\ntop: 40px;\nleft: 150px;\n}\n.napisy{\nposition: absolute;\ntop: 42px;\nleft: 60px;\nline-height: 13px;\nfont-family: monospace;\n}\n.przyciski{\nposition: absolute;\ntop: 120px;\nleft: 40px;\n}\n.napis{\nposition: absolute;\ntop: 5px;\nleft: 120px;\n</style>\n</head>\n<body>\n<pre>\n<script>\nfunction rozmiar(){\nvar pr=document.getElementById(\"inapis\")\nvar roz=document.getElementById(\"o3\").value\n\nvar attr=document.createAttribute(\"style\")\nattr.value=\"font-size: \"+roz+\";\"\npr.setAttributeNode(attr)\n}\n\nfunction kolorcz(){\n\nvar p=document.getElementById(\"inapis\")\nvar kcz=document.getElementById(\"o1\").value\n\nvar att=document.createAttribute(\"style\")\natt.value=\"color: \"+kcz+\";\"\np.setAttributeNode(att)\n}\n\nfunction kolort(){\n\nvar pt=document.getElementById(\"itlo\")\nvar kt=document.getElementById(\"o2\").value\n\nvar attt=document.createAttribute(\"style\")\nattt.value=\"background-color: \"+kt+\";\"\npt.setAttributeNode(attt)\n}\n\n\n</script>\n</pre>\n<form name=\"formularz\">\n<div id=\"itlo\" class=\"tlo\">\n\n<div class=\"poletekstowe\">\n<input type=\"text\" placeholder=\"red\" id=\"o1\" size=\"6\"/><br><br>\n<input type=\"text\" placeholder=\"white\" id=\"o2\" size=\"6\"/><br><br>\n<input type=\"text\" placeholder=\"14px\" id=\"o3\" size=\"6\"/>\n</div>\n\n<div class=\"napisy\">\nkolor cz.<br><br>kolor t.<br><br>rozmiar cz.\n</div>\n\n<div class=\"przyciski\">\n<input type=\"button\" value=\"kolor cz.\" size=\"6\" id=\"o1\" onClick=\"kolorcz()\"/>\n<input type=\"button\" value=\"kolor t.\" size=\"6\" id=\"o2\" onClick=\"kolort()\"/>\n<input type=\"button\" value=\"rozmiar\" size=\"6\" id=\"o3\" onClick=\"rozmiar()\"/>\n</div>\n\n<p id=\"inapis\" class=\"napis\">NAPIS</p>\n</div>\n</form>\n</body>\n</html>",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DeURNW66",
+ "pasteDate": "Feb 8, 2018, 6:21:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "=IF(J2>I2,J2-I2,)",
+ "title": ""
+}

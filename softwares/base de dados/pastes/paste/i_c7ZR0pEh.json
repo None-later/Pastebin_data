@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "php",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "kw_encrypt"
+ ],
+ "key": "c7ZR0pEh",
+ "pasteDate": "Feb 28, 2018, 5:50:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\ndefined('BASEPATH') OR exit('No direct script access allowed');\n\n$active_group = 'default';\n$query_builder = TRUE;\n\n$db['default'] = array(\n\t'dsn'\t=> '',\n\t'hostname' => 'localhost',\n\t'username' => 'root',\n\t'password' => '',\n\t'database' => 'contoh',\n\t'dbdriver' => 'mysqli',\n\t'dbprefix' => '',\n\t'pconnect' => FALSE,\n\t'db_debug' => (ENVIRONMENT !== 'production'),\n\t'cache_on' => FALSE,\n\t'cachedir' => '',\n\t'char_set' => 'utf8',\n\t'dbcollat' => 'utf8_general_ci',\n\t'swap_pre' => '',\n\t'encrypt' => FALSE,\n\t'compress' => FALSE,\n\t'stricton' => FALSE,\n\t'failover' => array(),\n\t'save_queries' => TRUE\n);",
+ "title": "config/database/api"
+}

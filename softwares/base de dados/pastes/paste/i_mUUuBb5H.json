@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "yaml",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mUUuBb5H",
+ "pasteDate": "Feb 28, 2018, 4:47:38 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "name: Nomad\ndefault: false\nparent: scout\nsummon-max: 0\ndescription: Melee Agility Focus\npermitted-armor:\n- LEATHER\n- IRON\n- GOLD_BOOTS\n- DIAMOND_BOOTS\npermitted-weapon:\n- WOOD\n- STONE\n- IRON_AXE\npermitted-skills:\n    Rejuvenate: []\n    ManaPotion: []\n    Unmark:\n        mana: 5\n    Hunt:\n        mana: 10\n    Grace: []\n    Mark:\n        mana: 5\n    Recall:\n        mana: 10\n    Port: []\n    Mercy: []\n    Track: []\n    Silence:\n        cooldown: 50000\n        mana: 30\n        duration: 13000\n        max-distance: 6\n    Smoke:\n        mana: 10\n        cooldown: 65000\n        duration: 60000\n    Critical:\n        chance: 0.2\n    One:\n        duration: 5000\n        cooldown: 20000\n        mana: 10\n    Stun:\n        level: 2\n    Sneak:\n        level: 7\n    Berserk:\n        level: 15\n        reagent: COAL\n        reagent-cost: 8\nexperience-sources:\n- KILLING\n- PVP\n- CRAFTING\n- SKILL\n- MINING\n- LOGGING\nexpmodifier: 1.0\npermission-skills:\n    NomadName:\n        usage: Gives you [Nomad]\n        permissions:\n        - essentials.kit.nomad\nbase-max-health: 53.0\nmax-health-per-level: 2.0\nexpLoss: -1.0\nuser-class: true",
+ "title": ""
+}

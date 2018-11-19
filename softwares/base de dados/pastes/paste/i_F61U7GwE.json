@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "F61U7GwE",
+ "pasteDate": "Feb 18, 2018, 9:20:55 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "susanne@susanne-desktop:~$ free -m\n             total       used       free     shared    buffers     cached\nMem:          3018       2996         22          0         32        698\n-/+ buffers/cache:       2264        753\nSwap:            0          0          0",
+ "title": ""
+}

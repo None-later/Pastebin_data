@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XXG6AKRq",
+ "pasteDate": "Feb 26, 2018, 3:10:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "str = ''\nfor (a of $0.getElementsByTagName('a')) {\n    str += 'you-get ' + a.href + '\\n'\n}\nconsole.log(str)",
+ "title": ""
+}

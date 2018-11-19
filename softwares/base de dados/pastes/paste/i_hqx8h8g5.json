@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "hqx8h8g5",
+ "pasteDate": "Feb 11, 2018, 2:54:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "##### Adress of the files #####\n#adress <- \"/home/joaocamacho/Dropbox/AST602\\ -\\ Advance\\ Topics\\ on\\ Stars\\ and\\ Planets/Asteroseismology/Work\\ 1/data/freq_star2\"\nadress <- \"/home/camacho/Dropbox/AST602\\ -\\ Advance\\ Topics\\ on\\ Stars\\ and\\ Planets/Asteroseismology/Work\\ 1/data/freq_star2\"\n\n##### Reading data #####\ndata <- read.table(adress, header=TRUE)\nperiod <- 1e6/(data[,3])\ndata <- cbind(data,period)\n#separation of the data by mode degree (l)\ndata_l0 <- data[data$l == 0, ]\ndata_l1 <- data[data$l == 1, ]\n\n\n##### Large freq separation (lfs) #####\nDV0 <- lm(data_l0[,3] ~ data_l0[,2])\nsummary(DV0)\nDV1 <- lm(data_l1[,3] ~ data_l1[,2])\nsummary(DV1)\n\n##### Period spacing #####\nDELTA_v0 <- ((1/data_l0[1:16,3]) - (1/data_l0[2:17,3]))*1e6\nperiods_v0 <- 1/(data_l0[,3])\nDELTA_v1 <- ((1/data_l1[1:819,3]) - (1/data_l1[2:820,3]))*1e6\nperiods_v1 <- 1/(data_l1[,3])\nplot(data_l0[1:16,3],DELTA_v0)\n\nplot(data_l1[1:819,3],DELTA_v1,\nxlab = expression(paste(\"Frequency (\",mu,\"Hz)\")),\nylab = expression(paste(Delta, \" P (s)\")))\nposition<-match(DELTA_v1[DELTA_v1>=70],DELTA_v1)\nz <- lm(DELTA_v1[position]~ data_l1[position,3])\nabline(z,col = \"red\", lwd = 2)\nsummary(z)\n\n\n\n#Delta P - linear models - observations\nplot(data_l0[,2],data_l0[,7])\nDV0 <- lm(data_l0[,7] ~ data_l0[,2])\nsummary(DV0)\n\n##### v mod period spacing #####\nper_mod_perspace0 <- (1e6 /(data_l0$freq))  %% 80.550\nper_mod_perspace1 <- (1e6/(data_l1$freq))  %% 80.550\n\nplot(x=c(per_mod_perspace1),y=c(data_l1$freq),\n     pch=ifelse(data_l1$freq, 17, 16),\n     xlab = expression(paste(\"Period mod \", Delta, Pi, \" (s)\")),\n     ylab = expression(paste(nu, \" (\",mu,\"Hz)\"))\n)\n\n\n\nlines(c(per_mod_perspace1),c(data_l1$freq))\n\nplot(x, f_x, xlim=range(x), ylim=range(f_x), xlab=\"x\", ylab=\"y\", \n     main = \"noise-less data\",pch=16)\nlines(x[order(x)], f_x[order(x)], xlim=range(x), ylim=range(f_x), pch=16)",
+ "title": ""
+}

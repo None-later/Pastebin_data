@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "S0dNhCc7",
+ "pasteDate": "Feb 25, 2018, 10:21:07 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "type scoreInt uint64\n\nvar (\n\t// If you think I came up with these values by hand... LOL\n\t//\n\t// Each bit in a value represents the presence or absence\n\t// of a score multiplier in the 8x8 upper-left corner of\n\t// the board.\n\tTWInt   = scoreInt(0x8000000000000081)\n\tDWInt   = scoreInt(0x100000810204000)\n\tTLInt   = scoreInt(0x440000000400)\n\tDLInt   = scoreInt(0x1022000081020010)\n\tNoneInt = scoreInt(0x6eddbbf76eddbb6e)\n)\n\n// ScoreAtInt uses Fanciness to return the score multiplier at x, y.\nfunc ScoreAtInt(x, y int) ScoreType {\n\t// [adjustments for x or y > 7 omitted for brevity...]\n  \n\t// Now THIS is why I studied CS!!!!!!1010110110 amirite?\n\tmask := scoreInt(1 << (uint(y)*8 + uint(7-x)))\n\n\t// These switch cases are ordered such that the more\n\t// common cases should return earlier than the less common,\n\t// leading to fewer checks overall.\n\tswitch {\n\tcase NoneInt&mask > 0:\n\t\treturn None\n\tcase DLInt&mask > 0:\n\t\treturn DL\n\tcase DWInt&mask > 0:\n\t\treturn DW\n\tcase TLInt&mask > 0:\n\t\treturn TL\n\tcase TWInt&mask > 0:\n\t\treturn TW\n\t}\n\n\treturn None // Should not happen, but 0xIDGAF\n}",
+ "title": ""
+}

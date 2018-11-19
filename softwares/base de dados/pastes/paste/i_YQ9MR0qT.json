@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "YQ9MR0qT",
+ "pasteDate": "Feb 26, 2018, 1:30:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sequence1 = tf.placeholder(shape=[None, len1, vocab_size1)\nsequence2 = tf.placeholder(shape=[None, len2, vocab_size2)\n\nencoder_out, state1 = tf.nn.static_rnn(BasicLSTMCell(), sequence1)\ndecoder_out, state2 = tf.nn.static_rnn(BasicLSTMCell(), sequence2,\n                                      initial_state=state_1)\nlogit = Dense(decoder_out, use_bias=False)\n\nloss = tf.reduce_mean(\n        tf.nn.softmax_cross_entropy_with_logits(logits=logit, labels=target))\n\ntrain = tf.train.AdamOptimizer(learning_rate=0.002).minimize(loss)",
+ "title": ""
+}

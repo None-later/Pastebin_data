@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Y1E0LfYA",
+ "pasteDate": "Feb 18, 2018, 1:22:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "runner sets only variables in its own terminal. If you want to change a variable everywhere\nrun c9 ~/.bashrc and add export VARIABLE_NAME=VARIABLE_VALUE to the end",
+ "title": ""
+}

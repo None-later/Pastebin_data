@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "a0CAdPjw",
+ "pasteDate": "Feb 11, 2018, 9:27:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class Player(pg.sprite.Sprite):\n            def ___init__(self, game, x, y, lvl):\n                    self.group = game.all_sprites\n                    pg.sprite.Sprite.__init__(self.groups)\n                    #nothing else important\n\n            def update(self):\n                    self.mask = pg.mask.from_surface(self.image)\n                    #check if hits\n                    hits = pg.sprite.spritecollide(self, self.game.kill, False, pg.sprite.collide_mask)\n                    if hits:\n                            #stops game\n                            self.game.playing = False\n\n    class Kill(pg.sprite.Sprite):\n            def ___init__(self, game, x, y, lvl):\n                    self.group = game.kill\n                    pg.sprite.Sprite.__init__(self.groups)\n            def update(self):\n                    self.mask = pg.mask.from_surface(self.image)",
+ "title": ""
+}

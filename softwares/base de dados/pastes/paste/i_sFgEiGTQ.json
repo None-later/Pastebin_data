@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "sFgEiGTQ",
+ "pasteDate": "Feb 20, 2018, 2:52:19 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "on *:connect: {\nif ($server = irc6.chat-land.org) { \ntimerpubforum 0 7200 /forum\n}\n}",
+ "title": ""
+}

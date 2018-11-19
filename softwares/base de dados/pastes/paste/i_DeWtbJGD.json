@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DeWtbJGD",
+ "pasteDate": "Feb 23, 2018, 9:46:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//1.  ,    10      [-50;50].              .\n     (      ).\n\n#include <iostream>\n#include <locale.h>\n#include <time.h>\n\n\nusing namespace std;\n\nint main()\n{\n    setlocale(LC_ALL, \"Russian\");\n    srand(time(0));\n    int s,Max,Min;\n    cout<<\"  (, 10): \";\n    cin >> s;\n    cout<<\"    (, -50 50) : \";\n    cin >> Min>>Max;\n    //const int Max = 50;\n    //const int Min = -50;\n    int minimum = 0;\n    int A[s];\n\n    int* p = A;\n    \n    cout<<endl<<\" : \";\n    \n    for (int i=0;i<s;i++){\n        *p = Min+rand()%(Max-Min+1);\n        cout << *p << \" \";\n        p++;\n    }\n    cout << endl;\n\n    p -= (s-1);\n\n    for (int i=0;i<(s-1);i++){\n        if (*p < minimum)\n            minimum = *p;\n        p++;\n    }\n\n    cout <<endl<<\"    = \"<<minimum << endl;\n}",
+ "title": ""
+}

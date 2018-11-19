@@ -1,0 +1,5 @@
+{
+  "value": "\"http://ccma-tva-es-abertis-live.hls.adaptive.level3.net/es/ngrp:c33_web/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

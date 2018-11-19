@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "tVuzCePt",
+ "pasteDate": "Feb 12, 2018, 8:09:14 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "Garnish.$doc.on('drop', '.matrixblock > .actions > .move', this.onMoveEnd.bind(this))\n\t\nthis.blockSort = new Garnish.DragSort($blocks, {\n    handle: '> .actions > .move',\n    axis: 'y',\n    filter: $.proxy(function() {\n        // Only return all the selected items if the target item is selected\n        if (this.blockSort.$targetItem.hasClass('sel')) {\n            return this.blockSelect.getSelectedItems();\n        }\n        else {\n            return this.blockSort.$targetItem;\n        }\n    }, this),\n    collapseDraggees: true,\n    magnetStrength: 4,\n    helperLagBase: 1.5,\n    helperOpacity: 0.9,\n    onSortChange: $.proxy(function() {\n        this.blockSelect.resetItemOrder();\n    }, this)\n});",
+ "title": ""
+}

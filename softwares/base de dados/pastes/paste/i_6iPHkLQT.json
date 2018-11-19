@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6iPHkLQT",
+ "pasteDate": "Feb 17, 2018, 12:06:28 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<keymap><global><keyboard><key id=\"61497\">audionextlanguage</key><key id=\"61494\">audiodelayplus</key><key id=\"61491\">audiodelayminus</key><key id=\"61492\">subtitledelayminus</key><key id=\"61493\">subtitledelayplus</key><key id=\"61496\">playpause</key><key id=\"61495\">stop</key><key id=\"61952\">codecinfo</key><key id=\"61490\">activatewindow(screencalibration)</key><key id=\"61585\">activatewindow(subtitlesearch)</key><key id=\"61489\">activatewindow(filebrowser)</key></keyboard></global></keymap>",
+ "title": ""
+}

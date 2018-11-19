@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "kJngZmud",
+ "pasteDate": "Feb 12, 2018, 11:58:41 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class ArrayLinkedList\n{\n\t\npublic:\n\n\tstruct Node2\n\t{\n\t\n\t\tint data;\n\t\tint nextIndex;\n\t};\n\n\tint anchorIndex;\n\tint iteratorIndex;\n\tint pre;\n\tint size;\n\tNode2 cellspace[];\n\t\n\t\n\t//constructor\n\tArrayLinkedList(const int size_)\n\t{\n\t\t\t\n\t\t//det hr r det som skiter sig fr jag fr inte gra en array med en variabel sger den typ \n\t\t//men det r tnkt man ska stta listans storlek nr man skapar den \n\t\tNode2 cellspace[size_];\n\t\t\n\t\tthis->size = size;\n\t\tint anchorIndex = -1;\n\t\tint iteratorIndex = -1;\n\t\tint pre = -1;\n\t\t\n\n\t}",
+ "title": ""
+}

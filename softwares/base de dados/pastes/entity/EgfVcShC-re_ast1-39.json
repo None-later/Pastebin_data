@@ -1,0 +1,5 @@
+{
+  "value": "function o(e)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

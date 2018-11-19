@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zi7JRAPL",
+ "pasteDate": "Feb 11, 2018, 2:36:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "This was done in gnome 3.26.2, on Arch Linux ( uname -r  -->  4.14.15-1-ARCH ).\n\nRun this:\npacman -R evolution-data-server gnome-todo bijiben folks empathy gnome-maps gnome-contacts",
+ "title": ""
+}

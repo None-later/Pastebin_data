@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6w3tuQCh",
+ "pasteDate": "Feb 8, 2018, 4:12:28 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import os\n\nf = open('thisgonnawork.csv','r+')\nd = f.readlines()\nf.seek(0)\nfor i in d:\n\tif i !=',':\n\t\tline.split(',', 1)[-1]\nf.truncate()\nf.close()",
+ "title": "help mp"
+}

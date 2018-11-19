@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_nl"
+ ],
+ "key": "42UBejCS",
+ "pasteDate": "Feb 12, 2018, 2:36:38 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\n\nclass Macierz\n{\n\nprivate:\n    int N;\n    int **macierz;\npublic:\n    Macierz(int N);\n    void setWartosc(int b, int k, int l);\n\n};\n\nMacierz::Macierz(int n)\n{\n    N = n;\n    int **mak = new int *[n];\n        \n    **macierz = **mak;\n    for(int i = 0; i < n; ++i)\n    {\n        *mak = new int [n];\n        for( int j = 0; j < n; ++j)\n        {\n            mak[i][j] = 0;\n        }\n    }\n}\n\nvoid Macierz::setWartosc(int b, int k, int l)\n{\n\n}\nint main()\n{\n    Macierz m(4);\n\n    return 0;\n}",
+ "title": ""
+}

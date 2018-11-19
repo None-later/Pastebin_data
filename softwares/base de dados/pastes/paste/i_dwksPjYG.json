@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_css"
+ ],
+ "key": "dwksPjYG",
+ "pasteDate": "Feb 28, 2018, 4:34:49 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": ".minip\n  :padding 5px\n  :font-size 10px\n  :opacity 0.8\n  :filter alpha(opacity=80) \n  :background-repeat no-repeat\n  \n  .minip-inner\n    :padding 4px 5px\n    :max-width 200px\n    :background-color #000\n    :color #fff\n  \n  .minip-north\n    :background url(images/north.gif) top center\n\n  .minip-east\n    :background url(images/east.gif) right center\n\n  .minip-south\n    :background url(images/south.gif) bottom center\n\n  .minip-west\n    :background url(images/west.gif) left center",
+ "title": ""
+}

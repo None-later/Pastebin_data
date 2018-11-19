@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4tdHGG10",
+ "pasteDate": "Feb 20, 2018, 5:58:57 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "command /sniezka [<text>]:\n\tpermission: szedi.core.sniezka\n\tpermission message: &cNie masz permisji &7(&4szedi.core.sniezka&7)\n\ttrigger:\n\t\tif arg 1 is not set:\n\t\t\tsend \"&8&m-----------------------------\" to player\n\t\t\tsend \"\" to player\n\t\t\tsend \"&7/sniezkaall &8- &eDaje wszystkim sniezke\"\n\t\t\tsend \"&7/sniezkagive &8- &eDajesz sobie sniezke\"\n\t\t\tsend \"&7/sniezkaplayer nick &8- &eDajesz graczowy sniezke\"\n\t\t\tsend \"\" to player\n\t\t\tsend \"&8&m-----------------------------\" to player\n\ncommand /sniezkaall:\n\tpermission: szedi.core.sniezka\n\tpermission message: &cNie masz permisji &7(&4szedi.core.sniezka&7)\n\ttrigger:\n\t\tsend \"&f&LCASY &e&LSERWER &f&LOTRZYMAL &e&LMAGICZNA SNIEZKE &f&LOD &e&L%player%\" to all players\n\t\tadd snowball of fortune 3 named \"&f&LMAGICZNA SNIEZKA\" with lore \"&aRzuc a wypadnie ci przedmiot!\" to all players\n\ncommand /sniezkagive:\n\tpermission: szedi.core.sniezka\n\tpermission message: &cNie masz permisji &7(&4szedi.core.sniezka&7)\n\ttrigger:\n\t\tsend \"&f&LOTRZYMALES &e&LMAGICZNA SNIEZKE\"\n\t\tadd snowball of fortune 3 named \"&f&LMAGICZNA SNIEZKA\" with lore \"&aRzuc a wypadnie ci przedmiot!\" to player\n\ncommand /sniezkaplayer [<player>]:\n\tpermission: szedi.core.sniezka\n\tpermission message: &cNie masz permisji &7(&4szedi.core.sniezka&7)\n\ttrigger:\n\t\tif arg 1 is not set:\n\t\t\tif arg 1 is set:\n\t\t\telse:\n\t\t\t\tsend \"&4&lPOPRAWNE UZYCIE &7/sniezkaplayer <nick>\"\n\t\telse:\n\t\t\tsend \"&f&LDALES &e&LMAGICZNA SNIEZKE &f&LGRACZOWI &e&L%arg 1%\"\n\t\t\tsend \"&f&LOTRZYMALES &e&LMAGICZNA SNIEZKE &f&LOD &e&L%player%\" to arg 1\n\t\t\tadd snowball of fortune 3 named \"&f&LMAGICZNA SNIEZKA\" with lore \"&aRzuc a wypadnie ci przedmiot!\" to arg 1",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Vspn5gwv",
+ "pasteDate": "Feb 18, 2018, 5:17:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<windows.h>\n#include<iostream>\n#include <mmsystem.h>\nusing namespace std;\n\nint main()\n{\n\n int a;\n int i;\n char h = 3;\n cout << \"\\t\\t\\tTo  : Vitaliy\\n\\n\\a\";\n Sleep(1000);\n cout << \"\\t\\t\";\n for (i = 0; i<56; i++)\n  cout << \"_\";\n cout << \"\\n\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t\\ti i i i i\\n\\a\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t\\ti i i i i\\n\\a\\a\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t      __i_i_i_i_i__\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t     |\" << h << \"           \" << h << \"|\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t   __| \" << h << \"5.02.2018\" << h << \" |__\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t  | \" << h << \"   \" << h << \"       \" << h << \"   \" << h << \" |\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t\\t__|\" << h << \"   HAPPY     \" << h << \"   \" << h << \"|__\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t       | \" << h << \"   \" << h << \"     BIRTHDAY    \" << h << \" |\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t       |\" << h << \"  \" << h << \"     \" << h << \"    \" << h << \"     \" << h << \"   \" << h << \"|\\n\\a\";\n\n\n Sleep(1000);\n cout << \"\\t\\t       | \" << h << \" \" << h << \" \" << h << \" \" << h << \" Vitaliy \" << h << \" \" << h << \" \" << h << \" \" << h << \" |\\n\\a\";\n\n Sleep(1000);\n cout << \"\\t\\t       |_________________________|\\n\\a\";\n\n cout << \"\\n\\n\\n\\n\\n\";\n\n return 0;\n}",
+ "title": ""
+}

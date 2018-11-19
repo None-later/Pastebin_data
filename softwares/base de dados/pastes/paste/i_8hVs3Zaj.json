@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8hVs3Zaj",
+ "pasteDate": "Feb 20, 2018, 1:35:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "NCols=5\nNRows=5 \nmymat<-matrix(runif(NCols*NRows), ncol=NCols) \nmatlist <- list()\nmatlist[[1]] <- mymat\n\ndays <- 50\n\nfor (i in 2:days){\n        matlist[[i]] <- matlist[[i-1]]*2\n        if (i == 5){\n                matlist[[i]][2,2] <- matlist[[i]][2,2]+1\n          }\n}",
+ "title": ""
+}

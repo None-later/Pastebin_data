@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_css"
+ ],
+ "key": "FmswmeMF",
+ "pasteDate": "Feb 20, 2018, 1:57:31 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": ".post .photo div.caption blockquote {\n                font:             Bold 28px Helvetica, sans-serif;\n                letter-spacing:   -1px;\n                color:            #666666;\n            }\n\n.post .photo div.caption {         font-size:        15px;\n            }\n\ndl.blogroll {\n  color:#888;\n  font-size : 90%;\n  }\ndl.blogroll dt a {\n  text-decoration : none;\n  }\ndl.blogroll dd {\n  margin-left : 20px;\n  margin-bottom : 5px;\n  }\npre {\n  padding : 10px ;\n  background-color : #92A8FF;\n  font-family : Courier;\n  color : white;\n  font-size : 90% ;\n  overflow: auto;\n  }",
+ "title": ""
+}

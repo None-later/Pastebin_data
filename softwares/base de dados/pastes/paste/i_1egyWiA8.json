@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "1egyWiA8",
+ "pasteDate": "Feb 12, 2018, 1:42:59 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "02-12 17:39:28.971 27284-27284/com.app.pqCode E/ViewRootImpl: sendUserActionEvent() mView == null\n02-12 17:39:28.971 27284-27284/com.app.pqCode D/PhoneWindow: *FMB* isFloatingMenuEnabled mFloatingMenuBtn : null\n02-12 17:39:28.971 27284-27284/com.app.pqCode D/PhoneWindow: *FMB* isFloatingMenuEnabled return false\n02-12 17:39:31.201 27284-27284/com.app.pqCode D/ViewRootImpl: ViewPostImeInputStage ACTION_DOWN\n02-12 17:39:31.801 27284-27284/com.app.pqCode D/ViewRootImpl: ViewPostImeInputStage ACTION_DOWN\n02-12 17:39:35.271 27284-27284/com.app.pqCode V/ActivityThread: updateVisibility : ActivityRecord{270949b2 token=android.os.BinderProxy@2e476839 {com.app.pqCode/com.app.pqCode.screens.settings.SettingsActivity}} show : true\n02-12 17:39:35.421 27284-27291/com.app.pqCode W/art: Suspending all threads took: 24.244ms\n02-12 17:39:35.461 27284-27299/com.app.pqCode I/art: Background sticky concurrent mark sweep GC freed 28830(1716KB) AllocSpace objects, 3(48KB) LOS objects, 7% free, 16MB/18MB, paused 5.747ms total 87.387ms\n02-12 17:39:35.491 27284-27284/com.app.pqCode D/AndroidRuntime: Shutting down VM\n02-12 17:39:35.901 27284-27291/com.app.pqCode W/art: Suspending all threads took: 6.355ms\n02-12 17:39:35.921 27284-27299/com.app.pqCode I/art: Background partial concurrent mark sweep GC freed 40263(2MB) AllocSpace objects, 1(47KB) LOS objects, 39% free, 16MB/27MB, paused 5.034ms total 111.039ms\n02-12 17:39:35.951 27284-27317/? E/File: fail readDirectory() errno=2\n02-12 17:39:35.961 27284-27317/? E/File: fail readDirectory() errno=2\n                                         \n                                         [ 02-12 17:39:35.961 27284:27284 E/         ]\n                                         Parcelable encountered IOException writing serializable object (name = org.joda.time.c)\n02-12 17:39:35.961 27284-27291/? I/art: Debugger is no longer active\n02-12 17:39:35.961 27284-27317/? I/System.out: (HTTPLog)-Static: isSBSettingEnabled false\n02-12 17:39:40.271 27284-27311/? I/System.out: (HTTPLog)-Static: isSBSettingEnabled false",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RKWg4kT0",
+ "pasteDate": "Feb 8, 2018, 9:49:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "index=unruly_sampled_ad_stats (t=pp_play OR t=pp_completed_view OR t=complete OR t=q2 OR t=q3 OR t=q4 OR t=click) adf=* demand_partner=unruly\n(cid=* ) (crid=*) (apid=*) (pid=*)\n|bin _time span=1d\n|lookup uas_lookup http_user_agent as user_agent\n|replace \"Mobile Browser\" with Mobile in ua_type \n|replace Browser with Desktop in ua_type\n|eval sampling_rate=coalesce(sampling_rate,1)\n|eval play=if(t=\"pp_play\",1/sampling_rate,0)\n|eval pp_completed_view=if(t=\"pp_completed_view\",1/sampling_rate,0)\n|eval complete=if(t=\"complete\",1/sampling_rate,0)\n|eval click=if(t=\"click\",1/sampling_rate,0)\n|eval q2=if(t=\"q2\",1/sampling_rate,0)\n|eval q3=if(t=\"q3\",1/sampling_rate,0)\n|eval q4=if(t=\"q4\",1/sampling_rate,0)\n|stats sum(play), sum(pp_completed_view), sum(q2), sum(q3), sum(q4), sum(complete), sum(click) by adf, UID, apid, cid, crid, pid, ua_type, _time",
+ "title": ""
+}

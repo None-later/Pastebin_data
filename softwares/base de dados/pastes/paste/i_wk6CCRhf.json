@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "wk6CCRhf",
+ "pasteDate": "Feb 26, 2018, 1:43:51 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include <Robot.h>\n\nfloat r = 0.0;\nfloat integral = 0.0;\nfloat ePrejsnja = 0.0;\nfloat kp = 0.0, ki = 0.0, kd = 0.0;\n\nvoid setup() {\n  \n}\n\nvoid loop() {\n  if (Serial.available()) {\n    char znak = Serial.read();\n    if (znak == 'r') r = Serial.parseFloat();\n    else if (znak == 'p') kp = Serial.parseFloat();\n    else if (znak == 'i') ki = Serial.parseFloat();\n    else if (znak == 'd') kd = Serial.parseFloat();\n  }\n  \n  float p = robot.motor[RIGHT].getSpeed();\n  float e = r - p;\n  integral = integral + e;\n  float diferencial = e - ePrejsnja;\n  float u = kp * e + ki * integral + kd * diferencial;\n  robot.motor[RIGHT].setVoltage(u);\n  ePrejsnja = e;\n  Serial.println(p);\n}",
+ "title": ""
+}

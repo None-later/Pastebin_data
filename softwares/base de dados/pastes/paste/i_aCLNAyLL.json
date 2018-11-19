@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "aCLNAyLL",
+ "pasteDate": "Feb 11, 2018, 6:36:04 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "wlan0     IEEE 802.11  ESSID:off/any  \n          Mode:Managed  Access Point: Not-Associated   Tx-Power=0 dBm   \n          Retry short limit:7   RTS thr:off   Fragment thr:off\n          Encryption key:off\n          Power Management:on",
+ "title": ""
+}

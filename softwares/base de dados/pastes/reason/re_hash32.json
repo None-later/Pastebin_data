@@ -1,0 +1,7 @@
+{
+  "corrects": 68,
+  "incorrects": 3131,
+  "reason": "re_hash32",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

@@ -1,0 +1,5 @@
+{
+  "value": " https://repo1.maven.org/maven2/com/badlogicgames/gdx/gdx-freetype-platform/1.9.7/gdx-freetype-platform-1.9.7-natives-ios.jar",
+  "correct": true,
+  "jSonReason": "re_url"
+}

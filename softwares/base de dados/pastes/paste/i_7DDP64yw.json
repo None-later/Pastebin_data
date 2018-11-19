@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7DDP64yw",
+ "pasteDate": "Feb 23, 2018, 9:18:14 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "missed symbols:\nlibc :\"/system/bin/recovery-persist\": cannot locate symbol \"__android_log_pmsg_file_read\" referenced by \"/system/bin/recovery-persist\"\nlibc :\"/system/bin/cameraserver\": cannot locate symbol \"_ZNK7android14ICameraService22getInterfaceDescriptorEv\" referenced by \"/system/lib/libcameraservice.so\"\nlibc :\"/system/bin/mediaserver\": cannot locate symbol \"_ZN7android17MediaLogException11writeLogMsgEiiPKcz\" referenced by \"/system/bin/mediaserver\"\nlibc :\"/system/bin/rild\": cannot locate symbol \"UCNV_TO_U_CALLBACK_STOP_55\" referenced by \"/system/lib64/libril.so\"\n\nHAL  : dlopen failed: cannot locate symbol \"UCNV_FROM_U_CALLBACK_STOP_55\" referenced by \"/system/lib/hw/audio.primary.hi3635.so\"",
+ "title": "missed symbols"
+}

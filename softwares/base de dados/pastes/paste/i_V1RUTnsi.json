@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "V1RUTnsi",
+ "pasteDate": "Feb 8, 2018, 2:37:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "const webpackConfig = require('./node_modules/@ionic/app-scripts/config/webpack.config');\n\nconst vueAlias = {\n  extensions: ['.ts', '.js', '.vue', '.json'],\n  alias: {\n    'vue$': 'vue/dist/vue.esm.js'\n  }\n};\n\nconst vueRule = {\n  test: /\\.vue$/,\n  loader: 'vue-loader',\n  options: {\n    // Since sass-loader (weirdly) has SCSS as its default parse mode, we map the\n    // \"scss\" and \"sass\" values for the lang attribute to the right configs here.\n    // other preprocessors should work out of the box, no loader config like this\n    // necessary.\n    'scss': [\n      'vue-style-loader', 'css-loader', 'sass-loader'\n    ],\n    'sass': ['vue-style-loader', 'css-loader', 'sass-loader?indentedSyntax']\n  }\n  // other vue-loader options go here\n};\nwebpackConfig.dev.module.loaders.push(vueRule)\n\nwebpackConfig.dev.resolve = Object.assign(webpackConfig.dev.resolve, vueAlias)",
+ "title": ""
+}

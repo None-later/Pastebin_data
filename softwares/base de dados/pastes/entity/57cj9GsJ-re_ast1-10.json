@@ -1,0 +1,5 @@
+{
+  "value": "function openFile($key, $mode, \u0026 $casToken \u003d null)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

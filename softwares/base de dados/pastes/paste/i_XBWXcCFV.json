@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XBWXcCFV",
+ "pasteDate": "Feb 17, 2018, 1:12:23 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "ASGrenade::ASGrenade()\n{\n \t// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.\n\tPrimaryActorTick.bCanEverTick = true;\n\tTimeToExplode = 3.0f;\n\tExplosionRaduis = 50.0f;\n\tExplosionDamage = 50.0f;\n\n\t// Use a sphere as a simple collision representation\n\tCollisionComp = CreateDefaultSubobject<USphereComponent>(TEXT(\"CollisionComp\"));\n\tCollisionComp->InitSphereRadius(5.0f);\n\tCollisionComp->SetCollisionProfileName(\"Projectile\"); // ok?\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t// Players can't walk on it\n\tCollisionComp->SetWalkableSlopeOverride(FWalkableSlopeOverride(WalkableSlope_Unwalkable, 0.f));\n\tCollisionComp->CanCharacterStepUpOn = ECB_No;\n\n\t// Set as root component\n\tRootComponent = CollisionComp;\n\n\t// Use a GrenadeMovementComp to govern this projectile's movement\n\tGrenadeMovementComp = CreateDefaultSubobject<UProjectileMovementComponent>(TEXT(\"GrenadeMovementComp\"));\n\tGrenadeMovementComp->UpdatedComponent = CollisionComp;\n\tGrenadeMovementComp->InitialSpeed = 3000.f;\n\tGrenadeMovementComp->MaxSpeed = 3000.f;\n\tGrenadeMovementComp->bRotationFollowsVelocity = true;\n\tGrenadeMovementComp->bShouldBounce = true;\n\n\tSetReplicates(true);\n\tSetReplicateMovement(true);\n\n\tFTimerHandle TimerHandle_Explode;\n\tGetWorldTimerManager().SetTimer(TimerHandle_Explode, this, &ASGrenade::Explode, TimeToExplode);\n}\n\n\nvoid ASGrenade::Explode()\n{\n\t// Draw Debug sphere at current position with ExplosionRaduis\n\tDrawDebugSphere(GetWorld(), GetActorLocation(), 32.f, 12, FColor::Red, false, 3.f);\n\t// Trigger animation\n\tif (ExplosionEffect)\n\t{\n\t\tUGameplayStatics::SpawnEmitterAtLocation(this, ExplosionEffect, GetActorLocation(), GetActorRotation());\n\t}\n\t// Apply damage\n\tUGameplayStatics::ApplyRadialDamage(GetWorld(), ExplosionDamage, GetActorLocation(), ExplosionRaduis, DamageType, TArray<AActor*>(), this, Instigator->GetController());\n\t// Self-destroy\n\tDestroy();\n}",
+ "title": ""
+}

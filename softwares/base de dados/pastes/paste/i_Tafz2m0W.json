@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Tafz2m0W",
+ "pasteDate": "Feb 26, 2018, 12:52:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " //used to draw lines coming outwards from the center of the panel\n    public void drawLines(JPanel panel, Color c, Graphics g){\n        super.paintComponent(g);\n\n        Graphics2D g2 = (Graphics2D) g;\n        int x1 = panel.getWidth() / 2;\n        int y1 = panel.getHeight() / 2;\n        int r = x1;\n        g2.setColor(c);\n        for(int i = 0; i < noOfSectors; i++){\n            double angle = (2 * Math.PI * i) / noOfSectors;\n            Integer x2 = (int)(x1 + r * Math.cos(angle));\n            Integer y2 = (int) (y1 + r * Math.sin(angle));\n            g2.drawLine(x1,y1,x2,y2);\n        }\n    }",
+ "title": ""
+}

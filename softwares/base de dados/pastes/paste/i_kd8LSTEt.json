@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "kd8LSTEt",
+ "pasteDate": "Feb 23, 2018, 10:18:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$schedule->command('process:queue 0')->everyMinute()->withoutOverlapping();\n$schedule->command('process:queue 1')->everyMinute()->withoutOverlapping();",
+ "title": ""
+}

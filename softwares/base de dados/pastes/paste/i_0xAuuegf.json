@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "0xAuuegf",
+ "pasteDate": "Feb 10, 2018, 7:17:03 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include \"expected_prototypes.h\"\n#include <stdio.h>\n\n\nint goldbach(int liczba);\nint czy_pierwsza(int liczba);\n\nint main(void){\n    int x1=0,x2=0;\n    printf(\"Podaj poczatek zakresu: \");\n    scanf(\"%d\",&x1);\n     printf(\"Podaj koniec zakresu: \");\n    scanf(\"%d\",&x2);\n\n    for(int i=x1;i<=x2;++i){\n       if(!(i%2)){\n        printf(\"\\n%d:\",i);\n        goldbach(i);\n\n       }\n    }\n    return 0;\n\n    }\n\nint czy_pierwsza(int liczba){\n    int k=0;\n\tif (liczba<2) return 0;\n\tfor(int i=1;i<=liczba;++i){\n\t\tif(liczba%i==0)k++;\n\t}\n\tif(k==2)return 1;\n\telse return 0;\n}\n\nint goldbach(int liczba){\n    int k=0,m=0;\n    if(liczba%2)return 0;\n    else{\n    int liczby[liczba];\n    for(int i=2;i<=liczba;i++){\n\n        if(czy_pierwsza(i)){\n        liczby[k++]=i;\n        //printf(\"%d \",i);\n        }\n    }\n\n\n\n\n\n  for(int i=0;i<k;i++){\n\n        for(int j=0;j<k;j++){\n            //if(j==i)continue;\n            if(liczby[i]+liczby[j]==liczba){\n                printf(\" (%d, %d) \",liczby[i],liczby[j]);\n                m=1;\n            }\n        }\n\n    }\n    if(m)return 1;\n    else return 0;\n\n    }\n}",
+ "title": ""
+}

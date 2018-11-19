@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sXuqq5V0",
+ "pasteDate": "Feb 8, 2018, 6:49:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const browser = await puppeteer.launch({\n      headless: false, // The browser is visible\n      ignoreHTTPSErrors: true\n}),\npage = await browser.newPage();\n\n\n// This is well explained in the API\nawait page.setViewport({\n    width: options.width,\n    height: options.height\n});\n\n// But is there something like this (careful this is dummy code)\nbrowser.setWindowSize({\n    width: options.width,\n    height: options.height\n});",
+ "title": ""
+}

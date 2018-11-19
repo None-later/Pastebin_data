@@ -1,0 +1,5 @@
+{
+  "value": "function ApplyTrig(Num,Func)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

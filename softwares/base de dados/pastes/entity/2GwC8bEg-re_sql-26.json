@@ -1,0 +1,5 @@
+{
+  "value": "SELECT DISTINCT 80, DB_NAME(), 170, \u0027\u0027Reliability\u0027\u0027, \u0027\u0027Max File Size Set\u0027\u0027, \u0027\u0027https://BrentOzar.com/go/maxsize\u0027\u0027, (\u0027\u0027The [\u0027\u0027 + DB_NAME() + \u0027\u0027] database file \u0027\u0027 + name + \u0027\u0027 has a max file size set to \u0027\u0027 + CAST(CAST(max_size AS BIGINT) * 8 / 1024 AS VARCHAR(100)) + \u0027\u0027MB. If it runs out of space, the database will stop working even though there may be drive space available.\u0027\u0027) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

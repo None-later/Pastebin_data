@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XbZekPTS",
+ "pasteDate": "Feb 23, 2018, 12:08:42 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Model Name:\tiMac\n  Model Identifier:\tiMac8,1\n  Processor Name:\tIntel Core 2 Duo\n  Processor Speed:\t2.4 GHz\n  Number Of Processors:\t1\n  Total Number Of Cores:\t2\n  L2 Cache:\t6 MB\n  Memory:\t3 GB\n  Bus Speed:\t1.07 GHz\n  Boot ROM Version:\tIM81.00C1.B00\n  SMC Version (system):\t1.29f1\n  Serial Number (system):\tW883502RZE2\n  Hardware UUID:\t5653376E-3E79-5E00-8ABB-B63F1CCC9C54\n\nMac Os X Version 10.6.8.\nDDR2 SDRAM\n\n Apple Bluetooth Software Version:\t2.4.5f3\n  Hardware Settings:\n  Address:\t00-23-12-37-9D-B0\n  Manufacturer:\tBroadcom\n  Firmware Version:\tv180 c365\n\nMATSHITA DVD-R   UJ-875:\n\n  Firmware Revision:\tDB09\n  Interconnect:\tATAPI\n  Burn Support:\tYes (Apple Shipping Drive)\n  Cache:\t2048 KB\n  Reads DVD:\tYes\n  CD-Write:\t-R, -RW\n  DVD-Write:\t-R, -R DL, -RW, +R, +R DL, +RW\n  Write Strategies:\tCD-TAO, CD-SAO, DVD-DAO\n  Media:\tTo show the available burn speeds, insert a disc and choose View > Refresh\nMarvell Yukon Gigabit Adapter 88E8055 Singleport Copper SA:\n\n\nATI Radeon HD 2400 XT:\n\n  Chipset Model:\tATI Radeon HD 2400\n  Type:\tGPU\n  Bus:\tPCIe\n  PCIe Lane Width:\tx16\n  VRAM (Total):\t128 MB\n  Vendor:\tATI (0x1002)\n  Device ID:\t0x94c8\n  Revision ID:\t0x0000\n  ROM Revision:\t113-B2250H-259\n  EFI Driver Version:\t01.00.259\n  Displays:\niMac:\n  Resolution:\t1680 x 1050\n  Pixel Depth:\t32-Bit Color (ARGB8888)\n  Main Display:\tYes\n  Mirror:\tOff\n  Online:\tYes\n  Built-In:\tYes\nDisplay Connector:\n  Status:\tNo Display Connected",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "esGc0j5M",
+ "pasteDate": "Feb 8, 2018, 5:42:00 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace Back_To_The_Past\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            double inheritedMoney = double.Parse(Console.ReadLine());\n            int yearsToLive = int.Parse(Console.ReadLine());\n            int years = 18;\n\n            int moneySpent = 12000;\n            \n\n            for (int currentYear = 1800; currentYear < yearsToLive; currentYear++)\n            {\n                if (currentYear % 2 ==0)\n                {\n                    inheritedMoney -= moneySpent;\n                }\n\n                else\n                {\n                    inheritedMoney -= moneySpent + (50 * years);\n                }\n\n                years++;\n            }\n\n            if (inheritedMoney >= 0)\n            {\n                \n                Console.WriteLine(\"Yes! He will live a carefree life and will have {0:f2} dollars left.\", inheritedMoney);\n            }\n\n            else\n            {\n                Console.WriteLine(\"He will need {0:F2} dollars to survive.\", Math.Abs(inheritedMoney));\n            }\n        }\n\n           \n\n            }\n        }",
+ "title": ""
+}

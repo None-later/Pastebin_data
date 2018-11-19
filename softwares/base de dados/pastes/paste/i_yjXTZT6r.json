@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "yjXTZT6r",
+ "pasteDate": "Feb 21, 2018, 10:08:42 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function fark($t1, $t2){\n\t$bir = strtotime($t1);\n\t$iki = strtotime($t2);\n\tif ($bir - $iki > 0){\n\t\treturn 1;\n\t}else{\n\t\treturn 0;\n\t}\n}\n\nif(fark(\"20-02-2018 05:05:00\",\"21-02-2018 01:01:00\")){\n\techo \"Byk Olan Birinci Tarih\";\n}else{\n\techo \"Byk Olan kinci Tarih\";\n}",
+ "title": ""
+}

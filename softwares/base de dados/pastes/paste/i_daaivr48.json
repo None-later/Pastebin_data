@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_es"
+ ],
+ "key": "daaivr48",
+ "pasteDate": "Feb 21, 2018, 9:02:37 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "SELECT la.*\nFROM   log_accounts la\nRIGHT JOIN\n(\n    SELECT la_.userid\n    FROM   log_accounts la_\n    HAVING COUNT( * ) >= 3\n) AS c\nON la.userid = c.userid;",
+ "title": ""
+}

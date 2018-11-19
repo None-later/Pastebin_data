@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ynAJ4ih3",
+ "pasteDate": "Feb 21, 2018, 6:16:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<img src=\"{% static 'images/settingsIcon.png' %}\">",
+ "title": ""
+}

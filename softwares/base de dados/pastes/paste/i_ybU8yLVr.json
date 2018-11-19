@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_sec"
+ ],
+ "key": "ybU8yLVr",
+ "pasteDate": "Feb 20, 2018, 6:48:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "mysql> desc pictures;\n+---------------+-------------+------+-----+---------+----------------+\n| Field         | Type        | Null | Key | Default | Extra          |\n+---------------+-------------+------+-----+---------+----------------+\n| id            | int(11)     | NO   | PRI | NULL    | auto_increment | \n| url           | text        | YES  |     | NULL    |                | \n| pageable_id   | int(11)     | YES  |     | NULL    |                | \n| pageable_type | varchar(32) | YES  |     | NULL    |                | \n+---------------+-------------+------+-----+---------+----------------+\n4 rows in set (0.01 sec)\n\nmysql> desc pages;\n+-------+--------------+------+-----+---------+----------------+\n| Field | Type         | Null | Key | Default | Extra          |\n+-------+--------------+------+-----+---------+----------------+\n| id    | int(11)      | NO   | PRI | NULL    | auto_increment | \n| type  | varchar(10)  | YES  |     | NULL    |                | \n| title | varchar(255) | YES  |     | NULL    |                | \n+-------+--------------+------+-----+---------+----------------+\n3 rows in set (0.00 sec)",
+ "title": ""
+}

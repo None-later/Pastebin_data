@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vNVisK16",
+ "pasteDate": "Feb 12, 2018, 4:15:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Attachment myAttachment  = new Attachment();\nmyAttachment.Body = fileBody;\nmyAttachment.Name = fileName;\nmyAttachment.ParentId = aLead.id;\nmyAttachment.contentType = contentType;\n\ninsert myAttachment;",
+ "title": ""
+}

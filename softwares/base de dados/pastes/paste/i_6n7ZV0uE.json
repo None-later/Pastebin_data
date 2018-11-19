@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6n7ZV0uE",
+ "pasteDate": "Feb 17, 2018, 1:51:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\nusing namespace std;\n\n// LCM\n\n/*\n*/\n\n\nint gcd(int a, int b) {\n\tif (b == 0) {\n\t\treturn a;\n\t}\n\telse {\n\t\treturn gcd(b, a%b);\n\t}\n}\n\n\nint main(void) {\n\n\t//freopen(\"input.txt\", \"r\", stdin);\n\n\tint T;\n\tcin >> T;\n\n\twhile(T--) {\n\t\tint a, b;\n\t\tcin >> a >> b;\n\t\tlong g;\n\t\tg = gcd(a, b);\n\n\t\tlong lcm;\n\t\tlcm = (a*b) / g;\n\t\tcout << lcm << endl;\n\t}\t\n}",
+ "title": ""
+}

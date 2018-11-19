@@ -1,0 +1,5 @@
+{
+  "value": "fe80::",
+  "correct": false,
+  "jSonReason": "re_ipv6"
+}

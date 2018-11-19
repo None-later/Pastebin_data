@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "AR5k7KeZ",
+ "pasteDate": "Feb 26, 2018, 1:32:49 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<dir>\n    <title>Watched Movies</title>\n    <trakt>https://api.trakt.tv/movies/watched</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Watched Movies</summary>\n  </dir>\n\n  <dir>\n    <title>Trending Movies</title>\n    <trakt>https://api.trakt.tv/movies/trending</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Trending Movies</summary>\n  </dir>\n\n  <dir>\n    <title>Popular Movies</title>\n    <trakt>https://api.trakt.tv/movies/popular</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Popular Movies</summary>\n  </dir>\n\n  <dir>\n    <title>Trending TV Shows</title>\n    <trakt>https://api.trakt.tv/shows/trending</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Trending TV Shows</summary>\n  </dir>\n\n  <dir>\n    <title>Popular TV Shows</title>\n    <trakt>https://api.trakt.tv/shows/popular</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Popular TV Shows</summary>\n  </dir>\n\n  <dir>\n    <title>Collected TV Shows</title>\n    <trakt>https://api.trakt.tv/shows/collected/weekly</trakt>\n    <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n    <summary>Collected TV Shows</summary>\n  </dir>\n\n  <dir>\n      <title>My lists</title>\n      <trakt>https://api.trakt.tv/users/me/lists/</trakt>\n      <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n      <summary>Your Trakt Lists</summary>\n  </dir>\n\n  <dir>\n      <title>My Liked Lists</title>\n      <trakt>https://api.trakt.tv/users/likes/lists</trakt>\n      <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n      <summary>Your Liked Lists</summary>\n  </dir>\n  \n      <dir>\n      <title>My Watchlist</title>\n      <trakt>https://api.trakt.tv/users/me/watchlist/</trakt>\n\t  <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n      <summary>Your Watch List</summary>\n    </dir>\n\n    <dir>\n      <title>My Movie Collection</title>\n      <trakt>https://api.trakt.tv/users/me/collection/movies</trakt>\n\t  <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n      <summary>Your Movie Collection</summary>\n    </dir>\n\t\n\t<dir>\n      <title>My TV Show Collection</title>\n      <trakt>https://api.trakt.tv/users/me/collection/shows</trakt>\n\t  <thumbnail>https://i.imgur.com/foAf6CM.jpg</thumbnail>\n      <summary>Your TV Show Collection</summary>\n    </dir>",
+ "title": "trakt"
+}

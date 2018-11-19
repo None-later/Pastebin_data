@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "K1nw1icT",
+ "pasteDate": "Feb 9, 2018, 3:44:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def bbox(img):\n    rows = np.any(img, axis=1)\n    cols = np.any(img, axis=0)\n    rmin, rmax = np.where(rows)[0][[0, -1]]\n    cmin, cmax = np.where(cols)[0][[0, -1]]\n\n    return slice(rmin, rmax), slice(cmin, cmax)",
+ "title": ""
+}

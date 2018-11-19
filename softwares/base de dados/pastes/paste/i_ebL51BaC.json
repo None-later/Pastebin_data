@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "ebL51BaC",
+ "pasteDate": "Feb 17, 2018, 5:22:11 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Containers: 15\n Running: 5\n Paused: 0\n Stopped: 10\nImages: 4\nServer Version: 18.02.0-ce\nStorage Driver: overlay2\n Backing Filesystem: extfs\n Supports d_type: true\n Native Overlay Diff: true\nLogging Driver: json-file\nCgroup Driver: cgroupfs\nPlugins:\n Volume: local\n Network: bridge host macvlan null overlay\n Log: awslogs fluentd gcplogs gelf journald json-file logentries splunk syslog\nSwarm: inactive\nRuntimes: runc\nDefault Runtime: runc\nInit Binary: docker-init\ncontainerd version: 9b55aab90508bd389d7654c4baf173a981477d55\nrunc version: 9f9c96235cc97674e935002fc3d78361b696a69e\ninit version: 949e6fa\nSecurity Options:\n apparmor\n seccomp\n  Profile: default\nKernel Version: 4.13.0-32-generic\nOperating System: Ubuntu 16.04.3 LTS\nOSType: linux\nArchitecture: x86_64\nCPUs: 8\nTotal Memory: 3.791GiB\nName: TCF-SERVER\nID: HHOG:6L4W:O2BX:RIOY:2KDB:HBHB:YM6O:6JBJ:JGXS:7I4O:QSSV:V2SA\nDocker Root Dir: /var/lib/docker\nDebug Mode (client): false\nDebug Mode (server): false\nRegistry: https://index.docker.io/v1/\nLabels:\nExperimental: false\nInsecure Registries:\n 127.0.0.0/8\nLive Restore Enabled: false\n\nWARNING: No swap limit support",
+ "title": ""
+}

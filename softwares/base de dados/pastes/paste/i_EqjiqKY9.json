@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1",
+  "re_url"
+ ],
+ "key": "EqjiqKY9",
+ "pasteDate": "Feb 23, 2018, 12:47:13 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "url <- 'http://www.mof.go.jp/international_policy/reference/itn_transactions_in_securities/week.csv'\nx <- read.csv(url, header=FALSE, stringsAsFactors=FALSE)\n\t\nError in type.convert(data[[i]], as.is = as.is[i], dec = dec, na.strings = character(0L)) : \ninvalid multibyte string at '<91>O<8b>y<82><e0><8f><94><94><84><94><83><8c>_<96>@(<8f>T<8e><9f><81>E<8e>w<92><e8><95>@<8a>x<81>[<83>X<81>j'\n\t\nx <- read.csv(url, header=FALSE, stringsAsFactors=FALSE, fileEncoding=\"latin1\")\n\t\nx <- read.csv(url, header=FALSE, stringsAsFactors=FALSE,\n  fileEncoding=\"latin1\", skip=16)\n# get started with the clean-up\nx[,1] <- gsub(\"u0081|`\", \"\", x[,1])    # get rid of odd characters\nx[,-1] <- as.data.frame(lapply(x[,-1],  # convert to numbers\n  function(d) type.convert(gsub(d, pattern=\",\", replace=\"\"))))\n\t\nread_csv(file = \"http://www.mof.go.jp/international_policy/reference/itn_transactions_in_securities/week.csv\",\n         skip = 14,\n         local = locale(encoding = \"latin1\"))\n\t\ntm_map(yourCorpus, content_transformer(function(x) iconv(enc2utf8(x), sub = \"byte\")))",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "DxU0tpfs",
+ "pasteDate": "Feb 18, 2018, 5:41:09 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function MakeUnitFrame(unit)\n\tlocal rc = CreateFrame(\"Frame\", \"MyUnitFrame_\"..unit, UIParent, \"SecureUnitButtonTemplate\")\n\n\n\trc:SetAttribute(\"unit\", unit)\n\tRegisterUnitWatch(rc)\n\n\trc:RegisterForClicks(\"AnyUp\")\n\trc:SetAttribute(\"alt-type1\", \"target\")\n\n\trc:SetPoint(\"CENTER\", UIParent, \"CENTER\", 0, 0)\n\trc:SetWidth(256)\n\trc:SetHeight(256)\n\n\trc.background = rc:CreateTexture(nil, \"BACKGROUND\")\n\trc.background:SetPoint(\"TOPLEFT\", rc, \"TOPLEFT\", 0, 0)\n\trc.background:SetPoint(\"BOTTOMLEFT\", rc, \"BOTTOMLEFT\", 0, 0)\n\trc.background:SetWidth(rc:GetWidth())\n\trc.background:SetTexture(0, 0, 0, 0.5)\nend",
+ "title": ""
+}

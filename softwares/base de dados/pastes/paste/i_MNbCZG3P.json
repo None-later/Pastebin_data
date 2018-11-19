@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "MNbCZG3P",
+ "pasteDate": "Feb 27, 2018, 11:05:04 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Amp. Tipo A:\n\nReproducen totalmente la seal de entrada, la corriente de colector es distinta de cero \n\nsiempre aun sin seal de entrada por lo que disipa potencia en condicion estatica o reposo.\n\n\nAmp Tipo B:\nSe utiliza un amp para amplificar el semiciclo positivo y otro para el negativo (push pull)\n\nEstos no disipan potencia en estado de reposo  ya que ic es cero cuando la entrada del amp \n\nes 0\n\nPosee una pequea distorsion en la salida debido a que no se elimina la region no lineal de \n\ncorte.\nEs importante que los transistores sean igual para que ambas porciones de la seal se \n\namplifiquen de igual forma.\n\nAmp Tipo AB\nPosee una distorsion ms pequea pero no puede trabajar con la parte negativa de la entrada \n\n\nEn el push pull se pueden conectar los diodos para reducir las fluctuaciones del Vbe por la \n\ntemperatura igual que las resistencias en el emisor\n\nMUESTREADOR, CUANDO VGS SEA MENOR O IGUAL A VP (VOLTAJE NEGATIVO EN CANAL N) EL FET ESTA EN CORTE Y SE VE LA SALIDA",
+ "title": ""
+}

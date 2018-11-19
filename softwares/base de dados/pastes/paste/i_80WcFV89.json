@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "80WcFV89",
+ "pasteDate": "Feb 20, 2018, 1:33:29 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{$CLEO}\n0000: NOP\n0B34: samp register_client_command \"nb\" to_label @onoff\n0B34: samp register_client_command \"Dabarnb\" to_label @Dabarnb\n0B34: samp register_client_command \"Rodyknb\" to_label @Rodyknb\n31@ = 1 //isjungimas ]\n29@ = 0 // rodymas\n\n:cleo\nwait 0\nif\n    0AAB:   file_exists \"CLEO\\INI\\Adminnb.ini\"\nthen\n    0AF0: 5@ = get_int_from_ini_file \"CLEO\\INI\\Adminnb.ini\" section \"Admin\" key \"Nb\"   \n    jump @IF\nelse\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMINNB]{0CFF00}Nera ini failo, nb nebus issaugotas!\" color 16250516    \n    jump @IF\nend\n\n                                                                                                                        \n:IF\nWAIT 0\nif\n    31@ == 1\nthen\n    jump @main\nEND\nJUMP @IF\n\n:main\nWAIT 0\nIF AND\n    NOT SAMP.IsCursorActive() \n    0AB0: key_pressed 83\nTHEN\n    5@ += 1\n    0AF9: samp say_msg \"/n\"\n    018C: play_sound 1058 at 0.0 0.0 0.0\n    0AF1: write_int 5@ to_ini_file \"CLEO\\INI\\Adminnb.ini\" section \"Admin\" key \"Nb\"\n    JUMP @rodyk\nEND\n////\nIF\n    30@ == 1\nTHEN\n    30@ = 0\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}Turiu %d {00FF00}Naudingumo Bala!\" color 16250516 5@ // 24@\nEND\njump @IF\n\n:rodyk\nwait 0\nif \n    29@ == 1\nthen\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}Gavau %d {00FF00}Naudingumo Bala!\" color 16250516 5@ // 24@\n    wait 1000\n    jump @IF\nelse\n    jump @IF\nend\n\n\n\n:Dabarnb\nWAIT 0\n30@ = 1\nSAMP.CmdRet()\n\n:Rodyknb\nWAIT 0\n0B12: 29@ = 29@ XOR 1\nIF\n    29@ == 1\nTHEN\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}Rodys nb\" color 16250516\nELSE\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}Nerodys nb\" color 16250516\nEND\nSAMP.CmdRet()\n\n:onoff\nWAIT 0\n    0B12: 31@ = 31@ XOR 1\nIF\n    31@ == 1\nTHEN\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}NB Skaiciuotuvas {00FF00}Ijungtas\" color 16250516\nELSE\n    0AF8: samp add_message_to_chat \"{FF0000}[ADMIN]{00BFFF}NB Skaiciuotuvas {FF0000}Isjungtas\" color 16250516\nEND\nSAMP.CmdRet()",
+ "title": ""
+}

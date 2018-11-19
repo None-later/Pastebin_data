@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nbpbgX3C",
+ "pasteDate": "Feb 28, 2018, 6:23:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "This is Text\niffalse\nThis is Text, too, but not printed\nfi\nAnother text\n\t\ndocumentclass{beamer}\nusepackage{comment}\n\nbegin{document}\nbegin{frame}\nrandom text\nend{frame} \n\nbegin{comment}\nhidden text\nend{comment}\n\nend{document}\n\t\ndocumentclass[ignorenonframetext]{beamer}\n\nbegin{document}\nbegin{frame}\nrandom text\nend{frame} \n\nhidden text\n\nend{document}",
+ "title": ""
+}

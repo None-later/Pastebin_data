@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "dos",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "G4BQQN5K",
+ "pasteDate": "Feb 26, 2018, 1:56:41 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    set palette=\"D:\\palette.png\"\n    set filters=\"fps=30,scale=-1:-1:flags=lanczos\"\n    ffmpeg -v warning -i Sarah.mp4 -vf \"%filters%,palettegen=stats_mode=diff\" -y %palette%\n    ffmpeg -v warning -i Sarah.mp4 -i %palette% -lavfi \"%filters% [x]; [x][1:v] paletteuse\" -y Sarah.gif",
+ "title": ""
+}

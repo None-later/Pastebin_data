@@ -1,0 +1,14 @@
+{
+ "espireDate": "1W",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "QSSTFZCq",
+ "pasteDate": "Feb 17, 2018, 11:05:30 AM",
+ "relevancy": 5.0,
+ "relevant": false,
+ "text": "000000.000| ALWAYS| Logging started at 2018-02-17T13:59:02.233\n000000.001|   OKAY| Running in Standard Mode from cwd 'C:\\Riot Games\\League of Legends\\RADS\\projects\\league_client\\releases\\0.0.0.125\\deploy'.\n000000.001| ALWAYS| Application Version:8.3.217.7007 - CL:2177007 - Build Date:Feb 07 2018 - Build Time:18:47:28\n000000.004|   OKAY| Initial working directory: \"C:\\Riot Games\\League of Legends\\RADS\\projects\\league_client\\releases\\0.0.0.125\\deploy\"\n000000.004|   OKAY| Current process: \"C:\\Riot Games\\League of Legends\\RADS\\projects\\league_client\\releases\\0.0.0.125\\deploy\\LeagueClient.exe\"\n000000.004|   OKAY| Command line arguments:\n\t--release=0.0.0.95\n000000.012| ALWAYS| The following message is prepared to be sent to dradis:\nEvent Name: riot__rclient__settings__event\ncommon.os_platform: Windows\ncommon.application_name: LeagueClient\nevent_name: load_user_settings_succeeded\ncommon.application_version: 8.3.217.7007\ncommon.os_version_major: 7\ncommon.machine_id: Fe0L2ISgyk+0ldmPbWvafg==\ncommon.os_version_minor: Service Pack 1\ncommon.os_edition: Professional, x86\n000000.012| ALWAYS| Queued Dradis event to be sent.\n000000.012|   OKAY| Riot::RADS::Reader::RadsMain::Initialize: RADS library initializing with specified working directory \"C:/Riot Games/League of Legends/RADS/solutions/league_client_sln/releases/0.0.0.95/deploy/\".\n000000.012|   OKAY| Riot::RADS::Reader::RuntimeEnvironment::Create: Creating RADS runtime environment: RADS root directory = \"C:/Riot Games/League of Legends/RADS\"\n000000.012|   OKAY| Riot::RADS::Reader::SolutionManifest::Load: (\"C:/Riot Games/League of Legends/RADS/solutions/league_client_sln/releases/0.0.0.95/solutionmanifest\")\n000000.012|   OKAY| Riot::RADS::Reader::ConfigurationManifest::Load: (\"C:/Riot Games/League of Legends/RADS/solutions/league_client_sln/releases/0.0.0.95/configurationmanifest\")\n000000.013|   OKAY| Riot::RADS::Reader::ReleaseManifest::LoadInternal: (\"C:/Riot Games/League of Legends/RADS/projects/league_client_en_gb/releases/0.0.0.95/releasemanifest\")\n000000.017|   OKAY| Riot::RADS::Reader::ReleaseManifest::LoadInternal: (\"C:/Riot Games/League of Legends/RADS/projects/league_client/releases/0.0.0.125/releasemanifest\")\n000000.210| ALWAYS| Running LeagueClient version 8.3.217.7007\n000000.280| ALWAYS| The following message is prepared to be sent to dradis:\nEvent Name: riot__rclient__event\ncommon.application_name: LeagueClient\ncommon.game_data_build_id: 6927708\ncommon.application_version: 8.3.217.7007\ncommon.code_build_id: 6979180\ncommon.locale: en_GB\ncommon.content_build_id: 7040623\ncommon.installation_id: JxMe7A==",
+ "title": ""
+}

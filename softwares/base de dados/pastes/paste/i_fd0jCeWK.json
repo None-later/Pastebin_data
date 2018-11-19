@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro",
+  "re_url",
+  "re_ast1"
+ ],
+ "key": "fd0jCeWK",
+ "pasteDate": "Feb 12, 2018, 1:21:28 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "var result\nfunction setup() {\n\tloadJSON('https://api.etherscan.io/api?module=account&action=balance&address=0x542e34E4D8D028172184D2938aBEe77E6bcDC12d&tag=latest&apikey=CNAVZM8H9J3Q2HWRR553Q7BYANFZRGK79J', gotData);\n\t}\n\t\nfunction gotData(data) {\n\tprintln(data);\n\t//result = data;\n}\n\n\tdocument.getElementById(\"accbalance\").innerHTML = result ;",
+ "title": ""
+}

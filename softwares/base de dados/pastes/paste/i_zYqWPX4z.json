@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "zYqWPX4z",
+ "pasteDate": "Feb 23, 2018, 12:42:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "documentclass{article}\nusepackage[utf8]{inputenc}\nusepackage[natbibapa]{apacite}\n\ntitle{For testing}\n\nbegin{document}\n\nInformation about natbib in citeauthor{sharelatex}.\n\nbibliographystyle{apacite}\nbibliography{bibli.bib}\n\nend{document}\n\t\ndocumentclass{article}\nusepackage[utf8]{inputenc}\nusepackage[natbibapa]{apacite}\n\nusepackage{url}\n\n\nusepackage{filecontents}\nbegin{filecontents*}{jobname.bib}\n@misc{sharelatex, \n    title={ShareLaTeX, the Online LaTeX Editor},\n    url={nl.sharelatex.com/learn/Natbib_citation_styles},\n    journal={ShareLaTeX, Online LaTeX-verwerker}\n} \nend{filecontents*}\n\n\ntitle{For testing}\n\nbegin{document}\n\nInformation about natbib in citeauthor{sharelatex}.\n\nbibliographystyle{apacite}\nbibliography{jobname}\n\nend{document}",
+ "title": ""
+}

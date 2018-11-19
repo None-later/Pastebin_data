@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WgkmzjqL",
+ "pasteDate": "Feb 19, 2018, 4:24:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env bash\nsystemd-run --user flatpak run --filesystem=xdg-download:rw com.discordapp.Discord",
+ "title": ""
+}

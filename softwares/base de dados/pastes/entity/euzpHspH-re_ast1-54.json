@@ -1,0 +1,5 @@
+{
+  "value": "function CreateWeld(parent,part0,part1,C1X,C1Y,C1Z,C1Xa,C1Ya,C1Za,C0X,C0Y,C0Z,C0Xa,C0Ya,C0Za)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

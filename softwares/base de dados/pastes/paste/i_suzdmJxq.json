@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "suzdmJxq",
+ "pasteDate": "Feb 18, 2018, 5:09:19 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include <glob.h>\n\nclass Vector {\nprivate:\n    int* data;\n    size_t _size;\n\npublic:\n    Vector() {\n        data = new int[];\n        _size = 0;\n    }\n\n    Vector(Vector other) {\n        data = other.data;\n        _size = other._size;\n    }\n\n    void push_back(const int& x) {\n        ++_size;\n        *(data + _size) = x;\n    }\n\n    void pop_back() {\n        delete (data + _size);\n        --_size;\n    }\n\n    size_t size() {\n        return _size;\n    }\n\n    int operator[](const size_t& i) const {\n        return *(data + i);\n    }\n\n    Vector& operator=(Vector& other) {\n        data = other.data;\n        _size = other._size;\n        return *this;\n    }\n\n    ~Vector() {\n        for (size_t i = 0; i < _size; ++i) {\n            delete (data + i);\n        }\n    }\n};",
+ "title": ""
+}

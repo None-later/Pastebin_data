@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "BC30tUWU",
+ "pasteDate": "Feb 28, 2018, 5:45:32 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "on *:TEXT:*:#: {\n  if ($1 == !watch) {\n    set %watch.nick $2\n    msg $chan now watching nick $2    \n    .timer 0 15 .msg NickServ info $2\n  }\n  if ($1 == !unwatch) {\n    unset %watch.nick $2\n    .timers off\n    msg $chan No longer watching nick $2\n  }\n}\non *:notice:Nick * isn't registered:*: {\n  if ($nick == NickServ && $strip($2) == %watch.nick) {\n    .timers off    \n    .timer 1 1 nick $2\n    .timer 1 2 .msg NickServ group luna PASSWORD_HERE\n    .timer 1 3 .unset %watch.nick\n    .timer 1 4 ms send Alscion target nick has been registered.\n  }\n}",
+ "title": ""
+}

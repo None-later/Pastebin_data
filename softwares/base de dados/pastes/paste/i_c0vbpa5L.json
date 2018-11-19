@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "c0vbpa5L",
+ "pasteDate": "Feb 8, 2018, 11:26:04 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\n\nnamespace tESt\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            var incomeLv = double.Parse(Console.ReadLine());      //  480 \n            var averageScore = double.Parse(Console.ReadLine());  //  4.60\n            var minSalary  = double.Parse(Console.ReadLine());    //  450.00\n\n            double scholarship = 0;\n\n\n            if (averageScore <= 4.50)\n            {\n                Console.WriteLine(\"You cannot get a scholarship!\");\n            }\n            else if (averageScore >= 5.50)\n            {\n\n                    scholarship = averageScore * 25;\n                    scholarship = Math.Floor(scholarship);\n                Console.WriteLine($\"You get a scholarship for excellent results {scholarship} BGN\");\n            \n        }\n            else\n            {\n                if (incomeLv <= minSalary)\n                {\n                    scholarship = minSalary * 0.35;\n                    scholarship = Math.Floor(scholarship);\n                    Console.WriteLine($\"You get a Social scholarship {scholarship} BGN\");\n                }\n                else\n                {\n                    Console.WriteLine(\"You cannot get a scholarship!\");\n                }\n            }\n        }\n    }\n}",
+ "title": " : Scholarship"
+}

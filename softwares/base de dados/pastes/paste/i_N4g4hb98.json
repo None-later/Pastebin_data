@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "kw_targets"
+ ],
+ "key": "N4g4hb98",
+ "pasteDate": "Feb 20, 2018, 7:56:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Macros:\n/cast Divine Shield\n/cancelaura Divine Shield (If you need to use Divine Shield to survive a 1 shot mechanic during a fight, you need to drop it immediately again to make sure all targets are hitting you instead of your group members)\n/cancelaura Blessing of Protection (This is mainly for last boss in BRH to remove Unerring Shear)\n/cancelaura Blessing of Spellwarding (When you have Blessing of Spellwarding up, you are immune to all spell casts on you which means. All spell casts normally casted on the tank will now go on random people. It is extremely important you drop Bless of Spellwarding as soon as you are safe)\n/cancelaura Blessing of Freedom (This is only for Seaspray Crabs in Eye of Azshara. They will cast Jagged claws on you which you can remove with Blessing of Freedom. However, if you have Blessing of Freedom on you, they will cast Jagged claws on random targets in melee)\n\n\n#showtooltip item:5512\n/use Healthstone\n/use Astral Healing Potion\n\nFrees up a keybind and always prioritizes Healthstone.\n\n/cast [target=mouseover,help] Hand of the Protector; [help] Hand of the Protector; Hand of the Protector\n\nAllows you to mouseover a group member and use Hand of the Protector on them without having to change targets. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=mouseover,help] Blessing of Sacrifice; [help] Blessing of Sacrifice; Blessing of Sacrifice\n\nAllows you to mouseover Blessing of Sacrifice so you dont need to target them. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=mouseover,help] Blessing of Spellwarding; [help] Blessing of Spellwarding; Blessing of Spellwarding\n\nAllows you to mouseover Blessing of Spellwarding so you dont need to target them. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=mouseover,help] Blessing of Protection; [help] Blessing of Protection; Blessing of Protection\n\nAllows you to mouseover Blessing of Protection so you dont need to target them. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=mouseover,help] Blessing of Freedom; [help] Blessing of Freedom; Blessing of Freedom\n\nAllows you to mouseover Blessing of Freedom so you dont need to target them. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=mouseover,help] Lay on Hands; [help] Lay on Hands; Lay on Hands\n\nAllows you to mouseover a group member and Lay on Hands on them without having to change targets. If you have no target moused over you will use the ability on yourself instead.\n\n/cast [target=focus] Rebuke\n\nInterrupts your focus target.\n\n/cast [target=focus] Hammer of Justice \n\nStuns your focus target.",
+ "title": ""
+}

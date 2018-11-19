@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "aR9Z0QT8",
+ "pasteDate": "Feb 12, 2018, 1:10:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# How to Test our Newly-Trained Object Detector\n\n* \n\n* ### \n\n  * #### 1. ROS\n  \n    KinectKinect2UbuntuROSROS\n    \n  * #### 2. OpenCV\n  \n    OpenCV\n\n* ### \n\n  * #### 1. \n  \n    Kinect2\n    \n  * #### 2. \n  \n    labelImg\n    \n  * #### 3. \n  \n    ",
+ "title": ""
+}

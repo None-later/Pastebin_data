@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pXETw4iE",
+ "pasteDate": "Feb 18, 2018, 8:58:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// In this point tdElm.innerHTML = 1\n    if (tdElm.getAttribute('expression') != \"\") {\n        tdElm.innerHTML = tdElm.getAttribute('expression'); //expression = '=1'\n        tdElm.setAttribute('contenteditable', 'true');\n        tdElm.classList.add('focused');\n        console.log(tdElm.innerHTML); //print =1\n        tdElm.focus();\n        console.log(tdElm.innerHTML); //print 1\n        return;\n    }",
+ "title": ""
+}

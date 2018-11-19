@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iKSgn7je",
+ "pasteDate": "Feb 23, 2018, 2:10:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/*********************************\n\n*********************************/\n#biyon-tate{\n  margin-top:200px;\n  -webkit-animation-name:biyon-tate;\n  -webkit-animation-property:-webkit-transform;\n  -webkit-animation-duration:500ms;\n  -webkit-animation-timing-function:ease-out;\n  -webkit-animation-iteration-count:infinite;\n  -webkit-transform-origin:center bottom;\n}\n@-webkit-keyframes biyon-tate{\n  0%{\n  }\n  25%{\n    -webkit-transform:scale(.8,1.6);\n  }\n  100%{\n    -webkit-transform:scaleX(1.2,.5);\n  }\n}\n#biyon-yoko{\n  margin-top:;\n  -webkit-animation-name:biyon-yoko;\n  -webkit-animation-property:-webkit-transform;\n  -webkit-animation-duration:500ms;\n  -webkit-animation-timing-function:ease-out;\n  -webkit-animation-iteration-count:infinite;\n  -webkit-transform-origin:center bottom;\n}\n@-webkit-keyframes biyon-yoko{\n  0%{\n  }\n  25%{\n    -webkit-transform:scale(1.6,.8);\n  }\n  100%{\n    -webkit-transform:scaleX(1.2,.5);\n  }\n}",
+ "title": ""
+}

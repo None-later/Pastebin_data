@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "re_url",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "aVgLwAbA",
+ "pasteDate": "Feb 18, 2018, 6:30:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " <script id=\"p13913_top\"> \n(window.rttr1011 = window.rttr1011 || { queue: [] }).queue.push({\n name: 'p13913',\n selector: 'p13913_top',\n template: '<a href=\"{%link%}\" target=\"_blank\" style=\"color: green\"><img src=\"{%imgLink%}\" /></a>',\n settings: {\n \"offers\": [\n {\n \"priority\": 3,\n \"userAgent\": {\n \"exclude\": [\n \n ],\n \"include\": [\n \"windows\"\n ]\n },\n \"banners\": [\n {\n \"link\": \"https://goo.gl/JAGAwJ\",\n \"weight\": 100,\n \"imgLink\": \"http://igra-wow.ru/images/222.png\"\n }\n ],\n \"geo\": {\n \"exclude\": [\n \"RU\",\n \"AZ\",\n \"AM\",\n \"BY\",\n \"KZ\",\n \"MD\",\n \"TJ\",\n \"TM\",\n \"UZ\",\n \"UA\"\n ]\n },\n \"weight\": 100\n },\n {\n \"priority\": 3,\n \"userAgent\": {\n \"exclude\": [\n \n ],\n \"include\": [\n \"windows\"\n ]\n },\n \"banners\": [\n {\n \"link\": \"https://goo.gl/gWy31H\",\n \"weight\": 100,\n \"imgLink\": \"http://igra-wow.ru/images/45907.png\"\n }\n ],\n \"geo\": {\n \"exclude\": [\n \"UA\"\n ],\n \"include\": [\n \"CIS\"\n ]\n }\n }\n ],\n \"blockBannerRotation\": true\n },\n fallback: function(){\nconsole.log(123);\n }\n });\n rttr1011.show && rttr1011.show();\n </script>",
+ "title": ""
+}

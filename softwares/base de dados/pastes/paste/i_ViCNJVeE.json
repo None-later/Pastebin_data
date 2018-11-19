@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_css"
+ ],
+ "key": "ViCNJVeE",
+ "pasteDate": "Feb 28, 2018, 3:23:01 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "{ \"chart\": \"<style type=\\\"text/css\\\"> td {white-space: nowrap; } tr.main_border_bottom td {border-bottom: 3px solid black; } .main_border_right {border-right: 3px solid black; } .header {height: 20px; padding: 1px; } .axis {height: 20px; text-align: left; padding: 1px 0 1px 0; } .first-element-axis {height: 20px; text-align: left; padding: 1px 0 1px 5px; } .left-side {float: left; width: 50%; text-align: left; } .right-side {float: right; width: 50%; text-align: right; } .text_center {text-align: center; } .text_right {text-align: right; } .legend td {font-size: 10px; height: 15px; padding: 1px; } .chart_bar_container {height: 54px; padding-top: 5px; padding-left: 5px; } .chart_bar {height: 54px; } </style> <table style=\\\"table-layout: fixed; width: 720px\\\" cellspacing=\\\"0\\\"> <colgroup> <col style=\\\"width: 144px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> <col style=\\\"width: 72px\\\"> </colgroup> <tr class=\\\"legend\\\"> <td></td> <td></td> <td></td> <td>Never</td> <td></td> <td></td> <td></td> <td></td> <td class=\\\"text_right\\\">Always</td> </tr> <tr class=\\\"main_border_bottom text_center\\\"> <td class=\\\"header\\\"></td> <td class=\\\"header\\\">Average</td> <td class=\\\"header\\\">Percentile</td> <td class=\\\"first-element-axis\\\">1</td> <td class=\\\"axis\\\">2</td> <td class=\\\"axis\\\">3</td> <td class=\\\"axis\\\">4</td> <td class=\\\"axis\\\">5</td> <td class=\\\"axis\\\"> <div class=\\\"left-side\\\">6</div> <div class=\\\"right-side\\\">7</div> </td> </tr> <tr> <td>Self - (1)</td> <td class=\\\"text_center\\\">2.3</td> <td class=\\\"main_border_right text_center\\\">55.0</td> <td class=\\\"chart_bar_container\\\" colspan=\\\"6\\\"> <div class=\\\"chart_bar\\\" style=\\\"width: 92px; background-color: #14863e;\\\"></div> </td> </tr> <tr> <td>Others - (5)</td> <td class=\\\"text_center\\\">6.2</td> <td class=\\\"main_border_right text_center\\\">72.0</td> <td class=\\\"chart_bar_container\\\" colspan=\\\"6\\\"> <div class=\\\"chart_bar\\\" style=\\\"width: 370px; background-color: #254522;\\\"></div> </td> </tr> </table>\"}",
+ "title": ""
+}

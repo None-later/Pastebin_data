@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr",
+  "kw_password"
+ ],
+ "key": "cLee1uds",
+ "pasteDate": "Feb 11, 2018, 4:35:01 PM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "mail.smtp.auth=true\nmail.smtp.starttls.enable=true\nmail.smtp.host=smtp.gmail.com\nmail.smtp.port=587\nmail.smtp.username=example@gmail.com\nmail.smtp.password=",
+ "title": ""
+}

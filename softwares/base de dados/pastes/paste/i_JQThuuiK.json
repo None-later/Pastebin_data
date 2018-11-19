@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "JQThuuiK",
+ "pasteDate": "Feb 17, 2018, 11:39:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "resource = ResourceObject[\"MNIST\"]; \n\ntrainingData = ResourceData[resource, \"TrainingData\"]; \n\ntestData = ResourceData[resource, \"TestData\"];",
+ "title": ""
+}

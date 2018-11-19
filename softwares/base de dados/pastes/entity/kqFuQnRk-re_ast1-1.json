@@ -1,0 +1,5 @@
+{
+  "value": "FUNCTION)))) ((DECLARE (CCL::GLOBAL-FUNCTION-NAME ADD-FUNCTION-TO-HOOK)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

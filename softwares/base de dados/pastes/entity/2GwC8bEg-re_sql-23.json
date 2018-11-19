@@ -1,0 +1,5 @@
+{
+  "value": "SELECT MAX(c.pvt_key_last_backup_date) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

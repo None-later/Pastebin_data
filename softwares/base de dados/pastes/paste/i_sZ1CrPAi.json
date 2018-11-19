@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sZ1CrPAi",
+ "pasteDate": "Feb 18, 2018, 1:05:28 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/opt/srcds/left4dead2/left4dead2/bin/server.so:     file format elf32-i386\n\n\nDisassembly of section .text:\n\n002af3f2 <_ZN6CVomit13UpdateAbilityEv>:\n- snip - \n  2af6dd:\t8d 50 08             \tlea    edx,[eax+0x8]\n  2af6e0:\t89 95 64 fe ff ff    \tmov    DWORD PTR [ebp-0x19c],edx\n  2af6e6:\t8b 45 b8             \tmov    eax,DWORD PTR [ebp-0x48]\n  2af6e9:\t89 45 94             \tmov    DWORD PTR [ebp-0x6c],eax\n  2af6ec:\t8b 45 bc             \tmov    eax,DWORD PTR [ebp-0x44]\n  2af6ef:\t89 45 98             \tmov    DWORD PTR [ebp-0x68],eax\n  2af6f2:\t8b 45 c0             \tmov    eax,DWORD PTR [ebp-0x40]\n  2af6f5:\t89 45 9c             \tmov    DWORD PTR [ebp-0x64],eax\n  2af6f8:\t8b 8b fc f4 ff ff    \tmov    ecx,DWORD PTR [ebx-0xb04]  ; replace with mov eax, 3D088889h (0.0333335); NOP : b8 89 88 08 3d 90\n  2af6fe:\t8b 01                \tmov    eax,DWORD PTR [ecx] ; replace with NOP; NOP; 90 90\n  2af700:\td9 40 10             \tfld    DWORD PTR [eax+0x10] ; replace with fld eax; NOP; : d9 c0 90\n  2af703:\td9 85 7c fe ff ff    \tfld    DWORD PTR [ebp-0x184]\n  2af709:\td8 c9                \tfmul   st,st(1)\n  2af70b:\td8 45 bc             \tfadd   DWORD PTR [ebp-0x44]\n  2af70e:\td9 85 78 fe ff ff    \tfld    DWORD PTR [ebp-0x188]\n  2af714:\td8 ca                \tfmul   st,st(2)\n  2af716:\td8 45 c0             \tfadd   DWORD PTR [ebp-0x40]\n  2af719:\td9 ca                \tfxch   st(2)\n  2af71b:\td8 8d 80 fe ff ff    \tfmul   DWORD PTR [ebp-0x180]\n  2af721:\td8 45 b8             \tfadd   DWORD PTR [ebp-0x48]\n  2af724:\td9 5d b8             \tfstp   DWORD PTR [ebp-0x48]\n  2af727:\td9 5d bc             \tfstp   DWORD PTR [ebp-0x44]\n  2af72a:\td9 5d c0             \tfstp   DWORD PTR [ebp-0x40]\n  2af72d:\td9 85 70 fe ff ff    \tfld    DWORD PTR [ebp-0x190]\n  2af733:\td8 40 10             \tfadd   DWORD PTR [eax+0x10]  ; replace with fadd eax; NOP : d8 c0 90\n  2af736:\td9 95 70 fe ff ff    \tfst    DWORD PTR [ebp-0x190]\n  2af73c:\td9 85 60 fe ff ff    \tfld    DWORD PTR [ebp-0x1a0]\n  2af742:\td9 c9                \tfxch   st(1)\n  2af744:\tdf e9                \tfucomip st,st(1)\n  2af746:\tdd d8                \tfstp   st(0)\n  2af748:\t0f 87 5e 06 00 00    \tja     2afdac <_ZN6CVomit13UpdateAbilityEv+0x9ba>\n  2af74e:\t8b 83 a8 c6 08 00    \tmov    eax,DWORD PTR [ebx+0x8c6a8]\n  2af754:\t8b 48 30             \tmov    ecx,DWORD PTR [eax+0x30]\n  2af757:\t85 c9                \ttest   ecx,ecx\n  2af759:\t0f 85 f7 04 00 00    \tjne    2afc56 \n-snip-",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "SPjPN9z9",
+ "pasteDate": "Feb 17, 2018, 11:25:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Dim cmd As New SqlCommand(\"Select Sum(Totalhour) From timee where Name = '\" & ComboBox1.SelectedItem.ToString() & \"'  And Date Between '\" & DateTimePicker1.Value.ToString & \"' , '\" & DateTimePicker2.Value.ToString & \"'\", conn)\n    conn.Open()\n\n    rd = cmd.ExecuteReader\n    While (rd.Read)\n\n        TextBox3.Text = rd.GetValue(0).ToString\n\n    End While\n    conn.Close()",
+ "title": ""
+}

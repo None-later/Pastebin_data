@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WWGd2isS",
+ "pasteDate": "Feb 20, 2018, 1:37:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "documentclass{article}\nusepackage{bm,siunitx}\n\n% change nothing to the problem\nsisetup{\n    detect-weight,\n    detect-display-math\n}\n\nbegin{document}\n$bm{num{.1}}$\nend{document}",
+ "title": ""
+}

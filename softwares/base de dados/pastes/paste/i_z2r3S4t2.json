@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "z2r3S4t2",
+ "pasteDate": "Feb 21, 2018, 5:55:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(defn collatz [i]  (if (even? i)    (/ i 2)    (+ 1 (* i 3))))(defn unchecked-collatz [i]  (if (even? i)    (unchecked-divide-int i 2)    (unchecked-add-int 1 (unchecked-multiply-int i 3))))(defn ifless-collatz  ([i]   (ifless-collatz i (rem i 2)))  ([i p]    (+      (* p (+ 1 (* 3 i)))      (* (- 1 p) (/ i 2)))))(defn unchecked-ifless-collatz  ([i]   (unchecked-ifless-collatz i (unchecked-remainder-int i 2)))  ([i p]    (unchecked-add-int      (unchecked-multiply-int p (unchecked-add-int 1 (unchecked-multiply-int 3 i)))      (unchecked-multiply-int (unchecked-subtract-int 1 p) (unchecked-divide-int i 2)))))\n\n(quick-bench (ifless-collatz 7))Evaluation count : 2353194 in 6 samples of 392199 calls.             Execution time mean : 257.547841 ns    Execution time std-deviation : 8.540479 ns   Execution time lower quantile : 249.726040 ns ( 2.5%)   Execution time upper quantile : 269.887290 ns (97.5%)                   Overhead used : 1.806094 ns=> nil(quick-bench (unchecked-ifless-collatz 7))Evaluation count : 78022062 in 6 samples of 13003677 calls.             Execution time mean : 6.438548 ns    Execution time std-deviation : 0.180764 ns   Execution time lower quantile : 6.266433 ns ( 2.5%)   Execution time upper quantile : 6.717617 ns (97.5%)                   Overhead used : 1.806094 nsFound 1 outliers in 6 samples (16.6667 %)\tlow-severe\t 1 (16.6667 %) Variance from outliers : 13.8889 % Variance is moderately inflated by outliers=> nil(quick-bench (collatz 7))Evaluation count : 16967850 in 6 samples of 2827975 calls.             Execution time mean : 34.972810 ns    Execution time std-deviation : 1.203253 ns   Execution time lower quantile : 33.270472 ns ( 2.5%)   Execution time upper quantile : 36.155469 ns (97.5%)                   Overhead used : 1.806094 ns=> nil(quick-bench (unchecked-collatz 7))Evaluation count : 72102144 in 6 samples of 12017024 calls.             Execution time mean : 6.512035 ns    Execution time std-deviation : 0.223690 ns   Execution time lower quantile : 6.290182 ns ( 2.5%)   Execution time upper quantile : 6.734448 ns (97.5%)                   Overhead used : 1.806094 ns=> nil",
+ "title": ""
+}

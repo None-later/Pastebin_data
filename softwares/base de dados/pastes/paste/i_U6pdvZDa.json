@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "U6pdvZDa",
+ "pasteDate": "Feb 24, 2018, 6:38:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var positions3 = \n[\n    '  WHO-D',\n    ' Mattel 2016',\n    ' FLASH black edition',\n    '  FORCE ( )',\n    '  DeLorean', //4\n    '  STAR-94',\n    ' 000-17',\n    '  WAY-Y'\n],\nnumber3 = 0,\ndeLorean = positions3.slice(4, 6),\nwayY = positions3.slice(7, 8);\n\npositions3.splice(4, 2);\npositions3.splice(5, 1);\npositions3.unshift(deLorean, wayY);\nconsole.log(positions3);\n\nvar positions3Length = positions3.length;\n\nwhile(number3 < positions3Length)\n{\n    console.log(positions3[number3++]);\n}",
+ "title": ""
+}

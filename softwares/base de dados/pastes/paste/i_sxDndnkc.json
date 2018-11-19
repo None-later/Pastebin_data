@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "sxDndnkc",
+ "pasteDate": "Feb 10, 2018, 4:05:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import numpy as np\nimport pandas as pd",
+ "title": "new"
+}

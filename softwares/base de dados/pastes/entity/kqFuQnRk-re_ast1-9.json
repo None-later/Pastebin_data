@@ -1,0 +1,5 @@
+{
+  "value": "FUNCTION-TO-HOOK (LET (HOOK-HASH (ALEXANDRIA.0.DEV:ENSURE-GETHASH HOOK-NAME *AVAILABLE-HOOKS* #)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

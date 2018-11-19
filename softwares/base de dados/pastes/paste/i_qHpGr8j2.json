@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qHpGr8j2",
+ "pasteDate": "Feb 23, 2018, 11:45:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@mixin font-awesome-icon($type, $unicode, $size, $margin, $color, $weight) {\n  @if $type == 'after'{\n    &:after {\n      content:$unicode;\n      font-family:\"FontAwesome\";\n      font-size:$size;\n      color:$color;\n      font-weight:$weight;\n      margin:$margin;\n      @content;\n    }\n  }\n  @if $type == 'before' {\n    &:before {\n      content:$unicode;\n      font-family:\"FontAwesome\";\n      font-size:$size;\n      color:$color;\n      font-weight:$weight;\n      margin:$margin;\n      @content;\n    }\n  }\n}\n\t\n@mixin font-awesome-icon($type, $unicode, $size, $margin, $color, $weight) {\n  $beforeOrAfter:'';\n\n  @if $type == 'after' {\n    $beforeOrAfter:'after';\n  }\n  @else if $type == 'before' {\n    $beforeOrAfter:'before';\n  }\n\n  &:#{$beforeOrAfter} {\n      content:$unicode;\n      font-family:\"FontAwesome\";\n      font-size:$size;\n      color:$color;\n      font-weight:$weight;\n      margin:$margin;\n      @content;\n    }\n}\n\t\n.tater {\n@include font-awesome-icon(before,'f0de',2.1em,0 0 0 3em,orange,300);\n}",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "eYgewtbA",
+ "pasteDate": "Feb 10, 2018, 7:34:12 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "filetype indent on\nfiletype plugin indent on\nset completeopt=longest,menu\nset nu\nsyntax enable\nsyntax on\ncolor koehler\nset nowrap\nset guioptions+=b\nset autoindent\nset cin\nset sw=4\nset ts=4\nset guifont=DejaVu\\ Sans\\ Mono:h12\n\nset nocompatible\nset backspace=indent,eol,start\n\nfunction! Compile()\nexec \"w\"\nif &filetype == \"cpp\"\nexec \"!g++ -g -o %< % -Wall\"\nendif\nif &filetype == \"pascal\"\nexec \"!fpc -g %\"\nendif\nendfunc\n \nfunction! Run()\nexec \"w\"\nif &filetype == \"cpp\" || &filetype == \"pascal\"\nexec \"!%<\"\nendif\nif &filetype == \"python\"\nexec \"!python %\"\nendif\nendfunc\n \nfunction! Debug()\nexec \"w\"\nif &filetype == \"cpp\" || &filetype == \"pascal\"\nexec \"!gdb %<\"\nendif\nif &filetype == \"python\"\nexec \"!python -m pdb %\"\nendif\nendfunc\n \nimap<F5> <esc>:call Debug()<cr>\nmap<F5> <esc>:call Debug()<cr>\nvmap<F5> <esc>:call Debug()<cr>\n \nimap<C-f> <esc>:call Run()<cr>\nmap<C-f> <esc>:call Run()<cr>\nvmap<C-f> <esc>:call Run()<cr>\n \nimap<C-b> <esc>:call Compile()<cr>\nmap<C-b> <esc>:call Compile()<cr>\nvmap<C-b> <esc>:call Compile()<cr>\n \nmap<F12> <esc>:sp $VIM/_vimrc<cr>\n\ncd ~",
+ "title": ""
+}

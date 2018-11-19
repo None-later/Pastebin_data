@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jqaxPPLJ",
+ "pasteDate": "Feb 21, 2018, 12:10:28 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import javafx.application.Application;\nimport javafx.geometry.Pos;\nimport javafx.scene.Scene;\nimport javafx.scene.control.TextField;\nimport javafx.scene.layout.TilePane;\nimport javafx.stage.Stage;\n\n/**\n *\n */\npublic class SudokuGUI extends Application {\n\n\t/**\n\t * @param args the command line arguments\n\t */\n\tpublic static void main(String[] args) {\n\t\tlaunch(args);\n\t}\n\n\t@Override\n\tpublic void start(Stage primaryStage) {\n\t\tprimaryStage.setTitle(\"TilePane example\");\n\n\t\t//Adding TilePane\n\t\tTilePane TilePane = new TilePane();\n\n\t\t// 2D array of TextFields with value of 5,5\n\t\tTextField[][] TF = new TextField[9][9];\n\n\t\t//Column is a vertical line and row is a horizontal line\n\t\t//Two FOR loops used for creating 2D array of TextFields with values row,col\n\t\tfor(int row=0; row<TF.length; row++){\n\t\t\tfor(int col=0; col<TF.length;col++){\n\n\t\t\t\t//Initializing 2D TextFields with values row,col\n\t\t\t\tTF[row][col] = new TextField(\"0\");\n\t\t\t\tTF[row][col].setPrefSize(50, 50);\n\t\t\t\tTilePane.getChildren().add(TF[row][col]);\n\n\t\t\t\tif (row/3==0) {\n\n\t\t\t\t\tif (col/3==0) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.TOP_LEFT);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==1) {                        \t\t\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.TOP_CENTER);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==2) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.TOP_RIGHT);\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\t\t\t\tif (row/3==1) {\n\n\t\t\t\t\tif (col/3==0) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.CENTER_LEFT);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==1) {                        \t\t\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.CENTER);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==2) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.CENTER_RIGHT);\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\t\t\t\tif (row/3==2) {\n\n\t\t\t\t\tif (col/3==0) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.BOTTOM_LEFT);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==1) {                        \t\t\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.BOTTOM_CENTER);\n\t\t\t\t\t}\n\n\t\t\t\t\tif (col/3==2) {\n\t\t\t\t\t\tTF[row][col].setAlignment(Pos.BOTTOM_RIGHT);\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\n\t\t\t}\n\t\t}\n\n\t\t//Adding TilePane to the scene\n\t\tScene scene = new Scene(TilePane);\n\t\tprimaryStage.setScene(scene);\n\t\tprimaryStage.show();\n\t}\n}",
+ "title": ""
+}

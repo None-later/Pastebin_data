@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "L9FJJapc",
+ "pasteDate": "Feb 28, 2018, 12:26:15 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<android.support.v4.widget.SwipeRefreshLayout\n    xmlns:android=\"http://schemas.android.com/apk/res/android\"\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\n    xmlns:tools=\"http://schemas.android.com/tools\"\n    android:layout_width=\"match_parent\"\n    android:layout_height=\"match_parent\"\n    android:id=\"@+id/swipe_refresh\"\n    tools:context=\"com.exle.azhardevelop.myblog.WebBlogsActivity\">\n\n    <WebView\n        android:id=\"@+id/web_view\"\n        android:layout_width=\"match_parent\"\n        android:layout_height=\"fill_parent\" />\n\n</android.support.v4.widget.SwipeRefreshLayout>",
+ "title": "Kode WebVews"
+}

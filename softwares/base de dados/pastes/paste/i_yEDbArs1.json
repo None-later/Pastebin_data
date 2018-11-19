@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yEDbArs1",
+ "pasteDate": "Feb 12, 2018, 3:37:58 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "Import-Module ActiveDirectory\nAdd-Type -AssemblyName Microsoft.VisualBasic\n$User = [Microsoft.VisualBasic.Interaction]::InputBox('Insert Name', 'Name:')\n$info = [Microsoft.VisualBasic.Interaction]::InputBox(' Insert description:', 'description')\n$Gruppe = \"$Benutzergruppe\"\n\n\n\n  New-ADUser `\n   -AccountPassword (ConvertTo-SecureString \"ErstesPasswort\" -AsPlainText -Force) `\n   -CannotChangePassword $true `\n   -PasswordNeverExpires $true `\n   -Enabled $true `\n   -AllowReversiblePasswordEncryption $true `\n   -displayName $User `\n   -Name $User `\n   -Path \"OU=Dummy,OU=Users,DC=local,DC=test\" `\n   -SamAccountName $User `\n   -UserPrincipalName \"$User@local.test\" `\n   -description $info `\n   -Enable-ADAccount -Identity \"$User\" \nAdd-ADGroupMember -Identity $Gruppe -Member $User",
+ "title": ""
+}

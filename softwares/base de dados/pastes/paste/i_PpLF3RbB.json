@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PpLF3RbB",
+ "pasteDate": "Feb 26, 2018, 12:43:39 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sour-spicy\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sour-dry\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sour-sweet\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sour-bitter\"] {\n    left: 0% !important;\n    top: 40% !important;\n    background: rgba(238, 238, 82, 0.8);\n}\n\n#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"spicy-sour\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"spicy-dry\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"spicy-sweet\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"spicy-bitter\"] {\n    left: 20% !important;\n    top: 40% !important;\n    background: rgba(230, 106, 82, 0.8);\n}\n\n#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"dry-sour\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"dry-spicy\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"dry-sweet\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"dry-bitter\"] {\n    left: 40% !important;\n    top: 40% !important;\n    background: rgba(115, 164, 246, 0.8);\n}\n\n#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sweet-sour\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sweet-spicy\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sweet-dry\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"sweet-bitter\"] {\n    left: 60% !important;\n    top: 40% !important;\n    background: rgba(246, 172, 172, 0.8);\n}\n\n#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"bitter-sour\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"bitter-spicy\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"bitter-dry\"], #field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"bitter-sweet\"] {\n    left: 80% !important;\n    top: 40% !important;\n    background: rgba(131, 213, 230, 0.8);\n}\n\n#field_field[data-mode=\"public\"]>div.field>.fieldmon[data-flavour=\"any-any\"] {\n    left: 44% !important;\n    top: 70% !important;\n}",
+ "title": "colour match"
+}

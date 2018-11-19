@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "re_java",
+  "re_sqlserver"
+ ],
+ "key": "g4L6ReVM",
+ "pasteDate": "Feb 28, 2018, 6:15:13 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "Connection con = null;\n    Statement stmt = null;\n    ResultSet rs = null;\n\n    try {\n        Class.forName(\"com.microsoft.sqlserver.jdbc.SQLServerDriver\");\n        con = DriverManager.getConnection(connectionUrl);\n        String SQL = \"declare @response varchar(8000);<xml><action>login</action><login>test</login><password>147852</password></xml>, @response output; select convert(text,@response)\";\n        stmt = con.createStatement();\n        rs = stmt.executeQuery(SQL);\n\n        // Iterate through the data in the result set and display it.\n        /*while (rs.next()) {\n            System.out.println(rs.getString(4) + \" \" + rs.getString(6));\n        }*/\n    }\n\t\ncom.microsoft.sqlserver.jdbc.SQLServerException:     \"<\".\n    at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDatabaseError(SQLServerException.java:217)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement.getNextResult(SQLServerStatement.java:1655)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement.doExecuteStatement(SQLServerStatement.java:885)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement$StmtExecCmd.doExecute(SQLServerStatement.java:778)\n    at com.microsoft.sqlserver.jdbc.TDSCommand.execute(IOBuffer.java:7505)\n    at com.microsoft.sqlserver.jdbc.SQLServerConnection.executeCommand(SQLServerConnection.java:2445)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeCommand(SQLServerStatement.java:191)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeStatement(SQLServerStatement.java:166)\n    at com.microsoft.sqlserver.jdbc.SQLServerStatement.executeQuery(SQLServerStatement.java:677)\n    at pakkket.MainClassDbo.main(MainClassDbo.java:28)\n    at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n    at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n    at java.lang.reflect.Method.invoke(Method.java:498)\n    at com.intellij.rt.execution.application.AppMain.main(AppMain.java:134)",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function internal_collide(meID, collideID)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

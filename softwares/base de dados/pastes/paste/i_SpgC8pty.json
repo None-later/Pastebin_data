@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SpgC8pty",
+ "pasteDate": "Feb 26, 2018, 11:53:30 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "_compositionHost.Getxport<IPlugin>()\n\t\n[export(typeof(IPlugin))]\nclass x :IPlugin\n{\n    // how do i tell mef to use this constuctor\n    [ImportingConstructor]\n    public x(ILogger l)|\n    {\n    }\n\n}",
+ "title": ""
+}

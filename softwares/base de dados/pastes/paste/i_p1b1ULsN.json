@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "p1b1ULsN",
+ "pasteDate": "Feb 12, 2018, 3:01:20 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Input:\n\tName: Matt\n\t# Adults: 25\n\t# Children: 8\n\t# Desserts: 12\n\t\n\tMeal Cost: 15.00\n\tRoom Fee: 120\n\tDeposit: 300\n\t\nOutput:\n\tName: Matt\n\t#Adults: 25\n\t#Children: 8\n\t#Desserts: 12\n\t\n\tAdult Cost: 15\n\tChild Cost: 7.50\n\tDessert Cost: 4.50\n\t\n\tTotal Adult: 375\n\tTotal Child: 56.0\n\tTotal Dessert: 54.0\n\tTotal Food Cost: 410\n\t\n\tTax Cost: 27.98\n\tGratuity: 73.80\n\tRoom Fee: 120\n\t\n\tTotal Bill: 631.78\n\tLess Deposit: 300\n\t\n\tBalance: 331.78",
+ "title": ""
+}

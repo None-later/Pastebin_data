@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tFeB9Ews",
+ "pasteDate": "Feb 18, 2018, 8:48:49 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <bits/stdc++.h>\nusing namespace std;\n\nvector<int> g[3000];\nint ans = 0;\nint used[100][100];\nint delta[300];\n\nvoid dfs(int v, int s){\n\t\n\tused[s][v] = 1;\n\tans += delta[v];\n\tfor(int i = 0;i<g[v].size();i++)\n\t{\n\t\tint to = g[v][i];\n\t\tif(!used[s][to]){\n\t\t\tdfs(to, s);\n\t\t}\n\t}\n\tans += delta[v];\n\treturn;\n}\t\n\n\nint main(){\n\t\n\tint n, m;\n\tcin>>n>>m;\n\tfor(int i = 0;i<m;i++){\n\t\tint v,u;\n\t\tcin>>v>>u;\n\t\tg[u].push_back(v);\n\t\tg[v].push_back(u);\n\t}\n\t\n\tfor(int i=1;i<=n;i++)\n\t\tdelta[i] = 1;\n\t\n\tfor(int i = 1;i<=n;i++){\n\t\t\n\t\tdfs(i, i);\n\t\tdelta[i] = -1;\n\t\t\n\t}\n\tcout<<ans;\n\t\n\t\n}",
+ "title": ""
+}

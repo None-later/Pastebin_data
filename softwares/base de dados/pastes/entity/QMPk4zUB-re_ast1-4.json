@@ -1,0 +1,5 @@
+{
+  "value": "function find_player_in_alliance(name)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

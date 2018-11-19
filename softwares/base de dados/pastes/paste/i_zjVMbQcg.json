@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "pascal",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zjVMbQcg",
+ "pasteDate": "Feb 20, 2018, 3:45:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ALGO(T,L)\n\tcurr=T, next=nil\n\tSc,Sx,SL,Sir=nil\n\n\twhile (curr!=nil OR Sc!=nil) do\n\t\tif (curr!=nil && L>=0) then\n\t\t\tX=AllocaNodo()\n\t\t\tX->key=curr->key\n\t\t\tif (curr->dx!=nil) then\n\t\t\t\tSc=Push(Sc,curr)\n\t\t\t\tSx=Push(Sx,X)\n\t\t\t\tL=L-1\n\t\t\t\tSL=Push(SL,L)\n\t\t\t\tSir=Push(Sir,1)\n\t\t\t\tnext=curr->dx\n\t\t\t\tX=nil\n\t\t\telse if (curr->sx!=nil) then\n\t\t\t\tSc=Push(Sc,curr)\n\t\t\t\tSx=Push(Sx,X)\n\t\t\t\tL=L-1\n\t\t\t\tSL=Push(SL,L)\n\t\t\t\tSir=Push(Sir,0)\n\t\t\t\tnext=curr->sx\n\t\t\t\tX=nil\n\t\t\telse\n\t\t\t\tret=X\n\t\t\t\tnext=nil\n\t\telse\n\t\t\tcurr=Top(Sc)\n\t\t\tX=Top(Sx)\n\t\t\tir=Top(Sir)\t\t\n\t\t\tPop(Sir)\n\t\t\tif (ir==1) then\n\t\t\t\tX->dx=ret\n\t\t\t\tif (curr->sx!=nil) then\n\t\t\t\t\tSir=Push(Sir,0)\n\t\t\t\t\tL=Top(SL)\n\t\t\t\t\tnext=curr->sx\n\t\t\t\t\tX=nil\n\t\t\t\telse\n\t\t\t\t\tPop(Sc)\n\t\t\t\t\tPop(Sx)\n\t\t\t\t\tPop(SL)\n\t\t\t\t\tret=X\n\t\t\t\t\tnext=nil\n\t\t\telse\n\t\t\t\tX->sx=ret\n\t\t\t\tPop(Sc)\n\t\t\t\tPop(Sx)\n\t\t\t\tPop(SL)\n\t\t\t\tret=X\n\t\t\t\tnext=nil\n\t\tcurr=next\n\treturn X",
+ "title": ""
+}

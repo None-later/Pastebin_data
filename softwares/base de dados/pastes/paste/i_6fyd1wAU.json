@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "6fyd1wAU",
+ "pasteDate": "Feb 12, 2018, 10:18:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "find / -mount -noleaf -type f -size +10000k -print0 | xargs -0 ls -lhSr | perl -ne '/(\\S+\\s+){4}(\\S+)\\s+(\\S+\\s+){3}(.*)/ and printf(\"%*s %s\\n\",7,$2.\":\",$4);'",
+ "title": ""
+}

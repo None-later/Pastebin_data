@@ -1,0 +1,5 @@
+{
+  "value": "define(SLASH, $\\\\)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

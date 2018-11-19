@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bf6cJUSG",
+ "pasteDate": "Feb 21, 2018, 10:35:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "        public void onClick(View v) {\n            switch (v.getId()) {\n        // --- CASE ONE ---\n            case R.id.simple_button :\n        \t    Intent i = new Intent(this, Simplebutton.class);\n        \t    startActivity(i);\n        \t    break;\n        // ---CASE TWO ---\t\n            case R.id.simple_button2 :\n        \t    Intent i2 = new Intent(this, Simplebutton2.class);\n        \t    startActivity(i2);   \n        \t    break;\n            }\n        }",
+ "title": ""
+}

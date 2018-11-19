@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en",
+  "kw_sec"
+ ],
+ "key": "wvyX2xy9",
+ "pasteDate": "Feb 28, 2018, 5:33:47 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "# cat /etc/mtab | grep nfs\n10.130.1.30:/volume1/vm_shares/rabitmq-data /var/lib/rancher/volumes/rancher-nfs/rabitmq-data nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0\n10.130.1.30:/volume1/vm_shares/rabitmq-data /var/lib/rancher/volumes/rancher-nfs/rabitmq-data nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0\n10.130.1.30:/volume1/vm_shares/mariadb-data /var/lib/rancher/volumes/rancher-nfs/mariadb-data nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0\n10.130.1.30:/volume1/vm_shares/mariadb-data /var/lib/rancher/volumes/rancher-nfs/mariadb-data nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0\n10.130.1.30:/volume1/vm_shares/capella-storage /var/lib/rancher/volumes/rancher-nfs/capella-storage nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0\n10.130.1.30:/volume1/vm_shares/capella-storage /var/lib/rancher/volumes/rancher-nfs/capella-storage nfs4 rw,relatime,vers=4.0,rsize=131072,wsize=131072,namlen=255,hard,proto=tcp,port=0,timeo=600,retrans=2,sec=sys,clientaddr=10.130.1.173,local_lock=none,addr=10.130.1.30 0 0",
+ "title": ""
+}

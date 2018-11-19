@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "yaml",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fyPcLe3g",
+ "pasteDate": "Feb 24, 2018, 3:20:55 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "homeassistant:\n  name: Home\n  latitude: !secret latitude\n  longitude: !secret longitude\n  elevation: !secret elevation\n  time_zone: !secret time_zone\n  unit_system: imperial\n  \n  packages:\n    home_theater: !include packages/home_theater.yaml\n    living_room: !include packages/living_room.yaml\n\nhue:\n  bridges:\n    - host: 10.0.3.10\n\nzha:\n  usb_path: /dev/ttyZigbee\n  database_path: /home/homeassistant/.config/bellows/app.db\n\nhttp:\nfrontend:\nconfig:\ncloud:\n  alexa:\n    filter:\n      include_entities:\n      # Living room lights\n      - light.kitchen\n      - light.dining_room\n      - light.couch\n      - light.overhead\n      - fan.overhead\n      # Home theater\n      - switch.movie\n      - switch.game\n      - switch.screen\n      - switch.projector\n    entity_config:\n      light.overhead:\n        name: Overhead light\n      fan.overhead:\n        name: Overhead fan\n      switch.movie:\n        display_categories: ACTIVITY_TRIGGER\n      switch.game:\n        display_categories: ACTIVITY_TRIGGER\n# Misc\nhistory:\nlogbook:",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function\")Math.log10\u003dfunction(a)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CfTV8DqT",
+ "pasteDate": "Feb 8, 2018, 4:25:29 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "tables = soup.find_all(\"div\", {\"class\":\"pane\"})[0].find_all(\"table\")\n\n    if (len(tables) > 4):\n        product_list = [\n            (\n                t[0].findAll(\"div\", {\"class\":\"headline\"})[0].text.strip(), #title\n                t[0].findAll(\"div\", {\"class\":\"copy\"})[0].text.strip(),     #description\n                t[1].text.strip(),                                         #product number\n                t[2].text.strip(),                                         #category number\n                t[3].text.strip()                                          #price\n            )\n            for t in (t.find_all('td') for t in tables[4].find_all('tr'))\n            if t\n        ]\n    elif (len(tables) == 1):\n        product_list = [\n            (\n                t[0].findAll(\"div\", {\"class\":\"catNo\"})[0].text.strip(),    #catNo\n                t[0].findAll(\"div\", {\"class\":\"headline\"})[0].text.strip(), #headline\n                t[0].findAll(\"div\", {\"class\":\"price\"})[0].text.strip(),    #price\n                t[0].findAll(\"div\", {\"class\":\"copy\"})[0].text.strip()      #description\n            )\n            for t in (t.find_all('td') for t in tables[0].find_all('tr'))\n            if t\n        ]\n    else:\n        print(\"could not parse main productnn\")\n        time.sleep(timeDelay)\n\n    print(product_list)\n    time.sleep(timeDelay)\n\n    if len(tables) > 5:\n        add_product_list = [\n            (\n                t[0].findAll(\"div\", {\"class\":\"title\"})[0].text.strip(), #title\n                t[0].findAll(\"div\", {\"class\":\"copy\"})[0].text.strip(),  #description\n                t[1].text.strip(),                                      #product number\n                t[2].text.strip(),                                      #category number\n                t[3].text.strip()                                       #price\n            )\n            for t in (t.find_all('td') for t in tables[5].find_all('tr'))\n            if t\n        ]\n        print(add_product_list)\n        time.sleep(timeDelay)",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml",
+  "re_css"
+ ],
+ "key": "NQmvgDHw",
+ "pasteDate": "Feb 24, 2018, 2:00:48 PM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n<style>\n*\n{\n\tmargin: 0;\n\tpadding: 0;\n}\n\nheader\n{\n\tbackground-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 75, 0.5)), url(back3.jpg);\t\n\theight: 100vh;\n\tbackground-size: cover;\n\tbackground-position: center;\n}\n\n.nav-bar\n{\n\tbackground: (0, 0, 0, 0.5);\n\theight: (80px);\n}\n\n.logo\n{\n\tmargin: 10px, 50px;\n\theight: 80px;\n}\n\n.menu\n{\n    list-style-type: none;\n    margin: 0;\n    padding: 0;\n    overflow: hidden;\n    background-color: #333;\n}\n\n.menu li\n{\n\tdisplay: inline-block;\n\n}\n\n.menu li a \n{\n    display: block;\n    color: white;\n    text-align: center;\n    padding: 14px 16px;\n    text-decoration: none;\n}\n\n.menu li a:hover\n{\n\tbackground: #fff;\n\ttransition: .4s;\n\tcolor: #000;\n}\n\n.about{\n\ttext-align: center;\n\tfont-family: sans-serif;\n\tcolor: #fff;\n\ttop: 160px;\n}\n\n.about h1\n{\n\tfont-size: 42px;\n\tmargin: 25px;\t\n}\n</style>\n\n<head>\n\t<title>The Best website out there</title>\n\t<link href=\"about.css\" rel=\"stylesheet\" type=\"text/css\">\n</head>\n\n<body>\n\t<header>\n\t\t<div class=\"nav-bar\">\n\t\t\t\n\t\t<ul class=\"menu\">\n\t\t\t<li><a href=\"index.html\">Home</a></li>\n\t\t\t<li><a href=\"\">Portfolio</a></li>\n\t\t\t<li><a href=\"\">About Me</a></li>\n\t\t\t<li><a href=\"\">Contact</a></li>\n\t\t</ul>\n\n\t\t</div>\n\t\t<div class=\"about\">\n\n\t\t\t<h1>About Me</h1>\n\t\t\t<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\n\t\t\t\n\t\t</div>\n\t</header>\n</body>",
+ "title": ""
+}

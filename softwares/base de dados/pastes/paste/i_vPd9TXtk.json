@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "vPd9TXtk",
+ "pasteDate": "Feb 18, 2018, 2:08:07 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "*Software Conference talk proposal for 2018/2019 season. Thanks for taking the time to review this for me. Comments and criticism welcomed.*\n\n## Title\nWe Didnt Stop to Ask If We Should: Understanding Build vs. Buy\n\n## Topics\nArchitecture, Business\n\n## Abstract\nWe were so preoccupied with whether we could, we didnt stop to think if we should! Before debating React vs. Angular or .NET vs Node, we must ask ourselves, should we even build this? Whether youre an entrepreneur launching a new project, an enterprise developer stuck integrating middleware, or a architect moving logic to the cloud, youre making decisions that will have lasting consequences. Deciding which problems are worth your investment is at the root of success or failure.\n\nJoin us as we dig into real case studies from enterprises and startups. Well explore the options, costs, and risks inherent in deciding what to build, what to buy, and alternatives in between. Well consider the opportunity cost of building systems, the sustainability of open-source, and the risks of vendor lock-in. Youll leave equipped to make better decisions in your daily development and solve the problems that matter.",
+ "title": ""
+}

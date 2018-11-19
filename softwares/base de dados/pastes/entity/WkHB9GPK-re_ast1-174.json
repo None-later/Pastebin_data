@@ -1,0 +1,5 @@
+{
+  "value": "function\")try{JSON.parse(null)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

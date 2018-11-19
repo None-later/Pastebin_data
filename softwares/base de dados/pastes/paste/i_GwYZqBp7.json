@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GwYZqBp7",
+ "pasteDate": "Feb 8, 2018, 5:24:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public static <T> Predicate<T> distinctByKey(Function<? super T, ?> keyExtractor) {\n    Set<Object> seen = ConcurrentHashMap.newKeySet();\n    return t -> seen.add(keyExtractor.apply(t));\n}",
+ "title": ""
+}

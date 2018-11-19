@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "49uhLVw7",
+ "pasteDate": "Feb 17, 2018, 2:03:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "float tin = random(-PI, PI);\nPVector axisin = PVector.random3D();\nQuaternion a = new Quaternion(tin, axisin);\nQuaternion b = new Quaternion(-tin, axisin);\naxisin.mult(-1.0);\nQuaternion c = new Quaternion(tin, axisin);\nQuaternion d = new Quaternion(-tin, axisin);\nprintln(a); println(b); println(c); println(d);",
+ "title": ""
+}

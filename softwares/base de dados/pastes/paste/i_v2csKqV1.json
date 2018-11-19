@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_python_error"
+ ],
+ "key": "v2csKqV1",
+ "pasteDate": "Feb 26, 2018, 12:27:21 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "Path =C:OSGeo4W64appsqgisbin\n\t\nPYTHONPATH=C:OSGeo4W64appsqgispython\n\t\nrun o-help for a list of available commands\nC:>python\nPython 2.7.4 (default, Apr  6 2013, 19:54:46) [MSC v.1500 32 bit (Intel)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import qgis.core\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"C:OSGeo4W64appsqgispythonqgis__init__.py\", line 27, in <module>\n    from qgis.core import QgsFeature, QgsGeometry\n  File \"C:OSGeo4W64appsqgispythonqgiscore__init__.py\", line 30, in <module>\n    from qgis._core import *\nImportError: DLL load failed: %1 is not a valid Win32 application.\n>>>\n\t\nrun o-help for a list of available commands\nC:>python\nPython 2.7.4 (default, Apr  6 2013, 19:54:46) [MSC v.1500 32 bit (Intel)] on win32\nType \"help\", \"copyright\", \"credits\" or \"license\" for more information.\n>>> import qgis.core\nTraceback (most recent call last):\n  File \"<stdin>\", line 1, in <module>\n  File \"C:OSGeo4Wappsqgispythonqgis__init__.py\", line 27, in <module>\n    from qgis.core import QgsFeature, QgsGeometry\n  File \"C:OSGeo4Wappsqgispythonqgiscore__init__.py\", line 30, in <module>\n    from qgis._core import *\nImportError: DLL load failed: The specified module could not be found.\n>>>",
+ "title": ""
+}

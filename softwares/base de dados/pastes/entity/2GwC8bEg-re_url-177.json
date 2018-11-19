@@ -1,0 +1,5 @@
+{
+  "value": " https://connect.microsoft.com/SQLServer/feedback/details/817216/xtp-perfmon-counters-should-appear-under-sql-server-perfmon-counter-group",
+  "correct": true,
+  "jSonReason": "re_url"
+}

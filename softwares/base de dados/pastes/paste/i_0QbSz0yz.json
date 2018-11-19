@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0QbSz0yz",
+ "pasteDate": "Feb 20, 2018, 4:39:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/*\n=============\nai_walk\n\nThe monster is walking it's beat\n=============\n*/\nvoid ai_walk (edict_t *self, float dist)\n{\n\tM_MoveToGoal (self, dist);\n\n\t// check for noticing a player\n\tif (FindTarget (self))\n\t\treturn;\n\n\tif ((self->monsterinfo.search) && (level.time > self->monsterinfo.idle_time))\n\t{\n\t\tif (self->monsterinfo.idle_time)\n\t\t{\n\t\t\tself->monsterinfo.search (self);\n\t\t\tself->monsterinfo.idle_time = level.time + 15 + random() * 15;\n\t\t}\n\t\telse\n\t\t{\n\t\t\tself->monsterinfo.idle_time = level.time + random() * 15;\n\t\t}\n\t}\n}",
+ "title": ""
+}

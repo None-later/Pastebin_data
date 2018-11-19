@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Le80N2ay",
+ "pasteDate": "Feb 26, 2018, 10:41:38 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "package search;\n\npublic class BinarySearch {\n    static int n, x;\n    static int[] a;\n\n    public static void main(String[] args) {\n        n = args.length - 1;\n        x = Integer.parseInt(args[0]);\n        a = new int[n];\n        for (int i = 0; i < n; ++i) {\n            a[i] = Integer.parseInt(args[i + 1]);\n        }\n        int ansIter = BinarySearchIter(x);\n        int ansRec = BinarySearchRec(0, n, x);\n        //System.out.println(ansIter);\n        System.out.println(ansRec);\n    }\n\n    // pre: (0 < i < n : a[i - 1] >= a[i])\n    // post: (R == n && a[n - 1] > x) || (R == 0 && x >= a[0]) || (0 < R < n && a[R - 1] > x && a[R] <= x)\n    public static int BinarySearchIter(int x) {\n        // (0 < i < n : a[i - 1] >= a[i])\n        int l = 0;\n        int r = n;\n        // (0 < i < n : a[i - 1] >= a[i]) && l == 0 && r == n\n        // inv: (a' == a) && (0 < i < n : a[i - 1] >= a[i]) && 0 <= l <= r <= n && (l == 0 || x < a[l - 1]) && (r == n || x >= a[r]) && (r' - l') >= 2 * (r - l)\n        while (l < r) {\n            // inv && l < r\n            int mid = (l + r) / 2;\n            // inv && l < r && mid == (l + r) / 2\n            if (a[mid] > x) {\n                // inv && mid == (l + r) / 2  && a[mid] > x\n                l = mid + 1;\n                // inv && mid == (l + r) / 2  && a[mid] > x && l == mid + 1\n            } else {\n                // inv && mid == (l + r) / 2  && a[mid] <= x\n                r = mid;\n                // inv && mid == (l + r) / 2  && a[mid] <= x && r == mid\n            }\n            // inv && (r' - l') >= 2 * (r - l)\n        }\n        return r;\n        //R = r\n    }\n\n    // pre: (0 < i < n : a[i - 1] >= a[i]) && 0 <= l <= r <= n\n    // post: (R == n && a[n - 1] >= x) || (R == 0 && x > a[0]) || (0 < R < n && a[R - 1] >= x && a[R] < x)\n    // inv: (a' == a) && (0 < i < n : a[i - 1] >= a[i]) && 0 <= l <= r <= n && (l == 0 || x <= a[l - 1]) && (r == n || x > a[r]) && (r' - l') >= 2 * (r - l)\n    public static int BinarySearchRec(int l, int r, int x) {\n        if (l == r) {\n            // inv && l == r\n            return r;\n            // R = r\n        }\n        // inv\n        int mid = (l + r) / 2;\n        // inv && mid == (l + r) / 2\n        if (a[mid] > x) {\n            // inv && mid == (l + r) / 2  && a[mid] >= x\n            return BinarySearchRec(mid + 1, r, x);\n        } else {\n            // inv && mid == (l + r) / 2  && a[mid] < x\n            return BinarySearchRec(l, mid, x);\n        }\n    }\n}",
+ "title": ""
+}

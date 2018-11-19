@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "MWxWh1zW",
+ "pasteDate": "Feb 12, 2018, 1:09:24 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "var bw = new BinaryWriter(File.Open(\"path\",FileMode.OpenOrCreate);\nbw.Write(byteArray);",
+ "title": ""
+}

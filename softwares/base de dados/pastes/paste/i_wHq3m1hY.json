@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wHq3m1hY",
+ "pasteDate": "Feb 21, 2018, 10:12:45 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class CD extends ElectronicMedia {\n\tprivate String genre;\n\t\n\tpublic CD(String id, String title, String genre) {\n\t\tsuper(id, title);\n\t\tsetGenre(genre);\n\t}\n\t\n\tpublic void setGenre(String genre) {\n\t\tthis.genre = genre;\n\t}\n\t\n\tpublic String getGenre() {\n\t\treturn genre;\n\t}\n\t\n\tpublic String toString() {\n\t\treturn \"CD Title: \" + getTitle() + \", CD Number: \" + getId() + \", CD Genre: \" + getGenre();\n\t}\n}",
+ "title": ""
+}

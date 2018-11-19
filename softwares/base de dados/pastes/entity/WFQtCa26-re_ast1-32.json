@@ -1,0 +1,5 @@
+{
+  "value": "function CreateFrame(PARENT, TRANSPARENCY, BORDERSIZEPIXEL, POSITION, SIZE, COLOR, BORDERCOLOR, NAME)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

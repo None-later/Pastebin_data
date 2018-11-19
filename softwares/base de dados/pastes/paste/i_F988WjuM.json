@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "kw_patch"
+ ],
+ "key": "F988WjuM",
+ "pasteDate": "Feb 11, 2018, 6:41:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import sys\nimport numpy as np\n\nfile_name = 'trimesh/version.py'\n\nif __name__ == '__main__':\n    with open(file_name, 'r') as f:\n        text = f.read()\n\n    split = text.split(\"'\")\n    v = split[1]\n    assert v.count('.') == 2\n    vs = np.array([int(i) for i in v.split('.')])\n\n    # -0: major bump\n    # -1: minor bump\n    # anything else: patch bump\n    if '-0' in sys.argv:\n        which = 0\n    elif '-1' in sys.argv:\n        which = 1\n    else:\n        which = 2\n\n    vs[which+1:] = 0\n    vs[which] += 1\n    split[1] = '.'.join(vs.astype(str))\n    new = \"'\".join(split)\n\n    print('was: {}\\nnow: {}'.format(text.strip(), new.strip()))\n\n    with open(file_name, 'w') as f:\n        f.write(new)",
+ "title": ""
+}

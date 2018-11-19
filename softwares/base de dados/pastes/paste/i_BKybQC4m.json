@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BKybQC4m",
+ "pasteDate": "Feb 20, 2018, 2:59:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <windows.h>\n\nint WINAPI WinMain(HINSTANCE,HINSTANCE program,LPSTR,int tryb)\n{\n    MessageBox(0,\"Umyles oczy?\",\"okno\",MB_OK | MB_YESNOCANCEL);\n    \n    if(IDYES, IDNO) \n    {\n        if(IDYES)\n        {\n        MessageBox(0,\"to ok\",\"okno\",MB_OK | MB_ICONWARNING);      \n               \n        }else MessageBox(0,\"To idz umyc :D\",\"okno\",MB_OK | MB_ICONWARNING);\n\n\n}else MessageBox(0,\"Buhahaha\",\"okno\",MB_OK | MB_ICONERROR);\n\n\n  return 0;    \n}",
+ "title": ""
+}

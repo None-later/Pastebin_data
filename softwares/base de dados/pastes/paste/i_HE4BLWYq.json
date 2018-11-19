@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HE4BLWYq",
+ "pasteDate": "Feb 26, 2018, 12:59:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CMD:fuelcars(playerid)\n{\n\tif(PlayerInfo[playerid][bAdmin] < 5) return SCM(playerid, COLOR_GRAD1, \"     !\");\n\t{\n\t\tforveh(i) { VehInfo[i][vFuel] = 100.0; }\n\t\tnew string[80];\n\t\tformat(string,80,\"* %s   !\",PlayerInfo[playerid][pNames]);\n\t\tSendClientMessageToAll(COLOR_LIGHTBLUE,string);\n\t}\n\treturn 1;\n}",
+ "title": ""
+}

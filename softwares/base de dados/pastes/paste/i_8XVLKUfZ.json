@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url",
+  "re_python_error"
+ ],
+ "key": "8XVLKUfZ",
+ "pasteDate": "Feb 20, 2018, 4:35:09 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "## Codigo\n\nclass Config(webapp.RequestHandler):\n  def get(self):\n    session = Session()\n    logged = session.checkLogin('self')\n\nclass Session():\n  def checkLogin(app):\n    print app\n\n## Saida:\n\nTraceback (most recent call last):\n  File \"/Applications/GoogleAppEngineLauncher.app/Contents/Resources/GoogleAppEngine-default.bundle/Contents/Resources/google_appengine/google/appengine/ext/webapp/__init__.py\", line 499, in __call__\n    handler.get(*groups)\n  File \"/Users/marcogomes/Sites/lab/adbird/main.py\", line 40, in get\n    logged = session.checkLogin('self')\nTypeError: checkLogin() takes exactly 1 argument (2 given)",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function _write($key, array $dependencies)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

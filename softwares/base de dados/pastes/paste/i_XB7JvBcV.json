@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "XB7JvBcV",
+ "pasteDate": "Feb 11, 2018, 2:51:38 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "let search = document.getElementById('search')\n\nlet change = async (e) => {\n    let value = document.getElementById('input-28').value\n    let json = await request(\"http://localhost:9010/query?q=\" + encodeURI(value));\n    console.log('ici')\n    console.log(JSON.parse(json))\n\n    // json.forEach(row => {\n    //     document.getElementById('list').appendChild(document.createElement(\"LI\").innerHTML(row.tweet.text)) // TODO\n    // })\n}\n\nlet request = (url) => {\n    return new Promise( (resolve, reject) => {\n        var xmlHttp = new XMLHttpRequest();\n        xmlHttp.open( \"GET\", url, false ); // false for synchronous request\n        xmlHttp.send( null );\n        console.log(xmlHttp.responseText)\n        resolve(xmlHttp.responseText);\n    })\n    //     let xhr = new XMLHttpRequest()\n    //     xhr.onreadystatechange = () => {\n    //         console.log(this.status)\n    //         console.log(this.responseText)\n    //         console.log(this.readyState)\n    //             // if (this.status == 200)\n    //             //     resolve (this.responseText)\n    //             // else\n    //             //     reject (this.responseText)\n    //     }\n    //     xhr.onerror = (e) => {\n    //         console.log(e)\n    //     }\n    //     xhr.open(\"GET\", url, )\n    //     // xhr.setRequestHeader('Access-Control-Allow-Origin', '*');\n    //     xhr.send(null)\n    // })    \n}\n\n\n// async function query  (sql)  {\n//     let json = await http_request(\"http://localhost:9010/q=\" + encodeURI(sql));\n//     let obj = JSON.parse(json);\n    // if (obj.status != \"job_started\")\n    //     throw json;\n    // let obj_id = json.job_id;\n\n    // while (true) {\n    //     let json = await http_request(\"http://localhost:9010/result?job_id=\"+job_id)\n    //     let obj = JSON.parse(json);\n    //     switch (obj.status) {\n    //         case \"success\":\n    //             return obj.results;\n    //         case \"error\":\n    //             throw obj.message;\n    //         default:\n    //             await wait(5000);          \n    //     }\n    // }\n// };",
+ "title": ""
+}

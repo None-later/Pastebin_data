@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AsChmYaH",
+ "pasteDate": "Feb 10, 2018, 6:20:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "On Block Damage:\n\tset {point} to 0\n\tstop\ncommand /pc <number>:\n\ttrigger:\n\t\tchange arg to {point}\n\t\tbroadcast \"{point}\"\n\t\tstop\non death of player:\n\tadd 100 to {point}\n\tmessage \"{point}\"",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wnfMiCLN",
+ "pasteDate": "Feb 17, 2018, 12:18:09 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "NUM_TRIALS = 10\nscores = []\nfor i in range(NUM_TRIALS):\n     cv = KFold(n_splits=5, shuffle=True, random_state=i)\n     clf = GridSearchCV(estimator=svr, param_grid=p_grid, cv=cv)\n     scores.append(clf.best_score_)\nprint \"Average Score: {0} STD: {1}\".format(numpy.mean(scores), numpy.std(scores))\n\t\nsvr = SVC(kernel=\"rbf\")\nc_grid = {\"C\": [1, 10, 100, ...  ]}\n\n# CV Technique \"LabelKFold\", \"LeaveOneOut\", \"LeaveOneLabelOut\", etc.\n\n# To be used within GridSearch (5 in your case)\ninner_cv = KFold(n_splits=5, shuffle=True, random_state=i)\n\n# To be used in outer CV (you asked for 10)\nouter_cv = KFold(n_splits=10, shuffle=True, random_state=i)\n\n# Non_nested parameter search and scoring\nclf = GridSearchCV(estimator=svr, param_grid=c_grid, cv=inner_cv)\nclf.fit(X_iris, y_iris)\nnon_nested_score = clf.best_score_\n\n# Pass the gridSearch estimator to cross_val_score\n# This will be your required 10 x 5 cvs\n# 10 for outer cv and 5 for gridSearch's internal CV\nclf = GridSearchCV(estimator=svr, param_grid=c_grid, cv=inner_cv)\nnested_score = cross_val_score(clf, X=X_iris, y=y_iris, cv=outer_cv).mean()\n\t\nfrom sklearn.model_selection import GridSearchCV, RepeatedStratifiedKFold\n\n# Define svr here\n...\n\n# Specify cross-validation generator, in this case (10 x 5CV)\ncv = RepeatedKFold(n_splits=5, n_repeats=10)\nclf = GridSearchCV(estimator=svr, param_grid=p_grid, cv=cv)\n\n# Continue as usual\nclf.fit(...)",
+ "title": ""
+}

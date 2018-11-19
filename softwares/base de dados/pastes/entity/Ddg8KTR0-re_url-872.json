@@ -1,0 +1,5 @@
+{
+  "value": "\"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Canal_13_Chile_%282005-2010%29.svg/120px-Canal_13_Chile_%282005-2010%29.svg.png",
+  "correct": true,
+  "jSonReason": "re_url"
+}

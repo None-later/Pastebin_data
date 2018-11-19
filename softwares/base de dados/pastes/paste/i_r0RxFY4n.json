@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "r0RxFY4n",
+ "pasteDate": "Feb 18, 2018, 12:30:04 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "local files = fs.find(\"*.ctif\")\nfor i = 1, #files - 1 do\n    local j = math.random(i + 1, #files)\n    files[i], files[j] = files[j], files[i]\nend\n\nwhile true do\n    for i = 1, #files do\n        print(files[i])\n        shell.run(\"ctif\", files[i], \"stitch\")\n        local timer = os.startTimer(10)\n        while true do\n            local e, a = os.pullEvent()\n            if e == \"timer\" and a == timer then\n                break\n            elseif e == \"key\" and a == keys.enter then\n                return\n            end\n        end\n    end\nend",
+ "title": "slideshow.lua"
+}

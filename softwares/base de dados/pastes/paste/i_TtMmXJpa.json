@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_zh-tw",
+  "re_url",
+  "re_#13"
+ ],
+ "key": "TtMmXJpa",
+ "pasteDate": "Feb 25, 2018, 9:51:53 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "#EXTM3U\n#EXTINF:-1,PLAYBOY TV\nhttp://copo7.mitopo.me/live/playboy/index.m3u8?token=i6-6VhHLAUctxhdDk0x-DA&expires=1519692170\n#EXTINF:-1,VENUS\nhttp://copo7.mitopo.me/live/venus/index.m3u8?token=xhh4rjvS5ScuVIoDFhe5Lg&expires=1519692290\n#EXTINF:-1,HUSTER\nhttp://copo5.mitopo.me/live/hustler/index.m3u8?token=Z2jLBUVWmvw-gCHFBi9Rmw&expires=1519692373\n#EXTINF:-1,RED LIGHT\nhttp://copo1.mitopo.me/live/redlight/index.m3u8?token=ZmDuOgDhfKclgClUNRh8fw&expires=1519692469\n#EXTINF:-1,HOT\nhttp://copo4.mitopo.me/live/hot/index.m3u8?token=1YMZeq1eApF_HXefNuPC5Q&expires=1519692584",
+ "title": "ASDER"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"https://analytics.twitter.com/i/adsct?p_id\u003dTwitter\u0026amp;p_user_id\u003d0\u0026amp;txn_id\u003dnvorw\u0026amp;events\u003d%5B%5B%22pageview%22%2Cnull%5D%5D\u0026amp;tw_sale_amount\u003d0\u0026amp;tw_order_quantity\u003d0\u0026amp;tw_iframe_status\u003d0\u0026amp;tpx_cb\u003dtwttr.conversion.loadPixels\u0026amp;tw_document_href\u003dhttps%3A%2F%2Fwww.adidas.com%2Fus%2Fpharrell-williams-hu-holi-nmd-bc-shoes%2FAC7031.html",
+  "correct": true,
+  "jSonReason": "re_url"
+}

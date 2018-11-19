@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "391xEVde",
+ "pasteDate": "Feb 21, 2018, 7:06:08 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[b]File :[/b]Crysis 2\n[b]Date :[/b] 10/27/11 17:52:00\n[b]PlayOnMac Version :[/b] 4.0.13\n[b]File content :[/b]\n[code language=playonlinux]\n#!/bin/bash\n[ \"$PLAYONLINUX\" = \"\" ] \\&\\& exit 0\nsource \"$PLAYONLINUX/lib/sources\"\nexport WINEPREFIX=\"/Users/pierrelelievre/Library/PlayOnMac//wineprefix/Crysis2\"\nexport WINEDEBUG=\"\"\ncd \"/Users/pierrelelievre/Library/PlayOnMac//wineprefix/Crysis2/drive_c/.//Program Files/Electronic Arts/Crytek/Crysis 2/bin32\"\nPOL_Wine \"Crysis2.exe\"  $@\n[/code]\n[b]Output :[/b]\n10/27/11 17:52:00 - [main] Message: Debugger is starting\n[code language=console]\n[POL_Wine_SetVersionEnv] Message: Setting wine version path: 1.3.23, x86\n[POL_Wine_SetVersionEnv] Message: \"/Users/pierrelelievre/Library/PlayOnMac//wine/darwin-x86/1.3.23\" exists\n[POL_Wine] Message: Running wine-1.3.23 Crysis2.exe\nfixme:ole:CoInitializeSecurity (0x0,-1,0x0,0x0,0,3,0x0,0,0x0) - stub!\nfixme:wbemprox:wbem_locator_ConnectServer 0x129850, L\"ROOT\\\\CIMV2\", (null), (null), (null), 0x00000000, (null), 0x0, 0x31f8f8)\nfixme:ole:CoInitializeSecurity (0x0,-1,0x0,0x0,0,3,0x0,0,0x0) - stub!\nfixme:wbemprox:wbem_locator_ConnectServer 0x129850, L\"ROOT\\\\CIMV2\", (null), (null), (null), 0x00000000, (null), 0x0, 0x31f8f8)\n[POL_Wine] Message: Wine return: 1\n [/code]\n[b]Other :[/b]",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "jk8SZY4i",
+ "pasteDate": "Feb 21, 2018, 12:19:12 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "/**\n * @param {number} capacity\n */\nvar LFUCache = function(capacity) {\n    \n        this.capacity = capacity;\n        this.count = 0;\n        this.frequency = {};\n        this.sorted = [];\n};\n\n/** \n * @param {number} key\n * @return {number}\n */\nLFUCache.prototype.get = function(key) {\n    if (this[key]) {\n        this.count ++;\n        if (!this.frequency[key]) {\n            this.frequency[key] = {\n                'recent': this.count,\n                'number': 1\n            }\n        } else {\n            this.frequency[key]['recent'] = this.count;\n            this.frequency[key]['number'] ++;\n        }\n        return this[key];\n    } else {\n        return -1\n    }\n};\n\n/** \n * @param {number} key \n * @param {number} value\n * @return {void}\n */\nLFUCache.prototype.put = function(key, value) {\n  if (this.length < this.capacity) {\n      this[key] = value;\n  }  else {\n      for (var key in this.frequency) {\n          this.sorted.push([key, this.frequency[key]])\n      }\n      this.sorted.sort((a,b)=>{\n          return a[1]['number']-b[1]['number']===0 ? a[1]['recent']-b[1]['recent'] : a[1]['number']-b[1]['number'];\n      })\n      if (this.sorted[0]!==undefined) {\n          let deleteKey = this.sorted[0][0];\n          delete this.frequency[deleteKey];\n          delete this[deleteKey];\n      }\n      this[key] = value;\n      console.log(this.sorted)\n  }\n};",
+ "title": ""
+}

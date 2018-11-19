@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5avB9aHc",
+ "pasteDate": "Feb 26, 2018, 10:41:03 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "train = np.load('homework_1.train.npy')\ntest_no_classes = np.load('homework_1_no_classes.test.npy')\nsumm_data = np.concatenate((train[:,1:],test_no_classes),axis=0)\nsumm_data.shape\nmean_image = np.mean(summ_data, axis=0)\nstd = np.std(summ_data,axis = 0)\nX = (X - mean_image)/((std)+1e-7)\nvalidation_set = (validation_set - mean_image)/((std) + 1e-7)\ntest_no_classes = (test_no_classes - mean_image)/((std)+1e-7)\nvalidation_set = np.hstack([np.ones((validation_set.shape[0],1)),validation_set])\nX = np.hstack([ np.ones((X.shape[0], 1)), X] )",
+ "title": ""
+}

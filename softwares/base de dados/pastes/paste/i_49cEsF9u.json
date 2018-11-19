@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "49cEsF9u",
+ "pasteDate": "Feb 8, 2018, 11:00:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import re\nfrom functools import partial\n\nurl1pat = re.compile('(ITEMIMAGEURL1=.*?,)')\n\nif __name__ == \"__main__\":\n    with open('forurboi.csv','rt') as fd:\n        lines = map(partial(url1pat.sub,''),fd.readlines())\n\n    with open('thing.csv','wt') as fd:\n        for line in lines: fd.write(line.replace('ITEMIMAGEURL3','ITEMIMAGEURL1'))",
+ "title": ""
+}

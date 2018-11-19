@@ -1,0 +1,5 @@
+{
+  "value": "\"https://min-api.cryptocompare.com/data/pricemultifull?fsyms\u003d",
+  "correct": true,
+  "jSonReason": "re_url"
+}

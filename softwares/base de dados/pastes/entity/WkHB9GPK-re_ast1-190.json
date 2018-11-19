@@ -1,0 +1,5 @@
+{
+  "value": "function\"||c\u003d\u003d\u003dnull)thrownewTypeError(\"Object.keyscalledonnon-object\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

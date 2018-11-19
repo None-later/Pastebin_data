@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "qUD2xajj",
+ "pasteDate": "Feb 8, 2018, 9:19:01 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "project = { \n    general: {name: \"projName\", number : \"projNumber\"},\n    buildings : { 0 :{name :\"bldgName\", sqft: 150}, 1 : {name :\"name2\", sqft: 100} }    \n}\n\t\nSELECT * from project p\n  LEFT JOIN buildings b on p.id = b.project_id\n  GROUP BY p.id\n\n  UNION ALL\n\n  SELECT * from project p\n    RIGHT JOIN buildings b on p.id = b.project_id\n    GROUP BY p.id",
+ "title": ""
+}

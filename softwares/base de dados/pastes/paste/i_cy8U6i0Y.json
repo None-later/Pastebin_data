@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cy8U6i0Y",
+ "pasteDate": "Feb 11, 2018, 6:03:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "command gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/default -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=output.pdf /Users/bardt/Downloads/Designing\\ Interactive\\ Systems_reducedsize.pdf\n\nalternative\n\ncommand gs -dQUIET -dBATCH -dNOPAUSE -dPDFSETTINGS=/printer -dCompatibilityLevel=1.4 -dDetectDuplicateImages -dCompressFonts=true -r300 -sDEVICE=pdfwrite -sOutputFile=output2.pdf /Users/bardt/Downloads/Designing\\ Interactive\\ Systems_reducedsize.pdf",
+ "title": ""
+}

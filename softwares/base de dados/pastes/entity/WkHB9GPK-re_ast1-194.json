@@ -1,0 +1,5 @@
+{
+  "value": "function\"?jinstanceofl.Node:typeofj\u003d\u003d\u003d\"object\"\u0026\u0026typeofj.nodeType\u003d\u003d\u003d\"number\"\u0026\u0026typeofj.nodeName\u003d\u003d\u003d\"string\"))}functionf(j)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

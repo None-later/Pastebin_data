@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "5nwbnkBf",
+ "pasteDate": "Feb 9, 2018, 2:22:10 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "files:\n  \"/etc/httpd/conf.d/httpd_redirect.conf\" :\n    mode: \"000644\"\n    owner: root\n    group: root\n    content: |\n      LoadModule rewrite_module modules/mod_rewrite.so\n      RewriteEngine On\n      RewriteCond %{HTTPS} off\n      RewriteRule (.*) https://sub.domain.com%{REQUEST_URI} [L,R]\n\t\noption_settings:\n  aws:elb:listener:443:\n    SSLCertificateId: arn:aws:acm:us-east-2:1234567890123:certificate/####################################\n    ListenerProtocol: HTTPS\n    InstancePort: 80\n\t\nLoadModule rewrite_module modules/mod_rewrite.so\n\t\n<VirtualHost *:80>\n  <Proxy *:80>\n    Order Allow,Deny\n    Allow from all\n  </Proxy>\n  ProxyPass / http://localhost:8080/ retry=0\n  ProxyPassReverse / http://localhost:8080/\n  ProxyPreserveHost on\n\n  RewriteEngine On\n  RewriteCond %{HTTP:X-Forwarded-Proto} =http\n  RewriteRule . https://%{HTTP:Host}%{REQUEST_URI} [L,R=permanent]\n\n  ErrorLog /var/log/httpd/elasticbeanstalk-error_log\n</VirtualHost>",
+ "title": ""
+}

@@ -1,0 +1,17 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_decrypt",
+  "re_email",
+  "kw_encrypt",
+  "kw_encrypted",
+  "lg_en"
+ ],
+ "key": "H6xLgn7y",
+ "pasteDate": "Feb 18, 2018, 10:32:16 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "using System;\nusing NeonTo99__.NET_.Models;\nusing System.IO;\n\nnamespace NeonTo99__.NET_\n{\n    class Program\n    {\n        public static string pathToEncrypt = @\"C:\\Users\\Developer\\Documents\\NeonTo99\\NeonTo99\\source\\encrypt.xml\";\n        public static string pathToDecrypt = @\"C:\\Users\\Developer\\Documents\\NeonTo99\\NeonTo99\\source\\decrypt.xml\";\n\n        public static Criptografia _crypto = new Criptografia();        \n\n        static void Main(string[] args)\n        {\n            User user = new User(\"homolog@99.exchange.com\", \"B9IyYMzTlW\");\n            string retNeon = \"xxg2VMpDOGSayLoQewfpTmsbBjnb6va4EXMuV2bGIMUuEVxCRZFlGcO/e+4GN1vUrjp2rcm38uFn7QnHYFS9El1+tAw/0SRB7Zd57a4LcVsIKCwHN5Rx/fiQ1uV7uxoy3Jq3/SoelPm5a4QALizDQMMFNAtEwfrYrXN6rLsli9c1+khwaIYadhCTJomNtqWTfxCYynT9ByV+hTGCXG9gdnDwIhyVQPW+sbtZNpZUzbTPvT2GVTdRSf/aaXGftd5Uq8BCF4+60GP3cY7FxsMulwlgc0zRH5FixRPFysPrVqXfbD4/IYu15Mo9gSKuWpOWO8fol4FGWq37WTX9229gXTX5BLTeSmEItBz33r+u/0SiHND7lU9h5+tfOhK//fOuQq1IdoATx8VYoJgQh04f4odSVkNbhuNZyJfkd3d+gfLuMe7GZ00JjkzYJHQgpiaCjwlAusM/xb0CJEFNQ/h3oMYR65N2rQXx+mAm6+pH6yZQVOWAbZaS2t9ES9TqsbgC5dK9f09mvQ9LRxdBB0YcIzZokWL1scVE5nv199o1k9syseB5YyzfQypVepCxvTtHEDPaSK58JjwndEmvETFrbz7I9fsbjEls2fGpZxcFcv9SeiESUR+aLh93pEq9fjQf+h6z1au8TJ5ZMXdxCPMBBG46mYbANrgAuu4VwWtlgB0=\";\n\n            string encrypted = _crypto.CriptografarRSA(user.ToJson(), File.ReadAllText(pathToEncrypt));\n            string decrypted = _crypto.DecriptografarRSA(retNeon, File.ReadAllText(pathToDecrypt));\n\n\n            Console.WriteLine(\"Encripted: \\n\" + encrypted);\n            Console.WriteLine(\"\\nDecripted: \\n\" + decrypted);\n            Console.Read();\n        }\n    }\n}",
+ "title": ""
+}

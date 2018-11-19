@@ -1,0 +1,5 @@
+{
+  "value": "function Lightning(Part0,Part1,Times,Offset,Color,Thickness,Trans)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

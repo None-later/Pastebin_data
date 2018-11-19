@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "muCqNSwn",
+ "pasteDate": "Feb 18, 2018, 12:00:10 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "$scope.check = function ($event) {\n                    var el = $event.target;\n                    alert(angular.element(el).parent().next().find(\"span\").text());\n                }\n\t\n<a class=\"btn btn-default\" onclick=\"EditMode(this,2)\" ng-click=\"check($event)\" style=\"display: none;\"><em class=\"fa fa-save\"></em></a>",
+ "title": ""
+}

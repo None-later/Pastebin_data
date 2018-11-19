@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "lg_en"
+ ],
+ "key": "Uxpv1LkG",
+ "pasteDate": "Feb 12, 2018, 7:58:28 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env python\n\n# Import modules for CGI handling \nimport cgi\nimport matplotlib.pyplot as plt\n\n\nprint \"Content-type:text/html\\r\\n\\r\\n\"\nprint \"<html>\"\nprint \"<head>\"\nprint \"<title> Cloud Sevrer </title>\"\nprint \"</head>\"\nprint \"<body>\"\nprint \"<h2>Raspberry Pi Cloud</h2>\" \nprint \"</body>\"\nprint \"</html>\"\n\nf1 =open(\"LogCGI2.txt\")\nfstr = f1.read()\nf1.close()\n\nfstr = fstr.split('\\n')\nfstr = fstr[:len(fstr)-1]\n\n#print fstr\n\ndatalist = []\n\ndatalist =[float(i) for i in fstr]\n\n#print datalist\n\nplt.plot(datalist)\n    \nplt.legend()\nplt.title(\"Sensor Data\")\nplt.xlabel(\"Samples\")\nplt.ylabel(\"Value\")\nplt.savefig(\"myplot.png\")\n\ndata_uri = open('myplot.png', 'rb').read().encode('base64').replace('\\n', '')\nimg_tag = '<img src=\"data:image/png;base64,{0}\">'.format(data_uri)\n\nprint(img_tag)",
+ "title": ""
+}

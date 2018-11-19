@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XQKQUZ1L",
+ "pasteDate": "Feb 12, 2018, 3:45:18 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "<beans ...>\n    <bean id=\"connectionFactory\"\n        class=\"org.apache.activemq.ActiveMQConnectionFactory\">\n        <property name=\"brokerURL\" value=\"tcp://localhost:61616\" />\n    </bean>\n\n    <bean id=\"mailDestination\"\n        class=\"org.apache.activemq.command.ActiveMQQueue\">\n        <constructor-arg value=\"mail.queue\" />\n    </bean>\n\n    <bean id=\"jmsTemplate\"\n        class=\"org.springframework.jms.core.JmsTemplate\">\n        <property name=\"connectionFactory\" ref=\"connectionFactory\" />\n    </bean>\n\n    <bean id=\"frontDesk\"\n        class=\"com.apress.springrecipes.post.FrontDeskImpl\">\n        <property name=\"destination\" ref=\"mailDestination\" />\n        <property name=\"jmsTemplate\" ref=\"jmsTemplate\" />\n    </bean>\n</beans>",
+ "title": ""
+}

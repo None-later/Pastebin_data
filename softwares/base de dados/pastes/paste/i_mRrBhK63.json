@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mRrBhK63",
+ "pasteDate": "Feb 11, 2018, 9:21:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "BOOL __fastcall validate_input_len(BOOL payload_start__, unsigned int len, char *payload_start_, char *payload_end)\n{\n  if ( payload_start__ )\n    payload_start__ = payload_start_ <= payload_end\n                   && payload_start__ >= payload_start_\n                   && payload_end >= payload_start__\n                   && payload_end >= len\n                   && &payload_end[-len] >= payload_start__;\n  return payload_start__;\n}",
+ "title": ""
+}

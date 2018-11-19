@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_us_zip_code",
+  "lg_en"
+ ],
+ "key": "EXDDHGfS",
+ "pasteDate": "Feb 9, 2018, 1:42:45 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "SysCheck HDE v2.4.0 HacksDen Edition by JoostinOnline\t Double_A\t R2-D2199\t and Nano\t\n...runs on IOS58 (rev 6176).\t\t\t\t\n\t\t\t\t\nRegion: NTSC-U\t\t\t\t\nSystem Menu 4.3U (v513)\t\t\t\t\nPriiloader installed\t\t\t\t\nDrive date: 05.26.2006\t\t\t\t\nHomebrew Channel 1.1.2 running on IOS58\t\t\t\t\n\t\t\t\t\nHollywood v0x11\t\t\t\t\nConsole ID: 34690160\t\t\t\t\nConsole Type: Wii\t\t\t\t\nShop Channel Country: United States (49)\t\t\t\t\nBoot2 v4\t\t\t\t\nFound 104 titles.\t\t\t\t\nFound 46 IOS on this console. 15 of them are stubs.\t\t\t\t\n\t\t\t\t\nIOS4 (rev 65280): Stub\t\t\t\t\nIOS9 (rev 1034): No Patches\t\t\t\t\nIOS10 (rev 768): Stub\t\t\t\t\nIOS11 (rev 256): Stub\t\t\t\t\nIOS12 (rev 526): No Patches\t\t\t\t\nIOS13 (rev 1032): No Patches\t\t\t\t\nIOS14 (rev 1032): No Patches\t\t\t\t\nIOS15 (rev 1032): No Patches\t\t\t\t\nIOS16 (rev 512): Stub\t\t\t\t\nIOS17 (rev 1032): No Patches\t\t\t\t\nIOS20 (rev 256): Stub\t\t\t\t\nIOS21 (rev 1039): No Patches\t\t\t\t\nIOS22 (rev 1294): No Patches\t\t\t\t\nIOS28 (rev 1807): No Patches\t\t\t\t\nIOS30 (rev 2816): Stub\t\t\t\t\nIOS31 (rev 3608): No Patches\t\t\t\t\nIOS33 (rev 3608): No Patches\t\t\t\t\nIOS34 (rev 3608): No Patches\t\t\t\t\nIOS35 (rev 3608): No Patches\t\t\t\t\nIOS36 (rev 3608\t Info: rev 3351): Trucha Bug\t ES Identify\t NAND Access\t\nIOS37 (rev 5663): No Patches\t\t\t\t\nIOS38 (rev 4124): No Patches\t\t\t\t\nIOS40 (rev 3072): Stub\t\t\t\t\nIOS41 (rev 3607): No Patches\t\t\t\t\nIOS43 (rev 3607): No Patches\t\t\t\t\nIOS45 (rev 3607): No Patches\t\t\t\t\nIOS46 (rev 3607): No Patches\t\t\t\t\nIOS48 (rev 4124): No Patches\t\t\t\t\nIOS50 (rev 5120): Stub\t\t\t\t\nIOS51 (rev 4864): Stub\t\t\t\t\nIOS52 (rev 5888): Stub\t\t\t\t\nIOS53 (rev 5663): No Patches\t\t\t\t\nIOS55 (rev 5663): No Patches\t\t\t\t\nIOS56 (rev 5662): No Patches\t\t\t\t\nIOS57 (rev 5919): No Patches\t\t\t\t\nIOS58 (rev 6176): USB 2.0\t\t\t\t\nIOS60 (rev 6400): Stub\t\t\t\t\nIOS61 (rev 5662): No Patches\t\t\t\t\nIOS62 (rev 6430): No Patches\t\t\t\t\nIOS70 (rev 6912): Stub\t\t\t\t\nIOS80 (rev 6944): No Patches\t\t\t\t\nIOS222[38] (rev 4\t Info: hermes-v4.0): Trucha Bug\t ES Identify\t NAND Access\t USB 2.0\nIOS223 (rev 65280): Stub\t\t\t\t\nIOS249[57] (rev 21006\t Info: d2x-v6): Trucha Bug\t NAND Access\t USB 2.0\t\nIOS250 (rev 65280): Stub\t\t\t\t\nIOS254 (rev 65280): Stub\t\t\t\t\nBC v6\t\t\t\t\nMIOS v10\t\t\t\t\nReport generated on 02/08/2018.",
+ "title": "syscheck"
+}

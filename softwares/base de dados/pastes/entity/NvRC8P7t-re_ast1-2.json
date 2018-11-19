@@ -1,0 +1,5 @@
+{
+  "value": "function(ply, _pos, _ang, fov)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2VD0W0cX",
+ "pasteDate": "Feb 17, 2018, 11:11:50 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "config.addDefault(\"player.breakBlocks\", PlayerEvents.breakBlocks);\n        config.addDefault(\"player.placeBlocks\", PlayerEvents.placeBlocks);\n        config.addDefault(\"player.canMoveItems\", PlayerEvents.canMoveItems);\n        config.addDefault(\"player.mustEat\", PlayerEvents.mustEat);\n        config.addDefault(\"player.respawnTime\", PlayerEvents.respawnTime);\n        config.addDefault(\"player.regainHealth\", PlayerEvents.regainHealth);\n        config.addDefault(\"countDown.lobby\", LobbyCountDown.startTime);\n        config.addDefault(\"countDown.start\", GameCountDown.gameStartTime);\n        config.addDefault(\"gameTime\", GameCountDown.gameTime);\n        config.addDefault(\"sound.name\", Platform.capturingSound.toString());\n        config.addDefault(\"sound.volume\", Platform.capturingSoundVolume);\n        config.addDefault(\"sound.pitch\", Platform.capturingSoundPitch);\n        config.addDefault(\"sound.pitch\", Platform.capturingSoundPitch);\n        config.addDefault(\"points.platform\", Platform.capturedPlatformPoints);\n        config.addDefault(\"points.kill\", PlayerEvents.killPoints);\n\n        saveCfg();\n        Main.main.teamCount = config.getInt(\"team.count\");\n        Main.main.teamSize = config.getInt(\"team.size\");\n        LobbyCountDown.startTime = config.getInt(\"countDown.lobby\");\n        GameCountDown.gameStartTime = config.getInt(\"countDown.start\");\n        PlayerEvents.canDropItems = config.getBoolean(\"player.canDropItems\");\n        PlayerEvents.mustEat = config.getBoolean(\"player.mustEat\");\n        PlayerEvents.respawnTime = config.getInt(\"player.respawnTime\");\n        PlayerEvents.regainHealth = config.getDouble(\"player.regainHealth\");\n        PlayerEvents.canMoveItems = config.getBoolean(\"player.canMoveItems\");\n        PlayerEvents.placeBlocks = config.getBoolean(\"player.placeBlocks\");\n        PlayerEvents.breakBlocks = config.getBoolean(\"player.breakBlocks\");\n        PlayerScoreboard.friendlyFire = config.getBoolean(\"team.friendlyFire\");\n        GameCountDown.gameTime = config.getInt(\"gameTime\");\n        Platform.capturingSound = Sound.valueOf(config.getString(\"sound.name\"));\n        Platform.capturingSoundVolume = config.getInt(\"sound.volume\");\n        Platform.capturingSoundPitch = config.getInt(\"sound.pitch\");\n        Platform.capturedPlatformPoints = config.getInt(\"points.platform\");\n        PlayerEvents.killPoints = config.getInt(\"points.kill\");",
+ "title": ""
+}

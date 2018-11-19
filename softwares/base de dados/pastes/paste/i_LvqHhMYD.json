@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "LvqHhMYD",
+ "pasteDate": "Feb 18, 2018, 1:05:39 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ": note 850 for i over / 2 mod 128 * AU ! next drop ;\n: rst  850 for 0 AU ! next ;\n\n: C-1 31 note ;\n: C$1 29 note ;\n: D-1 27 note ;\n: D$1 26 note ;\n: G$1 19 note ;\n: A$1 17 note ;\n: B-1 16 note ;\n\n: cs1  D$1 rst G$1 rst D$1 rst G$1 rst\n       D-1 rst G$1 rst D-1 rst G$1 rst\n       C$1 rst G$1 rst C$1 rst G$1 rst ;\n: cs2  C-1 rst G$1 rst C-1 rst C$1 D-1 ;\n: cs3  B-1 rst A$1 rst G$1 rst rst rst ;\n\n: main loop cs1 cs2 cs1 cs3 again ;",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SVxm5J3u",
+ "pasteDate": "Feb 24, 2018, 4:32:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sudo yum remove docker docker-common docker-selinux docker-engine",
+ "title": ""
+}

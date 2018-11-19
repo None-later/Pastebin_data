@@ -1,0 +1,5 @@
+{
+  "value": "2002:3e10:81be::",
+  "correct": true,
+  "jSonReason": "re_ipv6"
+}

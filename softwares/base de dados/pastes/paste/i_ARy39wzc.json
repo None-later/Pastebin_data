@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "ARy39wzc",
+ "pasteDate": "Feb 17, 2018, 7:28:20 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "import java.io.*;\nimport java.util.*;\npublic class mersenneprime {\n    public static void main(String[] args) throws IOException {\n        File file = new File(args[0]);\n        BufferedReader buffer = new BufferedReader(new FileReader(file));\n        String line;\n        while ((line = buffer.readLine()) != null) {\n            line = line.trim();\n            int n = Integer.parseInt(line);\n            List < Integer > pl = mp(n);\n            if (pl.size() == 1) System.out.println(pl.get(0));\n            else {\n                for (int i = 0; i < pl.size(); i++) {\n                    System.out.print(pl.get(i) + \", \");\n                }\n                if (pl.size() > 1) System.out.print((int) pl.get(pl.size() - 1) + \"\\n\");\n                else System.out.println();\n            }\n        }\n    }\n    public static List < Integer > mp(int n) {\n        List < Integer > mp = new ArrayList < Integer > ();\n        for (int i = 0;; i++) {\n            double current = Math.pow(2, i) - 1;\n            if (current > n) {\n                break;\n            }\n            if (isPrime(current)) {\n                mp.add((int) current);\n            }\n        }\n        return mp;\n    }\n\n    public static boolean isPrime(double num) {\n        if (num < 2) return false;\n        if (num == 2) return true;\n        if (num % 2 == 0) return false;\n        for (int i = 3; i * i <= num; i += 2)\n            if (num % i == 0) return false;\n        return true;\n    }\n}",
+ "title": ""
+}

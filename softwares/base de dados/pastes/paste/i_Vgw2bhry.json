@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_tl"
+ ],
+ "key": "Vgw2bhry",
+ "pasteDate": "Feb 24, 2018, 1:52:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/dev/sda6 (w/ key icon) ----- linux-swap ----- (no flag)\n/dev/sda7 ----- ext4 ----- (no flag)\n/dev/sda8 ----- unkown ----- bios_grub",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "powershell",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rN0y7GLk",
+ "pasteDate": "Feb 26, 2018, 11:51:42 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Get-NumberRiver -MaxDigits=15 -ForegroundColor=Yellow -BackgroundColor=DarkBlue",
+ "title": "Number River 1"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"http://streaming-fr02.enetres.net/091DB7AFBD77442B9BA2F141DCC182F5021/smil:live.smil/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

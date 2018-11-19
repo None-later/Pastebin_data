@@ -1,0 +1,5 @@
+{
+  "value": "\"http://cdnapi.kaltura.com/p/1068292/sp/106829200/playManifest/entryId/1_d8lnsqu0/format/applehttp/.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "ruby",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JGNmQZeK",
+ "pasteDate": "Feb 21, 2018, 7:08:11 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Relationship.includes(:follower, followed: :funz).active.each do |relationship| \n  relationship.followed.funz.each do |funz| \n    follower = relationship.follower\n    if funz.active? && funz.visible && !funz.b2b && follower.orders.confirmed.by_funz(funz.id).empty?\n      bookmark = follower.bookmarks.find_or_initialize_by(funz_id: funz.id)\n      if !bookmark.active\n        bookmark.update_attributes(bookmark_source: 'follow_host', active: true))\n      end\n    end\n  end\nend",
+ "title": ""
+}

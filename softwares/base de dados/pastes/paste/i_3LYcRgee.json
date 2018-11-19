@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3LYcRgee",
+ "pasteDate": "Feb 12, 2018, 4:31:33 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Linq;\n\nnamespace l04_Triple_Sum\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int[] array = Console.ReadLine().Split(\" \").Select(int.Parse).ToArray();\n            int counter = 0;\n            \n            for (int a = 0; a < array.Length; a++)\n            {\n                for (int b = a+1; b < array.Length; b++)\n                {\n                    for (int c = 0; c < array.Length; c++)\n                    {\n                        if (array[a] + array[b] == array[c])\n                        {\n                            Console.WriteLine($\"{array[a]} + {array[b]} == {array[c]}\");\n                            counter++;\n                        }\n                    }\n                }\n            }\n            if (counter == 0)\n            {\n                Console.WriteLine(\"No\");\n            }\n        }\n    }\n}",
+ "title": ""
+}

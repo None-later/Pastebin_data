@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://k3.usastreams.com:1935/canal42/canal42/live.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

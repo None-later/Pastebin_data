@@ -1,0 +1,5 @@
+{
+  "value": "function cleanIndexData($nextNodeId, array $links, \u0026$masterNodeLink)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

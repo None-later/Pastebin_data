@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8umxK2nc",
+ "pasteDate": "Feb 17, 2018, 10:38:35 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "#include<bits/stdc++.h>\n\nusing namespace std;\n\n#define  ll long long\n#define ld long double\n#define S second\n#define F first\n#define pb push_back\n#define endl '\\n'\n\nvector < vector < int > > a(10000);\n\nint main() {\n//    freopen(\"input.txt\", \"r\", stdin);\n//    freopen(\"output.txt\", \"w\", stdout);\n    ios_base::sync_with_stdio(0);\n    cin.tie(0);\n    cout.tie(0);\n    int n, nom = 0;\n    cin >> n;\n    if (n == 3  || ((n % 2) * (((n * n) + 1) / 2) + (n * n + 1) * ((n * n) / 2)) % n != 0) {\n        cout << -1;\n        return 0;\n    }\n    for (int i = 0; i < n; ++i)\n        if (i % 2 == 0) {\n            for (int j = 0; j < n / 2 + (n % 2); ++j)\n                a[nom].pb(i * n + j * 2 + 1);\n            for (int j = 1; j <= n / 2; ++j)\n                a[nom].pb(i * n + j * 2);\n            ++nom;\n        }\n    for (int i = 0; i < n; ++i)\n        if (i % 2 == 1) {\n            for (int j = 0; j < n / 2 + (n % 2); ++j)\n                a[nom].pb(i * n + j * 2 + 1);\n            for (int j = 1; j <= n / 2; ++j)\n                a[nom].pb(i * n + j * 2);\n            ++nom;\n        }\n    cout << n << endl;\n    for (int i = n - 1; i >= 0; --i) {\n        for (int j = 0; j < a[i].size(); ++j)\n            cout << a[i][j] << ' ';\n        cout << endl;\n    }\n}",
+ "title": ""
+}

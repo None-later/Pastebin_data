@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "2wzzfnLB",
+ "pasteDate": "Feb 18, 2018, 10:32:05 AM",
+ "relevancy": 0.0,
+ "relevant": true,
+ "text": "{\n\t\"nome\": \"Stefano\",\n\t\"cognome\": \"Semeraro\",\n\t\"eta\": \"22\",\n\t\"indirizzo\": {\n\t\t\"via\": \"dei cedri\",\n\t\t\"citta\": \"lecce\"\n\t}\n}",
+ "title": ""
+}

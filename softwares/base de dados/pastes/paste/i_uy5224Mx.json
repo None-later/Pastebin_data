@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uy5224Mx",
+ "pasteDate": "Feb 10, 2018, 9:00:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "apiVersion: extensions/v1beta1\nkind: Deployment\nmetadata:\n  labels:\n    io.kompose.service: striim-evalversion\n  name: striim-evalversion\nspec:\n  replicas: 1\n  strategy:\n    type: Recreate\n  template:\n    metadata:\n      labels:\n        io.kompose.service: striim-evalversion\n    spec:\n      containers:\n      - name: striim-evalversion\n        image: striim/evalversion:latest\n        ports:\n        - containerPort: 9080\n        resources: {}\n      restartPolicy: Always\nstatus: {}\n---\n\napiVersion: v1\nkind: Service\nmetadata:\n  labels:\n    io.kompose.service: striim-evalversion\n  name: striim-evalversion\nspec:\n  type: LoadBalancer   \n  ports:\n  - name: \"9080\"\n    port: 9080\n    targetPort: 9080\n  selector:\n    io.kompose.service: striim-evalversion\nstatus:\n  loadBalancer: {}",
+ "title": ""
+}

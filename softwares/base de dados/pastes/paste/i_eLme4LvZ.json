@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "eLme4LvZ",
+ "pasteDate": "Feb 20, 2018, 2:04:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from random import randint\nclass Stack:\n     def __init__(self):\n         self.items = []\n\n     def isEmpty(self):\n         return self.items == []\n\n     def push(self, item):\n         self.items.append(item)\n\n     def pop(self):\n         return self.items.pop()\n\n     def peek(self):\n         return self.items[len(self.items)-1]\n\n     def size(self):\n         return len(self.items)\n        \nPlayer = Stack()\nComputer = Stack()\nMiddle = Stack()\nfor i in range(10):\n    Player.push(randint(1,30))\n    Computer.push(randint(1,30))\n    Middle.push(randint(5,15))\n\ndef war(Player, Computer, Middle):\n    return warHelper(Player, Computer, Middle, Player.size(), Computer.size(), 0)\n\ndef warHelper(Player, Computer, Middle, sizeP, sizeC, n):\n    if sizeP > 0 and sizeC > 0:\n        temp1 = Player.peek()\n        temp2 = Computer.peek()\n        Middle.push(Player.pop())\n        Middle.push(Computer.pop())\n        if temp1 > temp2:\n            for i in range(3):\n                if Middle.size() == 0:\n                    break\n                Player.push(Middle.pop())\n            #print(\"Player won round\", n)\n        elif temp1 < temp2:\n            for i in range(3):\n                if Middle.size() == 0:\n                    break\n                Computer.push(Middle.pop())\n            #print(\"Computer won round\", n)\n        return warHelper(Player, Computer, Middle, Player.size(), Computer.size(), n+1)\n    else:\n        return n\n\nn = war(Player, Computer, Middle)\n                  \nif Player.size() > Computer.size():\n    print(\"Player won in\", n, \"rounds.\")\nelse:\n    print(\"Computer won in\", n, \"rounds.\")",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast2"
+ ],
+ "key": "tJ2U8VM6",
+ "pasteDate": "Feb 20, 2018, 3:37:06 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "######################################################################\n#\tModule Name: Makefile\n#\tAbstract: Makefile for rt73 linux driver on kernel series 2.6 \n######################################################################\n\n\nWFLAGS := -Wall -Wstrict-prototypes -Wno-trigraphs\n\n## Comment/uncomment the following line to enable/disable debugging\n#CFLAGS += -DDBG\n\nCFLAGS += $(WFLAGS)\n\nobj-m := rt73.o\n\nrt73-objs :=  rtmp_main.o mlme.o connect.o rtusb_bulk.o rtusb_io.o sync.o assoc.o auth.o auth_rsp.o rtusb_data.o rtmp_init.o  sanity.o rtmp_wep.o rtmp_info.o rtmp_tkip.o wpa.o md5.o\n\n## Configuration files on SuSE\n#NDDIR=/etc/sysconfig/network\n#MOD_CONF=/etc/modprobe.d/module-renames\n\n## NDDIR/ifcfg-rausb0\nND_CONF=/etc/sysconfig/network-scripts/ifcfg-rausb0\n\nifdef NDDIR\n\tNDDIR := $(NDDIR)\nelse\n \tNDDIR := /etc/sysconfig/network-scripts\nendif\n\nifdef MOD_CONF\n\tMOD_CONF := $(MOD_CONF)\t\nelse\n\tMOD_CONF := /etc/modprobe.conf \nendif\n\nall: \n\tmake -C /lib/modules/$(shell uname -r)/build SUBDIRS=$(shell pwd) modules\n\nclean:\n\trm -rf *.o *~ .*.cmd *.ko *.mod.c .tmp_versions built-in.o\n\t\ninstall:\n\tmake -C /lib/modules/$(shell uname -r)/build \\\n\tINSTALL_MOD_DIR=extra SUBDIRS=$(shell pwd) \\\n\tmodules_install \n\t\n\t@echo \"Network device directory $(NDDIR)\"; \n\t@echo \"Module configuration file $(MOD_CONF)\";\t\n\t\n\t@if [ -d \"$(NDDIR)\" ] ; then \\\n\t\tif [ ! -f \"$(ND_CONF)\" ]; then \\\n\t\t\techo \"Create 'ifcfg-rausb0' in $(NDDIR)/\"; \\\n\t\t\tcp ifcfg-rausb0 $(NDDIR)/ ; \\\n\t\tfi; \\\n \tfi\n\t\n\t@if ! grep -q 'rausb0' $(MOD_CONF) ; then \\\n\t\techo \"append 'alias rausb0 rt73' to $(MOD_CONF)\"; \\\n\t\techo \"alias rausb0 rt73\" >> $(MOD_CONF) ; \\\n \tfi\n\t/sbin/depmod -a",
+ "title": ""
+}

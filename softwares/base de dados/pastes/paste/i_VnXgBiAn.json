@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_email"
+ ],
+ "key": "VnXgBiAn",
+ "pasteDate": "Feb 26, 2018, 11:38:19 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "#!/usr/bin/python\n#-*- coding: utf-8 -*-\n\n'''\n    Jose Gomez Castano\n    jgcasta@gmail.com\n    \n    Socket server to receive binary data and parse the content as integer and string values\n\n    Sample packet 030b94 received is decoded as decimal string values\n\n    hex         Decimal\n    03          03  \n    0b94        2964    \n\n'''\n\nimport socket\nimport struct\nimport binascii\n\n\nHOST = ''   \nPORT = 3000\n\ns = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\nprint 'Socket created'\n \ntry:\n    s.bind((HOST, PORT))\nexcept socket.error as msg:\n    s.close()\n    print 'Bind fallido. Error Code : ' + str(msg[0]) + ' Message ' + msg[1]\n    sys.exit()\n\ns.listen(1)\n\nprint 'Listening Socket'\n\nwhile True:\n\n    sc, addr = s.accept()\n    \n    while True:\n        \n        recibido = sc.recv(1024)\n        if not recibido: break\n    \n        b = bytearray(recibido)\n        test  = binascii.hexlify(b)\n    \n        print '-----------------------------------------------------'\n        print 'Message received at : ' + datetime.datetime.now().strftime(\"%H:%M:%S.%f\")\n        print 'Message ' + test\n    \n        print 'First attribute  ' + test[0:2] + ' -> ' + str(int('0x' + test[0:2],0))\n        print 'Second attribute ' + test[2:6] + ' -> ' + str(int('0x' + test[2:6],0))\n    \n    sc.close()\n\ns.close()",
+ "title": ""
+}

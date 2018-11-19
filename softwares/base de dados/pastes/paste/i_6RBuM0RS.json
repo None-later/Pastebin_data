@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "kw_ssl",
+  "re_url"
+ ],
+ "key": "6RBuM0RS",
+ "pasteDate": "Feb 26, 2018, 3:19:19 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "server {\nlisten 80;\nlisten [::]:80;\nserver_name website1.mydomain.com;\n\naccess_log /var/log/nginx/access.log;\nerror_log /var/log/nginx/error.log;\n\nlocation /.well-known {\nroot /var/www/ssl/website1/;\n}\n\nlocation / {\ninclude proxy.conf;\nproxy_pass http://192.168.0.4:80/;\n}\n}",
+ "title": ""
+}

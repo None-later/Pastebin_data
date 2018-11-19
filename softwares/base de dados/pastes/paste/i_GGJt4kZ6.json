@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GGJt4kZ6",
+ "pasteDate": "Feb 20, 2018, 7:07:38 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Access denied for user ''@'localhost' to database 'abc_dev' (mysql_error_code=-001)\n\nMeans even you set your user name in datamapper, But that user does not exist in MySql\n\nBy showing:\nAccess denied for user 'abc'@'localhost' to database 'abc_dev' (mysql_error_code=-001)\nis much more clear.",
+ "title": ""
+}

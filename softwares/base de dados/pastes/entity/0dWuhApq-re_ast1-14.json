@@ -1,0 +1,5 @@
+{
+  "value": "function PlayAnimationFromTable(table, speed, bool)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

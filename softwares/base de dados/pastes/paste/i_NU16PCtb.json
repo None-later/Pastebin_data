@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NU16PCtb",
+ "pasteDate": "Feb 26, 2018, 1:49:53 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "start:\n\n.def temp = r16\n.def counter1 = r17\n.def counter2 = r18\n.def portbuffer = r19\n.equ\tPORTB = 0x05\n.equ\tPORTC = 0x08\n.equ \tPORTD = 0x0b\n.equ\tDDRB =\t0x04\n.equ\tDDRC = 0x07\n.equ\tDDRD = 0x0A\n.org 0x00\n\nloop: \n\n ldi temp, 0xff\n out ddrb, temp\n out ddrc, temp\n out ddrd, temp\n ldi portbuffer, 0x55\n out portb, portbuffer\n out portc, portbuffer\n out portd, portbuffer\n ldi counter1, 255\n rcall delay\n ldi portbuffer, 0xAA\n out portb, portbuffer\n out portc, portbuffer\n out portd, portbuffer\n call delay\n ldi counter1, 255\n rcall delay\n rjmp loop\n delay:\n ldi counter2, 255\n delay_loop:\n nop\n nop\n nop\n dec counter 2\n brne delay_loop\n dec counter1\n brne delay\n ret",
+ "title": ""
+}

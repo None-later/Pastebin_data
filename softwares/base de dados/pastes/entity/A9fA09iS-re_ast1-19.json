@@ -1,0 +1,5 @@
+{
+  "value": "function createbodypart(TYPE,COLOR,PART,OFFSET,SIZE)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

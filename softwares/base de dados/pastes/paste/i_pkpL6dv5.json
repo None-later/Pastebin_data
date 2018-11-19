@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "go",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "pkpL6dv5",
+ "pasteDate": "Feb 8, 2018, 3:12:39 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "package main\n\nimport (\n\t\"math/rand\"\n)\n\nfunc setup(grid *[64][64]bool) {\n\t// vyplnime plochu nahodne zivymi a mrtvymi polickami\n\tfor x := 0; x < 64; x++ {\n\t\tfor y := 0; y < 64; y++ {\n\t\t\tif rand.Intn(2) == 0 {\n\t\t\t\tgrid[x][y] = true\n\t\t\t} else {\n\t\t\t\tgrid[x][y] = false\n\t\t\t}\n\t\t}\n\t}\n}\n\nfunc step(grid *[64][64]bool) {\n\tvar newGrid [64][64]bool\n\n\t// pre kazde policko vypocitame jeho novy stav a ulozime do newGrid\n\tfor x := 0; x < 64; x++ {\n\t\tfor y := 0; y < 64; y++ {\n\t\t\t// spocitame pocet zivych susedov\n\t\t\tliveNeighbours := 0\n\t\t\t// ideme cez stvorec 3x3 okolo policka x,y\n\t\t\tfor dx := -1; dx <= +1; dx++ {\n\t\t\t\tfor dy := -1; dy <= +1; dy++ {\n\t\t\t\t\t// vypocitame poziciu suseda\n\t\t\t\t\tnx := x + dx\n\t\t\t\t\tny := y + dy\n\t\t\t\t\tif nx == x && ny == y { // sam seba neratame do susedov\n\t\t\t\t\t\tcontinue\n\t\t\t\t\t}\n\t\t\t\t\tif nx < 0 || nx > 63 { // sused mimo plochy\n\t\t\t\t\t\tcontinue\n\t\t\t\t\t}\n\t\t\t\t\tif ny < 0 || ny > 63 { // tiez mimo plochy\n\t\t\t\t\t\tcontinue\n\t\t\t\t\t}\n\t\t\t\t\tif grid[nx][ny] == true { // zivy sused\n\t\t\t\t\t\tliveNeighbours++\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\n\t\t\t// pouzijeme pravidla Game Of Life a zistime novy stav x,y\n\t\t\tif grid[x][y] == true { // mame docinenia so zivym polickom\n\t\t\t\tif liveNeighbours < 2 || liveNeighbours > 3 { // umrie\n\t\t\t\t\tnewGrid[x][y] = false\n\t\t\t\t} else { // ostane zit\n\t\t\t\t\tnewGrid[x][y] = true\n\t\t\t\t}\n\t\t\t} else { // mrtve policko\n\t\t\t\tif liveNeighbours == 3 { // ozije\n\t\t\t\t\tnewGrid[x][y] = true\n\t\t\t\t} else { // neozije\n\t\t\t\t\tnewGrid[x][y] = false\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n\n\t// vypocitali sme stavy vsetkych policok do newGrid, prekopirujeme spat do grid\n\tfor x := 0; x < 64; x++ {\n\t\tfor y := 0; y < 64; y++ {\n\t\t\tgrid[x][y] = newGrid[x][y]\n\t\t}\n\t}\n}",
+ "title": ""
+}

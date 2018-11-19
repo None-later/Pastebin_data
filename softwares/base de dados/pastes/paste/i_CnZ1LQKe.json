@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "CnZ1LQKe",
+ "pasteDate": "Feb 26, 2018, 11:04:15 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "command /okun1234:\n\ttrigger:\n\t\tcommand \"/msg okun1234\"",
+ "title": "yee"
+}

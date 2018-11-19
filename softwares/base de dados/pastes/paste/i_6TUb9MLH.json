@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "6TUb9MLH",
+ "pasteDate": "Feb 19, 2018, 4:14:44 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$ rake\n(in /home/clgc/languages/rbx-cpp)\ngcc -Ivm/external_libs/libtommath -Ivm/external_libs/onig -Ivm/external_libs/libffi/include -Ivm/external_libs/libltdl -Ivm/external_libs/libev -Ivm/external_libs/llvm/include -Ivm/test/cxxtest -Ivm -I. -Wall -ggdb -gdwarf-2 -I/home/clgc/languages/rbx-cpp/vm/external_libs/llvm/include -D_DEBUG -I/home/clgc/usr/include -D_GNU_SOURCE -D__STDC_LIMIT_MACROS -fomit-frame-pointer -I/home/clgc/usr/include -c -o vm/builtin/immediates.o vm/builtin/immediates.cpp 2>&1\nIn file included from vm/builtin/object.hpp:5,\n                 from vm/builtin/immediates.hpp:4,\n                 from vm/builtin/immediates.cpp:1:\nvm/oop.hpp:96: error: size_t does not name a type\nIn file included from vm/builtin/immediates.hpp:4,\n                 from vm/builtin/immediates.cpp:1:\nvm/builtin/object.hpp:212: error: hashval does not name a type\nIn file included from vm/objects.hpp:39,\n                 from vm/builtin/immediates.cpp:3:\nvm/builtin/string.hpp:28: error: hashval does not name a type\nvm/builtin/string.hpp:50: error: hashval does not name a type\nIn file included from vm/objects.hpp:42,\n                 from vm/builtin/immediates.cpp:3:\nvm/builtin/bignum.hpp:159: error: hashval does not name a type\nIn file included from vm/objects.hpp:48,\n                 from vm/builtin/immediates.cpp:3:\nvm/builtin/hash.hpp:28: error: hashval has not been declared\nvm/builtin/hash.hpp:30: error: hashval has not been declared\nvm/builtin/hash.hpp:32: error: hashval has not been declared\nvm/builtin/hash.hpp:33: error: hashval has not been declared\nvm/builtin/hash.hpp:35: error: hashval has not been declared\nvm/builtin/hash.hpp:36: error: hashval has not been declared\nvm/builtin/hash.hpp:38: error: hashval has not been declared\nvm/builtin/hash.hpp:40: error: hashval has not been declared\nvm/builtin/hash.hpp:41: error: hashval has not been declared\nvm/builtin/hash.hpp:42: error: hashval has not been declared\nrake aborted!\nCommand failed with status (1): [gcc -Ivm/external_libs/libtommath -Ivm/ext...]\n\n(See full trace by running task with --trace)",
+ "title": ""
+}

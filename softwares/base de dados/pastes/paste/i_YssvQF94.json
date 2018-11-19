@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "YssvQF94",
+ "pasteDate": "Feb 28, 2018, 11:40:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "        public override bool Equals(object obj)\n        {\n            CustomPoint point = (CustomPoint)obj;\n            if(point == null)\n            {\n                return false;\n            }\n\n            if(this.x == point.x && this.y == point.y)\n            {\n                return true;\n            }\n\n            return false;\n        }",
+ "title": ""
+}

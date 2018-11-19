@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0fvwm3va",
+ "pasteDate": "Feb 18, 2018, 4:05:28 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Fallout3.esm\nAnchorage.esm\nThePitt.esm\nBrokenSteel.esm\nPointLookout.esm\nZeta.esm\nUnofficial Fallout 3 Patch.esm\nRH_IRONSIGHTS.esm\nArwen_Core.esm\nRH_IronSights_Basic_VanillaPlugin.esp\nRH_IronSights_Basic_AnchoragePlugin.esp\nRH_IronSights_Basic_BrokenSteelPlugin.esp\nRH_IronSights_Basic_PittPlugin.esp\nRH_IronSights_Basic_PointLookoutPlugin.esp\nRH_IronSights_Basic_ZetaPlugin.esp\nRH_IronSights_PL_NewItems.esp\nRH_IronSights_RemoveReticule.esp\nRH_IronSights_Vanilla_NewWeapons.esp\nArwen_Realism_Core.esp\nArwen_Med-Tec.esp\nArwen_OneLife_Lite.esp\nArwen_Full_GOTY_Patch.esp\nArwen_RH_IronSights_GOTY_Patch.esp",
+ "title": ""
+}

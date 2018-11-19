@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BBq7bCmn",
+ "pasteDate": "Feb 21, 2018, 9:10:47 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Hurd server bootstrap ... auth/libexec/console-run : /dev/console : no such file or directory \n/etc/rc.d/functions: line 12: /dev/null :read-only file system\n/etc/rc.d/functions: line 27: /dev/null :read-only file system\n/etc/rc.d/functions: line 136: /dev/null :read-only file system",
+ "title": ""
+}

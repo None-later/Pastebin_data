@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://iptv.matthuisman.nz/nz/tv.12|X-Forwarded-For\u003d202.89.4.222\u0026User-Agent\u003dFMLE%2F3.0+%28compatible%3B+FMSc%2F1.0%29",
+  "correct": true,
+  "jSonReason": "re_url"
+}

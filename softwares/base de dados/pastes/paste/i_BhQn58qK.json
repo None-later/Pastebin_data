@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da",
+  "re_url"
+ ],
+ "key": "BhQn58qK",
+ "pasteDate": "Feb 21, 2018, 1:39:46 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "wget http://www.deb-multimedia.org/pool/main/d/deb-multimedia-keyring/deb-multimedia-keyring_2016.8.1_all.deb\ndpkg -i deb-multimedia-keyring_2016.8.1_all.deb",
+ "title": ""
+}

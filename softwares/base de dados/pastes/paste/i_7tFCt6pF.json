@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7tFCt6pF",
+ "pasteDate": "Feb 18, 2018, 6:51:31 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--Ultimate V2.2\nm = Instance.new(\"Message\")\nm.Parent = Workspace\nm.Text = (\"no\")\ngame.Workspace.Gravity = 0\ngame.Lighting.TimeOfDay = (\"5:00\")\ngame.Lighting.FogEnd = 30\n\n\nwait(1)\nm:Remove()\n\nwhile true do\nwait(0.5)\nb = Instance.new(\"BlurEffect\")\nb.Parent = game.Lighting\nh = Instance.new(\"Hint\")\nh.Parent = game.Workspace\nh.Text = (\"It is the ultimate end of the server.\")\ngame.Workspace.Gravity = -10\ngame.Lighting.TimeOfDay = (\"0:00\")\ngame.Lighting.FogEnd = 75\ngame.StarterPlayer.CameraMode = (\"LockFirstPerson\")\ngame.Workspace.Camera.FieldOfView = 200\n\nfor i,v in pairs(game.Workspace:GetChildren()) do\nif v:IsA(\"Part\")then\nv.BrickColor = BrickColor.new('le color')\nv.Name = (\"locked\")\nv.Locked = true\nv.Anchored = false\nend\nend\nend",
+ "title": ""
+}

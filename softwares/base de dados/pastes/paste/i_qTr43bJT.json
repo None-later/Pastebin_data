@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qTr43bJT",
+ "pasteDate": "Feb 28, 2018, 4:31:24 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ">> p = Product.first\n>> p.product_accessories.each do |a|\n?> a.part_number\n>> end\nSystemStackError: stack level too deep\n\tfrom /Users/josh/Code/HandCrafted-Clients/usedcisco/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:138:in `method_missing_without_paginate'\n\tfrom /Users/josh/Code/HandCrafted-Clients/usedcisco/vendor/plugins/will_paginate/lib/will_paginate/finder.rb:139:in `method_missing'\n\tfrom (irb):21\n>>",
+ "title": ""
+}

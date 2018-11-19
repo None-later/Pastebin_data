@@ -1,0 +1,5 @@
+{
+  "value": "function MagnitudeDamage(Part, Magnitude, MinimumDamage, MaximumDamage, KnockBack, Type, HitSound, HitPitch)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

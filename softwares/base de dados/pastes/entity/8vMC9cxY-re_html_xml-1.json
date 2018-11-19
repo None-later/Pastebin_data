@@ -1,0 +1,5 @@
+{
+  "value": "\u003chtml \u003c?php language_attributes(); ?\u003e\u003e",
+  "correct": true,
+  "jSonReason": "re_html_xml"
+}

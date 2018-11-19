@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "dyDj1hU3",
+ "pasteDate": "Feb 24, 2018, 5:55:21 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\n\n\npublic class Monster\n{\n\n    private int monID = 0;\n    private string monName;\n    private int monLevel;\n    private int monMaxHealth;\n    private int monCurrentHealth;\n    private int monSpeed;\n    private int monAttack;\n    private int monDefense;\n    private string monSpriteFile;\n\n    public int ID\n    {\n        get { return monID; }\n        set { monID = value; }\n    }\n\n    public string Name\n    {\n        get { return monName; }\n    }\n\n    public int Level\n    {\n        get { return monLevel; }\n        set { monLevel = value; }\n    }\n\n\n    public int Health\n    {\n        get { return monCurrentHealth; }\n        set { monCurrentHealth = value; }\n    }\n\n    public int Speed\n    {\n        get { return monSpeed; }\n        set { monSpeed = value; }\n    }\n\n    public int Attack\n    {\n        get { return monAttack; }\n        set { monAttack = value; }\n    }\n\n    public int Defense\n    {\n        get { return monDefense; }\n        set { monDefense = value;  }\n    }\n\n    public string SpriteFile\n    {\n        get { return monSpriteFile; }\n    }\n\n    public void SetHealth(int h)\n    {\n        this.monCurrentHealth = h;\n    }\n\n    public void RemoveHealth(int h)\n    {\n        this.monCurrentHealth -= h;\n        if (this.monCurrentHealth < 0)\n        {\n            this.monCurrentHealth = 0;\n        }\n    }\n\n    //Increase Base attributes by x amount depending on level and other factors\n    //will revisit this method for game balancing\n    public void LevelMultiplier(int level)\n    {\n        this.monMaxHealth *= level;\n        this.monAttack *= level;\n        this.monSpeed *= level;\n        this.monDefense *= level;\n    }\n\n\n    public void SetBaseAttributes(int maxHealth, int speed, int attack, int defense)\n    {\n        if (maxHealth <= 0)\n        {\n            //The lowest health allowed is 1\n            this.monMaxHealth = 1;        \n            this.monCurrentHealth = 1;\n        }\n\n        this.monMaxHealth = maxHealth;\n        this.monCurrentHealth = maxHealth;\n        this.monSpeed = speed;\n        this.monAttack = attack;\n        this.monDefense = defense;\n\n    }\n\n    //Create a monster checking Strings are Arropriate before assigning it to an actual Game Object\n    public Monster (string name, string fileName)\n    {\n        this.monName = name;\n        this.monSpriteFile = fileName;\n        this.monLevel = 1;\n    }\n\n}",
+ "title": "Monsters.cs"
+}

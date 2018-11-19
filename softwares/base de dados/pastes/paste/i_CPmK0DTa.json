@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "CPmK0DTa",
+ "pasteDate": "Feb 21, 2018, 6:10:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// Add one selected data\n$(\"#field\").select2('data', { 'id' : value, 'text' : text});  \n\n// Add multiple selected element  \nvar data = {\n          'id' : value1, 'text' : text1,\n          'id' : value2, 'text' : text2,\n          ...\n          'id' : valueN, 'text' : textN,\n       };\n\n$(\"#field\").select2('data', data);",
+ "title": ""
+}

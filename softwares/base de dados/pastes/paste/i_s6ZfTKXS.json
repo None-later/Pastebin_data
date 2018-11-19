@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "s6ZfTKXS",
+ "pasteDate": "Feb 28, 2018, 7:26:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class DebugUtils {\n  public static void logCurrentStackTrace(Thread thread) {\n      List<StackTraceElement> traceElements = Arrays.asList(thread.getStackTrace());\n\n      Timber.d(\"StackTrace: START\");\n      for (StackTraceElement traceElement : traceElements) {\n          Timber.d(\"\\tStackTrace: %30s#%20s line: %4d\",\n              traceElement.getClassName(),\n              traceElement.getMethodName(),\n              traceElement.getLineNumber());\n      }\n      Timber.d(\"StackTrace: END\");\n  }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "2W",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nqiY8G5f",
+ "pasteDate": "Feb 12, 2018, 6:18:03 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var tempDocFileFullPath = $\"{System.IO.Path.GetTempPath()}\\\\RhinoTest_tmp.3dm\";\n\nusing (var fileOptions = new FileWriteOptions())\n{\n       fileOptions.SuppressDialogBoxes = true;\n       if (doc.WriteFile(tempDocFileFullPath, fileOptions))\n       {\n           Console.WriteLine(\"Success\");\n           }\n           else\n           {\n               throw new Exception(\"Current document cannot be saved. Upload cancelled\");\n           }\n       }\n\n       try\n       {\n           File.Delete(tempDocFileFullPath);\n       }\n       catch (Exception e)\n       {\n           Console.WriteLine(e);\n           throw new Exception(\"Temp document cannot be deleted\");\n       }\n\n       return Result.Success;",
+ "title": "Rhino writeFile"
+}

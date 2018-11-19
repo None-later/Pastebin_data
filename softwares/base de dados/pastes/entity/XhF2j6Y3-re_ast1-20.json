@@ -1,0 +1,5 @@
+{
+  "value": "function(GuiType, parent, text, backtrans, backcol, pos, size)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

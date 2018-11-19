@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es",
+  "re_email"
+ ],
+ "key": "UWJxNPdT",
+ "pasteDate": "Feb 8, 2018, 1:39:12 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#!/bin/bash\n\nemail=\"angel@netboxsolutions.com\"\n\n#aqui guardamos un archivo si es que se necesita mucho texto\nlogfile=\"/home/test/url/temp.log\"\n \n# eliminamos el archivo si existe (el -f es para que lo ignore si no existe)\nrm -f $logfile\n#y lo creamos vacio\ntouch $logfile\n\n#metemos el comando para que se ejecute y se guarde en el correo tengo 3 formas alguna debe de ser\n\necho \"df -H \" >> $logfile\necho df -H  >> $logfile\ndf -H  >> $logfile\n \n#basicamente echo muestra el texto en la consola, pero con >> lo redirigimos a donde queremos, en este caso al archivo que creamos antes. \n    \n \ncat $logfile|mail -s \"TEST SERVER\" $email",
+ "title": ""
+}

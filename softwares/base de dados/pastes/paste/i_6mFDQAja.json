@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml",
+  "re_css"
+ ],
+ "key": "6mFDQAja",
+ "pasteDate": "Feb 28, 2018, 9:49:12 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html> \n<html lang=\"pl\"> \n<head>  \n  <meta charset=\"utf-8\"> \n  <title>Tytul strony</title> \n  <meta name=\"description\" content=\"...\">\n  <meta name=\"author\" content=\"Kamila Grzybowska\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\"/>\n  \n  <style>\n\t* {\n\t\tbox-sizing: border-box;\n\t}\n\t\n\tbody{\n\t\tbackground-color: lightblue;\n\t}\n\t\n\t.row:after {\n\t\tcontent: \"\";\n\t\tclear: both;\n\t\tdisplay: table;\n\t}\n\t\n\t[class*='col-'] {\n\t\tbackground-color: red;\n\t\tpadding: 0;\n\t\twidth: 100%;\n\t\tmargin-bottom:0;\n\t}\n\t\n\t@media screen and (min-width: 640px) {\n\t\t.row+.row {\n\t\t\tmargin-top: 0.5em;\n\t\t}\n\t  \n\t   \n\t  .col-1-6 {\n\t\t\twidth: 15.83333%;\n\t  }\n\t  \n\t  .col-2-6 {\n\t\t\twidth: 32.666%;\n\t\t}\n\t  \n\t  .col-3-6 {\n\t\t\twidth: 49.5%;\n\t\t}\n\t  \n\t  .col-6-6 {\n\t\t\twidth: 100%;\n\t  }  \n\t  \n\t  [class*='col-'] {\n\t\t\tfloat: left;\n\t\t\tmargin-right:1%;\n\t  }\n\t  \n\t  [class*='col-']:last-of-type {\n\t\t\tmargin-right:0;\n\t  }\n\t  \n\t}\n\t  \n  </style\n</head> \n<body>\n\t<div id=wrapper>\n\n\t<div class=\"row\">\n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 1a</h2>\n\t\t\t\n\t\t </div>\n\t\t \n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 2a</h2>\n\t\t</div>\n\t\t\n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 3a</h2>\n\t\t</div>\n\t\t\n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 4a</h2>\n\t\t</div>\n\t\t\n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 5a</h2>\n\t\t</div>\n\t\t\n\t\t <div class=\"col-1-6\">\n\t\t\t<h2>Kolumna 6a</h2>\n\t\t</div>\n\t\t\n\t</div> <!-- row -->\n\t\n\t<div class=\"row\">\n\t\t<div class=\"col-3-6\">\n\t\t\t<h2>Kolumna 1a</h2>\n\t\t\t\n\t\t\t\t<div class=\"row\">\n\t\t\t\t\t<div class=\"col-3-6\" style=\"background-color: blue\">\n\t\t\t\t\t\t<h2>Kolumna 1a</h2>\n\t\t\t\t\t\t\n\t\t\t\t\t</div>\n\t\t\t\t\t\n\t\t\t\t\t<div class=\"col-3-6\" style=\"background-color: blue\">\n\t\t\t\t\t\t<h2>Kolumna 2a</h2>\n\t\t\t\t\t</div>\n\t\t\n\t</div>\n\t\t\t\n\t\t</div>\n\t\t\n\t\t<div class=\"col-3-6\">\n\t\t\t<h2>Kolumna 2a</h2>\n\t\t</div>\n\t\t\n\t</div> <!-- row -->\n\t\n\n</div>\n</body> \n</html>",
+ "title": ""
+}

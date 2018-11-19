@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_java"
+ ],
+ "key": "n71Vefb2",
+ "pasteDate": "Feb 20, 2018, 7:37:49 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "--- BEGIN ERROR REPORT a1dce528 --------Generated 10/26/11 5:52 PM\nMinecraft: Minecraft Beta 1.8.1OS: Windows 7 (amd64) version 6.1Java: 1.7.0, Oracle CorporationVM: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle CorporationLWJGL: 2.4.2[failed to get system properties (java.lang.NullPointerException)]\norg.lwjgl.LWJGLException: Could not create context\tat org.lwjgl.opengl.WindowsContextImplementation.nCreate(Native Method)\tat org.lwjgl.opengl.WindowsContextImplementation.create(WindowsContextImplementation.java:50)\tat org.lwjgl.opengl.Context.<init>(Context.java:120)\tat org.lwjgl.opengl.Display.create(Display.java:858)\tat org.lwjgl.opengl.Display.create(Display.java:784)\tat org.lwjgl.opengl.Display.create(Display.java:765)\tat net.minecraft.client.Minecraft.a(SourceFile:233)\tat net.minecraft.client.Minecraft.run(SourceFile:629)\tat java.lang.Thread.run(Unknown Source)--- END ERROR REPORT 961be4c9 ----------",
+ "title": ""
+}

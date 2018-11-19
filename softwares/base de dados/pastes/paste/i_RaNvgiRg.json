@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RaNvgiRg",
+ "pasteDate": "Feb 21, 2018, 10:14:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "...\ninterface TodoListProps {\n    getAllTodos: () => Promise<void>;\n    changeStatus: (todo: TodoImmutable) => Promise<void>;\n    removeTodo: (todo: TodoImmutable) => Promise<void>;\n    todoList: List<TodoImmutable>;\n}\n\n\nconst mapDispatchToProps = (dispatch: Function) => {\n    return {\n        getAllTodos: () => dispatch(getAllTodos()),\n        changeStatus: (todo: TodoImmutable) => dispatch(changeStatus(todo)),\n        removeTodo: (todo: TodoImmutable) => dispatch(removeTodo(todo))\n    };\n};\n...",
+ "title": ""
+}

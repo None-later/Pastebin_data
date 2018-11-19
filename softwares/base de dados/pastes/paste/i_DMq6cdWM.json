@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "DMq6cdWM",
+ "pasteDate": "Feb 20, 2018, 5:05:02 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "[OK] object network NETWORK_OBJ_10.10.50.0_23\n      object network NETWORK_OBJ_10.10.50.0_23\n[ERROR] subnet 10.10.50.0 255.255.254.0\n\nsubnet 10.10.50.0 255.255.254.0\n  ^\nERROR: % Invalid input detected at '^' marker.\n\n[OK] object network NETWORK_OBJ_10.10.60.0_23\n      object network NETWORK_OBJ_10.10.60.0_23\n[ERROR] subnet 10.10.60.0 255.255.254.0\n\nsubnet 10.10.60.0 255.255.254.0\n  ^\nERROR: % Invalid input detected at '^' marker.\n\n[ERROR] nat (inside,outside) 1 source static NETWORK_OBJ_10.10.60.0_23 NETWORK_OBJ_10.10.60.0_23 destination static NETWORK_OBJ_10.10.50.0_23 NETWORK_OBJ_10.10.50.0_23\n\nnat (inside,outside) 1 source static NETWORK_OBJ_10.10.60.0_23 NETWORK_OBJ_10.10           ^.60.0_23 destination static NETWORK_OBJ_10.10.50.0_23 NETWORK_OBJ_10.10.50.0_23\n\nERROR: % Invalid input detected at '^' marker.",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "J5Bmv3bV",
+ "pasteDate": "Feb 17, 2018, 5:55:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "from socket import *\n\n\nserverPort = 12000\n\nserverSocket = socket(AF_INET, SOCK_DGRAM)\n\nserverSocket.bind(('', 12000))\n\nprint(\" the server is ready to receive\")\n\nwhile 1:\n     message, clientAddress = serverSocket.recvfrom(2048)\n     modifiedMessage = message.upper()\nserverSocket.sendto(modifiedMessage, clientAddress)\n\t\nfrom socket import * \nserverName = '127.0.0.1'\nserverPort = 12000\nclientSocket = socket(AF_INET, SOCK_DGRAM)\nmessage = input ('Input lowercase sentense:')\nclientSocket.sendto(message.encode(),(serverName, serverPort))\nmodifiedMessage, serverAddress = clientSocket.recvfrom(2048)\nprint (modifiedMessage)\nclientSocket.close()",
+ "title": ""
+}

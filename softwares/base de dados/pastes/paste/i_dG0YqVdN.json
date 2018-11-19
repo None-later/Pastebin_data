@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "dG0YqVdN",
+ "pasteDate": "Feb 12, 2018, 1:39:14 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "boolean isValid = contains(StatusValues, value, false);\n                        if (isValid) {\n                            // Validated value, set it in the record\n                            Object.Status__c = value;\n                        } else {\n                            // Not correct value. Display error message on current page and stop the import process\n                            String errMessage = value + ' is invalid value for picklist Status!';\n                            addErrorInPage(errMessage);\n                            return;\n                        }",
+ "title": ""
+}

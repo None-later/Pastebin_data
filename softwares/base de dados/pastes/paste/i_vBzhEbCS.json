@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vBzhEbCS",
+ "pasteDate": "Feb 8, 2018, 4:18:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def load_data(stock, seq_len):\n    data_raw = stock.as_matrix() # convert DataFrame to matrix\n    data = []\n\n    # create all possible sequences of length seq_len\n    for index in range(len(data_raw) - seq_len):\n        data.append(data_raw[index: index + seq_len])\n\n    data = np.array(data)\n    # Validation size is base on validation percentage which is 10%\n    valid_set_size = int(np.round(valid_set_size_percentage/100*data.shape[0]))\n    # Test size is base on test percentage which is 10%\n    test_set_size = int(np.round(test_set_size_percentage/100*data.shape[0]))\n    # Train size ends up being 80%\n    train_set_size = data.shape[0] - (valid_set_size + test_set_size)\n\n    # Divide the data base on the ranges of the different sizes\n    x_train = data[:train_set_size,:-1,:]\n    y_train = data[:train_set_size,-1,:]\n\n    x_valid = data[train_set_size:train_set_size+valid_set_size,:-1,:]\n    y_valid = data[train_set_size:train_set_size+valid_set_size,-1,:]\n\n    x_test = data[train_set_size+valid_set_size:, :-1, :]\n    y_test = data[train_set_size+valid_set_size:, -1, :]\n\n    return [x_train, y_train, x_valid, y_valid, x_test, y_test]",
+ "title": ""
+}

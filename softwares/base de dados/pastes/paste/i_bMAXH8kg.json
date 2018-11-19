@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bMAXH8kg",
+ "pasteDate": "Feb 24, 2018, 1:57:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$Excel = New-Object -ComObject Excel.Application\n$Excel.Visible = $true\n$WorkBook = $Excel.Workbooks.Add()\n$sheet1 = $WorkBook.Worksheets.Item(1)\n$sheet1.Cells.Item(1,1) = ' '\n$sheet1.Rows.Item(1).Font.Bold = $true\n$Row = 2\n$Column = 1\n$block=\"1\",\"2\",\"3\",\"4\",\"5\",\"6\",\"7\",\"8\",\"9\",\"10\",\"11\",\"12\"   \n$samplefromblock = for ($i = 0; $i -le ($block.length - 1); $i += 4) {$block[$i]}\n$samplefromblock | ForEach-Object `\n{\n\n$sheet1.Cells.Item($Row, $Column)=???\n$Column++\n\n$Row++\n$Column = 1\n}\n#$WorkBook.SaveAs('C:UsersPublicDesktop IP-.xlsx')\n#$Excel.Quit()",
+ "title": ""
+}

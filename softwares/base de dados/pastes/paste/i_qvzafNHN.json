@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "qvzafNHN",
+ "pasteDate": "Feb 28, 2018, 2:27:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Declare @S varchar(50)='China'\n\nSelect Top 1 * \n From  YourTable\n Where @S like Replace(ColumnA,'*','%')\n Order by len(ColumnA) Desc\n\t\nColumnA ColumnB\nChi*    value2",
+ "title": ""
+}

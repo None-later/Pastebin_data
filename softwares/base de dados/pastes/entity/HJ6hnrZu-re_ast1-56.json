@@ -1,0 +1,5 @@
+{
+  "value": "function c99sh_getupdate($update \u003d true)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

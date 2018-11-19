@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Sd6yg7ak",
+ "pasteDate": "Feb 17, 2018, 11:17:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "options:\n prefix: &e&l[&bMirageRPG&e&l]&a\n : 60 second\n : &6TP\n : &cTP\n : &4&l&b&c&n\n P1-x: 1436\n P1-y: 4\n P1-z: 1053\nvariables:\n   {cooldown%player%} = 0\n\non right click holding a diamond:\n name of held item is \"<aqua><gold>Lv.1\"\n open chest with 1 row named \"<blue>\" to player\n difference between {cooldown%player%} and now is less than {@cooldown} tick:\n  send \"{@} {@}\" to player\n else:\n  teleport the player to the location ({@P1-x}, {@P1-y}, {@P1-z})\n  send \"{@}\" to player\n  set {cooldown%player%} to now",
+ "title": ""
+}

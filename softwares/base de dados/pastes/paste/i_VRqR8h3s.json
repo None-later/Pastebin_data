@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VRqR8h3s",
+ "pasteDate": "Feb 27, 2018, 11:50:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<ul class=\"c-list c-list--posts\">\n  {% assign items = site.documents | where: \"blog\", true | sort: \"date\" | reverse %}\n  {% for item in items %}\n  <li class=\"c-list__item\">\n    <article class=\"c-article\">\n      <header class=\"c-article__header\">\n        <a href=\"{{ item.url | prepend: site.baseurl }}\"><h2><b>{{ item.title }}</b></h2></a>\n        <time datetime=\"{{ page.date | date: \"%Y-%m-%d\" }}\"><p>Published on {{ item.date | date: \"%b %d, %Y\" }}</p></time>\n      </header>\n      <p class=\"c-article__lede\">{{ item.content | strip_html | truncatewords: 50 }}</p>\n    </article>\n  </li>\n  {% endfor %}\n</ul>",
+ "title": ""
+}

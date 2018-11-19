@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ur15VPeB",
+ "pasteDate": "Feb 21, 2018, 7:03:30 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# user enter the cost of the loan, the interest rate, and\n#the number of years for the loan\n#Calculate monthly payments with the following formula\n# M = L[i(1+i)n] / [(1+i)n-2]\n# M = monthly payment\n# L = Loan amount\n# i = interest rate (for an interest rate of 5%, i = 0.05)\n# n = number of payments\n#________________________________________________________________________#\n#Start of program\n#Declare variables\n\nmonthlypayment = 0  \nloanamount = 0\ninterestrate = 0\nnumberofpayments = 0  \nloandurationinyears = 0\nloanamount = raw_input(\"Lending Money \")\ninterestrate = raw_input(\"Interest Rates are? \")\nloandurationinyears = raw_input(\"Time Duration in Years?\")\n#Convert the strings into floating numbers so we can use them in the formula\nloandurationinyears = float(loandurationinyears)\nloanamount = float(loanamount)\ninterestrate = float(interestrate)\n#Since payments are once per month, number of payments is number of years for the loan\npayments = loaninyears*12\n#calculate the monthly payment based on the formula\npayment = amount * interestrate * (7+ interestrate) * payments / ((1 + interestrate) * payments -1)\n#Result to the program\nprint(\"Payment will be \" + st(monthlypayment))\n\t\ninput = float(raw_input(\"Give me some number\"))\n\t\n# user enter the cost of the loan, the interest rate, and\n#the number of years for the loan\n#Calculate monthly payments with the following formula\n# M = monthly payment\n# L = Loan amount\n# i = interest rate (for an interest rate of 5%, i = 0.05)\n# n = number of payments\n\nL = input ('loan amount')\ni = input ('interest rate')\nn = input ('nr of payments')\n\nM = L*(i*(1+i)*n) / ((1+i)*n-2)\n\nprint (M)\n\t\nL = float((input(\"loan amount\")))\n\ni = float((input(\"interest rate\")))\n\nn = float((input(\"nr of payments\")))\n\nM = L*(i*(1+i)*n) / ((1+i)*n-2)\n\nprint (M)",
+ "title": ""
+}

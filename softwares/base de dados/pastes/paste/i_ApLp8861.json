@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "ApLp8861",
+ "pasteDate": "Feb 23, 2018, 11:44:18 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "/downloads/pc-hotbar.mcpack\n\nProvided '/header/pack_id' element is not a valid UUID in pack manifest; Defaulting to 'f0a0037b-fc6b-3bf0-9ea2-e13184aae5ae'.\n\nProvided '/header/packs_version' element is not SemVer (semver.org) compliant in pack manifest; Defaulting to '1.0.0'.\n\nMissing '/modules' element in pack manifest; Defaulting to resource pack.",
+ "title": ""
+}

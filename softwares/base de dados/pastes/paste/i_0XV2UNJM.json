@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0XV2UNJM",
+ "pasteDate": "Feb 28, 2018, 4:33:40 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def func1():\n\tprint \"some bullshit function\"\n\ndef func2():\n\tprint \"some other bullshit function\"\n\nsome_array = {func1:\"func1\", func2:\"func2\"}\n\n#some_array[unknown_function_pointer] == The string of the function",
+ "title": ""
+}

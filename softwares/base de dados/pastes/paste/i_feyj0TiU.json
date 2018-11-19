@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "feyj0TiU",
+ "pasteDate": "Feb 17, 2018, 7:27:08 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include \"ft_stock_par.h\"\n\nstruct s_stock_par\t*ft_param_to_tab(int ac, char **av);\n\nvoid\t\t\t\tft_putchar(char c);\n\nvoid\t\t\t\tft_putstr(char *str)\n{\n\tint i;\n\n\ti = 0;\n\twhile (str[i])\n\t{\n\t\tft_putchar(str[i]);\n\t\ti++;\n\t}\n}\n\nvoid\t\t\t\tft_putnbr(int nb)\n{\n\tif (nb < 0)\n\t{\n\t\tnb *= -1;\n\t\tft_putchar('-');\n\t}\n\tif (nb < 10)\n\t{\n\t\tft_putchar(nb + '0');\n\t\treturn ;\n\t}\n\tft_putnbr(nb / 10);\n\tft_putchar((nb % 10) + '0');\n}\n\nvoid\t\t\t\tft_show_tab(struct s_stock_par *par)\n{\n\tint i;\n\tint j;\n\n\ti = 0;\n\twhile (par[i])\n\t{\n\t\tft_putstr(par[i].str);\n\t\tft_putchar('\\n');\n\t\tft_putstr(par[i].size_param);\n\t\tft_putchar('\\n');\n\t\tj = 0;\n\t\twhile (par[i].tab[j])\n\t\t{\n\t\t\tft_putstr(par[i].tab[j]);\n\t\t\tft_putchar('\\n');\n\t\t\tj++;\n\t\t}\n\t\ti++;\n\t}\n}",
+ "title": ""
+}

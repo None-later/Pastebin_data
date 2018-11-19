@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "jQ7dw1aH",
+ "pasteDate": "Feb 28, 2018, 3:03:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"row\">\n\t\n</h3>\n    </div><br>      \n    <div class=\"row\" id=\"records\">\n      <div class=\"col-sm-4\" id=\"id_periodo\"></div>\n      <div class=\"col-sm-4\" id=\"nombre_periodo\"></div>\n      <div class=\"col-sm-4\" id=\"fecha_inicio\"></div>\n      <div class=\"col-sm-4\" id=\"fecha_fin\"></div>\n    </div>      \n    <div class=\"row\" id=\"no_records\"><div class=\"col-sm-4\">Por favor seleecione el FY</div></div>\n  </div>      \n</div>",
+ "title": ""
+}

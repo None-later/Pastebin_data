@@ -1,0 +1,5 @@
+{
+  "value": "functions\u0027 \u003d\u003e array(\u0027change_channel\u0027,\u0027warning_ban\u0027,\u0027multi_function\u0027,\u0027support_channels\u0027,\u0027get_vip_channel\u0027,\u0027admins_meeting\u0027,\u0027groups_security\u0027,\u0027twitch_yt\u0027,\u0027ddos_information\u0027,\u0027afk_group\u0027,\u0027ban_list\u0027,\u0027generate_banner\u0027,\u0027anty_vpn\u0027,\u0027visitors\u0027,\u0027client_on_channel\u0027,\u0027host_message\u0027,\u0027server_query_online\u0027,\u0027name_day\u0027)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

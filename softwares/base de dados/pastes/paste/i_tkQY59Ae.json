@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "powershell",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tkQY59Ae",
+ "pasteDate": "Feb 26, 2018, 11:44:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": ". \"Path\\Draw-Shapes.ps1\"",
+ "title": "Draw-Shapes 1"
+}

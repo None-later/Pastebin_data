@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "kw_inject",
+  "lg_en"
+ ],
+ "key": "HTkWstDk",
+ "pasteDate": "Feb 20, 2018, 6:31:57 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "class String\n  @@alphabet = ('a'..'z').entries.join('')\n  def sum\n    letters = split('')\n    letters.inject(0) do |sum, letter|\n      if (i = @@alphabet.index(letter))\n        # puts \"#{letter} = #{i}\" # Uncommenting this line works\n        # sum += i                # ...but uncommenting this line doesn't\n      end\n    end\n  end\nend",
+ "title": ""
+}

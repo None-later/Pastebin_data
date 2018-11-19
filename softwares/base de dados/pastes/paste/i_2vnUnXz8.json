@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2vnUnXz8",
+ "pasteDate": "Feb 21, 2018, 8:01:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "  def create\n    @make = Make.new(params[:make])\n    if @make.save\n      flash[:notice] = \"Successfully created make.\"\n      redirect_to @make\n    else\n      render :action => 'new'\n    end \n  end",
+ "title": ""
+}

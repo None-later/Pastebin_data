@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5F9uCanE",
+ "pasteDate": "Feb 12, 2018, 1:54:09 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "array(\n    [0] => +970\n    [1] => +971\n    [2] => +972\n)\n\t\narray(\n    [0] => 465465454\n    [1] => 321321355\n    [2] => 987946546\n)\n\t\narray(\n    [+970] => 465465454\n    [+971] => 321321355\n    [+972] => 987946546\n)\n\t\n$busi_code  = $page1_data->business_code; //array\n$busi_num  = $page1_data->business_number; //array\n\n$business_phone_numbers = array_merge($busi_code, $busi_num);\n\necho '<pre>';\nprint_r($business_phone_numbers);\necho '</pre>';\n\t\n[0] => +970\n[1] => +971\n[2] => +972\n[3] => 465465454\n[4] => 321321355\n[5] => 987946546",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "aN7nUNu7",
+ "pasteDate": "Feb 26, 2018, 12:05:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "@app.route('/contacts/<int:id>/', methods = ['GET', 'PUT', 'DELETE'])\ndef contact(id):\n    if request.method == 'GET':\n        return get_contact(id)\n    elif request.method == 'PUT':\n        return update_contact(id)\n    else:\n        return delete_contact(id)",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "x7ATfx0Z",
+ "pasteDate": "Feb 17, 2018, 10:18:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import UIKit\nimport CoreData\nimport FacebookCore\n\n\n@UIApplicationMain\nclass AppDelegate: UIResponder, UIApplicationDelegate {\n\n    var window: UIWindow?\n\n\n    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {\n        // Override point for customization after application launch.\n        return true\n    }\n    \n    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {\n        return SDKApplicationDelegate.shared.application(app, open: url,options:options)",
+ "title": ""
+}

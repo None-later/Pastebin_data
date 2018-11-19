@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "hXUQmpi6",
+ "pasteDate": "Feb 20, 2018, 8:01:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "User Feedback\n--------------\n  - Responsive design breaks on the homepage\n    -> Main checkpoint text causes the other content to have a large margin on the right side\n  - Game Search Bug\n    -> It will state a game is not available when it is actually in the igdb database and is returning data\n  - Clicking similar game links does not bring user to game info screen\n    -> It just says it cannot find the game\n  - React error when trying to search for games from within my Collection Page\n    -> Looks like history prop not being passed through",
+ "title": ""
+}

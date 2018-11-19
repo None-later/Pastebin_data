@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_#3",
+  "lg_en"
+ ],
+ "key": "xxB8NmQg",
+ "pasteDate": "Feb 18, 2018, 4:03:47 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "OTL logfile created on: 10/24/2011 9:14:33 AM - Run 1\nOTL by OldTimer - Version 3.2.27.0     Folder = C:\\Users\\vista\\Downloads\n64bit-Windows Vista Ultimate Edition Service Pack 2 (Version = 6.0.6002) - Type = NTWorkstation\nInternet Explorer (Version = 7.0.6002.18005)\nLocale: 00000409 | Country: United States | Language: ENU | Date Format: M/d/yyyy\n \n3.98 Gb Total Physical Memory | 2.55 Gb Available Physical Memory | 64.04% Memory free\n8.12 Gb Paging File | 6.66 Gb Available in Paging File | 82.00% Paging File free\nPaging file location(s): ?:\\pagefile.sys [binary data]\n \n%SystemDrive% = C: | %SystemRoot% = C:\\Windows | %ProgramFiles% = C:\\Program Files (x86)\nDrive C: | 72.38 Gb Total Space | 22.35 Gb Free Space | 30.89% Space Free | Partition Type: NTFS\n \nComputer Name: WVU | User Name: vista | Logged in as Administrator.\nBoot Mode: Normal | Scan Mode: Current user | Quick Scan | Include 64bit Scans\nCompany Name Whitelist: On | Skip Microsoft Files: On | No Company Name Whitelist: On | File Age = 30 Days\n \n[color=#E56717]========== Processes (SafeList) ==========[/color]\n \nPRC - [2011/10/24 07:19:29 | 000,581,120 | ---- | M] (OldTimer Tools) -- C:\\Users\\vista\\Downloads\\OTL.exe\nPRC - [2011/08/31 17:00:48 | 000,449,608 | ---- | M] (Malwarebytes Corporation) -- C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbamgui.exe\nPRC - [2011/08/31 17:00:48 | 000,366,152 | ---- | M] (Malwarebytes Corporation) -- C:\\Program Files (x86)\\Malwarebytes' Anti-Malware\\mbamservice.exe\nPRC - [2011/07/29 08:08:12 | 001,259,376 | ---- | M] () -- C:\\Program Files (x86)\\DivX\\DivX Update\\DivXUpdate.exe\nPRC - [2011/05/28 21:05:18 | 000,066,872 | ---- | M] () -- C:\\Windows\\SysWOW64\\PnkBstrA.exe\nPRC - [2010/10/26 21:06:58 | 000,279,848 | ---- | M] (CyberLink) -- C:\\Program Files (x86)\\CyberLink\\Media Server\\Kernel\\DMS\\CLMSServer.exe\nPRC - [2010/10/26 21:06:58 | 000,070,952 | ---- | M] (CyberLink) -- C:\\Program Files (x86)\\CyberLink\\Media Server\\Kernel\\DMS\\CLMSMonitorService.exe\nPRC - [2009/04/12 01:24:09 | 002,926,592 | ---- | M] (Microsoft Corporation) -- C:\\Windows\\SysWOW64\\explorer.exe\nPRC - [2009/04/12 01:24:04 | 000,069,120 | ---- | M] (Microsoft Corporation) -- C:\\Windows\\SysWOW64\\conime.exe\n \n \n[color=#E56717]========== Modules (No Company Name) ==========[/color]\n \nMOD - [2011/07/29 08:09:42 | 000,096,112 | ---- | M] () -- C:\\Program Files (x86)\\DivX\\DivX Update\\DivXUpdateCheck.dll\nMOD - [2011/07/29 08:08:12 | 001,259,376 | ---- | M] () -- C:\\Program Files (x86)\\DivX\\DivX Update\\DivXUpdate.exe\n \n \n[color=#E56717]========== Win32 Services (SafeList) ==========[/color]",
+ "title": ""
+}

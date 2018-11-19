@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "8mN8MkGA",
+ "pasteDate": "Feb 20, 2018, 2:05:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class EsFiltro{\n\tpublic static void car(int n){\n\t\tchar val='A';\n\t\tfor(int i=0;i<n;i++){\n\t\t\tSystem.out.print(val);\n\t\t\tif(i!=n-1)\n\t\t\t\tSystem.out.print(\" \");\n\t\t\tval=(char)(val+1);\n\t\t\t}\n\t}\n\n\tpublic static void main(String[] args){\n\t\tint n=Integer.parseInt(args[0]);\n\t\tif(n<0)\n\t\t\tSystem.out.println(\"Errore\");\n\t\telse\n\t\t\tif(n>0) {\n\t\t\t\tif(n>1)\n\t\t\t\t\tfor(int i=1; i<n; i++) {\n\t\t\t\t\t\tcar(i);\n\t\t\t\t\t\tSystem.out.println();\n\t\t\t\t\t}\n\t\t\t\tcar(n);\n\t\t\t\tif(n>1){\n\t\t\t\t\tSystem.out.println();\n\t\t\t\t\tfor(int j=n-1;j>=1;j--) {\n\t\t\t\t\t\tcar(j);\n\t\t\t\t\t\tif(j!=1)\n\t\t\t\t\t\tSystem.out.println();\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t}\n}",
+ "title": "EsFiltro"
+}

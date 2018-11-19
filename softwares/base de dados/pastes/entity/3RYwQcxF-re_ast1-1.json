@@ -1,0 +1,5 @@
+{
+  "value": "function lsi_icons( $options \u003d \u0027\u0027 )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_php",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "jD6h1rW5",
+ "pasteDate": "Feb 8, 2018, 5:14:09 PM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "deps: [\n    \"js/main\",\n    \"js/shop\",\n],\n\nmap: {\n    '*': {\n        \"menu\": 'js/menu',\n        'swiperlib': 'js/libs/swiper-4.0.7',\n    }\n}\n\t\ndefine(['jquery', 'jquery/ui', 'mage/menu' ], function($){\n\n        $.widget('custom.menu', $.mage.menu, {\n            _init: function () {\n                alert(\"Test\");\n            },\n            toggle: function () {\n                alert(\"Test\");\n            }\n        });\n        return $.custom.menu;\n    });",
+ "title": ""
+}

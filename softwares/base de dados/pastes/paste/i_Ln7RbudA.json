@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ln7RbudA",
+ "pasteDate": "Feb 20, 2018, 7:12:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "admin@user-900A:~/xf86-input-wacom$ ./autogen.sh --prefix=/usr --libdir=/usr/lib  \nCan't exec \"libtoolize\": No such file or directory at /usr/bin/autoreconf line 196.\nUse of uninitialized value in pattern match (m//) at /usr/bin/autoreconf line 196.\nautoreconf: Entering directory `.'\nautoreconf: configure.ac: not using Gettext\nautoreconf: running: aclocal \nautoreconf: configure.ac: tracing\nautoreconf: configure.ac: not using Libtool\nautoreconf: running: /usr/bin/autoconf\nautoreconf: running: /usr/bin/autoheader\nautoreconf: running: automake --add-missing --copy --no-force\nsrc/Makefile.am:30: Libtool library used but `LIBTOOL' is undefined\nsrc/Makefile.am:30:   The usual way to define `LIBTOOL' is to add `AC_PROG_LIBTOOL'\nsrc/Makefile.am:30:   to `configure.ac' and run `aclocal' and `autoconf' again.\nsrc/Makefile.am:30:   If `AC_PROG_LIBTOOL' is in `configure.ac', make sure\nsrc/Makefile.am:30:   its definition is in aclocal's search path.\ntest/Makefile.am:5: Libtool library used but `LIBTOOL' is undefined\ntest/Makefile.am:5:   The usual way to define `LIBTOOL' is to add `AC_PROG_LIBTOOL'\ntest/Makefile.am:5:   to `configure.ac' and run `aclocal' and `autoconf' again.\ntest/Makefile.am:5:   If `AC_PROG_LIBTOOL' is in `configure.ac', make sure\ntest/Makefile.am:5:   its definition is in aclocal's search path.\nautoreconf: automake failed with exit status: 1\n\n##FYI evdev_drv.so is in /usr/lib/xorg/modules/input, so I don't know why the default is not working.",
+ "title": ""
+}

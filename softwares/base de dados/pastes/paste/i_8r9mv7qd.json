@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8r9mv7qd",
+ "pasteDate": "Feb 11, 2018, 2:00:04 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "command /checkp <player>:\n\tpermission: skript.checkp\n\ttrigger:\n\t\tif arg 1 is not set:\n\t\t\tmessage \"&b&l%player%&epoint&d&l%{%player%minepoint}%&e\" to player\n\t\telse:\n\t\t\tmessage \"&b&l%arg 1%&epoint&d&l%{%arg 1%minepoint}%&e\" to player",
+ "title": ""
+}

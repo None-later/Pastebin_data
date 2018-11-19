@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "78NNbcWY",
+ "pasteDate": "Feb 18, 2018, 11:42:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n\nint main (){\n    \n    \n    int i=-1, flag=0, check=0, risp=0;\n    \n    char testo[1000], lettere[1000];\n    \n    printf(\"Inserisci testo:\\n\");\n\n    \n    do {\n        \n        i++; //incremento i ad ogni iterazione del ciclo\n        \n        scanf(\"%c\", &testo[i]); //prendo in input un carattere ad ogni indice dell'array\n        \n    } while (testo[i] != '\\n'); // eseguo il ciclo fino a quando non premo \"invio\"\n    \n    int j;\n    \n    for (j = 0; j < i; j++){ //ciclo che scorre l'array testo per salvare le iniziali delle parole\n                \n        if (testo[j] == ' ' && (testo[j+1] >= 'a' && testo[j+1] <= 'z')){ //le iniziali sono quelle che \n                                                                          //hanno uno spazio vuoto che le precede.\n            lettere[check] = testo[j+1];\n            check++;\n            \n            printf(\"OK!, %c \\n\", testo[j+1]);\n        }\n    }\n    \n    \n    // insertion sort (ordino l'array in ordine alfabetico)\n    \n    int y, h;\n    char app;\n    \n    for (y=1; y<check; y++) {\n        app = lettere[y];\n        h = y-1;\n        while (y>=0 && lettere[h]>app) {\n            lettere[h+1] = lettere[h];\n            h--;\n        }\n        lettere[h+1] = app;\n    }\n    \n    int l;\n    \n    for (l = 0; l <check; l++){\n        \n        printf(\"%c\\n\", lettere[l]);\n    }\n    \n    \n    \n    int z, k=0;\n    \n    while (k<check){ //itero sull'array lettere di k\n        \n        if (lettere[k] != lettere[z]){\n            k++;\n        }\n        risp = 1;\n        \n        for (z = k+1; z <= check; z++){ //itero sull'array lettere di z\n        \n            if (lettere[k] == lettere[z]){\n                risp++;\n            }\n        }\n        printf(\"%c %d\", lettere[k], risp);\n\n    }\n    \n    printf(\"\\n\");\n}\n\n\n//devo fare un ordinamento alfabetico dell'array \"lettere[]\"",
+ "title": ""
+}

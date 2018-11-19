@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "S7Lj7N5N",
+ "pasteDate": "Feb 8, 2018, 5:54:49 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    private void qSortDishes(Dish[] array,int a, int b)\n    {\n          int i = a, r=b;\n          Dish p = array[(a+b)/2];\n          int pPrise = p.getPrice();\n\n          while(i<=r)\n          {\n              while(array[i].getPrice()>pPrise) i++;\n              while(array[r].getPrice()<pPrise) r--;\n              if(i<=r)\n              {\n                  Dish tmpDish = array[r];\n                  array[r] = array[i];\n                  array[i] = tmpDish;\n                  i++;r--;\n              }\n              if(i<b) qSortDishes(array,i,b);\n              if(r>a) qSortDishes(array,a,r);\n          }\n    }",
+ "title": ""
+}

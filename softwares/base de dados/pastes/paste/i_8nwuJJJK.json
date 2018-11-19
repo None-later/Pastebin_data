@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8nwuJJJK",
+ "pasteDate": "Feb 21, 2018, 8:54:55 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "Sqlite3Error in 'Many to Many Associations with sqlite3#method_missing with a has relationship method with arguments should affect the query used to load the Collection'\nambiguous column name: articles.id\nQuery: SELECT \"articles\".\"id\" FROM \"articles\" INNER JOIN \"articles\" ON (\"articles\".\"id\" = \"articles\".\"article_id\") INNER JOIN \"articles_authors\" ON (\"articles\".\"id\" = \"articles_authors\".\"article_id\") WHERE (\"articles\".\"article_id\" IN (2)) ORDER BY \"articles\".\"id\"",
+ "title": ""
+}

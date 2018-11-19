@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "Spae25UY",
+ "pasteDate": "Feb 11, 2018, 11:39:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# FirstJoinPlus Configuration -- Configuration Help: http://dev.bukkit.org/bukkit-plugins/firstjoinplus/ #\nsettings:\n  allow-automatic-updating: true\n  every-join-is-first-join: false\non-first-join:\n  delay-everything-below-by: 0\n  first-join-message:\n    enabled: true\n    message: '&4[Invaders]&9%player_name&8 has joined for the first time!'\n  fun-stuff:\n    play-sound:\n      enabled: true\n      sound-name: entity_player_levelup\n      listen-permission: firstjoinplus.notify\n    smoke-effect:\n      enabled: true\n    launch-firework:\n      enabled: true\n  first-join-kit:\n    enabled: true\n    items:\n    - wood_sword\n    - wood_pickaxe\n    - wood_spade\n    - wood_axe\n    - bread:5\n  give-written-books:\n    enabled: false\n    book-files:\n    - rules.txt\n  give-experience:\n    enabled: false\n    level-amount: 0\n  modify-damage:\n    disable-pvp:\n      enabled: false\n      expire-after: 10\n    god-mode:\n      enabled: false\n      expire-after: 10\n  run-commands:\n    enabled: false\n    commands:\n    - me just joined for the first time!\n  run-console-commands:\n    enabled: false\n    commands:\n    - setgroup %player_name newbies\n  apply-potion-effects:\n    enabled: false\n    effects:\n    - SPEED:1:15\n  send-messages:\n    enabled: false\n    messages:\n    - '&2Welcome to our server, %player_name! Customize this message in the FirstJoinPlus configuration.'\n    - '&6http://dev.bukkit.org/server-mods/firstjoinplus/'\n  reset-state:\n    enabled: false\n  teleport:\n    enabled: false\n    x: 0\n    y: 64\n    z: 0\n    pitch: 0\n    yaw: 0\n    world: world\nother-messages:\n  join-message:\n    enabled: true\n    message: '&4[Invaders]&9%player_name&f &8Joined the &4Invadersgame&8.'\n  quit-message:\n    enabled: true\n    message: '&4[Invaders]&9%player_name&f &8Left the &4Invadersgame&8.'\n  kick-message:\n    enabled: false\n    message: '%none'",
+ "title": ""
+}

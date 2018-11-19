@@ -1,0 +1,5 @@
+{
+  "value": "function z(t,e,n,o,r)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

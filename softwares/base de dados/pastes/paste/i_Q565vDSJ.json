@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Q565vDSJ",
+ "pasteDate": "Feb 26, 2018, 1:16:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Python\n\ndef remove_string(self, string):\n        for point in string.stones:\n            # Removing a string can create liberties for other strings.\n            for neighbor in self.neighbor_table[point]:\n                neighbor_string = self._grid.get(neighbor)\n                if neighbor_string is None:\n                    continue\n                if neighbor_string is not string:\n                    self._replace_string(neighbor_string.with_liberty(point))\n            self._grid[point] = None\n            # Remove filled point hash code.\n            self._hash ^= zobrist.HASH_CODE[point, string.color]\n            \n            \nKotlin\n\n   fun removeString(string: GoString){\n        for (point in string.stones){\n            // Removing a string can create liberties for other strings.\n            for (neighbor: Point in neighbors(point)){\n                val neighborString = grid[neighbor] ?: continue\n                if (neighborString != string) {\n                    updateStringOnGrid(neighborString.addLiberty(point))\n                }\n            }\n            grid[point] = null\n            // Remove filled point hash code.\n            zHash = zHash.xor(zobristTable.getValue(point))\n        }\n    }",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"https://www.amazon.de/gp/r.html?C\u003d2K9GBCMXDCSPJ\u0026amp;K\u003d3HA274DTY6J7R\u0026amp;M\u003durn:rtn:msg:20180211210639e2e810c10bdb496fb5e0823e70b0p0eu\u0026amp;R\u003d1XJR0VEGDG7YQ\u0026amp;T\u003dO\u0026amp;U\u003dhttps%3A%2F%2Fimages-eu.ssl-images-amazon.com%2Fimages%2FG%2F01%2Fnav%2Ftransp.gif\u0026amp;H\u003dVAD6B61OZIOYMQLT9ZTKA8SXCBKA\u0026amp;ref_\u003dpe_386171_37038121_opens",
+  "correct": true,
+  "jSonReason": "re_url"
+}

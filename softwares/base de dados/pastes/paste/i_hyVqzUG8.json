@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "hyVqzUG8",
+ "pasteDate": "Feb 26, 2018, 2:22:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public String mostrarPantallaHorario(SelectEvent event) {\n    return RUTA2;\n}",
+ "title": ""
+}

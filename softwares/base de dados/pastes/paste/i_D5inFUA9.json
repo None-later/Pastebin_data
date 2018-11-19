@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "D5inFUA9",
+ "pasteDate": "Feb 17, 2018, 9:48:17 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "public  countWords(SparkConf sparkConf, String[] args) {\n\n  // create Spark context with Spark configuration\n  JavaSparkContext sc = new JavaSparkContext(sparkConf);\n\n  // read in text file and split each document into words\n  JavaRDD<String> tokenized = sc.textFile(args[0]).flatMap(\n    new FlatMapFunction() {\n      public Iterable call(String s) {\n        return Arrays.asList(s.split(\" \"));\n      }\n    }\n  );\n\n  // count the occurrence of each word\n  JavaPairRDD<String, Integer> counts = tokenized.mapToPair(\n    new PairFunction() {\n      public Tuple2 call(String s) {\n        return new Tuple2(s, 1);\n      }\n    }\n  ).reduceByKey(\n    new Function2() {\n      public Integer call(Integer i1, Integer i2) {\n        return i1 + i2;\n      }\n    }\n  );\n\n  System.out.println(counts.collect());\n }",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_python_error"
+ ],
+ "key": "XLSGznrQ",
+ "pasteDate": "Feb 28, 2018, 12:04:06 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env python\n\n\ndef curry(func):\n    \"\"\"\n    Decorator to curry a function, typical usage:\n\n    >>> @curry\n    ... def foo(a, b, c):\n    ...    return a + b + c\n\n    The function still work normally:\n    >>> foo(1, 2, 3)\n    6\n\n    And in various curried forms:\n    >>> foo(1)(2, 3)\n    6\n    >>> foo(1)(2)(3)\n    6\n\n    This also work with named arguments:\n    >>> foo(a=1)(b=2)(c=3)\n    6\n    >>> foo(b=1)(c=2)(a=3)\n    6\n    >>> foo(a=1, b=2)(c=3)\n    6\n    >>> foo(a=1)(b=2, c=3)\n    6\n\n    And you may also change your mind on named arguments,\n    But I don't know why you may want to do that:\n    >>> foo(a=1, b=0)(b=2, c=3)\n    6\n\n    Finally, if you give more parameters than expected, the exception\n    is the expected one, not some garbage produced by the currying\n    mechanism:\n\n    >>> foo(1, 2)(3, 4)\n    Traceback (most recent call last):\n       ...\n    TypeError: foo() takes exactly 3 arguments (4 given)\n    \"\"\"\n    def curried(*args, **kwargs):\n        if len(args) + len(kwargs) >= func.__code__.co_argcount:\n            return func(*args, **kwargs)\n        return (lambda *args2, **kwargs2:\n                curried(*(args + args2), **dict(kwargs, **kwargs2)))\n    return curried\n\n\n# from @blurrcat\nfrom functools import wraps\n\ndef curry(func):\n    \"\"\"\n    >>> @curry\n    ... def foo(a, b, c):\n    ...     return a + b + c\n    >>> foo(1)\n    <function __main__.foo>\n    \"\"\"\n    @wraps(func)\n    def curried(*args, **kwargs):\n        if len(args) + len(kwargs) >= func.__code__.co_argcount:\n            return func(*args, **kwargs)\n\n        @wraps(func)\n        def new_curried(*args2, **kwargs2):\n            return curried(*(args + args2), **dict(kwargs, **kwargs2))\n\n        return new_curried\n\n    return curried\n\n\nif __name__ == \"__main__\":\n    import doctest\n    doctest.testmod()",
+ "title": ""
+}

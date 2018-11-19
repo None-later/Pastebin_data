@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "yZyEk6wt",
+ "pasteDate": "Feb 18, 2018, 5:12:28 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "void CBox::Add(const Vector2 &Point)\n{\n\tif (Point.x > Max.x)\n\t\tMax.x = Point.x;\n\tif (Point.x < Min.x)\n\t\tMin.x = Point.x;\n\tif (Point.y > Max.y)\n\t\tMax.y = Point.y;\n\tif (Point.y < Min.y)\n\t\tMin.y = Point.y;\n}",
+ "title": ""
+}

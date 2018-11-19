@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "b4Peki60",
+ "pasteDate": "Feb 28, 2018, 4:50:51 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "int main() {\n  int (*fp1)(int) = fib;\n  cpu_time(fp1);\n  return 0;\n}\n\nint fib(int n) {\n  if(n > 1)\n    return fib(n-1) + fib(n-2);\n  else\n    return 1;\n}\n\ndouble cpu_time(int (*fp)(int) ) {\n  clock_t start, finish;\n  start = clock();\n  fp(30);\n  finish = clock();\n  printf(\"%f\\n\", ((double) (finish - start)) / CLOCKS_PER_SEC);\n}",
+ "title": ""
+}

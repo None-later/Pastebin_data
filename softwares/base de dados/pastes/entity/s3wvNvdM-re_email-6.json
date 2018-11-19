@@ -1,0 +1,5 @@
+{
+  "value": "alpine-devel@lists.alpinelinux.org-524d27bb.rsa.pu",
+  "correct": true,
+  "jSonReason": "re_email"
+}

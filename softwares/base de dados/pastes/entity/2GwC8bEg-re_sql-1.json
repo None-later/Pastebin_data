@@ -1,0 +1,5 @@
+{
+  "value": "SELECT available_physical_memory_kb FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function xShake(Player,numbor,waeittime,duration)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

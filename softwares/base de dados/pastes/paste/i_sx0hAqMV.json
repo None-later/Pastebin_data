@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "sx0hAqMV",
+ "pasteDate": "Feb 10, 2018, 8:26:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\nusing namespace std;\nint a,b,x,y,r;\nint main(){\n    cout<<\"Introdu doua numere naturale,diferite si nenule : \"<<endl;\n    cin>>a;\n    cin>>b;\n    x=a;\n    y=b;\n    r=a%b;\n    while(r!=0){\n        a=b;\n        b=r;\n        r=a%b;}\n    if(b==1)\n    cout<<\"Numerele introduse sunt prime intre ele .\"<<endl;\n    else cout<<\"Numerele introduse nu sunt prime intre ele .\"<<endl;\n \n    return 0;}",
+ "title": ""
+}

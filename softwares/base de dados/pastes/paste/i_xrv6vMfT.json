@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_pass"
+ ],
+ "key": "xrv6vMfT",
+ "pasteDate": "Feb 21, 2018, 7:48:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def test_refer_physician_no_caller(self):\n    signals.referral_without_caller.disconnect(alerts.referral_without_caller)\n    \n    callback_called = Ref(False)\n    def cb(sender, **kwargs):\n        callback_called(True)\n    signals.referral_without_caller.connect(cb)\n    \n    physician = milkman.deliver(Physician, is_active=True)\n    \n    try:\n        self.vut.get(views.refer_caller_to_physician, [physician.id], {'disposition': ''})\n    except KeyError:\n        pass\n    else:\n        self.fail(\"Should have a KeyError\")\n    assert callback_called()",
+ "title": ""
+}

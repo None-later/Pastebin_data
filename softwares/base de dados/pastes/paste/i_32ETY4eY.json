@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "32ETY4eY",
+ "pasteDate": "Feb 12, 2018, 2:08:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <stdlib.h>\n\n#define DUZINA_PORUKE (13)\n\nint main(int argc, char** argv)\n{\n\t\t\t\t\t/*  Kakav li se caroban tekst krije ovde??? Pokreni i vidi */\n\tint poruka[] = {77, 105, 104, 97, 106, 108, 111, 32, 112, 101, 100, 101, 114};\n\tfor (int i = 0; i < DUZINA_PORUKE; i++) printf(\"%c\", poruka[i]);\n\n\treturn 0;\n}",
+ "title": "Mihajlo b o t"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sv"
+ ],
+ "key": "PHUgpaYz",
+ "pasteDate": "Feb 26, 2018, 11:45:10 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "int main(void)\n{\n    int sockfd; \n    socklen_t size = 2000;\n\n    union {\n       struct sockaddr sa;\n       char mas[2000];\n    }un;\n\n    sockfd = socket(AF_INET, SOCK_STREAM, 0);\n    getsockname(sockfd, (struct sockaddr*)un.mas,&size);\n    printf(\"%dnn\", un.sa.sa_family);\n\n\n    return 0;\n}\n\t\nunion {\n    struct {\n     int value; // 4 \n    };\n    struct {\n     char a; // 1 \n     char b; // 1 \n     char c; // 1 \n     char d; // 1 \n    };\n} Test;\n\t\nTest test;  \ntest.value = 0; // value = { 0000 0000 0000 0000 }\ntest.a = 1;     // value = { 0000 0000 0000 0001 }\ntest.b = 2;     // value = { 0100 0011 0010 0001 }\ntest.c = 3;     // value = { 0100 0011 0010 0001 }\ntest.d = 4;     // value = { 0100 0011 0010 0001 }\n\t\ngetsockname(sockfd, (struct sockaddr*)un.mas,&size); //      char.  ,       int ,  a,b,c,d   value.   .  ,   sa.",
+ "title": ""
+}

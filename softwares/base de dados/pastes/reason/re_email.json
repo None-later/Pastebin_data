@@ -1,0 +1,7 @@
+{
+  "corrects": 7061,
+  "incorrects": 164,
+  "reason": "re_email",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

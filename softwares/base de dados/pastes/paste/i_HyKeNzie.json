@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HyKeNzie",
+ "pasteDate": "Feb 18, 2018, 5:02:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# use dark menu bar and dock \ndefaults write /Library/Preferences/.GlobalPreferences AppleInterfaceTheme Dark",
+ "title": ""
+}

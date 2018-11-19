@@ -1,0 +1,5 @@
+{
+  "value": "function Attack1()",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

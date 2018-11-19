@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "RsU0X4Na",
+ "pasteDate": "Feb 12, 2018, 7:53:09 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<!-- in the 'repositories' section -->\n<repository>\n  <id>keytwo.net</id>\n  <name>Keytwo.net Repository</name>\n  <url>http://audiobox.keytwo.net</url>\n</repository>\n\n<!-- in the 'dependencies' section -->\n<dependency>\n  <groupId>io.socket</groupId>\n  <artifactId>socket.io-client</artifactId>\n  <version>0.2.1</version> <!-- the desidered version -->\n</dependency>\n\t\nrepositories {\n    maven { url 'http://audiobox.keytwo.net' }\n}\n\t\ndependencies {\n    ...\n    compile 'io.socket:socket.io-client:0.2.1'\n}\n\t\ncompile '<groupId>:<artifactId>:<version>'",
+ "title": ""
+}

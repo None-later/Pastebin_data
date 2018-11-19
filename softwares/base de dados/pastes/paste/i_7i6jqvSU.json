@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7i6jqvSU",
+ "pasteDate": "Feb 11, 2018, 7:03:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/usr/local/bin/python3\nfrom itertools import count\n\ndef stop():\n    raise StopIteration\n\nevery15 = set()\nlist(stop() if (n % 1000) in every15 else every15.add(n % 1000) for n in count(1, step=15))\nprint(1000 - len(every15))",
+ "title": ""
+}

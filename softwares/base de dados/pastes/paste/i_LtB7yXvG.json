@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en",
+  "re_java"
+ ],
+ "key": "LtB7yXvG",
+ "pasteDate": "Feb 24, 2018, 4:45:17 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "import com.intersys.globals.*;\n\npublic class Assignment {\n\n    public static void main(String[] args) {\n        final String user = \"Andrew\";\n        final String password = \"Tobilko\";\n\n        Connection connection = ConnectionContext.getConnection();\n        connection.connect(\"USER\", user, password);\n    }\n\n}\n\t\nException in thread \"main\" java.lang.StackOverflowError\n    at com.intersys.globals.internal.GlobalsConnectionJNI.connectImpl(Native Method)\n    at com.intersys.globals.internal.GlobalsConnectionJNI.connect(GlobalsConnectionJNI.java:107)\n    at com.tobilko.a3.Assignment.main(Assignment.java:12)\n\t\nln -s $GLOBALS_HOME/bin/libisccache.dylib /usr/local/lib\nln -s $GLOBALS_HOME/bin/liblcbjni.dylib /usr/local/lib\nln -s $GLOBALS_HOME/bin/liblcbindnt.dylib /usr/local/lib\nln -s $GLOBALS_HOME/bin/liblcbclientnt.dylib /usr/local/lib\nln -s $GLOBALS_HOME/bin/libmdsjni.dylib /usr/local/lib",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "json",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HvAcMEdK",
+ "pasteDate": "Feb 10, 2018, 9:48:55 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\"is_half_type_available\":false,\"id\":213479,\"name\":\"4 Zealer Burgers Deal\",\"code\":null,\"description\":null,\"file_path\":\"\",\"logo_path\":\"\",\"half_type\":null,\"product_variations\":[{\"id\":278164,\"code\":null,\"name\":\"Serves 4\",\"price\":720,\"price_before_discount\":null,\"container_price\":0,\"choices\":[],\"toppings\":[]}],\"master_category_id\":null,\"is_prepacked_item\":null,\"exclude_dish_information\":null,\"has_dish_information\":null,\"is_sold_out\":null}",
+ "title": ""
+}

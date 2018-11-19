@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ahqyvrHC",
+ "pasteDate": "Feb 20, 2018, 5:56:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<bits/stdc++.h>\n#define LL long long\n#define P_B push_back\n#define S second\n#define F first\nusing namespace std;\nconst LL INF = 10e9;\nvector< pair<LL,LL> > v[200010];\nset< pair<LL,LL> > q;\nLL A[200010];\nint main()\n{\n     LL n,m;\n     cin>>n>>m;\n     for ( int i = 1; i <= m; i++ )\n     {\n          LL x,y,z;\n          cin>>x>>y>>z;\n          v[x].P_B(make_pair(y,z));\n          v[y].P_B(make_pair(x,z));\n     }\n        for ( int i = 1; i <= n; i++ )\n        {\n             cin>>A[i];\n        }\n          for ( int i = 1; i <= n; i++ )\n          {\n              LL min1 = INF;\n             vector<LL>dist( n + 1 , INF );\n             dist[i] = 0;\n             q.insert(make_pair(dist[i],i));\n             while ( !q.empty() )\n             {\n                  LL x = q.begin()->S;\n                  q.erase(q.begin());\n                  for ( int j = 0; j < v[x].size(); j++ )\n                  {\n                       LL to = v[x][j].F,\n                       len = v[x][j].S;\n                       if ( dist[x] + len < dist[to] )\n                       {\n                            q.erase(make_pair(dist[to],to));\n                            dist[to] = len + dist[x];\n                            q.insert(make_pair(dist[to],to));\n                            min1 = min(min1,2 * (len + dist[x]) + A[to]);\n                       }\n                  }\n             }\n                 cout<<min(A[i],min1)<<\" \";\n          }\n}",
+ "title": ""
+}

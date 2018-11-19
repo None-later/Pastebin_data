@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "php",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "N483pWu3",
+ "pasteDate": "Feb 18, 2018, 1:03:21 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Aseco::addChatCommand('delghosts', 'Deletes inactive players from database', true);\n\t \t} elseif ($command['params'][0] == 'delghosts') {\n\n\t$sql = \"SELECT Id, Login FROM players WHERE Id NOT IN (SELECT playerID FROM rs_rank)\";\n\t$result = mysql_query($sql);\n\t$anzahl = 0;\n\n\t\twhile ($row = mysql_fetch_array($result)) {\n\n\t\t\t$playerid = $row['Id'];\n\t\t\t$playerlogin = $row['Login'];\n\t\t\t$anzahl = $anzahl+1;\n\n\t\t\t$query = mysql_query(\"DELETE FROM `players` WHERE `Id`='\". $playerid.\"';\");\n\t\t\t$query = mysql_query(\"DELETE FROM `players_extra` WHERE `playerID`='\". $playerid.\"';\");\n\t\t\t$query = mysql_query(\"DELETE FROM `records` WHERE `PlayerId`='\". $playerid.\"';\");\n\t\t\t$query = mysql_query(\"DELETE FROM `rs_karma` WHERE `PlayerId`='\". $playerid.\"';\");\n\t\t\t$query = mysql_query(\"DELETE FROM `rs_rank` WHERE `playerID`='\". $playerid.\"';\");\n\t\t\t$query = mysql_query(\"DELETE FROM `rs_times` WHERE `playerID`='\". $playerid.\"';\");\n\t\t\tmysql_query($query);\n\t\t}\n\n\t\tif (mysql_num_rows($result) > 0) {\n\n\t\t\tif ($anzahl == 1) {\n\t\t\t\t$players = 'player';\n\t\t\t} else {\n\t\t\t\t$players = 'players';\n\t\t\t}\n\n\t\t\t$message = '$s$f00Note: $fff'.$anzahl.' inactive '.$players.' have been deleted from the Database!';\n\t\t} else {\n\t\t\t$message = '$s$f00Note: $fffno inactive player(s) found.';\n\t\t}\n\n\t$aseco->client->query('ChatSendServerMessage', $aseco->formatColors($message));",
+ "title": ""
+}

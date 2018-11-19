@@ -1,0 +1,5 @@
+{
+  "value": "Function.prototype.bind)Function.prototype.bind\u003dfunction(a)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

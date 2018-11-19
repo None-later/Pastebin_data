@@ -1,0 +1,5 @@
+{
+  "value": "function lock()",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

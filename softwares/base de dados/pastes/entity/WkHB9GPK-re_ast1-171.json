@@ -1,0 +1,5 @@
+{
+  "value": "function\")returntrue;varl\u003dk.prototype;returnk\u003d\u003dnull||typeofk!\u003d\u003d\"function\"||typeofl.clear!\u003d\u003d\"function\"||newk()",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

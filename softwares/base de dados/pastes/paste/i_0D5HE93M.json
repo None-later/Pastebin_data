@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0D5HE93M",
+ "pasteDate": "Feb 26, 2018, 11:19:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n\t\"always_show_minimap_viewport\": true,\n\t\"auto_complete_delay\": 0,\n\t\"auto_find_in_selection\": false,\n\t\"bold_folder_labels\": true,\n\t\"caret_style\": \"phase\",\n\t\"color_scheme\": \"Packages/Theme - City Lights/City-Lights.tmTheme\",\n\t\"create_window_at_startup\": \"false\",\n\t\"ensure_newline_at_eof_on_save\": true,\n\t\"fade_fold_buttons\": false,\n\t\"findreplace_small\": true,\n\t\"font_face\": \"FiraCode-Regular\",\n\t\"font_size\": 13,\n\t\"highlight_line\": true,\n\t\"highlight_modified_tabs\": true,\n\t\"hot_exit\": false,\n\t\"ignored_packages\":\n\t[\n\t\t\"Vintage\"\n\t],\n\t\"line_numbers\": true,\n\t\"line_padding_bottom\": 9,\n\t\"line_padding_top\": 9,\n\t\"margin\": 20,\n\t\"overlay_scroll_bars\": \"enabled\",\n\t\"remember_open_files\": false,\n\t\"save_on_focus_lost\": true,\n\t\"scroll_past_end\": true,\n\t\"show_definitions\": false,\n\t\"show_encoding\": true,\n\t\"show_panel_on_build\": false,\n\t\"sidebar_large\": true,\n\t\"skin\": \"DA UI/Origin\",\n\t\"tab_size\": 4,\n\t\"theme\": \"DA.sublime-theme\",\n\t\"translate_tabs_to_spaces\": true,\n\t\"trim_trailing_white_space_on_save\": true,\n\t\"use_simple_full_screen\": true,\n\t\"wide_caret\": true,\n\t\"word_wrap\": false\n}",
+ "title": ""
+}

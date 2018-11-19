@@ -1,0 +1,14 @@
+{
+ "espireDate": "1W",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_ro",
+  "kw_target"
+ ],
+ "key": "F1EmYhS0",
+ "pasteDate": "Feb 26, 2018, 2:30:02 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "[Unit]\nDescription= --tutaj jaki opis--\nAfter=network.target\n\n[Service]\nType=simple\nUser= -- linux user name--\nExecStart= -- polecenie do wykonania lub usuga do uruchomienia --\nRestart=on-failure\n\n[Install]\nWantedBy=multi-user.target",
+ "title": ""
+}

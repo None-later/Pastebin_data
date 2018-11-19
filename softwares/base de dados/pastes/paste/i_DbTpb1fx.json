@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DbTpb1fx",
+ "pasteDate": "Feb 26, 2018, 1:02:52 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#include \"Wabbit.h\"\n#include <iostream>\n#include <stdlib.h>\n#include <time.h>\nusing namespace std;\n\nWabbit::Wabbit()\n{\n\tsrand(time(NULL));\n\tthis->age = 0;\n\tthis->myColor = (color)(rand() % 4);\n\tthis->mySex = (sex)(rand() % 2);\n}\n\nWabbit::Wabbit(int age, sex mySex, color myColor)\n{\n\tthis->age = age;\n\tthis->myColor = myColor;\n\tthis->mySex = mySex;\n}\n\nvoid Wabbit::changeWabbitSex()\n{\n\tif (age >= 6)\n\t{\n\t\tcout << \"Cannot transform to vampire.\" << endl;\n\t}\n\telse mySex = vampire;\n}\n\nint Wabbit::getAge()\n{\n\treturn age;\n}\n\nvoid Wabbit::setAge(int age)\n{\n\tthis->age = age;\n}\n\nsex Wabbit::getSex()\n{\n\treturn mySex;\n}\n\ncolor Wabbit::getColor()\n{\n\treturn myColor;\n}\n\nvoid Wabbit::setSex(sex mySex)\n{\n\tthis->mySex = mySex;\n}\n\nvoid Wabbit::setColor(color myColor)\n{\n\tthis->myColor = myColor;\n}\n________\n\n#pragma once\nenum sex\n{\n\tmale,\n\tfemale,\n\tvampire\n};\n\nenum color\n{\n\tblack,\n\tyellow,\n\tred,\n\tblue\n};\n\nclass Wabbit\n{\nprivate:\n\tint age;\n\tsex mySex;\n\tcolor myColor;\n\npublic:\n\tWabbit();\n\tWabbit(int age, sex mySex, color myColor);\n\n\tvoid changeWabbitSex();\n\tvoid setAge(int age);\n\tvoid setSex(sex mySex);\n\tvoid setColor(color myColor);\n\n\tint getAge();\n\tsex getSex();\n\tcolor getColor();\n};\n_____\n\n#include <iostream>\n#include \"Wabbit.h\"\nusing namespace std;\n\nint main()\n{\n\tint n;\n\tcin >> n;\n\tWabbit* wabbits = new Wabbit[n];\n\tfor (size_t i = 0; i < n; i++)\n\t{\n\t\tcout << wabbits[i].getSex() << \" \";\n\n\t\tcout << wabbits[i].getAge() << \" \";\n\n\t\tcout << wabbits[i].getColor() << \" \";\n\t}\n\t\n}",
+ "title": ""
+}

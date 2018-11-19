@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NTYyS74C",
+ "pasteDate": "Feb 18, 2018, 5:37:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import requests\n\nFORM_LINK = 'YOUR FORM LINK'\nOPTION = 'OPTION YOU WANT'\nFORM_ID = 'YOUR ID (check in headers of form submission)'\n\ndata = {\n    f'entry{FORM_ID}': OPTION,\n    'fvv': 1,\n    'pageHistory': 0,\n    'draftResponse': [],\n    'pageHistory': 0\n}\n\n# LOL\nwhile True:\n    r = requests.post(f'{FORM_LINK}/formResponse', data=data)\n    print(r.status_code, r.reason)",
+ "title": ""
+}

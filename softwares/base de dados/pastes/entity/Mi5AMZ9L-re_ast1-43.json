@@ -1,0 +1,5 @@
+{
+  "value": "function TrailEffect(BRICKCOLOR, MATERIAL, CURRENTCFRAME, OLDCFRAME, MESHTYPE, REFLECTANCE, SIZE, ROTATION, X, Y, Z, delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

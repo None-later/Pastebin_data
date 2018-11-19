@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mTJiH7SS",
+ "pasteDate": "Feb 12, 2018, 5:40:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<serial number> fastboot\n\t\n\"Do commands manually, one at a time - checking that each one returns an [OKAY].\"\n\t\nfastboot oem fb_mode_set\n\t\nfastboot flash bootloader bootloader.img\n\nfastboot flash logo logo.bin\n\nfastboot flash boot boot.img\n\nfastboot flash recovery recovery.img\n\nfastboot flash system system.img_sparsechunk.0\n\nfastboot flash system system.img_sparsechunk.1\n\nfastboot flash system system.img_sparsechunk.2\n\nfastboot flash system system.img_sparsechunk.3\n\nfastboot flash system system.img_sparsechunk.4\n\nfastboot flash modem NON-HLOS.bin\n\nfastboot erase modemst1\n\nfastboot erase modemst2\n\nfastboot flash fsg fsg.mbn\n\nfastboot erase cache\n\nfastboot erase userdata\n\nfastboot erase customize\n\nfastboot erase clogo\n\nfastboot oem fb_mode_clear\n\nfastboot reboot\n\t\nfastboot flash recovery {TWRP File's Name with extension}\n\t\nfastboot boot {TWRP File's Name with extension}",
+ "title": ""
+}

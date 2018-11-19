@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sVzCnH8k",
+ "pasteDate": "Feb 21, 2018, 7:08:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class News: Object {\n\n dynamic var newsID: String = \"\"\n dynamic var newsTitle: String = \"\"\n dynamic var newsFullText: String = \"\"\n dynamic var newsImage: String = \"\"\n dynamic var newsAutor: String = \"\"\n dynamic var newsCommentCount: String = \"\"\n dynamic var newsSeenCount: String = \"\"\n dynamic var newsDate: String = \"\"\n dynamic var newsCategory: String = \"\"\n\n   override static func primaryKey() -> String? {\n    return \"newsID\"\n   }\n}\n\t\nlet realm = try! Realm()\nlet menuName = realm.objects(News)\nfor i in menuName.filter(\"newsCategory\") {\nnameLabel.text = i.newsCategory\n}\n\t\n// Query all users\nlet allUsers = Realm().objects(User)\n\n// Map out the user types\nlet allTypes = map(allUsers) { $0.type }\n\n// Fun part: start with empty array [], add in element to reduced array if its not already in, else add empty array\nlet distinctTypes = reduce(allTypes, []) { $0 + (!contains($0, $1) ? [$1] : [] )\n\t\nlet distinctTypes = Set(Realm().objects(User).valueForKey(\"type\") as! [String])",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "0sjhsZVt",
+ "pasteDate": "Feb 8, 2018, 2:25:01 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "<?php\n$servername = 'localhost';\n$username = 'root';\n$password = '********';\n$dbname = 'mysqldb';\n\n$connect = mysqli_connect($servername, $username, $password, $dbname);\nif ($connect == 0) {\n    echo \"SORRY SCORE SERVER CONNECTION ERROR\";\n} else {}\n\nmysqli_select_db($connect, $dbname);\n\n$User_Id2 = $_POST[\"User_Id\"];\n$User_Id = $User_Id2 + 0;\n\n$sql = \"select * from Users where User_Id = '\".$User_Id.\"'\";\n$result = mysqli_query($connect, $sql);\n\n$rows = array();\n$return = array();\nwhile($row = mysqli_fetch_array($result)) {\n    $rows['User_Id'] = $row['User_Id'];\n    $rows['Dia_Qty'] = $row['Dia_Qty'];\n    $rows['Fighter_Info'] = $row['Fighter_Info'];\n    $rows['InvBonus'] = $row['InvBonus'];\n\n    array_push($return, $rows);\n}\n\nheader(\"Content-type:application/json\");\necho json_encode($return);\n\nmysqli_close($connect);\n?>",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "1W",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "7fzc8vyR",
+ "pasteDate": "Feb 11, 2018, 7:23:08 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "- <Event xmlns=\"http://schemas.microsoft.com/win/2004/08/events/event\">\n- <System>\n  <Provider Name=\"Microsoft-Windows-MemoryDiagnostics-Results\" Guid=\"{5F92BC59-248F-4111-86A9-E393E12C6139}\" /> \n  <EventID>1102</EventID> \n  <Version>0</Version> \n  <Level>2</Level> \n  <Task>0</Task> \n  <Opcode>0</Opcode> \n  <Keywords>0x8000000000000000</Keywords> \n  <TimeCreated SystemTime=\"2018-02-11T18:35:46.381917800Z\" /> \n  <EventRecordID>4694</EventRecordID> \n  <Correlation /> \n  <Execution ProcessID=\"8400\" ThreadID=\"8404\" /> \n  <Channel>System</Channel> \n  <Computer>James</Computer> \n  <Security UserID=\"S-1-5-18\" /> \n  </System>\n- <UserData>\n- <Results xmlns=\"http://manifests.microsoft.com/win/2005/08/windows/Reliability/Postboot/Events\">\n  <LaunchType>Manual</LaunchType> \n  <CompletionType>Fail</CompletionType> \n  <MemorySize>8140</MemorySize> \n  <TestType>10</TestType> \n  <TestDuration>707</TestDuration> \n  <TestCount>12</TestCount> \n  <NumPagesTested>2069780</NumPagesTested> \n  <NumPagesUnTested>2228</NumPagesUnTested> \n  <NumBadPages>1</NumBadPages> \n  <T1NumBadPages>1</T1NumBadPages> \n  <T2NumBadPages>1</T2NumBadPages> \n  <T3NumBadPages>1</T3NumBadPages> \n  <T4NumBadPages>1</T4NumBadPages> \n  <T5NumBadPages>1</T5NumBadPages> \n  <T6NumBadPages>1</T6NumBadPages> \n  <T7NumBadPages>1</T7NumBadPages> \n  <T8NumBadPages>1</T8NumBadPages> \n  <T9NumBadPages>1</T9NumBadPages> \n  <T10NumBadPages>1</T10NumBadPages> \n  <T11NumBadPages>1</T11NumBadPages> \n  <T12NumBadPages>1</T12NumBadPages> \n  <T13NumBadPages>0</T13NumBadPages> \n  <T14NumBadPages>0</T14NumBadPages> \n  <T15NumBadPages>0</T15NumBadPages> \n  <T16NumBadPages>0</T16NumBadPages> \n  </Results>\n  </UserData>\n  </Event>",
+ "title": "mdsched.exe"
+}

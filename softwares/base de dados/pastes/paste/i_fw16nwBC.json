@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "fw16nwBC",
+ "pasteDate": "Feb 28, 2018, 9:51:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "module Rack\n  class Callbacks\n    def initialize(&block)\n      @before = []\n      @after  = []\n      instance_eval(&block) if block_given?\n    end\n\n    def before(middleware, *args, &block)\n      if block_given?\n        @before << middleware.new(*args, &block)\n      else\n        @before << middleware.new(*args)\n      end\n    end\n\n    def after(middleware, *args, &block)\n      if block_given?\n        @after << middleware.new(*args, &block)\n      else\n        @after << middleware.new(*args)\n      end\n    end\n\n    def run(app)\n      @app = app\n    end\n\n    def call(env)\n      @before.each {|c| c.call(env) }\n      response = @app.call(env)\n      @after.each {|c| c.call(env) }\n      response\n    end\n  end\nend",
+ "title": ""
+}

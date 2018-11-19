@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "qqBwEYgB",
+ "pasteDate": "Feb 26, 2018, 12:24:19 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SELECT\n   PRIMER_APELLIDO||' '||SEGUNDO_APELLIDO||' '||  PRIMER_NOMBRE||' '||SEGUNDO_NOMBRE as nombre\n   FROM df_base_total;",
+ "title": ""
+}

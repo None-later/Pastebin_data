@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "lg_en"
+ ],
+ "key": "QpHUjdLJ",
+ "pasteDate": "Feb 28, 2018, 12:47:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/* Arduino Security System with the Keypad and LCD */\n\n#include <LiquidCrystal.h> //include LCD library (standard library)\n#include <Keypad.h> //include keypad library - first you must install library (library link in the video description)\n\n#define redLED 10 //define the LED pins\n#define greenLED 11\n\nchar* password =\"1234\"; //create a password\nint pozisyon = 0; //keypad position\n\nconst byte rows = 4; //number of the keypad's rows and columns\nconst byte cols = 4;\n\nchar keyMap [rows] [cols] = { //define the cymbols on the buttons of the keypad\n\n  {'1', '2', '3', 'A'},\n  {'4', '5', '6', 'B'},\n  {'7', '8', '9', 'C'},\n  {'*', '0', '#', 'D'}\n};\n\nbyte rowPins [rows] = {1, 2, 3, 4}; //pins of the keypad\nbyte colPins [cols] = {5, 6, 7, 8};\n\nKeypad myKeypad = Keypad( makeKeymap(keyMap), rowPins, colPins, rows, cols);\n\nLiquidCrystal lcd (A0, A1, A2, A3, A4, A5); // pins of the LCD. (RS, E, D4, D5, D6, D7)\n\nvoid setup(){\n\n  lcd.begin(16, 2);\n  pinMode(redLED, OUTPUT);  //set the LED as an output\n  pinMode(greenLED, OUTPUT);\n  setLocked (true); //state of the password\n}\n\nvoid loop(){\n\n  char whichKey = myKeypad.getKey(); //define which key is pressed with getKey\n\n  lcd.setCursor(0, 0);\n  lcd.print(\"    Welcome\");\n  lcd.setCursor(0, 1);\n  lcd.print(\" Enter Password\");\n\n  if(whichKey == '*' || whichKey == '#' || whichKey == 'A' ||       //define invalid keys\n  whichKey == 'B' || whichKey == 'C' || whichKey == 'D'){\n\n    pozisyon=0;\n    setLocked (true);\n    lcd.clear();\n    lcd.setCursor(0, 0);\n    lcd.print(\"  Invalid Key!\");\n    delay(1000);\n    lcd.clear();\n  }\n  if(whichKey == password [pozisyon]){\n\n    pozisyon ++;\n  }\n  if(pozisyon == 4){\n    setLocked (false);\n    lcd.clear();\n    lcd.setCursor(0, 0);\n    lcd.print(\"*** Verified ***\");\n    delay(3000);\n    lcd.clear();\n    lcd.setCursor(0, 0);\n    lcd.print(\"  Mert Arduino\");\n    lcd.setCursor(0, 1);\n    lcd.print(\"Tutorial Project\");\n    delay(7000);\n    lcd.clear();\n  }\n  delay(100);\n}\n\nvoid setLocked(int locked){\n  if(locked){\n    digitalWrite(redLED, HIGH);\n    digitalWrite(greenLED, LOW);\n    }\n    else{\n      digitalWrite(redLED, LOW);\n      digitalWrite(greenLED, HIGH);\n    }\n  }",
+ "title": ""
+}

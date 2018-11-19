@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_op",
+  "lg_en"
+ ],
+ "key": "KvEntFLT",
+ "pasteDate": "Feb 11, 2018, 4:31:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "restart;\nEq1:=diff(u(eta,t),t)=diff(u(eta,t),eta$2);\nBCs := {u(0,t)=sin(t), u(10,t)=0};\nICs := {u(eta,0)=0};\nsys:={Eq1};\npds:= pdsolve(sys,ICs union BCs,numeric,time=t,range=0..10);\np1:= pds:-plot3d(u(eta,t),t=0..35,eta=0..10,grid=[360,360]):\n\t\nA:= op([1,3],p1):\n  a,b:= op(op([1,1],p1)):\n  c,d:= op(op([1,2],p1)):\n  m:= rhs(rtable_dims(A)[1]):\n  n:= rhs(rtable_dims(A)[2]):\n  for i from 1 to m do\n   for j from 1 to n do\n     X:= ((m-i)*a + (i-1)*b)/(m-1);\n     Y:= ((n-j)*c + (j-1)*d)/(n-1);\n     fprintf(\"C:/tcdata/SL1.txt\",\n         \"%f  %f  %fn\",Y,X,A[i,j]);\n   end do\n  end do:\n  close(\"C:/tcdata/SL1.txt\"):\n\t\n0.000000  0.000000  0.000000\n0.097493  0.000000  0.102694\n0.194986  0.000000  0.200925\n0.292479  0.000000  0.294693\n0.389972  0.000000  0.383998\n0.487465  0.000000  0.468841\n0.584958  0.000000  0.549221\n0.682451  0.000000  0.625138\n0.779944  0.000000  0.696593\n0.877437  0.000000  0.763584\n..............\n\t\nClearAll[\"Global`*\"];\n\npdeset = {Derivative[1, 0][U][t, x] == Derivative[0, 2][U][t, x]}\n\nics = {U[0, x] == 0};\n\nbcs = {U[t, 0] == Sin[t], U[t, 10] == 0};    \n\nbcAll = Flatten[{ics, bcs}, 1];    \n\nsol = NDSolve[{pdeset, bcAll}, {U}, {t, 0, 35}, {x, 0, 10}];\n\nPlot3D[(U /. First@sol)[t, x],  {t, 0, 35}, {x, 0, 10},\n PlotRange -> All]",
+ "title": ""
+}

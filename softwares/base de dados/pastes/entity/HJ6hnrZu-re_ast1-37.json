@@ -1,0 +1,5 @@
+{
+  "value": "function_exists(\"fs_copy_dir\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

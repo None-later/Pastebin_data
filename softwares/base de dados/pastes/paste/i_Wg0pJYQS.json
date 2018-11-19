@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_#5",
+  "lg_en"
+ ],
+ "key": "Wg0pJYQS",
+ "pasteDate": "Feb 26, 2018, 12:53:39 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "26/02/2018 11:50:18: DEBUG - Checking if the PSO2 Tweaker is running\n26/02/2018 11:50:33: DEBUG - Program started! - Logging enabled!\n26/02/2018 11:50:33: DEBUG - Attempting to auto-load pso2_bin directory from settings\n26/02/2018 11:50:39: DEBUG - Selecting PSO2 Directory...\n26/02/2018 11:50:47 C:\\PHANTASYSTARONLINE2\\pso2_bin set as your PSO2 Directory. [OK!]\n26/02/2018 11:50:47: DEBUG - Pursuing freedom...\n26/02/2018 11:50:48: DEBUG - Loading settings...\n26/02/2018 11:50:48: DEBUG - O servidor remoto retornou um erro: (500) Erro Interno do Servidor. Stack Trace:    em System.Net.WebClient.DownloadDataInternal(Uri address, WebRequest",
+ "title": "Error Log report"
+}

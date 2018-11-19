@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "re_html_xml",
+  "re_css",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "cY7EnTbb",
+ "pasteDate": "Feb 18, 2018, 7:10:47 AM",
+ "relevancy": -6.0,
+ "relevant": false,
+ "text": "<!doctype html>\n<html>\n\n<head>\n\t<title>HTML Table Insert Demo</title>\n\n</head>\n\n<body>\n\n<style>\ntable {\n\tfont-family: arial, sans-serif;\n\tborder-collapse: collapse;\n\twidth: 100%;\n}\n\ntd, th {\n\tborder: 1px solid #dddddd;\n\ttext-align: left;\n\tpadding: 8px;\n}\n\ntr:nth-child(even) {\n\tbackground-color: #dddddd;\n}\n</style>\n\n<body>\n\n<p>Click the button to add a new row at the first position of the table and then add cells and content.<br>\n<button onclick=\"myFunction()\">Try it</button><br>\n</p>\n\n<table id=\"myTable\">\n  <tr>\n\t<td>ROW:3 CELL:A</td>\n\t<td>ROW:3 CELL:B</td>\n  </tr>\n  <tr>\n\t<td>ROW:2 CELL:A</td>\n\t<td>ROW:2 CELL:B</td>\n  </tr>\n  <tr>\n\t<td>ROW:1 CELL:A</td>\n\t<td>ROW:1 CELL:B</td>\n  </tr>\n</table>\n<br>\n\n<script>\nvar counter = 4;\nfunction myFunction() {\n\tvar table = document.getElementById(\"myTable\");\n\tvar row = table.insertRow(0);\n\tvar cell1 = row.insertCell(0);\n\tvar cell2 = row.insertCell(1);\n\tvar string_counter = counter.toString()\n\tcell1.innerHTML = \"ROW:\" + string_counter + \" CELL:A (New)\";\n\tcell2.innerHTML = \"ROW:\" + string_counter + \" CELL:B (New)\";\n\tcounter++;\n}\n</script>\n\n</body>\n</html>\n\n</body>\n\n</html>",
+ "title": "HTML Table Insert Demo"
+}

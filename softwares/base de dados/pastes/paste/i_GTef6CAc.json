@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GTef6CAc",
+ "pasteDate": "Feb 21, 2018, 11:14:29 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from krita import *\n\ndef add_document_to_window():\n    d = Application.createDocument(100, 100, \"Test\", \"RGBA\", \"U8\", \"\", 120.0)\n    Application.activeWindow().addView(d)\n    \nadd_document_to_window()",
+ "title": ""
+}

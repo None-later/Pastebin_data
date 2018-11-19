@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5tjZdkdh",
+ "pasteDate": "Feb 23, 2018, 1:18:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "err.Raise 999,,\"EA\"\nerr.Raise err.Number:= 999,err.Description:= \"EA\"\n\t\nerr.Raise Number:=999, Description:= \"EA\"\n\t\nwb.SaveAs \"myFile.xlsx\", xlOpenXMLWorkbook, \"Password123\", \"Passsword123\", True,,,,,,,,\n\t\nwb.SaveAs FileName:=\"myFile.xlsx\", FileFormat:=xlOpenXMLWorkbook, CreateBackup:=False, Local:=True\n\t\nwb.SaveAs wb.FileName:=\"myFile.xlsx\", wb.FileFormat:=xlOpenXMLWorkbook",
+ "title": ""
+}

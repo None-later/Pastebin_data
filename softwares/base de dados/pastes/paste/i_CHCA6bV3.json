@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CHCA6bV3",
+ "pasteDate": "Feb 12, 2018, 8:29:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Article(models.Model):\n    title = models.CharField(max_length=256)\n    slug = models.SlugField(max_length=256)\n    short_content = RichTextField(config_name='awesome_ckeditor')\n    full_content = RichTextField(config_name='awesome_ckeditor')\n    cover = models.ImageField(blank=True, upload_to='uploaded_images')\n    cropping = ImageRatioField('cover', '200x200')\n    show = models.BooleanField(default=0)\n    visits = models.BooleanField(default=0)\n\t\n@property\n def full_name(self):\n     \"Returns the person's full name.\"\n     return '%s %s' % (self.first_name, self.last_name)\n\t\nclass Article(models.Model):\n    title = models.CharField(max_length=256)\n    slug = models.SlugField(max_length=256)\n    short_content = RichTextField(config_name='awesome_ckeditor')\n    full_content = RichTextField(config_name='awesome_ckeditor')\n    cover = models.ImageField(blank=True, upload_to='uploaded_images')\n    show = models.BooleanField(default=0)\n    visits = models.BooleanField(default=0)\n\n    @property\n    def cropping(self):\n        \"Returns cropped image.\"\n        return <--       -->",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5LrNQR98",
+ "pasteDate": "Feb 11, 2018, 8:56:07 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--- /1/droid/_mkimg/u-boot/configs/nanopi_m1_plus_defconfig     2018-02-11 11:54:50.187073295 +0100\n+++ /1/droid/_mkimg/u-boot/configs/orangepi_plus2e_defconfig    2017-07-31 21:53:18.270466092 +0200\n@@ -1,20 +1,23 @@\n CONFIG_ARM=y\n CONFIG_ARCH_SUNXI=y\n CONFIG_MACH_SUN8I_H3=y\n-CONFIG_DRAM_CLK=528\n+CONFIG_DRAM_CLK=624\n CONFIG_DRAM_ZQ=3881979\n CONFIG_DRAM_ODT_EN=y\n-CONFIG_MMC0_CD_PIN=\"PH13\"\n+CONFIG_MACPWR=\"PD6\"\n CONFIG_MMC_SUNXI_SLOT_EXTRA=2\n-CONFIG_DEFAULT_DEVICE_TREE=\"sun8i-h3-nanopi-m1-plus\"\n+CONFIG_DEFAULT_DEVICE_TREE=\"sun8i-h3-orangepi-plus2e\"\n # CONFIG_SYS_MALLOC_CLEAR_ON_INIT is not set\n CONFIG_SPL=y\n+CONFIG_SPL_I2C_SUPPORT=y\n # CONFIG_CMD_IMLS is not set\n # CONFIG_CMD_FLASH is not set\n # CONFIG_CMD_FPGA is not set\n # CONFIG_SPL_DOS_PARTITION is not set\n # CONFIG_SPL_ISO_PARTITION is not set\n # CONFIG_SPL_EFI_PARTITION is not set\n+# CONFIG_SUN8I_EMAC=y\n+CONFIG_SY8106A_POWER=y\n CONFIG_USB_OHCI_HCD=y\n CONFIG_USB_OHCI_GENERIC=y\n CONFIG_USB_EHCI_GENERIC=y",
+ "title": ""
+}

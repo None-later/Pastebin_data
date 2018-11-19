@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SzA7ZWTY",
+ "pasteDate": "Feb 21, 2018, 1:17:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php \nini_set(\"display_errors\", 1);\n    header(\"Content-Type: text/html; charset=UTF-8\");\n    Error_Reporting(E_ALL & ~E_NOTICE);\n   \n    echo \"0. <br>\";\n    $message = \"\";    \n    if (isset($_POST[\"name\"])) {            \n        $data = array_map('strip_tags', $_POST);\n        $data = array_map('trim', $data);\n        $name = $data[\"name\"];\n        if ($_POST[\"rem\"]) {\n            $message = \" $name.\".\"<br>\";    \n            } \n            else $message = \" $name.\".\"<br>\";  \n                \n    }   \n    echo $message; \n    echo \"<br>\";\n\n    echo \"1. <br>\";\n    $italy = $_POST[\"italy\"];\n    if ($_POST[\"italy\"] == \"yes\") {\n        echo \" <br>\";\n    }\n    else echo \" <br>\";\n    echo \"<br>\";\n\n    echo \"2. <br>\";\n    $educ = $_POST[\"educ\"];\n    switch ($educ) {\n        case 'highEduc':\n            echo \"\";\n            break;\n        case 'higherEduc':\n            echo \"\";\n            break;\n         case 'unfHigherEduc':\n            echo \" \";\n            break;\n        \n        default:\n            break;\n    }\n    echo \"<br>\";\n    echo \"<br>\";\n\n    echo \"3. <br>\";\n    $educ1 = $_POST[\"educ1\"];\n    switch ($educ1) {\n        case 'highEduc':\n            echo \"\";\n            break;\n        case 'higherEduc':\n            echo \"\";\n            break;\n         case 'unfHigherEduc':\n            echo \" \";\n            break;\n        \n        default:\n            break;\n    }\n    echo \"<br>\";\n    echo \"<br>\";\n\n    echo \"4. <br>\";\n    $gender = $_POST[\"gender\"];\n    if ($_POST[\"gender\"] == \"femail\") {\n        echo \" <br>\";\n    }\n    else echo \" <br>\";\n    \n?>",
+ "title": ""
+}

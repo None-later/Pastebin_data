@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "97Y5BzTS",
+ "pasteDate": "Feb 27, 2018, 11:29:01 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "switch ($modx->event->name) {\n    case 'pdoToolsOnFenomInit':\n        $fenom->addModifier('rus_date', function ($input) use ($modx) {\n           $months = array(\n            '01'=>'',\n            '02'=>'',\n            '03'=>'',\n            '04'=>'',\n            '05'=>'',\n            '06'=>'',\n            '07'=>'',\n            '08'=>'',\n            '09'=>'',\n            '10'=>'',\n            '11'=>'',\n            '12'=>''\n            );\n           if($id = $modx->getObject('modResource', array('id'=>$input))){\n               $str = explode(\" \",$id->get('publishedon'));\n                $str =$str[0];\n                $str = explode(\"-\", $str);\n                $str = array_reverse($str);\n                return $str[0].' '.$months[$str[1]].' '.$str[2];\n           }\n            \n        });\n        break;\n}",
+ "title": ""
+}

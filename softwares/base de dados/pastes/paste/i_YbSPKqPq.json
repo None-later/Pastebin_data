@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "YbSPKqPq",
+ "pasteDate": "Feb 28, 2018, 4:43:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def display_location\n    @cart = find_cart\n    @items = @cart.items\n    if @probs.nil?\n      @props = params[:search].values\n    \n    @listings = Listing.find(:all,\n                     :conditions => [\"station IN (?)\", @props],\n                     :order => \"budget DESC\",\n                     :page => { :size => 1,\n                                :current => 1 })\n  end",
+ "title": ""
+}

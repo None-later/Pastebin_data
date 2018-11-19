@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "a38yKM4Q",
+ "pasteDate": "Feb 10, 2018, 4:39:59 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "x = [1,2,3,4,5,2,3]\ny = sort(x)\nprint (y[-1])",
+ "title": ""
+}

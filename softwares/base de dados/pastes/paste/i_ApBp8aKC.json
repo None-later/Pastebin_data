@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "ApBp8aKC",
+ "pasteDate": "Feb 26, 2018, 1:37:30 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "local component = require(\"component\")\nlocal sides = require(\"sides\")\n\nfunction dropOffItems(maxHives)\n\tfor i = 1,maxHives*2 do\n\t\trobot.back()\n\tend\n\t\n\tfor i = 1,16 do\n\t\trobot.select(i)\n\t\t\n\t\tif isHoney(i) then\n\t\t\trobot.dropDown()\n\t\telse\n\t\t\trobot.dropUp()\n\t\tend\n\tend\n\n\trobot.select(1)\nend\n\nfunction getHoney()\n\twhile robot.suckDown() do\n\t\tos.sleep(0.1)\n\tend\nend\n\nfunction nextHive(hiveCount, maxHives)\n\n\tif hiveCount < maxHives then\n\t\thiveCount = hiveCount + 1\n\t\tfor i=1,2 do\n\t\t\trobot.forward()\n\t\t\tgetHoney()\n\t\tend\n\telse\n\t\tdropOffItems(maxHives)\n\tend\nend\n\nfunction isHoney(slot)\n\tif robot.count(slot) > 0 then\n\t\tlocal item = component.inventory_controller.getStackInInternalSlot(slot)\n\t\tif item.individual then\n\t\t\treturn false\n\t\telse\n\t\t\treturn true\n\t\tend\n\tend\nend\n\nlocal maxHives = 8\n\nwhile true do\nlocal hiveCount = 0\n\nnextHive(hiveCount, maxHives)\n\nos.sleep(60)\nend",
+ "title": ""
+}

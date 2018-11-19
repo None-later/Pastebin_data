@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "zN5dbr3s",
+ "pasteDate": "Feb 28, 2018, 9:42:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class MyClass {\n\n    /** Database Connection. */\n    private dbCon;\n\n    public MyClass() {\n        dbCon = ...\n    }\n\n    public void doSomethingWith(MyData data) {\n        data = convertData(data);\n        dbCon.storeData(data);\n    }\n\n    private MyData convertData(MyData data) {\n        // Some complex logic...\n        return data;\n    }\n}\n\t\npublic interface MyDataConverter {\n    MyData convertData(MyData data);\n}\n\npublic class MyDataConverterImplementation implements MyDataConverter {\n    public MyData convertData(MyData data) {\n        // Some complex logic...\n        return data;\n    }\n}\n\t\npublic class MyClass {\n    private DbConnection dbCon;\n    private MyDataConverter converter;\n\n    public MyClass(DbConnection dbCon, MyDataConverter converter) {\n        this.dbCon = dbCon;\n        this.converter = converter;\n    }\n\n    public void doSomethingWith(MyData data) {\n        data = converter.convertData(data);\n        dbCon.storeData(data);\n    }\n}",
+ "title": ""
+}

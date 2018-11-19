@@ -1,0 +1,5 @@
+{
+  "value": "function actualCost(originalCost)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

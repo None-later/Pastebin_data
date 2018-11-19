@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jzMENiwt",
+ "pasteDate": "Feb 26, 2018, 2:43:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "before_action :valid_user,       only: [:edit, :update]\n\n   def valid_user\n      unless (@user && @user.activated? &&\n              @user.authenticated?(:reset, params[:id]))\n        redirect_to root_url\n      end\n    end\n\t\ndef valid_user\n    if @user\n      if @user.activated?\n        unless @user.authenticated?(:reset, params[:id])\n          flash[:danger] = \"Reset token do not match.\"\n          redirect_to root_url\n        end\n      else\n        flash[:danger] = \"User is not yet activated.\"\n        redirect_to root_url\n      end\n    else\n      flash[:danger] = \"User does not exist.\"\n      redirect_to root_url\n    end\nend",
+ "title": ""
+}

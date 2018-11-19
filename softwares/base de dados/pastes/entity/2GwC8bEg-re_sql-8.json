@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 bDiff.last_lsn FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

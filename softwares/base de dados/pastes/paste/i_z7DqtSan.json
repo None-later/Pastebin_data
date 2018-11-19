@@ -1,0 +1,14 @@
+{
+ "espireDate": "1D",
+ "format": "python",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "z7DqtSan",
+ "pasteDate": "Feb 17, 2018, 3:55:41 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "    ``` This method is suppose to update the details in the database, in the row of the inputted Student ID number\n\t\ti.e. If the input (StudentID) is 2, update the details in row 2 ```\n\n\tdef updateProfile(self):\n\n        StudentID = int(self.IDInputEntry.get())\n        \n        StdFirstname = self.firstnameEntry.get()\n        StdSurname = self.surnameEntry.get()\n        Gender = self.Gendervar.get()\n        DOB = self.DOBEntry.get()\n        Address = self.AddressEntry.get()\n        Postcode = self.PostcodeEntry.get()\n        ContactRef = self.contactEntry.get()\n        ClassID = self.ClassIDEntry.get()\n        StdUsername = self.usernameEntry.get()\n        StdPassword = self.passwordEntry.get()\n        StdEmail = self.emailEntry.get()\n        PredictedGrade = self.PGradeEntry.get()\n\n        with sqlite3.connect(\"AMS.db\") as db:\n            cursor = db.cursor()\n            cursor.execute(\"\"\"UPDATE STUDENT SET \n                            StdFirstname =?, \n                            StdSurname =?,\n                            Gender =?,\n                            DOB =?, \n                            Address=?, \n                            Postcode =?, \n                            ContactRef =?\n                            StdUsername =?\n                            StdPassword =?\n                            StdEmail =?\n                            PredictedGrade =?\n                            ClassID =?\n                            WHERE StudentID =?         \n                                    \"\"\",(StdFirstname, StdSurname, Gender, DOB, Address, Postcode, ContactRef,\n                                         StdUsername, StdPassword, StdEmail, PredictedGrade, ClassID)\n                           )\n\n            db.commit()",
+ "title": "Updating Database Syntax Error"
+}

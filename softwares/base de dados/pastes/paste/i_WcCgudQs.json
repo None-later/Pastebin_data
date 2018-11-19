@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WcCgudQs",
+ "pasteDate": "Feb 18, 2018, 11:59:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/****************************************\nExample Sound Level Sketch for the \nAdafruit Microphone Amplifier and Photon\n****************************************/\n \nconst int sampleWindow = 50; // Sample window width in mS (50 mS = 20Hz)\nunsigned int sample;\ndouble volts = 0;\n \nvoid setup() \n{\n   Serial.begin(9600);\n   Particle.variable(\"sound level\", volts);\n}\n \n \nvoid loop() \n{\n   unsigned long startMillis= millis();  // Start of sample window\n   unsigned int peakToPeak = 0;   // peak-to-peak level\n \n   unsigned int signalMax = 0;\n   unsigned int signalMin = 4095;\n \n   // collect data for 50 mS\n   while (millis() - startMillis < sampleWindow)\n   {\n      sample = analogRead(0);\n      if (sample < 4095)  // toss out spurious readings\n      {\n         if (sample > signalMax)\n         {\n            signalMax = sample;  // save just the max levels\n         }\n         else if (sample < signalMin)\n         {\n            signalMin = sample;  // save just the min levels\n         }\n      }\n   }\n   peakToPeak = signalMax - signalMin;  // max - min = peak-peak amplitude\n   volts = (peakToPeak * 3.3) / 4095;  // convert to volts\n \n   Serial.print(\"volts = \");\n   Serial.println(volts);\n   Serial.print(\"raw analog =\");\n   Serial.println(sample);\n   delay(10);\n}",
+ "title": ""
+}

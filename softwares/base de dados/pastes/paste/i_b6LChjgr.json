@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "b6LChjgr",
+ "pasteDate": "Feb 8, 2018, 12:50:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "QDataStream& operator<<(QDataStream& out, const MyClass& item)\n{   \n    //Properties to write\n    return out;\n}\n\nQDataStream& operator>>(QDataStream& in, MyClass& item)\n{   \n    //Properties to read\n    return in;\n}",
+ "title": ""
+}

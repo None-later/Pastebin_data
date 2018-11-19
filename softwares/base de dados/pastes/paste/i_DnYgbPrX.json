@@ -1,0 +1,14 @@
+{
+ "espireDate": "1M",
+ "format": "css",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "DnYgbPrX",
+ "pasteDate": "Feb 12, 2018, 7:37:23 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "W3.CSS Layout\nW3.CSS version 2.90 / 2.91 introduced the following classes for \"column-like\" layout:\n\nClass\tDescription\nw3-cell-row\tContainer for cells (columns).\nw3-cell\tLayout cell (column).\nw3-cell-top\tAligns content at the top of a cell (column).\nw3-cell-middle\tAligns content at the vertical middle of a cell (column).\nw3-cell-bottom\tAligns content at the bottom of a cell (column).\nw3-mobile\tAdds mobile-first responsiveness to a cell (column).\nDisplays elements as block elements on mobile devices.\nlearn More in this link: \nhttp://gsur.in/9GQx",
+ "title": "W3.CSS Layout"
+}

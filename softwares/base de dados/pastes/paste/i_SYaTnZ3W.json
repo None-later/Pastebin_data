@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SYaTnZ3W",
+ "pasteDate": "Feb 28, 2018, 1:52:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[0.000000] [Firmware Bug]: TSC_DEADLINE disabled due to Errata; please update microcode to version 0x25 (or later)\n[0.098373] ACPI: [Firmware Bug]: BIOS_OSI(Linux) query ignored\n[0.112399] acpi PNP0A08:00: [Firmware Info]: MMCONFIG for domain 0000 [bus 00-9b] only partially covers this bridge",
+ "title": ""
+}

@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_botnet",
+  "lg_en",
+  "kw_bots",
+  "kw_targets"
+ ],
+ "key": "pf16uCtw",
+ "pasteDate": "Feb 26, 2018, 11:25:56 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Put this in the same directory as the other scripts.\n\nYou will need to create a bunch of bots first\n\n\nYou will also need to modify the targets.txt file to include every one you want reported.\n\n\nIgnore the \"tweet links\" part.. that was never implemented.\n\n\nrun as:\n\n   python botnet.py -x -t 5",
+ "title": ""
+}

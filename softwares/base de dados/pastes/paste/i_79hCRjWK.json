@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "79hCRjWK",
+ "pasteDate": "Feb 12, 2018, 7:31:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "head pangenome.txt\n    Ha1_00044161\n    Ha11_00031248\n    Ha16_00021664\n    Ha8_00042762\n    Ha4_00025807\n\t\nhead blast.individual1.txt\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha16_00021664   77.4    31  7   0   94  2   49  79  7.3e-159.3\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha8_00042762    74.2    31  8   0   94  2   1   31  9.6e-158.9\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha4_00025807    77.4    31  7   0   94  2   1   31  1.3e-058.5\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha16_00022939   77.4    31  7   0   94  2   295 325 2.1e-057.8\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha12_00032339   71.0    31  9   0   94  2   2   32  2.8e-057.4\n    HWI-ST913:300:C5W5DACXX:7:1101:1477:2147    Ha16_00021553   71.0\n\t\nhead output.individual1.txt\n    Ha1_00044161   0\n    Ha11_00031248  0\n    Ha16_00021664  0\n    Ha8_00042762   1\n    Ha4_00025807   1",
+ "title": ""
+}

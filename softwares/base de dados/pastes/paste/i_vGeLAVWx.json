@@ -1,0 +1,13 @@
+{
+ "espireDate": "1D",
+ "format": "rails",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vGeLAVWx",
+ "pasteDate": "Feb 12, 2018, 2:45:39 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<%= f.fields_for :sponsors do |sponsor_fields| %>\n                        <%= sponsor_fields.fields_for :sponsor_person do |sponsor_person_fields| %>\n                          <span class=\"fa fa-envelope form-control-feedback left\" aria-hidden=\"true\"></span>\n                          <%= sponsor_person_fields.text_field :email, class:\"form-control has-feedback-left col-md-7 col-xs-12\", placeholder:\"Email\" %>\n                        <% end %>\n                      <% end %>",
+ "title": ""
+}

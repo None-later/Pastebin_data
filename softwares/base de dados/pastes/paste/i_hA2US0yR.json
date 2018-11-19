@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hA2US0yR",
+ "pasteDate": "Feb 12, 2018, 10:07:20 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "$ xrandr\nxrandr: Failed to get size of gamma for output default\nScreen 0: minimum 640 x 480, current 640 x 480, maximum 640 x 480\ndefault connected primary 640x480+0+0 0mm x 0mm\n   640x480       73.00* \n\n$ cvt 2560 1440 143.91\n# 2560x1440 143.78 Hz (CVT) hsync: 225.45 kHz; pclk: 808.00 MHz\nModeline \"2560x1440_143.91\"  808.00  2560 2792 3072 3584  1440 1443 1448 1568 -hsync +vsync\n\n$ xrandr --newmode \"2560x1440_143.91\"  808.00  2560 2792 3072 3584  1440 1443 1448 1568 -hsync +vsync\nxrandr: Failed to get size of gamma for output default\n\n$ xrandr --addmode DP-1  2560x1440_143.91\nxrandr: Failed to get size of gamma for output default\nxrandr: cannot find output \"DP-1\"\n\n$ xrandr\nxrandr: Failed to get size of gamma for output default\nScreen 0: minimum 640 x 480, current 640 x 480, maximum 640 x 480\ndefault connected primary 640x480+0+0 0mm x 0mm\n   640x480       73.00* \n  2560x1440_143.91 (0x28a) 808.000MHz -HSync +VSync\n        h: width  2560 start 2792 end 3072 total 3584 skew    0 clock 225.45KHz\n        v: height 1440 start 1443 end 1448 total 1568           clock 143.78Hz",
+ "title": "Screen Resoultion problem Ubuntu 16.04"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "WYZJ7fpW",
+ "pasteDate": "Feb 8, 2018, 8:53:24 PM",
+ "relevancy": 5.0,
+ "relevant": false,
+ "text": "# SimC Addon 1.9.1\n\nrogue=\"Menzer\"\nlevel=110\nrace=gnome\nregion=eu\nserver=hyjal\nrole=attack\nprofessions=alchemy=75/herbalism=800\ntalents=1233111\nspec=assassination\nartifact=43:0:0:0:0:1580:23:1579:1:1578:1:1577:4:347:1:1276:1:346:1:337:1:335:1:334:1:1384:1:333:1:332:1:331:4:330:4:329:4:328:4:327:4:326:4:325:4:324:4:323:4:1651:1\ncrucible=1739:1781:324/1739:1779:331/1739:1780\n\nhead=,id=152163,bonus_id=3610/1482/3336\nneck=,id=134497,enchant_id=5890,bonus_id=3536/1612/3337\nshoulder=,id=144236,enchant_id=5883,bonus_id=1811/3630\nback=,id=152161,enchant_id=5435,gem_id=151585,bonus_id=3611/1808/1507/3337\nchest=,id=152160,bonus_id=3610/1487/3337\nwrist=,id=137098,bonus_id=3459/3630\nhands=,id=152162,enchant_id=5444,bonus_id=3611/1487/3528\nwaist=,id=147347,bonus_id=3562/1522/3337\nlegs=,id=152282,bonus_id=3610/1487/3337\nfeet=,id=151983,bonus_id=3611/1497/3336\nfinger1=,id=152688,enchant_id=5429,bonus_id=3611/1507/3337\nfinger2=,id=134527,enchant_id=5429,gem_id=151584,bonus_id=3536/1808/1622/3337\ntrinket1=,id=154174,bonus_id=3985/3993\ntrinket2=,id=133644,gem_id=151585,bonus_id=3536/1808/1612/3337\nmain_hand=,id=128870,gem_id=152055/152049/155847,bonus_id=741,relic_id=3611:1517:3337/3611:1507:3337/3610:1487:3336\noff_hand=,id=128869\n\n### Gear from Bags\n#\n# Heaume de tueur carnassier (925)\n# head=,id=147172,bonus_id=3561/1507/3337\n#\n# Pendentif d'nergie stabilise (935)\n# neck=,id=134488,enchant_id=5439,bonus_id=3418/1587/3337\n#\n# Collier d'annulation des flammes (945)\n# neck=,id=151973,bonus_id=3611/1487/3528\n#\n# Prydaz, chef-d'uvre de Xavaric (1000)\n# neck=,id=132444,bonus_id=3459/3630\n#\n# Rivage des toiles (940)\n# neck=,id=137487,enchant_id=5890,gem_id=151584,bonus_id=3418/1808/1592/3337\n#\n# Protge-paules de tueur carnassier (900)\n# shoulder=,id=147174,bonus_id=3561/1482/3528\n#",
+ "title": ""
+}

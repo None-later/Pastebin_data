@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HemPPDRa",
+ "pasteDate": "Feb 26, 2018, 12:02:20 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div class=\"col-xs-12 col-sm-1 no-padding\">\n    <div class=\"search-container-initial-text inline\">\n        <strong>Find sites for</strong>\n    </div>\n</div>\n\n<div class=\"col-xs-12 col-sm-2 no-padding\">\n        <div class=\"form\">\n                <div class=\"inline\">\n                    <input class=\"search-container-input\" name=\"postcode\" placeholder=\"\" type=\"text\">\n                    <span class=\"floating-label\">Enter postcode</span>\n                </div>\n            </div>\n</div>\n\n<div class=\"col-xs-12 col-sm-2 no-padding\">\n        <div class=\"search-container-initial-text inline\">\n                <strong>Available for dates</strong>\n        </div>\n    </div>\n\n<div class=\"col-xs-12 col-sm-7 no-padding\">\n    <form method=\"get\" action=\"[wpv-bloginfo show='url']/discovery/\">\n        <div class=\"form inline\">\n            <div class=\"inline\">\n                <input id=\"start-date\" class=\"search-container-input\" name=\"start-date\" placeholder=\"\" type=\"text\">\n                <span class=\"floating-label-date\">Start date</span>\n            </div>\n\n            <select class=\"search-container-select\" name=\"duration\">\n                <option value=\"4\">4 weeks</option>\n                <option value=\"8\">8 weeks</option>\n                <option value=\"12\">12 weeks</option>\n                <option value=\"16\">16 weeks</option>\n            </select>\n            <input class=\"search-container-button\" value=\"Find Sites\" type=\"submit\">\n        </div>\n    </form>\n</div>",
+ "title": ""
+}

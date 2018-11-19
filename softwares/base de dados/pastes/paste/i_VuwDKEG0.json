@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VuwDKEG0",
+ "pasteDate": "Feb 8, 2018, 12:27:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CMD:layhang(playerid, params[])\n{\nif(PlayerInfo[playerid][pJob] == 20 || PlayerInfo[playerid][pJob2] == 20)\n{\nnew vehicleid = GetPlayerVehicleID(playerid);\nif(IsATruckerCar(vehicleid) && GetPlayerState(playerid) == PLAYER_STATE_DRIVER)\n{\nif(!CheckPointCheck(playerid))\n{\nif(GetPVarInt(playerid, \"LoadTruckTime\") > 0)\n{\nSendClientMessageEx(playerid, COLOR_WHITE, \"Dang dua cac mat hang len xe!\");\nreturn 1;\n}\nif(TruckUsed[playerid] != INVALID_VEHICLE_ID)\n{\nSendClientMessageEx(playerid, COLOR_WHITE, \"Ban dang giao mat hang khac, su dung /huybo giaohang de huy bo giao hang.\");\nreturn 1;\n}\nif(TruckContents{vehicleid} != 0)\n{\nreturn SendClientMessageEx(playerid, COLOR_GRAD2, \"Da dua hang len xe thanh cong.\");\n}\nif(TruckDeliveringTo[vehicleid] != INVALID_BUSINESS_ID && TruckContents{vehicleid} == 0)\n{\nreturn SendClientMessageEx(playerid, COLOR_GRAD2, \"Da dua hang len xe thanh cong.\");\n}\ngPlayerCheckpointStatus[playerid] = CHECKPOINT_LOADTRUCK;\nif(!IsABoat(vehicleid))\n{\nSetPlayerCheckpoint(playerid,2214.411,-2288.890,14.337, 4);\nGameTextForPlayer(playerid, \"~w~Dia diem ~r~Ben cang Los Santos\", 5000, 1);\nSendClientMessageEx(playerid, COLOR_LIGHTBLUE, \"* Chon hang hoa de van chuyen tai ben cang Los Santos (Di theo diem cham do tren radar).\");\n}\nelse\n{\nSetPlayerCheckpoint(playerid,2098.6543,-104.3568,-0.4820, 4);\nGameTextForPlayer(playerid, \"~w~Dia diem ~r~Ben cang Palamino\", 5000, 1);\nSendClientMessageEx(playerid, COLOR_LIGHTBLUE, \"* Chon hang hoa de van chuyen tai ben cang Palamino (Di theo diem cham do tren radar).\");\n}\n}\nelse return SendClientMessageEx(playerid, COLOR_WHITE, \"Xin hay chac chan rang cac diem checkpoint cua ban da bi xoa bo.\");\n}\nelse return SendClientMessageEx(playerid, COLOR_GREY, \"Ban khong lai chiec xe tai cho hang hoa yeu cau!\");\n}\nelse return SendClientMessageEx(playerid, COLOR_GREY, \"Ban khong phai Nguoi dua hang!\");\nreturn 1;\n}",
+ "title": ""
+}

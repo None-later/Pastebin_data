@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "YDtV7rxW",
+ "pasteDate": "Feb 26, 2018, 1:11:16 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <bits/stdc++.h>\nusing namespace std;\n\ndouble n;\n\nvoid read_input() {\n\tifstream fin(\"in\");\n\tfin >> n;\n\tfin.close();\n}\n\nvoid print_output(double result) {\n\tofstream fout(\"out\");\n\tfout << setprecision(4) << fixed << result;\n\tfout.close();\n}\n\ndouble compute_sqrt() {\n\t/*\n\tTODO: Calculati sqrt(n) cu o precizie de 0.001\n\tPrecizie de 10^-x = |rezultatul vostru - rezultatul corect| <= 10^-x\n\t*/\n\tdouble start, end, error, mid, guess;\n\tbool ok = 0;\n\n\tstart = 0.0;\n\tend = n;\n\terror = 0.001;\n\n\t// double pls = 36.0;\n\t// double pls1 = 15.23;\n\n\tif (n < 1.0) {\n\t\t// cout << n << endl;\n\t\t// cout << pls << endl;\n\t\t// cout << pls1 << endl;\n\t\tok = 1;\n\t\tn = n * 100.0 + 0.0001;\n\t\tcout << n << endl;\n\t}\n\n\twhile (start <= end) {\n\t\tmid = start + ((end - start) / 2);\n\n\t\tguess = mid * mid;\n\n\t\tif (n - error <= guess && guess <= n + error) {\n\t\t\t\tif (ok) {\n\t\t\t\t\treturn mid / 10.0;\n\t\t\t\t} else {\n\t\t\t\t\treturn mid;\n\t\t\t\t}\n\t\t}\n\n\t\tif (guess > n) {\n\t\t\tend = mid;\n\t\t}\n\n\t\tif (guess < n) {\n\t\t\tstart = mid;\n\t\t}\n\t}\n\n\treturn 0.0;\n}\n\nint main() {\n\tread_input();\n\tprint_output(compute_sqrt());\n\treturn 0;\n}",
+ "title": ""
+}

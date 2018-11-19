@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "buTnK1KT",
+ "pasteDate": "Feb 26, 2018, 3:32:42 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "int cmmdc(int a,int b)\n{\n    int aux,r;\n    if(a<b)\n    {aux=a;\n    a=b;\n    b=aux;}\n    r=a%b;\n    while(r!=0)\n    {\n      a=b;\n      b=r;\n      r=a%b; \n    }\n    return b;\n}\nint numarare(nod*p)\n{\n    int nr=0;\n    nod*e,*f;\n    e=p;\n    if(p!=NULL&&p->urm!=NULL)\n    while(e->urm!=NULL)\n    {\n        f=e->urm;\n        while(f!=NULL)\n        {\n            if(cmmdc(e->info,f->info)==1)\n            nr++;\n            f=f->urm;\n        }\n        e=e->urm;\n    }\n    return nr;\n}",
+ "title": ""
+}

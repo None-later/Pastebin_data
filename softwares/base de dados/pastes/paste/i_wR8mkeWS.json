@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wR8mkeWS",
+ "pasteDate": "Feb 26, 2018, 1:43:58 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <vector>\nusing namespace std;\n\nint main() {\n\tlong long int n, m;\n\tvector<long long int> vect1;\n\tvector<long long int> vect2;\n\tvector<long long int> result;\n\tcin >> n;\n\tlong long int tmp;\n\tfor (size_t i = 0; i != n; ++i) {\n\t\tcin >> tmp;\n\t\tvect1.push_back(tmp);\n\t}\n\tcin >> m;\n\tfor (size_t i = 0; i != m; ++i) {\n\t\tcin >> tmp;\n\t\tvect2.push_back(tmp);\n\t}\n\tint i = 0;\n\tint j = 0;\n\tint temp2 = 0;\n\tbool flag;\n\tif (n > m) {\n\t\tflag = true;\n\t\ttemp2 = m;\n\t} else {\n\t\tflag = false;\n\t\ttemp2 = n;\n\t}\n\tif (flag) {\n\t\twhile (j != temp2) {\n\t\t\tif (vect1[i] > vect2[j]) {\n\t\t\t\tresult.push_back(vect2[j]);\n\t\t\t\tj++;\n\t\t\t} else {\n\t\t\t\tresult.push_back(vect1[i]);\n\t\t\t\ti++;\n\t\t\t}\n\t\t}\n\t\tfor (size_t k = i; k != n; ++k) {\n\t\t\tresult.push_back(vect1[k]);\n\t\t}\n\t} else {\n\t\twhile (i != temp2) {\n\t\t\tif (vect1[i] > vect2[j]) {\n\t\t\t\tresult.push_back(vect2[j]);\n\t\t\t\tj++;\n\t\t\t} else {\n\t\t\t\tresult.push_back(vect1[i]);\n\t\t\t\ti++;\n\t\t\t}\n\t\t}\n\t\tfor (size_t k = j; k != m; ++k) {\n\t\t\tresult.push_back(vect2[k]);\n\t\t}\n\t}\n\tfor (auto x : result) {\n\t\tcout << x << ' ';\n\t}\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function Lightning(POSITION1, POSITION2, MULTIPLIERTIME, LIGHTNINGDELAY, OFFSET, BRICKCOLOR, MATERIAL, SIZE, TRANSPARENCY, LASTINGTIME)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

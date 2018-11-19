@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DvmYG3DF",
+ "pasteDate": "Feb 28, 2018, 1:37:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var a = [2, 4, 6, 8, 10];\nvar b = [1, 2, 5, 6, 9];\nvar dupNums = [];\n\n// O(n)\n\nvar x = 0;\nvar y = 0;\n\nwhile (x < a.length && y < b.length) {\n  p1 = a[x];\n  p2 = b[y];\n  \n  if (p1 < p2) {\n    x++;\n  } else if (p1 == p2) {\n    dupNums.push(a[x]);\n    x++\n    y++\n  } else {\n    y++;\n  }\n  console.log(dupNums);\n}",
+ "title": ""
+}

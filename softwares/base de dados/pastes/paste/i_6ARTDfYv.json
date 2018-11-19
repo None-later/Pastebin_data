@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "6ARTDfYv",
+ "pasteDate": "Feb 24, 2018, 5:19:37 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env node\n \nconst catchAsync = e => {\n  console.error(e)\n  process.exit(1)\n}\n \nconst run = async (path, id, $) => (\n  $ = await load(config),\n  $ = await Promise.all([\n    connect($),\n    readFile(path, 'utf8')\n  ]).catch(catchAsync),\n  $ = buildQuery(id, $[1]),\n  asyncQuery($).catch(catchAsync)\n)\n \nrun(path, id).then(/* do something */)",
+ "title": ""
+}

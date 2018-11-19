@@ -1,0 +1,5 @@
+{
+  "value": "function __construct(UserRepository $repo)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

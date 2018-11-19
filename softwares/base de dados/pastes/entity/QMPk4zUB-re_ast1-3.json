@@ -1,0 +1,5 @@
+{
+  "value": "function degrade_spell(spell,degrade_array)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

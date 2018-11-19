@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GTMNKUPG",
+ "pasteDate": "Feb 18, 2018, 1:37:14 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "QPainter painter(this);\n\n   painter.setPen(QPen(Qt::black, 3, Qt::SolidLine));\n   painter.setRenderHint(QPainter::Antialiasing, true);\n\n   QRectF size = QRectF(0, 0, this->width(), this->height());\n   painter.setBrush(QBrush(Qt::red, Qt::DiagCrossPattern));\n\n   painter.translate(this->rect().bottomLeft());\n   painter.scale(zoomX, zoomY);\n\n   painter.drawRect(size);\n\n   painter.drawText(QPoint(100, 100), QString::number(123));",
+ "title": ""
+}

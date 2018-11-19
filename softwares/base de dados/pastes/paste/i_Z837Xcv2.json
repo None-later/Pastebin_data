@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Z837Xcv2",
+ "pasteDate": "Feb 21, 2018, 6:08:59 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#define _CRT_SECURE_NO_WARNINGS\n#include \"stdafx.h\"\n#include <conio.h>\n#include <locale.h>\n#include <stdio.h>\n#include <math.h>\nvoid main()\n{\n\tint hours, minutes;\n\tsetlocale(LC_ALL, \"RUS\");\n\tprintf(\" :  \");\n\tscanf_s(\"%i\", &hours);\n\tif (hours < 12 && hours > 5) {\n\t\tprintf(\" \");\n\t}\n\telse if (hours > 12 && hours < 18) {\n\t\tprintf(\"  :\");\n\t}\n\telse if (hours > 17 && hours < 24) {\n\t\tprintf(\"  :\");\n\t}\n\telse if (hours > 0 && hours < 6) {\n\t\tprintf(\"  :\");\n\t}\t\n\telse {\n\t\tprintf(\"  :\");\n\t}\n\t_getch();\n\t\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "1W",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "YmDLuiZQ",
+ "pasteDate": "Feb 8, 2018, 4:47:04 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "BITS 32             ;( 1)\nsection .text       ;( 2)\nglobal wylicz       ;( 3)\nwylicz:             ;( 4)\n; przekazywanie arg - ebx, ecx, edx, esi, edi, ebp\n; wynik zwracany w eax\n  enter 8, 0        ;( 5)\n  push ebx          ;( 6)\n  mov  ecx, 5       ;( 7)\n  lea  ebx, [ebp+8] ;( 8) ebx = ebp + 8\n  fld1              ;( 9) st(0) = 1.0\npetla:              ;(10) petla iteruje 5 razy\n  fld  qword [ebx]  ;(11)\n  fcomi st0, st1    ;(12) porownaj i ustaw glagi procesora\n  jae nieZmieniaj   ;(13) skok jezeli vleft >= vright \n  fxch st1          ;(14) swap(st0, st1)\nnieZmieniaj:        ;(15)\n  add  ebx, 8       ;(16)\n  loop petla        ;(17)\n  fxch st5          ;(18) swap(st0, st5)\n  mov ecx, 4        ;(19)\npetla2: fmulp       ;(20) pomnoz st0 razy ? i sciagnij ze stosu\n  loop petla2       ;(21)\n  fxch st1          ;(22)\n  mov ebx, [ebx]    ;(23)\n  fstp qword [ebx]  ;(24)\n  pop ebx           ;(25)\n  leave             ;(26)\n  ret               ;(27)\n\n// --------------------------------------------------\n\n#include <stdio.h>                               //( 1)\ndouble wylicz(double a, double b, double c,      //( 2)\n              double d, double e, double * max); //( 3)\n// przekazywanie arg - ebx, ecx, edx, esi, edi, ebp\n// wynik zwracany w eax\nint main(){                                      //( 4)\n  register int a = 1;                            //( 5)\n  double max=0.0, wynik=0.0;                     //( 6)\n  wynik = wylicz(1, -2, 3, -4, 5, &max);         //( 7)\n  printf(\"%f | %f\\n\", wynik , max );             //( 8)\n  wynik = wylicz(1.5, 2, -3.5, 4., 5.5, &max);   //( 9)\n  printf(\"%f | %f\\n\", wynik, max );              //(10)\n  wynik = wylicz(-1, -2, -3, -4, -5, &max);      //(11)\n  printf(\"%f | %f\\n\", wynik, max );              //(12)\n  printf(\"%d\\n\", a);                             //(13)\n}                                                //(14)\n\n//output:\n//~ 24.000000 | 5.000000\n//~ -42.000000 | 5.500000\n//~ -120.000000 | 1.000000\n//~ 1",
+ "title": "max"
+}

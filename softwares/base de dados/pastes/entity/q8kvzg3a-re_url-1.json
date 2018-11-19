@@ -1,0 +1,5 @@
+{
+  "value": "(https://en.wikipedia.org/wiki/List_of_countries_by_military_expenditures",
+  "correct": true,
+  "jSonReason": "re_url"
+}

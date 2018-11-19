@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yx29NVrh",
+ "pasteDate": "Feb 12, 2018, 3:26:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "drt=\"/var/www/html\"\n\ndrt_chown=\"chown -R www-data:www-data ${drt}/\"\ndrt_chmod=\"chmod -R a-x,a=rX,u+w ${drt}/\"\nrss=\"systemctl restart nginx.service\"\nrpf=\"/etc/init.d/php*-fpm restart\"\n\t\nrse=\"${drt_chown} ; ${drt_chmod} ; ${rss} ; ${rpf}\"\n\t\n${rse}\n\t\nchown: cannot access ';': No such file or directory\nchown: cannot access 'chmod': No such file or directory\nchown: cannot access 'a-x,a=rX,u+w': No such file or directory\nchown: cannot access ';': No such file or directory\nchown: cannot access 'systemctl': No such file or directory\nchown: cannot access 'restart': No such file or directory\nchown: cannot access 'nginx.service': No such file or directory\nchown: cannot access ';': No such file or directory\nchown: cannot access 'restart': No such file or directory",
+ "title": ""
+}

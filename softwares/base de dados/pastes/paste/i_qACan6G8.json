@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qACan6G8",
+ "pasteDate": "Feb 28, 2018, 6:17:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sean-groves-macbook:restful_authentication_tutorial seangrove$ rake db:create\n(in /Users/seangrove/code/rails/restful/restful_authentication_tutorial)\ndb/development.sqlite3 already exists\nsean-groves-macbook:restful_authentication_tutorial seangrove$ rm db/development.sqlite3 \nsean-groves-macbook:restful_authentication_tutorial seangrove$ rake db:create\n(in /Users/seangrove/code/rails/restful/restful_authentication_tutorial)\ndb/development.sqlite3 already exists\nsean-groves-macbook:restful_authentication_tutorial seangrove$",
+ "title": ""
+}

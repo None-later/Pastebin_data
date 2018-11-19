@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PQDQWKeU",
+ "pasteDate": "Feb 11, 2018, 4:46:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "add_executable(projecteuler ${SOURCE_FILES})\n\t\nadd_executable(problem1 problem1.c)\nadd_executable(problem2 problem2.c)\n\t\ncmake_minimum_required(VERSION 2.8.4)\n\nadd_subdirectory(src/prj1)\nadd_subdirectory(src/prj2)\n\t\ncmake_minimum_required(VERSION 2.8.4)\nproject(prj1)\n\nset(EXEC_NAME prj1)\n\nset(SOURCE_FILES\n    main_prj1.cpp\n    x.cpp\n    y.cpp\n)\n\nset(CMAKE_CXX_FLAGS \"${CMAKE_CXX_FLAGS} -std=c++11\")\n\nset(EXECUTABLE_OUTPUT_PATH ../../dist/${CMAKE_BUILD_TYPE})\n\nadd_executable(${EXEC_NAME} ${SOURCE_FILES})\n\t\n#GLOB_RECURSE will find files in all subdirectories that match the globbing expressions and store it into the variable.\n    file(GLOB_RECURSE APP_SOURCES *.c)\n    foreach (testsourcefile ${APP_SOURCES})\n        #get filename without extension\n        get_filename_component(testname ${testsourcefile} NAME_WE)\n        #add executable for all file\n        add_executable(${testname} ${testsourcefile})\n    endforeach (testsourcefile ${APP_SOURCES})",
+ "title": ""
+}

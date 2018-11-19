@@ -1,0 +1,5 @@
+{
+  "value": "function_count) FROM ##bou_BlitzCacheProcs AS b2 WHERE b2.SqlHandle \u003d b.SqlHandle AND b2.QueryHash IS NOT NULL) ) + \u0027 CLR function(s)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

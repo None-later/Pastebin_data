@@ -1,0 +1,17 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_pastebin",
+  "re_url",
+  "lg_en",
+  "kw_attack",
+  "kw_patch"
+ ],
+ "key": "v1x50zeU",
+ "pasteDate": "Feb 12, 2018, 11:19:34 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "THE FISHY PATCH:\n\nRemember that \"Duration\" = Recovery NOT StartDuration.\nI went through and fixed all PP damage and speed for these weapons also.\nWeapons I didn't provide a patch for may still need to have their PP stats fixed.\n\nIn the future we should consider making all PP Duration Vanilla, or\nall the same duration as the weapon's medium attack, since\nsome weapon directions currently PP too fast to hit reliably with.\n\n---\n\nGestir Spear - Made Left-Right 0.55 Duration. Made Overhead 0.9 Duration. (overhead would match new MAA stab speed, perfect)\n\nResults in a speed scaling of 0.7, 1.0, 1.65.\n\nFISHY PATCH GESTIR SPEAR PASTEBIN: https://pastebin.com/vwcxwkBn\n\n---\n\nMAA Halberd - Made Left-Right DamageMultiplier 0.9 (test this isn't too much damage). Made Stab StartDuration 0.75 and Duration 0.9.\n\nResults in a speed scaling of 1.15, 1.65, 2.1.\n\nFISHY PATCH MAA HALBERD PASTEBIN: https://pastebin.com/V2tdRAS9\n\n---\n\nBerserker Bigaxe - Made Stab 0.7 StartDuration and 0.85 Duration and 1.05 DamageMultiplier. Made Overhead 0.9 StartDuration and 1.1 Duration.\n\nResults in a speed scaling of 1.1, 1.55, 2.\n\nFISHY PATCH BERSERKER BIGAXE PASTEBIN: https://pastebin.com/vUmya1xL\n\n---\n\nArcher and Skirmisher Archersword/Cutlass2 - Made Left-Right 0.3 StartDuration and 0.42 Duration. Made Overhead 0.65 Duration. Made Thrust DamageMultiplier 0.75.\n\nResults in a speed scaling of 0.5, 0.72, 1.15\n\nFISHY PATCH ARCHERSWORD PASTEBIN: https://pastebin.com/gTrA5vyN\n\nFISHY PATCH SKIRMISHER CUTLASS2 PASTEBIN: https://pastebin.com/Af3tm1vU\n\n---\n\nCaptain - NEED INFO (vanilla speed is 0.42/6 for comparison)\n\n---\n\nHuscarl - Swapped all Start Duration with Duration. This will give Huscarl bigger openings and make him harder to play like HK is. Startdur should never be longer than Dur.\n\nFISHY PATCH HUSCARL PASTEBIN: https://pastebin.com/HHYK7xG1\n\n---",
+ "title": ""
+}

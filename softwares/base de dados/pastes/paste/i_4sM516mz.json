@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "4sM516mz",
+ "pasteDate": "Feb 23, 2018, 12:32:13 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "if ($var == \"yes\") {\n   //do something\n} else {         \n   $this->Flash->error(__('Invalid username or password, try again;));\n}\n\t\n$this->enableRetainFlashMessages();\n$this->get('call-your-public-controller-function-here');\n$this->assertSession('Invalid username or password, try again', 'Flash.flash.0.message');",
+ "title": ""
+}

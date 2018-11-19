@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url"
+ ],
+ "key": "qHUyFdu1",
+ "pasteDate": "Feb 8, 2018, 5:08:46 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "https://jira.cengage.com/browse/CAS-1777\nhttps://jira.cengage.com/browse/CAS-1796\nhttps://jira.cengage.com/browse/CAS-1815\nhttps://jira.cengage.com/browse/CAS-1816\nhttps://jira.cengage.com/browse/CAS-1820\nhttps://jira.cengage.com/browse/CAS-1821\nhttps://jira.cengage.com/browse/CAS-1827\nhttps://jira.cengage.com/browse/CAS-1829\nhttps://jira.cengage.com/browse/CAS-1857\nhttps://jira.cengage.com/browse/CAS-1867\nhttps://jira.cengage.com/browse/CAS-1868\nhttps://jira.cengage.com/browse/CAS-1869\nhttps://jira.cengage.com/browse/CAS-1870\nhttps://jira.cengage.com/browse/CAS-1875\nhttps://jira.cengage.com/browse/LTR-4807\nhttps://jira.cengage.com/browse/CXP-14320\nhttps://jira.cengage.com/browse/CXP-13927\nhttps://jira.cengage.com/browse/CXP-13444",
+ "title": "CAS Core Renderer  3.5.33"
+}

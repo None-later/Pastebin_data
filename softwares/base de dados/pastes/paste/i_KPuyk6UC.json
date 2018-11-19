@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "KPuyk6UC",
+ "pasteDate": "Feb 28, 2018, 4:46:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SAVED_INCS=$INCS\nSAVED_CFLAGS=$CFLAGS\nSAVED_LIBS=$LIBS\n\n  if test -n \"$ac_tool_prefix\"; then\n  # Extract the first word of \"${ac_tool_prefix}python-config\", so it can be a program name with args.\nset dummy ${ac_tool_prefix}python-config; ac_word=$2\necho \"$as_me:$LINENO: checking for $ac_word\" >&5\necho $ECHO_N \"checking for $ac_word... $ECHO_C\" >&6\nif test \"${ac_cv_prog_PYTHON+set}\" = set; then\n  echo $ECHO_N \"(cached) $ECHO_C\" >&6\nelse\n  if test -n \"$PYTHON\"; then\n  ac_cv_prog_PYTHON=\"$PYTHON\" # Let the user override the test.\nelse\nas_save_IFS=$IFS; IFS=$PATH_SEPARATOR\nfor as_dir in $PATH\ndo\n  IFS=$as_save_IFS\n  test -z \"$as_dir\" && as_dir=.",
+ "title": ""
+}

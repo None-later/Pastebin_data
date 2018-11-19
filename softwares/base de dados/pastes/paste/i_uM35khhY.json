@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_hu"
+ ],
+ "key": "uM35khhY",
+ "pasteDate": "Feb 18, 2018, 3:58:25 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <stdlib.h>\n#include <string.h>\n\ntypedef struct zeneszam{\n\tint sorszam;\n\tchar eloado[50];\n\tchar cim[150];\n\tint hossz; //a hossz masodpercben\n}zeneszam;\n\nint hasonlit(const void *a, const void *b){\n\tzeneszam *szam1=(zeneszam*)a;\n\tzeneszam *szam2=(zeneszam*)b;\n\n\tint hossz1=szam1->hossz;\n\tint hossz2=szam2->hossz;\n\n\tif (hossz1>hossz2){\n\t\treturn -1;\n\t}\n\telse if (hossz1<hossz2){\n\t\treturn 1;\t\t\n\t}\n\telse if (hossz1==hossz2){\n\t\tif (szam1->sorszam > szam2->sorszam){\n\t\t\treturn 1;\n\t\t}\n\t\telse if (szam1->sorszam < szam2->sorszam){\n\t\t\treturn -1;\n\t\t}\n\t\telse\n\t\t\treturn 0;\n\t}\n}\n\nint main(){\n\tchar sor[300];\n\tzeneszam tomb[500];\n\tint i, db=0;\n\twhile (gets(sor)!=NULL){\n\t\t\t\t\n\t\tchar *token=strtok(sor, \";\");\n\t\ttomb[db].sorszam=atoi(token);\t\t\n\t\ttoken=strtok(NULL, \";\");\n\t\tstrcpy(tomb[db].eloado, token);\n\t\ttoken=strtok(NULL, \";\");\n\t\tstrcpy(tomb[db].cim, token);\n\t\ttomb[db].hossz=(atoi(strtok(NULL, \":\")))*60+atoi(strtok(NULL, \":\"));\n\t\tdb++;\n\t}\n\t//printf(\"%d\\n\", db);\n\t/* for (i=0; i<db; i++){\n\t\tprintf(\"#%d. %s - %s (%d masodperc)\\n\", tomb[i].sorszam, tomb[i].eloado, tomb[i].cim, tomb[i].hossz);\n\t}\n\t\n\tprintf(\"\\n-----------\\n\");*/ \n\tqsort(tomb, db, sizeof(zeneszam), hasonlit);\n\tfor (i=0; i<db; i++){\n\t\tif (tomb[i].hossz==tomb[0].hossz){\n\t\t\tprintf(\"%s\\n\", tomb[i].eloado);\n\t\t}\t\t\n\t} \n\t/*\n\tfor (i=0; i<db; i++){\n\t\tprintf(\"#%d. %s - %s (%d masodperc)\\n\", tomb[i].sorszam, tomb[i].eloado, tomb[i].cim, tomb[i].hossz);\n\t}*/ \nreturn 0;\n}",
+ "title": ""
+}

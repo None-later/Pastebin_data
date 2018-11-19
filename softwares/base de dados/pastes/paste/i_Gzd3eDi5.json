@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Gzd3eDi5",
+ "pasteDate": "Feb 8, 2018, 6:01:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public interface JsonArray\nextends JsonStructure, List<JsonValue>",
+ "title": ""
+}

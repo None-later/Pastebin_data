@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BCDsa4gC",
+ "pasteDate": "Feb 18, 2018, 4:08:35 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "Polynomial Polynomial::operator++(int){\n\tint temp0 = coeff[0];\n\tint temp1 = coeff[1];\n\tint temp2 = coeff[2];\n\tint temp3 = coeff[3];\n\tint temp4 = coeff[4];\n\t\n\tint var0 = coeff[0];\n\tint var1 = coeff[1]; \n\tint var2 = coeff[2];\n\tint var3 = coeff[3];\n\tint var4 = coeff[4];\n\n\tif (var0 > 0)\n\t\tcoeff[0] = temp0++;\n\tif (var1 > 0)\n\t\tcoeff[1] = temp1++;\n\tif (var2 > 0)\n\t\tcoeff[2] = temp2++;\n\tif (var3 > 0)\n\t\tcoeff[3] = temp3++;\n\tif (var4 > 0)\n\t\tcoeff[4] = temp4++;\n\n\treturn Polynomial(temp4, temp3, temp2, temp1, temp0);\n}",
+ "title": ""
+}

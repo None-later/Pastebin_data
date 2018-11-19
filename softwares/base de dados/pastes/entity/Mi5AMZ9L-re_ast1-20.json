@@ -1,0 +1,5 @@
+{
+  "value": "function MagnitudeBuffOrDebuff(PART, MAGNITUDE, STAT, AMOUNT, DURATION, SHOWBUFFORDEBUFF, APPLYTOOTHERSINSTEAD)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

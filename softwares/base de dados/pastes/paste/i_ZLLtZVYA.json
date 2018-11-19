@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZLLtZVYA",
+ "pasteDate": "Feb 20, 2018, 8:10:48 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "maia:~/src$ git-clone git://git.kernel.org/pub/scm/kernel/git/torvalds/linux-2.6.git\nInitialize linux-2.6/.git\nInitialized empty Git repository in /home/samv/src/linux-2.6/.git/\nfatal: The remote end hung up unexpectedly\nmaia:~/src$",
+ "title": ""
+}

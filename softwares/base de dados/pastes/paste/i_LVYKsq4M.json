@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "LVYKsq4M",
+ "pasteDate": "Feb 24, 2018, 2:28:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "exec clear\nexec crosshairswitcher/switcher; medic\n\nload_itempreset 0\n\nalias \"+MedicRadar\" \"Hud_MedicAutocallersThreshold 500\"\nalias \"-MedicRadar\" \"Hud_MedicAutocallersThreshold 50\"\nbind \"SHIFT\" \"+MedicRadar\"\n\nbind \"F5\" \"load_itempreset 0; alias chargetext charge1; alias pop pop1; alias medigun medigun1; echo loading preset 1 (stock)\"\nbind \"F6\" \"load_itempreset 1; alias chargetext charge2; alias pop pop2; alias medigun medigun2; echo loading preset 2 (quickfix)\"\nbind \"F7\" \"load_itempreset 2; alias chargetext charge3; alias pop pop3; alias medigun medigun3; echo loading preset 3 (kritz)\"\nbind \"F8\" \"load_itempreset 3; alias chargetext charge4; alias pop pop4; alias medigun medigun4; echo loading preset 4 (vaccinator)\"\n\nalias chargetext charge1\n\nbind \"mouse4\" \"chargetext\"\nalias charge1 \"voicemenu 2 5; say_team  bercharge ready. \"\nalias charge2 \"voicemenu 2 5; say_team ** Quickfix ready. **\"\nalias charge3 \"voicemenu 2 5; say_team  Kritzkrieg ready. \"\nalias charge4 \"voicemenu 2 5; say_team  Vaccinator ready. \"\n\nalias pop pop1\nalias pop1 \"say_team  bercharge popped. \"\nalias pop2 \"say_team ** Quickfix popped. **\"\nalias pop3 \"say_team  Kritzkrieg popped. \"\nalias pop4 \"\"\nbind \"mwheeldown\" \"pop\"\n\nalias medigun medigun1\nalias medigun1 \"say_team  Stock medigun equipped.\"\nalias medigun2 \"say_team * Quickfix equipped.\"\nalias medigun3 \"say_team  Kritzkrieg equipped.\"\nalias medigun4 \"say_team  Vaccinator equipped.\"\nbind \"mwheelup\" \"medigun\"\n\nbind \"t\" \"say Nobody SAW that coming!\"",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": " http://mirrors.kernel.org/archlinux/$repo/os/$arch",
+  "correct": true,
+  "jSonReason": "re_url"
+}

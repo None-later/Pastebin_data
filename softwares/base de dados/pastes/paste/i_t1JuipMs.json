@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_id"
+ ],
+ "key": "t1JuipMs",
+ "pasteDate": "Feb 11, 2018, 4:19:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ubuntu@ip-10-0-0-104:~$ ps -f -u ubuntu\nUID        PID  PPID  C STIME TTY          TIME CMD\nubuntu    4433  4345  0 19:18 ?        00:00:00 sshd: ubuntu@notty\nubuntu    6109  6021  0 20:47 ?        00:00:00 sshd: ubuntu@pts/0\nubuntu    6110  6109  0 20:47 pts/0    00:00:00 -bash\nubuntu    6233  6232  0 20:48 pts/0    00:00:00 /usr/bin/vim /var/tmp/profile.XXQiLoee\nubuntu    6322  6234  0 20:49 ?        00:00:00 sshd: ubuntu@pts/1\nubuntu    6323  6322  0 20:49 pts/1    00:00:00 -bash\nubuntu    6461  6323  0 20:50 pts/1    00:00:00 ps -f -u ubuntu\n\t\n:set filetype?\n\t\nfiletype=sh\n\t\n:set filetype=sh\n\t\n# vim: set filetype=sh",
+ "title": ""
+}

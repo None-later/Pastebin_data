@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jvtFqfwK",
+ "pasteDate": "Feb 21, 2018, 8:51:54 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# load clips\nclip1 = AviSource(\"F:\\clip1.avi\")\nclip2 = AviSource(\"F:\\clip2.avi\")\n# add enough space to the right of the first clip to fit the second\nAddBorders(clip1, 0, 0, 320, 0)\nOverlay(clip1, clip2, y=320)",
+ "title": ""
+}

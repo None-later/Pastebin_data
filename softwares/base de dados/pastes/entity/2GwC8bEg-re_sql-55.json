@@ -1,0 +1,5 @@
+{
+  "value": "SELECT 5000 * datediff(HH,create_date,CURRENT_TIMESTAMP) AS hours_since_startup FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

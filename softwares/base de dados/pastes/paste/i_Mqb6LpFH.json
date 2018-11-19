@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Mqb6LpFH",
+ "pasteDate": "Feb 8, 2018, 8:40:03 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "AT91Bootstrap 3.8.9-00005-g3e48911 (Thu Nov 23 01:25:36 CET 2017)\n\nNAND: ONFI flash detected\nNAND: Manufacturer ID: 0x1 Chip ID: 0xf1\nNAND: Page Bytes: 2048, Spare Bytes: 64\nNAND: ECC Correctability Bits: 4, ECC Sector Bytes: 512\nWARNING: Fail to disable On-Die ECC\nNAND: Initialize PMECC params, cap: 4, sector: 512\nNAND: Image: Copy 0xa0000 bytes from 0x20000 to 0x23f00000\nNAND: Done to load image\n<debug_uart>\n\nU-Boot 2017.03-linux4sam_5.7-gae44e77 (Dec 18 2017 - 11:35:23 +0100)\n\nCPU: SAMA5D26-CU\nCrystal frequency:       12 MHz\nCPU clock        :      498 MHz\nMaster clock     :      166 MHz\nDRAM:  128 MiB\nNAND:  128 MiB\nMMC:   sdio-host@b0000000: 0\nIn:    serial@f8020000\nOut:   serial@f8020000\nErr:   serial@f8020000\nNet:   eth0: ethernet@f8008000\nHit any key to stop autoboot:  0\n* Unrecognized filesystem type *\n\nNAND read: device 0 offset 0xe0000, size 0x20000\n 131072 bytes read: OK\n\nNAND read: device 0 offset 0x100000, size 0x800000\n 8388608 bytes read: OK\n## Flattened Device Tree blob at 21000000\n   Booting using the fdt blob at 0x21000000\n   Loading Device Tree to 27b3b000, end 27b447d0 ... OK\n\nStarting kernel ...",
+ "title": ""
+}

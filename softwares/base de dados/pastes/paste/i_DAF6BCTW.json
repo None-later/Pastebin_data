@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml",
+  "re_url"
+ ],
+ "key": "DAF6BCTW",
+ "pasteDate": "Feb 26, 2018, 1:51:05 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "\"start\": \"set NODE_ENV=development && node dev-server ./webpack/config\",\n\t\nReactDOM.render(jsx, document.getElementById('app'));\n\t\n<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\n    <title>Title</title>\n</head>\n<body>\n    <div id=\"app\"></div>\n    <script crossorigin src=\"https://unpkg.com/react@16/umd/react.development.js\"></script>\n    <script crossorigin src=\"https://unpkg.com/react-dom@16/umd/react-dom.development.js\"></script>\n    <script src=\"/scripts/app.js\"></script>\n</body>\n</html>",
+ "title": ""
+}

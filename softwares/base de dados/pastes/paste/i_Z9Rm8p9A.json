@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Z9Rm8p9A",
+ "pasteDate": "Feb 11, 2018, 8:54:07 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<?php\nadd_filter( \"gravityflow_user_field\", \"gflow_request_manager\", 10, 3 );\n\nfunction gflow_request_manager( $choices, $form_id, $field ) {\n\tif ( $form_id == 1 && $field->id == 15 ) {\n\t\t$manager = get_user_by('email', get_user_meta(get_current_user_id(), \"manager_email\", true) );\n\n\t\tif( false !== $manager ) {\n\t\t\t$choices = array(\n\t\t\t\tarray('value' => $manager->ID, 'text' => $manager->first_name . ' ' . $manager->last_name)\n\t\t\t);\n\t\t} else {\n\t\t\t$choices = array(\n\t\t\t\tarray('value' => 'ERROR', 'text' => 'ERROR')\n\t\t\t);\n\t\t}\n\n\t}\n\treturn $choices;\n}\n\n?>",
+ "title": ""
+}

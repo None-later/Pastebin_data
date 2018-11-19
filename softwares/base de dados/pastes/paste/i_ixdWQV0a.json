@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "mysql",
+ "jSonReasons": [
+  "re_sql",
+  "lg_pt"
+ ],
+ "key": "ixdWQV0a",
+ "pasteDate": "Feb 26, 2018, 11:02:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SELECT \n\tec.titulo AS categoria_titulo, \n    ec.id AS categoria_id,\n    e.titulo AS evento_titulo,\n    e.permalink AS evento_permalink,\n    e.data_inicio AS evento_data_inicio,\n    e.data_final AS evento_data_final,\n    e.descricao AS evento_descricao,\n    e.local AS evento_local,\n    e.uf AS evento_estado,\n    e.cidade_nome AS evento_cidade,\n    e.imagem AS evento_imagem\n    FROM eventos_categorias AS ec\nJOIN (\nSELECT e.*, im.nome AS cidade_nome FROM eventos AS e \nJOIN ibge_municipios AS im ON im.id=e.cidade_codigo\nWHERE e.data_inicio >= CURDATE()\n) AS e ON e.categoria_id=ec.id\nORDER BY e.data_inicio ASC;",
+ "title": ""
+}

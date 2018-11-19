@@ -1,0 +1,5 @@
+{
+  "value": "Function[not(@IsClrFunction)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "kbL2NZhm",
+ "pasteDate": "Feb 18, 2018, 10:24:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const keystone = require('keystone')\nconst Catalogue = keystone.list('Catalogue')\n\nexports.list = (req, res) => {\n  const per_page = req.query.per_page ? parseInt(req.query.per_page) : 10\n  const page = req.query.page ? (per_page * req.query.page - per_page) : 0\n  let search = {}\n\n  if(req.query.basic) {\n    search = { \n      $text: { $search : req.query.basic },\n    }\n  } else if(req.query.advanced) {\n    search = JSON.parse(req.query.advanced)\n\n    Object.keys(search).forEach(($operant) => {\n      search[$operant] = search[$operant].map((fieldGroup, index) => {\n        let newFieldGroup = {}\n        \n        Object.keys(fieldGroup).forEach((field) => {\n          req.query.exact === 'true'\n            ? newFieldGroup[field] = new RegExp(fieldGroup[field], 'gi')\n            : newFieldGroup[field] = new RegExp(fieldGroup[field].split(' ').map((e) => `(?=.*\\\\b${e}\\\\b)`).join(''), 'gi')\n        })\n\n        return newFieldGroup\n      })\n    }) \n  } else {\n    search = {}\n  }\n\n  Catalogue.model\n    .find(\n      search,\n      { score : { $meta: \"textScore\" } }\n    )\n    .limit(per_page)\n    .skip(page)\n    .sort({ score: { $meta: \"textScore\" } })\n    .exec((err, catalogues) => {\n      return res.apiResponse(\n        catalogues\n      )\n    }).catch((err) => {\n      console.log(err)\n    })\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "B3tTSAzP",
+ "pasteDate": "Feb 18, 2018, 5:54:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<div id=\"publicationContent\">\n    <div id=\"publicationName\">\n        @Model.Tittle\n    </div>\n    <div id=\"publicationText\">\n        @Model.Text\n    </div>\n</div>",
+ "title": ""
+}

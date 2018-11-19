@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "agxgbC92",
+ "pasteDate": "Feb 18, 2018, 4:45:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\nint main(){\n  int ka, kb, i, t1, t2, t;\n  FILE *fin=fopen(\"vanatoare.in\", \"r\");\n  FILE *fout=fopen(\"vanatoare.out\", \"w\");\n\n  fscanf(fin, \"%d\\n%d\", &ka, &kb);\n  t1=1;\n  t2=1;\n  for(t=1, i=0; ka>=(t+1)/2 && kb>=t/2; t=t1+t2, t1=t2, t2=t, i++){\n    ka-=(t+1)/2;\n    kb-=t/2;\n  }\n  fprintf(fout, \"%d\\n%d\\n%d\", i, ka, kb);\n  fclose(fin);\n  fclose(fout);\n  return 0;\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "trU3rJbk",
+ "pasteDate": "Feb 18, 2018, 10:36:25 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    if (errno) // If somthing went wrong...\n        // ...\n    else\n    {\n        // ...\n    }",
+ "title": ""
+}

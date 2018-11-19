@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "H4aFbn6n",
+ "pasteDate": "Feb 11, 2018, 3:31:37 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public void versionCheck() {\n        try {\n        \tif (getConfig().getString(\"update-check\").equalsIgnoreCase(\"true\")) {\n        \tPluginDescriptionFile pdfFile = getDescription();\n            HttpURLConnection connection = (HttpURLConnection) new URL(\"http://www.spigotmc.org/api/general.php\").openConnection();\n            connection.setDoOutput(true);\n            connection.setRequestMethod(\"POST\");\n            connection.getOutputStream().write((key + 46358).getBytes(\"UTF-8\"));\n            String version = new BufferedReader(new InputStreamReader(connection.getInputStream())).readLine();\n            if (!version.equals(pdfFile.getVersion())) {\n                this.getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + \"WARN: You do not have the most updated version of ArrowTrails Pro\");\n                this.getServer().getConsoleSender().sendMessage(ChatColor.YELLOW + \"WARN: Latest version: \" + version);\n                latestVersion = false;\n                joinVersion = version;\n            } else {\n                this.getServer().getConsoleSender().sendMessage(ChatColor.GREEN + \"You are running the latest version of ArrowTrails Pro :)\");\n                latestVersion = true;\n            }\n        }\n        }catch (IOException e) {\n            this.getServer().getConsoleSender().sendMessage(ChatColor.RED + \"ERROR: Could not make connection to SpigotMC.org\");\n            e.printStackTrace();\n        }\n        \n    }",
+ "title": ""
+}

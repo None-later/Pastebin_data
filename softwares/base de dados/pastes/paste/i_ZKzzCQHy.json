@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "nginx",
+ "jSonReasons": [
+  "re_url",
+  "kw_ssl",
+  "lg_en"
+ ],
+ "key": "ZKzzCQHy",
+ "pasteDate": "Feb 8, 2018, 4:30:00 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "server {\n        listen 443 default_server;\n\n        ssl on;\n        ssl_certificate /etc/ssl/nytrix.net/nytrix.net.pem;\n        ssl_certificate_key /etc/ssl/nytrix.net/nytrix.net.key;\n\n        server_tokens off;\n\n        root /var/www/nytrix.net/html;\n        index index.html index.htm index.php  index.nginx-debian.html;\n\n        server_name nytrix.net www.nytrix.net;\n\n        location / {\n             try_files /view/$uri /$uri /index.php;\n        }\n        location ~ \\.php$ {\n            include snippets/fastcgi-php.conf;\n            fastcgi_pass unix:/run/php/php7.0-fpm.sock;\n        }\n        location ~ /\\.ht {\n            deny all;\n        }\n}\nserver{\n        listen 80 default_server;\n        listen [::]:80 default_server;\n\n        server_tokens off;\n\n        root /var/www/nytrix.net/html;\n        index index.html index.htm index.php  index.nginx-debian.html;\n\n        server_name nytrix.net www.nytrix.net;\n\n        location / {\n             try_files /view/$uri /$uri /index.php;\n        }\n        location ~ \\.php$ {\n            include snippets/fastcgi-php.conf;\n            fastcgi_pass unix:/run/php/php7.0-fpm.sock;\n        }\n\n        location ~ /\\.ht {\n            deny all;\n        }\n}",
+ "title": "Nginx settings"
+}

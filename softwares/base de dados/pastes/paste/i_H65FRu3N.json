@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "H65FRu3N",
+ "pasteDate": "Feb 18, 2018, 11:51:05 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "/**\n * @(#)CircleViewer.java\n *\n * CircleViewer application\n *\n * @author \n * @version 1.00 2011/10/19\n */\n \nimport javax.swing.JFrame;\nimport javax.swing.JOptionPane;\n \npublic class CircleViewer {\n{\n   public static void main(String[] args)\n   {\n      JFrame frame = new JFrame();\n\n      final int FRAME_WIDTH = 400;\n      final int FRAME_HEIGHT = 400;\n\n      frame.setSize(FRAME_WIDTH, FRAME_HEIGHT);\n      frame.setTitle(\"CircleViewer\");\n      frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);\n\n      String input = JOptionPane.showInputDialog(\"Radius 1:\");\n      double r1 = Double.parseDouble(input);\n\n      input = JOptionPane.showInputDialog(\"Radius 2:\");\n      double r2 = Double.parseDouble(input);\n\n      CircleComponent component = new CircleComponent(r1, r2);\n      frame.add(component);\n\n      frame.setVisible(true);\n   }\n}",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sq",
+  "re_ipv4"
+ ],
+ "key": "pwqwKBDi",
+ "pasteDate": "Feb 26, 2018, 11:59:09 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "iptables -A INPUT --src 192.168.1.1/24 -j ACCEPT -i eth0\niptables -A INPUT --src 192.168.150.1/16 -j DROP  -i eth0",
+ "title": ""
+}

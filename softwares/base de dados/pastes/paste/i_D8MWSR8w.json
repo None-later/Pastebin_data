@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "D8MWSR8w",
+ "pasteDate": "Feb 28, 2018, 6:25:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Sub RefNoText()\n'      \n'        Ref\n    With Selection\n        .Fields.ToggleShowCodes\n        .Find.ClearFormatting\n        .Find.Replacement.ClearFormatting\n    With Selection.Find\n        .Text = \"_Ref^#^#^#^#^#^#^#^#^#\"\n        .Replacement.Text = \"^& \\# 0\"\n        .Forward = True\n        .Wrap = wdFindStop\n        .Format = False\n        .MatchCase = False\n        .MatchWholeWord = False\n        .MatchWildcards = False\n        .MatchSoundsLike = False\n        .MatchAllWordForms = False\n    End With\n        .Find.Execute Replace:=wdReplaceAll\n        .Fields.Update\n    End With\nEnd Sub",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BHF1HGqn",
+ "pasteDate": "Feb 18, 2018, 3:15:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\n\nnamespace vetor5\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            int cont;\n            int[] numA;\n            int[] numB;\n\n            int numeros = 5;\n\n            numA = new int[numeros];\n            numB = new int[numeros];\n\n            for (cont = 0; cont < numeros; cont++)\n            {\n\n                Console.Write(\"\\nVA Digite um valor para o \" + (cont + 1) + \" elemento: \");\n                numA[cont] = int.Parse(Console.ReadLine());\n\n            }\n            for (cont = 0; cont < numeros; cont++)\n            {\n                Console.Write(\"\\nVB Digite um valor para o \" + (cont + 1) + \" elemento: \");\n                numB[cont] = int.Parse(Console.ReadLine());\n            }\n            Console.WriteLine(\"\\n\\nResultado: \");\n            Console.WriteLine(\"\\n\");\n            Array.Sort(numA);\n            foreach (int a in numA)\n            {\n                Console.WriteLine(a);\n            }\n            Array.Sort(numB);\n            Console.WriteLine(\"\\n\");\n            foreach (int b in numB)\n            {\n                Console.WriteLine(b);\n            }\n            Console.ReadKey();\n\n        }\n    }\n}",
+ "title": ""
+}

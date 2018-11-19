@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jPPAcE95",
+ "pasteDate": "Feb 23, 2018, 10:38:21 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public JTime add(JTime t2){\n    JTime sum = new JTime();\n    sum.hour = this.hour + t2.hour;\n    sum.minute = this.minute + t2.minute;\n    sum.second = this.second + t2.second;\n    return sum;\n}\n\npublic void increment (double seconds){\n    this.second = seconds;\n    while(this.second >= 60.0){\n        this.second -= 60.0;\n        this.minute += 1;\n    }\n    while(this.minute >= 60.){\n        this.minute -=60;\n        this.hour +=1;\n    }\n    while(this.hour >= 24){\n        int result = this.hour - 24;\n        this.hour = result;\n    }\n\n\n}\n\t\npublic static void main(String[] args) {\n\n    JTime startTime = new JTime(22, 50, 0.0);\n    JTime runningTime = new JTime(5, 16, 0.0);\n    JTime endTime = startTime.add(runningTime);\n    System.out.println(endTime);\n    }\n}\n\t\n@Override\n    public String toString() \n    {\n        return \"Hours:\"+this.hour+\", minutes:\"+this.minute+\", seconds:\"+this.second;\n    }",
+ "title": ""
+}

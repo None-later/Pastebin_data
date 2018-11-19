@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SKhM2KsF",
+ "pasteDate": "Feb 17, 2018, 10:50:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[{\"customer_gid\": 807,\n    \"customer_name\": \"APPLIANCES\"}]\n\t\n[{\"customer_gid\": 807,\n\"customer_name\": \"APPLIANCES\", type:[{\"scheduletype_gid\": 1, \"scheduletype_code\": \"SCT001\", \"scheduletype_name\": \"BOOKING\"}]}, {\"customer_gid\": 798, \"customer_name\": \"\nAGENCIES PVT LTD\"}, ]}]",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function mysql_create_db($db,$sock\u003d\"\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

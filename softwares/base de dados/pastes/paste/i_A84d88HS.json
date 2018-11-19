@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "A84d88HS",
+ "pasteDate": "Feb 18, 2018, 5:52:12 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <cstring>\n#include <vector>\n#include <utility>\n#include <chrono>\nusing namespace std;\nusing namespace std::chrono;\n\nvoid swap_ends(int arr[], int size)\n{\n    for (int i = size/2 - 1, j = size -1; i >= 0; --i, --j)\n        swap(arr[i], arr[j]);\n}\n\nvoid swap_ends(vector<int>& arr)\n{\n    for(int i = arr.size()/2 -1, j = arr.size() -1; i >= 0; --i, --j)\n        swap(arr[i], arr[j]);\n}\n\nint c_arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};\n\nint main()\n{\n    vector<int> vec = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23};\n    vector<int>* vecd = new vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9};\n\n    auto t0 = high_resolution_clock::now();\n    swap_ends(c_arr, sizeof(c_arr)/ sizeof(int));\n    for (auto i : c_arr) cout << i << \" \";\n    cout << endl;\n    auto t1 = high_resolution_clock::now();\n    cout << duration_cast<nanoseconds>(t1-t0).count() << \"msec\\n\";\n\n    auto vt0 = high_resolution_clock::now();\n    swap_ends(vec);\n    for (auto i : vec) cout << i << \" \";\n    cout << endl;\n    auto vt1 = high_resolution_clock::now();\n    cout << duration_cast<nanoseconds>(vt1-vt0).count() << \"msec\\n\";\n    swap_ends(*vecd);\n\n    for (auto i : c_arr) cout << i << \" \";\n    cout << endl;\n\n    for (auto i : vec) cout << i << \" \";\n    cout << endl;\n\n    for (auto i : *vecd) cout << i << \" \";\n    cout << endl;\n\n    delete vecd;\n    return 0;\n}",
+ "title": ""
+}

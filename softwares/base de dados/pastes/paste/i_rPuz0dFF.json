@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rPuz0dFF",
+ "pasteDate": "Feb 8, 2018, 7:19:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\n//error_reporting(E_ALL);\n//var_dump($_SERVER);\n$post_data = $_POST['data'];\nif (!empty($post_data)) {\n    $dir = 'YOUR-SERVER-DIRECTORY/files';\n    $file = uniqid().getmypid();\n    $filename = $dir.$file.'.txt';\n    $handle = fopen($filename, \"w\");\n    fwrite($handle, $post_data);\n    fclose($handle);\n    echo $file;\n}\n?>",
+ "title": ""
+}

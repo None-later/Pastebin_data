@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_decrypt",
+  "kw_encrypt",
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "fFyu5cng",
+ "pasteDate": "Feb 12, 2018, 10:16:27 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "//Encrypt\nEncryptHelper helper = new EncryptHelper();       \nEncryptedData a = helper.encrypt(\"key123\", salt, \"This is the text to encrypt\");\n\n//Decrypt\nEncryptHelper helper1 = new EncryptHelper();       \nString b = helper1.decrypt(\"key123\", salt, a);\n\nSystem.out.println(b);\n\t\npublic EncryptedData(byte[] iv, byte[] cipherText)\n{\n    _iv = iv;\n    _cipherText = cipherText;\n}\n\npublic byte[] getIv() { return _iv; }\npublic byte[] getCipherText() { return _cipherText; }\n\t\n/* Encrypt the message. */\n        Cipher cipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n        cipher.init(Cipher.ENCRYPT_MODE, secret);\n        AlgorithmParameters params = cipher.getParameters();\n\n        byte[] iv = params.getParameterSpec(IvParameterSpec.class).getIV();\n        byte[] ciphertext = cipher.doFinal(data.getBytes(\"UTF-8\"));\n\n        return new EncryptedData(iv, ciphertext);\n    }\n    catch(Exception ex)\n    {\n        System.out.println(ex.getMessage());\n    }\n\n    return null;\n}\n\npublic String decrypt(String password, byte[] salt, EncryptedData b)\n{\n    try\n    {\n        SecretKeyFactory factory = SecretKeyFactory.getInstance(\"PBKDF2WithHmacSHA256\");\n        PBEKeySpec spec = new PBEKeySpec(password.toCharArray(), salt, 65536, 256);\n        SecretKey tmp = factory.generateSecret(spec);\n        SecretKey secret = new SecretKeySpec(tmp.getEncoded(), \"AES\");\n\n        Cipher cipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");\n        cipher.init(Cipher.DECRYPT_MODE, secret, new IvParameterSpec(b.getIv()));\n        String plaintext = new String(cipher.doFinal(b.getCipherText()), \"UTF-8\");\n\n        return plaintext;\n    }\n    catch(Exception ex)\n    {\n        return ex.getMessage();\n    }\n}",
+ "title": ""
+}

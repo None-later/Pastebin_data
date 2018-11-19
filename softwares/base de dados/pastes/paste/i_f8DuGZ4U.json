@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "f8DuGZ4U",
+ "pasteDate": "Feb 8, 2018, 4:01:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "movie() {\n for (let i = 0; i < 100; i++) {\n  let j;\n  if (i > this.numbers.length - 1) {\n    i = -1;\n    continue;\n  } else {\n    if (i === (this.numbers.length - 1)) {\n      i = -1;\n      j = 0;\n    } else {\n      j = i + 1;\n    }\n    this.numbers.splice(j, 1);\n    if (this.numbers.length === 1) {\n      break;\n    }\n   }\n }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "2FZietcB",
+ "pasteDate": "Feb 12, 2018, 9:23:56 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "slapd[9197]: slapd starting\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: slap_client_connect: URI=ldaps://ldap.server ldap_sasl_interactive_bind_s failed (49)\nslapd[9197]: do_syncrepl: rid=000 rc 49 retrying (4 retries left)\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: slap_client_connect: URI=ldaps://ldap.server ldap_sasl_interactive_bind_s failed (49)\nslapd[9197]: do_syncrepl: rid=000 rc 49 retrying (3 retries left)\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: GSSAPI client step 1\nslapd[9197]: GSSAPI client step 2",
+ "title": ""
+}

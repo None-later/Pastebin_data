@@ -1,0 +1,5 @@
+{
+  "value": "SELECT `NOMBRE`,`MODELO_VEHICULO`,`TIPO_CARRERA` FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

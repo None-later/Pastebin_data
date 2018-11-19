@@ -1,0 +1,5 @@
+{
+  "value": "function\")thrownewTypeError(\"Callbackmustbecallable.\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

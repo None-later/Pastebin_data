@@ -1,0 +1,15 @@
+{
+ "espireDate": "1D",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_dropping",
+  "kw_attackers"
+ ],
+ "key": "2acTLZU7",
+ "pasteDate": "Feb 23, 2018, 12:56:37 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Hi,\n\nlast two weeks, we've been debugging nf code (nf.git) and conntrack-tools to find an issue we're dealing with. With Florian's (fw) help on IRC, we managed to locate the issue. We are currently looking for someone to make a fix for us, since the needed patching requires more than good understanding of the code. Florian suggested me to contact you, as you may be available as a contractor for us.\n\nAs brief as possible:\n- We're trying to build a scalable synproxy cluster of linux machines, running netfilter+synproxy\n- Nodes are in bridge mode\n- On the \"north-side\" (the side facing the client/attackers), between the nodes and the client/attackers, we have a switch that balances the traffic *synchronously* to the nodes\n- On the \"south-side\" (the side facing the server), between the nodes and the server, we have a switch the balances the traffic *asynchronously* to the nodes\n- Between the nodes, we have a private network exclusively for conntrackd's multicast traffic. Conntrackd is from git master, so it uses the quick RT schedular\n- On the \"north-side\", all is well\n- Because traffic on the \"south-side\" is asynchronous, the SYN initiated by synproxy to the server could be sent from nodeA, whereas the SYNACK from the server could be received by nodeB\n- We have a good chance to hit a race condition, because the SYNACK is received before the conntrack information from conntrackd is received/handled/inserted. This is resolved by dropping those packets, causing the server to send the SYNACK again\n- For the \"second\" SYNACK from the server we need net.netfilter.nf_conntrack_tcp_be_liberal=1 (because else tcp_in_window() will return false, because the end,maxend,maxwin,etc aren't shared over netlink)\n- Now, even if we use net.netfilter.nf_conntrack_tcp_be_liberal=1, the flow won't work, because synproxy information isn't shared over netlink, because this doesn't seem to be implemented. NodeB is not aware of the isn, its and tsoff, causing the flow to fail\n\nSo, in short, we need someone who could implement this for us. Are you willing and available for this job? And, if so, what are the estimates regarding time and costs?\n\nHope to hear from you,",
+ "title": ""
+}

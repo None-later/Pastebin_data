@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FLJ4d6tq",
+ "pasteDate": "Feb 21, 2018, 8:54:07 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# Deployment Config\n\n```\nroundtrip.go:351: DeploymentConfig: diff: \n\t\tobject.TypeMeta.Kind:\n\t\t  a: \"DeploymentConfig\"\n\t\t  b: \"\"\n\t\tobject.TypeMeta.APIVersion:\n\t\t  a: \"apps.openshift.io/v1\"\n\t\t  b: \"\"\n\t\tobject.Spec.Strategy.RecreateParams.Post.ExecNewPod.Command:\n\t\t  a: []string{}\n\t\t  b: []string(nil)\n\t\tobject.Spec.Strategy.Resources.Limits[fR}[d?I]:\n\t\t  a: \"resource.Quantity{i:resource.int64Amount{value:434, scale:0}, d:resource.i\n\t\t  b: \"resource.Quantity{i:resource.int64Amount{value:434, scale:0}, d:resource.i\n\t\tobject.Spec.Strategy.Labels:\n\t\t  a: map[string]string{}\n\t\t  b: map[string]string(nil)\n\t\tobject.Spec.Selector:\n\t\t  a: map[string]string{}\n\t\t  b: map[string]string(nil)\n\t\tobject.Spec.Template.Spec.Volumes:\n\t\t  a: []v1.Volume{}\n\t\t  b: []v1.Volume(nil)\n\t\tobject.Spec.Template.Spec.ImagePullSecrets:\n\t\t  a: []v1.LocalObjectReference{}\n\t\t  b: []v1.LocalObjectReference(nil)\n\t\tobject.Spec.Template.Spec.DNSConfig.Searches:\n\t\t  a: []string{}\n\t\t  b: []string(nil)\n\t\tobject.Status.Conditions:\n\t\t  a: []v1.DeploymentCondition{}\n\t\t  b: []v1.DeploymentCondition(nil)\n\t\tCodec: &protobuf.Serializer{prefix:[]uint8{0x6b, 0x38, 0x73, 0x0}, creater:(*runtime.Scheme)(0xc42025c5c0), typer:(*runtime.Scheme)(0xc42025c5c0), contentType:\"application/protobuf\"}\n\t\tSource:\n```\n\n# Build\n\n```\n\tobject.TypeMeta.Kind:\n\t\t  a: \"Build\"\n\t\t  b: \"\"\n\t\tobject.TypeMeta.APIVersion:\n\t\t  a: \"build.openshift.io/v1\"\n\t\t  b: \"\"\n\t\tobject.Spec.CommonSpec.Strategy.SourceStrategy.Env:\n\t\t  a: []v1.EnvVar{}\n\t\t  b: []v1.EnvVar(nil)\n\t\tCodec: &protobuf.Serializer{prefix:[]uint8{0x6b, 0x38, 0x73, 0x0}, creater:(*runtime.Scheme)(0xc420268840), typer:(*runtime.Scheme)(0xc420268840), contentType:\"application/protobuf\"}\n\t\tSource:\n```\n```",
+ "title": ""
+}

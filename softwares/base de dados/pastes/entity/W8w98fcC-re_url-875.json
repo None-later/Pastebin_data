@@ -1,0 +1,5 @@
+{
+  "value": "\"https://upload.wikimedia.org/wikipedia/pt/thumb/7/76/RoboCop_%281987%29.jpg/200px-RoboCop_%281987%29.jpg",
+  "correct": true,
+  "jSonReason": "re_url"
+}

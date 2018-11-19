@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "E6ZX8us1",
+ "pasteDate": "Feb 8, 2018, 4:41:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(defun %relativize-pathname (pathname &optional (base *default-pathname-defaults*))\n  (setf pathname (uiop:truenamize (uiop:merge-pathnames* pathname))\n        base (uiop:truenamize (uiop:pathname-directory-pathname (uiop:merge-pathnames* base))))\n  (cond\n    ((uiop:pathname-equal pathname base)\n     (if (uiop:directory-pathname-p pathname)\n         #P\"./\"\n         #P\".\"))\n    ((uiop:subpathp pathname base)\n     (uiop:enough-pathname pathname base))\n    (t\n     (let ((result-dir (list :relative)))\n       (labels ((climb (base)\n                  (cond\n                    ((uiop:pathname-equal pathname base)\n                     (make-pathname\n                      :device nil\n                      :host nil\n                      :directory (uiop:denormalize-pathname-directory-component (nreverse result-dir))\n                      :defaults base))\n                    ((uiop:subpathp pathname base)\n                     (let* ((subpath (uiop:subpathname pathname base)))\n                       (make-pathname\n                        :device nil\n                        :host nil\n                        :directory\n                        (uiop:denormalize-pathname-directory-component\n                         (append\n                          (nreverse result-dir)\n                          (rest\n                           (uiop:normalize-pathname-directory-component\n                            (pathname-directory subpath)))))\n                        :defaults subpath)))\n                    (t\n                     (push :up result-dir)\n                     (climb\n                      (make-pathname\n                       :directory\n                       (uiop:denormalize-pathname-directory-component\n                        (butlast\n                         (uiop:normalize-pathname-directory-component\n                          (pathname-directory base))))\n                       :defaults base))))))\n         (climb base))))))",
+ "title": ""
+}

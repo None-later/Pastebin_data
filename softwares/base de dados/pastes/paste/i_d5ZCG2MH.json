@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "d5ZCG2MH",
+ "pasteDate": "Feb 12, 2018, 7:36:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "if [ -z \"$SSH_AUTH_SOCK\" ] ; then\n    export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)\nfi",
+ "title": ""
+}

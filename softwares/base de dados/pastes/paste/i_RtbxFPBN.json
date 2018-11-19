@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RtbxFPBN",
+ "pasteDate": "Feb 21, 2018, 9:23:42 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "// declare an array with three one-byte numbers to store\n// the incoming values in.\nchar values[] = {1,1,1};\n\nvoid setup() {\n  Serial.begin(9600);\n  // Attach an RGB LED to pins 9-11 (long leg goes to ground)\n  pinMode(9,OUTPUT);\n  pinMode(10,OUTPUT);\n  pinMode(11,OUTPUT);\n}\n\nvoid loop() {\n  // if data has been sent and available\n  if(Serial.available() > 0) {\n  // throw away anything up to 255 to ensure we're at a known location\n\twhile(Serial.peek() != 255)\n      Serial.read(); // removes the byte from the waiting list (queue) of data\n  }\n\n  if(Serial.available() >= 4) { // assuming enough as accumulated...\n    Serial.read(); // discard the first byte--the signal byte--255\n    for(int i=0; i<3; i++)\n      values[i] = Serial.read();\n  }\n\n  for(int i=0; i<3; i++) {\n    blink(9+i, values[i]); // a shortcut to simplify the code,\n         // especially important as we start sending more and more data at once...\n  }\n\n  delay(100);\n}",
+ "title": ""
+}

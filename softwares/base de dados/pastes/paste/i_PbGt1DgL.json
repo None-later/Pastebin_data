@@ -1,0 +1,18 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "re_url",
+  "re_css",
+  "lg_en",
+  "kw_password",
+  "re_ast1"
+ ],
+ "key": "PbGt1DgL",
+ "pasteDate": "Feb 12, 2018, 12:54:37 PM",
+ "relevancy": -5.0,
+ "relevant": false,
+ "text": "<?php\n\tsession_start();\n\n\tif (isset($_REQUEST['inputName']))\n\t\t$_SESSION['Name'] = $_REQUEST['inputName'];\n\n\t$servername = \"5bi_s01078\";\n\t$username = \"root\";\n\t$password = \"\";\n\n\t// Create connection\n\t$conn = mysqli_connect(\"localhost\", $username, $password, $servername);\n\n\t// Check connection\n\tif (!$conn) {\n\t  die(\"Connection failed: \" . mysqli_connect_error());\n\t}\n?>\n\n<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\"\n\t\"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\">\n\n<head>\n\t<title>Index - Login</title>\n\n\t<style>\n\t\tdiv\n\t\t{\n\t\t\tborder-radius: 10px;\n\t\t\tbackground-color: #ffd9b3;\n\t\t\tpadding: 3%;\n\t\t\twidth: 40%;\n\t\t}\n\t\tbody\n\t\t{\n\t\t\tfont-family: serif;\n\t\t\tfont-size: 110%;\n      padding: 200px;\n\t\t}\n\t</style>\n\n\t<script type=\"text/javascript\" language=\"javascript\">\n      function validaForm() {\n\t  //funzione che controlla parzialmente i dati inseriti\n\t\tif (document.home.username.value==\"\") {\n\t\t\talert(\"Inserire username\");\n\t\t\treturn false;\n\t\t}\n      if (document.home.password.value==\"\") {\n        alert(\"Inserire password\");\n        return false;\n      }\n      //alert(\"Dati inseriti correttamente\");\n      return true;\n      }\n\n\t\t\tfunction validaLogin()\n\t\t\t{\n\t\t\t\talert(\"Username o password non validi.\");\n\t\t\t\treturn false;\n\t\t\t}\n    </script>\n</head>\n\n<body>\n  <center>\n\t<div>\n\t<form action=\"home.php\" name=\"submit\" method=\"post\">\n\t<h3>Cinefirns</h3>\n\t <table>\n\t\t\t<tr>\n\t\t\t\t<td>Username</td>\n\t\t\t\t<td><input type=\"text\" name=\"username\" value=\"\"></td>\n\t\t\t</tr>\n      <tr>\n\t\t\t\t<td>Password</td>\n\t\t\t\t<td><input type=\"password\" name=\"password\" value=\"\"></td>\n\t\t\t</tr>\n\t</table>\n\t<br />\n\t<table>\n\t\t<tr>\n\t\t\t<td>\n\t\t\t\t<center><input type=\"submit\" value=\"Login\"></center></form>\n\t\t\t</td>\n\t\t\t<td>\n\t\t\t\t<form action=\"signup.php\" method=\"post\">\n\t\t\t\t\t<center><input type=\"submit\" value=\"Registrati\"></center>\n\t\t\t\t</form>\n\t\t\t</td>\n\t\t</tr>\n\t</table>\n\t</div>\n\n\t<?php\n\t\t$new_password = password_hash($_POST['password'], PASSWORD_DEFAULT);\n\t\t$username = $_POST['username'];\n\n\t\t$sql = \"SELECT Username, Password\n\t\t        FROM 090218Utente\n\t\t\t\t\t\tWHERE Username ='\".$username.\"' AND Password ='\".$new_password.\"'\";\n\n\t\t$result = mysqli_query($conn, $sql);\n\n\t\tif ($result->num_rows > 0)\n\t  {\n\t    // output data of each row\n\t    while($row = $result->fetch_assoc())\n\t    {\n\t      $_SESSION['username'] = $username;\n\t    }\n\n\t    echo \"</table><br />\";\n\t  }\n\t  else\n\t  {\n\t\t\techo '<script type=\"text/javascript\">','validaLogin();','</script>';\n\t  }\n\n\t\t$conn->close();\n\t?>\n</body>\n\n</html>",
+ "title": ""
+}

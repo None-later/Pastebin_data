@@ -1,0 +1,5 @@
+{
+  "value": "function iterator (lastIndex, word \u003d \u0027\u0027, tld \u003d \u0027.com\u0027)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

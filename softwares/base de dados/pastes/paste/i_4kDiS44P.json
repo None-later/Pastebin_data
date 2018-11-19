@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sk"
+ ],
+ "key": "4kDiS44P",
+ "pasteDate": "Feb 23, 2018, 1:57:39 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <stdlib.h>\n#include <conio.h>\n \n \nint main(int argc, char argv[]) {\n\n    char moznost;\n    do{\n\n    int i,cislo;\n    printf(\"\\nPocitam faktorial,zadaj cislo:\");\n    scanf(\"%i\",&cislo);\n    int vysledok;\n    for(i=1;i<=cislo-1;i++){\n         printf(\"%ix\",i);\n         vysledok=i;\n    }\n   vysledok*=i;\n   printf(\"%i=%i\\n\",i,vysledok);\n\n\n   do{\n   printf(\"\\nPokracovat? p/k\");\n   moznost=getch();\n   }\n   while(moznost!='k' && moznost!='K' && moznost !='p' && moznost !='P');\n\n   }while(moznost!='k' && moznost!='K');\n\n\n    return 0;\n}",
+ "title": ""
+}

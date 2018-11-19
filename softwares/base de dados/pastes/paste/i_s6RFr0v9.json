@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "s6RFr0v9",
+ "pasteDate": "Feb 20, 2018, 5:03:41 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "['one', 'two']\n['three', 'four']\n->\n['one three', 'two four']",
+ "title": ""
+}

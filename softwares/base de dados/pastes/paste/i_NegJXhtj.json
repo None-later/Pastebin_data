@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "NegJXhtj",
+ "pasteDate": "Feb 11, 2018, 12:47:25 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "  onClickBackupLocation() {\n    const self = this;\n    dialog.showOpenDialog({\n      properties: ['openDirectory']\n    }, (folderPaths) => {\n      if (folderPaths === undefined) {\n        return;\n      }\n      let walletpath;\n\n      var backupLocation = `${folderPaths}/walletBackup.dat`;\n      this.backupWallet(backupLocation);\n    });\n  }\n\n  backupWallet(location){\n    var self = this;\n    this.props.wallet.command([{\n      method: 'backupwallet', parameters: [location]\n    }\n    ]).then((data) => {\n      if (data[0] === null) {\n        self.props.setBackupOperationCompleted(true);\n      } else {\n        console.log(\"error backing up wallet: \", data)\n      }\n    }).catch((err) => {\n      console.log(\"exception backing up wallet: \", err)\n    });\n  }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3BatKE5S",
+ "pasteDate": "Feb 20, 2018, 5:09:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# -*- coding: utf-8 -*-\n\ndef hamshop(kind, *arguments, **keywords):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"-- I'm sorry, we're all out of\", kind)\n    for arg in arguments:\n        print(arg)\n    print(\"-\" * 40)\n    keys = sorted(keywords.keys())\n    for kw in keys:\n        print(kw, \":\", keywords[kw])\n\nhamshop(\"Hamburger\", \n        \"It's very runny, sir.\",\n        \"It's really very, VERY runny, sir.\",\n        \"hey man :)\",\n        \"posso colocar quantos quiser porque  um *args\",\n        \"mais um *args\",\n        shopkeeper='Michael',\n        client=\"Jackson\",\n        sketch=\"Ham Shop\")\n\n\ndef cheeseshop(kind, **keywords):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"-\" * 40)\n    keys = sorted(keywords.keys())\n    for kw in keys:\n        print(kw, \":\", keywords[kw])\n\ncheeseshop(\"hey boy\", \n           question='what''s up?',\n           response=\"very nice, man\",\n           why=\"what do you thing?\")\n\n\ndef meatshop(kind, **args):\n    print(\"-- Do you have any\", kind, \"?\")\n    print(\"question:\", args['question'])\n    print(\"response:\", args['response'])\n    print(\"think:\", args['think'])\n\nmeatshop(\"hey boy\", \n        question='what\\'s up?',\n        response=\"very nice, man!\",\n        think=\"what do you thing?\")",
+ "title": ""
+}

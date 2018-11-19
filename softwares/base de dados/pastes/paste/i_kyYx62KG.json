@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "kyYx62KG",
+ "pasteDate": "Feb 28, 2018, 4:41:36 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<!-- For version detection, set to min. required Flash Player version, or 0 (or 0.0.0), for no version detection. -->\nvar swfVersionStr = \"10.0.0\";\n<!-- To use express install, set to playerProductInstall.swf, otherwise the empty string. -->\nvar xiSwfUrlStr = \"/swf/playerProductInstall.swf\";\nvar flashvars = {};\nvar params = {};\nparams.quality = \"high\";\nparams.bgcolor = \"#ffffff\";\nparams.allowscriptaccess = \"sameDomain\";\nparams.allowfullscreen = \"true\";\nparams.wmode= \"transparent\";\nflashvars.url = \"http%3A%2F%2Feobraz%2F\";\nflashvars.s_id= \"e74q8icl4it2h93lkk43vb6j11\";\nvar attributes = {};\nattributes.id = \"uploader\";\nattributes.name = \"uploader\";\nattributes.align = \"middle\";\nswfobject.embedSWF(\n\"/swf/uploader.swf\", \"flashContent\",\n\"700\", \"700\",\nswfVersionStr, xiSwfUrlStr,\nflashvars, params, attributes);\n<!-- JavaScript enabled so display the flashContent div in case it is not replaced with a swf object. -->\nswfobject.createCSS(\"#flashContent\", \"display:block;text-align:left;\");",
+ "title": ""
+}

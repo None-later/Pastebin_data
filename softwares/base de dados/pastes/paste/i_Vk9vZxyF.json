@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "Vk9vZxyF",
+ "pasteDate": "Feb 18, 2018, 1:09:37 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$${\nif(z);\nlog(\"&3[Escavar]  &bMacro desligado!\");\nunset(z);\nstop;\nelse;\nlog(\"&3[Escavar]  &bMacro ligado!\");\n}$$/pvp off$${\nset(z);\nendif;\ndo;\ndo;\ndo(80);\nlook(west);\nlook(,60);\npick(dirt);\nkey(use);\nwait(1ms);\npick(stone_shovel);\nkey(attack);\nif(DURABILITY<39);\n    wait(1);\n    look(,90);\n    wait(1);\n    key(use);\n    wait(1);\nendif;\nloop;\n    gui(inventory);\n    wait(1);\n    gui();\nendif;\nloop;\n}$$",
+ "title": ""
+}

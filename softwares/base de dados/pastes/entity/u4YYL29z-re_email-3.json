@@ -1,0 +1,5 @@
+{
+  "value": "linux-acpi@vger.kernel.org",
+  "correct": true,
+  "jSonReason": "re_email"
+}

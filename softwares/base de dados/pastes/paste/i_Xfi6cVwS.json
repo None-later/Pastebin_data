@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "Xfi6cVwS",
+ "pasteDate": "Feb 20, 2018, 1:52:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#pragma warning (disable: 4996)\nusing namespace std;\n\n\nclass Schaltung {\nprotected:\n\tfloat R1, R2;\npublic:\n\tSchaltung(float r1 = 12, float r2 = 23)\n\t{\n\t\tR1 = r1;\n\t\tR2 = r2;\n\t}\n\t\n\tvirtual float berechneRges() = 0;\n\t\n\n\tfloat berechneI(float U = 46)\n\t{\n\t\treturn U / berechneRges();\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t// i = u/r\n\t}\n\tfloat berechneU(float I =15) \n\t{\n\t\treturn I*berechneRges();\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t// u=i*r\n\t}\n\tvoid setR1(float wert) {\n\t\tR1 = wert;\n\t}\n\tfloat getR1() {\n\t\treturn R1;\n\t}\n\tvoid setR2(float wert) {\n\t\tR2 = wert;\n\t}\n\tfloat getR2() {\n\t\treturn R2;\n\t}\n};\n\nclass Reihe : public Schaltung {\npublic:\n\tReihe(float r1 = 12, float r2 = 23) : Schaltung(R1, R2) {}\n\n\tfloat berechneRges() {\n\n\t\treturn R1 + R2;\n\t}\n};\n\n\nclass Parallel : public Schaltung {\npublic:\n\tParallel(float r1 = 12, float r2 = 23) : Schaltung(R1, R2) {}\n\n\tfloat berechneRges() {\n\t\treturn (R1 * R2) / (R1 + R2);\n\t}\n};\n\n\nint main(void) {\n\tReihe BspReihe;\n\tParallel BspPara;\n\n\tBspReihe.setR1(5);\n\tBspPara.setR2(56);\n\tcout << BspReihe.getR1;\n\tcout << BspPara.getR2;\n\n\tcout <<\"Rges von Reihenschaltung: \" << BspReihe.berechneRges() << endl;\n\tcout <<\"\\nUges von Reihenschaltung: \" << BspReihe.berechneU() << endl;\n\tcout << \"\\nIges von Reihenschaltung: \" << BspReihe.berechneI() << endl;\n\n\tcout << \"Rges von Parallelschaltung: \" << BspPara.berechneRges() << endl;\n\tcout << \"\\nUges von Parallelschaltung: \" << BspPara.berechneU() << endl;\n\tcout << \"\\nIges von Parallelschaltung: \" << BspPara.berechneI() << endl;\n\t\n\n\tsystem(\"PAUSE\");\n};",
+ "title": ""
+}

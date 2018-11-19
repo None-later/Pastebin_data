@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en"
+ ],
+ "key": "i6cDpnQB",
+ "pasteDate": "Feb 21, 2018, 1:50:34 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# activesupport/lib/active_support/core_ext/module/delegation.rb\n\nclass Module\n  def delegate(*methods)\n    options = methods.pop\n    unless options.is_a?(Hash) && to = options[:to]\n      raise ArgumentError, \"Delegation needs a target. Supply an options hash with a :to key as the last argument (e.g. delegate :hello, :to => :greeter).\"\n    end\n\n    if options[:prefix] == true && options[:to].to_s =~ /^[^a-z_]/\n      raise ArgumentError, \"Can only automatically set the delegation prefix when delegating to a method.\"\n    end\n\n    prefix = options[:prefix] && \"#{options[:prefix] == true ? to : options[:prefix]}_\"\n\n    methods.each do |method|\n      module_eval(<<-EOS, \"(__DELEGATION__)\", 1)\n        def #{prefix}#{method}(*args, &block)\n          #{to}.__send__(#{method.inspect}, *args, &block)\n        end\n      EOS\n    end\n  end\nend",
+ "title": ""
+}

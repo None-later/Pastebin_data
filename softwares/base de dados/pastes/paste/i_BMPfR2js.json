@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BMPfR2js",
+ "pasteDate": "Feb 26, 2018, 1:00:34 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "  public void setTempo(int hora, int minuto, int segundo) {\n        this.segundo = segundo;\n        int m = 0;\n        if (this.segundo >= 60) {\n            do {\n                this.segundo = this.segundo - 60;\n                m++;\n            } while (this.segundo >= 60);\n            this.minuto = minuto + m;\n        }\n        if (this.minuto >= 60) {\n            int h = 0;\n            do {\n                this.minuto = this.minuto - 60;\n                h++;\n            } while (this.minuto >= 60);\n            if (m >= 60) {\n                this.hora = hora + h;\n            }\n        }\n    }",
+ "title": ""
+}

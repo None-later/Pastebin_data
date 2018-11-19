@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "f9M3vNyU",
+ "pasteDate": "Feb 12, 2018, 4:42:33 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import tkinter as tk\n\nclass Main(tk.Frame):\n  def  __init__(self, root):\n    super().__init__(root)\n    self.init_main()\n    \n  def init_main(self):\n    toolbar = tk.Frame(bg = 'white', bd=2)\n    toolbar.pack(side=tk.TOP, fill=tk.X)\n\n    self.add_img = tk.PhotoImage(file= 'add.gif')\n    btn_open_dialog = tk.Button(toolbar, text = '', command=self.open_dialog, bg='white', bd=5, compoun=tk.TOP, image=self.add_img)\n    btn_open_dialog.pack(side=tk.LEFT)\n  def open_dialog(self):\n    Child()\n\nclass Child(tk.Toplevel):\n\n  def callback():\n    get = tk.edit.get()\n    print (\"123\")\n  \n  def __init__(self):\n    super().__init__(root)\n    self.init_child()\n\n  def init_child(self):\n    self.title('test')\n    self.geometry('400x220+400+300')\n    self.resizable(False, False)\n\n    enter = tk.Entry(self, width = 20, bg = 'white')\n    but = tk.Button(self, text = '', command = callback)\n    enter.pack()\n    but.pack() \n\n    self.grab_set()\n    self.focus_set()\n\nif __name__ == \"__main__\":\n    root = tk.Tk()\n    app = Main(root)\n    app.pack()\n    root.title(\"Chifer\")\n    root.geometry(\"640x450+300+200\")\n    root.resizable(False, False)\n\n    root.mainloop()",
+ "title": ""
+}

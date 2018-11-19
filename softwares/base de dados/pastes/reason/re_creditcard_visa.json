@@ -1,0 +1,7 @@
+{
+  "corrects": 1011,
+  "incorrects": 251,
+  "reason": "re_creditcard_visa",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

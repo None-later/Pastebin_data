@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "6qvGaHpS",
+ "pasteDate": "Feb 8, 2018, 1:25:39 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "local data={ (this will give you perm aimbot and super speed)\nsave=3,\nsavedata={\nkoins=1333333333333333337,\nmain={\nupgrades={dunk={max=20, current=9},\ndefense={max=20, current=14},\nsteal={max=20, current=-1},\njump={max=20, current=10},\nfreethrow={max=20, current=11},\nshotcontest={max=20, current=13},\n[2pointer]={max=20, current=-1},\n[3pointer]={max=20, current=-1},\nhandles={max=20, current=14},\nlayup={max=20, current=12},\npostscorer={max=20, current=9},\nballspeed={max=20, current=-3},\nspeed={max=20, current=-3},\npassing={max=20, current=16},\nmovingshot={max=20, current=-1},\nstrength={max=20, current=7}},\npark_onanimations={},\nrb7_celebrations={},\njumpshots={Starter Jumpshot 1, Starter Jumpshot 2, Starter Jumpshot 3},\nprestige=1,\npants={Grey Joggers},\nlevel=4,\nlayups={Starter Layup 1, Starter Layup 2},\nshoes={RB Generics},\npark=westlake,\ndunks={Big Slam},\ncurrentexp=0,\nhats={Nothing},\ncustomjumpshots={},\npark_celebrations={},\nposition=Always,\nplaystyle=Green,\nskills = {\n[2pointer] = -1,\n[3pointer] = -1,\nballspeed = -3,\ndefense = 50,\ndunk = 36,\nfreethrow = 44,\nhandles = 52,\njump = 45,\nlayup = 57,\nmovingshot = -1,\npassing = 57,\npostscorer = 44,\nshotcontest = 40,\nspeed = -3,\nsteal = -1,\nstrength = 44,\n},\nmaxexp=109999990,\nshirts={Plain White Shirt}\n},\nappearance={\ndunk=698187443, park_onanimations={},\nrb7_celebrations={},\nhat2={meshid=179522694, textureid=658968031, name=Backpack, pos={y=-1.525, z=0.479}, rotation={y=0, z=0}},\nlayup={name=Starter Layup 1, idr=696678129, idl=696677707},\nshirt=814640473,\nweight=190,\npants=1237907635,\nshoes={name=black n white, shoetype=LowShoe, idr=1029104847, idl=1028523033},\nhat={meshid=69225450, textureid=444283466, name=Bape Mask BLACK | CityStyle, pos={y=-.3, z=-.1}},\nskincolor=Nougat,\ngender=Male,\npark_celebrations={},\nhaircolor=Really black,\nheight=5.9,\nshothand=R,\njumpshot={name=Starter Jumpshot 1, shot=697217666, jump=697208867},\nhair={meshid=906107820, pos={y=.45, z=0},name=Bald,size={y=0.07, x=0.07, z=0.07}}\n},\nupgrading=1\n},\nmaindata={\nfriends={},\nname=game.Players.LocalPlayer.Name,\npark=westlake,\nid=game.Players.LocalPlayer.userId,\nfollow=Anyone,\nleague=0,\ngym=0\n}\n}\ngame.ReplicatedStorage.tp:FireServer(data)",
+ "title": "afasgasgagg"
+}

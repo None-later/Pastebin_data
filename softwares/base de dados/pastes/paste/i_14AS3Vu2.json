@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "14AS3Vu2",
+ "pasteDate": "Feb 20, 2018, 1:46:45 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "english.lproj/body.rhtml\n\n<% content_for('body') do %>\n\t<% popup_button_view :popup_test, :title => 'TestMenuPopup', :action => 'Prototipo.mainFrameController.showMenu'  do %>\n       <% popup_menu_view :popup_test_menu, :paneType => 'menu' do %>\n           <%= menu_item_view :menu_item_one, :label => 'test1' %>\n           <%= menu_item_view :menu_item_two, :label => 'test2' %>\n       <% end %> \n    <% end %>\n<% end %>\n\ncontrollers/main_frame.js\n\n// ==========================================================================\n// Prototipo.MainFrameController\n// ==========================================================================\n\nrequire('core');\n\n/** @class\n\n  (Document Your View Here)\n\n  @extends SC.Object\n  @author AuthorName\n  @version 0.1\n  @static\n*/\nPrototipo.mainFrameController = SC.Object.create(\n/** @scope Prototipo.mainFrameController */ {\n\n  // TODO: Add your own code here.\nshowMenu: function() {\n\tSC.page.get('popupTestMenu').popup();\n}\n}) ;",
+ "title": ""
+}

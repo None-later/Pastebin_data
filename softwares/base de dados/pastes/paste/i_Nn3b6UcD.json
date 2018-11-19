@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Nn3b6UcD",
+ "pasteDate": "Feb 26, 2018, 11:15:47 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "package eu.itsflxsh.tabprefix;\n\nimport org.bukkit.entity.Player;\nimport org.bukkit.event.EventHandler;\nimport org.bukkit.event.Listener;\nimport org.bukkit.event.player.AsyncPlayerChatEvent;\n\npublic class ChatPrefix implements Listener {\n\t\n\t@EventHandler\n\tpublic void PrefixChat(AsyncPlayerChatEvent e) {\n\t\tPlayer p= e.getPlayer();\n\t\tString Msg = e.getMessage();\n\t\tMsg = Msg.replace(\"&\", \"&\");\n\t\t\n\t\tif(p.hasPermission(\"tabprefix.admin\")) {\n\t\t\te.setFormat(\"cAdmin 8| \" + p.getName() + \"c\" + Msg);\n\t\t\t\n\t\t\tif(p.hasPermission(\"tabprefix.dev\")) {\n\t\t\t\te.setFormat(\"bDev 8| \" + p.getName() + \"b\" + Msg);\n\t\t\t\t\n\t\t\t\tif(p.hasPermission(\"tabprefix.desingner\")) {\n\t\t\t\t\te.setFormat(\"dDesingner 8| \" + p.getName() + \"d\" + Msg);\n\t\t\t\t\t\n\t\t\t\t\tif(p.hasPermission(\"tabprefix.mod\")) {\n\t\t\t\t\t\te.setFormat(\"2Moderator 8| \" + p.getName() + \"2\" + Msg);\n\t\t\t\t\t\t\n\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.sup\")) {\n\t\t\t\t\t\t\te.setFormat(\"aSupporter 8| \" + p.getName() + \"a\" + Msg);\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.builder\")) {\n\t\t\t\t\t\t\t\te.setFormat(\"9Builder 8| \" + p.getName() + \"9\" + Msg);\n\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.youtuber\")) {\n\t\t\t\t\t\t\t\t\te.setFormat(\"5YouTuber 8| \" + p.getName() + \"5\" + Msg);\n\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.gold\")) {\n\t\t\t\t\t\t\t\t\t\te.setFormat(\"6Gold 8| \" + p.getName() + \"6\" + Msg);\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.owner\")) {\n\t\t\t\t\t\t\t\t\t\t\te.setFormat(\"4Owner 8| \" + p.getName() + \"4l\" + Msg);\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.freund\")) {\n\t\t\t\t\t\t\t\t\t\t\t\te.setFormat(\"eFreund 8| \" + p.getName() + \"e\" + Msg);\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\tif(p.hasPermission(\"tabprefix.spieler\")) {\n\t\t\t\t\t\t\t\t\t\t\t\t\te.setFormat(\"7Spieler 8| \" + p.getName() + \"7\" + Msg);\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t}\n\t}\n}",
+ "title": ""
+}

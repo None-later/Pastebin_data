@@ -1,0 +1,5 @@
+{
+  "value": "1714:1:1145:4:1146:4:1147:4:1148",
+  "correct": false,
+  "jSonReason": "re_ipv6_with_port"
+}

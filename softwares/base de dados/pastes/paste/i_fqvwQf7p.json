@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fqvwQf7p",
+ "pasteDate": "Feb 24, 2018, 3:06:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "_items = [\"Consumable_Stone\"];\nfor \"_evnaTheFaggot\" from 0 to (count _items) do {\n_item = _items select _evnaTheFaggot;\n_spawnshit = createVehicle [_item,_pos,[], 0, \"can_collide\"];\n_spawnshit setQuantity 8;\n};",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WxVkcw2v",
+ "pasteDate": "Feb 11, 2018, 8:53:08 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public partial class KatsuDb : DbContext\n    {\n        private static string _connectionString;\n\n        public KatsuDb(string connectionString)\n            : base(connectionString)\n        {\n        }\n\n        public KatsuDb() : base(_connectionString) { }\n\n        protected override void OnModelCreating(DbModelBuilder modelBuilder)\n        {\n            modelBuilder.HasDefaultSchema(\"KatsuragiBotSchema\");\n        }\n\n        public virtual DbSet<User> Users { get; set; }\n        public virtual DbSet<Party> Parties { get; set; }\n        public virtual DbSet<Channel> Channels { get; set; }\n        public virtual DbSet<Guild> Guilds { get; set; }\n    }\n\n\n    public class User\n    {\n        [Key]\n        public int UserIndex { get; set; }\n        public string UserId { get; set; }\n        [ForeignKey(\"FParty\")]\n        public int? PartyIndex { get; set; }\n\n        public Party FParty { get; set; }\n    }\n\n    public class Party\n    {\n        [Key]\n        public int PartyIndex { get; set; }\n        [ForeignKey(\"FChannel\")]\n        public int? ChannelIndex { get; set; }\n        [Required]\n        public string MessageId { get; set; }\n        [Required]\n        public string Name { get; set; }\n        [Required]\n        public byte MaxPlayers { get; set; }\n        public DateTime ExpirationDate { get; set; }\n        public string Summary { get; set; }\n\n        public virtual ICollection<User> Users { get; set; }\n        public virtual Channel FChannel { get; set; }\n    }\n\n    public class Guild\n    {\n        [Key]\n        public int GuildIndex { get; set; }\n        public string GuildId { get; set; }\n        public DateTime? ExpirationDate { get; set; }\n        [ForeignKey(\"FPartyChannel\")]\n        public int? PartyChannel { get; set; }\n\n        public virtual Channel FPartyChannel { get; set; }\n    }\n\n    public class Channel\n    {\n        [Key]\n        public int ChannelIndex { get; set; }\n        public string ChannelId { get; set; }\n        [ForeignKey(\"FGuild\")]\n        public int? GuildIndex { get; set; }\n        \n        public virtual Guild FGuild { get; set; }\n    }",
+ "title": "CodeFirst"
+}

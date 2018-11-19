@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FrtVda43",
+ "pasteDate": "Feb 10, 2018, 7:24:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "t = open('Task_1.txt')\ncatconf = []\ndogeconf = []\n\ncat_tp = 0\ncat_fp = 0\ncat_fn = 0\n\ndoge_tp = 0\ndoge_fp = 0\ndoge_fn = 0\n\n\nfor line in t:\n    arr = line.split(\" \")\n    if arr[4] == \"cat\":\n        catconf.append([float(arr[6]), int(arr[9])])\n    elif arr[4] == \"doge\":\n        dogeconf.append([float(arr[6]), int(arr[9])])\n\nfor i in range(0, len(catconf)):\n    if catconf[i][1] == 0:\n        cat_fp += 1\n    elif catconf[i][1] == 1:\n        cat_tp += 1\n\nfor i in range(0, len(dogeconf)):\n    if dogeconf[i][1] == 0:\n        doge_fp += 1\n    elif catconf[i][1] == 1:\n        doge_tp += 1\n\n\ncat_pre = cat_tp/(cat_tp + cat_fp)\ncat_re = cat_tp/(cat_tp + (700 - cat_fp))\n\ndoge_pre = doge_tp/(doge_tp + doge_fp)\ndoge_re = doge_tp/(doge_tp + (700 - doge_fp))\n\nprint(cat_pre, cat_re, doge_pre, doge_re)",
+ "title": ""
+}

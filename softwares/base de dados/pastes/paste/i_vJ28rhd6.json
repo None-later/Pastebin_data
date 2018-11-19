@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "vJ28rhd6",
+ "pasteDate": "Feb 11, 2018, 6:35:43 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function Detail ($id_produk) {\n\t$this->db->where('id_produk', $id_produk);\n\t$query = $this->db->get('produk');\n\treturn $query->result();\n}",
+ "title": ""
+}

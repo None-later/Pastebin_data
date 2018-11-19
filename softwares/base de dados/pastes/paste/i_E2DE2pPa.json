@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "E2DE2pPa",
+ "pasteDate": "Feb 20, 2018, 8:18:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Rawssy's Crosshair ///\n\ncl_crosshair_drawoutline \"0\"\ncl_crosshair_dynamic_maxdist_splitratio \"0.35\"\ncl_crosshair_dynamic_splitalpha_innermod \"1\"\ncl_crosshair_dynamic_splitalpha_outermod \"0.5\"\ncl_crosshair_dynamic_splitdist \"7\"\ncl_crosshair_outlinethickness \"0.500000\"\ncl_crosshair_sniper_show_normal_inaccuracy \"0\"\ncl_crosshair_sniper_width \"1\"\ncl_crosshairalpha \"250\"\ncl_crosshaircolor \"5\"\ncl_crosshaircolor_b \"255\"\ncl_crosshaircolor_g \"255\"\ncl_crosshaircolor_r \"0\"\ncl_crosshairdot \"0\"\ncl_crosshairgap \"-10\"\ncl_crosshairgap_useweaponvalue \"0\"\ncl_crosshairscale \"0\"\ncl_crosshairsize \"2.500000\"\ncl_crosshairstyle \"4\"\ncl_crosshairthickness \"0.500000\"\ncl_crosshairusealpha \"1\"",
+ "title": ""
+}

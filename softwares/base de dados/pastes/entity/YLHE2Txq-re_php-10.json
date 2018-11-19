@@ -1,0 +1,5 @@
+{
+  "value": "define(COLON, $:)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

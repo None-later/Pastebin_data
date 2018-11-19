@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sEezYdRu",
+ "pasteDate": "Feb 20, 2018, 6:04:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    public static class Handler implements IMessageHandler<PacketSyncRCLevel, IMessage>\n    {\n        @Override\n        public IMessage onMessage(PacketSyncRCLevel message, MessageContext ctx)\n        {\n            Minecraft.getMinecraft().addScheduledTask(() -> {\n                Minecraft mc = Minecraft.getMinecraft();\n                EntityPlayer player = mc.getMinecraft().player;\n                IRuneCraftLevel runeCraftLevel = player.getCapability(rcLvl_Provider.RUNECRAFT_LEVEL, null);\n                runeCraftLevel.setRuneLevel(message.rcLvL);\n                System.out.println(\"The Rune Craft Level has been synced to: \" + message.rcLvL);\n            });\n            return null;\n        }\n    }",
+ "title": ""
+}

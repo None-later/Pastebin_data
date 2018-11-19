@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "z5sFvzQY",
+ "pasteDate": "Feb 28, 2018, 10:10:02 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Watchpoint 3 Triggered in Thread 1\nExpression: *(int *) 375667156\nNew Value: -1073741821\nOld  Value: -1825099910\n(gdb) bt\n#0  0x93b60b83 in tiny_free_list_add_ptr ()\n#1  0x93b5dbda in szone_free ()\n#2  0x93b5d2cd in free ()\n#3  0x93373a6a in xmlCleanupCharEncodingHandlers ()\n#4  0x93377438 in xmlCleanupParser ()\n#5  0x173ea615 in TTerminology::ScanScriptingDefinition ()\n#6  0x173ea990 in GetAppTerminology ()\n#7  0x173f18a9 in TUASApplication::Terminology ()\n#8  0x173c9182 in ASCompile ()\n#9  0x967c92b4 in CallComponentFunction ()\n#10 0x173c3a9e in AppleScriptComponent ()\n#11 0x96783a95 in CallComponentDispatch ()\n#12 0x952f01c3 in OSACompile ()\n#13 0x952e7dc0 in OSADoIt ()\n#14 0x952e850d in OSALoadFile ()\n#15 0x000fffd3 in -[OSAScript(OSAPrivate) _initWithContentsOfFile:error:] ()\n#16 0x000fe01a in -[OSAScript initWithContentsOfURL:language:error:] ()\n#17 0x000fdfc0 in -[OSAScript initWithContentsOfURL:error:] ()\n#18 0x00007000 in -[textcast_AppDelegate runAppleScriptNamed:] (self=0x277330, _cmd=0x49093, scriptName=0x5b4e4) at /Users/dave/work/bitmaki/textcast/textcast/textcast_AppDelegate.m:973\n#19 0x000077bc in -[textcast_AppDelegate importNetNewsWire:] (self=0x277330, _cmd=0x490e9, sender_=0x23b6a0) at /Users/dave/work/bitmaki/textcast/textcast/textcast_AppDelegate.m:1105\n#20 0x91f0c5e8 in -[NSToolbarButton sendAction:to:] ()\n#21 0x91f0c579 in -[NSToolbarButton sendAction] ()\n#22 0x91f0bafa in -[NSToolbarItemViewer mouseDown:] ()\n#23 0x91dc61a3 in -[NSWindow sendEvent:] ()\n#24 0x91d92d49 in -[NSApplication sendEvent:] ()\n#25 0x91cf069f in -[NSApplication run] ()\n#26 0x91cbd8a4 in NSApplicationMain ()\n#27 0x00002e7e in main (argc=7, argv=0xbffff0ac) at /Users/dave/work/bitmaki/textcast/textcast/main.m:13",
+ "title": ""
+}

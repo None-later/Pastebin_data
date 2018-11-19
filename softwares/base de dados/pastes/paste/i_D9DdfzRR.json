@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "D9DdfzRR",
+ "pasteDate": "Feb 28, 2018, 5:43:15 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "cl_crosshair_drawoutline \"0\"\ncl_crosshair_dynamic_maxdist_splitratio \"0.35\"\ncl_crosshair_dynamic_splitalpha_innermod \"1\"\ncl_crosshair_dynamic_splitalpha_outermod \"0.5\"\ncl_crosshair_dynamic_splitdist \"7\"\ncl_crosshair_outlinethickness \"1\"\ncl_crosshair_sniper_show_normal_inaccuracy \"0\"\ncl_crosshair_sniper_width \"2\"\ncl_crosshair_t \"0\"\ncl_crosshairalpha \"999\"\ncl_crosshaircolor \"5\"\ncl_crosshaircolor_b \"0\"\ncl_crosshaircolor_g \"0\"\ncl_crosshaircolor_r \"255\"\ncl_crosshairdot \"0\"\ncl_crosshairgap \"-2.5\"\ncl_crosshairgap_useweaponvalue \"0\"\ncl_crosshairscale \"4\"\ncl_crosshairsize \"3.500000\"\ncl_crosshairstyle \"4\"\ncl_crosshairthickness \"0\"\ncl_crosshairusealpha \"1\"\ncl_fixedcrosshairgap \"3\"",
+ "title": ""
+}

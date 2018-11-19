@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DhRpYgrA",
+ "pasteDate": "Feb 18, 2018, 12:59:18 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "[eDVBCAService] free slot 0 demux 3 for service 1:0:19:81:6:85:C00000:0:0:0:\n[eDVBCAService] free service 1:0:19:81:6:85:C00000:0:0:0:\ndecoder state: play, vpid=-1, apid=-1\nDEMUX_STOP - pcr - ok\nDEMUX_STOP - video - ok\nVIDEO_STOP - ok\nAUDIO_STOP - ok\nDEMUX_STOP - audio - ok\nAUDIO_CONTINUE - ok\nDEMUX_STOP - ttx - ok\nstart release channel timer\nnot pauseable.\nRemovePopup, id = ZapError\nalloc PVR\nallocate channel.. 0000:0000:00000000 (http/streams.br-online.de/bayern3_2.m3u)\n[eDVBCAService] new channel 0x9531a0!\nallocate pvr demux\nloading streaminfo for http/streams.br-online.de/bayern3_2.m3u",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "ECbRRXBA",
+ "pasteDate": "Feb 28, 2018, 6:53:21 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/*Escreva um programa que copie sua entrada na saida, trocando cada cadeia de dois ou mais espaoes por um unico espaco*/\n#include<stdio.h>\n\nmain()\n{\n        int c;\n\n        while( (c=getchar() ) != EOF) {\n                if (c>''){\n                        c= '';\n                        putchar(c);\n                        }\n        else{\n                putchar();\n        }\n\n\n        }\n}",
+ "title": ""
+}

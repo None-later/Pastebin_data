@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "UzncPWhr",
+ "pasteDate": "Feb 26, 2018, 10:04:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public static void NoDuplicateContactEmail(IOrganizationService service, DataContext context, Contact contact)\n        {\n            var EmailExistingOnContact = (from c in context.ContactSet\n                                          where ((c.EMailAddress1 != null && c.EMailAddress1 == contact.EMailAddress1) ||\n                                                 (c.EMailAddress2 != null && c.EMailAddress2 == contact.EMailAddress2) ||\n                                                 (c.EMailAddress1 != null && c.EMailAddress1 == contact.EMailAddress2) ||\n                                                 (c.EMailAddress2 != null && c.EMailAddress2 == contact.EMailAddress1)) &&\n                                                 c.Id != contact.Id\n                                          select c).FirstOrDefault();\n\n            if (EmailExistingOnContact != null)\n            {\n                string emailAdress;\n                if (EmailExistingOnContact.EMailAddress1 == contact.EMailAddress1 && contact.EMailAddress1 != null)\n                {\n                    emailAdress = contact.EMailAddress1;\n                }\n                else\n                {\n                    emailAdress = contact.EMailAddress2;\n                }\n\n                string ex = $\"Error: The e-mail: {emailAdress} is already in use on the contact: {EmailExistingOnContact.FullName}.\";\n                throw new InvalidPluginExecutionException(@\"<strong>Duplicate E-mail!</strong><br>\" + Environment.NewLine + ex);\n            }\n        }",
+ "title": ""
+}

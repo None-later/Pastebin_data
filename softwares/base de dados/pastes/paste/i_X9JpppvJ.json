@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_css"
+ ],
+ "key": "X9JpppvJ",
+ "pasteDate": "Feb 20, 2018, 1:39:32 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "/* Read rules before posting */\ncommentarea .child .usertext textarea, .commentarea .usertext textarea {\n    background-image: url('%%commentbg%%');\n    background-repeat: no-repeat;\n}\n\n.commentarea .usertext textarea:active, .commentarea .usertext textarea:focus {\n    background: none repeat scroll 0% 0%;\n}\n\n\n.res-nightmode commentarea .child .usertext textarea, .res-nightmode .commentarea .usertext textarea {\n    background-image: url('%%commentbg%%');\n    background-repeat: no-repeat;\n}\n\n.res-nightmode .commentarea .usertext textarea:active, .res-nightmode .commentarea .usertext textarea:focus {\n    background: none repeat scroll 0% 0%;\n}\n\n.res-nightmode .commentarea {\n    margin-top: 10px;\n    margin-right: 304px !important;\n}\n\n#header + .side {\n    padding-top: 70px;\n}\n\n.side .usertext-body.may-blank-within.md-container > .md > blockquote:nth-of-type(1) {\n    position: absolute;\n    top: 125px;\n    margin: 0 0 0 5px;\n    padding: 16px 0;\n    background-color: #4052ab;\n    width: 275px;\n    text-align: center;\n}",
+ "title": ""
+}

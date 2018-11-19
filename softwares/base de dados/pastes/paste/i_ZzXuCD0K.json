@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "kw_operations"
+ ],
+ "key": "ZzXuCD0K",
+ "pasteDate": "Feb 28, 2018, 8:12:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<package id=\"Microsoft.TypeScript.Compiler\" version=\"2.7.2\" targetFramework=\"net462\" developmentDependency=\"true\" />\n  <package id=\"Microsoft.TypeScript.MSBuild\" version=\"2.7.2\" targetFramework=\"net462\" developmentDependency=\"true\" />\n\t\n<Target Name=\"CompileTypeScriptWithTSConfig\"\n    Condition=\"'$(BuildingProject)' != 'false' AND '@(ConfigFiles)' != '' AND '$(DesignTimeBuild)' != 'true'\"\n    DependsOnTargets=\"$(CompileTypeScriptDependsOn)\"\n    BeforeTargets=\"$(CompileTypeScriptBeforeTargets)\"\n    AfterTargets=\"$(CompileTypeScriptAfterTargets)\"\n    Inputs=\"@(TypeScriptInputFiles)\" Outputs=\"@(GeneratedJavascript)\">\n    <!--For some reason, ItemGroup operations are occurring even when the target is skipped-->\n    <!--So we use the CompileRan property to ensure the ItemGroup operations only run when it isn't skipped-->\n    <CreateProperty Value=\"true\">\n      <Output TaskParameter=\"ValueSetByTask\" PropertyName=\"CompileRan\" />\n    </CreateProperty>\n    <ItemGroup>\n      <emittedFiles Remove=\"@(emittedFiles)\" Condition=\"'$(CompileRan)' == 'true'\" />\n      <GeneratedJavascript Remove=\"@(GeneratedJavascript)\" Condition=\"'$(CompileRan)' == 'true'\" />\n    </ItemGroup>\n    <VsTsc\n      ToolPath=\"$(TscToolPath)\"\n      ToolExe=\"$(TscToolExe)\"\n      IsFileSystemCaseSensitive=\"$(IsFileSystemCaseSensitive)\"\n      TSJavaScriptFile=\"$(TSJavaScriptFile)\"\n      PreferredUILang=\"$(PreferredUILang)\"\n      TSConfigFile=\"%(TSConfigFilesWithOutputLogs.Identity)\"\n      YieldDuringToolExecution=\"$(TscYieldDuringToolExecution)\"\n      ProjectDir=\"$(TypeScriptProjectDir)\"\n      ToolsVersion=\"$(TypeScriptEffectiveToolsVersion)\"\n      TypeScriptCompileBlocked=\"$(TypeScriptCompileBlocked)\"\n      ComputeInputAndOutputOnly=\"false\"\n      OutputLogFile=\"%(TSConfigFilesWithOutputLogs.OutputLog)\"\n      OutputLogDirectory=\"$(TSCompilerOutputLogDirectory)\">\n\n      <Output TaskParameter=\"GeneratedJavascript\" ItemName=\"emittedFiles\" />\n    </VsTsc>\n    <ItemGroup>\n      <GeneratedJavascript Include=\"@(emittedFiles)\" KeepDuplicates=\"false\" Condition=\"'$(CompileRan)' == 'true'\" />\n    </ItemGroup>\n  </Target>",
+ "title": ""
+}

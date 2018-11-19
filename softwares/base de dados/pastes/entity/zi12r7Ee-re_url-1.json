@@ -1,0 +1,5 @@
+{
+  "value": " https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh",
+  "correct": true,
+  "jSonReason": "re_url"
+}

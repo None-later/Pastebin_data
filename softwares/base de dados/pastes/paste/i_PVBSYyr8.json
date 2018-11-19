@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "PVBSYyr8",
+ "pasteDate": "Feb 24, 2018, 6:56:32 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "Asset List\n\nReferences: \n\n- http://img14.deviantart.net/110a/i/2013/108/a/2/looseleaf_by_granturismoboy2-d6277pr.png\n- https://bbb.hidden-street.net/sites/bbb.hidden-street.net/files/sites/global.hidden-street.net/files/eqs/shoes017.gif?1244624517\n\nCharacter Sprite:\n\n- Plain white piece of paper with simple face, lines for arms and legs, but with boots on feet\n- Style: hand drawn; humorous, doesn't take itself too seriously\n\nAnimations:\n\n- Idle 1 (default idle animation; includes blinking)\n- Idle 2 (this animation occasionally plays when the character has been idling for a certain amount of time; i.e. sighing)\n- Walk\n- Run\n- Turn around (for when the character is moving in one direction, and slowly transitions towards moving the other direction)\n- Jump\n- Crouch (folds himself in half)\n- Walk while crouched\n- Jump while crouched\n- Climb ladder",
+ "title": ""
+}

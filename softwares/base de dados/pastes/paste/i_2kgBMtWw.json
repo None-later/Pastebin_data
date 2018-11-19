@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_us_phone",
+  "lg_ca"
+ ],
+ "key": "2kgBMtWw",
+ "pasteDate": "Feb 10, 2018, 8:13:20 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "text/csv\nfunc_smms, number, add_prefix\n\"sms\", 1121611611, true",
+ "title": ""
+}

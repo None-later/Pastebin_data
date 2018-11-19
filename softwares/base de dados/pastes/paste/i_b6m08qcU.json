@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "b6m08qcU",
+ "pasteDate": "Feb 17, 2018, 1:52:04 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "Date: 02/17/2018 16:52:04\nCorpseReborn Version: 2.10.4\n\nServer Version: git-Paper-\"ab510900\" (MC: 1.12.2)\nServer Type: PAPER_SPIGOT\nFolder Version: v1_12_R1\n\nException: \njava.lang.NullPointerException\n\tat org.golde.bukkit.corpsereborn.nms.nmsclasses.NMSCorpses_v1_12_R1.removeCorpse(NMSCorpses_v1_12_R1.java:153)\n\tat org.golde.bukkit.corpsereborn.CorpseAPI.CorpseAPI.removeCorpse(CorpseAPI.java:155)\n\tat me.joseph.murder.Arena.stop(Arena.java:1283)\n\tat me.joseph.murder.Arena$9$1.run(Arena.java:1500)\n\tat org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftTask.run(CraftTask.java:58)\n\tat org.bukkit.craftbukkit.v1_12_R1.scheduler.CraftScheduler.mainThreadHeartbeat(CraftScheduler.java:356)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.D(MinecraftServer.java:727)\n\tat net.minecraft.server.v1_12_R1.DedicatedServer.D(DedicatedServer.java:380)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.C(MinecraftServer.java:686)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:580)\n\tat java.lang.Thread.run(Thread.java:745)\n\n\nPlugins: \nWorldEdit - 6.1.8-SNAPSHOT;cd4729f\nS724Lib - 2\nTests - 1.0\nDisableJoinMessage - 1.0\nGreenLifeCoolDown - 1.0\nOptiPortals - 1.0\nProtocolLib - 4.4.0-SNAPSHOT\nMultiverse-Core - 2.5.0-b727\nWorldGuard - 6.2.2-SNAPSHOT;ce1158f\nAAC - 3.3.9\nOldCombatMechanics - 1.6.3\nTeslaHub - 1.0\nMMDoor - 1.0\nMurder - 10.1\nTeslaPerms - 1.0\nTeslaPlaceholders - 1.0\nConditionalCommands - 1.4\nTeslaSkins - 1.0\nUANChatSay - 1.0\nMMMinecart - 1.0\nVault - 1.6.6-b${env.TRAVIS_BUILD_NUMBER}\nProtocolSupport - 4.29-dev\nTeslaTerminator - 1.0\nTeslaSequencer - 1.0\nMGPotions - 1.0\nDeathPlayerCommand - 1.0\nTeslaCooldown - 1.0\nCorpseReborn - 2.10.4\nMMOrel - 1.0\nMMLift - 1.0\nTeslaParkour - 1.0\nTeslaGUI - 1.0\nChatControl - 7.6.31\nCommandDoesNotExist - 2.5.0\nTeslaTitle - 1.0\nHolographicDisplays - 2.2.7-SNAPSHOT\nTeslaTabHeader - 1.0\nTeslaTeslings - 1.0\nTeslaMaintenance - 1.0\nCitizens - 2.0.22-SNAPSHOT (build Unknown)\nTokensAdd - 1.0\nTeslaAds - 1.0\nTeslaBalancer - 1.0\nTeslaClansBukkit - 1.0\nTeslaTabNames - 1.0\n\nConfig: \nenable-update-checker: false\ncorpse-time: 120\non-death: false\nlooting-inventory: false\ndespawn-after-looted: false\nshow-tags: true\nworld: all\ngui-title: %corpse%'s Items\nusername-format: %corpse%\nfinish-looting-message: *bYou have finished looting %corpse%'s corpse.\nnew-hitboxes: true\nrender-armor: true",
+ "title": "CorpseReborn Error Paste"
+}

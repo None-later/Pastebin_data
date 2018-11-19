@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AfM2RQ1S",
+ "pasteDate": "Feb 26, 2018, 10:54:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "void inserare(nod *&p)\n{\n    nod*e,*f,*g,*urmator;\n    e=p;\n    while(e!=NULL)\n    {\n        g=e->urm;\n        if(e->info%2==0)\n        {\n            f=new nod;\n            f->info=2*e->info;\n            prec=p;\n            while(prec->urm!=e)\n                prec=prec->urm;\n            f->urm=e;\n            prec->urm=f;\n        }\n        e=g;\n    }\n\n}",
+ "title": ""
+}

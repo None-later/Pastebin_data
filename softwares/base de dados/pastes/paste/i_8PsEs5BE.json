@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8PsEs5BE",
+ "pasteDate": "Feb 17, 2018, 11:32:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "preparations() {\n    cat <<-EOF >> \"$HOME\"/.bashrc\n\n        export s_a=\"/etc/nginx/sites-available\"\n        export s_e=\"/etc/nginx/sites-enabled\"\n        export drt=\"/var/www/html\"\n        source \"$HOME\"/\"$repo\"/software_internal.sh\n    EOF\n    source \"$HOME\"/.bashrc 2>/dev/null\n}\npreparations",
+ "title": ""
+}

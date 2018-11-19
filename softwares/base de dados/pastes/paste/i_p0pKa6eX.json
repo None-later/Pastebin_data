@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "p0pKa6eX",
+ "pasteDate": "Feb 12, 2018, 2:07:14 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "use Data::Dumper;\n$x = 1;\n$y = \"1\";\n$same = Dumper($x) eq Dumper($y);",
+ "title": ""
+}

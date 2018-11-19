@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VZenSFub",
+ "pasteDate": "Feb 28, 2018, 1:10:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "int endzy(const string& str)\n{\n    int result = 0;\n    int len = str.size();\n    \n    for (auto i = 0; i < len; i++)                              // iterate through entire string\n    {\n        char curChar = str.at(i);                               // current character\n        if (!isalpha(curChar) && i != 0)                        // if curChar not a letter and not first char\n        {\n            if (str.at(i-1) == 'y' || str.at(i-1) == 'z' ||     // if char before curChar is y,z,Y,Z\n                str.at(i-1) == 'Y' || str.at(i-1) == 'Z')\n                result++;                                       // then increment counter\n        }\n    }\n    if (str.at(len-1) == 'y' || str.at(len-1) == 'z' ||         // checks last letter if y,z,Y,Z\n        str.at(len-1) == 'Y' || str.at(len-1) == 'Z')\n        result++;\n    \n    return result;\n}",
+ "title": ""
+}

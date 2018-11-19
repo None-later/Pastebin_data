@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_inject",
+  "lg_en"
+ ],
+ "key": "TbTXvEBH",
+ "pasteDate": "Feb 21, 2018, 1:54:54 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env ruby -wKU\nrequire 'yaml'\n\nclass TimeTrack\n  attr_accessor :projects\n  FILENAME = 'timelog.yml'\n\n  def initialize\n    prepare_data_file\n    read_data\n    project_name = get_project_name\n    new_session = time_track\n    puts project_name\n    puts new_session\n\n    modify_data(project_name, new_session)\n    puts @projects.inspect\n    write_data\n  end\n  \n  def modify_data(project_name, session)\n    if @projects[project_name]\n       @projects[project_name][\"log\"].push(session)\n       @projects[project_name][\"total\"] = time_format(total_time(@projects[project_name][\"log\"]))\n     else\n       @projects.merge!({project_name => {\"total\" => time_format(session), \"log\" => [session]}})\n    end\n    \n  end\n  \n  def total_time(log)\n    log.inject(0) {|sum, time| sum = sum + time}\n  end\n  \n  def time_format(time)\n    Time.at(time).gmtime.strftime('%H:%M:%S')\n  end\n  \n  def write_data\n    open(FILENAME, 'w') {|f| f << @projects.to_yaml}\n  end\n  \n  def time_start\n    puts \"Please hit Enter to start time tracking\"\n\n    if gets.chomp == \"\"\n      Time.now\n    else \n      time_get\n    end\n  end\n\n  def time_stop  \n    puts \"Please hit Enter again to stop time tracking\"\n\n    if gets.chomp == \"\"\n      Time.now\n    else \n      time_stop\n    end\n  end\n\n  def time_track\n    start_time = time_start\n    puts \"Time tracking started at #{start_time}\"\n\n    end_time = time_stop\n    puts \"Time tracking ended at #{end_time}\"\n\n    end_time - start_time\n\n  end\n  \n  def get_project_name\n    puts \"Please enter a name for this project\"\n    gets.chomp\n  end\n  \n  private\n  \n  def read_data\n    @projects = YAML.load(open(FILENAME))\n    @projects = {} unless @projects\n  end\n  \n  def prepare_data_file\n    if !File.exist?(FILENAME)\n      File.new(FILENAME, 'w')\n    end\n  end\n\nend\n\nTimeTrack.new",
+ "title": ""
+}

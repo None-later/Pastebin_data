@@ -1,0 +1,5 @@
+{
+  "value": "function CreateWeldOrSnapOrMotor(TYPE, PARENT, PART0, PART1, C0, C1)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

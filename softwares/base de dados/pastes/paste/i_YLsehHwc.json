@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "YLsehHwc",
+ "pasteDate": "Feb 8, 2018, 3:52:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "./_studio/mfx_lib/shared/src/mfx_brc_common.cpp: In member function mfxStatus MfxHwH265EncodeBRC::ExtBRC::Update(mfxBRCFrameParam*, mfxBRCFrameCtrl*, mfxBRCFrameStatus*):\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp:888:40: error: struct mfxBRCFrameParam has no member named SceneChange\n     mfxU16 ParSceneChange = frame_par->SceneChange;\n                                        ^\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp:889:39: error: struct mfxBRCFrameParam has no member named FrameCmplx\n     mfxU32 ParFrameCmplx = frame_par->FrameCmplx;\n                                       ^\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp: In member function mfxStatus MfxHwH265EncodeBRC::ExtBRC::GetFrameCtrl(mfxBRCFrameParam*, mfxBRCFrameCtrl*):\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp:1341:34: error: struct mfxBRCFrameParam has no member named SceneChange\n     mfxU16 ParSceneChange = par->SceneChange;\n                                  ^\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp:1342:31: error: struct mfxBRCFrameParam has no member named LongTerm\n     mfxU16 ParLongTerm = par->LongTerm;\n                               ^\n./_studio/mfx_lib/shared/src/mfx_brc_common.cpp:1343:33: error: struct mfxBRCFrameParam has no member named FrameCmplx\n     mfxU32 ParFrameCmplx = par->FrameCmplx;\n                                 ^",
+ "title": ""
+}

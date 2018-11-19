@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4nLCEHmP",
+ "pasteDate": "Feb 23, 2018, 9:50:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ProxyRequests off\n<Proxy balancer://webfarm>\n    BalancerMember http://192.168.1.14:80\n    BalancerMember http://192.168.2.15:80\n    ProxySet lbmethod=byrequests\n</Proxy>\n\n<Location /balancer-manager>\n    SetHandler balancer-manager\n</Location>\nProxyPass /balancer-manager !\nProxyPass / balancer://webfarm/\n\t\nAccess to Font at 'http://192.168.1.14/fonts/open-sans/OpenSans-Bold.ttf' from origin 'http://192.168.10.10' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'http://192.168.10.10' is therefore not allowed access.\n\t\nAddType application/x-font-ttf           ttc ttf\nAddType application/x-font-otf           otf\nAddType application/font-woff            woff\nAddType application/font-woff2           woff2\nAddType application/vnd.ms-fontobject    eot\n\n<FilesMatch \".(eot|ttf|otf|woff|woff2)\">\n  Header set Access-Control-Allow-Origin \"*\"\n</FilesMatch>",
+ "title": ""
+}

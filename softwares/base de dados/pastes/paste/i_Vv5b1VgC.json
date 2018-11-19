@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Vv5b1VgC",
+ "pasteDate": "Feb 9, 2018, 9:03:20 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    var canvas = document.getElementById(\"bankCanvas\");\n    pen = canvas.getContext(\"2d\");\n\n    pen.beginPath();\n    pen.arc(110, 110, 50, 0, 140 * Math.PI);  // links midden\n    pen.fill();\n    pen.stroke();   \n\n\n\n <div id=\"test1\"><div class=\"dikte\"><p><b>Bank:</b></p></div>\n        <canvas id=\"bankCanvas\" width=\"200\" height=\"200\"></canvas>\n        <canvas id=\"bankCanvas1\" width=\"200\" height=\"200\"></canvas>\n    </div>\n    <div id=\"test2\"><div class=\"dikte\"><p><b>Speler:</b></p></div>\n        <canvas id=\"spelerCanvas\" width=\"200\" height=\"200\"></canvas>\n        <canvas id=\"spelerCanvas1\" width=\"200\" height=\"200\"></canvas>\n    </div>",
+ "title": "DEZE!"
+}

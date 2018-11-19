@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_bitcoin",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Dkp8g0Se",
+ "pasteDate": "Feb 11, 2018, 12:34:01 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "library(shiny)\nlibrary(dygraphs)\nlibrary(xts)\nsource(\"loadCryptoData.R\")\n\n# Define UI for application that draws a histogram\nui <- fluidPage(\n   \n   # Application title\n   titlePanel(\"cryptocurrencies quotes\"),\n   \n   # Sidebar with a slider input for number of bins \n   sidebarLayout(\n      sidebarPanel(\n         selectInput(\"crypto\", label=\"Wybierz kryptowalut\",\n                     choices = c(\"bitcoin\", \"ethereum\", \"ripple\", \"bitcoin-cash\", \"cardano\"),\n                     selecte = \"bitcoin\")\n      ),\n      \n      # Show a plot of the generated distribution\n      mainPanel(\n         dygraphOutput(\"cryptoPlot\")\n      )\n   )\n)\n\n# Define server logic required to draw a histogram\nserver <- function(input, output) {\n   \n   output$cryptoPlot <- renderDygraph({\n      # generate bins based on input$bins from ui.R\n     data <- loadCryptoData(input$crypto)\n     data.xts <- xts(data, order.by = data$Date)\n     dygraph(data.xts[, \"Close\"]) %>% \n       dyRangeSelector(height = 50)\n   })\n}\n\n# Run the application \nshinyApp(ui = ui, server = server)",
+ "title": ""
+}

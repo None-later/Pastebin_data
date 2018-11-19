@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "FNtt48fx",
+ "pasteDate": "Feb 26, 2018, 9:09:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class WC_Settings_Tab_esc {\n\n public static function init() {\n  add_filter( 'woocommerce_settings_tabs_array', __CLASS__ . '::add_settings_tab', 50 );\n }\n\n public static function add_settings_tab( $settings_tabs ) {\n  $settings_tabs['esc_settings'] = __( 'Shipping Classes', 'esc' );\n  return $settings_tabs;\n }\n\n}\nWC_Settings_Tab_esc::init();",
+ "title": ""
+}

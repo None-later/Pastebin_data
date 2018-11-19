@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "re_html_xml",
+  "lg_en"
+ ],
+ "key": "DUAMnTSw",
+ "pasteDate": "Feb 18, 2018, 2:49:06 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "/////////////////////////////////\n// Generated with a lot of love//\n// with TUNIOT FOR ESP8266     //\n// Website: Easycoding.tn      //\n/////////////////////////////////\n#include <ESP8266WiFi.h>\n\nString  ClientRequest;\nIPAddress staticIP483_6(192,168,1,9);\nIPAddress gateway483_6(192,168,1,1);\nIPAddress subnet483_6(255,255,255,0);\n\nWiFiServer server(80);\n\nvoid setup()\n{\n  pinMode(16, OUTPUT);\n  ClientRequest = \"\";\n\n  Serial.begin(115200);\n    digitalWrite(16,HIGH);\n    \n  WiFi.disconnect();\n  delay(3000);\n  Serial.println(\"START\");\n   WiFi.begin(\"SSID\",\"PASSWORD\");\n  while ((!(WiFi.status() == WL_CONNECTED))){\n    delay(300);\n    Serial.print(\"..\");\n\n  }\n  Serial.println(\"Connected\");\n  WiFi.config(staticIP483_6, gateway483_6, subnet483_6);\n  Serial.println(\"Your IP is\");\n  Serial.println((WiFi.localIP()));\n  server.begin();\n\n}\n\n\nvoid loop()\n{\n\n    WiFiClient client = server.available();\n    if (!client) { return; }\n    while(!client.available()){  delay(1); }\n    ClientRequest = (client.readStringUntil('\\r'));\n    client.flush();\n    if (ClientRequest.indexOf(\"LED=ON\") > 0) {\n      \n      digitalWrite(16,LOW);\n      delay(900000);\n      digitalWrite(16,HIGH);\n      \n\n    }\n    if (ClientRequest.indexOf(\"LED=OFF\") > 0) {\n      digitalWrite(16,HIGH);\n      \n    }\n    client.println(\"HTTP/1.1 200 OK\");\n    client.println(\"Content-Type: text/html\");\n    client.println(\"\");\n    client.println(\"<!DOCTYPE HTML>\");\n    client.println(\"<html>\");\n    client.println(\"<head>\");\n    client.println(\"</head>\");\n    client.println(\"<body>\");\n      client.println(\"<h1 style=\"\"color:#ff0000\"\">\");\n      client.println(\"Sprinkler Timer\");\n      client.println(\"</h1>\");\n      client.println(\"<a href=\");\n      client.println(\"LED=ON\");\n      //client.println(\"><button>\");\n      client.println(\"><button style=\\\"height:200px;width:200px\\\">\");\n      client.println(\"Start Timer\");\n      client.println(\"</button></a>\");\n      \n      client.println(\"<a href=\");\n      client.println(\"LED=OFF\");\n      //client.println(\"><button>\");\n      client.println(\"><button style=\\\"height:200px;width:200px\\\">\");\n      client.println(\"15 Minutes\");\n      client.println(\"</button></a>\");\n      \n    client.println(\"</body>\");\n    client.println(\"</html>\");\n    client.stop();\n     delay(1);\n\n}",
+ "title": "Works but then goes offline"
+}

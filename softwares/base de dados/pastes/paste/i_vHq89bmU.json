@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vHq89bmU",
+ "pasteDate": "Feb 21, 2018, 9:46:41 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "--- src/scim_skk_dictionary.cpp.orig\t2005-12-18 22:02:39.000000000 +0900\n+++ src/scim_skk_dictionary.cpp\t2008-11-30 04:38:13.000000000 +0900\n@@ -545,5 +545,7 @@\n     list<CandPair> &cl = m_dictdata[key];\n-    for (list<CandPair>::iterator it = cl.begin(); it != cl.end(); it++) {\n+    for (list<CandPair>::iterator it = cl.begin(); it != cl.end();) {\n         if (it->first == data.first) {\n-            cl.erase(it);\n+            it = cl.erase(it);\n+        } else {\n+            ++it;\n         }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JtNsH898",
+ "pasteDate": "Feb 23, 2018, 9:34:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "if($crud == 'delete'){\n  $id = $_POST['$oid'];\n\n  $bulk = new MongoDBDriverBulkWrite;\n\n  $bulk->delete(['_id' => new MongoDBBSONObjectID($id)]);\n\n  $conn->executeBulkWrite('test.miembros', $bulk);\n\n  $out['message'] = \"Miembro eliminado correctamente\";  \n}\n\t\n$id = $_POST['$oid'];",
+ "title": ""
+}

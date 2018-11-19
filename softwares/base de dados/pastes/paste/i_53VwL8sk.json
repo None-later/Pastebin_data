@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "re_url",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "53VwL8sk",
+ "pasteDate": "Feb 17, 2018, 11:02:42 AM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n<head>\n\t<title>Kalkulator JQuery</title>\n\n\n\t<script type=\"text/javascript\" src=\"https://code.jquery.com/jquery-3.3.1.min.js\">\n\t</script>\n\t\n\t<style type=\"text/css\">\n\t\t.tab1{\n\t\t\theight : 700px;\n\t\t\tpadding: 40px;\n\t\t\tmargin : 50px;\n\t\t}\n\t\tbody{\n\t\t\tmargin-bottom: 30px;\n\t\t}\n\t\t.tab2 td{\n\t\t\ttext-align: center;\n\n\t\t}\n\n\t</style>\n</head>\n<center>\n<body>\n\t<table id=\"tab1\" border=\"1\" width=\"45%\" >\n\t<tr>\n\t\t<td>\n\t\t\tNama : <input type=\"text\" name=\"nama\" id=\"nama\"><br>\n\t\t\tNIM : <input type=\"text\" name=\"nim\" id=\"nim\"><br>\n\t\t\tKelas : <input type=\"text\" name=\"kelas\" id=\"kelas\"><br>\n\t\t\tJenis Kelamin : <input type=\"radio\" name=\"jk\" value=\"laki-laki\">Laki-laki <input type=\"radio\" name=\"jk\" value=\"perempuan\">perempuan<br>\n\t\t\t<button id=\"simpan\">Simpan</button>\n\t\t\t\n\t\t</td>\n\t</tr>\n\t\n\t</table>\n\t<table id=\"tab2\" border=\"1\" width=\"45%\">\n\t\t<thead>\n\t\t\t<tr>\n\t\t\t\t<td>Nama</td>\n\t\t\t\t<td>Nim</td>\n\t\t\t\t<td>Kelas</td>\n\t\t\t\t<td>Jenis Kelamin</td>\n\t\t\t\t<td>Action</td>\n\t\t\t</tr>\n\t\t</thead>\n\t\t<tbody id=\"tabel\">\n\t\t\t\n\t\t</tbody>\n\t\t\n\t</table>\n\n\t<script type=\"text/javascript\">\n\t\t$(document).ready(function() {\n\t\t\tfunction resetForm() {\n\t\t\t\t$('input').val('');\n\t\t\t}\n\n            var count = 0; \n            $(\"#simpan\").click(function(){\n                count += 1;\n                var nama = $('#nama').val();\n                var nim = $('#nim').val();\n                var kelas = $('#kelas').val();\n                var jenis_kelamin = $('input[name=jk]:checked').val();\n                $('#tabel').append(\n                           '<tr class=\"mahasiswa\">'\n                         + '<td>'+ nama +'</td>'\n                         + '<td>'+ nim +'</td>'\n                         + '<td>'+ kelas +'</td>'\n                         + '<td>'+ jenis_kelamin +'</td>'\n                         + '<td><a class=\"hapus\" href=\"#\">Delete</a></td></tr>'\n                );\n                resetForm();\n            });\n \n            $(\".hapus\").click(function(){\n            \t$(this).closest(\"tr\").remove();\n        \t});\n        });\t\t\n\t</script>\n</body>\n</center>\n</html>",
+ "title": ""
+}

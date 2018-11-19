@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "q1QqdNJq",
+ "pasteDate": "Feb 28, 2018, 5:57:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import org.openqa.selenium.By;\n\nimport org.openqa.selenium.WebDriver;\n\nimport org.openqa.selenium.firefox.FirefoxDriver;\n\npublic class SecondTestCase {\n\npublic static void main(String[] args) throws InterruptedException {\n\n    // Create a new instance of the Firefox driver\n    WebDriver driver = new FirefoxDriver();\n\n    //Launch the Website\n    driver.navigate().to(\"https://www.seleniumhq.org/docs/\");\n\n\n\n    System.out.println(\"Successfully opened the website \nwww.seleniumhq.org/docs/\");\n\n\n    String a = driver.getTitle();\n    System.out.println(\"Title is:\"+a);\n\n    //     click()\n\n    driver.findElement(By.xpath(\"//div[@class='toctree-wrapper compound']/ul/li[1]/a/em\")).click();\n\n    String b = driver.getCurrentUrl();\n    System.out.println(\"New page is:\"+b);\n    driver.navigate().back();\n    String c=driver.getCurrentUrl();\n    System.out.println(\"New new back url:\"+c);\n    // Close the driver\n    driver.close();\n\n}\n\t\n//     click()\n\ndriver.findElement(By.xpath(\"//div[@class='toctree-wrapper compound']/ul/li[1]/a/em\"));\ndriver.click();\n\t\nWebElement element = driver.findElement(By.xpath(\"//div[@class='toctree-wrapper compound']/ul/li[1]/a/em\"));\nelement.click();",
+ "title": ""
+}

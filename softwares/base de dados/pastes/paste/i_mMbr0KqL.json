@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv6",
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "mMbr0KqL",
+ "pasteDate": "Feb 18, 2018, 8:16:18 AM",
+ "relevancy": 4.0,
+ "relevant": false,
+ "text": "josh@betelgeuse:~$ curl ifconfig.me\n129.67.53.85\njosh@betelgeuse:~$ ip addr show dev eth0\n2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000\n    link/ether 00:1c:25:b8:2a:0a brd ff:ff:ff:ff:ff:ff\n    inet 129.67.53.85/22 brd 129.67.55.255 scope global eth0\n    inet6 2002:8143:36bf:a:21c:25ff:feb8:2a0a/64 scope global dynamic \n       valid_lft 2584609sec preferred_lft 597409sec\n    inet6 2002:8143:36c6:b:21c:25ff:feb8:2a0a/64 scope global dynamic \n       valid_lft 2573288sec preferred_lft 586088sec\n    inet6 2002:8143:35b5:c:21c:25ff:feb8:2a0a/64 scope global dynamic \n       valid_lft 2139990sec preferred_lft 152790sec\n    inet6 2002:8143:35ca:b:21c:25ff:feb8:2a0a/64 scope global dynamic \n       valid_lft 2591886sec preferred_lft 604686sec\n    inet6 fec0::a:21c:25ff:feb8:2a0a/64 scope site dynamic \n       valid_lft 2584609sec preferred_lft 597409sec\n    inet6 fec0::c:21c:25ff:feb8:2a0a/64 scope site dynamic \n       valid_lft 2139990sec preferred_lft 152790sec\n    inet6 fec0::b:21c:25ff:feb8:2a0a/64 scope site dynamic \n       valid_lft 2591886sec preferred_lft 604686sec\n    inet6 fe80::21c:25ff:feb8:2a0a/64 scope link \n       valid_lft forever preferred_lft forever",
+ "title": ""
+}

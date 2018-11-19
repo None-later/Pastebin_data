@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_pastebin",
+  "re_url",
+  "lg_fr"
+ ],
+ "key": "juxGYcUA",
+ "pasteDate": "Feb 17, 2018, 9:57:04 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "######################Dans le .h######################\n\n\n----------------------------------------------------------------------\nAjout au niveaux des structures : https://pastebin.com/Me4N1N87\nJe les avais plac exactement au dessus de \"void place_a_sqaure...\"\n----------------------------------------------------------------------\n\n\n----------------------------------------------------------------------\nAu niveaux de la structu my_w_t j'ai ajout ceci(2 dernires lignes (avec la struct qui va avec au dessus mais qui est je crois en fait inutiles au projet maintenant, la ligne \"hud_game_t..\" est elle primordiale) : \nhttps://pastebin.com/kDPc9vcq\n----------------------------------------------------------------------\n\n\n----------------------------------------------------------------------\nDans les fonctions  rajout : https://pastebin.com/jsbxjueh\nje les avait plac en dessous de \"void init_my_game_objects_list(my_w_t *);\"\n----------------------------------------------------------------------\n\n----------------------------------------------------------------------\nDans la partie des define pour le bon fonctionnement du projet j'ai mis cela : https://pastebin.com/1CRjH2Pq\nJuste au dessus de : \" #define SCORE_T window->score_tools \"\n----------------------------------------------------------------------\n#######################################################\n\n\n\n\n#####################Architecture de l'HUD(dossier) DANS SRC###################\n\nsrc/HUD\n-----> Button\n\t\t---> fill_function\n\t\t---> init_function\n\t\t---> useful_function\n\n###############################################################################\n\n\n//////////////////////////////////////////////////////////////////////////////////////////\n##################### Dans le dossier (init_function) #########################\n\nIl contient un fichier --> init_button.c\n\nhttps://pastebin.com/05T7hngR\n\n###############################################################################\n\n\n##################### Dans le dossier (FILL_FUNCTION) #########################\n\nIl contient un fichier --> fill_function.c\n\nhttps://pastebin.com/PW5hgLU1\n\n###############################################################################\n\n\n##################### Dans le dossier (useful_function) #######################\n\nIl contient un fichier --> button_main.c\n\nhttps://pastebin.com/V6ZDrM1R\n\n###############################################################################\n//////////////////////////////////////////////////////////////////////////////////////////\n\n\n\n##################### TEXTURE que j'ai mis dans un dossier HUD dans ROOT #######################\n \nVoil le pack : http://www.mediafire.com/file/p7n5cuhaf5hc4s6/HUD.tar.gz\n\nJ'ai mis ce dossier au root du projet avec comme nom de dossier \"HUD\"\n\n###############################################################################",
+ "title": ""
+}

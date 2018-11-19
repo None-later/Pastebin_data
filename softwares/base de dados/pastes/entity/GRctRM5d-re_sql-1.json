@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TIME_TO_SEC(DATE_FORMAT(from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

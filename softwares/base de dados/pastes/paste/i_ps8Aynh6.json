@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ps8Aynh6",
+ "pasteDate": "Feb 20, 2018, 4:03:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "s(:block,\n s(:defn,\n  :fib,\n  s(:scope,\n   s(:block,\n    s(:args, :n),\n    s(:if,\n     s(:call, s(:lvar, :n), :<=, s(:array, s(:lit, 1))),\n     s(:return, s(:lvar, :n)),\n     s(:return,\n      s(:call,\n       s(:fcall,\n        :fib,\n        s(:array, s(:call, s(:lvar, :n), :-, s(:array, s(:lit, 1))))),\n       :+,\n       s(:array,\n        s(:fcall,\n         :fib,\n         s(:array, s(:call, s(:lvar, :n), :-, s(:array, s(:lit, 2)))))))))))),\n s(:fcall, :puts, s(:array, s(:fcall, :fib, s(:array, s(:lit, 30))))))",
+ "title": ""
+}

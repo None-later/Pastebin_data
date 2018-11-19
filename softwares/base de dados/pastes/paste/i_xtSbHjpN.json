@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "xtSbHjpN",
+ "pasteDate": "Feb 28, 2018, 12:17:17 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#!/bin/bash\n\n# Will throw a Connection refused message if a port is closed.\n$ : </dev/tcp/127.0.0.1/80\n\n# Scriptable:\n(: </dev/tcp/127.0.0.1/80) &>/dev/null && echo \"OPEN\" || echo \"CLOSED\"\n\n# Check remote ports\n\n# will hang if open\n$ cat < /dev/tcp/74.125.224.40/80",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "x3rdRtDU",
+ "pasteDate": "Feb 21, 2018, 9:28:35 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n#include <string.h>\nint main() {\n    char t[50];\n    int i = 0;\n    while (scanf(\"%s\",&t))\n    {\n        i++;\n        if (strcmp(t,\"#\") == 0)\n            break;\n        else if (strcmp(t,\"HOLA\")==0)\n            printf(\"Case %d: SPANISH\\n\",i);\n        else if (strcmp(t,\"HELLO\")==0)\n            printf(\"Case %d: ENGLISH\\n\",i);\n        else if (strcmp(t,\"HALLO\")==0)\n            printf(\"Case %d: GERMAN\\n\",i);\n        else if (strcmp(t,\"BONJOUR\")==0)\n            printf(\"Case %d: FRENCH\\n\",i);\n        else if (strcmp(t,\"CIAO\")==0)\n            printf(\"Case %d: ITALIAN\\n\",i);\n        else if (strcmp(t,\"ZDRAVSTVUJTE\")==0)\n            printf(\"Case %d: RUSSIAN\\n\",i);\n        else\n            printf(\"Case %d: UNKNOWN\\n\",i);\n    }\n    return 0;\n}",
+ "title": ""
+}

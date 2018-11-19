@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_#13",
+  "lg_ca",
+  "re_url"
+ ],
+ "key": "G0qCiMHJ",
+ "pasteDate": "Feb 18, 2018, 6:19:08 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "#EXTINF:-1,laligatv\nhttp://185.231.160.49/614/1/index.m3u8\n#EXTINF:-1,beIN LaLiga opcin 1\nhttp://playlist.onlybest.tv/ru/channel/f772b8505cfea04b38985616da5f973f/574/index.m3u8\n#EXTINF:-1,Bein LaLiga opcin 2\nhttp://playlist.onlybest.tv/en/channel/2874e3a9397ce975e8463c76533bcb1e/574/index.m3u8\n#EXTINF:-1,beIN LaLiga opcin 4\nhttp://playlist.onlybest.tv/ru/channel/6c53126176d7d597cbe6ffbb0c5fbf49/574/index.m3u8\n#EXTINF:-1,LaLiga TV opcin 1\nhttp://playlist.onlybest.tv/ru/channel/f772b8505cfea04b38985616da5f973f/581/index.m3u8\n#EXTINF:-1,Bein Sports  Latino\nhttp://192.99.39.218:25461/live/arodriguez/arodriguez/5768.ts\n#EXTINF:-1,beIN Sports Opcin 1\nhttp://playlist.onlybest.tv/ru/channel/f772b8505cfea04b38985616da5f973f/566/index.m3u8\n#EXTINF:-1,Bein Sports Opcin 2\nhttp://playlist.onlybest.tv/en/channel/2874e3a9397ce975e8463c76533bcb1e/566/index.m3u8\n#EXTINF:-1,beIN Sports Opcin 4\nhttp://playlist.onlybest.tv/ru/channel/6c53126176d7d597cbe6ffbb0c5fbf49/566/index.m3u8",
+ "title": "Deportesmadrid"
+}

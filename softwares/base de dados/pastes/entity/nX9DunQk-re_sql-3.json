@@ -1,0 +1,5 @@
+{
+  "value": "select @session :\u003d  COALESCE(max(session), 0) + 1 from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "jNUF0Uy5",
+ "pasteDate": "Feb 21, 2018, 6:25:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/bin/bash\negrep -o '[0-9]*/open' ./portscan.gnmap | sort | uniq",
+ "title": ""
+}

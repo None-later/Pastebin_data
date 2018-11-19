@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "87JWaJFk",
+ "pasteDate": "Feb 8, 2018, 1:37:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Folders\n\n/app\nContains configuration, cache, logs, ... Everything that is not the source code\n\n/src\nContains our bundles\n\n/vendor\nContains all libs we use in our project\n\n/web\nContains all \"public\" files, like images, CSS, Javascript, ... Also contains the \"main controler\", app.php\n\n-------------------------------------------------------------------------------------------------------\nBundle folders\n\n/Controller\nContains our controlers\n\n/Dependency Injection\nContains informations about our bundle\n\n/Entity\nContains our models\n/\nForm\nContains our forms\n\n/Resources\nContains config files, public files and view (Twig) files\n\n/Tests\nContains our Unit Test files",
+ "title": ""
+}

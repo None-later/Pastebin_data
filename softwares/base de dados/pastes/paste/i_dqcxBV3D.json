@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "dqcxBV3D",
+ "pasteDate": "Feb 18, 2018, 6:23:50 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "--- BEGIN ERROR REPORT e9df3db --------\nGenerated 25/07/11 23:42\n\nMinecraft: Minecraft Beta 1.7.3\nOS: Windows 7 (x86) version 6.1\nJava: 1.6.0_25, Sun Microsystems Inc.\nVM: Java HotSpot(TM) Client VM (mixed mode), Sun Microsystems Inc.\nLWJGL: 2.4.2\nOpenGL: ATI Radeon HD 3200 Graphics  version 2.1.8787, ATI Technologies Inc.\n\njava.lang.NoSuchMethodError: gs.f(DDD)D\n\tat fd.a(fd.java:2143)\n\tat fd.a(fd.java:2134)\n\tat gz.g_(SourceFile:35)\n\tat ii.f_(SourceFile:28)\n\tat ls.o(SourceFile:595)\n\tat gz.o(SourceFile:26)\n\tat uz.o(SourceFile:24)\n\tat ls.w_(SourceFile:210)\n\tat gz.w_(SourceFile:30)\n\tat fd.a(fd.java:1266)\n\tat fd.f(fd.java:1245)\n\tat fd.g(fd.java:1173)\n\tat net.minecraft.client.Minecraft.k(SourceFile:1494)\n\tat net.minecraft.client.Minecraft.run(SourceFile:754)\n\tat java.lang.Thread.run(Unknown Source)\n--- END ERROR REPORT 600d157a ----------",
+ "title": ""
+}

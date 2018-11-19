@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "MQRSRMTN",
+ "pasteDate": "Feb 11, 2018, 6:56:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def kefir(n,a,b,c):\n    s = 0\n    ud = b - c\n    if ud < a:\n        while n >= b:\n            s1 = (n // b)\n            s += s1\n            n -= b * s1\n            n += c * s1\n    if (a < b) or ((n < b) and (a >= n)):\n        s += n // a\n    return(s)\n\n\nn = int(input())\na = int(input())\nb = int(input())\nc = int(input())\n\nprint(kefir(n,a,b,c))",
+ "title": "333"
+}

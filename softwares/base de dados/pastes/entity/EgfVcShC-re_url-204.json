@@ -1,0 +1,5 @@
+{
+  "value": "\"https://adidas.ugc.bazaarvoice.com/submit/1576-en_us/FBP33/writereview.djs?authsourcetype\u003d__AUTHTYPE__\u0026amp;campaignid\u003dBV_REVIEW_DISPLAY_ZERO_REVIEWS\u0026amp;format\u003dembeddedhtml\u0026amp;innerreturn\u003dhttps%3A%2F%2Fadidas.ugc.bazaarvoice.com%2F1576-en_us%2FFBP33%2Freviews.djs%3Fformat%3Dembeddedhtml\u0026amp;return\u003dhttps%3A%2F%2Fwww.adidas.com%2Fus%2Fpharrell-williams-hu-holi-nmd-bc-shoes%2FAC7031.html\u0026amp;sessionparams\u003d__BVSESSIONPARAMS__\u0026amp;submissionparams\u003d__BVSUBMISSIONPARAMETERS__\u0026amp;submissionurl\u003dhttp%3A%2F%2Fwww.adidas.com%2Fon%2Fdemandware.store%2FSites-adidas-US-Site%2Fen_US%2FBazaarvoice-SubmissionContainer%3Fpid%3DFBP33\u0026amp;user\u003d__USERID__",
+  "correct": true,
+  "jSonReason": "re_url"
+}

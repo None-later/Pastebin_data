@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BQ22KPVm",
+ "pasteDate": "Feb 21, 2018, 6:35:20 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "./citra-qt : [   0.000000] Frontend <Info> citra_qt/main.cpp:CheckForUpdates:464: Update check started\nAt line:1 char:1\n+ ./citra-qt 2>log.txt\n+ ~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : NotSpecified: ([   0.000000] F...e check started:String) [], RemoteException\n    + FullyQualifiedErrorId : NativeCommandError\n \n[   3.091085] Frontend <Info> citra_qt/main.cpp:OnUpdateFound:477: No updates found\n[   8.759807] Frontend <Info> citra_qt/main.cpp:BootGame:604: Citra starting...\n[   8.888277] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:488: GL_VERSION: 1.1.0\n[   8.888313] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:489: GL_VENDOR: \nMicrosoft Corporation\n[   8.888330] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:490: GL_RENDERER: GDI \nGeneric\n[   8.888354] Render <Error> video_core/video_core.cpp:Init:34: initialization failed !\n[   8.888376] Core <Critical> core/core.cpp:Load:108: Failed to initialize system (Error 9)!",
+ "title": ""
+}

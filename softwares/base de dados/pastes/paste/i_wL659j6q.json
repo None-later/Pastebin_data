@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wL659j6q",
+ "pasteDate": "Feb 11, 2018, 2:50:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "##INGEN FILSYSTEM\ninstall cramfs /bin/true\ninstall freevxfs /bin/true\ninstall jffs2 /bin/true\ninstall hfs /bin/true\ninstall hfsplus /bin/true\ninstall squashfs /bin/true\ninstall udf /bin/true\n#install fat /bin/true\n##INGEN SHARE\ninstall cifs /bin/true\ninstall nfs /bin/true\ninstall nfsv3 /bin/true\ninstall nfsv4 /bin/true\ninstall gfs2 /bin/true\n##INGEN USB\nblacklist usb-storage\nblacklist firewire-core\ninstall usb-storage /bin/true",
+ "title": ""
+}

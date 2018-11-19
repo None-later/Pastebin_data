@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ghtB3x6w",
+ "pasteDate": "Feb 11, 2018, 9:27:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "@login_required\n@app.route('/feedback/user/<req>/new', methods=['GET', 'POST'])\ndef new_feedback_user(req):\n    form = UserFeedbackForm()\n\n    if form.validate_on_submit():\n\n        r = Request.query.filter_by(id=req).first()\n\n        if r.has_host_fb is True:\n            if r.has_user_fb is True:\n                r.status = -1\n                db.session.add(r)\n                db.session.commit()\n            return redirect(url_for('my_feedbacks'))\n\n        f = UserFeedback(\n            about_user_id=r.user_id,\n            user_id=current_user.id\n        )\n\n        rating = 0\n        fields = ['kindness', 'studying_capabilities', 'socialization', 'appealing_factor']\n\n        for (key, value) in form.data.items():\n            if value != '' and \\\n                            value is not None and \\\n                            key not in ['csrf_token']:\n                if key in fields:\n                    rating += int(value)\n\n                setattr(f, key, value)\n\n        f.avg_rating = rating / len(fields)\n\n        u = r.user\n        if u.avg_rating != -1:\n            curr_avg_rating = 0\n\n            for feedback in u.about_user_feedbacks:\n                curr_avg_rating += feedback.avg_rating\n\n            curr_avg_rating += f.avg_rating\n            curr_avg_rating /= len(u.about_user_feedbacks) + 1\n\n            u.avg_rating = curr_avg_rating\n        else:\n            u.avg_rating = f.avg_rating\n\n        r.has_host_fb = True\n\n        db.session.add(r)\n        db.session.add(f)\n        db.session.add(u)\n        db.session.commit()\n        flash('Feedback added successfully', 'success')\n        return redirect(url_for('my'))\n\n    r = Request.query.filter_by(id=req).first()\n\n    return render_template('new_feedback_user.html', req=r, form=form)",
+ "title": ""
+}

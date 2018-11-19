@@ -1,0 +1,7 @@
+{
+  "corrects": 24275,
+  "incorrects": 5183,
+  "reason": "re_url",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "jgK5ZxZ8",
+ "pasteDate": "Feb 8, 2018, 8:12:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#         !\n\n# -1:\n#  ,    .\n#   ,   \n#    \n# [1, 2, 4, 0] --> [1, 4, 16, 0]\n\n\n\nb = [i**2 for i in [1, 2, 4, 0]]\nprint(' : {}'.format(b))\nprint('----------------------------------------')\n\n\n# -2:\n#    .\n#   ,     .\n\nfruts_1 = ['', '', '', '', '']\nfruts_2 = ['', '', '', '', '']\n\n# fruts_3=[]\n# for i in fruts_1:\n#     for j in fruts_2:\n#         if i == j:\n#             fruts_3.append(i)\n# print(fruts_3)\n\nfruts_3 = [i for i in fruts_1  if fruts_2.count(i) > 0]\nprint('    : {}'.format(fruts_3))\nprint('----------------------------------------')\n\n# -3:\n#  ,   .\n#     ,   :\n# +   3\n# +  \n# +    4\nimport random\n\nlst = [random.randint(-100,100) for _ in range(10)]\nprint(' : {}'.format(lst))\nlst_1 = [element for element in lst if element % 3 == 0] #    3-\nlst_2 = [element for element in lst if element > 0] #    \nlst_3 = [element for element in lst if element % 4 != 0] #    4-\nprint('    3-: {}'.format(lst_1))\nprint('   : {}'.format(lst_2))\nprint('    4-: {}'.format(lst_3))\nprint('----------------------------------------')\ninput()",
+ "title": ""
+}

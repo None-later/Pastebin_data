@@ -1,0 +1,5 @@
+{
+  "value": "function CheckTableForString(Table, String)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

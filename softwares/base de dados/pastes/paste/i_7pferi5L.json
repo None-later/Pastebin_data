@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "7pferi5L",
+ "pasteDate": "Feb 19, 2018, 2:38:32 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Numerics;\n\nnamespace Task6\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            String value = Console.ReadLine();\n            Char delimiter = ' ';\n            String[] substrings = value.Split(delimiter);\n            int n = Convert.ToInt32(substrings[0]);\n            int k = Convert.ToInt32(substrings[1]);\n\n            bool check = true;\n            bool test = false;\n            string str = Console.ReadLine();\n\n            if (str.Contains(\"?\"))\n                test = true;\n\n            BigInteger minstr, maxstr;\n            BigInteger.TryParse(str.Replace(\"?\", \"1\"), out minstr);\n            BigInteger.TryParse(str.Replace(\"?\", \"9\"), out maxstr);\n\n            long num = Convert.ToInt32(k * (Math.Floor(Convert.ToInt32(minstr) * 1.0 / k)));\n            char[] numMas;\n\n            for (; ; )\n            {\n                if (test && (num > Convert.ToInt32(maxstr)))\n                {\n                    Console.WriteLine(-1);\n                    break;\n                }\n\n                numMas = num.ToString().ToCharArray();\n\n                for (int i = 0; i < str.Length; i++)\n                {\n                    if (numMas[i] == '0')\n                    {\n                        check = false;\n                        break;\n                    }\n\n                    if ((str[i] != '?') && (str[i] != numMas[i]))\n                    {\n                        check = false;\n                        break;\n                    }\n                }\n\n                if ((str.Length == numMas.Length) && check)\n                {\n                    Console.WriteLine(num);\n                    break;\n                }\n\n                if (num > Convert.ToInt32(maxstr))\n                {\n                    Console.WriteLine(-1);\n                    break;\n                }\n\n                check = true;\n                num += k;\n            }\n            Console.ReadLine();\n        }\n    }\n}",
+ "title": ""
+}

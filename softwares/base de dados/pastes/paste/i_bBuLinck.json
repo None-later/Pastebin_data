@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "bBuLinck",
+ "pasteDate": "Feb 28, 2018, 3:59:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import Crypto.PubKey.Ed25519\nimport Crypto.Error\nimport Data.ByteString.Char8\n\nstr :: String;str = \"hellohellohellohelloello%$*/.\"\n\ngetSecretKey seedString = throwCryptoError (secretKey (pack seedString))\n\ngetPublicKey secretKey = toPublic secretKey\n\nsk = getSecretKey str\n\npk = getPublicKey sk",
+ "title": ""
+}

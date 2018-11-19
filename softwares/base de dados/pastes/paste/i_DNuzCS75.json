@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DNuzCS75",
+ "pasteDate": "Feb 28, 2018, 4:33:59 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "jbarnette@slice:/etc$ dpkg -l 'libxslt*'\nDesired=Unknown/Install/Remove/Purge/Hold\n| Status=Not/Installed/Config-f/Unpacked/Failed-cfg/Half-inst/t-aWait/T-pend\n|/ Err?=(none)/Hold/Reinst-required/X=both-problems (Status,Err: uppercase=bad)\n||/ Name           Version        Description\n+++-==============-==============-============================================\nun  libxslt-dev    <none>         (no description available)\nun  libxslt0-dev   <none>         (no description available)\nun  libxslt1       <none>         (no description available)\nii  libxslt1-dev   1.1.22-1ubuntu XSLT processing library - development kit\nii  libxslt1.1     1.1.22-1ubuntu XSLT processing library - runtime library",
+ "title": ""
+}

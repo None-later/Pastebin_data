@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url"
+ ],
+ "key": "7DiM4E7S",
+ "pasteDate": "Feb 8, 2018, 7:21:14 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "https://maps.googleapis.com/maps/api/directions/json?origin=Toronto&destination=Montreal&key=YOUR_API_KEY",
+ "title": ""
+}

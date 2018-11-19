@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "tfGhgM7E",
+ "pasteDate": "Feb 21, 2018, 10:01:28 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Initializing the registry\nReading ~/.gnus.registry.eld...done\nUsing ascii tree layout with unicode chars.\nReading /Users/USERNAME/.newsrc.eld...\nReading ~/.gnus.registry.eld...done\nReading active file from news.gmane.org via nntp...\nReading active file from dc via nnimap...\nOpening nnimap server on dc...\nimap: Connecting to localhost...\nWaiting for response from localhost...done\nParsing authinfo file `~/.authinfo'.\nimap: Plaintext authentication...\nUnable to open server nnimap+dc due to: Buffer *Group* has no process\nOpening nnimap server on dc...failed\nReading active file from archive via nnfolder...\nOpening nnfolder server on archive...done\nReading active file from archive via nnfolder...done\nDescend hierarchy gmane? ([y]nsq): \nOpening nnimap server on dc...\nDenied server nnimap+dc\nOpening nnimap server on dc...failed\n15 new newsgroups have arrived\nChecking new news...\nOpening nnmairix server on index...done\nimap: Connecting to ...\nWaiting for response from ...done\nParsing authinfo file `~/.authinfo'.\nimap: Plaintext authentication...\nimap-send-command-1: Buffer *Group* has no process",
+ "title": ""
+}

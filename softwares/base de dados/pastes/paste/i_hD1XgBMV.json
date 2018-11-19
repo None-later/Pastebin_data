@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hD1XgBMV",
+ "pasteDate": "Feb 20, 2018, 1:52:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n  \"Log_Template\": {\n    \"prefix\": \"log\",\n    \"body\": [\n      \"## Day ${1:0}: $CURRENT_DATE ${2:February} $CURRENT_YEAR\",\n      \"\",\n      \"### Today's Progress\",\n      \"\",\n      \"### Thoughts\",\n      \"\",\n      \"### Learned or Discovered\",\n      \"\",\n      \"### Link to work\",\n      \"\",\n      \"---\",\n      \"\"\n    ],\n    \"description\": \"Generate a daily log template for #100DaysOfCode\"\n  }\n}",
+ "title": ""
+}

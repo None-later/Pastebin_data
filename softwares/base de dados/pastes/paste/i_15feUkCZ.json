@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "15feUkCZ",
+ "pasteDate": "Feb 20, 2018, 1:51:34 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "module WebpagesHelper\n  def display_html_content(contents)\n \n  $completed_elements = []\n \n    contents.map do |c|\n\n      unless $completed_elements.include?(c.id)\n        get_nested_elements(c, contents) \n      end\n\n    end\n    \n  end\n  \n  def get_nested_elements(c, contents)\n   \n    nested_items = contents.find_all_by_parent_id(c.id)\n\n    content_tag c.element.markup, :style => c.element.style do\n\n      nested = c.data.nil? ? \"\" : c.data\n      \n      unless nested_items.blank?\n        nested_items.map do |n|\n          nested += get_nested_elements(n, contents)\n        end\n      end\n      \n      $completed_elements << c.id\n      \n      nested\n\n    end\n    \n  end\nend",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function fWeld(zName,zParent,zPart0,zPart1,zCoco,a,b,c,d,e,f)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

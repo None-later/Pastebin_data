@@ -1,0 +1,5 @@
+{
+  "value": "function DamageNear(Pos,Mag,Dmg)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

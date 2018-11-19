@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "re_url",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "FMq553Vk",
+ "pasteDate": "Feb 17, 2018, 9:53:11 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "local banned = {\"DeanZSD\"}\nlocal prefix = \"[Banned] \"\nlocal message = \"You are banned from the server you little fuck!\"\n\ngame.Players.PlayerAdded:Connect(function(player)\n\tfor _, v in pairs(banned) do\n\t\tif player.Name == v then\n\t\t\tplayer:kick(prefix..message)\n\t\tend\n\tend\nend)",
+ "title": "XD"
+}

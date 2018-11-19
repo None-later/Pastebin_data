@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_br_cep",
+  "lg_en",
+  "re_us_zip_code"
+ ],
+ "key": "Xtwd2KHm",
+ "pasteDate": "Feb 20, 2018, 3:37:29 PM",
+ "relevancy": 4.0,
+ "relevant": false,
+ "text": "Unknown data type: \"TIMESTAMPTZ\"; SQL statement:\nCREATE TABLE biz_user_profiles (\n  id                 BIGSERIAL PRIMARY KEY,\n  version            BIGINT      DEFAULT 0,\n  created_date       TIMESTAMPTZ DEFAULT now(),\n  last_modified_date TIMESTAMPTZ DEFAULT now(),\n  created_by         BIGINT,\n  last_modified_by   BIGINT,\n\n  first_name         VARCHAR(50),\n  last_name          VARCHAR(50),\n  birthday           TIMESTAMP,\n  lang_key           VARCHAR(5),\n  image_url          VARCHAR,\n  phone              VARCHAR,\n  phone_confirm      TIMESTAMPTZ DEFAULT NULL,\n  country_id         BIGINT,\n  skype              VARCHAR(255),\n  icq                VARCHAR(255),\n  site               VARCHAR(255),\n  sex_id             BIGINT,\n  description        TEXT,\n  avatar_id          BIGINT\n) [50004-193] [Failed SQL: CREATE TABLE biz_user_profiles (\n  id                 BIGSERIAL PRIMARY KEY,\n  version            BIGINT      DEFAULT 0,\n  created_date       TIMESTAMPTZ DEFAULT now(),\n  last_modified_date TIMESTAMPTZ DEFAULT now(),\n  created_by         BIGINT,\n  last_modified_by   BIGINT,\n\n  first_name         VARCHAR(50),\n  last_name          VARCHAR(50),\n  birthday           TIMESTAMP,\n  lang_key           VARCHAR(5),\n  image_url          VARCHAR,\n  phone              VARCHAR,\n  phone_confirm      TIMESTAMPTZ DEFAULT NULL,\n  country_id         BIGINT,\n  skype              VARCHAR(255),\n  icq                VARCHAR(255),\n  site               VARCHAR(255),\n  sex_id             BIGINT,\n  description        TEXT,\n  avatar_id          BIGINT\n)]\n\tat liquibase.executor.jvm.JdbcExecutor$ExecuteStatementCallback.doInStatement(JdbcExecutor.java:309)\n\tat liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:55)\n\tat liquibase.executor.jvm.JdbcExecutor.execute(JdbcExecutor.java:113)\n\tat liquibase.database.AbstractJdbcDatabase.execute(AbstractJdbcDatabase.java:1277)\n\tat liquibase.database.AbstractJdbcDatabase.executeStatements(AbstractJdbcDatabase.java:1259)\n\tat liquibase.changelog.ChangeSet.execute(ChangeSet.java:582)\n\t... 62 common frames omitted",
+ "title": ""
+}

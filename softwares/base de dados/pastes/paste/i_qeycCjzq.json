@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qeycCjzq",
+ "pasteDate": "Feb 18, 2018, 8:23:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "heroku-switch() {\n  cd $HOME/.heroku\n  ln -fs $1.credentials credentials\n}",
+ "title": ""
+}

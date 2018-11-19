@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JcAG3PCx",
+ "pasteDate": "Feb 18, 2018, 12:30:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# Prepare the test example\nstr(price_train)\nprice_train <- as.matrix(price_train)\nX = price_train[1,1]\nX <- cbind(X,1)\ny = price_train[1,2]\nm = length(y)\ntheta <- c(2,2)\nprint(X)\nprint(y)\nprint(m)\nprint(theta)\n# call the function ComputeCost\nresult <- ComputeCost(X,y,m,theta)\n# check the result\nprint(result,digits = 16)",
+ "title": ""
+}

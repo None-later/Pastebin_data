@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vmJn8k3N",
+ "pasteDate": "Feb 20, 2018, 1:50:30 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "ahsan@crowsperch:~/Desktop/workshop/projects$ merb-gen app bingo\nGenerating with app generator:\n     [ADDED]  tasks/merb.thor\n     [ADDED]  .gitignore\n     [ADDED]  public/.htaccess\n     [ADDED]  tasks/doc.thor\n     [ADDED]  public/javascripts/jquery.js\n     [ADDED]  doc/rdoc/generators/merb_generator.rb\n     [ADDED]  doc/rdoc/generators/template/merb/index.html.erb\n     [ADDED]  doc/rdoc/generators/template/merb/merb_doc_styles.css\n     [ADDED]  doc/rdoc/generators/template/merb/merb.rb\n     [ADDED]  doc/rdoc/generators/template/merb/api_grease.js\n     [ADDED]  doc/rdoc/generators/template/merb/prototype.js\n     [ADDED]  doc/rdoc/generators/template/merb/merb.css\n     [ADDED]  public/robots.txt\n     [ADDED]  public/images/merb.jpg\n     [ADDED]  public/merb.fcgi\n     [ADDED]  public/favicon.ico\n     [ADDED]  gems\n     [ADDED]  Rakefile\n     [ADDED]  app/models/user.rb\n     [ADDED]  app/views/exceptions/not_acceptable.html.erb\n     [ADDED]  app/views/exceptions/internal_server_error.html.erb\n     [ADDED]  app/views/exceptions/not_found.html.erb\n     [ADDED]  app/controllers/application.rb\n     [ADDED]  app/controllers/exceptions.rb\n     [ADDED]  app/helpers/global_helpers.rb\n     [ADDED]  autotest/merb_rspec.rb\n     [ADDED]  autotest/discover.rb\n     [ADDED]  autotest/merb.rb\n     [ADDED]  config/database.yml\n     [ADDED]  config/init.rb\n     [ADDED]  config/router.rb\n     [ADDED]  config/rack.rb\n     [ADDED]  config/dependencies.rb\n     [ADDED]  config/environments/staging.rb\n     [ADDED]  config/environments/test.rb\n     [ADDED]  config/environments/rake.rb\n     [ADDED]  config/environments/development.rb\n     [ADDED]  config/environments/production.rb\n     [ADDED]  public/javascripts/application.js\n     [ADDED]  public/stylesheets/master.css\n     [ADDED]  merb/merb-auth/strategies.rb\n     [ADDED]  merb/merb-auth/setup.rb\n     [ADDED]  merb/session/session.rb\n     [ADDED]  spec\n     [ADDED]  app/views/layout/application.html.erb",
+ "title": ""
+}

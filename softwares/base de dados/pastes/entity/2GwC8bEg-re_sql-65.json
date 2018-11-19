@@ -1,0 +1,5 @@
+{
+  "value": "SELECT max(sjh2.run_date) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\u0027https://min-api.cryptocompare.com/data/all/coinlist",
+  "correct": true,
+  "jSonReason": "re_url"
+}

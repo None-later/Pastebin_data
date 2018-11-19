@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZPPpDwWa",
+ "pasteDate": "Feb 8, 2018, 7:45:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "boolean sprawdz(int i){\n\tint zm1 = i*i;\n\tint zm2 = 2*i;\n\t\n\tdo {\n\t\t\n\t\tdo{\n\t\t\tif(zm1%10==zm2%10){\n\t\t\t\treturn true;\n\t\t\t}\n\t\t\tzm2=zm2/10;\n\t\t}while(zm2>10)\n\t\t\n\t\tzm1=zm1/10;\n\t}while(zm1>10)\n\t\n\treturn false;\n}\n\nvoid wypisz(int n){\n\tfor(int i=1; 1<n; i++){\n\t\tif(sprawdz(i)==true){\n\t\t\tcout<<i;\n\t\t}\n\t}\n}\n\nint main{\n\tint n;\n\t\n\tcout<<\"Podaj n\";\n\tcin>>n;\n\tcout<<\"wynik programu\";\n\twypisz(n);\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "SELECT CAST(CAST(SUM(size * 8.0 / 1024 / 1024) AS BIGINT) AS NVARCHAR) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

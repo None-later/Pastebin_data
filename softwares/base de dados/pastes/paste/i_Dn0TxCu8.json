@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "Dn0TxCu8",
+ "pasteDate": "Feb 28, 2018, 7:51:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n\n\n  <shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <gradient\n        android:startColor=\"#ff0000\"\n        android:centerColor=\"#00ff00\"\n        android:endColor=\"#0000ff\"\n        android:angle=\"180\"/>\n    <corners android:radius=\"5dp\" />\n   </shape>\n\t\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n    <gradient\n        android:startColor=\"#000000\"\n        android:angle=\"0\"/>\n   </shape>\n\t\n<shape xmlns:android=\"http://schemas.android.com/apk/res/android\">\n<gradient\n    android:startColor=\"#000000\"\n    android:angle=\"90\"/>\n </shape>\n\t\npublic void SetGradient(View view) {\n        GradientDrawable gd = new GradientDrawable(\n                GradientDrawable.Orientation.TL_BR,\n                new int[]{0xFF141a24, 0xFF293f49, 0xFF72554c});\n        view.setBackground(gd);\n    }\n\t\n/*public enum Orientation {\n        *//** draw the gradient from the top to the bottom *//*\n        TOP_BOTTOM,\n        *//** draw the gradient from the top-right to the bottom-left *//*\n        TR_BL,\n        *//** draw the gradient from the right to the left *//*\n        RIGHT_LEFT,\n        *//** draw the gradient from the bottom-right to the top-left *//*\n        BR_TL,\n        *//** draw the gradient from the bottom to the top *//*\n        BOTTOM_TOP,\n        *//** draw the gradient from the bottom-left to the top-right *//*\n        BL_TR,\n        *//** draw the gradient from the left to the right *//*\n        LEFT_RIGHT,\n        *//** draw the gradient from the top-left to the bottom-right *//*\n        TL_BR,\n    }*/\n\t\n@Override\n    public View onCreateView(LayoutInflater inflater, ViewGroup container,\n                             Bundle savedInstanceState) {\n        View view = inflater.inflate(R.layout.dialog_view_parent, container);           \n        ...\n\n        SetGradient(view);\n\n        return view;\n    }",
+ "title": ""
+}

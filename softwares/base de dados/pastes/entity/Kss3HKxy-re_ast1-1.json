@@ -1,0 +1,5 @@
+{
+  "value": "function prepare_var_to_localize_script(string $variable_name, $variable)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

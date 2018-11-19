@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_twitter",
+  "re_email",
+  "lg_pt"
+ ],
+ "key": "DQ70Xmth",
+ "pasteDate": "Feb 18, 2018, 5:58:36 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#!/bin/ksh\n#!/bin/zsh \n##\n## [3] USP\n##         (\"> \")name, emailplacehow\n##         /home/usp/members.csvCSV1\n##         \n## \n##         > USP\n##         > \n##         > XXXXXXXX\n##         > ---       ()\n##         > name=              4\n##         > email=xxx@usptomonokai.jp  \n##         > place=               \n##         > how=twitter                \n##         > ---\n##\ntail -n5 |sort -r |while read -r l;do set -- \"$@\" \"${l#*=}\"; done; print -r \"$2,$4,$1,$3\" >>/home/usp/members.csv\n\n## bash :\n#tail -n5 |sort -r |(while read -r l;do set -- \"$@\" \"${l#*=}\"; done; echo \"$2,$4,$1,$3\" >>/home/usp/members.csv)",
+ "title": ""
+}

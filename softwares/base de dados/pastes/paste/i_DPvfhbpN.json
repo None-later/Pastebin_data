@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "DPvfhbpN",
+ "pasteDate": "Feb 19, 2018, 3:14:02 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "namespace stlc\n\n\n  -- Stolen from McBride's Outrageous but Meaningful Coincidences, but without\n  -- the pretty Agda infixness...\n\n\n  inductive type : Type\n  | type : type\n  | arrow : type  type  type\n\n  inductive cx : Type\n  | empty : cx\n  | extend : cx  type  cx\n\n  inductive member : cx  type  Type\n  | top { } : member (cx.extend  ) \n  | pop {  } : member    member (cx.extend  ) \n\n  inductive term : cx  type  Type\n  | var { } : member    term  \n  | lam {  } : term (cx.extend  )   term  (type.arrow  )\n  | app {  } : term  (type.arrow  )  term    term  \n\n\n  def type.embed : type  Type\n  | (type.type) := \n  | (type.arrow  ) := .embed  .embed\n\n  def cx.embed : cx  Type\n  | (cx.empty) := unit\n  | (cx.extend  ) := .embed  .embed\n\n  def member.embed :  { }, member    .embed  .embed\n  | _ _ (member.top)   , t := t\n  | _ _ (member.pop i) , t := i.embed \n\n  def term.embed :  { }, term    .embed  .embed\n  | _ _ (term.var i)    := i.embed \n  | _ _ (term.lam t)    :=  s, t.embed , s\n  | _ _ (term.app f a)  := f.embed  (a.embed )\n\n\nend stlc",
+ "title": ""
+}

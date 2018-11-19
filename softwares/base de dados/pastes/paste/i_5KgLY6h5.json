@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "5KgLY6h5",
+ "pasteDate": "Feb 20, 2018, 8:16:37 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "$(document).ready(function(){\n  $(\".vhost_user_edit\").editable(location.href + \".json\", {\n    type      : 'textarea',\n    cancel    : 'Cancel',\n    submit    : 'Save',\n    name      : 'vhost_user',\n    indicator : \"<img src='/images/indicator.gif'>\",\n    target    : location.href + \"?ajax=true\",\n    loadtype  : \"GET\",\n    loadurl   : location.href + \".json?ajax=true\",\n    tooltip   : 'Click to edit...',\n    method : \"PUT\"\n  });\n});",
+ "title": ""
+}

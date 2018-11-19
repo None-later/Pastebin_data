@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "kqWzZC5d",
+ "pasteDate": "Feb 17, 2018, 12:46:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Module\n  # `hello` should be readily available within all regular classes\n  def hello\n    puts 'Hello World'\n  end\nend\n\n# `special` should be available within all regular singleton classes\nclass Module\n  class << self\n    def special\n      puts 'This is the special method defined in Module.singleton_class'\n    end\n  end\nend\n\nclass MyClass\n  hello  # => 'Hello World'\n  # special  # this correctly raises an error here\n  # special should only available in MyClass.singleton_class and it actually is.\n  # However `hello` method shouldn't be available in `MyClass.singleton_class` (only in MyClass) but yet it is. Why?\n  class << self\n    special # This only works here as it should\n    hello  # but strangely this works too! It shouldn't though...\n  end\nend",
+ "title": ""
+}

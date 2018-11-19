@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZeEVJyKP",
+ "pasteDate": "Feb 8, 2018, 9:21:45 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[Rendering]\nEffectsQuality=1\nOverallQuality=-1\nTextureQuality=2\nShadowQuality=0\nFloraQuality=1\nRenderDistance=1500.000000\nUseDepthOfField=0.000000\nGamma=0.050000\nMaximumFPS=-1\nUseLod0a=0\nSmoothing=0\nSpeedTreeLOD=0\nMaxLocalShadows=4\nLightingQuality=0\nFogShadowsEnable=0\nModelQuality=1\nParticleLOD=0\nAO=0\nInteriorLighting=0\nObjectOutlines=1\nVerticalFOV=70",
+ "title": ""
+}

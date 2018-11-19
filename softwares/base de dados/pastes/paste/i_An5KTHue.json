@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "An5KTHue",
+ "pasteDate": "Feb 11, 2018, 3:25:21 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "h, m = map(int, input().split())\nif m > 30:\n\tm = (m - (m - 30) * 2) % 60\nelif m < 30:\n\tm = (m + (30 - m) * 2) % 60\nelif m == 0 or m == 30:\n\tm += 0\nif h > 6:\n\th = (h - (h - 6) * 2) % 12\nelif h < 6:\n\th = (h + (6 - h) * 2) % 12\nelif h == 0 or h == 6:\n\th += 0\nprint(h,m )",
+ "title": "1"
+}

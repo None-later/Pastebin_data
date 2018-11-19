@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://ultra.widestream.io:8081/wideedge/gcmy0a4/chunks.m3u8?nimblesessionid\u003d29277532\u0026wmsAuthSign\u003dc2VydmVyX3RpbWU9Mi81LzIwMTggNToxNToxNCBQTSZoYXNoX3ZhbHVlPS9jUkFZSDZXTW1zak1qNXM0SUVMeVE9PSZ2YWxpZG1pbnV0ZXM9MjA\u003d",
+  "correct": true,
+  "jSonReason": "re_url"
+}

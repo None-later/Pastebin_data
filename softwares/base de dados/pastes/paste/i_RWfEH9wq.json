@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RWfEH9wq",
+ "pasteDate": "Feb 23, 2018, 9:32:32 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " if (engineParameters.Length == 3 && engineParameters[2].All(char.IsDigit))\n            {\n                Engine engine = CreateEngine(engineParameters[2], engineParameters[0], int.Parse(engineParameters[1]));\n                engines.Add(engine);\n            }\n            else if (engineParameters.Length == 3)\n            {\n                Engine engine = CreateEngine(engineParameters[2], engineParameters[0], int.Parse(engineParameters[1]));\n                engines.Add(engine);\n            }\n\nprivate static Engine CreateEngine(string displacementOrEfficiency, string engineModel, int enginePower )\n    {\n        return new Engine(displacementOrEfficiency, engineModel, enginePower);\n    }",
+ "title": ""
+}

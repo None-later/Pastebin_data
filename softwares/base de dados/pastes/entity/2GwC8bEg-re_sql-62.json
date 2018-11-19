@@ -1,0 +1,5 @@
+{
+  "value": "SELECT 1 WHERE EXISTS (SELECT * FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

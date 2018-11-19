@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "0GRPGTdA",
+ "pasteDate": "Feb 20, 2018, 6:11:12 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n  <head>\n    <title>Readit</title>\n    <%= csrf_meta_tags %>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>\n    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>\n  </head>\n\n  <body>\n    <div class=\"container\">\n      <ul class=\"nav nav-tabs\">\n\n        <% if current_user %>\n            <li><%= link_to \"Readit\", root_path %></li>\n            <li><%= link_to \"Topics\", topics_path %></li>\n            <li class=\"pull-right\"><%= link_to \"Sign Out\", session_path(current_user), method: :delete %></li>\n            <li class=\"pull-right\"><%= image_tag current_user.avatar_url(48) %></li>\n            <li class=\"pull-right\"><%= link_to current_user.name, user_path(current_user) %></li>\n\n        <% else %>\n          <li class=\"pull-right\"><%= link_to \"Sign In\", new_session_path %></li>\n          <li class=\"pull-right\"><%= link_to \"Sign Up\", new_user_path %></li>\n        <% end %>\n      </ul>\n\n      <% if flash[:notice] %>\n        <div class=\"alert alert-success\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n          <%= flash[:notice] %>\n        </div>\n      <% elsif flash[:alert] %>\n        <div class=\"alert alert-warning\">\n          <button type=\"button\" class=\"close\" data-dismiss=\"alert\">&times;</button>\n          <%= flash[:alert] %>\n        </div>\n      <% end %>\n\n      <%= yield %>\n    </div>\n  </body>\n</html>",
+ "title": ""
+}

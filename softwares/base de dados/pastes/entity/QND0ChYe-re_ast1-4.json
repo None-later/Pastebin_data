@@ -1,0 +1,5 @@
+{
+  "value": "function onEquipped(mouse)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

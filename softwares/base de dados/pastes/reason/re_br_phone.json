@@ -1,0 +1,7 @@
+{
+  "corrects": 29,
+  "incorrects": 17,
+  "reason": "re_br_phone",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

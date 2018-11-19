@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dSLfXSeg",
+ "pasteDate": "Feb 12, 2018, 9:17:40 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#define F_CPU 8000000L\n#include <avr/io.h>\n#include <util/delay.h>\nvoid segcharB (unsigned char seg)\n{\n\tswitch (seg)\n\t{\n\t\tcase 1:PORTB=0b11111001;break;\n\t\tcase 2:PORTB=0b10100100;break;\n\t\tcase 3:PORTB=0b10110000;break;\n\t\tcase 4:PORTB=0b10011001;break;\n\t\tcase 5:PORTB=0b10010010;break;\n\t\tcase 6:PORTB=0b10000010;break;\n\t\tcase 7:PORTB=0b11111000;break;\n\t\tcase 8:PORTB=0b10000000;break;\n\t\tcase 9:PORTB=0b10010000;break;\n\t\tcase 0:PORTB=0b11000000;break;\n\t}\n}\nvoid segcharD (unsigned char seg)\n{\n\tswitch (seg)\n\t{\n\t\tcase 1:PORTD=0b11111001;break;\n\t\tcase 2:PORTD=0b10100100;break;\n\t\tcase 3:PORTD=0b10110000;break;\n\t\tcase 4:PORTD=0b10011001;break;\n\t\tcase 5:PORTD=0b10010010;break;\n\t\tcase 6:PORTD=0b10000010;break;\n\t\tcase 7:PORTD=0b11111000;break;\n\t\tcase 8:PORTD=0b10000000;break;\n\t\tcase 9:PORTD=0b10010000;break;\n\t\tcase 0:PORTD=0b11000000;break;\n\t}\n}\nint main(void)\n{\n\tunsigned char i,k;\n\tunsigned butcountB=0,butstateB=0,butcountD=0,butstateD=0;\n\tDDRD = 0xFF;\n\tDDRB = 0xFF;\n\tDDRC = 0x00;\n\tPORTD = 0b00000000; \n\tPORTB = 0b00000000; \n\tPORTC = 0b00000011;\n    while (1)\n    {\n\t    {\n\t\t\t\t\tfor (k=0;k<10;k++)\n\t\t\t\t\t{\n\t\t    while (butstateD==0)\n\t\t    {\n\t\t\t    if (PINC&0b00000010)\n\t\t\t    {\n\t\t\t\t    if (butcountD<5)\n\t\t\t\t    {\n\t\t\t\t\t    butcountD++;\n\t\t\t\t    }\n\t\t\t\t    else\n\t\t\t\t    {\n\t\t\t\t\t    k=0;\n\t\t\t\t\t    butstateD=1;\n\t\t\t\t    }\n\t\t\t    }\n\t\t\t    else\n\t\t\t    {\n\t\t\t\t    if (butcountD>0)\n\t\t\t\t    {\n\t\t\t\t\t    butcountD--;\n\t\t\t\t    }\n\t\t\t\t    else\n\t\t\t\t    {\n\t\t\t\t\t    butstateD=1;\n\t\t\t\t    }\n\t\t\t    }\n\t\t    }\n\t\t    segcharB(k);\n\t\t    _delay_ms(50);\n\t\t    butstateD=0;\n\t\t\t\t\t}\n\t\t}\n//--------------------------------------------------------------------------------------------------------------------\t\t\n\t\tfor (i=0;i<10;i++)\n\t\t{\n\t\t\twhile (butstateB==0)\n\t\t\t{\n\t\t\t\tif (PINC&0b00000001)\n\t\t\t\t{\n\t\t\t\t\tif (butcountB<5)\n\t\t\t\t\t{\n\t\t\t\t\t\tbutcountB++;\n\t\t\t\t\t}\n\t\t\t\t\telse\n\t\t\t\t\t{\n\t\t\t\t\t\ti=0;\n\t\t\t\t\t\tbutstateB=1;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t\telse\n\t\t\t\t{\n\t\t\t\t\tif (butcountB>0)\n\t\t\t\t\t{\n\t\t\t\t\t\tbutcountB--;\n\t\t\t\t\t}\n\t\t\t\t\telse\n\t\t\t\t\t{\n\t\t\t\t\t\tbutstateB=1;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tsegcharB(i);\n\t\t\t_delay_ms(50);\n\t\t\tbutstateB=0;\n\t\t}\n\t}\n}",
+ "title": ""
+}

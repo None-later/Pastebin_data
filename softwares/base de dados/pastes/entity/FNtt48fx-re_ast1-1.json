@@ -1,0 +1,5 @@
+{
+  "value": "function add_settings_tab( $settings_tabs )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

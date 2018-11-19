@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "4PbSxzdz",
+ "pasteDate": "Feb 8, 2018, 8:10:31 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "ngOnInit() {\n  this.loginForm = this.fb.group({\n    email: ['', [Validators.required, ValidateEmail]],\n    password: ['', Validators.required]\n  });\n}\n\t\nbeforeEach(() => {\n  fixture = TestBed.createComponent(SignInComponent);\n  component = fixture.componentInstance;\n  fixture.detectChanges();\n});\n\t\nfit('login-form printing unexpected value', fakeAsync(() => {\n  const form = component.loginForm;\n  fixture.detectChanges();\n  tick();\n\n  form.controls['email'].setValue('aaa');\n  console.log(form.get('email')); // PRINTS bbb\n\n  fixture.detectChanges();\n  tick();\n\n  form.controls['email'].setValue('bbb');\n  console.log(form.get('email'));// PRINTS bbb\n\n}));\n\t\nconsole.log(form.get('email').value)",
+ "title": ""
+}

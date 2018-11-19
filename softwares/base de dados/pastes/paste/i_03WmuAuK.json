@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_hr"
+ ],
+ "key": "03WmuAuK",
+ "pasteDate": "Feb 28, 2018, 6:43:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sed '/name=[a-z]/s/name=(.)/name=U1/g'",
+ "title": ""
+}

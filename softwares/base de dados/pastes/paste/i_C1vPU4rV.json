@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "C1vPU4rV",
+ "pasteDate": "Feb 21, 2018, 2:11:53 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "defaults write com.apple.xcode  \\\n    PBXCustomTemplateMacroDefinitions \\\n    '{ ORGANIZATIONNAME = \"Joan Smith\"; }'",
+ "title": ""
+}

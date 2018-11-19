@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "YGjyRwcN",
+ "pasteDate": "Feb 17, 2018, 6:24:40 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CONTIKI_PROJECT = hello-world\nall: $(CONTIKI_PROJECT)\n\nCONTIKI = ../..\nMODULES += os/services/shell\ninclude $(CONTIKI)/Makefile.include",
+ "title": "Shell added to Makefile"
+}

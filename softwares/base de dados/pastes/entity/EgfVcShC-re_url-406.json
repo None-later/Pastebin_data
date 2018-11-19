@@ -1,0 +1,5 @@
+{
+  "value": "\"http://www.adidas.com/us/men-shoes?prefn1\u003ddivision\u0026amp;prefv1\u003dNEO",
+  "correct": true,
+  "jSonReason": "re_url"
+}

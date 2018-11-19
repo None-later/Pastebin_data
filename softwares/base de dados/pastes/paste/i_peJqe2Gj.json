@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "peJqe2Gj",
+ "pasteDate": "Feb 21, 2018, 10:25:51 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(require 'slime)\n(slime-setup)\n(require 'clojure-auto)\n(require 'clojure-paredit)\n\n(add-to-list 'auto-mode-alist '(\"\\\\.clj$\" . clojure-mode))\n\n;; These are extra key defines because I kept typing them.  \n;; Within clojure-mode, have Ctrl-x Ctrl-e evaluate the last \n;; expression.\n;; Ctrl-c Ctrl-e is also there, because I kept typoing it.\n(add-hook 'clojure-mode-hook\n          '(lambda ()\n             (define-key clojure-mode-map \"\\C-c\\C-e\" 'lisp-eval-last-sexp)\n             (define-key clojure-mode-map \"\\C-x\\C-e\" 'lisp-eval-last-sexp)))\n\n\n\n(defun clj-repl (binary)\n  (interactive (list (read-file-name \"Clojure binary: \")))\n  (setq swank-clojure-binary binary)\n  (require 'swank-clojure-autoload)\n  (slime))\n\n(defun clj ()\n  (interactive)\n  (clj-repl \"~/bin/clojure\"))\n\n(defun pt-repl2 ()\n  (interactive)\n  (clj-repl \"~/Projects/gh/pivotal-tracker-clj/bin/slime\"))\n\n(defun storybox-repl ()\n  (interactive)\n  (clj-repl \"~/Projects/gh/storybox/script/slime\"))\n\n(provide 'my-clojure)",
+ "title": ""
+}

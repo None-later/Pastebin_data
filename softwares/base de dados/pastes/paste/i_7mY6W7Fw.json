@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "7mY6W7Fw",
+ "pasteDate": "Feb 18, 2018, 12:08:04 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "2011-10-23 22:10:09 [INFO] Disconnecting /127.0.0.1:27919: Took too long to log\nin\njava.net.SocketTimeoutException: Read timed out\n        at java.net.SocketInputStream.socketRead0(Native Method)\n        at java.net.SocketInputStream.read(Unknown Source)\n        at java.net.SocketInputStream.read(Unknown Source)\n        at java.io.FilterInputStream.read(Unknown Source)\n        at in.a(SourceFile:135)\n        at ma.h(SourceFile:190)\n        at ma.c(SourceFile:10)\n        at ta.run(SourceFile:77)",
+ "title": ""
+}

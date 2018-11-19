@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "gDZuxmLd",
+ "pasteDate": "Feb 9, 2018, 3:11:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<dt>\n\tTitle:\n</dt>\n<dd\n\tstyle=\"\n\t\ttext-transform: capitalize;\n\t\"\n>\n\t{{\n\t\tprice.title\n\t}}\n</dd>\n\n<dt>\n\tDescription:\n</dt>\n<dd>\n\t{{\n\t\tprice.description\n\t}}\n</dd>\n\n<dt>\n\tReference:\n</dt>\n<dd>\n\t{{\n\t\tprice.reference\n\t}}\n</dd>\n\n<dt>\n\tBase Currency:\n</dt>\n<dd>\n\t{{\n\t\tprice.baseCurrency\n\t}}\n</dd>\n\n<dt>\n\tAmount:\n</dt>\n<dd>\n\t{{\n\t\tprice.amount\n\t}}\n</dd>\n\n<dt>\n\tEffective Date:\n</dt>\n<dd>\n\t<span\n\t\tstyle=\"\n\t\t\ttext-transform: capitalize;\n\t\t\"\n\t>\n\t\t{{\n\t\t\tmoment( price.effectiveDate.toString( ), \"YYYYMMDD\" )\n\t\t\t\t.format( \"MMMM DD, YYYY\" )\n\t\t}}\n\t</span>\n</dd>\n\n<dt\n\tng-if=\"price.validityType\"\n>\n\tValidity Type:\n</dt>\n<dd\n\tng-if=\"price.validityType\"\n>\n\t<span\n\t\tstyle=\"\n\t\t\ttext-transform: capitalize;\n\t\t\"\n\t>\n\t\t{{\n\t\t\tprice.validityType\n\t\t}}\n\t</span>\n</dd>\n\n<dt\n\tng-if=\"price.validityType\"\n>\n\tValid Until:\n</dt>\n<dd\n\tng-if=\"price.validityType\"\n>\n\t<span\n\t\tclass=\"label label-primary\"\n\t\tng-show=\"price.validityType === 'infinite'\"\n\t>\n\t\tInfinite\n\t</span>\n\t<span\n\t\tng-show=\"\n\t\t\tprice.validityType === 'duration'\n\t\t\t&& price.effectiveDate\n\t\t\t&& price.validityDuration\n\t\t\"\n\t>\n\t\t{{\n\t\t\tmoment( price.effectiveDate.toString( ), \"YYYYMMDD\" )\n\t\t\t\t.add( price.validityDuration, \"days\" )\n\t\t\t\t.format( \"MMMM DD, YYYY\" )\n\t\t}}\n\t</span>\n\t<span\n\t\tng-show=\"\n\t\t\tprice.validityType === 'date'\n\t\t\t&& price.validityDate\n\t\t\"\n\t>\n\t\t{{\n\t\t\tmoment( price.validityDate.toString( ), \"YYYYMMDD\" )\n\t\t\t\t.format( \"MMMM DD, YYYY\" )\n\t\t}}\n\t</span>\n</dd>",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ra0FVk7a",
+ "pasteDate": "Feb 19, 2018, 3:12:52 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include \"BinomialHeap.h\"\n\nint main()\n{\n\tBinomialTree H1 = makeBinomialHeap();\n\tbinomialHeapInsert(H1, 23);\n\tbinomialHeapInsert(H1, 12);\n\tBinomialTree H2 = makeBinomialHeap();\n\tbinomialHeapInsert(H2, 44);\n\tbinomialHeapInsert(H2, 13);\n\tH1 = binomialHeapUnion(H1, H2);\n\tH2 = makeBinomialHeap();\n\tbinomialHeapInsert(H2, 5);\n\tbinomialHeapInsert(H2, 32);\n\tH1 = binomialHeapUnion(H1, H2);\n\tH2 = makeBinomialHeap();\n\tbinomialHeapInsert(H2, 21);\n\tH1 = binomialHeapUnion(H1, H2);\n\tTraverse(H1);\n\tBinomialTree H3 = H1->sibling->sibling;\n\tbinomialHeapDecreaseKey(H1, H3, 8);\n\tTraverse(H1);\n\tbinomialHeapExtractMinimum(H1);\n\tTraverse(H1);\n\tsystem(\"pause\");\n\treturn 0;\n}",
+ "title": "main.cpp"
+}

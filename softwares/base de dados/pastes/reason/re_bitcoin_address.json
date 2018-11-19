@@ -1,0 +1,7 @@
+{
+  "corrects": 12,
+  "incorrects": 515,
+  "reason": "re_bitcoin_address",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

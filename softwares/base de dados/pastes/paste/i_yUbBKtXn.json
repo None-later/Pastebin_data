@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yUbBKtXn",
+ "pasteDate": "Feb 12, 2018, 6:13:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "m{a-zA-Z}     Set mark {a-zA-Z} at cursor position (does not move\n              the cursor, this is not a motion command).\n\t\n'{a-z}  `{a-z}        Jump to the mark {a-z} in the current buffer.",
+ "title": ""
+}

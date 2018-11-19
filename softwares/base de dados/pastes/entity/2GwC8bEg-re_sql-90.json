@@ -1,0 +1,5 @@
+{
+  "value": "SELECT session_id, SUM(open_transaction_count) AS open_transaction_count FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sq"
+ ],
+ "key": "gAAf70yU",
+ "pasteDate": "Feb 28, 2018, 11:18:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "1) var arr3 = [\"a\", \"b\", \"c\"];\n2) arr3 = arr3.push(\"d\", \"e\"); //   ?//",
+ "title": ""
+}

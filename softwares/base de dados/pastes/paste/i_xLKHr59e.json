@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "xLKHr59e",
+ "pasteDate": "Feb 12, 2018, 4:22:42 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "$.ajax('http://agar.io/agario.core.js', {\n    success: core => {\n        core = core.replace(/(([\\w]\\s*=\\s*\\+?[\\w]\\[[0-9]+\\]\\s*\\<\\s*)(.4))/, \"$20\");\n        core = core.replace(/([\\w]+\\s*=\\s*[\\w]+\\s*\\+\\s*16\\s*\\|\\s*0;\\s*([\\w=]+)\\s*=\\s*\\+[\\w\\[\\s*><\\]]+;)/, '$1 $2*=0.70;');\n        eval(core);\n    },\n    dataType: 'text',\n    method: 'GET',\n    cache: false,\n    crossDomain: true\n});",
+ "title": "fluid.js"
+}

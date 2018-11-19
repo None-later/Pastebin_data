@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 creation_time FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

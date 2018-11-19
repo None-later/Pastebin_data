@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ys4FkL2h",
+ "pasteDate": "Feb 21, 2018, 8:14:51 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import DataStorage from '../storage/mealstorage'\nimport Model from '../model/meal'\n\nclass MealController{\n    constructor(){\n        this.items=DataStorage.getMeals();\n        this.currentMeal=null;\n        this.totalCalories=0;\n\n    }\naddMeal(name,calorie){\n        let ID;\n        if(this.items.length>0){\n            ID=this.items[this.items.length-1].id+1;\n        }else{\n            ID=0;\n        }\n        let newMeal=new Model(ID,name,calorie);\n        this.items.push(newMeal);\n        DataStorage.storeMeal(newMeal);\n        return newMeal;\n    }\n\n    getMealById(id){\n        let found=null;\n        this.items.forEach((item)=>{\nif(item.id === id){\n    found=item;\n}\n        });\n        return found;\n}\n    updateMeal(id,name,calorie){\n\n\nthis.items.forEach((item)=>{\n    if(item.id === id){\n        item.meal=name;\n        item.calorie=calorie;\n        DataStorage.updateMeal(item);\n    \n    }\n\n});\n      \n        //return newMeal;\n    }\n\n    removeMeal(id){\n        this.items.forEach((item)=>{\n            if(item.id === id){\n                DataStorage.removeMeal(item);\n            }\n\n    })\n}\n}\nexport default new MealController();",
+ "title": ""
+}

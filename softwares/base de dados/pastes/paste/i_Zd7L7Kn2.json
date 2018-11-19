@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Zd7L7Kn2",
+ "pasteDate": "Feb 21, 2018, 8:17:34 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require 'rubygems'\nrequire 'erb'\n\ndef baz\n\tbad_call\nend\n\ndef foo\n\tbaz\nend\n\nERB.new(\"1\\n2<%= foo %>\\n3\\n\").result",
+ "title": ""
+}

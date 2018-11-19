@@ -1,0 +1,5 @@
+{
+  "value": "function str2mini($content,$len)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

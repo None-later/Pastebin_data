@@ -1,0 +1,15 @@
+{
+ "espireDate": "1H",
+ "format": "javascript",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "2d9373v1",
+ "pasteDate": "Feb 8, 2018, 12:31:40 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "// app.js\nvar slide = $(\"header > img\");\nvar last = slide.length - 1;\nvar sno = 0;\nvar dir = \"right\";\nfor(var i=0; i<slide.length;i++){\n\tvar point = \"<span data-no='\" + i + \"'></span>\";\n\t$(\"#pointer\").append(point);\n}\nvar pointers = $(\"#pointer > span\");\n\nfunction slideAction() {\n\tif( dir == \"left\" ) {\n\t\tvar target = \"-100%\";\n\t\tvar targetAfter = \"100%\";\n\t} else if( dir == \"right\" ){\n\t\tvar target = \"100%\";\n\t\tvar targetAfter = \"-100%\";\n\t}\n\t$(slide[sno]).siblings(\"img\").css(\"left\",targetAfter);\n\n\t$( slide[sno] ).animate({\n\t\tleft: target\n\t},1000,function(){\n\t\t$(this).css({left: targetAfter});\n\t});\n\tsno++; //sno = sno + 1;\n\tif( sno > last ) sno = 0;\n\t$( slide[sno] ).animate({\n\t\tleft: \"0\"\n\t},1000,function(){\n\t\t$(\"#pointer > span\").removeClass(\"sel\");\n\t\t$( pointers[sno] ).addClass(\"sel\");\n\t});\n}\n\n$(\"header\").click(function(){\n\t// slideAction();\n});\n\nvar timer = null;\nfunction setTimer() {\n\tif( timer == null ) {\n\t\tstartTimer();\n\t} else {\n\t\tstopTimer();\n\t}\n}\n\nfunction startTimer(){\n\ttimer = setInterval(function(){\n\t\tslideAction();\n\t},2000);\n\t$(\"#control > a > span\").attr(\"class\",\"glyphicon glyphicon-play\");\n}\n\nfunction stopTimer(){\n\tclearInterval(timer);\n\ttimer = null;\n\t$(\"#control > a > span\").attr(\"class\",\"glyphicon glyphicon-pause\");\n}\n\n\nsetTimer();\n\n\n$(\"#pointer > span\").click(function(){\n\tvar no = $(this).attr(\"data-no\");\n\tno = parseInt(no,10);\n\tstopTimer();\n\t$(\"header > img\").css(\"left\",\"-100%\");\n\t$(slide[no]).css(\"left\",\"0\");\n\tsno = no;\n\t$(\"#pointer > span\").removeClass(\"sel\");\n\t$(pointers[sno]).addClass(\"sel\");\n\tsetTimer();\n});\n\n$(\".dir\").click(function(){\n\tdir = $(this).attr(\"data-dir\");\n\tstopTimer();\n\tslideAction();\n});",
+ "title": "app.js"
+}

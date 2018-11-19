@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dwTwMXy4",
+ "pasteDate": "Feb 18, 2018, 3:27:50 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Solution {\n    public int longestIncreasingPath(int[][] matrix) {\n        if (matrix == null || matrix.length == 0 || matrix[0] == null || matrix[0].length == 0) {\n            return 0;\n        }\n        int[][] dist = new int[matrix.length][matrix[0].length];\n        boolean[][] visited = new boolean[matrix.length][matrix[0].length];\n        \n        int maxDist = 0;\n        for (int i=0; i<matrix.length; i++) {\n            for (int j=0; j<matrix[0].length; j++) {\n                if (!visited[i][j]) {\n                    DFS(i, j, matrix, dist, visited);\n                }\n                maxDist = Math.max(maxDist, dist[i][j]);\n            }\n        }\n        \n        return maxDist;\n    }\n    \n    private static int[] moveX = {0, 1, 0, -1};\n    private static int[] moveY = {1, 0, -1, 0};\n    \n    private void DFS(int x, int y, int[][] matrix, int[][] dist, boolean[][] visited) {\n        dist[x][y] = 1;\n        visited[x][y] = true;\n        for (int k=0; k<moveX.length; k++) {\n            int newX = x + moveX[k];\n            int newY = y + moveY[k];\n            if (isValid(newX, newY, matrix) && matrix[newX][newY] < matrix[x][y]) {\n                if (!visited[newX][newY]) {\n                    DFS(newX, newY, matrix, dist, visited);\n                }\n                dist[x][y] = Math.max(dist[x][y], 1 + dist[newX][newY]);\n            }\n        }\n    }\n    \n    private boolean isValid(int x, int y, int[][] matrix) {\n        return (x >= 0 && x < matrix.length && y >= 0 && y < matrix[0].length);\n    }\n}",
+ "title": ""
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca",
+  "kw_error"
+ ],
+ "key": "JeyCzTvK",
+ "pasteDate": "Feb 12, 2018, 7:01:56 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<error code=\"999\" message=\"Server Error\" detail=\"CLUSTER MEMORY CACHE - SET (BRANCH-SHOP-API-CONFIG-V2@22519:internal:5) - This environment/scenario does not support cache-updates!\"/>",
+ "title": ""
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_html_xml",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "Y7KRssEw",
+ "pasteDate": "Feb 17, 2018, 1:21:21 PM",
+ "relevancy": -5.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n<html>\n<body>\n\n<p>Image to use:</p>\n<img id=\"scream\" width=\"220\" height=\"277\" src=\"img_the_scream.jpg\" alt=\"The Scream\">\n\n<p>Canvas:</p>\n<canvas id=\"myCanvas\" width=\"240\" height=\"297\" style=\"border:1px solid #d3d3d3;\">\nYour browser does not support the HTML5 canvas tag.\n</canvas>\n\n<script>\nwindow.onload = function() {\n    var c = document.getElementById(\"myCanvas\");\n    var ctx = c.getContext(\"2d\");\n    var img = document.getElementById(\"scream\");\n    ctx.drawImage(img, 10, 10);\n}\n</script>\n\n<p><strong>Note:</strong> The canvas tag is not supported in Internet \nExplorer 8 and earlier versions.</p>\n\n</body>\n</html>",
+ "title": ""
+}

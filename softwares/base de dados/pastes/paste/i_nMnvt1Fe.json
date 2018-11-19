@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "nMnvt1Fe",
+ "pasteDate": "Feb 21, 2018, 7:34:59 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CONSOLE: PermissionsBukkit v1.2 is now disabled\nCONSOLE: This server is running Craftbukkit version git-Bukkit-0.0.0-1131-g86b7fa8-b1337jnks (MC: 1.8.1)\nCONSOLE: Default game type: 0\nCONSOLE: Server permissions file permissions.yml is empty, ignoring it\nCONSOLE: New max size: 484\nCONSOLE: New max size: 784",
+ "title": ""
+}

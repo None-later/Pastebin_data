@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "vb",
+ "jSonReasons": [
+  "kw_op",
+  "lg_en"
+ ],
+ "key": "LNGmffxS",
+ "pasteDate": "Feb 21, 2018, 12:01:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Module Zad2\n    Sub main()\n        Dim b1, b2 As Double\n        Dim op As String\n        Console.Write(\"Unesite 1. broj: \")\n        b1 = Console.ReadLine()\n        Console.Write(\"Unesite 2. broj: \")\n        b2 = Console.ReadLine()\n        Console.Write(\"Odaberite matematiku operaciju [+,-,*,/]: \")\n        op = Console.ReadLine()\n        If op = \"+\" Then\n            Console.WriteLine(\"{0}+{1}={2}\", b1, b2, b1 + b2)\n        Else\n            If op = \"-\" Then\n                Console.WriteLine(\"{0}-{1}={2}\", b1, b2, b1 - b2)\n            Else\n                If op = \"*\" Then\n                    Console.WriteLine(\"{0}*{1}={2}\", b1, b2, b1 * b2)\n                Else\n                    If b2 = 0 Then\n                        Console.WriteLine(\"Zabranjeno djeljenje s nulom!\")\n                    Else\n                        Console.WriteLine(\"{0}/{1}={2}\", b1, b2, b1 / b2)\n                    End If\n                End If\n            End If\n        End If\n        Console.ReadLine()\n    End Sub\nEnd Module",
+ "title": ""
+}

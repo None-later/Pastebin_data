@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "bash",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "G5u5Mxhr",
+ "pasteDate": "Feb 23, 2018, 11:01:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/bin/zsh\n\n#script to DECREASE price by a random amount \n#keys assigned in Input Action Settings\n########################################### Current keys - Ctrl-C Ctrl-D Ctrl-V###########################\n\n#get clipboard\nclipboard=`qdbus org.kde.klipper /klipper getClipboardContents`\n \n# Price format: \"Station        25      7,572,770.00 ISK        Stacmon V - Moon 9 - Federation Navy Assembly Plant     89d 22h 39m 11s.\"\n# Format has tab delimeters and third field is the one we want. Use cut to get it then use cut again with space delimeters to get the actual number\n# Price format consisting of a number with 2 decimals also works.\n\n\n#get field before \"ISK\"\nword1=$(echo \"$clipboard\" | cut -f3)\n#get the number part without \"ISK\"\nword2=$(echo \"$word1\" | cut -d ' ' -f1)\n#We need to convert the number to an integer. Find position of the  \".\" \ndot=`expr index \"$word2\" .`\n#Take string from position 0 to before the dot\nword3=${word2:0:$dot-1}\n#remove commas\nnumber=$(echo \"$word3\" | sed 's/,//g')\n# decrease the number by a random value. Since this is korn script we can work with decimals\nnumber_down=$((number -500 - RANDOM %100 - RANDOM %100 *0.01))\n#make sure the result has only 2 decimal places\noutput=`printf \"%.2f\\n\" $number_down`\n\n#insert the new increased price back on the clipboard\n\nqdbus org.kde.klipper /klipper setClipboardContents $output",
+ "title": ""
+}

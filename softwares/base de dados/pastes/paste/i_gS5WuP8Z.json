@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "gS5WuP8Z",
+ "pasteDate": "Feb 12, 2018, 12:44:10 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "// start display result\n    function select()\n    {\n        $tableName = 'venteJour';\n        $query = \"SELECT * FROM $tableName\";\n        $sql   = mysql_query($query);\n\n        while($row = mysql_fetch_assoc($sql))\n        {\n            $id           = $row['id'];\n            $Name         = $row['nomDuProduit'];\n            $price        = $row['PrixVenteFinal'];\n            $quantity     = $row['QuantityVendue'];\n            $dateAndTime  = $row['dateAndTime'];\n            echo\"\n                <tr>\n                    <td>$id</td>\n                    <td>$Name</td>\n                    <td>$price</td>\n                    <td>$quantity</td>\n                    <td>$dateAndTime</td>\n                </tr>\";\n        }\n\n    }\n    select();\n    //end display result\n?>",
+ "title": ""
+}

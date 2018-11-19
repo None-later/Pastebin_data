@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "Y0v4yS20",
+ "pasteDate": "Feb 21, 2018, 7:01:55 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "branch = run :'test-branch', 'master'\ngit :stash\ngit :checkout, \"master\"\ngit :merge, branch\ngit :checkout, branch",
+ "title": ""
+}

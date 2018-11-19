@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "GsDThNkp",
+ "pasteDate": "Feb 20, 2018, 4:09:39 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "var catalog  = {name: \"catalog\",parent: null};\nvar computer = {name: \"computer\",parent: \"catalog\"};\nvar desktop  = {name: \"desktop\",parent: \"computer\"};\nvar notebook = {name: \"notebook\",parent: \"computer\"};\nvar inch15   = {name: \"15inch\", parent: \"notebook\"};\nvar calculator = {name: \"calculator\", parent: \"notebook\"};\nvar book     = {name: \"book\", parent: null};\n\n\nvar array = [inch15,desktop,catalog,calculator,notebook,computer,book];\n\nsetLevelsOfParents(array);\n\nfor (var i = 0; i < array.length; i++){\n    alert(array[i].name+\" \"+array[i].parent+\" \"+array[i].level);\n};\n\n\nfunction sortByParent(array, parent, startElement){\n\n    if (array.length == 0){return;}  \n    var nextParent;\n    parent = parent ? parent: null;\n    startElement = startElement ? startElement: {value:0};\n\n    for (var i = startElement.value; i < array.length; i++){\n        var object = array[i];\n        if (object.parent == parent){\n            var cash = array[i];\n            array[i] = array[startElement.value];\n            array[startElement.value] = cash;\n            nextParent = object;\n            startElement.value = startElement.value + 1;              \n            sortByParent(array, nextParent,startElement);\n        }        \n    }\n                \n};\n\nfunction setParentsToId(array){\n\n    var serch = [];\n\n    for (var i = 0; i < array.length; i++){\n        serch.push(array[i].name);\n    }\n\n    for (var i = 0; i < array.length; i++){\n        array[i].parent = array[i].parent == null ? null:array[serch.indexOf(array[i].parent)];\n    }\n\n}\n\nfunction setLevelsOfParents(array){\n   \n    setParentsToId(array);   \n    sortByParent(array);\n\n    for (var i = 0; i < array.length; i++){   \n        if(array[i].parent === null)\n        {\n            array[i].level = 1;\n        }\n        else\n        {\n            array[i].level = array[i].parent.level + 1;\n        }\n    }\n\n}",
+ "title": ""
+}

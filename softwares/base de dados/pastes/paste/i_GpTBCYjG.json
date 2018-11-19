@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GpTBCYjG",
+ "pasteDate": "Feb 18, 2018, 6:44:15 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "var wheel1 = new GLGE.PhysicsWheel();\nwheel1.setRadius(0.5).setLocX(1.4).setLocY(-0.2).setLocY(0.9);\nvar wheel1Obj=new GLGE.Collada();\nwheel1Obj.setDocument(\"wheel.dae\");\nwheel1.addCollada(wheel1Obj);\n\nvar wheel2 = new GLGE.PhysicsWheel();\nwheel2.setRadius(0.5).setLocX(1.4).setLocY(-0.2).setLocY(-0.9);\nvar wheel2Obj=new GLGE.Collada();\nwheel2Obj.setDocument(\"wheel.dae\");\nwheel2.addCollada(wheel2Obj);\n\nvar wheel3 = new GLGE.PhysicsWheel();\nwheel3.setRadius(0.5).setLocX(-1.7).setLocY(-0.2).setLocY(0.9);\nvar wheel3Obj=new GLGE.Collada();\nwheel3Obj.setDocument(\"wheel.dae\");\nwheel3.addCollada(wheel3Obj);\n\nvar wheel4 = new GLGE.PhysicsWheel();\nwheel4.setRadius(0.5).setLocX(-1.7).setLocY(-0.2).setLocY(-0.9);\nvar wheel4Obj=new GLGE.Collada();\nwheel4Obj.setDocument(\"wheel.dae\");\nwheel4.addCollada(wheel4Obj);\n\nvar carObject=new GLGE.Collada();\ncarObject.setDocumet(\"car.dae\");\n\nvar car = new GLGE.PhysicsCar();\ncar.addCollada(carObject);\n\ncar.addPhysicsWheel(wheel1).addPhysicsWheel(wheel2).addPhysicsWheel(wheel3).addPhysicsWheel(wheel4);\n\nscene.addChild(car);",
+ "title": ""
+}

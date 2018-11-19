@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fgYRqfSR",
+ "pasteDate": "Feb 18, 2018, 5:52:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <fstream>\n#include <math.h>\nusing namespace std;\nint n;\nint i,c,d;\nfloat r;\nint v[100], m;\n\nint main()\n{\n    int k = 0;\n    ifstream f(\"date.in\");\n    f >> n;\n    if (n>1)\n    {\nfor (i = 3 ; i<=n ; i = i+2)\n        {\n            c = 1;\n            for (d = 3 ; d <= n and c == 1; d = d+2)\n            {\n\n                if (i % d == 0)\n                    c = 0;\n            if (c==1)\n            {\n                //cout << i << \" \";\n                k++;\n                if(k % 2 == 0)\n                {\n            ofstream g(\"date.out\");\n            g << d << \" / \" << d-2 << \" \";\n            cout << d << \" / \" << d-2 << endl;\n                }\n            }\n            }\n    }\n    }\n    return 0;\n}",
+ "title": ""
+}

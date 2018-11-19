@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://streaming.enetres.net:1935/091DB7AFBD77442B9BA2F141DCC182F5021/live.smil/stream.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

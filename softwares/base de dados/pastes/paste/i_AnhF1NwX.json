@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AnhF1NwX",
+ "pasteDate": "Feb 20, 2018, 7:35:34 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class Bin():\n    __slots__ = ('size','cells','free','unused')\n\ndef firstFit(Bin, intList):\n    for x in range (Bin.size):\n        for y in range (Bin.size):\n            if intList !=[]:\n                if isSpaceFree(Bin, y, x, intList[0]) == True:\n                    fillSpaces(Bin, y, x, intList.pop(0))\n                elif y==Bin.size-1 and x==Bin.size-1:\n                    Bin.unused.append(intList.pop(0))\n                    firstFit(Bin, intList)\n    return Bin\n\ndef isSpaceFree(Bin, y, x, size):\n    if x+(size-1)<=Bin.size and y+(size-1)<=Bin.size:\n        for i in range (y,y+size):\n            for j in range (x,x+size):\n                if Bin.cells[i][j]==0:\n                    return True\n                else:\n                    return False\n    else:\n        return False\n\ndef mkBin(size):\n    aBin = Bin()\n    aBin.size=size\n    aBin.cells=[[0 for i in range(size)]for j in range(size)]\n    aBin.free=size*size\n    aBin.unused=[]\n    return aBin\n\n\ndef printBin(aBin):\n    for row in range(aBin.size):\n        for col in range(aBin.size):\n            print(aBin.cells[row][col], end=\" \")\n        print()\n\ndef fillSpaces(Bin, y, x, size):\n    if x+size<Bin.size and y+size<Bin.size:\n        print(size)\n        for i in range (y,y+size):\n            for j in range (x,x+size):\n                Bin.cells[i][j]=size\n                Bin.free-=1\n    return Bin\n\ndef sortFile(file):\n    for line in file:\n        aList=line.split()\n    newList=[]\n    for x in aList:\n        newList.append(int(x))\n    pos=1\n    while pos < len(newList):\n        if newList[pos] <= newList[pos-1]:\n            pos = pos+1\n        else:\n            temp =newList[pos]\n            newList[pos]=newList[pos-1]\n            newList[pos-1] = temp\n            if pos == 1:\n                pos = pos+1\n            else:\n                pos = pos-1\n    return newList\n\ndef main():\n    file=open(input('Enter the File name: '))\n    sortedFile=sortFile(file)\n    dimension = int(input('Enter square bin dimensions: '))\n    grid=mkBin(dimension)\n    results=firstFit(grid, sortedFile)\n    printBin(grid)\n    print(\"Free spaces: \" + str(grid.free))\n    print(\"Unpacked blocks: \" + str(grid.unused))\n    \nmain()",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Weu7R9ir",
+ "pasteDate": "Feb 28, 2018, 5:58:07 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "struct ImageLoader {\n  \n  private let cache = NSCache<NSString, NSData>()\n  \n  static let shared = ImageLoader()\n  \n  func image(for url: URL, completionHandler: @escaping(_ image: UIImage?) -> ()) {\n    \n    DispatchQueue.global(qos: DispatchQoS.QoSClass.background).async {\n      \n      if let data = self.cache.object(forKey: url.absoluteString as NSString) {\n        DispatchQueue.main.async { completionHandler(UIImage(data: data as Data)) }\n        return\n      }\n        \n      guard let data = NSData(contentsOf: url) else {\n        DispatchQueue.main.async { completionHandler(nil) }\n        return\n      }\n      \n      self.cache.setObject(data, forKey: url.absoluteString as NSString)\n      DispatchQueue.main.async { completionHandler(UIImage(data: data as Data)) }\n    }\n  }\n  \n}\n\n// Usage:\nImageLoader.shared.image(for: imageURL) { image in\n  self.imageView.image = image\n}",
+ "title": ""
+}

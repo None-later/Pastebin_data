@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XvRR0KYe",
+ "pasteDate": "Feb 21, 2018, 6:27:35 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env ruby -wkU\n# A tiny ScriptingBridge prelude in Ruby.\n\nrequire 'osx/cocoa'\ninclude OSX\nrequire_framework 'ScriptingBridge'\n \napp = SBApplication.applicationWithBundleIdentifier_(\"com.apple.iTunes\")",
+ "title": ""
+}

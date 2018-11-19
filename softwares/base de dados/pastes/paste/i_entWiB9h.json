@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "entWiB9h",
+ "pasteDate": "Feb 26, 2018, 2:47:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "private static List<UserDto> filter(List<UserDto> dtos, String name, String surname, String email){\n        return dtos.stream()\n                 .filter(addFilter(name, userDto -> name.equals(userDto.getName())))\n                 .filter(addFilter(email, userDto -> email.equals(userDto.getEmail())))\n                 .filter(addFilter(surname, userDto -> surname.equals(userDto.getSurname())))\n                 .collect(Collectors.toList());\n    }\n\n    private static Predicate<UserDto> addFilter(String value, Predicate<UserDto> predicate) {\n        if(value != null){\n            return predicate;\n        }\n        return userDto -> true;\n    }\n\n    private static <T> void setter(T value, Consumer<T> setter){\n        Objects.requireNonNull(setter);\n        if(value != null){\n            setter.accept(value);\n        }\n    }",
+ "title": ""
+}

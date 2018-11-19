@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_bot"
+ ],
+ "key": "5aHCZjsS",
+ "pasteDate": "Feb 23, 2018, 10:39:30 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "{\n  \"Host\": {\n    \"ProfitTrailerFolder1\": \"/ProfitTrailer\", // add your in one or more PT folders below, where ths application.properties file is. Note that windows users must add \\\\ in between the folders, NOT \\\n    \"HostName\": \"My PT Feeder bot1\", // the name that is used on telegram messages\n    \"LicenseKey\": \"xxxx-xxxx-xxxx-xxxx-xxxx-xxxx\", // License key for PT Feeder\n    \"ServerUrls\": \"http://localhost:5010\",  \n    \"MarketConditionCheckInMinutes\": \"3\", // How often to check for changes.\n    \"CalculateTrailingValues\": \"true\", // whether PT Feeder should calculate the trading values for you\n    \"UseMaxCostPercentage\": \"true\", // whether cost should be as a percentage\n    \"UseMinBuyBalancePercentage\": \"true\", // whether minbuybalance should be a percentage\n    \"BackupTradingFiles\": \"true\", // whether PT Feeder automatically backups PT properties files on startup\n    \"TelegramBotId\": \"\", // telegram bot id\n    \"TelegramChatId\": \"\", // telegram chat id\n    \"TestMode\": \"true\" // whether watchmode should be enabled or not\n  },\n\n  \"Serilog\": {\n    \"MinimumLevel\": \"Information\" // Can be Information or Debug depending how much logging you want\n  }\n}",
+ "title": ""
+}

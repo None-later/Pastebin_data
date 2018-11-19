@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "ub7GGxUb",
+ "pasteDate": "Feb 8, 2018, 5:32:06 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "# \n# \n# \n# \n# (warning.log)\n# \n# ex. folderLimitChecker.ps1 C:work 1000000\n#\n\nParam( $targetFolder, $maxSize )\n\n$WARNING_FILE_NAME = \"\\warning.log\"\n\nfunction GetFolderTotalSize($folderPath)\n{\n    $size = 0\n    $items = Get-ChildItem $folderPath\n    foreach ($item in $items)\n    {\n        if ($item.PSIsContainer) {\n            $size += GetFolderTotalSize $item.FullName\n        } else {\n            $size += $item.Length\n        }\n    }\n    return $size;\n}\n\nfunction WriteWarningFile($folderPath, $maxFileSize)\n{\n    $path = $folderPath + $WARNING_FILE_NAME\n    $message = \": ${folderPath}  ${maxFileSize} byte\" \n    $message | Out-File -FilePath $path -Encoding utf8\n}\n\n# main process.\n\n$folders = Get-ChildItem $targetFolder | ? { $_.PSIsContainer }\nforeach ($folder in $folders) \n{ \n    $size = GetFolderTotalSize $folder.FullName\n    if ($size -gt $maxSize) \n    {\n        WriteWarningFile $folder.FullName $maxSize\n    }\n}",
+ "title": ""
+}

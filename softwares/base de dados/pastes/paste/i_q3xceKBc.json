@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "q3xceKBc",
+ "pasteDate": "Feb 8, 2018, 4:55:58 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "primeirasLetrasIguais(X,Y) :-  name(X , XLinha), name(Y, YLinha), nth0(0, XLinha, Primeiro), nth0(0, YLinha, Segundo), Primeiro =:= Segundo.",
+ "title": ""
+}

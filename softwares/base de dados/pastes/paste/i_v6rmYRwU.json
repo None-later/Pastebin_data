@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "v6rmYRwU",
+ "pasteDate": "Feb 11, 2018, 5:45:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const sort = (...some criteria...);\nconst page = 1;\nconst num = 10;\nconst end = { $ceil: { $divide: ['$count', num] }};\nconst now = { $cond: { if: { $lt: [page, end] }, then: { $literal: page }, else: end }};\n\nconst query = [\n    { $match: { $text: { $search: ... }} },\n    { $sort: sort },\n    { $group: { _id: null, count: { $sum: 1 }, post: { $push: '$$ROOT' }}},\n    { $project: { _id: 0,\n        meta: { count: '$count', num: { $literal: num }, end, now }},\n        post: { $slice: ['$post', { $multiply: [{ $add: [now, -1] }, num] }, num] },           \n];\n\t\nconst query = [\n    { $match: { $text: { $search: ... }} },\n    { $sort: sort },\n    { $group: { _id: null, count: { $sum: 1 }, post: { $push: '$$ROOT' }}},\n    { $project: { _id: 0,\n        post: { $slice: ['$post', { $multiply: [{ $add: [now, -1] }, num] }, num] },           \n        meta: { count: '$count', num: { $literal: num }, end, now }},   ];\n\t\nconst query = [\n    { $match: { $text: { $search: ... }} },\n    { $sort: sort },\n    { $group: { _id: null, count: { $sum: 1 }, post: { $push: '$$ROOT' }}},\n    { $project: { _id: 0,\n        meta: { count: '$count', num: { $literal: num }, end, now }},\n    { $project: { meta: 1,\n        post: { $slice: ['$post', { $multiply: [{ $add: [$meta.now, -1] }, num] }, num] },                       \n];",
+ "title": ""
+}

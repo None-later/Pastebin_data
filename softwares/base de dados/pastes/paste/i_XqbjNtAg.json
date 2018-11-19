@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XqbjNtAg",
+ "pasteDate": "Feb 28, 2018, 11:57:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "protected $resultRedirectFactory;\n\npublic function __construct(\n    MagentoFrameworkAppActionContext $context\n) {\n    $this->resultRedirectFactory = $context->getResultRedirectFactory();\n}\n\npublic function beforeDispatch(\n    MagentoCheckoutControllerOnepage $subject,\n    MagentoFrameworkAppRequestInterface $request\n) {\n    // ... some stuff here\n    return $this->resultRedirectFactory->create()->setPath('checkout/cart');\n}",
+ "title": ""
+}

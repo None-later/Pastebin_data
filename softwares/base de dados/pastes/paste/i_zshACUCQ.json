@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zshACUCQ",
+ "pasteDate": "Feb 20, 2018, 6:31:15 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "(defun open-next-http-url ()\n  \"Search forward to the next http/https URL, and open it\"\n  (interactive)\n  (save-excursion\n    (nonincremental-re-search-forward \"https*://\")\n    (browse-url-at-point))\n)",
+ "title": ""
+}

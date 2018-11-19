@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "KJB8NU6y",
+ "pasteDate": "Feb 12, 2018, 2:46:52 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "After failing some1-click rooting methods, for the first time I tried to do it the hard way.\nThat turned out to be a pretty easy way thanks to some handy links to drivers and other files I found.\n[COLOR=\"red\"][B]NOTE: THIS WILL WIPE YOUR DEVICE SO BE PREPARED[/B][/COLOR]\n\n1)\nDownload the latest Flashable.Zip from [url]http://www.supersu.com/download[/url]\nPlace SuperSu.zip in your sd card or internal storage\n\n\n2)\nEnable Developer Options by going to Settings -> \"About Phone\" -> Click \"Software Version\" 7-8 times\nGo to developer Options in Settings\nEnable OEM Unlocking\nEnable USB Debugging\nShutdown your phone by holding the power button\nBoot into fastboot by holding the Volume Up key + Power Button\nPress Volume Down key to get into fastboot\n\n\n3) On your Windows PC:\nDownload the file from https://www.sendspace.com/file/tes665 and extract the platform-tools folder (I extract to \"D:\\Downloads\" in this example)\nConnect your device to your computer\npress Win+R, type cmd and press enter\n\n4) Unlocking Bootloader\nIn cmd, enter the following commands:\n[CODE]D:\ncd D:\\Downloads\\platform-tools\nfastboot oem unlock-go\n[/CODE]\n[B][COLOR=\"Red\"]THIS STEP WILL WIPE YOUR DEVICE DATA[/COLOR][/B]\nwait for restart\n\n\n5) Booting into TWRP\nGo to device Settings again and ensure OEM Unlocking and USB Debugging are still Enabled. Reboot into fastboot.\nIn cmd:\n[CODE]fastboot boot twrp-3.1.1-0-20171128-UNOFFICIAL-HS2.img[/CODE]\n(In case above cmd line doesn't work, type \"fastboot boot twrp\" and press Tab)\n\n\n6) Backing up your rom and data (Optional but recommended)\nInside TWRP, Click Backup, tick everything, select desired directory and swipe to backup.\nReboot and follow step 5 again if needed\n\n7) Installing SuperSU with root privileges\nInside TWRP, Click Install and select SuperSU.zip\nSwipe to install and reboot",
+ "title": ""
+}

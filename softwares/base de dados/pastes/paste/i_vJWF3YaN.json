@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "vJWF3YaN",
+ "pasteDate": "Feb 12, 2018, 4:23:16 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdlib.h>\n#include <stdio.h>\n\nint maximun (int *t, int n) {\n\tint max = t[0];\n\tfor (int i = 1; i < n; i++) {\n\t\tif (t[i] > max) {\n\t\t\tmax = t[i];\n\t\t}\n\t}\n\treturn max;\n}\n\nvoid f(int a, int b, int *s, int *p) {\n\t*s = a + b;\n\t*p = a * b;\n}\n\nvoid minmax(int *t, int n, int *pmin, int *pmax) {\n\t*pmax = t[0];\n\t*pmin = t[0];\n\tfor (int i = 1; i < n; i++) {\n\t\tif (t[i] > *pmax) {\n\t\t\t*pmax = t[i];\n\t\t}\n\t\tif (t[i] < *pmin) {\n\t\t\t*pmin = t[i];\n\t\t}\n\t}\n}\n\nint* copie(int *tab, int n) {\n\tint *tab2;\n\ttab2 = malloc(sizeof(int)*n/2);\n\tfor (int i = 0; 2*i < n; i++) {\n\t\ttab2[i] = tab[2*i];\n\t}\n\treturn tab2;\n}\n\nint* unsurdeux(int *tab, int n) {\n\tint *tab2;\n\tint c = 0;\n\ttab2 = malloc(sizeof(int)*n);\n\tfor (int i = 0; i < n ; i+=2) {\n\t\ttab2[c] = tab[i];\n\t\tc++;\n\t}\n\treturn tab2;\n}\n\nint main() {\n\tint x, y, z, a;\n\tf(12, 4, &x, &y);\n\tprintf(\"x = %d, y = %d\\n\", x, y);\n\tint t[10] = {1,2,3,4,8,-8,2,7,2564,15};\n\tminmax(t, 10, &z, &a);\n\tprintf(\"Plus grande valeur : %i\\n\", maximun(t,10));\n\tprintf(\"Min : %i, Max : %i\\n\", z, a);\n\t\n\tint tab2[10] = {1, 2, 3, 4, 5, 6, 7, 8, 9};\n\tint *tab_bis, *tab_ter;\n\ttab_bis = unsurdeux(tab2, 10);\n\ttab_ter = copie(tab2, 10);\n\tfor (int i = 0; i < 5; i++) {\n\t\tprintf(\"%d \", tab_bis[i]);\n\t}\n\tprintf(\"\\n\");\n\tfree(tab_bis);\n\tfree(tab_ter);\n}",
+ "title": "S2 - Archi 2 - TP 02 - Exercice 1 et 2"
+}

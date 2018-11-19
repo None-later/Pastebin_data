@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "fj0ZagjG",
+ "pasteDate": "Feb 18, 2018, 4:23:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "interface ICommand\n{\n    public function execute(Game $game) : void;\n}\n\nclass RollDiceCommand implements ICommand\n{\n    private $player;\n\n    public function __construct(Player $player)\n    {\n        $this->player = $player;\n    }\n\n    public function execute(Game $game) : void\n    {\n        $dice = DiceFacade::roll(new NumberGenerator());\n\n        // Currently a business logic goes here\n\n        if ($dice->isDouble()) {\n            $player->incrementDoubleCount();\n\n            if ($player->getDoubleCount() === 3) {\n                $command = new GoToJailCommand();\n                $command->execute();\n            }\n        } else {\n            // The next player turn\n            $game->nextPlayer();\n        }\n\n        // ...\n    }\n}",
+ "title": ""
+}

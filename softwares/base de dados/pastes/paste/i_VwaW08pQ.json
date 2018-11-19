@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "VwaW08pQ",
+ "pasteDate": "Feb 26, 2018, 10:04:10 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "let objectsToShare = [\"My text\", URL(string: \"http://www.google.com\") ] as [Any]\n    let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)\n    activityVC.excludedActivityTypes = [UIActivityType.addToReadingList, UIActivityType.postToVimeo, UIActivityType.print, UIActivityType.saveToCameraRoll]\n\n    activityVC.popoverPresentationController?.sourceView = sender\n    self.present(activityVC, animated: true, completion: nil)\n\t\nvar activityItems: [Any] = []\n\nif let shareURL = URL(string: shareLink) {\n    activityItems.append(shareURL)\n}\n\nif let shareImage = getShareScreenShot() {\n    activityItems.append(shareImage)\n}\n\nactivityItems.append(shareMessage)\n\nlet activity = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)\n\t\nclass ViewController: UIViewController {\n\n  @IBAction func buttonWasTouched(_ sender: UIButton) {\n    let objectsToShare = [\"My text\", URL(string: \"http://www.google.com\") ] as [Any]\n\n    let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)\n    activityVC.excludedActivityTypes = [UIActivityType.addToReadingList, UIActivityType.postToVimeo, UIActivityType.print, UIActivityType.saveToCameraRoll]\n\n    activityVC.popoverPresentationController?.sourceView = sender\n    self.present(activityVC, animated: true, completion: nil)\n  }\n\n}\n\t\nlet activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)\n\n    activityVC.excludedActivityTypes = [\n        UIActivityType.assignToContact,\n        UIActivityType.print,\n        UIActivityType.addToReadingList,\n        UIActivityType.saveToCameraRoll,\n        UIActivityType.openInIBooks,\n        UIActivityType(rawValue: \"com.apple.reminders.RemindersEditorExtension\"),\n        UIActivityType(rawValue: \"com.apple.mobilenotes.SharingExtension\"),\n    ]\n\t\nguard let image = UIImage(named: \"test.png\", let url = URL(string: \"https://www.google.com\") else { return }\n\nlet activityController = UIActivityViewController(activityItems: [image,url], applicationActivities: nil)",
+ "title": ""
+}

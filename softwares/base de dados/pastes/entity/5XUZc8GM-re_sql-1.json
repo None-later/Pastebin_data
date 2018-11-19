@@ -1,0 +1,5 @@
+{
+  "value": "Update Checker/WARN] [BetterFps/]: Could not check for updates: com.google.gson.stream.MalformedJsonException: Use JsonReader.set",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

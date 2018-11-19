@@ -1,0 +1,5 @@
+{
+  "value": "function refreshUser(UserInterface $user)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

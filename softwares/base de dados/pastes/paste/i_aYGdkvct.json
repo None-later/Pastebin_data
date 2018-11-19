@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "dos",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "aYGdkvct",
+ "pasteDate": "Feb 17, 2018, 1:05:50 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "rem ****************************\nrem rename.bat\nrem by Raphael Hinterndorfer\nrem office[AT]rammelhof.at\nrem ****************************\n@echo off\nsetlocal enabledelayedexpansion\nset Ext=.ts\nset ExtLen=3\nset WorkingDir=%1\nif NOT DEFINED WorkingDir set WorkingDir=%~dp0\nset WorkingDir=%WorkingDir:\"=%\\\necho Process files in %WorkingDir%\n\n\nfor /f \"delims=\\\" %%a  in ('dir /a-d /on /b \"%WorkingDir%???.???.*%Ext%\"') do (\nfor /f \"delims=\\\" %%f in ('echo %%a ^|findstr /B \"[0-9][0-9][0-9]\\.[0-9][0-9][0-9]\\..*\\%Ext%\"') do (\nset oldFileName=%%f\ncall :SetFileWriteDate \"%WorkingDir%!oldFileName!\"\nset newFileName=!oldFileName:~8,-%ExtLen%!_!oldFileWriteDate:~0,6!!oldFileWriteDate:~8,2!\n\nrem check if file exists\nset /a \"rollOverNumber=2\"\nif exist \"%WorkingDir%!newFileName!%Ext%\" (\ncall :RollOver\nset newFileName=!newFileName!_!rollOverNumber!%Ext%\n) else (\nset newFileName=!newFileName!%Ext%\n)\n\necho Rename \"%WorkingDir%!oldFileName!\" to \"!newFileName!\"\nren \"%WorkingDir%!oldFileName!\" \"!newFileName!\"\n)\n)\ngoto End\n\n:SetFileWriteDate\nset oldFileWriteDate=%~t1\ngoto :end\n\n:RollOver\nif exist \"%WorkingDir%!newFileName!_!rollOverNumber!%Ext%\" (\nset /a \"rollOverNumber+=1\"\ngoto RollOver\n)\ngoto End\n\n:End",
+ "title": ""
+}

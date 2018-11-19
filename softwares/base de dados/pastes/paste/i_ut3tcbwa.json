@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_da"
+ ],
+ "key": "ut3tcbwa",
+ "pasteDate": "Feb 24, 2018, 6:34:44 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <bits/stdc++.h>\n\n#define fs first\n#define sc second\n#define pb push_back\n#define int long long\n\nusing namespace std;\n\nconst int max_n = 1e5 + 228;\nint dp[max_n];\n\nsigned main() {\n    int n, k;\n    cin >> n >> k;\n    int pr;\n    for (int i = 1; i <= n; i++) {\n        cin >> pr;\n        if (pr == 0) {\n            dp[i] = 1 + min(i - 1, k) + min(n - i, k);\n        } else {\n            int r = pr + k;\n            if (r < i) {\n                dp[i] = 1 + dp[pr] + min(i - r - 1, k) + min(n - i, k);\n            } else {\n                dp[i] = dp[pr] + max(0ll, min(n, i + k) - min(r, n));\n            }\n        }\n        cout << dp[i] << ' ';\n    }\n    return 0;\n}",
+ "title": ""
+}

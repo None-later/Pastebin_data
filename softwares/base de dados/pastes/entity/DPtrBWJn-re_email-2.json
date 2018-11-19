@@ -1,0 +1,5 @@
+{
+  "value": "example.webhook@mandrillapp.com",
+  "correct": false,
+  "jSonReason": "re_email"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "SELECT @MaxServerMemory \u003d CAST(value_in_use as BIGINT) FROM",
+  "correct": false,
+  "jSonReason": "re_sql"
+}

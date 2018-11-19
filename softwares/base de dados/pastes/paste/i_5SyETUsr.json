@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5SyETUsr",
+ "pasteDate": "Feb 21, 2018, 8:11:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "sudo dpkg --add-architecture i386 \nsudo add-apt-repository ppa:wine/wine-builds && sudo apt-get update\nsudo apt-get install --install-recommends winehq-devel",
+ "title": ""
+}

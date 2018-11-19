@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ca"
+ ],
+ "key": "UXm6BQRy",
+ "pasteDate": "Feb 26, 2018, 1:26:57 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " SSLCipherSuite ALL:!EXP56:RC4+RSA+ADH:+HIGH:+MEDIUM:+LOW:+SSLv2:+EXP:+eNULL",
+ "title": "CD12"
+}

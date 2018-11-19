@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "avkq07Ay",
+ "pasteDate": "Feb 21, 2018, 7:01:00 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<VirtualHost *:8080>\n  ServerName rails\n  DocumentRoot \"c:/web/rubyonrails/blog/\" \n  <Directory \"c:/web/rubyonrails/blog/public/\">\n    Options ExecCGI FollowSymLinks\n    AllowOverride all\n    Allow from all\n    Order allow,deny\n    AddHandler cgi-script .cgi\n    AddHandler fastcgi-script .fcgi\n  </Directory>\n</VirtualHost>",
+ "title": ""
+}

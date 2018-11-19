@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RTY3RWc0",
+ "pasteDate": "Feb 23, 2018, 12:50:08 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "ipmitool -U releng -P cpnzA8mAr5xj -H t-w732-ix-011-mgmt.build.mozilla.org chassis bootdev pxe\nSet Boot Device to pxe\nzsolt.fay@P6104:~$ ipmitool -U releng -P cpnzA8mAr5xj -H t-w732-ix-011-mgmt.build.mozilla.org chassis power reset\nChassis Power Control: Reset",
+ "title": ""
+}

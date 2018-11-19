@@ -1,0 +1,5 @@
+{
+  "value": "function is_lastip(lastip_string,nMin,nMax)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

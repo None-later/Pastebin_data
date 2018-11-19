@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_hr"
+ ],
+ "key": "uwt6sZ10",
+ "pasteDate": "Feb 8, 2018, 7:37:44 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<iostream>\nusing namespace std;\nfloat prosjecnaPlata(int radnici[][6], int uposlenik)\n{\n\tfloat plate = 0;\n\tfor (int i = 0; i < 6; i++) {\n\t\tcout << i + 1 << \". \" << radnici[uposlenik][i] * 12 << endl;\n\t\tplate += radnici[uposlenik][i] * 12;\n\n\t}\n\treturn plate/6;\n}\n/*\tFunkciju koja pronalazi uposlenika sa najvie prekovremenih radnih sati,\nako je usvojeno da jedna radna sedmica ima 40 obaveznih radnih sati, a svaki mjesec 4 sedmice.*/\nint najvrjednijiRadnik(int radnici[][6]) {\n\tint najviseDana = 0, indexRadnika = 0;\n\tfor (int i = 0; i < 2; i++) {\n\t\tfor (int j = 0; j < 6; j++) {\n\t\t\tif (radnici[i][j] > 160) {\n\t\t\t\tnajviseDana = radnici[i][j];\n\t\t\t\tindexRadnika = i;\n\t\t\t}\n\t\t}\n\t}\n\treturn indexRadnika;\n}\n\nvoid isplata(int radnici[][6]) {\n\tfor (int i = 0; i < 6; i++) {\n\t\tint prekovremeniSati = 0, plate = 0;\n\t\tfor (int j = 0; j < 2; j++) {\n\t\t\tif (radnici[j][i] > 160)\n\t\t\t\tprekovremeniSati += radnici[j][i];\n\t\t\telse\n\t\t\t\tplate += radnici[j][i];\n\t\t}\n\t\tcout << \"ukupno isplaceno za \" << i + 1 << \". Mjesec \" << plate << endl;\n\t\tcout << \"Isplaceno za prekovremeni rad \" << prekovremeniSati << endl;\n\t\tcout << \"-----------\";\n\t}\n}\n\nint main()\n{\n\tint matrica[2][6];\n\tfor (int i = 0; i < 2; i++) {\n\t\tfor (int j = 0; j < 6; j++)\n\t\t\tcin >> matrica[i][j];\n\t\tcout << \"-----\" << endl;\n\t}\n\tcout << prosjecnaPlata(matrica, 1);\n\tcout << \"Index najvrjednijeg radnika \" << najvrjednijiRadnik(matrica) << endl;\n\tisplata(matrica);\n\n\tsystem(\"pause>0\");\n\treturn 0;\n}",
+ "title": "radnici"
+}

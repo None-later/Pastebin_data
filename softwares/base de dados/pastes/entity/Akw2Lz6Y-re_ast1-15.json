@@ -1,0 +1,5 @@
+{
+  "value": "function(out, trans, s, wt, t, ang, plus)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

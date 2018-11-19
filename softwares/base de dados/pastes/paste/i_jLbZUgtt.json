@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "jLbZUgtt",
+ "pasteDate": "Feb 20, 2018, 1:25:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "1. nombre de las personas\n2. nombre de las personas y \n\tcodigo del pais donde nacio\n3. nombre de las personas y\n\tnombre del pais donde nacio\nSELECT p.nombre, c.nombre\nFROM PEOPLE p, country c\nWHERE p.codigoNacer=c.codigo;\t\n\t\n\n4. nombre de las personas, nombre del pais donde nacio\n\ty nombre del pais donde vive\n\nSELECT p.nombre, nac.nombre, viv.nombre\nFROM PEOPLE p, country nac, country viv\nWHERE p.codigoNacer=nac.codigo and\n\t\tp.codigoVivir=viv.codigo;",
+ "title": ""
+}

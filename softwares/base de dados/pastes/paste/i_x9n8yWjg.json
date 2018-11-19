@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_protection",
+  "kw_op",
+  "lg_en"
+ ],
+ "key": "x9n8yWjg",
+ "pasteDate": "Feb 20, 2018, 3:41:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#Minecraft server properties\n#Tue Feb 20 13:12:34 EST 2018\nview-distance=10\nmax-build-height=256\nserver-ip=\nlevel-seed=\nallow-nether=true\ngamemode=0\nenable-command-block=false\nserver-port=12534\nenable-rcon=false\nenable-query=false\nop-permission-level=4\nprevent-proxy-connections=false\ngenerator-settings=\nresource-pack=\nplayer-idle-timeout=0\nlevel-name=Biome Bundle\nmotd=A Minecraft Server\nforce-gamemode=false\ndebug=false\nhardcore=false\nwhite-list=false\nbroadcast-console-to-ops=true\npvp=true\nspawn-npcs=true\nspawn-animals=true\ngenerate-structures=true\nsnooper-enabled=true\ndifficulty=1\nnetwork-compression-threshold=256\nlevel-type=DEFAULT\nspawn-monsters=true\nmax-players=20\nspawn-protection=16\nresource-pack-sha1=\nonline-mode=true\nallow-flight=false\nmax-world-size=29999984",
+ "title": ""
+}

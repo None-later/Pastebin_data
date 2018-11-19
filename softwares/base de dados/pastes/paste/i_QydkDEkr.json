@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "QydkDEkr",
+ "pasteDate": "Feb 11, 2018, 2:01:07 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "fm = sagemaker.estimator.Estimator(containers[boto3.Session().region_name],\n                                   get_execution_role(), \n                                   train_instance_count=1, \n                                   train_instance_type='ml.c4.xlarge',\n                                   output_path=output_prefix,\n                                   sagemaker_session=sagemaker.Session())\n\nfm.set_hyperparameters(feature_dim=nbFeatures,\n                      predictor_type='binary_classifier',\n                      mini_batch_size=1000,\n                      num_factors=64,\n                      _speedometer_period=10,\n                      epochs=50)\n\nfm.fit({'train': train_data, 'test': test_data})",
+ "title": ""
+}

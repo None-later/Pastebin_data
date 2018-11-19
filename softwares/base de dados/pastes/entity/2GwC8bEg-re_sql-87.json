@@ -1,0 +1,5 @@
+{
+  "value": "SELECT FindingsGroup, Finding, Priority, COUNT(*) AS recs FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

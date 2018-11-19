@@ -1,0 +1,5 @@
+{
+  "value": "function {0} with number of arguments {1}\".format(func.__name__, len(args)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

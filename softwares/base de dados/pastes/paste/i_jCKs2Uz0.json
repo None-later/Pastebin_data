@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jCKs2Uz0",
+ "pasteDate": "Feb 20, 2018, 4:09:46 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "alias copy { set %copy $$1 }\non *:TEXT:*: {\n  if ($nick == %copy) || (/* !iswm $$1) { msg $chan $$1- }\n}",
+ "title": ""
+}

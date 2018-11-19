@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "xHJkWApm",
+ "pasteDate": "Feb 8, 2018, 5:43:59 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "rednet.open(\"right\")\nwhile true do\n  senderId, message, protocol = rednet.receive(\"TD_FT0001\")\n  if message == \"go\" then\n    print(\"test successfull\")\n    sleep(3)\n  end\nend",
+ "title": "aa"
+}

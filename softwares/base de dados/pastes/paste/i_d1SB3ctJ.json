@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "d1SB3ctJ",
+ "pasteDate": "Feb 9, 2018, 3:50:18 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import sys\nfrom PyQt5 import QtWidgets, QtCore\n\napp = QtWidgets.QApplication(sys.argv)\n\nw = QtWidgets.QMainWindow()\nw.setWindowFlags(QtCore.Qt.FramelessWindowHint)\nw.show()\nsys.exit(app.exec_())\n\t\nfrom PyQt5.QtWidgets import QWidget, QApplication\nfrom PyQt5.QtCore import Qt\n\n\nclass Widget(QWidget):\n    def __init__(self):\n        super().__init__()\n\n        self.setWindowFlags(Qt.FramelessWindowHint)\n\n        self.old_pos = None\n\n    def mousePressEvent(self, event):\n        if event.button() == Qt.LeftButton:\n            self.old_pos = event.pos()\n\n    def mouseMoveEvent(self, event):\n        if not self.old_pos:\n            return\n\n        delta = event.pos() - self.old_pos\n        self.move(self.pos() + delta)\n\n    def mouseReleaseEvent(self, event):\n        self.old_pos = None\n\n\nif __name__ == '__main__':\n    app = QApplication([])\n\n    w = Widget()\n    w.show()\n\n    app.exec()",
+ "title": ""
+}

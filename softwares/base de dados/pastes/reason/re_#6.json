@@ -1,0 +1,7 @@
+{
+  "corrects": 1,
+  "incorrects": 0,
+  "reason": "re_#6",
+  "status": "REGECT",
+  "type": "REGEX"
+}

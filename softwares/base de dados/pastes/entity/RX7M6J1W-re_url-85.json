@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://streaming.wirenetserver.com.ar:1935/canal4/live_1/chunklist_w437571733.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

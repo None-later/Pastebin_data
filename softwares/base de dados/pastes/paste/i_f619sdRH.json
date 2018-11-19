@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "f619sdRH",
+ "pasteDate": "Feb 18, 2018, 4:48:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "- Added Finnish translation - Thanks @Baavoz\n- Added vrp_barrier cop/ems permissions\n- Added Chinese translation\n- Added vrp_chopshop\n- Added Trash Collection job - server owners need to add their own trash locations in vrp/cfg/item_transformers.lua\n- Added Judge role - this is an admin selected role only\n- Added Forger job\n- Added K9 script (Left ALT + Z to open menu) - Credit xander1998\n- Added death spawn location, change in cfg/player_state.lua - Thanks @OriginalGamers\n- Added more EMS roles, similar to the way PD is ran - Thanks @OriginalGamers\n- Added driving licence as a seizable item for Police\n- Added Police mission\n- Added EMS mission\n- Added vrp_ubermission - Press DEL to start\n- Added ability to walk whilst hands are up - Thanks @Sil3nx\n- Added warmenu\n- Added vrp_dvcar - Thanks @.P4NDAzz\n- Added vrp_carfix - Thanks @.P4NDAzz\n- Added more houses/garages up north - Thanks @Baker\n- Added mission translations - Thanks to @Yeeellow (Ger), @GamerRO (Ro), @Leo SHK (Pt), @ThaNightHawk (Dan), @[31-4690] Emil Holmstedt (Swe), @Lysy (Pl), @ZORK (Ar)\n- Added Extras 1 and 2 to the clothes shop - this is for belts to change (i.e. cops) - Thanks @D. Owens\n- Changed Credit Cards to Stolen Credit Cards - this is to avoid people trying to say the cards are thiers\n- Set correct paycheck amount in groups\n- Set correct death timer notification\n- Fixed max length issue with some MySQL setups - this should stop @registration errors\n- Fixed map blips for jobs, Drug Dealer etc\n- Fixed Cargo Pilot job - you can now collect Cargo\n- Fixed Plane & Helicopter garages (for Cargo/Airline pilot) map blips\n- Fixed gathering, it should no longer ever be empty\n- Disabled Santa job\n- Disabled Admin God Mode due to bugs\n- Updated the mission texts for all jobs which have them, it now tells them exactly what to do and how\n- Updated F5 & F6 keys to Num+ and Num- so they work in police cars - Thanks @OriginalGamers\n- Updated Advanced Fuel and enabled petrol cans, it also no longer uses cents - Thanks @OriginalGamers\n- Modified Luxvehcontrol so backspace and UP don't interfere with menus - Thanks @OriginalGamers",
+ "title": ""
+}

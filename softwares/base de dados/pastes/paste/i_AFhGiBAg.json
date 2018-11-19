@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "AFhGiBAg",
+ "pasteDate": "Feb 21, 2018, 8:04:40 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<script type=\"text/javascript\">\n\n$(document).ready(function(){\n   // Your code here\n\t \n\tfunction councilFocus()\n\t{\t \n\t\t$(\"#council_image\").hide(\"fast\");\n\t\t$(\"#nav1council\").css(\"position\", \"relative\");\n\t\t$(\"#lnkAbout\").css(\"position\", \"relative\");\n\t\t$(\"#nav1council\").css(\"top\", \"101px\");\n\t\t$(\"#lnkAbout\").css(\"top\", \"101px\");\n\t}\n\t\n\tfunction councilUnFocus()\n\t{\n\t\t$(\"#council_image\").show(\"fast\");\n\t\t$(\"#nav1council\").css(\"position\", \"relative\");\n\t\t$(\"#lnkAbout\").css(\"position\", \"relative\");\n\t\t$(\"#nav1council\").css(\"top\", \"0\");\n\t\t$(\"#lnkAbout\").css(\"top\", \"10\");\n\t}\t\t\n\t\t\t\t \n\t $(\".home_mid_promo1_top\").focus(function() {\n\t\t\tcouncilFocus();\n    });\n\t $(\".home_mid_promo1_top\").hover(councilFocus, councilUnFocus);\n\n\t $(\".home_mid_promo1_top\").blur(function() {\n\t\t\tcouncilUnFocus();\n    });\n\n });\n</script>",
+ "title": ""
+}

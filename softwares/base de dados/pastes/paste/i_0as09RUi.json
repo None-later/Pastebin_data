@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "0as09RUi",
+ "pasteDate": "Feb 12, 2018, 7:59:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<iostream>\n#include<cmath>\nusing namespace std;\n\nint main()\n{\n    int n, impare = 0, pare = 0;\n    cin >> n;\n    for(int i=1, x; i<=n; i++)\n        cin >> x, (x & 1)  ? impare++ : pare++;\n    cout << abs(pare - impare) << '\\n';\n    return 0;\n}",
+ "title": ""
+}

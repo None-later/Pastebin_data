@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "JEYsj0uV",
+ "pasteDate": "Feb 18, 2018, 7:56:21 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<?\nfunction socks_duplicate($ip,$port){\n\t$hostname=\"localhost\";\n\t$db_user=\"root\";\n\t$db_pass=\"\";\n\t$db_name=\"socks\";\n\n\t$ip=ip2long($ip);\n\t$con=mysql_pconnect($hostname,$db_user,$db_pass);\n\tif (!($con === false)) {\n\t\tif (mysql_select_db($db_name, $con) === false) {\n\t\t    echo('Could not select database: ' . mysql_error());\n\t\t    exit;\n\t\t}\n\t}\n\t$sql=\"select DUPLICATE from socks where IP=$ip and PORT=$port\";\n\t$result=mysql_query($sql,$con) or die(mysql_error());\n\tif( mysql_num_rows($result)===0){\n\t\tmysql_query(\"INSERT INTO socks values($ip,$port,0)\") or die(mysql_error());\n\t\treturn 0;\n\t}else{\n\t\t$row = mysql_fetch_row($result);\n\t\t$duplicate=$row[0]+1;\n\t\tmysql_query(\"UPDATE socks set DUPLICATE=$duplicate where IP=$ip and PORT=$port\");\n\t\treturn $duplicate;\n\t}\n}\n//echo socks_duplicate($ip,$port);\n?>",
+ "title": ""
+}

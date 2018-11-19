@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JHPgLi7Y",
+ "pasteDate": "Feb 20, 2018, 1:23:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "library(quantregGrowth)\nlibrary(quantreg)\n#h=c(3,4,5,6) number of knots\nm6<-rq(y~rcs(x, h), tau=0.5, data=growthData)",
+ "title": ""
+}

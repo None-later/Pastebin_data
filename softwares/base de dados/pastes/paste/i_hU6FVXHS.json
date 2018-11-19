@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hU6FVXHS",
+ "pasteDate": "Feb 26, 2018, 2:29:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "USE [master]\nEXEC xp_readerrorlog 0, 1, N'Server is listening on', 'any', NULL, NULL, N'asc'\n--EXEC xp_readerrorlog 0, 1, N'Server is listening on'",
+ "title": ""
+}

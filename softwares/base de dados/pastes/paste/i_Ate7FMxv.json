@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ate7FMxv",
+ "pasteDate": "Feb 28, 2018, 12:59:08 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "// varianta 3\n\n#include <mpi.h>\n#include <stdio.h>\n#include <string.h>\n\n#define ALGORITHM 1\n\nint A[] = { 1, 2, 3, 4, 5, 6, 7, 8 };\nint sp[] = { 0, 0, 0, 0 };\n\nint mask = 0;\nint m = 3;\nint q = 2;\n\n\n/*\n\n  n = 3 ; 2^3 = 8\n  q = 2 ; 2^2 = 4\n\n  p0 = 1 + 2 = 3\n  p1 = 3 + 4 = 7\n  p2 = 5 + 6 = 11\n  p3 = 7 + 8 = 15\n\n  p0 = 3 + 11 = 14\n  p1 = 7 + 15 = 22\n\n  p0 = 13 + 22 = 36\n\n */\n\nint \nmain(int argc, char *argv[])\n{\n\tint\t\t\tmy_rank;\n\tint\t\t\tnum_procs;\n\tint\t\t\tsource = 0;\n\tint\t\t\tdest = 0;\n\tint\t\t\ttag = 0;\n\tMPI_Status\tstatus;\n\tint sum = 0;\n\tint cnt = 0;\n\n\tMPI_Init(&argc, &argv);\n\tMPI_Comm_rank(MPI_COMM_WORLD, &my_rank); \n\tMPI_Comm_size(MPI_COMM_WORLD, &num_procs);\n\n#if ALGORITHM == 2\n\n\tint i;\n\tfor(i = 0; i < (1 << (m - q)); ++i) {\n\t\tif(my_rank == 0) {\n\t\t\tcnt ++;\n\t\t}\n\t\tsum += A[my_rank * (1 << (m - q)) + i];\n\t}\n\n\tfor(i = 0; i < q; ++i) {\n\t\tif(!(my_rank & (1 << i))) {\n\t\t\tsource = my_rank ^ (1 << i);\n\n\t\t\tif(my_rank == 0) {\n\t\t\t\tcnt++;\n\t\t\t}\n\n\t\t\tint val = 0;\n\t\t\tMPI_Recv(&val, 1, MPI_INT , source, tag,\n\t\t\t\tMPI_COMM_WORLD, &status);\n\t\t\tsum += val;\n\t\t} else {\n\t\t\tdest = my_rank ^ (1 << i);\n\t\t\tMPI_Send(&sum, 1, MPI_INT,\n\t\t\t\tdest, tag, MPI_COMM_WORLD);\n\t\t}\n\n\t\tmask ^= (1 << i);\n\t}\n\n\tif(my_rank == 0) {\n\t\tprintf(\"p0 = %d; sum = %d\\n\", cnt, sum);\n\t}\n\n#else\n\n\tint i, j;\n\t\tfor(i = 0; i < (1 << (m - q)); ++i) {\n\t\t\tif(my_rank == 0) {\n\t\t\t\tcnt ++;\n\t\t\t}\n\t\t\tsp[i] = A[i * (1 << q) + my_rank];\n\t\t}\n\n\t\tfor(i = 0; i < q; ++i) {\n\t\t\tfor(j = 0; j < (1 << (m - q)); ++j) {\n\t\t\t\tif(!(my_rank & mask)) {\n\t\t\t\t\tif(!(my_rank & (1 << i))) {\n\n\t\t\t\t\t\tif(my_rank == 0) {\n\t\t\t\t\t\t\tcnt++;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tsource = my_rank ^ (1 << i);\n\t\t\t\t\t\tint val = 0;\n\t\t\t\t\t\tMPI_Recv(&val, 1, MPI_INT , source, tag,\n\t\t\t\t\t\t\t\tMPI_COMM_WORLD, &status);\n\n\t\t\t\t\t\tsp[j] += val;\n\t\t\t\t\t} else {\n\t\t\t\t\t\tdest = my_rank ^ (1 << i);\n\t\t\t\t\t\tMPI_Send(&sp[j], 1, MPI_INT,\n\t\t\t\t\t\t\tdest, tag, MPI_COMM_WORLD);\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\tmask ^= (1 << i);\n\t\t}\n\n\t\tif(my_rank == 0) {\n\t\t\tfor(j = 0; j < (1 << (m - q)); ++j) {\n\t\t\t\tsum += sp[j];\n\t\t\t}\n\n\t\t\tprintf(\"p0 = %d; sum = %d\\n\", cnt, sum);\n\t\t}\n\n#endif\n\n\tMPI_Finalize(); \n\n\treturn 0;\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0sCsStP1",
+ "pasteDate": "Feb 28, 2018, 3:50:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "void setup()\n{\n    DDRD &= ~( 1 << DDD2 );//PD2 on input mode\n    EICRA |= ( 1 << ISC00 );//any logic change\n    PORTD |= ( 1 << PORTD2 );//pull-up enable\n    EIMSK |= ( 1 << INT0 );//turns on INT0\n\n    DDRD |= ( 1 << DDD5 );//PD5 on output mode\n    PORTD |= ( 1 << PORTD5 );//turn on PD5\n\n    SREG |= ( 1 << 7 );//global interrupts enabled\n}\n\nvoid loop()\n{\n\n}\n\n\nISR( INT0_vect )\n{\n    if( ( PIND & ( 1 << PIND5 ) ) > 0 )//if turned on\n    {\n         PORTD5 &= ~( 1 << PIND5 );//turn off led\n    }\n    //and vice-versa\n    else\n    {\n         PORTD5 |= ( 1 << PIND5 ) );\n    }\n}",
+ "title": ""
+}

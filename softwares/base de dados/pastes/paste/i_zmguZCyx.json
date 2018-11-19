@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zmguZCyx",
+ "pasteDate": "Feb 8, 2018, 7:53:34 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "char ** mkfz(char **table,int x,int y)\n{\n\tint i,j;\n\n\ttable=(char**)malloc((x+2)*sizeof(char *));\n\tfor(i = 0; i <x+3; i++)\n        *(table+i)=(char *)malloc((y+2));\n        \n\tfor(i=0;i<y+3;i++)\n\t{\n\t\tfor(j=0;j<x+3;j++)\n\t\t{\t\n\t\t\t*(*(table+i)+j)=48;\t\n\t\t};\n\t};     \n \treturn table;\n};",
+ "title": ""
+}

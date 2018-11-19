@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://vaughantv.streaming-pro.com:1935/live/vaughantv/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

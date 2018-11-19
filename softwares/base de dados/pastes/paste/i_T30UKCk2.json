@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "T30UKCk2",
+ "pasteDate": "Feb 18, 2018, 6:46:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "avrdude: AVR device not responding\n ***failed;  \navrdude: verification error, first mismatch at byte 0x0000\n         0x05 != 0x07\navrdude: verification error; content mismatch",
+ "title": ""
+}

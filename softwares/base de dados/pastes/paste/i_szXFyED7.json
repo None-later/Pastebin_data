@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "szXFyED7",
+ "pasteDate": "Feb 8, 2018, 2:23:18 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# coding: utf-8\n\n# In[1]:\n\n\nstudent={'guri','vicky','sukh'}\n\n\n# In[2]:\n\n\nstudent\n\n\n# In[3]:\n\n\na='vikram'\n\n\n# In[4]:\n\n\nb='guri'\n\n\n# In[5]:\n\n\nc='sukh'\n\n\n# In[6]:\n\n\nprint(a+b+c)\n\n\n# In[7]:\n\n\nstudent=['guri','sukh','vicky']\n\n\n# In[8]:\n\n\nstudent[-0]\n\n\n# In[9]:\n\n\nstudent[-1]\n\n\n# In[10]:\n\n\nstudent[-2]",
+ "title": ""
+}

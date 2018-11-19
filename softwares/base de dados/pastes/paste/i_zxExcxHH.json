@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zxExcxHH",
+ "pasteDate": "Feb 28, 2018, 3:13:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\nvoid transf(long long int &n,int b)\n    {\n        long long int p=1,nz=0;\n        while(n)\n        {\n            int c=n%10;\n            nz=nz+c*p;\n            p=p*b;\n            n/=10;\n        }\n        n=nz;\n    }\nvoid transformare(long long int &n,int b)\n    {\n        long long int nb=0,p=1;\n        while(n)\n        {\n            nb=nb+(n%b)*p;\n            p=p*10;\n            n/=b;\n        }\n        n=nb;\n    }\nint main()\n{\n    long long int n;\n    int b,c;\n    cin>>n>>b>>c;\n    transf(n,b);\n    transformare(n,c);\n    cout<<n;\n    return 0;\n}",
+ "title": ""
+}

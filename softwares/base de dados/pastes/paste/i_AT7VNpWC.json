@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AT7VNpWC",
+ "pasteDate": "Feb 17, 2018, 7:45:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\nusing namespace std;\n#include <string>\n\nclass Room {\n\tint capacity; //  ,    \n\tbool occupied;       //   \n\npublic:\n\tRoom(int capacity = 1, bool occupied = false) {\n\t\tthis->capacity = capacity;\n\t\tthis->occupied = occupied;\n\t};\n\tbool is_occupied() {\n\t\tif (this->occupied == 1)\n\t\t\treturn 1;\n\t\treturn 0;\n\t};  // ,   ,   \n\tint get_capacity() {\n\t\treturn this->capacity;\n\t};  // ,    ,    \n\tvoid reserve() {\n\t\tthis->occupied = 1;\n\t};      //  \n\tvoid free() {\n\t\tthis->occupied = 0;\n\t};         //  \n\tvoid changeCapacity(int n) {\n\t\tthis->capacity = n;\n\t}\n};\nclass Hotel {\n\tint room_count;\n\tRoom* rooms;\npublic:\n\tHotel(int room_count) {\n\t\trooms = new Room[100000];\n\t\tint tmp;\n\t\tthis->room_count = room_count;\n\t\tfor (size_t i = 0; i < this->room_count; i++)\n\t\t\trooms[i].free();\n\t\tfor (size_t i = 0; i < this->room_count; i++) {\n\t\t\tcin >> tmp;\n\t\t\trooms[i].changeCapacity(tmp);\n\t\t}\n\t}\n\tHotel(const Hotel &) {\n\t\tcout << \"\\n \\n\";\n\t}\n\t~Hotel() {\n\t\tdelete [] rooms;\n\t}\n\tint get_room_count() {\n\t\treturn this->room_count;\n\t};  //      \n\tRoom& get_room(int p); //     p\n\tint count_free() {\n\t\tint ans = 0;\n\t\tfor (size_t i = 0; i < this->room_count; i++)\n\t\t\tif (rooms[i].is_occupied() == 0)\n\t\t\t\tans++;\n\t\treturn ans;\n\t};      //    \n\tint find_room(int k) {\n\t\tfor (size_t i = 0; i < this->room_count; i++)\n\t\t\tif (rooms[i].get_capacity() == k)\n\t\t\t\treturn i;\n\t};  //     k \n};\n\nint main() {\n\tint cpct, roomNo;\n\tstring cmd;\n\tint n, roomsAmount;\n\tcin >> roomsAmount >> n;\n\tHotel hotel(roomsAmount);\n\t\n\tfor (size_t i = 0; i < n; i++) {\n\t\tcin >> cmd;\n\t\tif (cmd == \"RESERVE\") {\n\t\t\tcin >> cpct;\n\t\t\thotel.find_room(cpct);\n\t\t}\n\t\telse if (cmd == \"FREE\") {\n\t\t\tint roomNo;\n\t\t\tcin >> roomNo;\n\t\t\thotel.get_room(roomNo).free();\n\t\t}\n\t\telse if (cmd == \"STATUS\") \n\t\t\tcout << hotel.count_free() << endl;\n\n\t}\n\tsystem(\"pause\");\n\treturn 0;\n};",
+ "title": ""
+}

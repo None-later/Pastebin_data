@@ -1,0 +1,7 @@
+{
+  "corrects": 0,
+  "incorrects": 23,
+  "reason": "re_creditcard_discover",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

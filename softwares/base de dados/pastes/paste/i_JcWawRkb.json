@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "JcWawRkb",
+ "pasteDate": "Feb 11, 2018, 12:54:17 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "import java.util.Date;\nimport java.util.GregorianCalendar;\n\npublic class employee {\n    public static void main(String[] args) {\n    employee_[]staff=new employee_[3];\n    staff[0]=new employee_(\"Rostuk Pisun\",750,2018,11,13);\n    staff[1]=new employee_(\"Toxan != Pisun\",751,2018,9,23);\n    staff[2]=new employee_(\"Snezhana Prosto\",3434,2019,8,12);\n    for(employee_ e:staff)\n        e.raiseSalary(5);\n    for(employee_ e:staff)\n        System.out.println(\"name=\"+e.getName()+\",salary=\"+e.getSalary()+\",hireDay=\"+e.getHireDay());\n    }\n}\nclass employee_{\n    private String name;\n    private  double salary;\n    private Date hireDay;\n\n    public employee_(String n,double s,int year,int month,int day){\n    name=n;\n    salary=s;\n    GregorianCalendar calendar= new GregorianCalendar(year,month-1,day);\n    hireDay=calendar.getTime();\n    }\n    public String getName()\n    {\n        return  name;\n    }\n    public double getSalary()\n    {\n        return  salary;\n    }\n\n    public Date getHireDay() {\n        return hireDay;\n    }\n    public void raiseSalary(double byPercent)\n    {\n        double raise=salary*byPercent/100;\n        salary+=raise;\n    }\n}",
+ "title": ""
+}

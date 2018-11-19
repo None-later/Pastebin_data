@@ -1,0 +1,5 @@
+{
+  "value": " https://docs.gradle.org/3.3/userguide/gradle_daemon.html",
+  "correct": true,
+  "jSonReason": "re_url"
+}

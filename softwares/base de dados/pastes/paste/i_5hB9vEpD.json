@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5hB9vEpD",
+ "pasteDate": "Feb 10, 2018, 6:21:02 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\nint main()\n{\n    int i,s, GivenArray[100];\n    printf(\"Enter the size of array : \");\n    scanf(\"%d\",&s);\n    printf(\"Enter elements of the array...\\n\");\n    for(i=0;i<s;i++)\n    {\n        scanf(\"%d\",&GivenArray[i]);\n    }\n\n    printf(\"Your entered array is \");\n    for(i=0;i<s;i++)\n    {\n        printf(\"%d \",GivenArray[i]);\n    }\n    return 0;\n}",
+ "title": ""
+}

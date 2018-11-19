@@ -1,0 +1,5 @@
+{
+  "value": " 192.168.2.4 ",
+  "correct": true,
+  "jSonReason": "re_ipv4"
+}

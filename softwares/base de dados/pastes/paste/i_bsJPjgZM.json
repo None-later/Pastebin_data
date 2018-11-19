@@ -1,0 +1,19 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "kw_error",
+  "re_php",
+  "lg_en",
+  "re_ast1",
+  "re_html_xml",
+  "re_url"
+ ],
+ "key": "bsJPjgZM",
+ "pasteDate": "Feb 26, 2018, 1:27:10 PM",
+ "relevancy": -8.0,
+ "relevant": false,
+ "text": "<?php\n    session_start();\n    require_once('dbconfig/config.php');\n    //phpinfo();\n?>\n<html>\n    <head> <script src=\"https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.3/jquery.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jcanvas/16.7.3/jcanvas.min.js\"></script>\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.0/fastclick.min.js\"></script>\n<script src=\"painterscripts/rect.js\"></script>\n        <script>\n            var startX;\n  var startY;\n  var endX;\n  var endY;\n  $.ajaxPrefilter(function( options, original_Options, jqXHR ) {\n    options.async = true;\n});\nfunction draw() {\n    databasetopainter();\n  var canvas = document.getElementById('canvas');\n  //var startX=239;\n  //var startY=405;\n // var endX=540;\n  //var endY=578;\n\n  if (canvas.getContext) {\n    var ctx = canvas.getContext('2d');\n   // for (var i=0;i<2;i++){\n    ctx.fillRect(startX, startY, endX-startX, endY-startY);\n    ctx.clearRect(45, 45, 60, 60);\n    ctx.strokeRect(50, 50, 50, 50);\n\n  }\n}\n\n\n\n\n        </script>\n\n    </head>\n\n     <body onload=\"draw();\">\n\n<canvas id=\"canvas\" width=600 height=600 style='width:500px;height:500px'></canvas>     \n<p>hi </p>\n <script>\n\n  function databasetopainter(){\n      var success = \"Fruit added\";\n    var error = \"Fruit not added\";\n      $.ajax({\n        type: \"POST\",\n        url: \"databasetopainter.php\",\n        async: false,\n\n        data: {startX:startX,startY:startY,endX:endX,endY:endY},\n\n              success: function(success){\n                 alert(\"success\");\n              },\n              error: function(error){\n                  alert('error');\n              }\n    });}</script>\n    </body>\n</html>\n\t\n<?php\n    session_start();\n    require_once('dbconfig/config.php');\n    //phpinfo();\n?>\n    <?php \n\n        $sql = \"SELECT painterarrays.* FROM painterarrays  WHERE painterarrays.username='\". $_SESSION['username'].\"' \";\n         $result = mysqli_query($con, $sql);\n         if (mysqli_num_rows($result) > 0) {    \n\n    while($row = mysqli_fetch_array($result)) {\n        echo $row['startX'];\n        echo $row['startY'];\n        echo $row['endX'];\n        echo $row['endY'];\n\n    }\n  } else {\n    echo \"0 results\";\n}\n\n\nmysqli_close($con);\n?>",
+ "title": ""
+}

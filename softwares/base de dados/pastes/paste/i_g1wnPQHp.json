@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "g1wnPQHp",
+ "pasteDate": "Feb 8, 2018, 11:02:43 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    public void addPotionEffect(Player player, PotionEffect effect) {\n        if (player.hasPotionEffect(effect.getType())) {\n            for (PotionEffect pe : player.getActivePotionEffects()) {\n                if (pe.getType().equals(effect.getType())) {\n                    if (effect.getAmplifier() < pe.getAmplifier()) {\n                        return;\n                    } else if (effect.getAmplifier() == pe.getAmplifier()) {\n                        if (effect.getDuration() < pe.getDuration()) {\n                            return;\n                        }\n                    }\n                    restoreMap.put(player.getUniqueId(), pe.getType(), pe);\n                    delay.put(player.getUniqueId(), System.currentTimeMillis() + 100);\n                    player.addPotionEffect(effect, true);\n                }\n            }\n        } else {\n            player.addPotionEffect(effect);\n        }\n    }",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tgXpQKjV",
+ "pasteDate": "Feb 26, 2018, 2:43:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "_em_complete_rc() {\n  local a\n  local files\n  local components\n  read -l a\n  a=${a/#em ##/}\n  a=${a/#-?## ##/}\n  reply=(`rc -p -S \"$a\"`)\n  files=(`rc -P \"$a\"`)\n  for ((i=0; i < ${#files[@]}; i++)); do\n    components=(\"${(@s#/#)${files[$i]}}\")\n    if [[ \"$components[${#components[@]}]\" == \"$1\"* ]]; then\n      reply+=($components[${#components[@]}])\n    fi\n  done\n}\n\ncompctl -K _em_complete_rc -f em",
+ "title": ""
+}

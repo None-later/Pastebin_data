@@ -1,0 +1,5 @@
+{
+  "value": "function LerpCFrame(CFrame1,CFrame2,Num)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

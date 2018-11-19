@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "3260enRb",
+ "pasteDate": "Feb 27, 2018, 11:40:17 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#!/bin/bash\n\n: << =cut\n\n=head1 NAME\n\nPacketfence Clients\n\n=head1 AUTHOR\n\nContributed by Paul Verrall \n\n=head1 LICENSE\n\nGPLv2\n\n=cut\n\nif [ -x  $MUNIN_LIBDIR/plugins/plugin.sh ]\nthen\n. $MUNIN_LIBDIR/plugins/plugin.sh\nfi\n\nif [ \"$1\" = \"autoconf\" ]; then\n        echo no\n        exit 0\nfi\n\nif [ \"$1\" = \"config\" ]; then\n\n        echo \"graph_title packetfence active clients\"\n        echo 'graph_vlabel clients'\n        echo 'graph_args --base 1000 --lower-limit 0' \n        echo \"graph_category Packetfence\"\n\n        PF_IPSETS=$(ipset list -n | fgrep pfsession_Reg_)\n\n        for ipset in $PF_IPSETS\n        do\n            snet=${ipset##pfsession_Reg_}\n            echo \"$snet\"\"_active.label $snet\"\"_active\"\n            echo \"$snet.draw AREA\"\n        done\n\n        exit 0\nfi\n\nPF_IPSETS=$(ipset list -n | fgrep pfsession_Reg_)\nTCP_TIMEOUT=$(sysctl -n net.netfilter.nf_conntrack_tcp_timeout_established)\nACTIVE_AGE=600\nACTIVE_MIN_AGE=$(( $TCP_TIMEOUT - $ACTIVE_AGE ))\n\nLOCAL_IPS=$(mktemp)\nIPSET_CLIENT_IPS=$(mktemp)\n\n# Pop local IPs in a file for easy filtering with grep\nfor ip in $(hostname -I)\ndo\n    echo \"$ip\" >> \"$LOCAL_IPS\"\ndone\n\nfor ipset in $PF_IPSETS;\ndo\n    # output list of set client ips for this set to file for easy greppage\n    ipset list \"$ipset\"  | awk -F , '/^[0-9]/ {print $1}' > \"$IPSET_CLIENT_IPS\"\n    if [ -s \"$IPSET_CLIENT_IPS\" ]\n    then\n        echo -n \"${ipset##pfsession_Reg_}_active.value \"\n        \n        # list of assured established tcp connections \n        # | remove local sorces and destinations \n        # | remove aged connections i.e only those active within $ACTIVE_AGE seconds\n        # | include only pf clients in this ipset\n        # | sort | unique | count remaining lines\n        \n        conntrack -L -u assured -p tcp --state ESTABLISHED 2>/dev/null \\\n            | fgrep -v -f \"$LOCAL_IPS\" \\\n            | awk -v t=\"$ACTIVE_MIN_AGE\" '$3 > t {print $0}' \\\n            | fgrep -o -f \"$IPSET_CLIENT_IPS\" \\\n            | sort | uniq | wc -l\n     fi\ndone\n\nrm $LOCAL_IPS $IPSET_CLIENT_IPS\nexit 0",
+ "title": ""
+}

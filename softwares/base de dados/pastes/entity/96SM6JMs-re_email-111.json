@@ -1,0 +1,5 @@
+{
+  "value": "Alice@yfx.com",
+  "correct": true,
+  "jSonReason": "re_email"
+}

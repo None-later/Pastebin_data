@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qCyK5kGk",
+ "pasteDate": "Feb 12, 2018, 4:37:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "print('Hello')\ninput ()\nprint('What is your name?')\nname=input()\nprint('Well Hello',name)\ninput ()\nprint('what is your favorite color?')\nfavorite_color=input()\n\nif favorite_color in [\"blue\",\"Blue\"]:\n  print('WOAH ME TOO')\nelse:\n  print('Hmm not my favorite but okay.')\n\ninput ()\nprint ('Do you want to play a game? (y/n)')\nyes_or_no=input()\nif yes_or_no in ['yes','y','Yes']:\n  print('Perfect!\\n')\n  print(\"\"\"\n  Here are the rules\n  \n  1-This is a made up game\n  2-I will always win\n  3-You can give up now if you want to   \n  \"\"\")\nelse:\n  print('Alright have a good day!')\n\ninput()\nprint ('Would you still like to play?')\nyes_or_no2=input()\nif yes_or_no2 in ['yes','y','Yes']:\n  print('Bet, lets do this')\n  \nelse:\n  print('Alright have a good day!')\n  \ninput ()\nprint('Can you tell me how many lines of code are used in this program?')\nhuh=input()\nif huh in ['50']:\n  print (\"\"\"\n  YOU CHEATER!\n  \n  Daniel sent this to you and you looked at the script!\n  \"\"\")\nelse:\n  print('NOPE! I WIN')\n  #program over",
+ "title": ""
+}

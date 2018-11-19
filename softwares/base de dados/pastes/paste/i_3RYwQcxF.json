@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ast1",
+  "lg_en"
+ ],
+ "key": "3RYwQcxF",
+ "pasteDate": "Feb 8, 2018, 1:14:30 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "class lsi_Widget extends WP_Widget {\n ... (class functions are in here)\n}\n\nfunction lsi_icons( $options = '' ) {\n    $options = array (\n        'email' => array(\n            'id' => 'email',\n            'name' => __( 'Contact', 'lightweight-social-icons' )\n        ),\n        'delicious' => array(\n            'id' => 'delicious',\n            'name' => __( 'Delicious', 'lightweight-social-icons' )\n        ),\n        'deviantart' => array(\n            'id' => 'deviantart',\n            'name' => __( 'DeviantArt', 'lightweight-social-icons' )\n        ),\n        'digg' => array(\n            'id' => 'digg',\n            'name' => __( 'Digg', 'lightweight-social-icons' )\n        ),\n        'facebook' => array(\n            'id' => 'facebook',\n            'name' => __( 'Facebook', 'lightweight-social-icons' )\n        ),\n    );\n\n    return apply_filters( 'lsi_icons_defaults', $options );\n}",
+ "title": ""
+}

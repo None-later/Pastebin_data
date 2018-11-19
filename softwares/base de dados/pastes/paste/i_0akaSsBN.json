@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "0akaSsBN",
+ "pasteDate": "Feb 28, 2018, 8:14:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{    \n  animals:{        \n    dog:[            \n      {                \n        name:'Rufus',                \n        breed:'labrador'            \n      },            \n      {                \n        name:'Marty',                \n        breed:'whippet'            \n      }        \n    ],        \n    cat:{            \n      name:'Matilda'        \n    }    \n  }\n}",
+ "title": ""
+}

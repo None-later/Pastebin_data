@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4rQdR2B1",
+ "pasteDate": "Feb 28, 2018, 4:18:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "head -10 A.txt > B.txt\nsed -i 1,10d A.txt",
+ "title": ""
+}

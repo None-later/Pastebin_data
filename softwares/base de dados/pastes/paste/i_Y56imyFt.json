@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_scanner",
+  "re_java",
+  "lg_en"
+ ],
+ "key": "Y56imyFt",
+ "pasteDate": "Feb 17, 2018, 8:03:17 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "import java.util.Scanner; \npublic class Program {\n\n\tpublic static void main(String[] args) {\n\t\n\t\t long number;\n\t\t Scanner scanner = new Scanner( System.in );\n\t\t System.out.print( \"Nhap so he thap phan: \" );\n\t\t number = Long.parseLong(scanner.nextLine() );\n\t\t System.out.println(\"Dang nhi phan la:\" + binary(number));\n\t}\n\tpublic static long binary(long number){\n\t\tlong base = 1, binary_val = 0, rem;\n\t\twhile (number > 0)\n\t    {\n\t        rem = number % 2;\n\t        binary_val = binary_val + rem * base;\n\t        number = number / 2;\n\t        base = base * 10;\n\t    }\n\t\treturn binary_val;\n\t}\n\n}",
+ "title": ""
+}

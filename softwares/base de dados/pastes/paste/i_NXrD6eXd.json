@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NXrD6eXd",
+ "pasteDate": "Feb 10, 2018, 8:59:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "package <package>;\n\nimport com.comphenix.protocol.PacketType;\nimport com.comphenix.protocol.events.ListenerPriority;\nimport com.comphenix.protocol.events.PacketAdapter;\nimport com.comphenix.protocol.events.PacketContainer;\nimport com.comphenix.protocol.events.PacketEvent;\n\npublic class AntiTabComplete {\n\n    public AntiTabComplete() { }\n\n    public void registerProtocol() {\n        Main-Klasse.getProtocolManager().addPacketListener(new PacketAdapter(<instanz-der-main-klasse (NICHT PROTOCOLMANAGER)>, ListenerPriority.HIGHEST, new PacketType[]{PacketType.Play.Client.TAB_COMPLETE}) {\n            @Override\n            public void onPacketReceiving(PacketEvent event) {\n                if (event.getPacket().getType().equals(PacketType.Play.Client.TAB_COMPLETE)) {\n                    PacketContainer packetContainer = event.getPacket();\n                    String completeMessage = packetContainer.getStrings().read(0);\n\n                    if (!completeMessage.startsWith(\"/\")) return;\n                    if (!event.getPlayer().hasPermission(\"wenn er nicht permission dazu hat, darf er nicht befehle tabben\"))\n                        event.setCancelled(true);\n                }\n            }\n        });\n    }\n}",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Mg1KMc1D",
+ "pasteDate": "Feb 20, 2018, 5:22:01 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "class Question < ActiveRecord::Base\n  belongs_to :category\n  belongs_to :pack\n\n  # TODO Doit etre possible de le limiter\n  # a une categorie passe en parametre et au question appartenant a un set\n  # en particulier\n  named_scope :random, :limit => 1,:order => 'RAND()'\n  \nend",
+ "title": ""
+}

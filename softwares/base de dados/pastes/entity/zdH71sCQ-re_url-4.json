@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://streamer.bestibz.com:8000/get.php?username\u003dgenjohome\u0026password\u003dnevekogenjo\u0026type\u003dm3u",
+  "correct": true,
+  "jSonReason": "re_url"
+}

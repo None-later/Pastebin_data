@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FwuaqENw",
+ "pasteDate": "Feb 23, 2018, 9:50:01 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<ion-slides pager='true' loop=\"true\" (ionSlideDidChange)=\"onSlideChangeStart($event)\" #slides>\n<ion-slide *ngFor=\"let slide of slidesData;let i = index\" #profileSlider>\n<ion-card>\n<ion-card-header>\n<ion-row align-items-center justify-content-around>\n<ion-checkbox item-left [attr.id]=\"i+'_'+activeCard\" [checked]='cardIndex == i' (click)=\"onCheckBoxClick(i)\"></ion-checkbox>\n<p>{{slide.name}}</p>\n<img class=\"header-icon\" src=\"{{slide.icon}}\" item-end>\n</ion-row>\n</ion-card-header>\n<ion-card-content>\n{{slide.content}}\n</ion-card-content>\n</ion-card>\n</ion-slide>\n</ion-slides>",
+ "title": ""
+}

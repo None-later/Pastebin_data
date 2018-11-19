@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "WYDsCMyd",
+ "pasteDate": "Feb 28, 2018, 6:26:46 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require File.dirname(__FILE__) + '/../spec_helper'\n\ncontext \"The Domain model\" do\n  fixtures :domains\n  \n  specify \"should find an existing domain\" do\n    domain = Domain.find 1\n\n    domain.name.should_equal 'planetargon.com'    \n  end\n  \n  specify \"should have records\" do\n    domains(:planetargon_com).should_have(2).records\n  end\nend\n\n\n# produces...\n\n1)\n'The Domain model should find an existing domain' FAILED\n\"planetargon.com\" should equal \"planetargon.com\"\n./spec/models/domain_spec.rb:9:",
+ "title": ""
+}

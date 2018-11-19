@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_no"
+ ],
+ "key": "HAgusQFk",
+ "pasteDate": "Feb 11, 2018, 5:05:08 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "double sum = 0;\n \nint main() {\n    for (int i = 1; i < 1e7; i++) {\n        sum += i / 0.0;\n    }\n}",
+ "title": ""
+}

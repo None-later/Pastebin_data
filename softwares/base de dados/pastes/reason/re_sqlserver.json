@@ -1,0 +1,7 @@
+{
+  "corrects": 6,
+  "incorrects": 1,
+  "reason": "re_sqlserver",
+  "status": "REGECT",
+  "type": "REGEX"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FeCKSTNG",
+ "pasteDate": "Feb 21, 2018, 10:09:09 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "DisplayMetrics displayMetrics = new DisplayMetrics();\ngetWindowManager().getDefaultDisplay().getMetrics(displayMetrics);\nint height = displayMetrics.heightPixels;\nint width = displayMetrics.widthPixels;\n\t\nVidCodecParam para = ((Endpoint)(ep)).getVideoCodecParam(\"H264\"); MediaFormatVideo encFmt = para.getEncFmt(); encFmt.setWidth(width); encFmt.setHeight(height); ep.setVideoCodecParam(\"H264\", para);",
+ "title": ""
+}

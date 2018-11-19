@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "eW8iApCg",
+ "pasteDate": "Feb 21, 2018, 1:59:47 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "******* EXERCCIOS ******** ORG & ARQ ********** 27/10/2011\n\nConsidere um sistema computacional que utiliza a tcnica de parties variveis de memria e a alocao  feita atravs de uma lista encadeada dinmica, que contm as lacunas disponveis em um dado instante.\nAs lacunas so:\n\n\tL1 = 100k\n\tL2 = 25k\n\tL3 = 40k\n\tL4 = 200k\n\tL5 = 180k\n\tL6 = 72k\n\tL7 = 80k\n\tL8 = 12k\n\nQual seria a lacuna alocada para os seguintes processo:\n\n\tP1 = 150K\n\tP2 = 11K\n\tP3 = 20K\n\tP4 = 55K\n\tP5 = 33K\n\tP6 = 60K",
+ "title": ""
+}

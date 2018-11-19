@@ -1,0 +1,5 @@
+{
+  "value": "function well in extreme tempertures.\u003c/description\u003e\u003cgraphicData\u003e\u003ctexPath\u003eThings/Building/RationTank\u003c/texPath\u003e\u003cgraphicClass\u003eGraphic_Multi\u003c/graphicClass\u003e\u003cshaderType\u003eCutoutComplex\u003c/shaderType\u003e\u003cdamageData\u003e\u003crect\u003e(0.05,0.1,0.9,0.9)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

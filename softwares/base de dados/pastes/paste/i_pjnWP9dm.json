@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "pjnWP9dm",
+ "pasteDate": "Feb 18, 2018, 5:19:28 PM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "package pripravanatest;\nimport java.util.*;\n\npublic class PripravaNaTest {\n\n\n    public static void main(String[] args) {\n        Scanner sc = new Scanner(System.in);\n        \n        boolean o=false;\n        String a;\n        int c=0;\n        \n       do{\n       System.out.println(\"Zadej slo v binrn soustav: \");\n       a =sc.nextLine();\n       \n       for(int b=0;b<a.length();b++){\n       if(a.charAt(b)=='0' || a.charAt(b)=='1')c++;\n       \n       }\n       if(c==a.length())o=true;\n       \n       }while (o==false);\n       \n       Pyramida pyr = new Pyramida();\n       pyr.vytvoreni(a);\n        \n    }\n    \n}\n\nclass Pyramida{\n\n    public void vytvoreni(String a){\n    \n        int pocitadlo=0;\n        int d=0;\n        d=prevod(a);\n        \n        for(int p=d;p>0;p--){\n            for(int g=0;g<pocitadlo;g++)System.out.print(\" \");\n        for(int y=0;y<p;y++){\n            System.out.print(\"**\");\n        }\n            System.out.println();\n            pocitadlo++;\n        }\n    }\n    \n    public int prevod(String a)\n    {\n     int y=0;\n     int p=1;\n     \n     for(int b=a.length()-1;b>=0;b--){\n         if(a.charAt(b)=='1')y=y+p;\n     p=p*2;\n     }\n        return y;\n    }\n}",
+ "title": ""
+}

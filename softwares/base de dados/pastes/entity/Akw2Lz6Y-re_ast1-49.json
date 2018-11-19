@@ -1,0 +1,5 @@
+{
+  "value": "function explosion(col1,col2,cfr,sz,rng,dmg)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "64N3f45P",
+ "pasteDate": "Feb 26, 2018, 2:37:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "I am planning to integrate Razorpay Payment Gateway in my client website,which has developed in wordpress in which scenario will be as follows  \n 1)User will fill enquiry form with his requirement.  \n 2)Then depend on customer requirement owner will reply with cost and some code to customer(through mobile/email communication).  \n 3)Customer will go at website's Payment Page where He/She will submit form(name,amount,code as remark and email id)  which will redirect to payment gateway page. \nAt Wordpress website the plugin**(Razorpay Quick Payments) **",
+ "title": ""
+}

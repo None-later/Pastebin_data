@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "W7yEuff7",
+ "pasteDate": "Feb 17, 2018, 7:43:53 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "from gpiozero import Button\nimport pygame.mixer\nfrom pygame.mixer import Sound\nfrom signal import pause\n\npygame.mixer.init()\n\nsound_pins = {\n    18: Sound(\"samples/c4.wav\"),\n    23: Sound(\"samples/h3.wav\"),\n    24: Sound(\"samples/a3.wav\"),\n    25: Sound(\"samples/g3.wav\"),\n    8: Sound(\"samples/f3.wav\"),\n    7: Sound(\"samples/e3.wav\"),\n    12: Sound(\"samples/d3.wav\"),\n    16: Sound(\"samples/c3.wav\"),\n}\n\nbuttons = [Button(pin) for pin in sound_pins]\nfor button in buttons:\n    sound = sound_pins[button.pin.number]\n    button.when_pressed = lambda snd=sound: snd.play(loops=-1)\n    button.when_released=sound.stop\n\npause()",
+ "title": "piano"
+}

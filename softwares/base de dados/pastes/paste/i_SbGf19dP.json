@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "re_sql",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "SbGf19dP",
+ "pasteDate": "Feb 12, 2018, 11:50:01 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<input type=\"checkbox\" name=\"filter_products\" class='form-control filter_products' id='show_zeros' value=\"Zeroes\"> Show Zeroes<br>\n<input type=\"checkbox\" name=\"filter_products\" id='show_all' value=\"All\"> Show all products<br>\n\t\ninclude ('load_table.php');\n\t\n$('input').on('ifClicked', function(event)\n    {\n        if ($('#show_zeros').prop('checked'))\n            var show_zeros = $('#show_zeros').val();\n\n        if ($('#show_all').prop('checked'))\n            var show_all = $('#show_all').val();\n\n        $.ajax({ \n            url: \"load_table.php\",\n            data: {'show_zeros' : show_zeros, 'show_all' : show_all},\n            type: 'post',\n            success: function(result) {\n\n            },\n                error: function() {}\n\n            }); \n    });\n\t\n$show_zeroes = $_POST['show_zeros'];\n$show_all = $_POST['show_all'];\necho 'Show zeroes: ' . $show_zeroes;\necho 'Show All: ' . $show_all;\n\t\nif ($show_zeroes == 'Zeroes' && $show_all == 'undefined')\n                    $query      =   \"select sp.product_id AS product_id, sp.department_id AS department_id, sp.product_name AS product_name, sd.department_name AS department_name, sp.unit_cost AS unit_cost, SUM(sp.quantity_units) AS quantity_counted, ROUND(SUM(sp.quantity_units) * sp.unit_cost,2) AS total_cost from stocktake_details sp INNER JOIN store_departments sd ON sd.id = sp.department_id WHERE sp.stocktake_id = $stocktake_id GROUP BY sp.product_id ORDER BY total_cost DESC\";\n                else if ($show_zeroes == 'Zeroes' && $show_all == 'All')\n                    $query      =   \"select sp.product_id AS product_id, sp.department_id AS department_id, sp.product_name AS product_name, sd.department_name AS department_name, sp.unit_cost AS unit_cost, SUM(sp.quantity_units) AS quantity_counted, ROUND(SUM(sp.quantity_units) * sp.unit_cost,2) AS total_cost from stocktake_details sp INNER JOIN store_departments sd ON sd.id = sp.department_id WHERE sp.stocktake_id = $stocktake_id GROUP BY sp.product_id ORDER BY total_cost DESC\";\n                else \n                    $query      =   \"select sp.product_id AS product_id, sp.department_id AS department_id, sp.product_name AS product_name, sd.department_name AS department_name, sp.unit_cost AS unit_cost, SUM(sp.quantity_units) AS quantity_counted, ROUND(SUM(sp.quantity_units) * sp.unit_cost,2) AS total_cost from stocktake_details sp INNER JOIN store_departments sd ON sd.id = sp.department_id WHERE sp.stocktake_id = $stocktake_id AND sp.quantity_units > 0 GROUP BY sp.product_id ORDER BY total_cost DESC\";",
+ "title": ""
+}

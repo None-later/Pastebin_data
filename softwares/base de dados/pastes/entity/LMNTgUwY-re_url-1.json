@@ -1,0 +1,5 @@
+{
+  "value": "http://iptv.bestiptvitalia.com:2300/get.php?username\u003dwJUkiWRDlf\u0026password\u003dKskdQS4TpK\u0026type\u003dm3u_plus\u0026output\u003dts",
+  "correct": true,
+  "jSonReason": "re_url"
+}

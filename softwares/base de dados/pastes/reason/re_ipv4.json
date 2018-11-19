@@ -1,0 +1,7 @@
+{
+  "corrects": 10718,
+  "incorrects": 28,
+  "reason": "re_ipv4",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

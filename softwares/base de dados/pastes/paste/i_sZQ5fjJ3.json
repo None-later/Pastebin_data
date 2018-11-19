@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "sZQ5fjJ3",
+ "pasteDate": "Feb 10, 2018, 10:40:10 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "DELIMITER $$\n\t\nSELECT LAST_INSERT_ID INTO last_id;\nFROM information_schema.tables\nWHERE table_name = `parent_table`\nAND table_schema = `database_name`;",
+ "title": ""
+}

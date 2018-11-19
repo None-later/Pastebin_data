@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hmmc1VS3",
+ "pasteDate": "Feb 12, 2018, 9:07:35 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "#include \"ScriptMgr.h\"\n#include \"AchievementMgr.h\"\n\nclass world_pvp_achievement_system : public PlayerScript\n{\npublic:\n\tworld_pvp_achievement_system() : PlayerScript(\"world_pvp_achievement_system\") {}\n\n\tvoid OnAchievementComplete(Player* player, AchievementEntry const* achievement)\n    {          \n          switch (achievement->ID)\n          {\n          \t case 6:\n\t\t     player->AddItem(47241, 2);\n             break;\n             default:\n             break;\n          }\n    }\n};\n\nvoid AddSC_world_achievement_system()\n{\n\tnew world_pvp_achievement_system();\n}",
+ "title": ""
+}

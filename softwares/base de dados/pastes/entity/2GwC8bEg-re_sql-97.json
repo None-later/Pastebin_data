@@ -1,0 +1,5 @@
+{
+  "value": "SELECT ((SUM([mf].[size]) * 8.) / 1024.) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

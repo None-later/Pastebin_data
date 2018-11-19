@@ -1,0 +1,5 @@
+{
+  "value": "\nhttps://gitlab.com/kenichi.shibata/book/blob/2d71e9aefb00cef088d479daea537d6df5f5676e/%5BINTERVIEW%5D%5BThe%20Google%20Resume%5D.pdf",
+  "correct": true,
+  "jSonReason": "re_url"
+}

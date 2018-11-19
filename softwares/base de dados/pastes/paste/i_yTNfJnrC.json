@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yTNfJnrC",
+ "pasteDate": "Feb 18, 2018, 2:19:21 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "vision/dcemp_tunnels.vision\n\nr_glow                    \"0\"\nr_glowRadius0             \"25.2691\"\nr_glowBloomCutoff         \"0.925522\"\nr_glowBloomDesaturation   \"0.75\"\nr_glowBloomIntensity0     \"1.42171\"\n \nr_filmEnable              \"1\"\nr_filmContrast            \"1.19\"\nr_filmBrightness          \"0.20\"\nr_filmDesaturation        \"0.527\"\nr_filmDesaturationDark    \"0.137673\"\nr_filmInvert              \"0\"\nr_filmLightTint           \"1 1 1\"\nr_filmMediumTint          \"1.2 1.2 1.2\"\nr_filmDarkTint            \"0 0 0\"\n \nr_primaryLightUseTweaks              \"1\"\nr_primaryLightTweakDiffuseStrength   \"1.66282\"\nr_primaryLightTweakSpecularStrength  \"1.45302\"",
+ "title": ""
+}

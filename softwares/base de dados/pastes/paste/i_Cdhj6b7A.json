@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Cdhj6b7A",
+ "pasteDate": "Feb 18, 2018, 10:16:16 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "2011-10-23 13:11:48 [INFO] ====================      Towny      ========================\n2011-10-23 13:11:49 [INFO] [Towny] Database: [Load] flatfile [Save] flatfile\n2011-10-23 13:11:49 [INFO] [Towny] Using: PermissionsEX v1.15, Register v1.5, Questioner v0.4\n2011-10-23 13:11:49 [INFO] [Towny] Time until a New Day: 17 hours, 48 minutes, 11 second\n2011-10-23 13:11:49 [INFO] =============================================================\n2011-10-23 13:11:49 [INFO] [Towny] Version: 0.77.0.1 - Mod Enabled\n2011-10-23 13:11:49 [INFO] =============================================================\n2011-10-23 13:11:49 [INFO] [Register] Payment method found (BOSEconomy version: 0.7.0)",
+ "title": ""
+}

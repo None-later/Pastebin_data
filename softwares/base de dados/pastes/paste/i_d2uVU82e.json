@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "d2uVU82e",
+ "pasteDate": "Feb 28, 2018, 12:25:42 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\nusing namespace std;\nbool wstaw(int w,int k,char tab[][3],int& lz) {\n    if(w<0 or w>2 or k<0 or k>2) {\n        cout << \"Miejsce poza zakresem!\" << endl;\n        return false;\n    } else if (tab[w][k]==' ') {\n        lz++;\n        int i,l,tw=3,th=3;\n        if (lz%2==0){\n            tab[w][k]='x';\n        }\n        else {\n            tab[w][k]='o';\n        }\n        return true;\n    } else {\n        cout << \"Miejsce zajete!\" << endl;\n        return false;\n    }\n}\nvoid wypisz (int th,int tw,char tab[][3]) {\n    int i,l;\n    for (i=0; i<th; i++) {\n        cout << \"|\" ;\n        for (l=0; l<tw; l++) {\n            cout << tab[i][l] << \"|\" ;\n        }\n        cout << endl;\n    }\n}\nint sprawdz(int w,int k,char znak,char tab[][3],int lz) {\n    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n\t//        TODO             \t//////////////////////////////////////////////////////////////////////////////////////////////////\n\t//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////\n}\nint main() {\n    int w,k,i,l,tw=3,th=3;\n\n    int lz=0;\n    char tab[][3] {\n    {' ',' ',' '},\n    {' ',' ',' '},\n    {' ',' ',' '}\n    };\n\n    char znak;\n    while(true) {\n        cout << \"Podaj wiersz:\" ;\n        cin >> w ;\n        cout << \"Podaj kolumne:\" ;\n        cin >> k ;\n        wstaw(w,k,tab,lz);\n        wypisz(th,tw,tab);\n        if (lz%2==0){\n            znak='x';\n        } else {\n            znak='o';\n        }\n        bool ck=sprawdz(w,k,znak,tab,lz);\n        if (ck!=0) {\n            break;\n        }\n    }\n    return 0;\n}",
+ "title": ""
+}

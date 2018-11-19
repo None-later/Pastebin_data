@@ -1,0 +1,5 @@
+{
+  "value": "select sp.product_id AS product_id, sp.department_id AS department_id, sp.product_name AS product_name, sd.department_name AS department_name, sp.unit_cost AS unit_cost, SUM(sp.quantity_units) AS quantity_counted, ROUND(SUM(sp.quantity_units) * sp.unit_cost,2) AS total_cost from",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

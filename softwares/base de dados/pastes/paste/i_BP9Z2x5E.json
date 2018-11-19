@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_url"
+ ],
+ "key": "BP9Z2x5E",
+ "pasteDate": "Feb 20, 2018, 4:10:06 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# Controller\n\nclass Articles < Application\n  # provides :xml, :yaml, :js\n\n  def index\n    @articles = Article.all\n    display @articles\n  end\n\n  def show(id)\n    @article = Article.get(id)\n    raise NotFound unless @article\n    display @article\n  end\n\n  def new\n    only_provides :html\n    @article = Article.new\n    display @article\n  end\n\n  def edit(id)\n    only_provides :html\n    @article = Article.get(id)\n    raise NotFound unless @article\n    display @article\n  end\n\n  def create(article)\n    @article = Article.new(article)\n    if @article.save\n      redirect resource(@article), :message => {:notice => \"Article was successfully created\"}\n    else\n      message[:error] = \"Article failed to be created\"\n      render :new\n    end\n  end\n\n  def update(id, article)\n    @article = Article.get(id)\n    raise NotFound unless @article\n    if @article.update_attributes(article)\n       redirect resource(@article)\n    else\n      display @article, :edit\n    end\n  end\n\n  def destroy(id)\n    @article = Article.get(id)\n    raise NotFound unless @article\n    if @article.destroy\n      redirect resource(:articles)\n    else\n      raise InternalServerError\n    end\n  end\n\nend # Articles",
+ "title": ""
+}

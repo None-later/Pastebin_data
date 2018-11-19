@@ -1,0 +1,5 @@
+{
+  "value": "\"http://public.seiryl.net/config.json",
+  "correct": true,
+  "jSonReason": "re_url"
+}

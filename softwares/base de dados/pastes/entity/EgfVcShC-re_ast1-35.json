@@ -1,0 +1,5 @@
+{
+  "value": "function(buffer)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

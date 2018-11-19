@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8Kefu90F",
+ "pasteDate": "Feb 21, 2018, 7:07:09 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<span class=\"middle\">Next</span>\n\t\nxpath=driver.findElement(By.xpath(\".//*[@id='modal-actions-panel']/div[2]/a/span/span/span\")); // by considering fixed id as reference\n\t\nxpath=driver.findElement(By.xpath(\"html/body/div[4]/div[2]/a/span/span/span\"));  // took this from firebug\n\t\ndriver.findElement(By.cssSelector(\"span[class='middle']\"));\n\t\ndriver.switchTo().frame(\"iframe-applicationname_ModalDialog_0\");\nWebElement el = driver.findElement(By.cssSelector(\"span.middle\"));\n\t\ndriver.switchTo().frame(\"iframe-applicationname_ModalDialog_0\");\nWebElement el = driver.findElement(By.cssSelector(\"span.middle\"));\nel.click();\n\n//Now after all your stuff done inside frame need to switch to default content \ndriver.switchTo().defaultContent();\n\t\nWebDriverWait wait = new WebDriverWait(driver, 10);\n\n//Find frame or iframe and switch\nwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(\"iframe-applicationname_ModalDialog_0\"));\n\n//Now find the element \nWebElement el = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(\".//span[@class = 'middle' and contains(text(), 'Next')]\")));\nel.click();\n\n//Once all your stuff done with this frame need to switch back to default\ndriver.switchTo().defaultContent();\n\t\nWebDriverWait wait = new WebDriverWait(driver, 10);\n\n//Find frame or iframe and switch\nwait.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(\"iframe-applicationname_ModalDialog_0\"));\n\n//Now find the element \nWebElement el = wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath(\".//span[@class = 'middle' and contains(text(), 'Next')]\")));\n\n//Now click using JavascriptExecutor\n((JavascriptExecutor)driver).executeScript(\"arguments[0].click()\" el); \n\n//Once all your stuff done with this frame need to switch back to default\ndriver.switchTo().defaultContent();\n\t\ndriver.findElement(By.xpath(\"//span[contains(@class,'middle') and contains(text(), 'Next')]\"))",
+ "title": ""
+}

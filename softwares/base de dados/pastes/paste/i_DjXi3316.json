@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "html4strict",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "DjXi3316",
+ "pasteDate": "Feb 21, 2018, 9:13:25 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<html>\n<head>\n<style type=\"text/css\">\n* {margin:0;padding:0;}\nbody {background:#f1f1f1}\n#container {\n\tfloat:left;\n\theight:400px;\n\tbackground:#fff;\n\t}\n#a {\n\tfloat:left;\n\twidth:200px;\n\theight:400px;\n\tbackground:#ccc;\n\t}\n#b {\n\tfloat:left;\n\twidth:auto;\n\theight:400px;\n\tbackground:yellow;\n\t}\n#c {\n\tfloat:left;\n\twidth:200px;\n\theight:400px;\n\tbackground:#ccc;\n\t}\n</style>\n</head>\n<body>\n<div id=\"container\">\n\t<div id=\"a\">fixed width content</div>\n\t<div id=\"b\"><img style=\"width:2500px\" src=\"\" /></div>\n\t<div id=\"c\">fixed width content</div>\n</div>\n</body>\n</html>",
+ "title": ""
+}

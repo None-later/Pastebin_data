@@ -1,0 +1,5 @@
+{
+  "value": "\"https://www.apple.com/ac/structured-data/images/knowledge_graph_logo.png",
+  "correct": true,
+  "jSonReason": "re_url"
+}

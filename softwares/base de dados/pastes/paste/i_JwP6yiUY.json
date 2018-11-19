@@ -1,0 +1,17 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_malicious",
+  "kw_error",
+  "lg_en",
+  "kw_bug",
+  "re_url"
+ ],
+ "key": "JwP6yiUY",
+ "pasteDate": "Feb 20, 2018, 4:12:35 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "I think we should understand the consequenses of using SHOULD (and not MUST).\n\n> \"an entity SHOULD be liberal in accepting such data.\"\n\nThis translates to:\n\n  \"an entity SHOULD NOT use a namespace-validating parser (as defined in [XML-NAMES])\"\n\nThis is indeed the case. Entities in the XMPP world tend not to use namespace aware parsers. In\nfact most do not care about namespaces at all (aside from a few specific cases where the XEPs use\na namespace prefix in the examples, the implementations are often coded to look for that prefix).\n\nTesting with ejabberd and gajim (quite a popular combination), it was quickly clear that both did\nnot deal with valid <message>s where a prefix was used, and both did deal with <message>s with a\nnamespace other than jabber:client.\n\nAll implementations must be namespace non-aware if they don't wish to have the disconnection bug\nthat gajim had. I would like to argue that it was not a bug at all.\n\nIf we are going to allow non-namespace aware servers, then we should remove the reference to\n[XML-NAMES] (except maybe to specify that this is something which SHOULD NOT be complied to).\nWith non xmlns-aware entities allowed, we might as well remove the illusion of the possibility\nof using namespaces too. After all, many entities don't care about it, and would very likely show\nnon-compliant behavior if a different namespace is used, or if a prefix is used. At the moment\nthe use of namespaces just causes developers to assume that they can use their own elements with\nnames similar to those used by various RFC/XEP elements with a different namespace. Such use\nwould of course result in incorrect behavior in all non-xmlns-aware entities. If non-xmlns-aware\nentities are going to be allowed, we should declare that all entities should be so, in order to\nsave everyone from headaches.\n\nThe behavior when a server receives a badly-namespaced stanza needs to be clarified. I have\nbeen working with Matthew Wild on a not-yet-released server. We are wondering whether we should\ndiscard the stanza, the element, or raise a stream error. After all, there really is no reason\nthat any (non-malicious) entity should be sending invalid namespaces. If they do then it is a bug,\njust the same as if they sent invalid XML.\n\nJust discarding it has a problem. Someone could send a message with invalid namespaces to a\nconference.jabber.org room. Everyone (human) would see that, except entities which care about\nnamespaces. From the protocol's perspective this would be \"correct\", but not from a normal user's\nperspective.\n\nSorry if this sounds like a rant. I just don't like where we are headed.",
+ "title": ""
+}

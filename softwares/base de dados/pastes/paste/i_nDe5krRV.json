@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en",
+  "re_sqlserver"
+ ],
+ "key": "nDe5krRV",
+ "pasteDate": "Feb 21, 2018, 12:34:54 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "/*\n * To change this license header, choose License Headers in Project Properties.\n * To change this template file, choose Tools | Templates\n * and open the template in the editor.\n */\npackage pab_lab1_gr22_32;\n\nimport java.sql.Connection;\nimport java.sql.DriverManager;\nimport java.sql.ResultSet;\nimport java.sql.Statement;\nimport javafx.application.Application;\nimport javafx.event.ActionEvent;\nimport javafx.event.EventHandler;\nimport javafx.scene.Scene;\nimport javafx.scene.control.Button;\nimport javafx.scene.layout.StackPane;\nimport javafx.stage.Stage;\nimport static jdk.nashorn.internal.runtime.Debug.id;\n\n/**\n *\n * @author kie\n */\npublic class PAB_Lab1_gr22_32 extends Application {\n    \n    @Override\n    public void start(Stage primaryStage) {\n        Button btn = new Button();\n        btn.setText(\"Pobierz dane\");\n        btn.setOnAction(new EventHandler<ActionEvent>() {\n            \n            @Override\n            public void handle(ActionEvent event) {\n                try {\n                    //zaadowanie sterownika\n                    Class.forName(\"com.microsoft.sqlserver.jdbc.SQLServerDriver\");\n                    //ustanowienie poczenia do bazy\n                    //serwer;baza, nazwa uytkownika, haso\n                    Connection polaczenie=DriverManager.getConnection(\n                        \"jdbc:sqlserver://localhost\\\\SQL2016Lab;databaseName=PAB\",\n                        \"sa\",\"student\");\n                    //zapytanie sql\n                    Statement skladnia;\n                    //przechowywanie wynikow\n                    ResultSet rezultat;\n                    skladnia=polaczenie.createStatement();\n                    //wykonanie zapytania\n                    rezultat=skladnia.executeQuery(\"SELECT * FROM tabela\");\n                    //ptla\n                    while(rezultat.next()){\n                        System.out.println(rezultat.getString(\"id\") + \"\\\"\" +\n                                rezultat.getString(\"opis\") +\"\\\"\");\n                    }\n                }\n                catch(Exception e){\n                    System.err.println(\"bd\" +e.getMessage());\n                }\n                System.out.println(\"Pobrane dane\");\n            }\n        });\n        \n        StackPane root = new StackPane();\n        root.getChildren().add(btn);\n        \n        Scene scene = new Scene(root, 300, 250);\n        \n        primaryStage.setTitle(\"Aplikacja grupy 2232\");\n        primaryStage.setScene(scene);\n        primaryStage.show();\n    }\n\n    /**\n     * @param args the command line arguments\n     */\n    public static void main(String[] args) {\n        launch(args);\n    }\n    \n}",
+ "title": ""
+}

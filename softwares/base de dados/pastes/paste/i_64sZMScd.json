@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "64sZMScd",
+ "pasteDate": "Feb 18, 2018, 1:52:59 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "from flask import Flask\napp = Flask(__name__)\n\n\n# Simple REST Python API to Take Hyperledger\n@app.route('/')\ndef routeToHyperLedger():\n    # Get the data from Query Params\n    data_name = request.args.get('data_name')\n    # TODO: Route to Ethereum using Web3.js\n    return",
+ "title": ""
+}

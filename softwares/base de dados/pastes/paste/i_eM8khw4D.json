@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "eM8khw4D",
+ "pasteDate": "Feb 20, 2018, 6:36:28 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//Oh no\nimport becker.robots.*;\npublic class OhNo extends RobotSE {\n\tpublic OhNo(City city, int aStreet, int anAvenue, Direction aDirection) {\n\t\tsuper(city, aStreet, anAvenue, aDirection);\n\t}\n\tpublic void turnLeft() {\n\t\tthis.turnLeft();\n\t}\n}\n//Main class\nimport becker.robots.*;\npublic class Main {\n\tpublic static void main(String args[]) {\n\t\tCity Mississauga = new City();\n\t\tOhNo Robot = new OhNo(Mississauga,1,1,Direction.EAST);\n\t\tRobot.turnLeft();\n\t}\n}",
+ "title": "Homework 2.11"
+}

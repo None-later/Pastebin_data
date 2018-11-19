@@ -1,0 +1,5 @@
+{
+  "value": "\"http://api.leaguerepublic.com/l/client/api/cs1.js",
+  "correct": true,
+  "jSonReason": "re_url"
+}

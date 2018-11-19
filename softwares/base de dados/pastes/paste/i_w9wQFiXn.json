@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "w9wQFiXn",
+ "pasteDate": "Feb 11, 2018, 5:24:35 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php\n/*\n  _  _ ___ ___ _  _   _   __  __\n | || |_ _/ __| || | /_\\ |  \\/  |\n | __ || | (__| __ |/ _ \\| |\\/| |\n |_||_|___\\___|_||_/_/ \\_\\_|  |_|\n Copyright (C) @hichamfm\n\nPlugin Name: Xat API\nDescription: API de XAT\nAuthor: @hichamfm\nVersion: 1.0\n*/\n\n// precios ingles\nFuncion de precios English(){\n    ob_start();\n    include 'plugins/preciosen.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('preciosen', 'preciosen');\n\n// precios espaol\nFuncion de precios Espaol(){\n    ob_start();\n    include 'plugins/precioses.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('precioses', 'precioses');\n\n// Latest Power\nFuncion de latest(){\n    ob_start();\n    include 'plugins/latest.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('latest', 'latest');\n\n// Latest Power Espaol\nFuncion de ultimopower(){\n    ob_start();\n    include 'plugins/ultimopoweres.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('ultimopower', 'ultimopower');\n\n// Peones activos\nFuncion de peones EN(){\n    ob_start();\n    include 'plugins/peonen.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('peonen', 'peonen');\n\n// Peones activos espaol\nFuncion de peones(){\n    ob_start();\n    include 'plugins/peones.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('peones', 'peones');\n\n// posting code\nFuncion de codigo(){\n    ob_start();\n    include 'plugins/codigo.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('codigo', 'codigos');\n\n// promoted\nFuncion de promocin(){\n    ob_start();\n    include 'plugins/promocion.php';\n    $content = ob_get_clean();\n    return $content;\n\n}\n\nadd_shortcode('promocion', 'promocion');\n?>",
+ "title": ""
+}

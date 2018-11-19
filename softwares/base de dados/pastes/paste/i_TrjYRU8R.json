@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TrjYRU8R",
+ "pasteDate": "Feb 8, 2018, 4:30:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "2/8/2018 1:29:59 AM: DEBUG - \n\n2/8/2018 1:29:59 AM: DEBUG - Program started! Hooray! \\o/\n2/8/2018 1:29:59 AM: DEBUG - Reading settings...\n2/8/2018 1:29:59 AM: DEBUG - Checking if the PSO2 Tweaker is running\n2/8/2018 1:29:59 AM: DEBUG - Loaded pso2_bin directory from settings\n2/8/2018 1:29:59 AM: DEBUG - Reading remote config...\n2/8/2018 1:29:59 AM: DEBUG - Loading settings...\n2/8/2018 1:29:59 AM: DEBUG - ----------------------------------------\n2/8/2018 1:29:59 AM: DEBUG - Program opening, running diagnostics...\n2/8/2018 1:29:59 AM: DEBUG - Current OS/Version: Microsoft Windows 10 Home (6.2.9200.0) <English (United States)> [64-bit]\n2/8/2018 1:29:59 AM: DEBUG - Drive Filesystem: NTFS\n2/8/2018 1:29:59 AM: DEBUG - Directory program is running in: C:\\PSO2 Tweaker\n2/8/2018 1:29:59 AM: DEBUG - Selected PSO2 Directory: C:\\PHANTASYSTARONLINE2\\pso2_bin\n2/8/2018 1:29:59 AM: DEBUG - .NET Framework Version: 4.6.2 or later\n2/8/2018 1:29:59 AM: DEBUG - Enabled Plugins: PSO2ItemTranslator.dll, PSO2RAISERSystem.dll, PSO2TitleTranslator.dll\n2/8/2018 1:29:59 AM: DEBUG - Disabled Plugins: PSO2BlockRename.dll, TelepipeProxy.dll\n2/8/2018 1:29:59 AM: DEBUG - System has been on for: 341.1 hours\n2/8/2018 1:29:59 AM: DEBUG - ----------------------------------------\n\n2/8/2018 1:29:59 AM: DEBUG - User location according to IP: United States\n2/8/2018 1:29:59 AM: Program opened successfully! Version 4.0.6.0 [OK!]\n2/8/2018 1:30:00 AM: Checking for PSO2 Updates...\n2/8/2018 1:30:15 AM: DEBUG - Downloading the list of files to skip...\n2/8/2018 1:30:16 AM: Update started.\n2/8/2018 1:30:16 AM: DEBUG - Fetching the patchlists...\n2/8/2018 1:30:16 AM: DEBUG - Exception: Microsoft.VisualBasic.ApplicationServices.UnhandledExceptionEventArgs/ Message: Microsoft.VisualBasic",
+ "title": "Error Log report"
+}

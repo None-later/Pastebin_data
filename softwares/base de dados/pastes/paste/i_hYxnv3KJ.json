@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hYxnv3KJ",
+ "pasteDate": "Feb 8, 2018, 7:57:21 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "local monitor=peripheral.wrap(\"back\")\n\nmonitor.clear()\nmonitor.setTextScale(2)\nmonitor.setTextColor(colors.green)\n\nmonitor.setCursorPos(7,1)\nmonitor.write(\"The  End\")\nmonitor.setCursorPos(3,2)\nmonitor.write(\"Enderman-Grinder\")",
+ "title": "startup"
+}

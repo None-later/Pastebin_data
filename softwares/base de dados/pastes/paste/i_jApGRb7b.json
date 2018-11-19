@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "html4strict",
+ "jSonReasons": [
+  "lg_en",
+  "kw_password",
+  "re_ast1"
+ ],
+ "key": "jApGRb7b",
+ "pasteDate": "Feb 10, 2018, 9:49:42 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "<form name=\"my_form\" method=\"post\" action=\"#\" onsubmit=\"return checkPassword(this);\">\n<p>\n    : <input type=\"password\" name=\"password\" />\n</p>\n<p>\n    <input type=\"submit\" name=\"check\" value=\"\" />\n</p>\n</form>\n<!--     checkPassword(): -->\n<script type=\"text/javascript\">\n    function checkPassword(form) {\n        var password = form.password.value; //    \n        var s_letters = \"qwertyuiopasdfghjklzxcvbnm\"; //    \n        var b_letters = \"QWERTYUIOPLKJHGFDSAZXCVBNM\"; //    \n        var digits = \"0123456789\"; // \n        var specials = \"!@#$%^&*()_-+=\\|/.,:;[]{}\"; // \n        var is_s = false; //        \n        var is_b = false; //        \n        var is_d = false; //     \n        var is_sp = false; //     \n        for (var i = 0; i < password.length; i+:-) {\n            /*            */\n            if (!is_s && s_letters.indexOf(password) != -1) is_s = true;\n            else if (!is_b && b_letters.indexOf(password) != -1) is_b = true;\n            else if (!is_d && digits.indexOf(password) != -1) is_d = true;\n            else if (!is_sp && specials.indexOf(password) != -1) is_sp = true;\n        }\n        var rating = 0;\n        var text = \"\";\n        if (is_s) rating++; //        ,    \n        if (is_b) rating++; //        ,    \n        if (is_d) rating++; //     ,    \n        if (is_sp) rating++; //     ,    \n        /*        ,          */\n        if (password.length < 6 && rating < 3) text = \"\";\n        else if (password.length < 6 && rating >= 3) text = \"\";\n        else if (password.length >= 8 && rating < 3) text = \"\";\n        else if (password.length >= 8 && rating >= 3) text = \"\";\n        else if (password.length >= 6 && rating == 1) text = \"\";\n        else if (password.length >= 6 && rating > 1 && rating < 4) text = \"\";\n        else if (password.length >= 6 && rating == 4) text = \"\";\n        alert(text); //    \n        return false; //   \n    }\n</script>",
+ "title": "[JS]   "
+}

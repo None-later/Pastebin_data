@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "hH9JgDAP",
+ "pasteDate": "Feb 8, 2018, 2:57:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "$z = collect([\n    [\"x\"=>\"a\", \"y\"=>\"b\"],\n    [\"x\"=>\"c\", \"y\"=>\"d\"]\n);\n\n$z->deleteColumn(\"x\");\n\t\n[\n   [\"y\"=>b\"]\n   [\"y\"=>d\"]\n]",
+ "title": ""
+}

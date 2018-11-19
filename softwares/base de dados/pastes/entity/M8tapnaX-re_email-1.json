@@ -1,0 +1,5 @@
+{
+  "value": "dhcpcd@eth0.se",
+  "correct": false,
+  "jSonReason": "re_email"
+}

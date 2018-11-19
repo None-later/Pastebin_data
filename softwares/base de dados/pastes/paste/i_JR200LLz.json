@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JR200LLz",
+ "pasteDate": "Feb 11, 2018, 6:02:06 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import React, { Component } from 'react';\nimport { connect } from 'react-redux';\nimport withRedux from '../nextWithReduxWrapper';\nimport { FETCH_PLAY_HISTORY } from '../actions';\nimport PlayHistory from '../components/PlayHistory';\n\nconst mapStateToProps = ({ history, artistsById, audioFeaturesById }) => {\n    return { history, artistsById, audioFeaturesById };\n};\n\nconst mapDispatchToProps = (dispatch) => {\n    return {\n        fetchHistory: () => dispatch(FETCH_PLAY_HISTORY)\n    };\n};\n\nclass PlayHistoryPage extends React.Component {\n  ...\n  async getInitialProps() {\n    const { fetchHistory } = this.props;\n    fetchHistory();\n  }\n  ...\n  render() {\n      const { history, artistsById, audioFeaturesById } = this.props\n      return (<PlayHistory history={history} artistsById={artistsById} audioFeaturesById={audioFeaturesById}/>)\n  }\n};\n\nexport default withRedux(connect(mapDispatchToProps, dispatchToProps)(PlayHistoryPage));",
+ "title": ""
+}

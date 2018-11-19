@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yw7VtUTw",
+ "pasteDate": "Feb 23, 2018, 2:03:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "User user = new User();\nuser = userService.findById(idUser);\n\t\nUser user = userService.findById(idUser);\n\t\nUser user = new User();\nuser = userService.findById(idUser);\n\t\nCrea la variable user de tipo User, y apuntalo a una nueva instancia de la clase User\nAhora agarra la variable user y hacela apuntar al objeto User que devuelve userService.findById(idUser)\n\t\nUser user = new User();\n\t\nuser = userService.findById(idUser);\n\t\nUser user = userService.findById(idUser);",
+ "title": ""
+}

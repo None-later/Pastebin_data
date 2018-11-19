@@ -1,0 +1,7 @@
+{
+  "corrects": 1,
+  "incorrects": 1,
+  "reason": "re_google_api",
+  "status": "ACCEPT",
+  "type": "REGEX"
+}

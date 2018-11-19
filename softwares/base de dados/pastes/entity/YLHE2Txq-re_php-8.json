@@ -1,0 +1,5 @@
+{
+  "value": "define(QUOTE, $\")",
+  "correct": true,
+  "jSonReason": "re_php"
+}

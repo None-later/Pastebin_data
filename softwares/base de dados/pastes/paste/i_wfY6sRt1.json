@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "wfY6sRt1",
+ "pasteDate": "Feb 20, 2018, 6:33:24 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class String\n  def sum\n    letters_only = self.downcase.delete('^a-z')\n    s = 0\n    letters_only.each_byte {|b| s += b - 96}\n    s\n  end\nend",
+ "title": ""
+}

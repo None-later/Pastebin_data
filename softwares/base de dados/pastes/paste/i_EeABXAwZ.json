@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "EeABXAwZ",
+ "pasteDate": "Feb 12, 2018, 12:20:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "modprobe fuse\nyum install epel-release\nmkdir mydir\nyum install sshfs\n\t\nread: Connection reset by peer",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jsfJ5nuj",
+ "pasteDate": "Feb 20, 2018, 5:24:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env python3\n\nimport json\nimport webcolors\nimport mlbgame\n\ncolors = []\nteams = mlbgame.teams()\n\ndef rgb_to_dict(c):\n    return {'r': c[0], 'g': c[1], 'b': c[2]}\n\nfor t in teams:\n    name = t.display_code\n    colors.append({name: {'primary': rgb_to_dict(webcolors.hex_to_rgb(t.primary)),\n                          'secondary': rgb_to_dict(webcolors.hex_to_rgb(t.secondary)),\n                          'tertiary': rgb_to_dict(webcolors.hex_to_rgb(t.tertiary))\n                         }\n                  })\n\nprint(json.dumps(colors, indent=2))",
+ "title": ""
+}

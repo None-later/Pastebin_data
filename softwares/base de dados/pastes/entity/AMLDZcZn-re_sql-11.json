@@ -1,0 +1,5 @@
+{
+  "value": "UPDATE TIEMPO_CARRERA SET",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

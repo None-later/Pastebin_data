@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "php",
+ "jSonReasons": [
+  "re_sql",
+  "re_php",
+  "lg_en"
+ ],
+ "key": "Yp8gm2ZH",
+ "pasteDate": "Feb 26, 2018, 12:25:43 PM",
+ "relevancy": -4.0,
+ "relevant": false,
+ "text": "<?php\ndefined('NO_AGENT_CHECK') || define('NO_AGENT_CHECK', true);\ndefined('NO_KEEP_STATISTIC') || define('NO_KEEP_STATISTIC', 'Y');\ndefined('NO_AGENT_STATISTIC') || define('NO_AGENT_STATISTIC', 'Y');\ndefined('NOT_CHECK_PERMISSIONS') || define('NOT_CHECK_PERMISSIONS', true);\n\n$siteId = $argv[1];\nif(!in_array($siteId, ['re', 'st', 'mk'])){\n    die('siteId not found');\n}\n\n$_SERVER['DOCUMENT_ROOT'] = __DIR__ . '/../../..';\nrequire($_SERVER[\"DOCUMENT_ROOT\"] . '/bitrix/modules/main/include/prolog_before.php');\n\nglobal $DB;\n$obCache        = new \\CPHPCache();\n\n$siteToIds = [\n    'mk' => [361501, 370694, 361503, 398225, 404115, 404122, 184704, 398033, 398065, 398165],\n    'st' => [547898, 544558, 408294, 541423, 408304, 408314, 408324, 408780, 408791, 408802],\n    're' => [394694, 542898, 555320, 395596, 555827, 555808, 555822, 555811, 335859, 160966]\n];\n\n\nforeach($siteToIds[$siteId] as $id){\n    $cachePath = '/' . $siteId . '/Catalog/Catalog/Product/getFull/'.$id;\n    $cacheID = $id;\n\n    if($obCache->InitCache(3600, $cacheID, $cachePath) ) {\n        $cacheActive = 'Y';\n    }else{\n        $cacheActive = 'N';\n    }\n\n    $res = $DB->query(\"SELECT * FROM b_cache_tag WHERE RELATIVE_PATH='\" . $cachePath . \"'\");\n    $cacheInDB = 'N';\n    if($ob = $res->Fetch()){\n        $cacheInDB = 'Y';\n    }\n\n    echo date(\"Y.m.d H:i:s\") . \" \" . $siteId .' id '. $id . ' '.$cacheActive.' '.$cacheInDB.PHP_EOL;\n}\n\n/**\n2018.02.26 18:12:35 re id 394694 Y Y\n2018.02.26 18:12:35 re id 542898 Y Y\n2018.02.26 18:12:35 re id 555320 Y Y\n2018.02.26 18:12:35 re id 395596 Y Y\n2018.02.26 18:12:35 re id 555827 Y Y\n2018.02.26 18:12:35 re id 555808 Y Y\n2018.02.26 18:12:35 re id 555822 Y Y\n2018.02.26 18:12:35 re id 555811 N Y\n2018.02.26 18:12:35 re id 335859 Y N\n2018.02.26 18:12:36 re id 160966 Y N\n**/",
+ "title": ""
+}

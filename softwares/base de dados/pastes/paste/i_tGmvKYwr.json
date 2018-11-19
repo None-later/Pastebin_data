@@ -1,0 +1,13 @@
+{
+ "espireDate": "1H",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "tGmvKYwr",
+ "pasteDate": "Feb 17, 2018, 3:36:45 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "//DOMException: Blocked a frame with origin \"http://localhost:3000\" from accessing a cross-origin frame.\n\nconst cors = require('cors')\n\napp.use(cors())\n\napp.post('/post', (req, res) => {\n  console.log(req.body)\n})",
+ "title": ""
+}

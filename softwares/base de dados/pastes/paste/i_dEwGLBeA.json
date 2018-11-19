@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_security",
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "dEwGLBeA",
+ "pasteDate": "Feb 19, 2018, 1:54:09 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "<?php\n\nnamespace Handelsdeal\\UserBundle\\EventListener;\n\nuse Handelsdeal\\UserBundle\\Entity\\User;\nuse Symfony\\Component\\Routing\\Router;\nuse Symfony\\Component\\Security\\Http\\Event\\InteractiveLoginEvent;\n\nclass InteractiveLoginListener\n{\n    /**\n     * @var \\Symfony\\Component\\Routing\\Router\n     */\n    private $router;\n\n    /**\n     * @param \\Symfony\\Component\\Routing\\Router $router\n     */\n    public function __construct(Router $router)\n    {\n        $this->router = $router;\n    }\n\n    /**\n     * @param \\Symfony\\Component\\Security\\Http\\Event\\InteractiveLoginEvent $event\n     */\n    public function onSecurityInteractiveLogin(InteractiveLoginEvent $event)\n    {\n        $user = $event->getAuthenticationToken()->getUser(); /** @var \\My\\Bundle\\User\\User */\n        $request = $event->getRequest(); /** @var \\Symfony\\Component\\HttpFoundation\\Request $request  */\n\n        if ($user instanceof User && ($request->getRoute('fos_user_security_login') || ($request->getRoute('fos_user_registration_register'))) {\n            $request->request->set('_target_path', $this->router->generate('_welcome'));\n        }\n    }\n}",
+ "title": ""
+}

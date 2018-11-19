@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zMrXJGh9",
+ "pasteDate": "Feb 26, 2018, 12:48:06 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class UserHierarchyOfOrganizations(viewsets.GenericViewSet, mixins.ListModelMixin):\n\n    serializer_class = UserListOrganizationHierarchySerializer\n\n    def get_queryset(self):\n        user_ids = map(int, self.request.query_params['users'].split(','))\n        return User.objects.filter(id__in=list(user_ids)).select_related('organization')\n\t\nclass UserListOrganizationHierarchySerializer(serializers.ModelSerializer):\n    # organization_hierarchy = serializers.ReadOnlyField()\n    #organization_hierarchy = serializers.ListField(child=UserOrganizationHierarchySerializer(read_only=True))\n    organization_hierarchy = serializers.SerializerMethodField('_get_org_hierarchy')\n\n    def _get_org_hierarchy(self, obj):\n         print (type(obj))\n         serializer = UserOrganizationHierarchySerializer(obj, many=True)\n         return serializer.data\n\n    class Meta:\n        model = User\n        fields = ('organization_hierarchy',)\n        read_only_fields = ('organization_hierarchy',)\n\n    def to_representation(self, instance):\n        print(self.get_queryset())\n        out = super().to_representation(instance)\n        return out\n\t\n{\n  \"organization_hierarchy\": [ \n     {\"id\": 1, \"organizations\": \"foo -> bar\"},\n  ]\n}",
+ "title": ""
+}

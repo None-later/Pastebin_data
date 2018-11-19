@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZzTxMXbJ",
+ "pasteDate": "Feb 8, 2018, 12:58:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import sys\nimport cv,cv2\nimport numpy\ncascade = cv.Load('haarcascade_frontalface_alt.xml')\nc=1.6\nSr=15\n\ndef detect(image):\n bitmap = cv.fromarray(image)\n faces = cv.HaarDetectObjects(bitmap, cascade, cv.CreateMemStorage(0))\n if faces:\n  for (x,y,w,h),n in faces:  \n   k=float(w)/bitmap.cols\n   S = Sr*c/k\n   cv2.rectangle(image,(x,y),(x+w,y+h),(255,255,255),3)\n   cv2.putText(image,'S=%s'%(S),(x,y-10), cv2.FONT_HERSHEY_PLAIN, 1.0,(255,255,255))\n return image\n\nif __name__ == \"__main__\":\n    cam = cv2.VideoCapture(0)\n    while 1:\n        _,frame =cam.read()\n        frame = numpy.asarray(detect(frame))\n        cv2.imshow(\"features\", frame)\n        if cv2.waitKey(1) == 0x1b: # ESC\n            print 'ESC pressed. Exiting ...'\n            break***`,   `***",
+ "title": ""
+}

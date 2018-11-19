@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "4rzrdTsP",
+ "pasteDate": "Feb 17, 2018, 5:49:22 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n  \"Host\": {\n       \"TrexPairsLocation\": \"\",\n    \"PoloPairsLocation\": \"\",\n    \"BinancePairsLocation\": \"Users/andreluribe/Desktop/ProfitTrailer/trading\",\n    \"HostName\": \"69055431, // the name that is used on telegram messages\n    \"LicenseKey\": 6666-6666-6666-6666-6666-6666-6666,\n    \"MarketConditionCheckInMinutes\": \"5\", \n    \"CalculateTrailingValues\": \"true\",\n    \"UseMaxCostPercentage\": \"true, // whether cost should be as a percentage\n    \"UseMinBuyBalancePercentage\": \"true\",\n    \"BackupTradingFiles\": \"true\",\n    \"TelegramBotId\": \"69055431\",\n    \"TelegramChatId\": \"69055431\",\n    \"TestMode\": \"false\"\n  },\n\n  \"Serilog\": {\n    \"MinimumLevel\": \"Information\" \n  }\n}",
+ "title": ""
+}

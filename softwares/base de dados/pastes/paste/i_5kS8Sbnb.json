@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5kS8Sbnb",
+ "pasteDate": "Feb 8, 2018, 9:13:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#draw a star shaped rectangle\nheight = eval(input(\"Type height: \"))\nwidth = eval(input(\"Type width: \"))\n\nfor j in range(1,height+1):\n    print(\"*\"*width)",
+ "title": ""
+}

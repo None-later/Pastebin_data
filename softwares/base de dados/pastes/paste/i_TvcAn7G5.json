@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_security",
+  "re_url",
+  "lg_en"
+ ],
+ "key": "TvcAn7G5",
+ "pasteDate": "Feb 12, 2018, 3:16:06 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Ign:1 http ://dl.google.com/linux/chrome/deb stable InRelease  \nIgn:2 http ://dl.google.com/linux/earth/deb stable InRelease                    \nHit:3 http ://repo.steampowered.com/steam precise InRelease                     \nIgn:4 http ://dl.google.com/linux/talkplugin/deb stable InRelease               \nHit:5 http ://dl.google.com/linux/chrome/deb stable Release                     \nHit:6 http ://us.archive.ubuntu.com/ubuntu xenial InRelease                     \nHit:7 http ://dl.google.com/linux/earth/deb stable Release                      \nHit:8 http ://dl.google.com/linux/talkplugin/deb stable Release                 \nGet:9 http ://us.archive.ubuntu.com/ubuntu xenial-updates InRelease [102 kB]    \nHit:11 http ://archive.canonical.com/ubuntu xenial InRelease                    \nHit:12 http ://ppa.launchpad.net/nilarimogard/webupd8/ubuntu xenial InRelease   \nGet:13 http ://security.ubuntu.com/ubuntu xenial-security InRelease [102 kB]    \nGet:16 http ://us.archive.ubuntu.com/ubuntu xenial-backports InRelease [102 kB] \nHit:17 http ://ppa.launchpad.net/rednotebook/stable/ubuntu xenial InRelease     \nHit:18 http ://ppa.launchpad.net/wine/wine-builds/ubuntu xenial InRelease       \nFetched 306 kB in 2s (146 kB/s)                    \nReading package lists... Done\nBuilding dependency tree       \nReading state information... Done\nAll packages are up to date.\nN: Skipping acquire of configured file 'main/binary-i386/Packages' as repository 'http ://dl.google.com/linux/earth/deb stable InRelease' doesn't support architecture 'i386'\n\t\nReading package lists... Done  \nBuilding dependency tree       \nReading state information... Done  \nCalculating upgrade... Done  \nThe following packages will be DOWNGRADED:  \n  debhelper dh-autoreconf  \n0 upgraded, 0 newly installed, 2 downgraded, 0 to remove and 0 not upgraded.  \nNeed to get 854 kB of archives.  \nAfter this operation, 0 B of additional disk space will be used.  \nDo you want to continue? [Y/n] y  \nGet:1 http ://ppa.launchpad.net/rednotebook/stable/ubuntu xenial/main amd64 dh-autoreconf all 12~ubuntu16.04.1 [16.0 kB]  \nGet:2 http://ppa.launchpad.net/rednotebook/stable/ubuntu xenial/main amd64 debhelper all 10.2.2ubuntu1~ubuntu16.04.1 [838 kB]  \nFetched 854 kB in 1s (480 kB/s)    \n(Reading database ... 300410 files and directories currently installed.)  \nPreparing to unpack .../dh-autoreconf_12~ubuntu16.04.1_all.deb ...  \nUnpacking dh-autoreconf (12~ubuntu16.04.1) over (12~ubuntu16.04.1) ...  \nPreparing to unpack .../debhelper_10.2.2ubuntu1~ubuntu16.04.1_all.deb ...  \nUnpacking debhelper (10.2.2ubuntu1~ubuntu16.04.1) over (10.2.2ubuntu1~ubuntu16.04.1) ...  \nProcessing triggers for man-db (2.7.5-1) ...  \nSetting up dh-autoreconf (12~ubuntu16.04.1) ...  \nSetting up debhelper (10.2.2ubuntu1~ubuntu16.04.1) ...  \nrdafg@rdafg-multimade:~/Desktop$",
+ "title": ""
+}

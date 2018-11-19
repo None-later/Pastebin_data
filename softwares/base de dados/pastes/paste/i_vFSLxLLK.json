@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "vFSLxLLK",
+ "pasteDate": "Feb 12, 2018, 5:22:39 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.\n2018-02-12 12:21:42.727 ERROR 5556 --- [           main] o.s.b.d.LoggingFailureAnalysisReporter   : \n\n***************************\nAPPLICATION FAILED TO START\n***************************\n\nDescription:\n\nThe dependencies of some of the beans in the application context form a cycle:\n\n   robotExec (field private com.hrsinternational.servicedesk.service.InteractionService com.hrsinternational.servicedesk.jobs.RobotExec.interactionService)\n      \n   interactionService (field private com.hrsinternational.servicedesk.service.EmailSenderService com.hrsinternational.servicedesk.service.InteractionService.emailSenderService)\n      \n   emailSenderService (field private freemarker.template.Configuration com.hrsinternational.servicedesk.service.EmailSenderService.freemarkerConfig)\n\n|  freeMarkerConfiguration defined in class path resource [org/springframework/boot/autoconfigure/freemarker/FreeMarkerAutoConfiguration$FreeMarkerWebConfiguration.class]\n     \n|  freemarkerConfig (field private freemarker.template.Configuration com.hrsinternational.servicedesk.FreemarkerConfig.configuration)\n",
+ "title": ""
+}

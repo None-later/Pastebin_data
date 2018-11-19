@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "z9vLfzWp",
+ "pasteDate": "Feb 23, 2018, 1:29:02 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# Place your dedyn.io access token here:\nDEDYN_TOKEN=bb98efd34ef5f6159c5829e36c15b3c12d382b72\n\n# Set your dedyn.io domain name here:\nDEDYN_NAME=example.dedyn.io",
+ "title": ""
+}

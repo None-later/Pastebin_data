@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "KNTqVbzc",
+ "pasteDate": "Feb 25, 2018, 9:51:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "package main\n\nimport (\n\t\"fmt\"\n\n\t\"github.com/gin-gonic/gin\"\n\t_ \"github.com/go-sql-driver/mysql\"\n\t\"github.com/jinzhu/gorm\"\n)\n\nvar db *gorm.DB\nvar err error\n\n//Person ,you have a wonderful structure\ntype Person struct {\n\tID        uint   `json:\"id\"`\n\tFirstName string `json:\"first_name\"`\n\tLastName  string `json:\"last_name\"`\n\tCity      string `json:\"city\"`\n}\n\nfunc main() {\n\tdb, err = gorm.Open(\"mysql\", \"root:root@tcp(localhost:3306)/simple_api\")\n\tif err != nil {\n\t\tfmt.Println(err)\n\t}\n\tdefer db.Close()\n\tdb.AutoMigrate(&Person{})\n\n\tr := gin.Default()\n\tr.GET(\"/people\", GetPeople)\n\tr.GET(\"/people/:id\", GetPerson)\n\tr.POST(\"/people\", CreatePerson)\n\tr.PUT(\"/people/:id\", UpdatePerson)\n\tr.DELETE(\"/people/:id\", DeletePerson)\n\n\tr.Run(\"0.0.0.0:8050\")\n}\n\n//CreatePerson -> c\nfunc CreatePerson(c *gin.Context) {\n\tvar person Person\n\tc.BindJSON(&person)\n\n\tdb.Create(&person)\n\tc.JSON(200, person)\n}\n\n//GetPeople -> R\nfunc GetPeople(c *gin.Context) {\n\tvar people []Person\n\tif err := db.Find(&people).Error; err != nil {\n\t\tc.AbortWithStatus(404)\n\t\tfmt.Println(err)\n\t} else {\n\t\tc.JSON(200, people)\n\t}\n}\n\n//GetPerson -> R\nfunc GetPerson(c *gin.Context) {\n\tid := c.Params.ByName(\"id\")\n\tvar person Person\n\tif err := db.Where(\"id = ?\", id).First(&person).Error; err != nil {\n\t\tc.AbortWithStatus(404)\n\t\tfmt.Println(err)\n\t} else {\n\t\tc.JSON(200, person)\n\t}\n}\n\n//UpdatePerson -> U\nfunc UpdatePerson(c *gin.Context) {\n\tid := c.Params.ByName(\"id\")\n\tvar person Person\n\tif err := db.Where(\"id = ?\", id).First(&person).Error; err != nil {\n\t\tc.AbortWithStatus(404)\n\t\tfmt.Println(err)\n\t} else {\n\t\tc.BindJSON(&person)\n\t\tdb.Save(&person)\n\t\tc.JSON(200, person)\n\t}\n}\n\n//DeletePerson -> D\nfunc DeletePerson(c *gin.Context) {\n\tid := c.Params.ByName(\"id\")\n\tvar person Person\n\tif err := db.Where(\"id = ?\", id).First(&person).Error; err != nil {\n\t\tc.AbortWithStatus(404)\n\t\tfmt.Println(err)\n\t} else {\n\t\tdb.Delete(&person)\n\t\tc.JSON(200, gin.H{\"id #\" + id: \"deleted\"})\n\t}\n}",
+ "title": ""
+}

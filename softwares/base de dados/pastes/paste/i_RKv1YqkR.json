@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "RKv1YqkR",
+ "pasteDate": "Feb 12, 2018, 3:54:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Button myButton=findViewById(R.id.buttonid);\n\nmyButton.setOnClickListener(new Button.OnClickListener(){ \n    public void onClick(View w){        \n        bla bla bla\n    }\n})",
+ "title": ""
+}

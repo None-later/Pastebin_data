@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sv"
+ ],
+ "key": "Zm6ZKd9i",
+ "pasteDate": "Feb 18, 2018, 2:05:06 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "    public void setStock1(Stock stock1) {\n        if (stock1 != null) {\n            if (stock1 != stock2) {\n                if (stock1 != stock3) {\n                    this.stock1 = stock1;\n                }\n            }\n        }\n    }\n\n    /**\n     * Set the second stock on the board\n     * @param stock2 the stock2 to set\n     */\n    public void setStock2(Stock stock2) {\n        if (stock2 != null) {\n            if (stock2 != stock1) {\n                if (stock2 != stock3) {\n                    this.stock2 = stock2;\n                }\n            }\n        }\n    }\n\n    /**\n     * Set the third stock on the board\n     * @param stock3 the stock3 to set\n     */\n    public void setStock3(Stock stock3) {\n        if (stock3 != null) {\n            if (stock3 != stock1) {\n                if (stock3 != stock2) {\n                    this.stock3 = stock3;\n                }\n            }\n        }\n    }",
+ "title": ""
+}

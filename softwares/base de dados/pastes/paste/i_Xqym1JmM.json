@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Xqym1JmM",
+ "pasteDate": "Feb 26, 2018, 11:30:28 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using Microsoft.Extensions.DependencyInjection;\nusing System;\nusing System.Linq;\nusing System.Threading.Tasks;\n\nnamespace SoMemoryLeakTest\n{\n    class Program\n    {\n        static void Main(string[] args)\n        {\n            var serviceProvider = new ServiceCollection()\n                .AddScoped<ITest, Test>()\n                .BuildServiceProvider();\n\n            using (var scope = serviceProvider.CreateScope())\n            {\n                foreach(var i in Enumerable.Range(0, 1000))\n                {\n                    var test = scope.ServiceProvider.GetRequiredService<ITest>();\n                    \n                    test.DoSomething().Wait();\n                    test.DoSomething(\"one\", \"two\", \"three\", \"four\", \"five\", \"six\", \"seven\", \"eight\").Wait();\n                }\n            }\n        }\n    }\n\n    public interface ITest\n    {\n        Task<object> DoSomething();\n        Task<object> DoSomething(string arg1, string arg2, string arg3, string arg4, string arg5, string arg6, string arg7, string arg8);\n    }\n\n    public class Test : ITest\n    {\n        public async Task<object> DoSomething()\n        {\n            return await Task.FromResult<object>(null);\n        }\n\n        public async Task<object> DoSomething(string arg1, string arg2, string arg3, string arg4, string arg5, string arg6, string arg7, string arg8)\n        {   \n            return await Task.FromResult<object>(null);\n        }\n    }\n}",
+ "title": "SoMemoryLeakExample"
+}

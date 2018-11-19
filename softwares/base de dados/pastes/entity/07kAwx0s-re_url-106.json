@@ -1,0 +1,5 @@
+{
+  "value": "\"https://twitter.com/intent/tweet?text\u003dJump%3F+-+Jump%3F+rozdzia%C5%82+4+%23wattpad\u0026url\u003dhttps%3A%2F%2Fwww.wattpad.com%2F438471574-jump-rozdzia%25C5%2582-4%3Futm_source%3Dweb%26utm_medium%3Dtwitter%26utm_content%3Dshare_reading",
+  "correct": true,
+  "jSonReason": "re_url"
+}

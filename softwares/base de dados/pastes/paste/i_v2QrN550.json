@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "v2QrN550",
+ "pasteDate": "Feb 21, 2018, 8:36:48 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include \"stdafx.h\"\n#include <iostream>\n#include <conio.h>\n#include <stdio.h>\n#include \"iostream\"\n\nusing namespace std;\nusing namespace System;\n\nclass Point\n{\npublic:\n\tPoint()\n\t{\n\t\t//input_p(); \n\t\t//output_p(); \n\t}\n\tPoint(float x, float y, float z)\n\t{\n\t\tthis->x1 = x;\n\t\tthis->y1 = y;\n\t\tthis->z1 = z;\n\t\t//input_p(); \n\t\toutput_p();\n\t}\n\tvoid input_p()\n\t{\n\t\tcin >> x1 >> y1 >> z1;\n\t}\n\tvoid output_p()\n\t{\n\t\tcout << \"(\" << x1 << \";\" << y1 << \";\" << z1 << \")\\n\";\n\t}\n\tfloat output_x(){ return x1; }\n\tfloat output_y(){ return y1; }\n\tfloat output_z(){ return z1; }\n\t~Point(){ cout << '~' << endl; }\nprivate:\n\tfloat x1, y1, z1;\n};\n\nclass Otrezok\n{\npublic:\n\tOtrezok()\n\t{\n\t\tinput_o(P11, P22);\n\t\toutput_o(P11, P22);\n\t\tproekziya(P11, P22);\n\t}\n\tOtrezok(Point P1, Point P2)\n\t{\n\t\tthis->P11 = P1;\n\t\tthis->P22 = P2;\n\t\t//input_o(P11,P22); \n\t\toutput_o(P11, P22);\n\t\tproekziya(P11, P22);\n\t}\n\tvoid input_o(Point &P11, Point &P22)\n\t{\n\t\tP11.input_p();\n\t\tP22.input_p();\n\t}\n\tvoid output_o(Point P11, Point P22)\n\t{\n\t\tP11.output_p();\n\t\tP22.output_p();\n\t}\n\tvoid proekziya(Point P11, Point P22)\n\t{\n\t\tfloat a, b;\n\t\ta = P22.output_z() - P11.output_z();\n\t\tb = P22.output_x() - P11.output_x();\n\t\tcout << a << ' ' << b;\n\t}\n\t~Otrezok(){ cout << '*' << endl; }\n\nprivate:\n\tPoint P11, P22;\n\tfloat x, y, z;\n};\nvoid proekziya(Point P1, Point P2)\n{\n\tfloat a, b;\n\ta = P2.output_z() - P1.output_z();\n\tb = P2.output_x() - P1.output_x();\n\tcout << a << ' ' << b;\n}\n\nint main()\n{\n\tPoint A, B;\n\tA.input_p();\n\tA.output_p();\n\tB.input_p();\n\tB.output_p();\n\tOtrezok E(A, B);\n\t//E.input_o(A,B); \n\t//E.output_o(A,B); \n\tproekziya(A, B);\n\tgetch();\n\treturn 0;\n}",
+ "title": ""
+}

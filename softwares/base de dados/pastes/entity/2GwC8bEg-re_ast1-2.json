@@ -1,0 +1,5 @@
+{
+  "value": "Function is configured.\u0027\u0027) AS Details FROM sys.resource_governor_configuration WHERE is_enabled \u003d 1 OPTION (RECOMPILE)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

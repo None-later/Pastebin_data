@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iER1ytmU",
+ "pasteDate": "Feb 28, 2018, 5:28:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public void open()\n{\n    if(opened)\n    {\n        return;\n    }\n    opened = true;\n    startNewAnimation(0, (long)(currentProgress*animationTime));\n}",
+ "title": ""
+}

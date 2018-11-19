@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "FBb0awRg",
+ "pasteDate": "Feb 18, 2018, 9:13:00 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#!/usr/bin/perl -w\nwhile ($argv=shift){\n$string=$string.$argv;\n}\n$length=length($string);\nprint \"Result: $length\\n\";",
+ "title": ""
+}

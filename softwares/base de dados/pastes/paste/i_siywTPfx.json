@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "siywTPfx",
+ "pasteDate": "Feb 17, 2018, 2:38:53 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\nlong int multiplyNumbers(int n);\n\nint main()\n{\n    int n;\n    printf(\"Enter a positive integer: \");\n    scanf(\"%d\", &n);\n    printf(\"Factorial of %d = %ld\", n, multiplyNumbers(n));\n    return 0;\n}\nlong int multiplyNumbers(int n)\n{\n    if (n >= 1)\n        return n*multiplyNumbers(n-1);\n    else\n        return 1;\n}",
+ "title": "factorial"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_sv"
+ ],
+ "key": "DYgNqJKg",
+ "pasteDate": "Feb 20, 2018, 1:47:15 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include<string.h>\n#include<stdio.h>\nusing namespace std;\nchar s[100],aux[100];\nint main()\n{int i,j;\nj=0;\ngets(s);\nfor(i=0;i<strlen(s);i++)\nif(s[i]==' '&&s[i-1]!=' ')\n  if((i-j)%2==0)\n  {\n      strcpy(aux,s+i);\n      strcpy(s+j,'#');\n      strcpy(s+j+1,aux);\n  }\n  j=j+2;\n  i=j;\n  else\n    j=i+1;\n}",
+ "title": ""
+}

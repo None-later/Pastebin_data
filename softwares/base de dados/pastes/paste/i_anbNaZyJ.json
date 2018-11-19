@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "anbNaZyJ",
+ "pasteDate": "Feb 8, 2018, 9:35:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import matplotlib.pyplot as plt\nimport numpy as np\n\npattern = array([ 9, 10, 11, 10,  9,  8,  6,  5,  4,  3,  4,  5,  7,  6,  5,  4,  2,\n        1,  2,  3,  4,  5,  7,  8,  9, 10,  8,  7,  8,  9, 10, 11, 10, 11,\n       12, 13, 12, 11, 10,  8,  7,  6,  5,  4,  6,  5,  3,  2,  3,  2,  0,\n        1,  2,  3,  4,  5,  6,  8,  9, 10, 11, 12, 13, 14, 15, 16, 17, 19,\n       21, 19, 18, 16, 15, 14, 12, 11, 12, 11, 10, 11, 12, 13, 14, 15, 13,\n       12, 11, 10,  9,  8,  7,  6,  5,  6,  5,  4,  6])\n\nplt.plot(pattern)\nplt.plot(pattern, 'bo')\nplt.show()\n\t\ndef moving_slice(a, k):\n    a = a.ravel()\n    return as_strided(a, (a.size - k + 1, k), 2 * a.strides)\n\ndef degrees(x, y):\n    x_window, y_window = moving_slice(x, 3), moving_slice(y, 3)\n    x_window = np.concatenate((x_window, x_window[:, None, 0]), axis=1)\n    y_window = np.concatenate((y_window, y_window[:, None, 0]), axis=1)\n\n    triangle_sides = np.sqrt(np.square(np.diff(x_window)) + np.square(np.diff(y_window)))\n    squared_sides = np.square(triangle_sides)\n\n    cos_num = np.sum(squared_sides[:, :2], axis=1) - squared_sides[:, 2]\n    cos_den = 2 * np.prod(triangle_sides[:, :2], axis=1)\n    return np.degrees(np.arccos(cos_num / cos_den))\n\t\n# My review function\nangles = degrees(np.arange(len(pattern)), pattern)\n\npattern = pattern[1:-1] # <- No angles between the end points\nless_than_180 = angles < 180\nplt.plot(pattern[less_than_180])\nplt.plot(pattern[less_than_180], 'bo')\nplt.show()",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Um8kKBRR",
+ "pasteDate": "Feb 25, 2018, 10:53:01 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "const uploadsCompleteEpic = (action$, store) => {\n  return action$\n    .ofType(actionTypes.UPLOAD_SUCCESS)\n    .bufferWhen(store => store.getState().remaining -1 === 0)\n    .do(action => console.log(action))\n    .ignoreElements();\n};",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mbgsyXCD",
+ "pasteDate": "Feb 28, 2018, 6:24:51 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "class C:\n    def __init__(self, name):\n        self.name = name\n    def some(self):\n        print(self.name)\n    def c(self, m):\n        m()\n\nc1 = C(\"eden\")\nc2 = C(\"dva\")\n\nsome1 = getattr(c1,\"some\")\nsome2 = getattr(c2,\"some\")\n\nc1.c(some2)\nc2.c(some1)",
+ "title": ""
+}

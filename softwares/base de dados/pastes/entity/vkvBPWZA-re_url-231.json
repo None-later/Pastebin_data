@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://cdn.srv.br:8088/UCSTV/UCSTV/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

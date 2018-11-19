@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "p2Tk996R",
+ "pasteDate": "Feb 24, 2018, 4:47:11 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "     let $compare = $(\".visible\");\n            $compare.on(\"click\", (event) => {\n                if ($('input:checked').length < 3) {\n                    $(event.currentTarget).text($(event.currentTarget).text() === \"Item added\" ? \"Compare\" : \"Item added\");\n                    $(event.currentTarget).addClass(\"visible\");\n\t\t\t\t\t     $(\"input[type=checkbox]\").removeAttr(\"disabled\");\n                    $(\".compareAll\").show();\n                }\n\t\t\t\telse {\n\t\t\t\t\t  $(\"input[type=checkbox]\").prop(\"disabled\", \"disabled\");\n                    $(\"input[type=checkbox]:checked\").removeAttr(\"disabled\");\n\t\t\t\t}\n            })",
+ "title": ""
+}

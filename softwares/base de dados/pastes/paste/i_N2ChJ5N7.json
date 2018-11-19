@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "N2ChJ5N7",
+ "pasteDate": "Feb 25, 2018, 11:43:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import os\nfrom tempfile import mkstemp\nfrom shutil import move\nfrom os import fdopen, remove\nimport re\n\nreturn_pattern = re.compile(r'return json\\.dumps.*')\n\nimport_pattern = re.compile(r'from flask import.*')\n\n\nfor filename in os.listdir(os.path.dirname(os.path.realpath(__file__))):\n    if filename.endswith(\".py\") and not filename.endswith('.pyc') and filename != os.path.basename(__file__):\n        # Create temp file\n        fh, abs_path = mkstemp()\n        with fdopen(fh, 'w') as new_file:\n            with open(filename) as old_file:\n                for line in old_file:\n                    if return_pattern.search(line):\n                        # new_file.write(line)\n\n                        line_arr = line.split(\",\")\n\n                        tab_line = ''\n\n                        for char in line_arr[0]:\n                            if char != 'r':\n                                tab_line += char\n                            else:\n                                break\n\n                        for i in range(0, len(line_arr)):\n                            line_arr[i] = line_arr[i].strip()\n                            if i == 0:\n                                line_arr[0] = line_arr[0].split('return')[1].strip()\n\n                        if len(line_arr) == 1:\n                            new_line = tab_line + 'return Response(response=%s, mimetype=\\'application/json\\')\\n' % (line_arr[0])\n                            new_file.write(new_line)\n                        elif len(line_arr) == 2:\n                            new_line = tab_line + 'return Response(response=%s, status=%s, mimetype=\\'application/json\\')\\n' % (line_arr[0], line_arr[1])\n                            new_file.write(new_line)\n                        elif len(line_arr) == 3:\n                            new_line = tab_line + 'return Response(response=%s, status=%s, mimetype=\\'application/json\\')\\n' % (line_arr[0] + ', ' + line_arr[1], line_arr[2])\n                            new_file.write(new_line)\n                        else:\n                            raise Exception('Responses with more than 2 commas, add code')\n\n                    elif import_pattern.search(line):\n                        new_line = line.strip() + ', Response\\n'\n                        new_file.write(new_line)\n\n                    else:\n                        new_file.write(line)\n\n        # Remove original file\n        remove(filename)\n        # Move new file\n        move(abs_path, filename)",
+ "title": ""
+}

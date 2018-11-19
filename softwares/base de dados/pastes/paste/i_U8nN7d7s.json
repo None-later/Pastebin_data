@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_email"
+ ],
+ "key": "U8nN7d7s",
+ "pasteDate": "Feb 20, 2018, 7:24:38 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "From 098c8d00a4315dbf1302cdfe02c993e4e3aa3200 Mon Sep 17 00:00:00 2001\nFrom: David Whittington <djwhitt@gmail.com>\nDate: Sun, 26 Oct 2008 21:27:42 -0400\nSubject: [PATCH] Fix for hardcoded type_size in env.rb\n\n---\n kernel/common/env.rb |    2 +-\n 1 files changed, 1 insertions(+), 1 deletions(-)\n\ndiff --git a/kernel/common/env.rb b/kernel/common/env.rb\nindex df81906..6a317e7 100644\n--- a/kernel/common/env.rb\n+++ b/kernel/common/env.rb\n@@ -148,7 +148,7 @@ class EnvironmentVariables\n \n   def to_hash\n     environ = EnvironmentVariables.environ\n-    environ.type_size = 4 # HACK no mapping from uintptr_t to 4 bytes\n+    environ.type_size = FFI.type_size(FFI.find_type :pointer)\n \n     i = 0\n \n-- \n1.6.0.2",
+ "title": ""
+}

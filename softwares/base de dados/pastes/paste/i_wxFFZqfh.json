@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "c",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "wxFFZqfh",
+ "pasteDate": "Feb 8, 2018, 4:41:22 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//801\n/*801-1\n*\n**\n***\n****\n*****\n*/\n#include <stdio.h>\n#include <stdlib.h>\nint mu(int,int);\n\nint main() \n{\n\tint i,j;\n\tfor(i=1;i<=5;i++){\n\t\tfor(j=1;j<=i;j++){\n\t\t\tprintf(\"*\");\n\t\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\treturn 0;\n}\n\n\n\n/*801-2\n*****\n****\n***\n**\n*\n*/\n#include <stdio.h>\n#include <stdlib.h>\nint mu(int,int);\n\nint main() \n{\n\tint i,j;\n\tfor(i=5;i>=0;i--){\n\t\tfor(j=1;j<=i;j++){\n\t\t\tprintf(\"*\");\n\t\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\treturn 0;\n}\n\n\n\n/*801-3\n    *\n   **\n  ***\n ****\n*****\n*/\n#include <stdio.h>\n#include <stdlib.h>\nint mu(int,int);\n\nint main() \n{\n\tint i,j,x;\n\tfor(i=5;i>0;i--){\n\t\tfor(j=1;j<i;j++){\n\t\t\tprintf(\" \");\n\t\t\t}\n\t\t\tfor(x=1;x<=(6-j);x++){\n\t\t\t\tprintf(\"*\"); \n\t\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\treturn 0;\n}\n\n\n/*801-4\n*****\n ****\n  ***\n   **\n    *\n*/\n#include <stdio.h>\n#include <stdlib.h>\nint mu(int,int);\n\nint main() \n{\n\tint i,j,x;\n\tfor(i=1;i<=5;i++){\n\t\tfor(j=1;j<=5;j++){\n\t\t\tif(j>=i)\n\t\t\t   printf(\"*\");\n\t\t\telse\n\t\t\t\tprintf(\" \");\n\t\t}\n\t\tprintf(\"\\n\");\n\t}\n\treturn 0;\n}",
+ "title": "TQC C Exam-801"
+}

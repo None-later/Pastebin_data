@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Ds4narGT",
+ "pasteDate": "Feb 11, 2018, 1:38:23 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "    @Override\n    public boolean removeAll(myCollection c) {\n        Node<E> point = head;\n        myLinkedList templist = new myLinkedList();\n        templist=c.myclone();\n        int Count=0;\n        Node<E> point2 = templist.head;\n        for (int i = 0; i < size(); i++) {\n            for (int ii = 0; ii < c.size(); ii++) {\n                if (point.data == point2.data) {\n                remove(i);\n                nodeCount++;\n                Count++;\n                }\n                point2=point2.nextNode;\n            }\n            point2=templist.head;\n            point = point.nextNode;\n        }\n    nodeCount=nodeCount-Count;\n    return true;\n    }",
+ "title": ""
+}

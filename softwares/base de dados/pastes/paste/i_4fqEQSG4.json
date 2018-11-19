@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "4fqEQSG4",
+ "pasteDate": "Feb 8, 2018, 7:24:06 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "@IBOutlet weak var webView: WKWebView!\n\nfunc startSearch() {\n\n    var textToSearch = \"the answer to everything\"\n    // if there are spaces or other special characters,\n    // you'll have to escape them:\n    let allowedCharacters = NSCharacterSet.urlFragmentAllowed\n\n    guard let  encodedSearchString  = textToSearch.addingPercentEncoding(withAllowedCharacters: allowedCharacters)  else { return }\n\n    let queryString = \"https://www.google.de/search?q=(encodedSearchString)\"\n    guard let queryURL = URL(string: queryString) else { return }\n\n    let myRequest = URLRequest(url:queryURL)\n        webView.load(myRequest)\n}",
+ "title": ""
+}

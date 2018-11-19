@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "g0RJHS7X",
+ "pasteDate": "Feb 11, 2018, 5:43:13 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "// Stat the file using uv\n\tuv_fs_t stat_req;\n\tstat_req.data = this;\n\n\t// Run stat, store result and call ready callback\n\tuv_fs_stat(uv_default_loop(), &stat_req, (const char *)composite.c_str(), [](uv_fs_t* req) {\n\t\tFile* self = static_cast<File*>(req->data);",
+ "title": ""
+}

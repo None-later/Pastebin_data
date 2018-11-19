@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "PdQZfK6Q",
+ "pasteDate": "Feb 27, 2018, 10:36:03 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "If(strcmp(cmdtext,\"/toplevel\",) true == 0)\n{\n    ShowTopTenScoreForPlayer(playerid);\n    SendClientMessage(playerid, 0x98F5FFAA,\"| INFO | Voc esta vizualizando os top level\");\n    return 1;\n}",
+ "title": "/Toplevel"
+}

@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "SaPQ1jGD",
+ "pasteDate": "Feb 25, 2018, 10:34:15 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "q - whiplash (point target)\nmana - 150\ncd - 15\ndeal 90/180/270/360 damage in a line in the target direction that is 500 units long by 200 units wide. \nenemies caught at the very end get pulled 250 units towards you and are stunned for 1 second.\n\nw - overflow (point target)\nmana - 70/80/90/100\ncd - 15/13/11/9\ncast range - 600/700/800/900\ndrench foes in enchanted wine, applying a 7 second slow to enemies in a 300 unit area. \nit starts out at zero but escalates to 30/45/60/75% move slow and 60/90/120/150 attack slow by the end.\nfor each enemy hero affected, koh gains 75 attack speed.\n\ne - chomp (unit target)\nmana - 70\ncd - 30/24/18/12\ncast range - 300\ndamage a target unit for 2.5 times strength, leashing the target to you and preventing it from moving more than 300 units for 2.5 seconds.\nif the target is killed, gain 4 strength until you are killed. strength bonus stacks up to 4/6/8/10 times.\n\nr - absorption (no target)\nmana - 200/225/250\ncd - 90/80/70\naoe - 700/800/900\nfor 5 seconds, absorb all damage allied heroes take and drain health per second equal to 3/5/7% of missing hp from all enemy heroes.\ncannot be cast if koh is at full hp.\naghanim's scepter makes absorption calculate damage by max hp and become pure/piercing.\n\ntalents\n10 - +4 mana regen or overflow affects allies*\n15 - +120 gpm or +12 all stats\n20 - -20 absorption cooldown or +2/6 armor per creep/hero slowed by overflow\n25 - +2 chomp strength mult / per kill or absorption grants magic immunity\n\n*allies and self gain a speed boost that increases over time if hit by talent-boosted overflow. koh does not gain attack speed or armor from allies affected.",
+ "title": ""
+}

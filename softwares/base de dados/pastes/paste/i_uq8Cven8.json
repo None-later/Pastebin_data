@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "uq8Cven8",
+ "pasteDate": "Feb 28, 2018, 5:50:39 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "size = Image.find(:all).size\n    @selected_works = []\n    while @selected_works.size < 4\n      @selected_works << Image.find(rand(size)+1)\n      @selected_works.uniq!\n    end",
+ "title": ""
+}

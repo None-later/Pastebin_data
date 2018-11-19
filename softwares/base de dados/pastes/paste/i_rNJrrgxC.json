@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "rNJrrgxC",
+ "pasteDate": "Feb 17, 2018, 7:09:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class DaggerAwareViewModelFactory @Inject constructor(\n        private val creators: @JvmSuppressWildcards Map<Class<out ViewModel>, Provider<ViewModel>>\n) : ViewModelProvider.Factory {\n\n    override fun <T : ViewModel> create(modelClass: Class<T>): T {\n        var creator: Provider<out ViewModel>? = creators[modelClass]\n        if (creator == null) {\n            for ((key, value) in creators) {\n                if (modelClass.isAssignableFrom(key)) {\n                    creator = value\n                    break\n                }\n            }\n        }\n        if (creator == null) {\n            throw IllegalArgumentException(\"unknown model class \" + modelClass)\n        }\n        try {\n            @Suppress(\"UNCHECKED_CAST\")\n            return creator.get() as T\n        } catch (e: Exception) {\n            throw RuntimeException(e)\n        }\n    }\n}",
+ "title": ""
+}

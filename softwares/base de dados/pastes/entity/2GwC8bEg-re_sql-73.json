@@ -1,0 +1,5 @@
+{
+  "value": "SELECT TOP 1 rto_worst_case_size_mb FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

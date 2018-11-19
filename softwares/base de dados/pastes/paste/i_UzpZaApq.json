@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "UzpZaApq",
+ "pasteDate": "Feb 23, 2018, 12:21:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "x86_64-linux\tpython27Packages.i3ipc\ni686-linux\tpython36Packages.i3ipc\nx86_64-darwin\tpython27Packages.i3ipc\nx86_64-linux\tpython36Packages.i3ipc\nx86_64-darwin\tpython36Packages.i3ipc\ni686-linux\tpython27Packages.i3ipc\naarch64-linux\tpython27Packages.i3ipc\naarch64-linux\tpython36Packages.i3ipc",
+ "title": ""
+}

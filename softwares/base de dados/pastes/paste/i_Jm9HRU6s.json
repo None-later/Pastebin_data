@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "Jm9HRU6s",
+ "pasteDate": "Feb 28, 2018, 10:38:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n  \"printWidth\": 80,\n  \"singleQuote\": true,\n  \"trailingComma\": \"all\",\n  \"write\": \"src/**/*.js\",\n  \"jsxBracketSameLine\": true\n}",
+ "title": ""
+}

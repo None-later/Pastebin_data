@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "DRGC3mVa",
+ "pasteDate": "Feb 12, 2018, 1:24:02 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "var $list, $form, $addBtn, items, item, text, $this, complete;\n\nitem = '';\n$list = $('ul');\n$form = $('form');\n$addBtn = $('button');\n\n$('li').hide().each(function(i) {\n  $(this).delay(450 * i).fadeIn(1600);\n});\n\nfunction updateCount() {\n  items = $('li:not(.todolist__item--complete)').length;\n  $('.todolist__counter')\n      .show()\n      .css({'display': 'inline-block'})\n      .text(items);\n}\nupdateCount();\n$addBtn.show();\n$form.hide();\n\n$addBtn.on('click', function() {\n  $(this).hide();\n  $form.show();\n});\n\n$form.on('submit', function(e) {\n  e.preventDefault();\n  text = $('input.todolist__newItemDescr').val();\n  $list.append('<li class=\"todolist__item\">' +\n      text + '</li>');\n  text = '';\n});\nupdateCount();\n\n$list.on('click', 'li', function() {\n  $this = $(this);\n  complete = $this.hasClass('todolist__item--complete');\n\n  if (complete) {\n    $this.animate({\n      'opacity': 0,\n      'padding-left': '+=200'\n    }, 500, 'swing', function() {\n      $this.remove();\n    });\n  } else {\n    item = $this.text();\n    $this.remove();\n    $list\n        .append('<li class=\"todolist__item todolist__item--complete\">' +\n            item + '</li>')\n        .hide()\n        .fadeIn(300);\n    updateCount();\n  }\n});\n\n$('body').on('keydown', function(e) {\n  if (e.keyCode === 27) {\n    $form.fadeOut(300);\n    $addBtn.delay(300).fadeIn(300);\n  }\n});",
+ "title": ""
+}

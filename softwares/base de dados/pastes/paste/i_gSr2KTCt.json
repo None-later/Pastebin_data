@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "gSr2KTCt",
+ "pasteDate": "Feb 28, 2018, 7:33:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class UnionFind(object):\n    \"\"\" Union-Find class that supports union by rank \"\"\"\n\n    def __init__(self, nodes):\n        self.node_map = {}\n        for node in nodes:\n            self.node_map[node] = [node, 0] # Mark rank as \"0\"\n\n    def union(self, a, b):        \n        root_a, root_b = self.find(a), self.find(b)\n        # Node with lower rank added to the node with higher rank.\n        if self.node_map[root_a][1] > self.node_map[root_b][1]:\n            self.node_map[root_b][0] = root_a\n        else:\n            self.node_map[root_a][0] = root_b\n            if self.node_map[root_a][1] == self.node_map[root_b][1]:\n                self.node_map[root_b][1] += 1\n\n    def find(self, x):\n        \"\"\"Recursively find the root of a node.\"\"\"\n        if self.node_map[x][0] != x:\n            self.node_map[x][0] = self.find(self.node_map[x][0])\n        return self.node_map[x][0]",
+ "title": ""
+}

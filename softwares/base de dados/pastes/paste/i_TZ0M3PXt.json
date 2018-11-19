@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pt"
+ ],
+ "key": "TZ0M3PXt",
+ "pasteDate": "Feb 28, 2018, 12:09:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "1.2 - (25/02/2018)\nVerso Inicial\n\n1.3 - (26/02/2018)\nCorrigido as coordenadas de uma porta;\nAdicionada lista de portas visitadas;\nAdicionado controlo ao reincio do jogo;\nPrevenido que possa passar duas vezes pela mesma porta;\n\n1.5 - (26/02/2018)\nCorrigido o incio da Wherigo que podia mostrar uma mensagem em branco;\n\n1.9 - (27/02/2018)\nAdicionado registos;\nOptimizao de cdigo;\nAdicionada concluso de jogo para desbloqueio online da Wherigo;\n\n2.0 - (27/02/2018)\nAdicionado mostrar as portas;\n\n2.2 - (27/02/2018)\nOptimizao de cdigo;\nAfinao da funcionalidade \"mostrar as portas\";\n\n2.4 - (28/02/2018)\nAdicionada narrativa  Wherigo;\nAdicionado spoiler;\nAdicionado nome do jogador;\nVrias outras alteraes;",
+ "title": ""
+}

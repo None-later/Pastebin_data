@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZkU3NYvZ",
+ "pasteDate": "Feb 18, 2018, 7:19:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "---\npackage:\n  nginx:\n    installed: true\nport:\n  tcp:80:\n    listening: true\n    ip:\n      - 0.0.0.0\nservice:\n  nginx:\n    enabled: true\n    running: true",
+ "title": ""
+}

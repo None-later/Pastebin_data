@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro",
+  "re_skuid"
+ ],
+ "key": "83xwLg6B",
+ "pasteDate": "Feb 23, 2018, 10:38:01 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "VLOOKUP(\n    $ObjectType.Territory_Managment__c.Fields.Zip_Pin_Code__c,\n    $ObjectType.Territory_Managment__c.Fields.Name, \n    Postal_Code_or_Zip_Code__c\n) \n<> Postal_Code_or_Zip_Code__c",
+ "title": ""
+}

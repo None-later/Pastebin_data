@@ -1,0 +1,5 @@
+{
+  "value": "\u0027https://blogs.msdn.microsoft.com/sqlreleaseservices/sql-server-2016-service-pack-1-sp1-released/",
+  "correct": true,
+  "jSonReason": "re_url"
+}

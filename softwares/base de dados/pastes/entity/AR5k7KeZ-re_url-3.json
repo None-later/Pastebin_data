@@ -1,0 +1,5 @@
+{
+  "value": "\u003ehttps://api.trakt.tv/users/me/collection/shows",
+  "correct": true,
+  "jSonReason": "re_url"
+}

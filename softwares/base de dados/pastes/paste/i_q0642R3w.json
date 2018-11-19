@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "q0642R3w",
+ "pasteDate": "Feb 12, 2018, 5:03:03 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "#!/usr/bin/env python3\n# -*- coding: utf-8 -*-\n#\n# simple morse-code implementation for strings usings '.' and '-' symbols\n#\n# (c) 2018 Bernd Busse\n\nimport sys\n\n\nALPHABET = {\n    'A': '.-',\n    'B': '-...',\n    'C': '-.-.',\n    'D': '-..',\n    'E': '.',\n    'F': '..-.',\n    'G': '--.',\n    'H': '....',\n    'I': '..',\n    'J': '.---',\n    'K': '-.-',\n    'L': '.-..',\n    'M': '--',\n    'N': '-.',\n    'O': '---',\n    'P': '.--.',\n    'Q': '--.-',\n    'R': '.-.',\n    'S': '...',\n    'T': '-',\n    'U': '..-',\n    'V': '...-',\n    'W': '.--',\n    'X': '-..-',\n    'Y': '-.--',\n    'Z': '--..',\n    '1': '.----',\n    '2': '..---',\n    '3': '...--',\n    '4': '....-',\n    '5': '.....',\n    '6': '-....',\n    '7': '--...',\n    '8': '---..',\n    '9': '----.',\n    '0': '-----',\n}\nINVERSE = {v: k for k, v in ALPHABET.items()}\n\nclass EncodingError(RuntimeError):\n    pass\n\n\nclass DecodingError(RuntimeError):\n    pass\n\n\ndef usage(executable):\n    sys.stderr.write(\"usage: {} -e TEXT\\n\".format(executable))\n    sys.stderr.write(\"       {} -d CODE\\n\".format(executable))\n    sys.stderr.flush()\n\n\ndef encode(message):\n    code = []\n\n    for char in message:\n        if char == ' ':\n            code.append(\"    \")\n        else:\n            try:\n                code.append(ALPHABET[char.upper()])\n            except KeyError as e:\n                raise EncodingError(\"Invalid character: '{}'\".format(char))\n\n    return ' '.join(code)\n\n\ndef decode(code):\n    message = []\n    space = False\n\n    for char in code.split(' '):\n        if char == '' and not space:\n            message.append(' ')\n            space = True\n        elif char == '': pass\n        elif char == '----':\n            message.append(\"[SP]\")\n        elif char == '---':\n            message.append(\"[EOM]\")\n        else:\n            try:\n                message.append(INVERSE[char])\n                space = False\n            except KeyError as e:\n                raise DecodingError(\"Invalid character: '{}'\".format(char))\n\n    return ''.join(message)\n\n\nif __name__ == '__main__':\n    if len(sys.argv) != 3:\n        usage(sys.argv[0])\n        exit(1)\n\n    if sys.argv[1] == \"-e\":\n        # Run encoding\n        code = encode(sys.argv[2])\n        print(\"Morsecode: {:s}\".format(code))\n    elif sys.argv[1] == \"-d\":\n        # Run decoding\n        message = decode(sys.argv[2])\n        print(\"Message: {:s}\".format(message))\n    else:\n        usage(sys.argv[0])\n        exit(1)",
+ "title": ""
+}

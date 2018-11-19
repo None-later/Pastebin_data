@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Gqk5rB1B",
+ "pasteDate": "Feb 28, 2018, 10:20:12 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# Enable Gzip compression\ngzip          on;\n\n# Compression level (1-9)\ngzip_comp_level     5;\n\n# Don't compress anything under 256 bytes\ngzip_min_length     256;\n\n# Compress output of these MIME-types\ngzip_types\n    application/atom+xml\n    application/javascript\n    application/json\n    application/rss+xml\n    application/vnd.ms-fontobject\n    application/x-font-ttf\n    application/x-font-opentype\n    application/x-font-truetype\n    application/x-javascript\n    application/x-web-app-manifest+json\n    application/xhtml+xml\n    application/xml\n    font/eot\n    font/opentype\n    font/otf\n    image/svg+xml\n    image/x-icon\n    image/vnd.microsoft.icon\n    text/css\n    text/plain\n    text/javascript\n    text/x-component;\n\n# Disable gzip for bad browsers\ngzip_disable  \"MSIE [1-6]\\.(?!.*SV1)\";",
+ "title": ""
+}

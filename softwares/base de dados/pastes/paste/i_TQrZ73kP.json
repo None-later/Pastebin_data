@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TQrZ73kP",
+ "pasteDate": "Feb 18, 2018, 11:14:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#_7\nimport random\n\ndef print_res(vars):\t\n    print(random.choice(vars))\n\ndef main():\n    s = {'':['',''], '':['','']}\n    winer = ['', ' ', '', ' ']\n    loser = ['', '   ', ' ']\n    word = list(s.keys())[random.randint(0, len(s) - 1)]\n    clue = random.choice(s[word])\n    print(clue,'...')\n    for j in range(5):\n        print(' :')\n        answer = input()\n        if answer == word:\n            print_res(winer)\n            break\n    if answer != word:\n        print_res(loser)\n\nmain()",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "mJTgqXmv",
+ "pasteDate": "Feb 18, 2018, 7:54:17 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require \"yaml\"\n\nclass Todo\n  YAML.mapping(\n    message: { type: String, nilable: false },\n    project: { type: String, nilable: true },\n    created_at: { type: Time, nilable: false, default: Time.now },\n    updated_at: { type: Time, nilable: false, default: Time.now },\n    due_to: { type: Time, nilable: true },\n    done: { type: Bool, nilable: false, default: false }\n  )\n\n  def initialize(message : String, project : String?, due_to : Time? = nil)\n    @message = \"\"\n    @created_at = Time.now\n    @updated_at = Time.now\n    @done = false\n    self.message = message\n    self.project = project\n    self.due_to = due_to\n  end\n\n  def update(message : String, project : String? | Nil?, due_to : Time? | Nil?)\n    updateTime\n    @message = message\n    @project = project\n    @due_to = due_to\n    self\n  end\n\n  def update(message : String, project : String)\n    update message: message, project: @project, due_to: @due_to\n  end\n\n  def update(message : String, due_to : Time)\n    update message: message, project: @project, due_to: @due_to\n  end\n\n  def update(message : String)\n    update message: message, project: @project, due_to: @due_to\n  end\n\n  def toggleDone \n    updateTime\n    @done = !@done\n  end\n\t\n\n  private def updateTime\n    @updated_at = Time.now  \n  end\nend\n\nclass TodoList\nend\n\nmodule TodoApp\n\tclass Cli\n    def start\n    end\n  end\nend\n\n# Testing Todo class\ntodo = Todo.new message: \"Message\", project: \"Home\"\nputs todo\n\ntodo.update message: \"Hello\"\ntodo.update message: \"Hello2\", project: \"Work\"\ntodo.update message: \"Hello3\", project: \"Team\"\ntodo.update message: \"Hello3\", project: \"Team\", due_to: Time.now\nputs todo.due_to\nsleep 5.seconds\ntodo.update message: \"Hello3\", due_to: Time.now\nputs todo.due_to",
+ "title": ""
+}

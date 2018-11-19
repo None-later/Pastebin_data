@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "zYhYLcjR",
+ "pasteDate": "Feb 18, 2018, 3:38:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "package main\n\nimport (\n\t\"fmt\"\n\t\"strings\"\n\t\"unicode\"\n)\n\nfunc countLetters(s string) (result int) {\n\tfor _, e := range s {\n\t\tif unicode.IsLetter(e) {\n\t\t\tresult++\n\t\t}\n\t}\n\treturn\n}\n\nfunc main() {\n\ts := \"Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics.\"\n\tt := strings.Split(s, \" \")\n\tresult := make([]int, len(t))\n\tfor i, e := range t {\n\t\tresult[i] = countLetters(e)\n\t}\n\tfmt.Println(result)\n}",
+ "title": ""
+}

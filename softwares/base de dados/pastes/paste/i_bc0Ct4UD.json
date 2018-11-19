@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_skuid",
+  "lg_en"
+ ],
+ "key": "bc0Ct4UD",
+ "pasteDate": "Feb 28, 2018, 2:57:13 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "public class AgreementWithOppsController2 {\n\n    public list<wrapOpportunity> wrapOppList { get; set; }\n\n    public AgreementWithOppsController() {\n...\n        wrapOppList.add(new wrapOpportunity(a, a.Apttus__Related_Opportunity__r.Opportunity__c));\n    }\n\t\npublic class wrapOpportunity{\n\n    public Apttus__APTS_Agreement__c agreement{get;set;}\n    public Boolean isSelected{get;set;}\n    public Boolean isDisplayed{get;set;}\n    public Set<Id> oppIdsInWrapper {get;set;}\n\n       public wrapOpportunity(Apttus__APTS_Agreement__c a, String oppNumber){     \n         agreement=a;\n\n         if(oppIdsInWrapper==null){\n            oppIdsInWrapper = new Set<Id>();\n            system.debug('expected to hit only one time?'); //this hits every time, why? where can i store this and access it?\n         }\n\n         system.debug('id wrapper size: '+oppIdsInWrapper.size());\n\n         if(!oppIdsInWrapper.contains(a.Apttus__Related_Opportunity__r.Id)){\n            oppIdsInWrapper.add(a.Apttus__Related_Opportunity__r.Id);\n            isDisplayed = true;\n         }\n         else{\n            isDisplayed = false; //this never hits, why?\n            system.debug('does this hit?');\n         }\n            isSelected = false;\n       }\n    }\n\t\npublic static Set<Id> oppIdsInWrapper { get; set; }",
+ "title": ""
+}

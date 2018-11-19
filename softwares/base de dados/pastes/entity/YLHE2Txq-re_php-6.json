@@ -1,0 +1,5 @@
+{
+  "value": "define(LBRACE, ${)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "jRx1xmMH",
+ "pasteDate": "Feb 20, 2018, 6:08:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[wpbb-if post:featured_image]\n<a class=\"post-card-image-link\" href=\"[wpbb post:url]\">\n    <div class=\"post-card-image\" style=\"background-image: url([wpbb post:featured_image size='full' display='url']);\"></div>\n</a>\n<div class=\"post-card-content\">\n    <a class=\"post-card-content-link\" href=\"[wpbb post:url]\">\n        <header class=\"post-card-header\">\n            <span class=\"post-card-category\">[wpbb post:terms_list taxonomy='category' separator=', ' linked='no']</span>\n            <h2 class=\"post-card-title\">[wpbb post:title]</h2>\n        </header>\n        <section class=\"post-card-excerpt\">\n            [wpbb post:excerpt length='12' more='']\n        </section>\n    </a>\n</div>\n[wpbb-else]\n<div class=\"post-card-content\">\n    <a class=\"post-card-content-link\" href=\"[wpbb post:url]\">\n        <header class=\"post-card-header\">\n            <span class=\"post-card-category\">[wpbb post:terms_list taxonomy='category' separator=', ' linked='no']</span>\n            <h2 class=\"post-card-title\">[wpbb post:title]</h2>\n        </header>\n        <section class=\"post-card-excerpt\">\n            [wpbb post:excerpt length='46' more='']\n        </section>\n    </a>\n</div>\n[/wpbb-if]",
+ "title": ""
+}

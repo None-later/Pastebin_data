@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_java"
+ ],
+ "key": "SPADNNhT",
+ "pasteDate": "Feb 28, 2018, 12:08:04 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "Date: 02/28/2018 04:08:29\nCorpseReborn Version: 2.12.1\n\nServer Version: git-Spigot-596221b-9a1fc1e (MC: 1.12)\nServer Type: SPIGOT\nFolder Version: v1_12_R1\n\nException: \njava.lang.NullPointerException: Name is null\n\tat java.lang.Enum.valueOf(Enum.java:236)\n\tat org.golde.bukkit.corpsereborn.ServerVersion.valueOf(ServerVersion.java:1)\n\tat org.golde.bukkit.corpsereborn.Main.onEnable(Main.java:148)\n\tat org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:264)\n\tat org.bukkit.plugin.java.JavaPluginLoader.enablePlugin(JavaPluginLoader.java:337)\n\tat org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:402)\n\tat org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugin(CraftServer.java:374)\n\tat org.bukkit.craftbukkit.v1_12_R1.CraftServer.enablePlugins(CraftServer.java:323)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.t(MinecraftServer.java:421)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.l(MinecraftServer.java:382)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.a(MinecraftServer.java:337)\n\tat net.minecraft.server.v1_12_R1.DedicatedServer.init(DedicatedServer.java:272)\n\tat net.minecraft.server.v1_12_R1.MinecraftServer.run(MinecraftServer.java:544)\n\tat java.lang.Thread.run(Thread.java:748)\n\n\nPlugins: \nAntiWDL - 0.1\neChatFilter - 1.0\nCorpseReborn - 2.12.1\nPerms - 1.0\nPermissions - 1\nChat - 1\neAPI - 1.0\nProtocolSupport - 4.26.dev\nSkyWars - 2\nViaVersion - 1.3.0\nCoreClient - 1.0\nProtocolLib - 4.3.0\nNoCheatPlus - 3.15.1-RC-sMD5NET-b1084\nItemFixer - 3.0\nHolographicDisplays - 2.2.6\nHolograms - 1.5\n\nConfig: \nenable-update-checker: false\ncorpse-time: 120\non-death: false\nlooting-inventory: false\ndespawn-after-looted: false\nshow-tags: false\nworld: world\ngui-title: %corpse%'s Items\nusername-format: %corpse%\nfinish-looting-message: *bYou have finished looting %corpse%'s corpse.\nnew-hitboxes: false\nrender-armor: falsesave-corpses: truesend-data: true\n\nCorpses:",
+ "title": "CorpseReborn Error Paste"
+}

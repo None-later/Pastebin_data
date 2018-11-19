@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "XwEj1D1X",
+ "pasteDate": "Feb 26, 2018, 12:20:30 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "print ('Pierwsze')\nliczba = int(input('podaj liczb'))\npierwsza = True\nfor x in range(2,liczba):\n    if liczba%x==0:\n        pierwsza = False\n        break\nif pierwsza:\n    print ('liczba ',liczba,' jest pierwsz')\nelse:\n    print ('Liczba ',liczba,' nie jest pierwsz')\nprint ('koniec')",
+ "title": "krzy"
+}

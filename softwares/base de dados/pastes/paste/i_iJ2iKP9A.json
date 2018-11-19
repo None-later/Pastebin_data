@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "iJ2iKP9A",
+ "pasteDate": "Feb 25, 2018, 11:23:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "namespace LeagueProj.DataGrabber{\n    public class DataGrabber : IDataGrabber\n    {\n        private SummonerMethod sm = new SummonerMethod();\n        private MatchlistMethod mlm = new MatchlistMethod();\n        private MatchMethod mm = new MatchMethod();\n\n        public delegate Summoner GetSummoner();\n        public delegate Matchlist GetMatchlist();\n        public delegate Data GetAllMatchData();\n\n        public DataGrabber()\n        {\n            GetSummoner = sm._GetSummoner;\n            GetMatchlist = mlm._GetMatchlist;\n            GetAllMatchData = mm._GetAllMatchData;\n        }\n    }\n}",
+ "title": ""
+}

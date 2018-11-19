@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CuVnLDAn",
+ "pasteDate": "Feb 27, 2018, 10:31:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "SELECT, COUNT(*) as TotalMailed, COUNT(*) (WHERE Returned = 1) as ReturnedMailed, Order_No, Zip_Code,County\nFROM MailLedger\nGROUP BY Order_No, Zip_Code, County",
+ "title": ""
+}

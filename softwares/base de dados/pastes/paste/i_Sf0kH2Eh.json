@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Sf0kH2Eh",
+ "pasteDate": "Feb 28, 2018, 4:16:09 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<form method=\"POST\">\n    <div class=\"voteOptions\" ng-repeat=\"item in id.data.options\">\n      <label class=\"radioButtons\">{{item.title}} votes:{{item.votes}}\n        <input type=\"radio\" name=\"option\" value={{item.option}}>\n        <span class=\"radioSelector\"></span>\n      </label>\n    </div>\n    <input type=\"submit\" id=\"voteSubmit\" value=\"Vote!\">\n  </form>",
+ "title": ""
+}

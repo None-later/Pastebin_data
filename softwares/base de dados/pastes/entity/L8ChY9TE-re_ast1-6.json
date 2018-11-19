@@ -1,0 +1,5 @@
+{
+  "value": "function supportsToken(TokenInterface $token, $providerKey)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

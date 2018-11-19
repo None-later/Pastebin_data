@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "8a1kyQZ6",
+ "pasteDate": "Feb 28, 2018, 7:11:09 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "module Memoizer\n  def method_added(meth)\n    @_methods_to_memoize ||= []\n    @_methods_to_memoize << meth\n  end\n  \n  def methods_to_memoize\n    @_methods_to_memoize\n  end\nend\n \nclass Class\n  def memoize(kind = Hash, &blk)\n    memoizer = Module.new do\n      extend Memoizer\n    end\n    \n    memoizer.class_eval(&blk)\n    self.send(:include, memoizer)\n    \n    memoizer.methods_to_memoize.each do |meth|\n      arity = self.instance_method(meth).arity\n      if arity == 0\n        self.class_eval <<-RUBY\ndef #{meth}\n@_memoized_#{meth} ||= super\nend\nRUBY\n      else\n        args = arity == 1 ? \"args\" : \"*args\"\n        self.class_eval <<-RUBY\ndef #{meth}(#{args})\n@_memoized_#{meth} ||= #{kind}.new\n@_memoized_#{meth}[args] ||= super\nend\nRUBY\n      end\n    end\n  end\nend\n\nclass Foo\n  class << self\n    memoize do\n      def memoed(baz)\n        baz * 1000\n      end\n    end\n\n\t  def unmemoed(baz)\n      baz * 1000\n\t  end\n  end\n  \n  def self.baseline(baz)\n    baz * 1000\n  end\n  \n  memoize do\n    def memoed(baz)\n      baz * 1000\n    end\n  end\n  \n  def unmemoed(baz)\n    baz * 1000\n  end\nend\n\nrequire 'benchmark'\nn = 500\narr = [1,10,100,1000,10000]\nBenchmark.bm do |x|\n  arr.each do |m|\n   x.report { n.times{Foo.memoed(m)} }\n   x.report { n.times{Foo.unmemoed(m)}}\n   x.report { n.times{Foo.baseline(m)}}\n   a_foo = Foo.new\n   x.report { n.times{a_foo.memoed(m)} }\n   x.report { n.times{a_foo.unmemoed(m)} }\n   puts \"-----------------------------\"\n end\nend",
+ "title": ""
+}

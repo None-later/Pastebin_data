@@ -1,0 +1,5 @@
+{
+  "value": "define(COMMA, $,)",
+  "correct": true,
+  "jSonReason": "re_php"
+}

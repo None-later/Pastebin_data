@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_pt"
+ ],
+ "key": "A3BX4vQs",
+ "pasteDate": "Feb 19, 2018, 3:11:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<?php\nif(!$fp=fopen(\"https://www.infomoney.com.br/mercados/cambio\" , \"r\" )) \n{\n    echo \"Erro ao abrir a pgina de cotao\" ;\n    exit;\n}\n$conteudo = '';\n\nwhile(!feof($fp)) \n{ \n    $conteudo .= fgets($fp,1024);\n}\nfclose($fp);\n$valorCompraHTML = explode('class=\"numbers\">', $conteudo); \n\n$valorCompra = trim(strip_tags($valorCompraHTML[5]));\n\n$valorVendaHTML = explode(' ', strip_tags($valorCompraHTML[6]));\n\n//Estes so os valores HTML para exibir no site.    \n$valorVendaHTML = explode(' ', $valorVendaHTML[0]);\n$valorVenda  = trim($valorVendaHTML[0]) ;\n\n//Compra Turismo.\n$valorCompraT = trim(strip_tags($valorCompraHTML[7]));\n$valorCompraT = explode(' ', $valorCompraT);\n$valorCT  = trim($valorCompraT [0]) ;\n\n//Venda Turismo.\n$valorVendaT = trim(strip_tags($valorCompraHTML[8]));\n$valorVendaT = explode(' ', $valorVendaT);\n$valorVT  = trim($valorVendaT[0]) ;\n\n//Compra Euro.\n$valorCompraE = trim(strip_tags($valorCompraHTML[11]));\n$valorCompraE = explode(' ', $valorCompraE);\n$valorCE  = trim($valorCompraE[0]) ;\n\n//Venda Euro.\n$valorVendaE = trim(strip_tags($valorCompraHTML[12]));\n$valorVendaE = explode(' ', $valorVendaE);\n$valorVE  = trim($valorVendaE[0]) ;+\n\n//Estes so os valores numricos para clculos.   \n$valorCompraCalculavel = str_replace(',','.', $valorCompra);\n$valorVendaCalculavel  = str_replace(',','.', $valorVenda);\n?>",
+ "title": ""
+}

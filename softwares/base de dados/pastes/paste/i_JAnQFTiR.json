@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1"
+ ],
+ "key": "JAnQFTiR",
+ "pasteDate": "Feb 17, 2018, 7:00:10 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "function ad_status_form_alter(&$form, &$form_state, $form_id) {\n$form['actions']['copy'] = array(\n  '#type' => 'checkbox',\n  '#return_value' => 1,\n  '#default_value' => 1,\n  '#title' => t('Allow comments'),\n);\n\t\n$form[''actions]['submit']['#submit'][] = 'add_status_form_NODE_TYPE_submit_callback';\n\t\nfunction add_status_form_alter(&$form, &$form_state, $form_id) {\n  if($form_id === 'YOUR_FORM_ID'){\n    $form['copy'] = array(\n      '#type' => 'checkbox',\n      '#return_value' => 1,\n      '#default_value' => 1,\n      '#title' => t('Allow comments'),\n    );\n  }\n}\n\nfunction add_status_form_NODE_TYPE_submit_callback(&$form, &$form_state){\n  if(isset($form_state['input']['copy']) && $form_state['input']['copy'] == 1){\n    $form['node']\n  }\n}",
+ "title": ""
+}

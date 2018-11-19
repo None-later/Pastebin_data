@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "34EWTFFn",
+ "pasteDate": "Feb 24, 2018, 4:02:09 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System.Collections;\nusing System.Collections.Generic;\nusing UnityEngine;\n\npublic class MovingEmner : MonoBehaviour {\n\n    public float moveSpeed = 1f;\n    private bool left = true;\n    public GameController gc;\n    \n    // Use this for initialization\n    void Start () {\n\t\t\n\t}\n\t\n\t// Update is called once per frame\n\tvoid Update () {\n        if(left)\n        {\n\n            int childcount = 0;\n            while(childcount < this.transform.childCount)\n            {\n                this.transform.GetChild(childcount).gameObject.transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);\n            }\n\n            //transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);\n            //gc.emner.ForEach(i => i.transform.Translate(-moveSpeed * Time.deltaTime, 0, 0));\n          \n           /* foreach (GameObject emne in gc.emner)\n            {\n                emne.transform.Translate(-moveSpeed * Time.deltaTime, 0, 0);\n            }*/\n            \n        } else\n        {\n\n            /*foreach (GameObject emne in gc.emner)\n            {\n                emne.transform.Translate(moveSpeed * Time.deltaTime, 0, 0);\n            }*/\n\n            //gc.emner.ForEach(i => i.transform.Translate(moveSpeed * Time.deltaTime, 0, 0));\n            //transform.Translate(moveSpeed * Time.deltaTime, 0, 0);\n\n            int childcount = 0;\n            while (childcount < this.transform.childCount)\n            {\n                this.transform.GetChild(childcount).gameObject.transform.Translate(moveSpeed * Time.deltaTime, 0, 0);\n            }\n\n        }\n    }\n\n    void OnCollisionEnter(Collision col)\n    {\n        Debug.Log(\"test\");\n\n        if(left)\n        {\n            left = false;\n        } else\n        {\n            left = true;\n        }\n    }\n\n\n}",
+ "title": ""
+}

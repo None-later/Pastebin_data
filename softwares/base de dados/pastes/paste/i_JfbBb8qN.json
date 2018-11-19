@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "JfbBb8qN",
+ "pasteDate": "Feb 17, 2018, 7:50:26 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Issue summary:\nDrakefire pistols dropped during loot spoils of war opening for the Dwarf. However item failed to appear in inventory afterwards, however the other two items did. \n\nSteps to reproduce: Unclear since it was a spoils of war box. Second spoils of war box opened gave all items like normal.\n\n1. \n2. \n3.\n4.\n5.\n\nDoes it occur every time? No\n\n\nDo you have a Crashify GUID? No\n\nDo you have a crash log for this? No",
+ "title": ""
+}

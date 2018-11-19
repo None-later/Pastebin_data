@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "G6idLQuY",
+ "pasteDate": "Feb 26, 2018, 12:40:10 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "Starting...\nChecking for updates...\nMD5 Check succeeded\nCouldn't retrieve latest version info!\nLauncher is up to date!\n\nInitializing Frame...\nStarting Launcher...\n\n[16:39:09 INFO]: Launcher 3.5.1 started on windows...\n[16:39:09 INFO]: Current time is Feb 26, 2018 4:39:09 PM\n[16:39:09 INFO]: System.getProperty('os.name') == 'Windows 10'\n[16:39:09 INFO]: System.getProperty('os.version') == '10.0'\n[16:39:09 INFO]: System.getProperty('os.arch') == 'amd64'\n[16:39:09 INFO]: System.getProperty('java.version') == '1.8.0_161'\n[16:39:09 INFO]: System.getProperty('java.vendor') == 'Oracle Corporation'\n[16:39:09 INFO]: System.getProperty('sun.arch.data.model') == '64'",
+ "title": ""
+}

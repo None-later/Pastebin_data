@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "XTBDyFDC",
+ "pasteDate": "Feb 20, 2018, 3:49:54 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "require 'ruby-growl'\n\nmodule Merb\n  module Messenger\n    module Transport\n      \n      class Growl\n        \n        class_inheritable_accessor :_default_options\n        self._default_options = Mash.new(:notification => \"ruby-growl Notification\")\n        \n        attr_reader :transport\n        \n        def initialize(host, appname, notifications)\n          @transport = ::Growl.new host, appname, notifications\n        end\n        \n        def connect\n          \n        end\n        \n        def deliver(options = {})\n          options = _default_options.merge(options)\n          \n          self.transport.notify options[:notification], options[:title], options[:body]\n        end\n        \n      end\n      \n    end\n  end\nend",
+ "title": ""
+}

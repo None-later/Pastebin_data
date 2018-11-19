@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "watx67Mb",
+ "pasteDate": "Feb 18, 2018, 11:12:31 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "source /usr/local/etc/bash_completion.d/git-completion.bash\n\n[[ -s \"$HOME/.rvm/scripts/rvm\" ]] && source \"$HOME/.rvm/scripts/rvm\"\n\nfunction parse_git_branch {\n  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \\(.*\\)/(\\1)/'\n}\n\nfunction proml {\n  case $TERM in\n    xterm*)\n    TITLEBAR='\\[\\033]0;\\u@\\h:\\w\\007\\]'\n    ;;\n    *)\n    TITLEBAR=\"\"\n    ;;\n  esac\n\nPS1=\"${TITLEBAR}\\u@\\h:\\w\\$(parse_git_branch)\\$ \"\nPS2='> '\nPS4='+ '\n}\nproml",
+ "title": ""
+}

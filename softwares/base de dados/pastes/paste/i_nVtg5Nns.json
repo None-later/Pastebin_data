@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "nVtg5Nns",
+ "pasteDate": "Feb 12, 2018, 3:47:12 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "package me.Loewidplay.listener;\n\nimport org.bukkit.Sound;\nimport org.bukkit.entity.Player;\nimport org.bukkit.event.EventHandler;\nimport org.bukkit.event.Listener;\nimport org.bukkit.event.player.PlayerMoveEvent;\nimport org.bukkit.util.Vector;\n\nimport net.minecraft.server.v1_8_R1.Material;\n\npublic class PlayerMoveListener implements Listener {\n\t\n\t@EventHandler\n\tpublic void onMove(PlayerMoveEvent event) {\n\t\t\n\t\tPlayer p = event.getPlayer();\n\t\t\n\t\tif(p.getLocation().subtract(0, 1, 0).getBlock().getType() == org.bukkit.Material.REDSTONE_BLOCK && p.getLocation().getBlock().getType() == org.bukkit.Material.GOLD_PLATE) {\n\t\t\t\n\t\t\tVector vector = p.getLocation().getDirection().setY(0.8D).multiply(1.5D);\n\t\t\tp.setVelocity(vector);\n\t\t\tp.playSound(p.getLocation(), Sound.ENDERDRAGON_WINGS, 1, 1);\n\t\t}\n\t}\n\n}",
+ "title": ""
+}

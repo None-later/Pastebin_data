@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "isrEBDin",
+ "pasteDate": "Feb 18, 2018, 3:40:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Perro:\n\tdef hablar(self):\n\t\tprint('Ladrar')\n\t\t\nclass Gato:\n\tdef hablar(self):\n\t\tprint('Miar')\n\t\t\ndef hablar(animal):\n\tanimal.hablar()\n\t\nperro = Perro()\nhablar(perro)\n\ngato = Gato()\nhablar(gato)",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "biY7K1r0",
+ "pasteDate": "Feb 28, 2018, 3:08:49 AM",
+ "relevancy": 6.0,
+ "relevant": false,
+ "text": "# SimC Addon 1.9.1\n\nwarlock=\"Succubs\"\nlevel=110\nrace=blood_elf\nregion=us\nserver=barthilas\nrole=spell\n\ntalents=3113213\nspec=affliction\nartifact=39:0:0:0:0:999:1:1390:1:1711:1:1353:1:1601:4:1602:1:929:1:928:1:927:1:926:1:925:1:1603:1:924:1:1604:22:915:4:916:4:917:4:918:4:919:4:920:4:923:4:922:4:921:4\ncrucible=1739:1782:920/1739:1774:920/1739:1780\n\nhead=,id=132394,bonus_id=3459/3630\nneck=,id=134497,enchant_id=5890,bonus_id=3536/1602/3336\nshoulder=,id=152177,bonus_id=3610/1472/3528\nback=,id=144364,enchant_id=5436,bonus_id=3459/3630\nchest=,id=152176,bonus_id=3610/1477/3336\nshirt=,id=44693\ntabard=,id=5976\nwrist=,id=151953,bonus_id=3610/43/1477/3336\nhands=,id=152173,gem_id=151583,bonus_id=3610/1808/1477/3336\nwaist=,id=134433,bonus_id=3534/1587/3336\nlegs=,id=152175,bonus_id=3610/1472/3528\nfeet=,id=151939,bonus_id=3610/1808/1487/3337\nfinger1=,id=142172,enchant_id=5428,bonus_id=3536/1552/3528\nfinger2=,id=134542,enchant_id=5428,bonus_id=3536/1612/3337\ntrinket1=,id=154177,bonus_id=3984/3986\ntrinket2=,id=151955,bonus_id=3610/1477/3336\nmain_hand=,id=128942,gem_id=133684/151296/152055,bonus_id=747,relic_id=3536:1592:3528/3536:1597:3336/3610:1472:3528\n\n### Gear from Bags\n#\n# Grim Inquisitor's Death Mask (930)\n# head=,id=152174,bonus_id=3610/1472/3528\n#\n# Shoulderpads of Chaotic Thought (940)\n# shoulder=,id=142152,bonus_id=3536/1552/3528\n#\n# Vestments of Enflamed Blight (930)\n# chest=,id=151947,bonus_id=3610/1472/3528\n#\n# Arcanist's Resonant Robes (965)\n# chest=,id=134415,bonus_id=3536/1617/3337\n#\n# Roggthread Bracers (910)\n# wrist=,id=134178,bonus_id=3573/1572/3528\n#\n# Subjugator's Leggings (965)\n# legs=,id=151304,bonus_id=3536/1617/3337\n#\n# Whisperstep Runners (930)\n# feet=,id=151939,bonus_id=3610/1472/3528\n#\n# Insignia of the Grand Army (1000)\n# finger1=,id=152626,enchant_id=5428,gem_id=151583,bonus_id=3459/3630\n#\n# Ring of Minute Mirrors (940)\n# finger1=,id=137533,bonus_id=3535/1592/3336\n#\n# Eye of Skovald (915)\n# trinket1=,id=133641,bonus_id=3573/1808/1567/3336\n#\n# Spectral Thurible (910)\n# trinket1=,id=147018,bonus_id=3573/1808/40/1492/3528\n#\n# Leycoral Shard (910)\n# trinket1=,id=134248,gem_id=151583,bonus_id=3573/1808/605/1572/3528\n#\n# Huntmaster's Injector (793)\n# trinket1=,id=140533,bonus_id=1793,drop_level=110\n#",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "czFf8SjM",
+ "pasteDate": "Feb 26, 2018, 10:08:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "npm ERR! code ELIFECYCLE\nnpm ERR! errno 1\nnpm ERR! react - book@1.0.0 start: `webpack-dev-server --progress --colors --config ./webpack.config.js`\nnpm ERR! Exit status 1\nnpm ERR!\nnpm ERR! Failed at the react - book@1.0.0 start script.\nnpm ERR! This is probably not a problem with npm.There is likely additional logging output above.\n\nnpm ERR! A complete log of this run can be found in:\nnpm ERR!     C: UsersAppDataRoamingnpm - cache_logs2018 - 02 - 26T12_56_42_553Z - debug.log\n\t\n{\n  \"name\": \"react-book\",\n  \"version\": \"1.0.0\",\n  \"description\": \"\",\n  \"main\": \"index.js\",\n  \"scripts\": {\n    \"start\": \"webpack-dev-server --progress --colors --config ./webpack.config.js\",\n    \"test\": \"echo \"Error: no test specified\" && exit 1\"\n  },\n  \"keywords\": [],\n  \"author\": \"\",\n  \"license\": \"ISC\",\n  \"devDependencies\": {\n    \"webpack\": \"^4.0.0\",\n    \"webpack-dev-server\": \"^3.0.0\"\n  }\n}\n\t\nmodule.exports = {\n  entry: [\n    './src/index.js'\n  ],\n  output: {\n    path: __dirname + '/dist',\n    publicPath: '/',\n    filename: 'bundle.js'\n  },\n  devServer: {\n    contentBase: './dist',\n  }\n};\n\t\n-node_modules\n-dist\n--index.html\n-src\n--index.js\n-package.json\n-webpack.config.js",
+ "title": ""
+}

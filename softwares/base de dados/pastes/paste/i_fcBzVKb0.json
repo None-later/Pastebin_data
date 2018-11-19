@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "fcBzVKb0",
+ "pasteDate": "Feb 18, 2018, 6:01:56 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "fade_categories = (sortMethod) ->\n    $.ajax\n      url: '/sort'\n      data: {\n        \"sortMethod\" : sortMethod,\n        \"category\"   : // The current path is /categories/<Category>\n      }\n      success: (newList) ->\n        $(\"ul#categories\").fadeOut \"slow\", ->\n          $(this).replaceWith(newList)\n          $(\"ul#categories\").fadeIn \"slow\"\n    return false",
+ "title": ""
+}

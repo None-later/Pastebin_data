@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "html5",
+ "jSonReasons": [
+  "re_html_xml",
+  "re_email",
+  "lg_en"
+ ],
+ "key": "n88jqq9L",
+ "pasteDate": "Feb 10, 2018, 8:16:18 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "<!doctype html>\n<html>\n\n<head>\n<title>Documento senza titolo</title>\n<link href=\"stile.css\" rel=\"stylesheet\" type=\"text/css\">\n\n<script src=\"js/jquery.js\"></script>\n\n<style type=\"text/css\">\n...\n</style>\n\n</head>\n\n<body>\n<script>\n$(li).css('background','#ff0000';)\n</script>\n<header><h1>Home page</h1></header>\n<nav>\n<ul>\n<li><a href=\"#\">Link 1</a></li><li><a href=\"#\">Link 2</a></li><li><a href=\"#\">Link 3</a></li>\n</ul>\n</nav>\n<article>\n<section>\n<h3>Titolo 1</h3>\n<p>Elemento da modificare</p>\n</section>\n<section>\n<h3>Titolo 1</h3>\n<p>Elemento da modificare</p>\n</section>\n<section>\n<h3>Titolo 1</h3>\n<p>Elemento da modificare</p>\n</section>\n</article>\n<Footer>\n<a href=\"mail.to:marco.capitano@hotmail.com\">Contatti</a>\n</Footer>\n</body>\n\n</html>",
+ "title": "pippo"
+}

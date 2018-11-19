@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://asx.domiplay.net:1935/rtplive/canal50.sdp/playlist.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

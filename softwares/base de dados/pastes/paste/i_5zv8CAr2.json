@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5zv8CAr2",
+ "pasteDate": "Feb 18, 2018, 12:22:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[   0.000001] Frontend <Info> citra_qt/main.cpp:CheckForUpdates:510: Update check started\n[   4.578869] Frontend <Info> citra_qt/main.cpp:OnUpdateFound:523: No updates found\n[  31.539682] Frontend <Info> citra_qt/main.cpp:BootGame:650: Citra starting...\n[  32.486435] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:488: GL_VERSION: 2.1.8787\n[  32.486541] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:489: GL_VENDOR: ATI Technologies Inc.\n[  32.486596] Render.OpenGL <Info> video_core/renderer_opengl/renderer_opengl.cpp:Init:490: GL_RENDERER: ATI Mobility Radeon HD 4650\n[  32.486662] Render <Error> video_core/video_core.cpp:Init:34: initialization failed !\n[  32.486719] Core <Critical> core/core.cpp:Load:108: Failed to initialize system (Error 9)!",
+ "title": ""
+}

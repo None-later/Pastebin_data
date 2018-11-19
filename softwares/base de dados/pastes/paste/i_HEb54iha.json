@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HEb54iha",
+ "pasteDate": "Feb 12, 2018, 5:26:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public class Clase\n            {\n                public int Id{ get; set; }\n                public string Nombre{ get; set; }\n\n                public List<AlumnoClase> AlumnosClases{ get; set; }\n            }\n\n    public class Alumno\n                {\n                    public int Id{ get; set; }\n                    public string Nombre{ get; set; }\n\n                    public List<AlumnoClase> AlumnosClases{ get; set; }\n                }\n\n// Entidad Relacin\npublic class AlumnoClase\n        {\n            public int AlumnoId { get; set; }\n            public int ClaseId { get; set; }\n\n            public Alumno Alumno { get; set; }\n            public Clase Clase{ get; set; }\n\n            public string OtraColumna{ get; set; }\n        }\n\n// FluentApi\nprotected override void OnModelCreating(DbModelBuilder modelBuilder){\n    modelBuilder.Entity<AlumnoClase>().HasKey(k => new { k.AlumnoId, k.ClaseId});\n}",
+ "title": ""
+}

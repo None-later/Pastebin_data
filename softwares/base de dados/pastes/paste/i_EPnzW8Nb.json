@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "EPnzW8Nb",
+ "pasteDate": "Feb 12, 2018, 11:53:05 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "self.DB = {\n            'drivername': 'oracle',\n            'host': url,\n            'port': port,\n            'username': username,\n            'password': password,\n            'database': dbname\n        }\n        _engine = create_engine(URL(**self.DB))\n\n        self.connection = _engine.connect()\n\t\ncx_Oracle.DatabaseError: ORA-12170: TNS:Connect timeout occurred",
+ "title": ""
+}

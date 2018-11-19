@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_email",
+  "lg_it"
+ ],
+ "key": "BDfN9Lp1",
+ "pasteDate": "Feb 11, 2018, 10:30:29 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "<a href=\"mailto:email@foo.com\">email@foo.com</a>",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "SELECT CAST(COUNT(*) AS NVARCHAR(23)) FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

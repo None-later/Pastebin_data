@@ -1,0 +1,5 @@
+{
+  "value": "function findIndexNode($type, $search, $childId \u003d NULL, $prevId \u003d NULL)",
+  "correct": false,
+  "jSonReason": "re_ast1"
+}

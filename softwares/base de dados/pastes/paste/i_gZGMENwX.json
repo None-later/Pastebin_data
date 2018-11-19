@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "gZGMENwX",
+ "pasteDate": "Feb 28, 2018, 11:12:13 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "dir1 \n    file1(1 2 3)\n    file2\n    file3 ....\ndir2\n    file1(4 5 6)\n    file3\n    file5 ....\n\t\nfiles=`ls dir1`\ncd dir2\nfiles=`ls $files 2>/dev/null`\nfor file in $files\ndo  cat ../dir1/$file >>$file\ndone",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "hceMvG4J",
+ "pasteDate": "Feb 26, 2018, 12:26:21 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#pragma once\n#define _CRT_SECURE_NO_WARNINGS\n#include <string.h>\n#include <iostream>\n#include <stdio.h.>\n\n\nusing namespace std;\n\nint main() {\n\tconst char * end = \"END\";\n\tchar str[81];\n\tchar str_without_spaces[81];\n\tchar str_reverse_without_spaces[81];\n\t\n\tdo {\n\t\t\n\t\t\n\t\tcout << \"Enter a word or words: \";\n\t\tcin.getline(str, sizeof(str));\n\t\tcout << \"You entered: \" << str << endl;\n\n\t\tchar* token;\n\n\t\t\n\t\t// get the first token\n\t\ttoken = strtok(str, \" \");\n\t\n\n\t\t/* walk through other tokens */\n\t\tint pos = 0;\n\t\tif (token == \"END\") {// supposed to end the program\n\n\t\t\treturn 0;\n\t\t}\n\t\twhile (token != NULL)\n\t\t{\n\n\t\t\tcout << \"my token : \" << token << endl;\n\t\t\tint tokenSize = strlen(token);\n\t\t\tcout << \"size of token: \" << tokenSize << endl;\n\t\t\tfor (size_t i = 0; i < strlen(token); i++)\n\t\t\t\tstr_without_spaces[pos + i] = token[i];\n\n\t\t\tpos += strlen(token);\n\t\t\ttoken = strtok(NULL, \" \");\n\t\t}\n\t\tstr_without_spaces[pos] = '\\0';\n\t\tcout << \"without spaces : \" << str_without_spaces << endl;\n\t\tcout << \"without spaces length: \" << strlen(str_without_spaces) << endl;\n\n\t\tfor (size_t i = 0; i < strlen(str_without_spaces); i++) {\n\t\t\tstr_reverse_without_spaces[i] = str_without_spaces[strlen(str_without_spaces) - i - 1];\n\t\t\tstr_reverse_without_spaces[i + 1] = '\\0';\n\n\t\t\tcout << \"reverse str without spaces : \" << str_reverse_without_spaces << endl;\n\t\t}\n\n\t\tfor (size_t i = 0; i < strlen(str_without_spaces); i++) {\n\t\t\t\n\t\t\tif (str_without_spaces[i] != str_reverse_without_spaces[i]) {\n\t\t\t\tif (str == end) {\n\t\t\t\t\treturn 0;\n\n\t\t\t\t}\n\t\t\t\n\t\t\tcout << \"It is not a palindrome \\n\";\n\t\t\tbreak;\n\t\t\t}\n\n\t\t\tif (str_without_spaces[i] = str_reverse_without_spaces[i]) {\n\t\t\t\tcout << \"Its a palindrome \\n\";\n\t\t\t\tbreak;\n\t\t\t\tsystem(\"pause\");\n\t\t\t\t\n\t\t\t}\n\t\t\t\n\t\t\tbreak;\n\n\t\t}\n\t\tcontinue;\n\t\t// must a palindrome\n\t} while (true);\n\n}",
+ "title": "Lab 6"
+}

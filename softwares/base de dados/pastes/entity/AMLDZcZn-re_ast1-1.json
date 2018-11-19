@@ -1,0 +1,5 @@
+{
+  "value": "Function(\"OnPlayerCommandText\", \"is\", playerid, \"/cpanel\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

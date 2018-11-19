@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_ipv4",
+  "lg_en"
+ ],
+ "key": "9NhFNMh9",
+ "pasteDate": "Feb 20, 2018, 6:14:33 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "#!/bin/bash\n#\n# Generate the pxelinux config for new systems.\n#\n \n#set -e\n \n \nusage(){\n        cat << EOF\n        Usage: $0 --host=<hostname> --ip=<ip> --netmask=<netmask> --gateway=<gateway>\n        Options:\n        --host=<hostname>               Name for new host\n        --ip=<ip>                       ip for new host\n        --netmask=<netmask>             Netmask for new host\n        --gateway=<gateway>             Gateway for new host\n        --i386                          Set the arch to i386, default is amd64\n        --verbose                       Verbose mode. Silent without this\n        --help                          Print this help\nEOF\n        exit 1\n}\n \nif [ $# -lt 4 ]; then\n  usage\nfi\n \nhost=\"\"\nip=\"\"\nnetmask=\"\"\ngateway=\"\"\nverbose=\"\"\narch=\"\"\n \nSHORTOPTS=\"H:i:n:g:vhI\"\nLONGOPTS=\"host:,ip:,netmask:,gateway:,i386,verbose,help\"\nOPTS=$(getopt -o $SHORTOPTS --long $LONGOPTS -n \"$progname\" -- \"$@\")\n \nwhile [ $# -gt 0 ]; do\n  case $1 in\n    -H|--host)\n      host=\"$2\"\n      shift 2;;\n    -i|--ip)\n      ip=\"$2\"\n      shift 2;;\n    -n|--netmask)\n      netmask=$2\n      shift 2;;\n    -g|--gateway)\n      gw=$2\n      shift 2;;\n    -v|--verbose)\n      verbose=\"true\"\n      shift;;\n    -I|--i386)\n      arch=\".i386\"\n      shift;;\n    -h|--help)\n      usage;;\n    --)\n      shift\n      break;;\n    *)\n      usage;; \n  esac\ndone    \n \nif [[ -z \"$host\" || -z \"$ip\" || -z \"$netmask\" || -z \"$gw\" ]]; then\n  usage\nfi\n \nif [ \"$verbose\" = \"true\" ]; then\n  set -x\nfi\n \n# Templates to generate configs for new hosts\nPXETEMPLATE=/var/lib/tftpboot/hardy${arch}/pxelinux.cfg/default.template\nSEEDTEMPLATE=/var/www/preseed/hardy-preseed.template\nNAMESERVERS=\"10.1.0.52 10.1.0.51 10.1.0.84\"\nPRESEED=\"/var/www/preseed/hardy-preseed-${host}.txt\"\n \nfor i in $(echo ${ip}| sed -e \"s/\\./ /g\"); do \n   HEXIP=${HEXIP}`printf '%02X' $i`\ndone\n \nsed \"s/_HOST_/${host}/g\" $PXETEMPLATE > /var/lib/tftpboot/hardy${arch}/pxelinux.cfg/$HEXIP\n \nsed \"s/_HOST_/${host}/\" $SEEDTEMPLATE > $PRESEED\nsed -i \"s/_IP_/${ip}/\" $PRESEED\nsed -i \"s/_NETMASK_/${netmask}/\" $PRESEED\nsed -i \"s/_GW_/${gw}/\" $PRESEED",
+ "title": ""
+}

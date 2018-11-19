@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VRM3QJcP",
+ "pasteDate": "Feb 11, 2018, 10:41:43 PM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "./citra-qt : [   0.000000] Frontend <Error> \ncitra_qt/game_list.cpp:PopulateAsync:328: Could not find game list folder at \nC:/Users/RICHIE/Documents/Citra Pokemon Speed V6/Rom\nEn lnea: 1 Carcter: 1\n+ ./citra-qt 2>log.txt\n+ ~~~~~~~~~~~~~~~~~~~~\n    + CategoryInfo          : NotSpecified: ([   0.000000] F...on Speed V6/R \n   om:String) [], RemoteException\n    + FullyQualifiedErrorId : NativeCommandError\n \n[   0.948926] Frontend <Warning> citra_qt/main.cpp:CheckForUpdates:416: \nUnable to start check for updates\n[   4.662610] Frontend <Info> citra_qt/main.cpp:BootGame:554: Citra \nstarting...\n[   4.834320] Service.FS <Warning> \ncore/file_sys/ncch_container.cpp:LoadOverrides:240: Loaded NCCH C:\\Users\\Usua\nrio\\AppData\\Roaming/Citra/nand/00000000000000000000000000000000/title/0004009\nb/00010202/content/00000000.app is tainted, application behavior may not be \nas expected!\n[   4.838798] Service.FS <Warning> \ncore/file_sys/ncch_container.cpp:LoadOverrides:240: Loaded NCCH C:\\Users\\Usua\nrio\\AppData\\Roaming/Citra/nand/00000000000000000000000000000000/title/0004009\nb/00010402/content/00000000.app is tainted, application behavior may not be \nas expected!\n[   4.844285] Service.FS <Warning> \ncore/file_sys/ncch_container.cpp:LoadOverrides:240: Loaded NCCH C:\\Users\\Usua\nrio\\AppData\\Roaming/Citra/nand/00000000000000000000000000000000/title/000400d\nb/00010302/content/00000000.app is tainted, application behavior may not be \nas expected!\n[   4.861879] Render.OpenGL <Info> \nvideo_core/renderer_opengl/renderer_opengl.cpp:Init:488: GL_VERSION: 1.1.0\n[   4.862176] Render.OpenGL <Info> \nvideo_core/renderer_opengl/renderer_opengl.cpp:Init:489: GL_VENDOR: \nMicrosoft Corporation\n[   4.862192] Render.OpenGL <Info> \nvideo_core/renderer_opengl/renderer_opengl.cpp:Init:490: GL_RENDERER: GDI \nGeneric\n[   4.862214] Render <Error> video_core/video_core.cpp:Init:35: \ninitialization failed !\n[   4.862229] Core <Critical> core/core.cpp:Load:106: Failed to initialize \nsystem (Error 9)!",
+ "title": ""
+}

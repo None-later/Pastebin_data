@@ -1,0 +1,5 @@
+{
+  "value": "Function.prototype.apply.call(h,b,[l,k].concat(n)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function \u0027std::array\u003cgvr_vec2f, 3u\u003e gvr::GvrApi::ComputeDistortedPoint(gvr::Eye, const Vec2f\u0026)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

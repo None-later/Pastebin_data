@@ -1,0 +1,5 @@
+{
+  "value": "function\"\u003d\u003dtypeof CustomEvent)try{return new CustomEvent(\"unhandledRejection\")",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_inject",
+  "lg_fr"
+ ],
+ "key": "RPwG3Bti",
+ "pasteDate": "Feb 9, 2018, 1:20:17 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "def get_mail_body(mail)\n  parts = mail.body.parts\n\n  # parts\n  if parts.map(&:multipart?).inject(:|)\n    multipart_mails = parts.find(&:multipart?).parts \n  else\n    multipart_mails = parts\n  end\n\n  # \n  multipart_mails.find{|part| part.content_type.match 'text/plain'}.body.raw_source\nend\n\nmail = HogeMailer.send_mail.deliver\nbody = get_mail_body(mail)",
+ "title": ""
+}

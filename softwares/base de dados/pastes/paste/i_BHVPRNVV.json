@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en",
+  "re_ast2"
+ ],
+ "key": "BHVPRNVV",
+ "pasteDate": "Feb 24, 2018, 6:18:17 PM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "Installing for i386-pc platform.\nInstallation finished. No error reported.\nInstalling for i386-pc platform.\ngrub-install: warning: File system `ext2' doesn't support embedding.\ngrub-install: warning: Embedding is not possible.  GRUB can only be installed in this setup by using blocklists.  However, blocklists are UNRELIABLE and their use is discouraged..\nInstallation finished. No error reported.\nGenerating grub configuration file ...\n\t\nwarning: File system `ext2' doesn't support embedding. \nwarning: Embedding is not possible.  GRUB can only be installed in this setup by using blocklists.  However, blocklists are UNRELIABLE and their  use is discouraged.. \nerror: will not proceed with blocklists.",
+ "title": ""
+}

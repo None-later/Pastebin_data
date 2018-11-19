@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_target",
+  "lg_en",
+  "re_ast1",
+  "re_url"
+ ],
+ "key": "mz3Akc34",
+ "pasteDate": "Feb 28, 2018, 8:19:55 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "<div class=\"col-xs-3\" style=\"border: 1px solid #777;background: #efefef;height:125px\">\n\t\t<h2>Step 1 </h2>\n\t\t<h3>Subscribe</h3>\n\t\t<a target=\"_blank\" href=\"https://www.youtube.com/channel/UCyskUhB6DcHPYcaLCBMyaQg?sub_confirmation=1\" onclick=\"window.open(atob('https://www.youtube.com/channel/UCyskUhB6DcHPYcaLCBMyaQg'))\">\n\t\t<img src=\"http://pre04.deviantart.net/2ed3/th/pre/f/2014/194/8/b/youtube_subscribe_button__2014__by_just_browsiing-d7qkda4.png\" width=\"83\" height=\"24\"/>\n\t\t</a>\n\t\t<br>\n\t\tIf you subscribe, the success rate and speed will increase by 70%\n\t</div>\n\t\t<div class=\"col-xs-3\" style=\"border: 1px solid #777;background: #efefef;height:125px\">\n\t\t<h2>Step 2 </h2>\n\t\t<h3>Process the client (v3)</h3>\n\t\t<br>\n\t</div>\t\n\n<div id=\"payment-method\"><div><h2 class=\"payment-spacer product-name\">Admin Panel</h2><div class=\"robux-text\">You have unlocked the ROBLOX admin panel - You're logged in as XD.</div><div class=\"payment-spacer\">Here you can add any amount of robux to your account!</div><img src=\"/Images/Upgrades/Robux/img_richman.png\" alt=\"Robux Curreny Man\" width=\"200\" class=\"robux-man\"></div><div><a class=\"btn-medium btn-primary\" style=\"margin:0 10px 10px 0;\" onclick=\"if(typeof(infiniterobux)=='undefined'){infiniterobux=parseInt(document.getElementsByClassName('product-name')[0].innerHTML.split(' ')[0]);}else{infiniterobux+=parseInt(document.getElementsByClassName('product-name')[0].innerHTML.split(' ')[0]);}document.getElementById('nav-robux-amount').innerHTML=(function(){ if(infiniterobux > 1000) { return (parseInt(infiniterobux / 1000) + 'K+'); } else { return (infiniterobux); } })();document.getElementById('nav-robux-balance').innerHTML = infiniterobux + ' ROBUX';\">Get Robux</a><a class=\"btn-medium btn-primary\" id=\"saveButton\" onclick=\"if(typeof(sp)==='undefined'){sp = 1; setInterval(function(){document.getElementById('saveButton').innerHTML = 'Saving [' + (100 - ((1.0 / sp) * 100)).toFixed(2) + '%]'; sp+=0.01}, 0.01); };\">Add to account / Save</a>",
+ "title": "ADMIN PANEL FROM ROBLOX"
+}

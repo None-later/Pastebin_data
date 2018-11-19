@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Qijjrxzn",
+ "pasteDate": "Feb 27, 2018, 10:44:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "constructor(private http: HttpClient) { \n    http.get('http://localhost:8080/resource').subscribe(data => this.greeting = data);\n}\n\t\n@RequestMapping(\"/resource\")\n    public Map<String,Object> home() {\n        Map<String,Object> model = new HashMap<String,Object>();\n        model.put(\"id\", UUID.randomUUID().toString());\n        model.put(\"content\", \"Hello World\");\n        return model;\n}\n\t\nclass WebAppConfig extends WebMvcAutoConfigurationAdapter {\n\n  @Value(\"${cors.origin}\")\n  private val corsOrigin: String = \"all\"\n\n  override def addCorsMappings(registry: CorsRegistry): Unit = {\n    if(corsOrigin==\"all\"){\n      registry.addMapping(\"/**\")\n    }else{\n      registry.addMapping(\"/**\").allowedOrigins(corsOrigin.split(\",\"):_*)\n    }\n  }\n\n}\n\t\n@EnableWebSecurity\n@Configuration\npublic class WebSecurityConfig extends WebSecurityConfigurerAdapter {\n\n    @Override\n    protected void configure(HttpSecurity http) throws Exception {\n        http.cors();\n    }\n\n    @Bean\n    CorsConfigurationSource corsConfigurationSource() {\n        UrlBasedCorsConfigurationSource source = new\n                UrlBasedCorsConfigurationSource();\n        source.registerCorsConfiguration(\"/**\", new CorsConfiguration().applyPermitDefaultValues());\n        return source;\n    }\n}\n\t\n@CrossOrigin(origins = \"*\")\n@RequestMapping(\"/resource\")\n    public Map<String,Object> home() {\n        Map<String,Object> model = new HashMap<String,Object>();\n        model.put(\"id\", UUID.randomUUID().toString());\n        model.put(\"content\", \"Hello World\");\n        return model;\n}\n\t\npublic class CorsFilter implements Filter {\n\n@Override\npublic void doFilter(ServletRequest req, ServletResponse res, FilterChain chain) throws IOException, ServletException {\n    final HttpServletResponse response = (HttpServletResponse) res;\n    response.setHeader(\"Access-Control-Allow-Origin\", \"*\");\n    response.setHeader(\"Access-Control-Allow-Methods\", \"POST, PUT, GET, OPTIONS, DELETE\");\n    if (\"OPTIONS\".equalsIgnoreCase(((HttpServletRequest) req).getMethod())) {\n        response.setStatus(HttpServletResponse.SC_OK);\n    } else {\n        chain.doFilter(req, res);\n    }\n}",
+ "title": ""
+}

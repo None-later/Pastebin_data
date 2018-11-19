@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_nl"
+ ],
+ "key": "nrFnQ3Pe",
+ "pasteDate": "Feb 8, 2018, 2:37:40 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "CREATE TABLE IF NOT EXISTS tbldogembed\n(    \n    dogname     VARCHAR(100),\n    dogbreed    VARCHAR(100),\n    dogimage    BLOB,\n    dogembed_id INT(6) NOT NULL AUTO_INCREMENT,\n    PRIMARY KEY (dogembed_id)\n)ENGINE=InnoDB",
+ "title": ""
+}

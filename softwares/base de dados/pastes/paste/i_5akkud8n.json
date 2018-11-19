@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5akkud8n",
+ "pasteDate": "Feb 8, 2018, 12:44:01 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "public override void ItemUpdated(SPItemEventProperties properties)\n        {\n            base.ItemUpdated(properties);\n            var abcd = properties.AfterProperties[\"OrderInternalStage2\"];\n            var abcd2 = properties.ListItem[\"OrderInternalStage2\"];",
+ "title": ""
+}

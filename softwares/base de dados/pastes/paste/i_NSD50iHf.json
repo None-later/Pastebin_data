@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "NSD50iHf",
+ "pasteDate": "Feb 21, 2018, 6:59:56 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\t\tpublic Coord getNearestTileCoord(int raduis, int type){\n\t\t\tCoord ret = null;\n\t\t\tfor (int step =1 ; step < raduis; step++) {\n\t\t\t\tfor (int i = 0; i < step; i++) {\n\t\t\t\t\tint x, y;\n\t\t\t\t\tx = i - step; y = i;\n\t\t\t\t\tif(JSBotUtils.tileType(x, y) == type){\n\t\t\t\t\t\tret = new Coord(x, y);\n\t\t\t\t\t\traduis += 2;\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\t\t\t\t\tx = i; y = step - i;\n\t\t\t\t\tif(JSBotUtils.tileType(x, y) == type){\n\t\t\t\t\t\tret = new Coord(x, y);\n\t\t\t\t\t\traduis += 2;\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\t\t\t\t\tx = step - i; y = -i;\n\t\t\t\t\tif(JSBotUtils.tileType(x, y) == type){\n\t\t\t\t\t\tret = new Coord(x, y);\n\t\t\t\t\t\traduis += 2;\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\t\t\t\t\tx = -i; y = i - step;\n\t\t\t\t\tif(JSBotUtils.tileType(x, y) == type){\n\t\t\t\t\t\tret = new Coord(x, y);\n\t\t\t\t\t\traduis += 2;\n\t\t\t\t\t\tcontinue;\n\t\t\t\t\t}\n\t\t\t\t}\n\t\t\t}\n\t\t\treturn ret;\n\t\t}",
+ "title": ""
+}

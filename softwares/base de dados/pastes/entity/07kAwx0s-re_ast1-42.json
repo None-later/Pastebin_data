@@ -1,0 +1,5 @@
+{
+  "value": "function\"\u003d\u003dtypeof require\u0026\u0026require,u\u003d0;u\u003co.length;u++)r(o[u])",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cDrGDR3G",
+ "pasteDate": "Feb 21, 2018, 2:21:30 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections;\nusing System.Collections.Generic;\nusing System.Linq;\nusing UnityEngine;\n\npublic class TouchInput : MonoBehaviour\n{\n    public float TouchSpeed = 5f;\n    private enum Direction\n    {\n        Left, Right, Neutral\n    }\n\n    private Direction movement = Direction.Neutral;\n    private List<Touch> listOfTouches = new List<Touch>();\n    public float deadzone = 0.5f;\n\n\t// Use this for initialization\n\tvoid Start ()\n    {\n\t\t\n\t}\n\t\n\t// Update is called once per frame\n\tvoid Update ()\n    {\n        for (int i = 0; i < Input.touchCount; i++)\n        {\n            handleInput(i);\n        }\n\t}\n\n    private void handleInput(int i)\n    {\n        switch (Input.GetTouch(i).phase)\n        {\n            case TouchPhase.Began:\n                listOfTouches.Add(Input.GetTouch(i));\n               // Debug.Log(\"Finger added \" + listOfTouches.Count);\n                break;\n\n            case TouchPhase.Ended:\n                listOfTouches.RemoveAll(touch => touch.fingerId == Input.GetTouch(i).fingerId);\n                //movement = Direction.Neutral;\n               // Debug.Log(\"Finger removed \" + listOfTouches.Count);\n                break;\n            case TouchPhase.Moved:\n                if (Vector2.SqrMagnitude(Input.GetTouch(i).deltaPosition) > deadzone)\n                {\n                    if (Input.GetTouch(i).position.x >\n                        listOfTouches.Find(touch => touch.fingerId == Input.GetTouch(i).fingerId).position.x)\n                    {\n\n                        movement = Direction.Right;\n                        transform.Translate(Vector2.right * TouchSpeed * Time.deltaTime);\n                        //Debug.Log(\"Right Movement Detected\");\n                    }\n                    else\n                    {\n                        movement = Direction.Left;\n                        transform.Translate(Vector2.left * TouchSpeed * Time.deltaTime);\n                        //Debug.Log(\"Left Movement Detected\");\n                    }\n                }\n                break;\n        }\n    }\n}",
+ "title": ""
+}

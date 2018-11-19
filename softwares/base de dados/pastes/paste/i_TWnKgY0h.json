@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TWnKgY0h",
+ "pasteDate": "Feb 28, 2018, 2:00:14 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "obj.registerMethod(obj.runtime.newJavaMethod(\"Returns a text inspection of the object\", new TypeCheckingJavaMethod.WithNoArguments(\"inspect\", obj.runtime.symbol) {\n                @Override\n                public Object activate(IokeObject method, Object on, List<Object> args, Map<String, Object> keywords, IokeObject context, IokeObject message) throws ControlFlow {\n                    return method.runtime.newText(Symbol.getInspect(on));\n                }\n            }));",
+ "title": ""
+}

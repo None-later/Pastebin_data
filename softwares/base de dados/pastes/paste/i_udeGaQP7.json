@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "udeGaQP7",
+ "pasteDate": "Feb 28, 2018, 5:52:34 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include<stdio.h>\n#include<string.h>\nchar *strstr(char *a,char *b);\nint main()\n{\n    char a[30],b[30],*c;\n    gets(a);\n    gets(b);\n    c=strstr(a,b);\n    puts(c);\n}\nchar *strstr(char *p,char *q)\n{\n    char *a=p,*b=q,*c,*m,*n;\n    int len1=strlen(a);\n    int len2=strlen(b);\n    int i,j,flag;\n    for(i=0;i<len1;i++,a++)\n    {\n        if(*a!=*b)\n        continue;\n        flag=1;\n        m=a;\n        n=b;\n        for(j=0;j<len2;j++,m++,n++)\n        {\n            if(*m!=*n)\n            {\n                flag=0;\n                break;\n            }\n        }\n        if(flag)\n        return a;\n    }\n    return 0;\n}",
+ "title": ""
+}

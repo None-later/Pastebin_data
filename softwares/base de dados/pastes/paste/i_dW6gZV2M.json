@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "dW6gZV2M",
+ "pasteDate": "Feb 8, 2018, 8:47:07 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import argparse\nimport functools\nimport inspect\n\n\nclass ArgParser(argparse.ArgumentParser):\n    def __init__(self, *args, **kwargs):\n        super().__init__(*args, **kwargs)\n        self.__subparsers = None\n\n    @property\n    def subparsers(self):\n        if self.__subparsers is None:\n            self.__subparsers = self.add_subparsers()\n        return self.__subparsers\n\n    def command(self, func=None, **sub_command_options):\n\n        def decorator(sub_command_func):\n            sub_command_sig = inspect.signature(sub_command_func)\n\n            @functools.wraps(sub_command_func)\n            def wrapped(args):\n\n                final_args = []\n                final_kwargs = {}\n\n                if 'args' in sub_command_sig.parameters:\n                    final_kwargs['args'] = args\n\n                for k in sub_command_sig.parameters:\n                    if hasattr(args, k):\n                        final_kwargs[k] = getattr(args, k)\n\n                return sub_command_func(*final_args, **final_kwargs)\n\n            parser_name = sub_command_options.get('name', sub_command_func.__name__)\n            parser = self.subparsers.add_parser(parser_name)\n            parser.set_defaults(func=wrapped)\n            return parser\n\n        if func is None:\n            return decorator\n        else:\n            return decorator(func)\n\n\narg_parser = ArgParser()\n\n\n@arg_parser.command(name='list')\ndef list_command(x, y):\n    print('listing x={}, y={}'.format(x, y))\n\n\nlist_command.add_argument('--x')\nlist_command.add_argument('--y')\n\n\n@list_command.command(name='all')\ndef list_all_command(args):\n    print('listing all {}'.format(args))\n\n\n# arg_parser.parse_args(args=['list', '--help'])\n\nargs = arg_parser.parse_args(args=['list', '--x', '5', '--y', '22'])\nargs.func(args)\n\nargs = arg_parser.parse_args(args=['list', 'all'])\nargs.func(args)",
+ "title": ""
+}

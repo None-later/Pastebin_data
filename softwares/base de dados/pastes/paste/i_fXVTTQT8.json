@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "re_java",
+  "lg_en"
+ ],
+ "key": "fXVTTQT8",
+ "pasteDate": "Feb 10, 2018, 5:53:06 AM",
+ "relevancy": -2.0,
+ "relevant": false,
+ "text": "package PIK3.MoviesTask;\n\nimport java.io.FileInputStream;\nimport java.io.IOException;\n\npublic class Movie\n{\n    private String name;\n    private int length;\n    private FileInputStream trailer;\n\n    Movie(String name, int length, FileInputStream trailer)\n    {\n        this.name = name;\n        this.setLength(length);\n        this.trailer = trailer;\n    }\n\n    void setLength(int length)\n    {\n        if (length < 3600)\n            throw new IllegalArgumentException(\"Movie is too short\\n\");\n        else\n            this.length = length;\n    }\n\n    public String getName()\n    {\n        return this.name;\n    }\n\n    public int getLength()\n    {\n        return this.length;\n    }\n\n    public FileInputStream getTrailer()\n    {\n        return this.trailer;\n    }\n\n    static boolean equalTrailers(FileInputStream trailer1, FileInputStream trailer2)\n            throws IOException\n    {\n        assert trailer1 != null && trailer2 != null : \"Error! \" +\n                \"All streams \" + \"must be initialized!\";\n        if (trailer1.equals(trailer2))\n            return true;\n\n        int ch1, ch2;\n        while ((ch1 = trailer1.read()) != -1)\n        {\n            ch2 = trailer2.read();\n            if (ch1 != ch2)\n                return false;\n        }\n        return true;\n    }\n\n    static int compareMovieLengths(Movie movie1, Movie movie2)\n    {\n        if (movie1.getLength() > movie2.getLength())\n            return -1;\n        if (movie1.getLength() < movie2.getLength())\n            return 1;\n        return 0;\n    }\n\n    int compareWith(Movie otherMovie)\n    {\n        return compareMovieLengths(this, otherMovie);\n    }\n\n    @Override\n    public String toString()\n    {\n        int hours = (this.getLength() - (this.getLength() % 3600)) / 3600;\n        int mins = (this.getLength() % 3600) / 60;\n\n        return String.format(\"%s, length: %dh.%dm\",\n                this.getName(), hours, mins);\n    }\n\n}",
+ "title": ""
+}

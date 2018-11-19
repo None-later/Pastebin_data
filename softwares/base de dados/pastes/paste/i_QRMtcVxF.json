@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "QRMtcVxF",
+ "pasteDate": "Feb 18, 2018, 5:57:07 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "# Use the built-in version of scandir/walk if possible, otherwise\n# use the scandir module version\nfrom scandir import scandir, walk\nfrom multiprocessing import Pool\n\nimport fnmatch\nimport os\n\n\ndef find_hostconfcli(start_point):\n    for root, dirnames, filenames in walk(start_point):\n        for file in filenames:\n            if fnmatch.fnmatch(file, \"hostconfcli*\"):\n                print os.path.join(root, file)\n\n\ndef find_hostconfcli2(start_point):\n    for directory in os.listdir(start_point):\n        if os.path.isdir(os.path.join(start_point, directory)):\n            if any(fnmatch.fnmatch(directory, pattern) for pattern in [\"execu*\", \"TestCases*\", \"*data_collection*\",\"*auto_triage__Unity*\", \"spa\", \"cmd_output*\", \"*service_data*\", \"OB-*\", \"CCT_*\"]):\n                #print directory\n                if fnmatch.fnmatch(directory, \"cmd_output*\"):\n                    for filename in os.listdir(os.path.join(start_point, directory)):\n                        if fnmatch.fnmatch(filename, \"hostconfcli*\"):\n                            print os.path.join(start_point, directory, filename)\n                            return\n                else:\n                    find_hostconfcli2(os.path.join(start_point, directory))\n\n#def dump_zone_config(filename):\n#    print filename, \"\\n\"\n#    print \"zone configured like this\\n\"\n\nif __name__ == \"__main__\":\n    #for ar in os.listdir(\"./\"):\n    #    find_hostconfcli2(ar)\n    pool = Pool(40)\n    pool.map(find_hostconfcli2, os.listdir(\"./\"))",
+ "title": ""
+}

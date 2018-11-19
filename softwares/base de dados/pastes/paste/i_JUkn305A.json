@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_pl"
+ ],
+ "key": "JUkn305A",
+ "pasteDate": "Feb 21, 2018, 9:42:16 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": " get '/:permalink' do\n    # dopasowany wzorzec bedzie w params[:permalink]\n  end",
+ "title": ""
+}

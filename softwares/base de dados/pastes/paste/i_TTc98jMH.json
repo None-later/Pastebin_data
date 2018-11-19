@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "TTc98jMH",
+ "pasteDate": "Feb 25, 2018, 10:46:31 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "{\n        name  = 'work',\n        label = 'Job',\n        items = {\n        {label = \"Suspect : to go to the police\", type = \"anim\", data = {lib = \"random@arrests@busted\", anim = \"idle_c\"}},\n        {label = \"Fishing\", type = \"scenario\", data = {anim = \"world_human_stand_fishing\"}},\n        {label = \"Police : investigate\", type = \"anim\", data = {lib = \"amb@code_human_police_investigate@idle_b\", anim = \"idle_f\"}},\n        {label = \"Police : talk on the radio\", type = \"anim\", data = {lib = \"random@arrests\", anim = \"generic_radio_chatter\"}},\n        {label = \"Police : traffic\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_CAR_PARK_ATTENDANT\"}},\n        {label = \"Police : binoculars\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_BINOCULARS\"}},\n        {label = \"Agriculture : pick up\", type = \"scenario\", data = {anim = \"world_human_gardener_plant\"}},\n        {label = \"Mechanic : repair under vehicle\", type = \"scenario\", data = {anim = \"world_human_vehicle_mechanic\"}},\n        {label = \"Mechanic: repair the engine\", type = \"anim\", data = {lib = \"mini@repair\", anim = \"fixing_a_ped\"}},\n        {label = \"Medic : observer\", type = \"scenario\", data = {anim = \"CODE_HUMAN_MEDIC_KNEEL\"}},\n        {label = \"Taxi : talk to the customer\", type = \"anim\", data = {lib = \"oddjobs@taxi@driver\", anim = \"leanover_idle\"}},\n        {label = \"Taxi : give the bill\", type = \"anim\", data = {lib = \"oddjobs@taxi@cyi\", anim = \"std_hand_off_ps_passenger\"}},\n        {label = \"Grocer : Give the races\", type = \"anim\", data = {lib = \"mp_am_hold_up\", anim = \"purchase_beerbox_shopkeeper\"}},\n        {label = \"Bartender : serve a shot\", type = \"anim\", data = {lib = \"mini@drinking\", anim = \"shots_barman_b\"}},\n        {label = \"Journalist : Journalist: Take a picture\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_PAPARAZZI\"}},\n        {label = \"All trades : To take notes\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_CLIPBOARD\"}},\n        {label = \"All trades : Hammering\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_HAMMERING\"}},\n        {label = \"Tramp : To beg\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_BUM_FREEWAY\"}},\n        {label = \"Tramp : To look like a statue\", type = \"scenario\", data = {anim = \"WORLD_HUMAN_HUMAN_STATUE\"}},\n        }\n    },",
+ "title": ""
+}

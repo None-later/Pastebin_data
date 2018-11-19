@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CuFbAk0P",
+ "pasteDate": "Feb 21, 2018, 9:34:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class UserSettings(private val preferences: SharedPreferences) {\n\n    var userId: String?\n        get() = preferences.getString(KEY_USER_ID, null)\n        set(userId) = preferences.edit().putString(KEY_USER_ID, userId).apply()\n\n    var isAnalyticsEnabled: Boolean\n        get() = preferences.getBoolean(KEY_ANALYTICS_ENABLED, false)\n        set(enableAnalytics) = preferences.edit().putBoolean(KEY_ANALYTICS_ENABLED, enableAnalytics).apply()\n    \n    companion object {\n        private const val KEY_USER_ID = \"USER_ID\"\n        private const val KEY_ANALYTICS_ENABLED = \"ANALYTICS_ENABLED\"\n    }\n}",
+ "title": ""
+}

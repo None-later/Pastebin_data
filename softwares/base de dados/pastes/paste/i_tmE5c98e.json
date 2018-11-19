@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_es"
+ ],
+ "key": "tmE5c98e",
+ "pasteDate": "Feb 11, 2018, 3:56:05 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "q, r = div(x**2 + y, 2*x)\n\t\nq, r = div(x**2 + y, 2*y)",
+ "title": ""
+}

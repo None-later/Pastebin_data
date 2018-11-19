@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "cAUZZDEt",
+ "pasteDate": "Feb 25, 2018, 10:44:01 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "myobj = PointerProperty(name=\"My Obj\", type=bpy.types.Object)\n\t\nbpy.data.objects[0].MyPropGroup.myobj = bpy.data.objects[1]\n\t\nbpy.data.objects[0].MyPropGroup.myobj.select = False\nbpy.data.objects[0].MyPropGroup.myobj.hide_render = True\n\t\nbpy.data.materials[0].MyPropGroup.mynode = bpy.data.materials[0].node_tree.nodes['MyNode']\n\t\nbpy.data.materials[0].MyPropGroup.mynode.mute = True\n\t\nmynode = PointerProperty(name=\"My Node\", type=bpy.types.Node)\nmynode = PointerProperty(name=\"My Node\", type=bpy.types.NodeGroup)\nmynode = PointerProperty(name=\"My Node\", type=bpy.types.ShaderNode)\nmynode = PointerProperty(name=\"My Node\", type=bpy.types.ShaderNodeGroup)\n\t\nValueError: bpy_struct \"MyPropertyGroup\" registration error: mynode could not register\n\t\nmynode = PointerProperty(name=\"My Node\", type=bpy.types.ShaderNodeTree)",
+ "title": ""
+}

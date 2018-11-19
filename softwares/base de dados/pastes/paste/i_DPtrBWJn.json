@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_url",
+  "lg_en"
+ ],
+ "key": "DPtrBWJn",
+ "pasteDate": "Feb 19, 2018, 2:44:18 PM",
+ "relevancy": 5.0,
+ "relevant": false,
+ "text": "%{      \n  \"_id\" => \"exampleaaaaaaaaaaaaaaaaaaaaaaaaa\",\n  \"event\" => \"click\",\n  \"ip\" => \"127.0.0.1\",\n  \"location\" => %{\n    \"city\" => \"Oklahoma City\",\n    \"country\" => \"United States\",\n    \"country_short\" => \"US\",\n    \"latitude\" => 35.4675598145,\n    \"longitude\" => -97.5164337158,\n    \"postal_code\" => \"73101\",\n    \"region\" => \"Oklahoma\",\n    \"timezone\" => \"-05:00\"\n  },\n  \"msg\" => %{\n    \"_id\" => \"exampleaaaaaaaaaaaaaaaaaaaaaaaaa\",\n    \"_version\" => \"exampleaaaaaaaaaaaaaaa\",\n    \"clicks\" => [%{\"ts\" => 1365111111, \"url\" => \"http://mandrill.com\"}],\n    \"email\" => \"example.webhook@mandrillapp.com\",\n    \"metadata\" => %{\"user_id\" => 111},\n    \"opens\" => [%{\"ts\" => 1365111111}],\n    \"sender\" => \"example.sender@mandrillapp.com\",\n    \"state\" => \"sent\",\n    \"subject\" => \"This an example webhook message\",\n    \"tags\" => [\"webhook-example\"],\n    \"ts\" => 1365109999\n  },\n  \"ts\" => 1519061856,\n  \"url\" => \"http://mandrill.com\",\n  \"user_agent\" => \"Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10.6; en-US; rv:1.9.1.8) Gecko/20100317 Postbox/1.1.3\",\n  \"user_agent_parsed\" => %{\n    \"mobile\" => false,\n    \"os_company\" => \"Apple Computer, Inc.\",\n    \"os_company_url\" => \"http://www.apple.com/\",\n    \"os_family\" => \"OS X\",\n    \"os_icon\" => \"http://cdn.mandrill.com/img/email-client-icons/macosx.png\",\n    \"os_name\" => \"OS X 10.6 Snow Leopard\",\n    \"os_url\" => \"http://www.apple.com/osx/\",\n    \"type\" => \"Email Client\",\n    \"ua_company\" => \"Postbox, Inc.\",\n    \"ua_company_url\" => \"http://www.postbox-inc.com/\",\n    \"ua_family\" => \"Postbox\",\n    \"ua_icon\" => \"http://cdn.mandrill.com/img/email-client-icons/postbox.png\",\n    \"ua_name\" => \"Postbox 1.1.3\",\n    \"ua_url\" => \"http://www.postbox-inc.com/\",\n    \"ua_version\" => \"1.1.3\"\n  }\n}\n\t\nmerge_maps = get_in_attempt(\n  payload, [\"msg\", \"clicks\"]\n) ++ get_in_attempt(\n  payload, [\"msg\", \"opens\"]\n)\nmain_map = %{\n  \"ip\" => get_in(payload, [\"ip\"]),\n  \"city\" => get_in(payload, [\"location\", \"city\"]),\n  \"user_agent\" => get_in(payload, [\"user_agent\"]),\n  \"event_type\" => get_in(payload, [\"event\"])\n}\n\nnew_maps = Enum.map(merge_maps, fn elem ->\n  Map.update!(elem, \"ts\", &DateTime.from_unix!/1)\nend)\n|> Enum.map(fn elem ->\n  Map.merge(elem, main_map)\nend)",
+ "title": ""
+}

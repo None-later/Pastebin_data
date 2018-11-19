@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "y2dnnaYL",
+ "pasteDate": "Feb 21, 2018, 8:02:00 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Given /I am on the edit make page for \"(\\w+)\"/ do |name|\n  @id = Make.find_by_name(name).id\n  visits edit_make_url(@id)\nend\n\nWhen /its name should be updated to \"(\\w+)\"/ do |name|\n  Make.find(@id).name.should == name\nend",
+ "title": ""
+}

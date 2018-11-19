@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_attack"
+ ],
+ "key": "tGmHBVFX",
+ "pasteDate": "Feb 24, 2018, 5:19:21 PM",
+ "relevancy": 6.0,
+ "relevant": false,
+ "text": "# SimC Addon 1.9.1\n\nhunter=\"Melconn\"\nlevel=110\nrace=tauren\nregion=eu\nserver=frostwolf\nrole=attack\nprofessions=leatherworking=89/skinning=800\ntalents=2111113\nspec=beast_mastery\nartifact=56:0:0:0:0:1095:4:1636:1:882:1:1336:1:1520:22:881:1:880:1:879:1:878:1:1368:1:1519:1:877:1:876:1:875:4:874:4:873:4:872:4:871:4:870:4:869:4:868:4:1518:1:1517:4\ncrucible=0/0/0\n\nhead=,id=152423,bonus_id=3611/1492/3336\nneck=,id=151966,enchant_id=5890,bonus_id=3610/1477/3336\nshoulder=,id=152135,enchant_id=5441,bonus_id=3610/1472/3528\nback=,id=152131,enchant_id=5435,bonus_id=3610/1477/3336\nchest=,id=152130,bonus_id=3611/1492/3336\nwrist=,id=152280,gem_id=151584,bonus_id=3610/1808/1472/3528\nhands=,id=151998,bonus_id=3611/1492/3336\nwaist=,id=152683,bonus_id=3611/1487/3528\nlegs=,id=152134,bonus_id=3610/1477/3336\nfeet=,id=137227,bonus_id=1811/3630\nfinger1=,id=137382,enchant_id=5429,gem_id=130247,bonus_id=3459/3630\nfinger2=,id=152064,enchant_id=5429,bonus_id=3610/1477/3336\ntrinket1=,id=154174,bonus_id=3984/3987\ntrinket2=,id=151962,bonus_id=3610/1487/3337\nmain_hand=,id=128861,gem_id=152058/152025/152047,bonus_id=726,relic_id=3610:1477:3336/3611:1497:3336/3611:1487:3528\n\n### Gear from Bags\n#\n# Schattenverschmolzene Kettenhelmkappe (945)\n# head=,id=152000,gem_id=151583,bonus_id=3611/1808/40/1487/3528\n#\n# Helm des Schlangenpirschers (930)\n# head=,id=152133,bonus_id=3610/1472/3528\n#\n# Voodoomaske des Schattenjgers (1000)\n# head=,id=137064,bonus_id=1811/3630\n#\n# Ewig wunderschne Rose (1)\n# head=,id=49715\n#\n# Der Mantel des Alphas (1000)\n# shoulder=,id=144326,enchant_id=5442,bonus_id=3529/1811/3630\n#\n# Tuch der beseelten Jagd (940)\n# back=,id=151938,bonus_id=3610/1808/1482/3336\n#\n# Umhang der Brennenden Vorhut (945)\n# back=,id=151937,bonus_id=3611/1487/3528\n#\n# Roben des verlassenen Schreckenslords (945)\n# chest=,id=151995,bonus_id=3610/1487/3337\n#\n# Kunstvolles Offiziershemd (1)\n# shirt=,id=89195\n#\n# Realittsbrechende Handgelenksschtzer (960)\n# wrist=,id=152008,bonus_id=3610/1502/3337\n#\n# Handschutz des Schlangenpirschers (930)\n# hands=,id=152132,bonus_id=3610/1472/3528\n#\n# Beinschtzer der betubenden Finsternis (955)\n# legs=,id=152003,bonus_id=3610/1497/3337\n#\n# Wurzeln von Shaladrassil (1000)\n# legs=,id=132466,bonus_id=1811/3630\n#\n# Ring des fanatischen Folterers (930)\n# finger1=,id=152284,enchant_id=5429,bonus_id=3610/1472/3528\n#\n# Schattenversengter Reizahn (930)\n# trinket1=,id=151968,bonus_id=3610/1472/3528\n#\n# Fabrikator des Schmiedeschreckens (930)\n# trinket1=,id=151963,bonus_id=3610/1472/3528\n#\n# Angelrute (1)\n# main_hand=,id=6256\n#",
+ "title": ""
+}

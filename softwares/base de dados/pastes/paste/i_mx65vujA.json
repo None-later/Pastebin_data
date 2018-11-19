@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "mx65vujA",
+ "pasteDate": "Feb 21, 2018, 9:59:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "tmux -f ~/tmux/userA.tmux.conf\n\t\nalias tmuxuserA='tmux -f /home/username/tmux/userA.tmux.conf'\n\t\nset-hook -g after-new-session 'if -F \"#{==:#{session_name},emacs}\" \"source ~/.tmux/.tmux.conf.emacs\" \"source ~/.tmux/.tmux.conf.amos\"'\nset-hook -g after-new-window 'if -F \"#{==:#{session_name},emacs}\" \"source ~/.tmux/.tmux.conf.emacs\" \"source ~/.tmux/.tmux.conf.amos\"'",
+ "title": ""
+}

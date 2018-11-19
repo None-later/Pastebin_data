@@ -1,0 +1,127 @@
+[
+ {
+  "name": "sql",
+  "expressionText": "(select\\s+.*?from|join|declare\\s+.*?\\s+as\\s+|update.*?set|insert.*?into)",
+  "weight": 1.0
+ },
+ {
+  "name": "php",
+  "expressionText": "(define\\(.*?\\)|require_once\\(.*?\\))",
+  "weight": 3.0
+ },
+ {
+  "name": "*1",
+  "expressionText": "(function.*?\\(.*?\\))",
+  "weight": 2.0
+ },
+ {
+  "name": "*2",
+  "expressionText": "(Configuration(\\.Factory|\\s*file))",
+  "weight": 2.0
+ },
+ {
+  "name": "css",
+  "expressionText": "((border|background)-color)",
+  "weight": 1.0
+ },
+ {
+  "name": "python_error",
+  "expressionText": "(Traceback \\(most recent call last\\))",
+  "weight": 3.0
+ },
+ {
+  "name": "java",
+  "expressionText": "(javax?\\.(util|lang|io|net|swing|awt))",
+  "weight": 3.0
+ },
+ {
+  "name": "skuid",
+  "expressionText": "([\"\u0027\\[\\.\\(\\{,\\s;])((?![^_]*__)([a-zA-Z_]*?)|[a-zA-Z]*?)__(p?c|r)([\"\u0027\\]\\.\\)\\},\u0026;\\s])",
+  "weight": 2.0
+ },
+ {
+  "name": "vasya_procedure",
+  "expressionText": "procedure (void|int) [a-zA-Z_$]+([\\w_$]*?)(;$| (((long|int) [a-zA-Z_$]+([\\w_$]*?)[,] )*((long|int) [a-zA-Z_$]+([\\w_$]*?)[;]$)))",
+  "weight": 2.0
+ },
+ {
+  "name": "sqlserver",
+  "expressionText": "(sqlserver\\.jdbc)",
+  "weight": 2.0
+ },
+ {
+  "name": "#1",
+  "expressionText": "faf\\.fa\\.proxies",
+  "weight": 2.0
+ },
+ {
+  "name": "#2",
+  "expressionText": "Technic Launcher is starting",
+  "weight": 1.0
+ },
+ {
+  "name": "#3",
+  "expressionText": "OTL logfile created on",
+  "weight": 1.0
+ },
+ {
+  "name": "#4",
+  "expressionText": "RO Game Client crashed!",
+  "weight": 1.0
+ },
+ {
+  "name": "#5",
+  "expressionText": "Selecting PSO2 Directory",
+  "weight": 1.0
+ },
+ {
+  "name": "#6",
+  "expressionText": "TDSS Rootkit",
+  "weight": 2.0
+ },
+ {
+  "name": "#7",
+  "expressionText": "SysInfoCrashReporterKey",
+  "weight": 3.0
+ },
+ {
+  "name": "#8",
+  "expressionText": "Current OS Full name:",
+  "weight": 2.0
+ },
+ {
+  "name": "#9",
+  "expressionText": "Multi Theft Auto: ",
+  "weight": 2.0
+ },
+ {
+  "name": "#10",
+  "expressionText": "Initializing cgroup subsys cpuset",
+  "weight": 3.0
+ },
+ {
+  "name": "#11",
+  "expressionText": "Init vk network",
+  "weight": 3.0
+ },
+ {
+  "name": "#12",
+  "expressionText": "MediaTomb UPnP Server",
+  "weight": 3.0
+ },
+ {
+  "name": "#13",
+  "expressionText": "#EXTM3U|#EXTINF:",
+  "weight": 5.0
+ },
+ {
+  "name": "#14",
+  "expressionText": "\u003cweapon\u003e",
+  "weight": 2.0
+ },
+ {
+  "name": "html_xml",
+  "expressionText": "\u003c[/?]?x?html.*\u003e",
+  "weight": 3.0
+ }
+]

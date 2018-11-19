@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "psCFwfUL",
+ "pasteDate": "Feb 18, 2018, 12:51:02 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "user should be able to register for an account\nuser should be able to log into their account\nuser should be able to create a new category of cards\nuser should be able to create subcategory if necessary\nuser should be able to add an icon/image to a card\nuser should be able to create several cards for each category\nuser should be able to update categories, subcategories and cards\nuser should be able to delete categories, subcategories and cards\nuser should be able to select specific cards that will be displayed on a side panel\nuser should be able to share app with family and friends\nuser should be able to add their own images to cards\nuser should be able to make font larger or smaller as desired\nuser should be able to select a color scheme to customize their app",
+ "title": ""
+}

@@ -1,0 +1,13 @@
+{
+ "espireDate": "1W",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CyymwT7R",
+ "pasteDate": "Feb 18, 2018, 6:57:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "fatal: [droplet]: FAILED! => {\"changed\": false, \"cmd\": \"/usr/bin/git clone --origin origin '' /var/uwsgi/apps\", \"msg\": \"Cloning into '/var/uwsgi/apps'...\\nPermission denied (publickey).\\r\\nfatal: Could not read from remote repository.\\n\\nPlease make sure you have the correct access rights\\nand the repository exists.\", \"rc\": 128, \"stderr\": \"Cloning into '/var/uwsgi/apps'...\\nPermission denied (publickey).\\r\\nfatal: Could not read from remote repository.\\n\\nPlease make sure you have the correct access rights\\nand the repository exists.\\n\", \"stderr_lines\": [\"Cloning into '/var/uwsgi/apps'...\", \"Permission denied (publickey).\", \"fatal: Could not read from remote repository.\", \"\", \"Please make sure you have the correct access rights\", \"and the repository exists.\"], \"stdout\": \"\", \"stdout_lines\": []}",
+ "title": ""
+}

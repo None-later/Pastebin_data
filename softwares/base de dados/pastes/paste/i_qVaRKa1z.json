@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qVaRKa1z",
+ "pasteDate": "Feb 21, 2018, 12:32:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "\t/**\n\t * Method to find a task type by id\n\t * @param taskTypeId The task type id to search\n\t * @return The task type object\n\t * @throws NotFoundException If the task type not exist\n\t */\n\tpublic TaskType findOne(String taskTypeId) throws NotFoundException {\n\t\tTaskType taskType = taskTypeRepository.findOne(taskTypeId);\n\t\tif(taskType == null) {\n\t\t\tthrow new NotFoundException(\"The task type with id \" + taskTypeId + \" not exist.\");\n\t\t}\n\t\treturn taskType;\n\t}",
+ "title": ""
+}

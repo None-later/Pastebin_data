@@ -1,0 +1,14 @@
+{
+ "espireDate": "1M",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en",
+  "kw_bot"
+ ],
+ "key": "SwhHP2Ek",
+ "pasteDate": "Feb 26, 2018, 1:06:16 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "using Discord;\nusing Discord.Commands;\nusing Discord.WebSocket;\nusing Microsoft.Extensions.DependencyInjection;\nusing System;\nusing System.Reflection;\nusing System.Threading.Tasks;\n\n\nnamespace myApp\n{\n    class Program\n    {\n        static void Main(string[] args) => new Program().RunBotAsync().GetAwaiter().GetResult();\n        private DiscordSocketClient _client;\n        private CommandService _commands;\n        private IServiceProvider _service;\n\n        public async Task RunBotAsync()\n        {\n            _client = new DiscordSocketClient();\n            _commands = new CommandService();\n\n            _service = new ServiceCollection()\n                .AddSingleton(_client)\n                .AddSingleton(_commands)\n                .BuildServiceProvider();\n\n            string botToken = \"NDEzMTQ0OTkzOTI3MTM1MjUy.DXUY-w.MlNdjZH28CLIrDapSgtFaMfHJdc\";\n\n            _client.Log += Log;\n\n            await RegisterCommandAsync();\n\n            await _client.LoginAsync(TokenType.Bot, botToken);\n\n            await _client.StartAsync();\n\n            await Task.Delay(-1);\n        }\n        private Task Log(LogMessage arg)\n        {\n            Console.WriteLine(arg);\n\n            return Task.CompletedTask;\n        }\n        public async Task RegisterCommandAsync()\n        {\n            _client.MessageReceived += HandleCommandAsync;\n\n\n            await _commands.AddModulesAsync(Assembly.GetEntryAssembly());\n        }\n\n        private async Task HandleCommandAsync(SocketMessage arg)\n        {\n            var message = arg as SocketUserMessage;\n\n            if (message is null || message.Author.IsBot) return;\n\n            int ArgPos = 0;\n\n            if (message.HasStringPrefix(\"tnt!\", ref ArgPos) || message.HasMentionPrefix(_client.CurrentUser, ref ArgPos))\n            {\n                var context = new SocketCommandContext(_client, message);\n\n                var result = await _commands.ExecuteAsync(context, ArgPos, _service);\n             if (!result.IsSuccess)\n                {\n                    Console.WriteLine(result.ErrorReason);\n                }\n            }\n\n        }\n    }\n}",
+ "title": "Error"
+}

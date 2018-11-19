@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "plsql",
+ "jSonReasons": [
+  "lg_pl",
+  "re_sql"
+ ],
+ "key": "u92cbWev",
+ "pasteDate": "Feb 8, 2018, 4:26:44 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "--Zadanie 6\n/*\n\nWyzwalacz dotyczacy tabeli wypozyczenie ktory przy dodaniu do niej wiersza\nzmieni stan ksiazki ktorej to wypozyczenie dotyczy na WYPOZYCZONA\n*/\n\nCREATE OR REPLACE TRIGGER wyzwalacz\n    BEFORE INSERT ON wypozyczenie\n    FOR EACH ROW\n    BEGIN\n        dbms_output.put_line('Tak');\n        UPDATE ksiazka SET stan = 'WYPOZYCZONA' WHERE id_ksiazka = :new.id_ksiazka;\nEND;\n/\nINSERT into wypozyczenie VALUES(7,2,6, TO_DATE('2016\\02\\03','yyyy\\mm\\dd'), TO_DATE('2017\\02\\01','yyyy\\mm\\dd'));\nSELECT * FROM ksiazka;",
+ "title": ""
+}

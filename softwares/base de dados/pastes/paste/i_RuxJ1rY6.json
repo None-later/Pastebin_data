@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "cpp",
+ "jSonReasons": [
+  "lg_fr"
+ ],
+ "key": "RuxJ1rY6",
+ "pasteDate": "Feb 18, 2018, 11:14:04 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n#include <cstdio>\n#include <cstdlib>\n#include <memory.h>\n#include <cstring>\n#include <cassert>\n#include <vector>\n#include <algorithm>\n#include <cmath>\nusing namespace std;\n#define mp make_pair\n \ntypedef long long ll;\n\nclass cart_tree {\n  public:\n  typedef struct _Node {\n    int x, y;\n    ll sum;\n    int cnt;\n    _Node *l, *r;\n\n    _Node(int _x) : x(_x), y(rand()), sum(_x), cnt(1), l(0), r(0) {}\n    ~_Node() {\n      if (l) delete l;\n      if (r) delete r;\n    }\n    void recalc() {\n      sum = x; cnt = 1;\n      if (l) sum += l->sum, cnt += l->cnt;\n      if (r) sum += r->sum, cnt += r->cnt;\n    }\n  } *Node;\n  \n  Node merge(Node l, Node r) {\n    if (!l) return r;\n    if (!r) return l;\n    \n    if (l->y < r->y) {\n      l->r = merge(l->r, r);\n      return l->recalc(), l;\n    } else {\n      r->l = merge(l, r->l);\n      return r->recalc(), r;\n    }\n  }\n  void split(Node v, int key, Node &l, Node &r) {\n    l = r = 0;\n    if (!v) return;\n    \n    Node tmp;\n    if (v->x <= key) {\n      split(v->r, key, tmp, r);\n      v->r = tmp;\n      l = v;\n    } else {\n      split(v->l, key, l, tmp);\n      v->l = tmp;\n      r = v;\n    }\n    v->recalc();\n  }\n  \n  void print(Node v, int h, int p=-1, char c=0) {\n    if (!v) { printf(\"null\\n\"); return; }\n    printf(\"h=%d, p=%d, ch=%c, x=%d, y=%d, sum=%lld, cnt=%d\\n\", h, p, c, v->x, v->y, v->sum, v->cnt);\n    print(v->l, h+1, v->x, 'l');\n    print(v->r, h+1, v->x, 'r');\n  }\n\n  Node root;\n  \n  public:\n  cart_tree() : root(0){}\n  \n  void insert(int x) {\n    Node l, r;\n    split(root, x, l, r);\n    root = merge(merge(l, new _Node(x)), r);\n  }\n  pair<ll, int> getLeqThan(int x) {\n    Node l, r;\n    split(root, x, l, r);\n    pair<ll, int> res(0, 0);\n    if (l) res = mp(l->sum, l->cnt);\n    root = merge(l, r);\n    return res;\n  }                                                               \n};\n\nint main() {\n\tint n;\n\twhile (1) {\n   \tcin >> n;\n   \tif (!n) break;\n   \tcart_tree t;\n   \tfor (int i = 1; i <= n; i++)\n   \t\tt.insert(i);\n   \tt.print(t.root, 0);\n   }\n\tsystem(\"pause\");\n\treturn 0;\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function completeAlias( shell, nIndex, sText, tPreviousText )",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

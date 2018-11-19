@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "powershell",
+ "jSonReasons": [
+  "lg_en",
+  "re_url"
+ ],
+ "key": "kAjMrA9b",
+ "pasteDate": "Feb 20, 2018, 7:20:43 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "$UserCredential = Get-Credential\n$Session = New-PSSession -ConfigurationName Microsoft.Exchange -ConnectionUri https://outlook.office365.com/powershell-liveid/ -Credential $UserCredential -Authentication Basic -AllowRedirection\nImport-PSSession $Session\n$mids=Get-Content mids.txt ; $count=$mids.Length ;\n$i=0 ; $mids | foreach { Write-Progress -Activity GMT -Status \"$i of $count\" -CurrentOperation $_ -PercentComplete (($i / $count) * 100) ; \n  $gmt=@(Get-MessageTrace -MessageId $_ -StartDate 10/26/2017 -EndDate 11/04/2018) ; \n  if ($gmt.Count -eq 0) { \" $_\" } ; \n  $i++ ; \n}\nRemove-PSSession $Session",
+ "title": ""
+}

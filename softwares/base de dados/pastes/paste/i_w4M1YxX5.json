@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_shutdown",
+  "lg_en"
+ ],
+ "key": "w4M1YxX5",
+ "pasteDate": "Feb 19, 2018, 2:45:33 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "lish]# help\n\nLish console <tab> completion, ? for menu\n\nkill            - kill stuck screen sessions\nexit            - exit from lish\nhelp            - this menu\n\n[return]        - connect to console\nversion         - display running kernel version\nboot            - boot last used config profile\nshutdown        - shutdown the Linode\nreboot          - shutdown, then boot\n\nstatus          - view the of your Linode\nio_status       - view IO statistics\nkeysview        - view contents of authorized_keys2\nlogview         - view contents of console log",
+ "title": ""
+}

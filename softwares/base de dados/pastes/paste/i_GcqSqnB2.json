@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_skuid",
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "GcqSqnB2",
+ "pasteDate": "Feb 26, 2018, 10:29:12 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "public class CustomFeatures {\n    \n    private static final String FIELD_NAME = 'Name';\n    private static final String FIELD_VALUE = 'Value__c';\n    \n    private static final String FEATURE_CUSTOM_SETTING_NAME = 'custom setting name';    \n    private static final String QUERY_CUSTOM_SETTINGS = 'Select Name,Value__c from '+ FEATURE_CUSTOM_SETTING_NAME;\n\n    private static Map<String,boolean> featureEnabledMap = new Map<String,boolean>();\n    private static boolean isLoaded = false;\n    \n    \n    public static boolean isFeatureEnabled(String featureName){\n        System.debug('AP::: '+StaticCounter.getNext() +' About to run isFeatureEnabled');\n        if(featureName == null || featureName == '') return false;\n        System.debug('AP::: '+StaticCounter.getNext() +' featureName param is not blank');\n        \n        if(!isLoaded){    \n            isLoaded = true;\n            List<sObject> customSettingList = Database.query(QUERY_CUSTOM_SETTINGS);\n            System.debug('AP::: '+StaticCounter.getNext() +' customSettingList: '+ customSettingList);\n            for (sObject customSettingRecord : customSettingList) {\n                System.debug('AP::: '+StaticCounter.getNext() +' looping through value: '+ customSettingRecord);\n                System.debug('AP::: Name: '+(String)customSettingRecord.get(FIELD_NAME));\n                System.debug('AP::: Value: '+(String)customSettingRecord.get(FIELD_VALUE));\n                featureEnabledMap.put((String)customSettingRecord.get(FIELD_NAME),Boolean.valueOf(customSettingRecord.get(FIELD_VALUE)));\n                System.debug('AP::: Added value to featureEnabledMap ');\n            }\n        }\n        \n        if(featureEnabledMap.size()==0) return false;\n        return featureEnabledMap.get(featureName);\n    }\n\n}",
+ "title": ""
+}

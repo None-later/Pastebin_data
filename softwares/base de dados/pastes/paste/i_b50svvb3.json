@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "b50svvb3",
+ "pasteDate": "Feb 28, 2018, 7:04:11 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "public class Main extends SimpleApplication {\n\n    public static void main(String[] args) {\n        Main app = new Main();\n        app.start();\n    }\n\n   @Override\n    public void simpleInitApp() {\n       \n       Box head = new Box(new Vector3f(1, -1, 1), 3,1,1);\n       Box head2 = new Box(new Vector3f(1, 3, 1), 2,1,1);\n       Box torso = new Box(new Vector3f(1, 1, 1), 3,1,1);\n       Box leg = new Box(new Vector3f(-1, -5, 1), 1,3,1);\n       Box leg2 = new Box(new Vector3f(3, -5, 1), 1,3,1);\n       \n       Geometry headmet = new Geometry(\"Box\", head);\n       Geometry head2met = new Geometry(\"Box\", head2);\n       Geometry torsomet = new Geometry(\"Box\", torso);\n       Geometry legmet = new Geometry(\"Box\", leg);\n       Geometry leg2met = new Geometry(\"Box\", leg2);\n       \n       Material headmat = new Material(assetManager, \"Common/MatDefs/Misc/Unshaded.j3md\");\n       Material head2mat = new Material(assetManager, \"Common/MatDefs/Misc/Unshaded.j3md\");\n       Material torsomat = new Material(assetManager, \"Common/MatDefs/Misc/Unshaded.j3md\");\n       Material legmat = new Material(assetManager, \"Common/MatDefs/Misc/Unshaded.j3md\");\n       Material leg2mat = new Material(assetManager, \"Common/MatDefs/Misc/Unshaded.j3md\");\n       headmat.setColor(\"Color\", ColorRGBA.Blue);\n       head2mat.setColor(\"Color\", ColorRGBA.Yellow);\n       torsomat.setColor(\"Color\", ColorRGBA.Red);\n       legmat.setColor(\"Color\", ColorRGBA.Green);\n       leg2mat.setColor(\"Color\", ColorRGBA.Green);\n       \n       headmet.setMaterial(headmat);\n       head2met.setMaterial(head2mat);\n       torsomet.setMaterial(torsomat);\n       legmet.setMaterial(legmat);\n       leg2met.setMaterial(leg2mat);\n\n        Node pivot = new Node(\"pivot\");\n        rootNode.attachChild(pivot); \n \n\n        pivot.attachChild(headmet);\n        pivot.attachChild(head2met);\n        pivot.attachChild(torsomet);\n        pivot.attachChild(legmet);\n        pivot.attachChild(leg2met);\n\n    }\n}",
+ "title": ""
+}

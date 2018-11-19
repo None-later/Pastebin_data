@@ -1,0 +1,5 @@
+{
+  "value": "function ElectricEffect(BRICKCOLOR, MATERIAL, CFRAME, ROTATION, OFFSET, X, Y, Z, delay)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

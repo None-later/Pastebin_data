@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_down",
+  "lg_en"
+ ],
+ "key": "HB7YeW6v",
+ "pasteDate": "Feb 23, 2018, 1:28:23 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# The minimal path sum in the 5 by 5 matrix below, by starting in any cell in the left column and finishing in any\n# cell in the right column, and only moving up, down, and right, is indicated in red and bold; the sum is equal to 994.\n#\n# Find the minimal path sum, in matrix.txt (right click and \"Save Link/Target As...\"), a 31K text file containing a\n# 80 by 80 matrix, from the left column to the right column.\n\n\nfrom copy import deepcopy\n\nwith open(\"p082_matrix.txt\") as f:\n    lines = f.readlines()\n\nmatrix = [[int(x) for x in line.strip().split(\",\")] for line in lines]\n\ninitial_matrix = deepcopy(matrix)\n\nn = len(matrix)\n\nfor j in range(1, n):\n    matrix[0][j] += matrix[0][j - 1]\n    for i in range(1, n - 1):\n        matrix[i][j] += min(matrix[i - 1][j], matrix[i][j - 1])\n    matrix[n - 1][j] += min(matrix[n - 2][j], matrix[n - 1][j - 1])\n    for i in reversed(range(0, n - 1)):\n        matrix[i][j] = min(matrix[i][j], matrix[i + 1][j] + initial_matrix[i][j])\n\nprint(min(matrix[j][-1] for j in range(len(matrix))))",
+ "title": ""
+}

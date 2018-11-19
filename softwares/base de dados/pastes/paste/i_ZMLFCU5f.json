@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZMLFCU5f",
+ "pasteDate": "Feb 28, 2018, 5:58:17 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "- name: Copy | Jersey  \n  copy: \n    src: \"{{ item }}\" \n    dest: \"/usr/local/lib/\" \n    remote_src: True \n  with_fileglob: \n    - \"/opt/rr/jersey/*.jar\"",
+ "title": ""
+}

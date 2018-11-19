@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "nX9DunQk",
+ "pasteDate": "Feb 21, 2018, 8:30:45 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "select @session :=  COALESCE(max(session), 0) + 1 from product_invalidations;\ninsert product_invalidations(product_id, session) select p.id, @session from products p inner join product_types pt on pt.id = p.product_type_id where pt.name = 'mobile-phones';",
+ "title": ""
+}

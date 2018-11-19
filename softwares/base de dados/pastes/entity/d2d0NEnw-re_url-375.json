@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://wms.shared.streamshow.it:1935/tsn2/tsn2/live.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "function\")returnthis.$Arbiter3.registerCallback(n,o)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

@@ -1,0 +1,17 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "kw_protection",
+  "kw_attacks",
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "GwgYRbfj",
+ "pasteDate": "Feb 19, 2018, 2:51:40 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "# This controller handles the login/logout function of the site.\nclass SessionsController < ApplicationController\n  # Be sure to include AuthenticationSystem in Application Controller instead\n  include AuthenticatedSystem\n  include OpenIdAuthentication\n\n  # render new.rhtml\n  def new\n    @user = User.new\n  end\n\n  def create\n    logout_keeping_session!\n    if using_open_id?\n      open_id_authentication\n    else\n      user = User.authenticate(params[:login], params[:password])\n      if user\n        # Protects against session fixation attacks, causes request forgery\n        # protection if user resubmits an earlier form using back\n        # button. Uncomment if you understand the tradeoffs.\n        # reset_session\n        self.current_user = user\n        new_cookie_flag = (params[:remember_me] == \"1\")\n        handle_remember_cookie! new_cookie_flag\n        redirect_back_or_default('/')\n        flash[:notice] = _(\"Logged in successfully\")\n      else\n        note_failed_signin\n        @login       = params[:login]\n        @remember_me = params[:remember_me]\n        render :action => :new\n      end\n    end\n  end\n\n  def destroy\n    logout_killing_session!\n    flash[:notice] = \"You have been logged out.\"\n    redirect_back_or_default('/')\n  end\n\nprotected\n  # Track failed login attempts\n  def note_failed_signin\n    flash[:error] = _(\"Couldn't log you in as %{login}\") % {:login => params[:login]}\n    logger.warn \"Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}\"\n  end\n\n  def open_id_authentication\n    authenticate_with_open_id do |result, identity_url|\n      if result.successful?\n        if @current_user = User.find_by_identity_url(identity_url)\n          flash[:notice] = _(\"Logged in successfully\")\n          redirect_to('/')\n        else\n          session[:identity_url] = identity_url\n          redirect_to new_user_path\n        end\n      else\n        flash[:error] = _(\"Couldn't log you in as %{identity_url}\") % {:identity_url => identity_url}\n        render :action => :new\n      end\n    end\n  end\nend",
+ "title": ""
+}

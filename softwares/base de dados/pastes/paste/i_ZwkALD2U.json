@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZwkALD2U",
+ "pasteDate": "Feb 21, 2018, 7:59:57 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "development:\n  adapter: jdbc\n  driver:  org.apache.derby.jdbc.EmbeddedDriver\n  url: jdbc:derby://localhost/sketchy;create=true\n  pool: 5\n  timeout: 5000",
+ "title": ""
+}

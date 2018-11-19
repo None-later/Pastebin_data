@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CvRwyin1",
+ "pasteDate": "Feb 8, 2018, 6:48:12 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "class Car # always CamelCase\n  def initialize(color = \"white\") # constructor\n    puts \"I create a new car\"\n    # The instance variables\n    @color = color\n    @engine_started = false\n    @brand = \"Toyota\"\n  end\n\n  def start # instance method\n    message = \"Let's start the car\"\n    puts message\n    connect_battery()\n    ignite_motor()\n    crank_engine()\n    # ...\n    @engine_started = true\n  end\n\n  def stop # another instance method\n    @engine_started = false\n  end\n\n  def engine_started?\n    return @engine_started\n  end\n\n  attr_reader :brand\n\n  # attr_reader + attr_writer\n  attr_accessor :color\n\n  # getter / reader\n  # def color\n  #   return @color\n  # end\n\n  # setter / writer\n  # def color=(new_color)\n  #   @color = new_color\n  # end\n\n  private\n\n  def connect_battery\n    # specific stuff\n    puts \"connecting battery\"\n  end\n\n  def ignite_motor\n    # specific stuff\n    puts \"igniting motor\"\n  end\n\n  def crank_engine\n    # specific stuff\n    puts \"cranking engine\"\n  end\nend",
+ "title": ""
+}

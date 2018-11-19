@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro",
+  "re_url"
+ ],
+ "key": "meb5Juyb",
+ "pasteDate": "Feb 9, 2018, 6:08:18 AM",
+ "relevancy": 2.0,
+ "relevant": false,
+ "text": "ph5986604c77db4\nph5988a83e37a80\nph5980f711d2b3b\nph5922205809bf2\nph593129a9631bb\nph5930d0950c8fa\nph5690ba39df654\nph593e778bc8219\n\t\n$fil = file('datos.txt');\n$id = $fil[0];\n\t\n$url = 'http://es.pornhub.com/embed/'.$id;\n$ch = curl_init();\ncurl_setopt($ch, CURLOPT_URL, $url );\ncurl_setopt($ch,CURLOPT_HEADER,0); //visualizar  y acentos.\ncurl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\ncurl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );\ncurl_setopt($ch, CURLOPT_ENCODING, \"gzip,deflate\"); //(aceptacin de codificacin gzip)   \n$response = curl_exec($ch); //almacena el response de la pagina.\ncurl_close($ch);\n\necho $response;\n\t\n$url = 'http://es.pornhub.com/embed/ph5986604c77db4';\n$ch = curl_init();\ncurl_setopt($ch, CURLOPT_URL, $url );\ncurl_setopt($ch,CURLOPT_HEADER,0); //visualizar  y acentos.\ncurl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);\ncurl_setopt($ch, CURLOPT_RETURNTRANSFER, true);\ncurl_setopt($ch, CURLOPT_FOLLOWLOCATION, true );\ncurl_setopt($ch, CURLOPT_ENCODING, \"gzip,deflate\"); //(aceptacin de codificacin gzip)   \n$response = curl_exec($ch); //almacena el response de la pagina.\ncurl_close($ch);\n\necho $response;",
+ "title": ""
+}

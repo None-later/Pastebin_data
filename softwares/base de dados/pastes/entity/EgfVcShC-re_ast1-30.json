@@ -1,0 +1,5 @@
+{
+  "value": "function date_from_string(date_string)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

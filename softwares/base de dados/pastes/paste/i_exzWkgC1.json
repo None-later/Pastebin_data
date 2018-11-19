@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "exzWkgC1",
+ "pasteDate": "Feb 21, 2018, 5:54:14 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Select dropdown = new Select(driver.findElement(By.xpath(properties.getProperty(\"VAR_LANUAGEDROPDOWN\"))));\n        dropdown.selectByVisibleText(\"Portugus (Portuguese)\");\n        Thread.sleep(4000);",
+ "title": ""
+}

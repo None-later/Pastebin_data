@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "ZLNgRwi2",
+ "pasteDate": "Feb 26, 2018, 10:48:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<article class=\"article\">\n\n    <p>What in the store and their prices</p>\n\n    <?php\n        if ($_SERVER['REQUEST_METHOD'] === 'POST') {\n            $result_string = '';\n            foreach($_POST as $item) {\n                $result_string .= $item.\"\\n\";\n            }            \n            file_put_contents('C:\\Users\\i334149\\Desktop\\test.txt', $result_string , FILE_APPEND | LOCK_EX);\n        }\n\t\tmail (\n\t\t$from: \n\t\t$to: inboxIT\n\t\t$message: $_POST[meat];\n\t\t\n\t\t);\n    ?>\n\n    <p> Below you can order some things!</p>\n\n    <form method=\"post\" action=\"\">\n        <input type=\"checkbox\" name=\"meat\" value=\"prio1\"<br>\n        <input type=\"checkbox\" name=\"apple\" value=\"apple\"<br>\n        <input type=\"checkbox\" name=\"drinks\" value=\"drinks\"<br>\n        <input type=\"submit\" value=\"Submit\">\n    </form>\n</article>",
+ "title": ""
+}

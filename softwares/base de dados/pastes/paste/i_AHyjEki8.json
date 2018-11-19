@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "AHyjEki8",
+ "pasteDate": "Feb 26, 2018, 1:23:29 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace Les3Oefening1\n{\n   public class Film\n    {\n       public enum Genres\n        {\n            Komedie, Romantiek, Horror, SciFi\n        };\n        public Genres Genre;\n        public string Titel { get; set; }\n        public string Producer { get; set; }\n        public string Regissuer { get; set; }\n        public int Jaar { get; set; }\n\n        private int rating;\n\n        public int Rating\n        {\n            get { return rating; }\n            set\n            {\n                if(value < 5 &&value >0)\n                {\n                    rating = value;\n                }\n                else\n                {\n                    rating = 0;\n                }\n            }\n        }\n\n        public Film(Genres genre, string titel, string producer, string regissuer, int jaar, int rating)\n        {\n            this.Genre = genre;\n            Titel = titel;\n            Producer = producer;\n            Regissuer = regissuer;\n            Jaar = jaar;\n            this.Rating = rating;\n        }\n        public Film(Genres genre, string titel, string producer, string regissuer, int jaar)\n            : this(genre, titel, producer, regissuer, jaar, 0)\n        {\n            \n        }\n\n        public override string ToString()\n        {\n            string output = \"\";\n            output += \"De film: \\n\";\n            output += \"Het genre: \" + Genre;\n            output += \"\\nTitel: \" + Titel;\n            output += \"\\nProducer: \" + Producer;\n            output += \"\\nRegisseur: \" + Regissuer;\n            output += \"\\nJaar: \" + Jaar;\n            output += \"\\nRating: \" + Rating;\n\n            return output;\n         \n\n        }\n\n\n\n\n    }\n}",
+ "title": ""
+}

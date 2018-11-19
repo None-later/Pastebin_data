@@ -1,0 +1,5 @@
+{
+  "value": "DEFINE(\u0027LEVELTOCREATEGUILD\u0027, $config[\u0027levelToCreateGuild\u0027])",
+  "correct": true,
+  "jSonReason": "re_php"
+}

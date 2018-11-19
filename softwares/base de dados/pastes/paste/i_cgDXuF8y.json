@@ -1,0 +1,13 @@
+{
+ "espireDate": "1M",
+ "format": "typoscript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "cgDXuF8y",
+ "pasteDate": "Feb 21, 2018, 6:46:40 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import * as React from 'react';\nimport {ReactWrapper, mount} from 'enzyme';\n\ninterface Props {\n  title: string;\n}\n\nclass CompnentUnderTest extends React.Component<Props, {}> {\n  render() {\n    return <div className=\"title\">{this.props.title}</div>;\n  }\n}\n\n/**\n * Comon methods for Builder and Driver\n */\nclass Mock {\n\n  mock = {\n    mockSomething: () => {\n      return this;\n    }\n  };\n\n  cleanup() {\n    // mock cleanup\n  }\n}\n\nclass Testkit extends Mock {\n  builder: Builder;\n\n  constructor() {\n    super();\n    // TODO: make renderer lazy initialization\n    this.builder = new Builder();\n  }\n\n  static wrap(component?: ReactWrapper) {\n    return new Driver(component);\n  }\n\n  cleanup() {\n    super.cleanup();\n    this.builder.cleanup();\n  }\n}\n\nclass Builder {\n  component: ReactWrapper;\n  props: Props;\n\n  setProps(props: Partial<Props>) {\n    return Object.assign(this.props, props);\n  }\n\n  render() {\n    this.component = (mount(<CompnentUnderTest {...this.props}/>));\n    return new Driver(this.component);\n  }\n\n  cleanup() {\n    if (this.component) {\n      this.component.detach();\n    }\n  }\n}\n\nclass Driver extends Mock {\n\n  constructor(readonly component: ReactWrapper) {\n    super();\n  }\n\n  when = {\n    click: () => {\n      this.selectors.title().simulate('click'); // do something\n      return this;\n    }\n  };\n\n  get = {\n    title: () => this.selectors.title().text()\n  };\n\n  private selectors = {\n    title: () => this.component.find('.title')\n  };\n}\n\nexport default Testkit;",
+ "title": ""
+}

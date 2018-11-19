@@ -1,0 +1,5 @@
+{
+  "value": " http://dl-cdn.alpinelinux.org/alpine/edge/testing",
+  "correct": true,
+  "jSonReason": "re_url"
+}

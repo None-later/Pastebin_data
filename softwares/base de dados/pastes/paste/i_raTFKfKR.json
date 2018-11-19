@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "raTFKfKR",
+ "pasteDate": "Feb 10, 2018, 7:05:19 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "import utime\nimport settings\n\nfrom homie.node.simple import SimpleHomieNode\nfrom homie import HomieDevice, utils\n\n# Network Setup\nutils.disable_ap()  # on esp devices\nutils.wifi_connect()\n\n# Homie device setup\nhomie_device = HomieDevice(settings)\n\n# Adds a simple test node\nn = SimpleHomieNode(node_type=b'dummy', node_property=b'value', interval=5)\nhomie_device.add_node(n)\n\n# Push information about the device to MQTT\nhomie_device.publish_properties()\n\nwhile True:\n    # try wifi reconnect in case it loses connection\n    utils.wifi_connect()\n\n    # Update the data of the simple note for demonstration purpose\n    n.value = utime.time()\n    print(\"UPDATED: \".format(n))\n\n    # Push the new data to MQTT\n    homie_device.publish_data()\n\n    # Sleep a little bit\n    utime.sleep(1)",
+ "title": ""
+}

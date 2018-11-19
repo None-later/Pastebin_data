@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "kw_sec"
+ ],
+ "key": "dkrHkWNt",
+ "pasteDate": "Feb 20, 2018, 3:38:33 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "RTR5#sh run | sec controller\ncontroller E1 0/3/0\n framing NO-CRC4\n channel-group 0 timeslots 1-31\nRTR5#sh run int se0/3/0:0\nBuilding configuration...\n\nCurrent configuration : 91 bytes\n!\ninterface Serial0/3/0:0\n ip vrf forwarding GLOBAL\n no ip address\n encapsulation ppp\nend",
+ "title": ""
+}

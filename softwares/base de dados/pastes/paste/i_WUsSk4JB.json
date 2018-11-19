@@ -1,0 +1,15 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en",
+  "re_ast1",
+  "re_url"
+ ],
+ "key": "WUsSk4JB",
+ "pasteDate": "Feb 21, 2018, 2:10:32 PM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "const WebSocket = require('ws');\nvar yourtokenPicarto = \"putyourtoken\";\n\nvar fs = require('fs');\nvar protobuf = require(\"protobufjs\");\n\n\nvar yourtokenPicarto =\"yourToken\";\n\n\nconst ws = new WebSocket('wss://nd2.picarto.tv/socket?token=' + yourtokenPicarto);\nws.on('open', function incoming() {\n  console.log(\"Now is connected to picarto\");\n});\n\n\n//LE LISTENER DES MESSAGES\nws.on('message', function incoming(data) {\n  var msg =  data.toString();\n\tvar signalName = data[0];\n  console.log(msg);\n});",
+ "title": ""
+}

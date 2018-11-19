@@ -1,0 +1,5 @@
+{
+  "value": "SELECT Id, Login FROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

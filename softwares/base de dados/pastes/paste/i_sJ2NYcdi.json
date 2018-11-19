@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "sJ2NYcdi",
+ "pasteDate": "Feb 21, 2018, 9:15:05 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "replacement kdebase-bin ...\nPreparing to replace kfind 4:3.5.4-0ubuntu1~dapper2 (using .../kfind_4%3a3.5.5-0ubuntu3_i386.deb) ...\nUnpacking replacement kfind ...\nSelecting previously deselected package libraw1394-8.\nUnpacking libraw1394-8 (from .../libraw1394-8_1.2.1-0ubuntu1_i386.deb) ...\nPreparing to replace libavahi-compat-libdnssd1 0.6.10-0ubuntu3 (using .../libavahi-compat-libdnssd1_0.6.13-2ubuntu2_i386.deb) ...\nUnpacking replacement libavahi-compat-libdnssd1 ...",
+ "title": ""
+}

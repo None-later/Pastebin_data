@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en",
+  "re_html_xml"
+ ],
+ "key": "YbG65Lmz",
+ "pasteDate": "Feb 21, 2018, 6:40:55 AM",
+ "relevancy": -3.0,
+ "relevant": false,
+ "text": "<!DOCTYPE html>\n\n<html>\n  \n  <head>\n    <title><%= content_for?(:title) ? yield(:title) : \"HPC HW admin\" %></title>\n    <%= stylesheet_link_tag \"application\" %>\n    <%= javascript_include_tag :application %>\n    <%= csrf_meta_tag %>\n    <%= yield(:head) %>\n  </head>\n \n  <body>\n    <div id=\"container\">\n\n      <div id=\"flash_notice\">\n        Welcome to the beta application of <a href='/'>HPC HW admin</a>.\n        \n    </div>\n\n    <div id=\"auth\">\n      <a href='/admin'>Administration interface</a> |\n      \n      <% if logged_in? %>\n        Welcome <%= current_user.username %>! Not you?\n        <%= link_to \"Log out\", logout_path %>\n      <% else %>\n        <%= link_to \"Sign up\", signup_path %> or\n        <%= link_to \"Log in\", login_path %>.\n      <% end %>\n\n      | <a href='/form'>Form status</a>\n      </div>\n      \n      <h1><a href=\"/\">HPC HW admin</a></h1>\n      <h2><a href=\"/items\">Register new issue</a></h1>\n      <% flash.each do |name, msg| %>\n        <%= content_tag :div, msg, :id => \"flash_#{name}\" %>\n      <% end %>\n      <%= content_tag :h2, yield(:title) if show_title? %>\n      <%= yield %>\n    \n    </div>\n  </body>\n\n</html>",
+ "title": ""
+}

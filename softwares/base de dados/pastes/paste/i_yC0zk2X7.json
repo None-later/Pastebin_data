@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yC0zk2X7",
+ "pasteDate": "Feb 25, 2018, 10:37:40 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "cl_hud_background_alpha \"1.000000\"\ncl_hud_bomb_under_radar \"1\"\ncl_hud_color \"3\"\ncl_hud_healthammo_style \"0\"\ncl_hud_playercount_pos \"0\"\ncl_hud_playercount_showcount \"1\"\ncl_hud_radar_scale \"1.165000\"\nhud_scaling \"0.950000\"\nhud_showtargetid \"1\"\nhud_takesshots \"0\"\ncl_radar_always_centered \"1\"\ncl_radar_icon_scale_min \"0.6\"\ncl_radar_rotate \"1\"\ncl_radar_scale \"0.827500\"\ncl_radar_square_with_scoreboard \"0\"\ncl_radar_always_centered \"1\"\ncl_radar_icon_scale_min \"0.6\"\ncl_radar_rotate \"1\"\ncl_radar_scale \"0.827500\"\ncl_radar_square_with_scoreboard \"0\"\nnet_graph \"1\"\nnet_graphpos \"1\"\nnet_graphproportionalfont \"1\"\ncl_loadout_colorweaponnames \"1\"",
+ "title": "Gumy's HUD"
+}

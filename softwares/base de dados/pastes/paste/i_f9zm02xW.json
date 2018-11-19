@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "f9zm02xW",
+ "pasteDate": "Feb 26, 2018, 12:53:24 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <iostream>\n\nusing namespace std;\n\nint main()\n{\n    int x,nr,a,ok=0;\n    cin>>x;\n    nr=1;\n    a=x;\n    while(a>9)\n    {\n        if(a%10==0)\n        nr*=10;\n        ok=1;\n        a/=10;\n    }\n    cout<<nr;\n    for(int i=1; i<=9; i++)\n    {\n        a=x;\n        while(a)\n        {\n            if(a%10==i)\n            {\n                if(ok==1)\n                {\n                    nr=(a%10)*nr;\n                    cou\n                    ok=0;\n                }\n                else\n                {\n                    nr=nr*10+i;\n\n                }\n    \n\n            }\n            a=a/10;\n        }\n\n    }\n    cout<<nr;\n}",
+ "title": ""
+}

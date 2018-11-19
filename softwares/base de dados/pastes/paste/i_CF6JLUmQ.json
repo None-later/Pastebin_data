@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "CF6JLUmQ",
+ "pasteDate": "Feb 12, 2018, 1:32:10 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "rest/V1/products/xxxx\n\t\n{\n\n    \"product\":{\n    \"custom_attributes\": [\n        {\n            \"attribute_code\": \"description\",\n            \"value\": \"This is the description I want to update\"\n        }\n        ]\n\n}\n}",
+ "title": ""
+}

@@ -1,0 +1,5 @@
+{
+  "value": "Select Sum(Totalhour) From",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

@@ -1,0 +1,5 @@
+{
+  "value": "\"https://analytics-static.ugc.bazaarvoice.com/prod/static/3/bv-analytics.js",
+  "correct": true,
+  "jSonReason": "re_url"
+}

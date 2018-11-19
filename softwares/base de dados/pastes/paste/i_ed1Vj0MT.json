@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "ed1Vj0MT",
+ "pasteDate": "Feb 17, 2018, 8:07:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[el3@el3 Hentninger]$ cat /etc/fstab \n# /etc/fstab: static file system information.\n#\n# Use 'blkid' to print the universally unique identifier for a device; this may\n# be used with UUID= as a more robust way to name devices that works even if\n# disks are added and removed. See fstab(5).\n#\n# <file system>             <mount point>  <type>  <options>  <dump>  <pass>\nUUID=e417ed7c-5bba-4463-a991-ccbe240cd705 /              ext4    defaults,noatime,discard 0 1\nUUID=e404d3c2-94f3-4473-ad9a-a165b50f725f swap           swap    defaults,noatime,discard 0 2\ntmpfs                                     /tmp           tmpfs   defaults,noatime,mode=1777 0 0",
+ "title": ""
+}

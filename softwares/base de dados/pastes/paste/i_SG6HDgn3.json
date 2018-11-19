@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "SG6HDgn3",
+ "pasteDate": "Feb 23, 2018, 11:58:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Mat dx, dy; \nSobel(im, dx, CV_32F, 1, 0, 3, 1, 0, BORDER_DEFAULT);\nSobel(im, dy, CV_32F, 0, 1, 3, 1, 0, BORDER_DEFAULT);\n\t\nMat _im; // Image to compute main gradient direction for. \n    cvtColor(im, _im, CV_BGR2GRAY);\n    GaussianBlur(_im, _im, Size(3, 3), 0, 0, BORDER_DEFAULT); //Blur the image to remove unnecessary details. \n    GaussianBlur(_im, _im, Size(5, 5), 0, 0, BORDER_DEFAULT);\n    GaussianBlur(_im, _im, Size(7, 7), 0, 0, BORDER_DEFAULT);\n\n    // Calculate image derivatives \n    Mat dx2, dy2, dxy; \n    Sobel(_im, dx2, CV_32F, 2, 0, 3, 1, 0, BORDER_DEFAULT); \n    Sobel(_im, dy2, CV_32F, 0, 2, 3, 1, 0, BORDER_DEFAULT);\n    Sobel(_im, dxy, CV_32F, 1, 1, 3, 1, 0, BORDER_DEFAULT);\n\n    Mat t(2, 2, CV_32F); // tensor matrix\n\n    // Insert values to the tensor matrix.\n    t.at<float>(0, 0) = sum(dx2)[0];\n    t.at<float>(0, 1) = sum(dxy)[0];\n    t.at<float>(1, 0) = sum(dxy)[0];\n    t.at<float>(1, 1) = sum(dy2)[0];\n\n    // eigen decomposition to get the main gradient direction. \n    Mat eigVal, eigVec;\n    eigen(t, eigVal, eigVec);\n\n    // This should compute the angle of the gradient direction based on the first eigenvector. \n    float* eVec1 = eigVec.ptr<float>(0);\n    float* eVec2 = eigVec.ptr<float>(1);\n    cout << fastAtan2(eVec1[0], eVec1[1]) << endl;\n    cout << fastAtan2(eVec2[0], eVec2[1]) << endl;\n\t\n// Calculate image derivatives \nMat dx, dy; \nMat dx2, dy2, dxy;\nSobel(_im, dx, CV_32F, 1, 0); \nSobel(_im, dy, CV_32F, 0, 1);\nmultiply(dx, dx, dx2);\nmultiply(dy, dy, dy2);\nmultiply(dx, dy, dxy);",
+ "title": ""
+}

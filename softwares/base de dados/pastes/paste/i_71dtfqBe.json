@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "71dtfqBe",
+ "pasteDate": "Feb 21, 2018, 12:26:21 PM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "path = \"/Users/cj/Desktop/prisma.csv\"\nrequire 'csv'\nCSV.open(path, 'r') do |row|\n  if @headers.nil?\n    @headers = row.map(&:to_sym)\n  else\n    e = Employee.new\n    attributes = Hash[*@headers.zip(row).flatten]\n    @headers.each do |header|\n      e.send \"#{header}=\", attributes[header]\n    end\n    e.save\n  end\nend",
+ "title": ""
+}

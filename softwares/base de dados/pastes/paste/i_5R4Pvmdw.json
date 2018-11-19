@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "5R4Pvmdw",
+ "pasteDate": "Feb 21, 2018, 12:03:12 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n\n// Dimensions and formula iterations\n#define WIDTH 600\n#define HEIGHT 600\n#define MAX_ITER 16\n\nint main() {\n\t// PPM file header\n\tprintf(\"P6\\n %i %i 255\\n\", WIDTH, HEIGHT);\n\n\tint row;\n\n\tfor (row = 0; row < HEIGHT; row++) {\n\t\tint col;\n\n\t\tfor (col = 0; col < WIDTH; col++) {\n\t\t\t// Map pixel co-ords to equation variables\n\t\t\tdouble c_real = (col - WIDTH / 2.0f) * 4.0f / WIDTH;\n\t\t\tdouble c_imag = (row - HEIGHT / 2.0f) * 4.0f / WIDTH;\n\t\t\tdouble x = 0;\n\t\t\tdouble y = 0;\n\n\t\t\t// Iteration counter\n\t\t\tint iteration = 0;\n\n\t\t\t// Subsitute into equation\n\t\t\twhile (x*x + y*y <= 4 && iteration < MAX_ITER) {\n\t\t\t\tdouble x_new = x*x - y*y + c_real;\n\t\t\t\ty = 2*x*y + c_imag;\n\t\t\t\tx = x_new;\n\n\t\t\t\t// Increment iterations\n\t\t\t\titeration++;\n\t\t\t}\n\n\n\t\t\t// Color image\n\t\t\tif (iteration < MAX_ITER) {\n\t\t\t\tint div = MAX_ITER - iteration;\n\t\t\t\tprintf(\"%c%c%c\", (int)(255 / div), \n\t\t\t\t\t(int)(255 / (div * 0.5)), \n\t\t\t\t\t128 - (int)(128 / div));\n\t\t\t}\n\t\t\telse {\n\t\t\t\tprintf(\"%c%c%c\", 0, 0, 0);\n\t\t\t}\n\t\t}\n\t}\n}",
+ "title": ""
+}

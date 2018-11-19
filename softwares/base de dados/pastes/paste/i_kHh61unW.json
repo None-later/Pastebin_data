@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "kHh61unW",
+ "pasteDate": "Feb 27, 2018, 10:50:31 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "=IFS(OR(AA5=\"Adventurer (Expert Psychic)\",AA5=\"Adventurer (Psychic Warrior)\",AA5=\"Psychic\"),1+MAX(J11,J13)+MAX(AQ23:AR26)+IFERROR(IFS(I30=\"Psychic Training\",1,I31=\"Psychic Training\",1,I32=\"Psychic Training\",1,I33=\"Psychic Training\",1,I34=\"Psychic Training\",1,I35=\"Psychic Training\",1,I36=\"Psychic Training\",1),0)+IFERROR(IFS(AND(sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)>=1,sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)<3),1,sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)>=3,2),0),OR(I30=\"Wild Psychic Talent\",I31=\"Wild Psychic Talent\",I32=\"Wild Psychic Talent\",I33=\"Wild Psychic Talent\",I34=\"Wild Psychic Talent\",I35=\"Wild Psychic Talent\",I36=\"Wild Psychic Talent\"),SUMIF(I30:I36,\"Wild Psychic Talent\",R30:R36)+IFERROR(IFS(AND(sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)>=1,sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)<3),1,sumif(U30:U36,\"Psychic Refinement\",AE30:AE36)>=3,2),0),1=1,0)",
+ "title": ""
+}

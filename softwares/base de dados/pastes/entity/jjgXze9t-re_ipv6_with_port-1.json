@@ -1,0 +1,5 @@
+{
+  "value": "2002:3e10:8556::3e10:8556",
+  "correct": false,
+  "jSonReason": "re_ipv6_with_port"
+}

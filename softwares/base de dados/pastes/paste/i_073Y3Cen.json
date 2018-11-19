@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "073Y3Cen",
+ "pasteDate": "Feb 20, 2018, 7:15:55 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "def fibonaccirainbow(text):\n\tx = 1\n\ty = 1\n\tz = x + y\n\tfn = []\n\tcount = 0\n\tret = ''\n\tcl = '</c>'\n\tc2 = 0\n\twhile z < len(text):\n\t\tx = y\n\t\ty = z\n\t\tz = x + y\n\t\tfn.append(z)\n\tcolors = ['<c=red>','<c=orange>','<c=yellow>','<c=green>','<c=blue>','<c=indigo>','<c=violet>']\n\tcolors2 = colors*int(len(fn)/len(colors))\n\tfor i in text:\n\t\tcount += 1\n\t\tif count in fn:\n\t\t\tc2 +=1\n\t\t\ti = cl+colors2[c2]+i\n\t\t\tret += i\n\t\t\t\n\t\telse:\n\t\t\tret += i\n\tret = colors2[0]+ret+cl\n\treturn ret\nfibonaccirainbow.command = \"fbr\"",
+ "title": ""
+}

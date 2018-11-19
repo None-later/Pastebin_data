@@ -1,0 +1,16 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "kw_dos",
+  "kw_pass",
+  "lg_en"
+ ],
+ "key": "tMcha9vJ",
+ "pasteDate": "Feb 19, 2018, 2:43:45 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <unistd.h>\n#include <string.h>\n#include <termios.h>\n\n#define MAX_PASSWD_LEN 20\n\nint main(void){\n  struct termios term, oldterm;\n  int i;\n  char pass[MAX_PASSWD_LEN+1], ch, echo = '*';\n\n  write(STDOUT_FILENO, \"\\nPASSWORD? \", 11);\n\n  //set das flags locais, pelo que percebi, ele ta a dar set a tudo menos aquelas, o que faz com que, o que eu escrever nao seja mostrado na consola\n  /*\n  ECHO \tEnable echo\n  ECHOE \tEcho ERASE as an error-correcting backspace\n  ECHOK \tEcho KILL\n  ECHONL \tEcho \\n\n  ICANON \tCanonical input (erase and kill processing)\n  IEXTEN \tEnable extended functions\n  ISIG \tEnable signals\n  NOFLSH \tDisable flush after interrupt, quit or suspend\n  TOSTOP \tSend SIGTTOU for background output\n  */\n  tcgetattr(STDIN_FILENO, &oldterm);\n  term=oldterm;\n  term.c_lflag &= ~(ECHO | ECHOE | ECHOK | ECHONL | ICANON);\n  tcsetattr(STDIN_FILENO, TCSAFLUSH, &term);\n\n  //leitura dos caracteres ( apenas mostrado ao user asteriscos)\n  i=0;\n  while (i < MAX_PASSWD_LEN && read(STDIN_FILENO, &ch, 1) && ch != '\\n') {\n    pass[i++] = ch;\n    write(STDOUT_FILENO, &echo, 1);\n  }\n  //carater final, codigo ascii do '\\0'  0\n  pass[i] = 0;\n\n  //reverter as defenioes\n  tcsetattr(STDIN_FILENO, TCSANOW, &oldterm);\n\n  //output final da pass\n  write(STDOUT_FILENO, \"\\n\\nPassword: \", 12);\n  write(STDOUT_FILENO, pass, strlen(pass));\n  write(STDOUT_FILENO, \"\\n\", 1);\n\n  return 0;\n}",
+ "title": ""
+}

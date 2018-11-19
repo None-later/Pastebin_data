@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "a5cetQrU",
+ "pasteDate": "Feb 28, 2018, 5:06:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "Fast Fourier Transform + Number Theoretic Transform + Fast Polynomial Multiplication\ninput a, a vector representation of polynomial, output a as point representation. Put sign=-1 for inverse.\nNTT -> integer FFT with modulo\n/*\nFor NTT, let p be modulo prime\np = 2^k * c + 1\nneed: size of polynom <= 2^k\nfind r so that r^1 .. r^p-1 distinct <- call prr\n\nchange for the following\nint theta = expmod(prr, (MOD-1)/n); // expmod->exponent\nif(sign == -1)theta = expmod(theta, MOD-2);\n    w = expmod(theta, irev) // can be saved to array\ndont forget divmod and other mods\n*/\ntypedef complex<long double> Cld;\nvoid FFT(vector<Cld>& a, int sign = 1) {\n    int n = a.size(); // n should be a power of two\n    double theta = sign * 2 * M_PI / n;\n    for(int i = 0, j = 1; j < n - 1; ++j) {\n        for(int k = n >> 1; k > (i ^= k); k >>= 1);\n        if(j < i) swap(a[i], a[j]);\n    }\n    for(int m, mh = 1; (m = mh << 1) <= n; mh = m) {\n        int irev = 0;\n        for(int i = 0; i < n; i += m) {\n            Cld  w = exp(Cld(0, theta*irev));\n            for(int k = n >> 2; k > (irev ^= k); k >>= 1);\n            for(int j = i; j < mh + i; ++j) {\n                int k = j + mh;\n                Cld x = a[j] - a[k];\n                a[j] += a[k];\n                a[k] = w * x;\n            }\n        }\n    }\n    if(sign == -1) FOR(i,n)a[i] /= n;\n}\n\nvoid vector_multiply(vector<Cld>& res, vector<Cld>& a, vector<Cld>& b){ // multiplies, stores to a\n    res.clear();\n    int n = a.size() + b.size() - 1;\n    for(int i=1; i<n; i<<=1)if(n&i)n += i;\n    a.resize(n);\n    b.resize(n);\n\n    FFT(a);\n    FFT(b);\n    FOR(i,n)res.pb(a[i] * b[i]);\n    FFT(res, -1);\n}",
+ "title": ""
+}

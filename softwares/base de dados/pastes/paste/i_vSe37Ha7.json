@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_ro"
+ ],
+ "key": "vSe37Ha7",
+ "pasteDate": "Feb 12, 2018, 1:05:08 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<ui-card>\n  <ui-card-title>Lorem ipsum</ui-card-title>\n  <ui-card-subtitle>Dolor sit amet</ui-card-subtitle>\n  <ui-card-content>\n      Consectetur adipisicing elit. Accusamus aperiam deserunt dolore expedita fugit illum, minus\n      nihil obcaecati pariatur porro quibusdam tempore totam ut. Deleniti iusto nulla sint sunt totam?\n  </ui-card-content>\n  <div class=\"ui-button-container cover\">\n      <button class=\"ui-button flat\" uiRipple>Secondary</button>\n      <button class=\"ui-button flat primary\" uiRipple>Action</button>\n  </div>\n</ui-card>",
+ "title": ""
+}

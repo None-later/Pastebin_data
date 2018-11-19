@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "lua",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VWXCVUYA",
+ "pasteDate": "Feb 12, 2018, 2:35:37 AM",
+ "relevancy": 4.0,
+ "relevant": false,
+ "text": "{\"cryptChecksum\":\"966fee8fff57bdcb698f58eb72eb01a2b422b2fe8135b69c6284ade2b5678d26\",\"cryptData\":\"3MSMqFUNNUDod74hGZ8XpYr9lK4KBTsSL/4O/v+ag6uV2Im2TyWnXSH5OR+TD9NmqxyQJNJGIqhOFJlO7mPnKxuBV7HGbJnFMBIH+r4HPMo=\",\"pbkdf2Iter\":1024,\"orginChecksum\":\"809c09b3bd8cb7402787f204570ee54604f7caa42a7c7916a81ef7bdd2d84b56\",\"boomCrypt\":\"1.2\",\"IV\":[172,21,23,130,105,9,26,197,235,221,93,123,19,12,202,51]}",
+ "title": "fuel"
+}

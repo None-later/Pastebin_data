@@ -1,0 +1,5 @@
+{
+  "value": "\nhttp://streaming.enetres.net/B280DE9FE5AD42E9B9BFD56A0E2CA414021/smil:live.smil/master.m3u8",
+  "correct": true,
+  "jSonReason": "re_url"
+}

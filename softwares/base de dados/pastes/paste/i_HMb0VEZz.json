@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "HMb0VEZz",
+ "pasteDate": "Feb 20, 2018, 5:49:26 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "//Ex. 4 Lista Reviso\n#include <iostream>\n#include <conio.h>\n#include <math.h>\n#include <locale.h>\nusing namespace std;\nint main(){\n\tsetlocale(LC_ALL, \"Portuguese\");\n\tint tentativa, valor ;\n\tfloat base = 0, altura = 0, area = 0, teste = 0;\n\tcout << \"\\n\\t\\tEx. 4 LISTA REVISO\";\n\t\n\tfor(valor = 0; valor == 1; tentativa++){\n\t\t\tcout << \"\\n\\n\\tInforme a base: \";\n\t\t\tcin >> teste;\n\t\t\tif (teste > 0){\n\t\t\t\tbase = teste;\n\t\t\t\tvalor = 1;\n\t\t\t}\n\t\t\n\t\t\telse{\n\t\t\t\tcout << tentativa << \"\" << \"tentativa!\"; \n\t\t\t\tcout << \"Nmero invlido!! Digite novamente: \";\n\t\t\t}\n\t\t\t\n\t}\n\t\n\tfor(valor = 0; valor == 1; tentativa++){\n\t\tcout << \"\\n\\n\\tInforme a altura: \";\n\t\t\tcin >> teste;\n\t\t\tif (teste > 0){\n\t\t\taltura = teste;\n\t\t\tvalor = 1;\n\t\t\t}\n\t\n\t\t\telse{\n\t\t\t\tcout << tentativa << \"\" << \"tentativa!\"; \n\t\t\t\tcout << \"Nmero invlido!! Digite novamente: \";\n\t\t\t}\n\t\t\t\n\t}\n\t\n\tcout << \"\\n\\n\\tA rea do tringulo retngulo : \" << base * altura / 2;\ngetch();\n}",
+ "title": ""
+}

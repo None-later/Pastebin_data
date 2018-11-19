@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "VrPdd1SV",
+ "pasteDate": "Feb 17, 2018, 10:30:14 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import bpy\n# changing a text\ntextName = 'Text' # name of the text object\nvalue = 500.0 # value to be displayed\ntxt = bpy.data.objects[textName].data.body = str(value) # replacing the text in the text object\n\n# changing the length of an object in order to make a graph\nobjName = 'Cube' # bar that is supposed to change length\nvalue = 80 # which value does the bar have to represent\nbpy.data.objects[objName].scale.z = value / 10 # setting the scale of the bar.\n\t\nimport bpy\n\nbpy.data.objects['Cube'].location = (1.0, 2.0, 3.0)\nbpy.data.objects['Cube'].location.x = 3.0\n\nbpy.data.objects['Cube'].hide = 1\nbpy.data.objects['Cube'].hide_render = 1",
+ "title": ""
+}

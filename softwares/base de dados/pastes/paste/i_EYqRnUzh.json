@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "re_sql",
+  "lg_en"
+ ],
+ "key": "EYqRnUzh",
+ "pasteDate": "Feb 17, 2018, 3:40:16 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "select sysdate from dual;\nselect * from table( dbms_xplan.display_cursor);\nexplain plan for\nselect sysdate from dual;\nselect * from table( dbms_xplan.display);\n\n\nOracle Live SQL\n\n    SQL Worksheet\n\n\n\nResult Set 11\n\nSYSDATE\n17-FEB-18\n\nDownload CSV\nResult Set 12\n\nPLAN_TABLE_OUTPUT\nUser has no SELECT privilege on V$SESSION\n\nDownload CSV\nStatement processed.\nResult Set 13\n\nPLAN_TABLE_OUTPUT\nPlan hash value: 1388734953\n \n-----------------------------------------------------------------\n| Id  | Operation        | Name | Rows  | Cost (%CPU)| Time     |\n-----------------------------------------------------------------\n|   0 | SELECT STATEMENT |      |     1 |     2   (0)| 00:00:01 |\n|   1 |  FAST DUAL       |      |     1 |     2   (0)| 00:00:01 |\n-----------------------------------------------------------------\n\nDownload CSV\n8 rows selected.\nLive SQL 18.1.2, running Oracle Database 18c Enterprise Edition - 18.1.0.0.0 Set Screen Reader Mode On\n 2018 Oracle Corporation  Privacy  Terms of Use\nLive SQL Home  About  Oracle Database on OTN  Oracle Learning Library  Oracle Database Documentation 18c , 12c  Follow on Twitter\nOracle Live SQL - SQL Worksheet",
+ "title": "explain plan on Oracle SQL Live 18c"
+}

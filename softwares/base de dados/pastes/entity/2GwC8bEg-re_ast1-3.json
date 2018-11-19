@@ -1,0 +1,5 @@
+{
+  "value": "functionality is being used by server audit: \u0027\u0027 + [name]) AS Details FROM sys.dm_server_audit_status  OPTION (RECOMPILE)",
+  "correct": true,
+  "jSonReason": "re_ast1"
+}

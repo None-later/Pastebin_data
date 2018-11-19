@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "python",
+ "jSonReasons": [
+  "lg_de"
+ ],
+ "key": "vLcaauTj",
+ "pasteDate": "Feb 8, 2018, 9:55:55 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[20, ['VAR', 'LOOP'], 'POP', 0, ['VAR', 'A'], 'POP', 1, ['VAR', 'B'], 'POP', ['FOR', 'LOOP', 'A', 'B', 'PLUS', ['VAR', 'C'], 'POP', 'A', 'PRINT', 'POP', 'B', ['VAR', 'A'], 'POP', 'C', ['VAR', 'B'], 'POP', 'ENDFOR']][20, ['VAR', 'LOOP'], 'POP', 0, ['VAR', 'A'], 'POP', 1, ['VAR', 'B'], 'POP', ['FOR', 'LOOP', 'A', 'B', 'PLUS', ['VAR', 'C'], 'POP', 'A', 'PRINT', 'POP', 'B', ['VAR', 'A'], 'POP', 'C', ['VAR', 'B'], 'POP', 'ENDFOR'], 'ENDFOR']",
+ "title": ""
+}

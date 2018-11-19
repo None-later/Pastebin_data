@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "u5EA6xNe",
+ "pasteDate": "Feb 12, 2018, 4:00:06 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "<EditText\n android:id=\"@+id/lunch\"\n android:hint=\"00:00\"\n android:inputType=\"time\"\n android:digits=\"0123456789:\"\n android:maxLength=\"5\"/>\n\t\nvendorSearchEt.addTextChangedListener(new TextWatcher() {\n            int length = 0;\n            @Override\n            public void beforeTextChanged(CharSequence s, int start, int count, int after) {\n                String str = vendorSearchEt.getText().toString();\n                length = str.length();\n            }\n\n            @Override\n            public void onTextChanged(CharSequence s, int start, int before, int count) {\n\n            }\n\n            @Override\n            public void afterTextChanged(Editable s) {               \n\n                String str = vendorSearchEt.getText().toString();\n                if(str.length()==2 && length <str.length()){//length check for backspace\n                    vendorSearchEt.append(\":\");\n                }\n\n            }\n        });\n\t\nTextWatcher textWatcherNumber = new TextWatcher() {\n    boolean isEdging;\n\n    @Override\n    public void afterTextChanged(Editable text) {\n        if (isEdging) return;\n        isEdging = true;\n        StringBuilder sb = new StringBuilder();\n        sb.append(Common.parseOnlyNumbers(text.toString()));\n\n        if (sb.length() > 2)\n            sb.insert(2, \":\");\n\n        text.replace(0, text.length(), sb.toString());\n        isEdging = false;\n    }\n\n    @Override\n    public void beforeTextChanged(CharSequence s, int start, int count, int after) {}\n    @Override\n    public void onTextChanged(CharSequence s, int start, int before, int count) {}\n};\n//below is code of common class\npublic class Common {\n    public static String parseOnlyNumbers(String text) {\n    return text.replaceAll(\"[^0-9]\",\"\");\n    }\n}\n\t\nif (sb.length() > 0)\n    sb.insert(0, \"(\");\nif (sb.length() > 4)\n    sb.insert(4, \")-\");\nif (sb.length() > 9)\n    sb.insert(9, \"-\");\nif (sb.length() > 14)\n    sb.insert(14, \"-\");",
+ "title": ""
+}

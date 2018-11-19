@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_op",
+  "lg_en"
+ ],
+ "key": "Afxft7h0",
+ "pasteDate": "Feb 12, 2018, 3:24:02 AM",
+ "relevancy": 3.0,
+ "relevant": false,
+ "text": "use QAST:from<NQP>; BEGIN $*W.compile_time_evaluate: $, QAST::Op.new: :op<call>, :name('&trait_mod:<is>'), :nodal",
+ "title": ""
+}

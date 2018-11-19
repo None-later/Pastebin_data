@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "javascript",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "BFg00qUd",
+ "pasteDate": "Feb 23, 2018, 11:52:38 AM",
+ "relevancy": -1.0,
+ "relevant": false,
+ "text": "app.post('/api/places', function (request, response) {\n            var validation = require('mw.validation');\n            var body = request.body;\n\n            const rules = {\n                id: ['required'],\n                name: ['required', {\n                    minLength: {\n                        minLength: 3\n                    }\n                }, {\n                    maxLength: {\n                        maxLength: 100\n                    }\n                }, {\n                    pattern: {\n                        regex: /^[a-zA-Z -]*$/\n                    }\n                }],\n                author: ['required'],\n                review: ['required', 'digit'],\n                '@image': {\n                    url: ['url'],\n                    title: [{\n                        required: {\n                            message: 'Field Image title is required'\n                        }\n                    }]\n                }\n            };\n            var validationResult = validation.objectValidation.validateModel(body, rules, true);\n\n            if (!validationResult.success) {\n                response.setHeader('Content-Type', 'json/application');\n                return response.status(400).json({\n                    status : 'KO'\n                });\n            }\n            else {\n                const promise = data.savePlaceAsync(body);\n                promise.then(r => {\n                    response.setHeader('Location', /places/);\n                    return response.status(201).json({\n                        newPlace  : body,\n                        status : 'OK'\n                    });\n                });\n            }\n        });",
+ "title": ""
+}

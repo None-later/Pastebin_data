@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "java",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "r0Uzmy1r",
+ "pasteDate": "Feb 28, 2018, 11:40:10 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import org.springframework.boot.SpringApplication;\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\n\n@SpringBootApplication\npublic class Application {\n\n    public static void main(String[] args) {\n        SpringApplication.run(Application.class, args);\n    }\n}",
+ "title": ""
+}

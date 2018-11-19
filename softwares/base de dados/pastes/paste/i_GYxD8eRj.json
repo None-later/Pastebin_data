@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "GYxD8eRj",
+ "pasteDate": "Feb 11, 2018, 6:48:07 AM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "import crafttweaker.data.IData;\nimport crafttweaker.item.IItemStack;\n\nval goldBlock=<minecraft:gold_block>;\n\nval sideItems = {\n\tefficiency: <minecraft:potion>.withTag({Potion: \"minecraft:strong_swiftness\"}),\n\tunbreaking: <minecraft:potion>.withTag({Potion: \"minecraft:strong_strength\"})\n} as IItemStack[string];\n\nval topItems = {\n\tefficiency: <minecraft:potion>.withTag({Potion: \"minecraft:strong_swiftness\"}),\n\tunbreaking: <minecraft:potion>.withTag({Potion: \"minecraft:strong_strength\"})\n} as IItemStack[string];\n\nval baseMaxLevels = {\n\tefficiency: 5,\n\tunbreaking: 3\n} as int[string];\n\nval enchantIDs = {\n\tefficiency: 32,\n\tunbreaking: 34\n} as int[string];\n\nval booksToMake = [\"efficiency\", \"unbreaking\"] as string[];\n\nfor book in booksToMake {\n\tvar enchantID = enchantIDs[book] + 0;\n\tvar baseMaxLevel = baseMaxLevels[book];\n\tvar sideItem = sideItems[book];\n\tvar topItem = topItems[book];\n\n\tfor fromLevel in (baseMaxLevel .. 10) {\n\t\tvar toLevel = fromLevel + 1;\n\n\t\tvar fromTag as IData = {StoredEnchantments: [{lvl: fromLevel, id: enchantID}]};\n\t\tvar toTag as IData = {StoredEnchantments: [{lvl: toLevel, id: enchantID}]};\n\n\t\trecipes.addShaped(book ~ fromLevel ~ \"_\" ~ toLevel,\n\t\t\t<minecraft:enchanted_book>.withTag(toTag),\n\t\t\t[\n\t\t\t\t[null, topItem, null],\n\t\t\t\t[sideItem, <minecraft:enchanted_book>.withTag(fromTag), sideItem],\n\t\t\t\t[null, goldBlock, null]\n\t\t\t]\n\t\t);\n\n\t\tmods.jei.JEI.addItem(<minecraft:enchanted_book>.withTag(toTag));\n\t}\n}",
+ "title": ""
+}

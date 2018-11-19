@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "Fsgkhxvq",
+ "pasteDate": "Feb 24, 2018, 5:03:14 PM",
+ "relevancy": 1.0,
+ "relevant": false,
+ "text": "options:\n# Scoreboard\n    Title: &a    &8 &eMangos   &7\n\t\n# The lines, you can use %{rank.%loop-player%}% for the users group, %balance of loop-player% for their balance, and %player% for their name.\nevery second:\n    loop all players:\n        wipe loop-player's sidebar\n        set name of sidebar of loop-player to \"&e&lMANGOS\"\n        set score \"&b\" in sidebar of loop-player to 9\n        set score \"&8 &7Rank: &c%{rank.%loop-player%}%\" in sidebar of loop-player to 8\n        set score \"&8 &7Name: &c%loop-player%\" in sidebar of loop-player to 7\n        set score \"&d\" in sidebar of loop-player to 6\n        set score \"&8 &7Balance: &c%balance of loop-player%\" in sidebar of loop-player to 5\n        set score \"&0\" in sidebar of loop-player to 4\n        set score \"&8 &7Staff Online:: &c???\" in sidebar of loop-player to 3\n        set score \"&6\" in sidebar of loop-player to 2\n        set score \"&8 &eMangos.minehut.gg\" in sidebar of loop-player to 1",
+ "title": ""
+}

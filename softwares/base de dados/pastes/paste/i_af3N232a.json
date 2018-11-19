@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "csharp",
+ "jSonReasons": [
+  "lg_en",
+  "kw_password"
+ ],
+ "key": "af3N232a",
+ "pasteDate": "Feb 8, 2018, 10:35:11 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "using System;\nusing System.Collections.Generic;\nusing System.Linq;\nusing System.Text;\nusing System.Threading.Tasks;\n\nnamespace _3._2._1\n{\n    class Program\n    {\n        static void Main()\n        {\n            string password = Console.ReadLine(), passwordCheck = password;\n            int i = 0;\n            do\n            {\n                password = Console.ReadLine();\n                i++;\n                if (i == 5)\n                    break;\n            }\n            while (passwordCheck != password);\n        }\n\n    }\n}",
+ "title": "3.2.3."
+}

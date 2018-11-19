@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "9AuVityN",
+ "pasteDate": "Feb 18, 2018, 2:39:17 PM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "# Example usage:  setjdk 1.8\nfunction setjdk {\n  local ver=${1?Usage: setjdk <version>}\n\n  export JAVA_HOME=$(/usr/libexec/java_home -v $ver)\n  PATH=$(echo $PATH | tr ':' '\\n' | grep -v Java | tr '\\n' ':')\n  export PATH=$JAVA_HOME/bin:$PATH\n}",
+ "title": ""
+}

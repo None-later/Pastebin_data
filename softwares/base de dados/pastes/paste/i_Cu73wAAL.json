@@ -1,0 +1,14 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "kw_error",
+  "lg_en"
+ ],
+ "key": "Cu73wAAL",
+ "pasteDate": "Feb 21, 2018, 11:42:45 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "<?php  \n  \n    // if the caller pressed anything but 1, 2 or 3 send them back  \n    if($_REQUEST['Digits'] < 1 || $_REQUEST['Digits'] > 3) {  \n        header(\"Location: 0_receive-call.php\");  \n        die;  \n    }  \n    \n    if($_REQUEST['Digits'] == 1 ) {  \n        header(\"Location: 1_record-voicemail.php\");  \n        die;  \n    }\n    \n    if($_REQUEST['Digits'] == 2) {  \n        header(\"Location: 2_system-status.php\");  \n        die;  \n    }\n\n    if($_REQUEST['Digits'] == 3) {  \n        header(\"Location: 3_david-lee-roth.php\");  \n        die;  \n    }\n\n    // otherwise, we send an error\n    header(\"content-type: text/xml\");  \n    echo \"<?xml version=\\\"1.0\\\" encoding=\\\"UTF-8\\\"?>\\n\";  \n?>  \n<Response>  \n  <!-- We use redirects above so if we should never get here -->\n  <Say voice=\"woman\">Oops. Our voicemail system seems to be bunged up. You'll have to try again later.</Say>  \n</Response>",
+ "title": ""
+}

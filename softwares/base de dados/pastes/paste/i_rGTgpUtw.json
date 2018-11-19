@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_it"
+ ],
+ "key": "rGTgpUtw",
+ "pasteDate": "Feb 9, 2018, 3:19:10 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "[\n    begin{array}[]{c| c}\n        delta'left( (s', gamma),e right) = & (delta(q,0), alpha) cup (delta(q,1), beta) numberthis{joe}\\\n        hline\n        delta'left( (q, gamma), 0 right) = & (delta(q,0), gamma) cup (delta(q,1),alpha) \\\n        delta'left( (q, gamma), 1 right) = & (delta(q,1), gamma) cup (delta(q,0), beta) \\\n        hline\n        delta'left( (q, alpha), 1 right) = & emptyset \\\n        delta'left( (q, alpha), 0 right) = & (delta(q,1), alpha) \\\n        hline\n        delta'left( (q, beta), 1 right) = & emptyset \\\n        delta'left( (q, beta), 0 right) = & (delta(q,1), beta) \\\n        hline\n        delta'left( (q, beta), e right) = & emptyset \\\n    end{array}\n]",
+ "title": ""
+}

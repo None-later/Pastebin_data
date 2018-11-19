@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "yDAPyjk7",
+ "pasteDate": "Feb 26, 2018, 9:11:07 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "#include <stdio.h>\n\n\n__attribute__((used))\nint bar() {\n        printf(\"bar\\n\");\n        return 42;\n}\n\n__attribute__((noinline,naked))\nint foo() {\n        asm(\"b bar\\n\");\n\n        // The following can be uncommented, resulting in invalid code.\n        //__builtin_unreachable();\n}\n\nint main() {\n        int n = foo();\n        printf(\"the number is: %d\\n\", n);\n}",
+ "title": ""
+}

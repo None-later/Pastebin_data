@@ -1,0 +1,5 @@
+{
+  "value": "SELECT ID_CARRERA\tFROM",
+  "correct": true,
+  "jSonReason": "re_sql"
+}

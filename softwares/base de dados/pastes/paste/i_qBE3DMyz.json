@@ -1,0 +1,13 @@
+{
+ "espireDate": "N",
+ "format": "text",
+ "jSonReasons": [
+  "lg_en"
+ ],
+ "key": "qBE3DMyz",
+ "pasteDate": "Feb 21, 2018, 11:10:18 AM",
+ "relevancy": 0.0,
+ "relevant": false,
+ "text": "echo $order->getOrderPaymentCollection()->count(); // returns 1\n    $history = new OrderHistory();\n    $history->id_order = $order->id;\n    $history->changeIdOrderState($stateId, $order->id);\n    echo $order->getOrderPaymentCollection()->count(); // returns 2\n\t\necho $order->getOrderPaymentCollection()->count(); // returns 1\n    $order->setCurrentState($orderId);\n    echo $order->getOrderPaymentCollection()->count(); // returns 2",
+ "title": ""
+}
